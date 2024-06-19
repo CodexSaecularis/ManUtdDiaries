@@ -3604,13 +3604,13 @@ body:has(.container4:hover) .line12 span4 {
 	}
 
 	.cables {
-		height: 100%;
+		height: 30%;
 		top: 350px;
 	}
 
 	.scoreboard-PL {
 		width: 123.5px;
-		left: 117px;
+		left: 10px;
 		top: 470px;
 	}
 }
