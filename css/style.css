@@ -3568,12 +3568,7 @@ body:has(.container4:hover) .line12 span4 {
 		width: 180%;
 		transform: translateX(-70px);
 	}
-
-	.cables {
-		height: 30%;
-		top: 350px;
-	}
-
+	
 	.title1 {
 		font-size: .5rem;
 		top: 30.5%;
@@ -3606,6 +3601,17 @@ body:has(.container4:hover) .line12 span4 {
 		-webkit-background-clip: text;
 		-moz-background-clip: text;
 		background-clip: text;
+	}
+
+	.cables {
+		height: 30%;
+		top: 350px;
+	}
+
+	.scoreboard-PL {
+		width: 123.5px;
+		left: 117px;
+		top: 470px;
 	}
 }
 /* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */ 
