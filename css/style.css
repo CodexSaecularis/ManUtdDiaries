@@ -3570,8 +3570,8 @@ body:has(.container4:hover) .line12 span4 {
 	}
 
     .cables {
-		height:50%;
-		top: 40%;
+		width: 400%;
+		top: 350px;
 	}
 
 	.title1 {
