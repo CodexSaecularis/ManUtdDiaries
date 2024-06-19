@@ -3545,3 +3545,67 @@ body:has(.container4:hover) .line12 span4 {
 	margin-top: -500px;
 	z-index: 2;
 } */
+
+/* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */ 
+@media only screen and (max-width: 600px) {
+	/* https://stackoverflow.com/questions/23110412/css-scale-several-images-to-fit-viewport-keeping-aspect-ratio */
+	html, body {
+		overflow-x: hidden;
+	}
+
+	/* html .cables {
+		height:50%;
+		margin:0;
+	} */
+
+	.parallax-home img {
+		width: 200%;
+		top: 0;
+		transform: translateX(70px);
+	}
+
+	#flag {
+		width: 180%;
+		transform: translateX(-70px);
+	}
+
+    .cables {
+		height:50%;
+		top: 40%;
+	}
+
+	.title1 {
+		font-size: .5rem;
+		top: 30.5%;
+		letter-spacing: 7px;
+		text-shadow: 0 0 5px #ff0434,
+						   0 0 5px yellow, 
+						   0 0 20px #cd000d, 
+						   0 0 40px #cd000d,
+						   0 0 80px #cd000d,
+						   0 0 120px #cd000d,
+						   0 0 160px #cd000d;
+		-webkit-background-clip: text;
+		-moz-background-clip: text;
+		background-clip: text;
+		-webkit-text-stroke: 2.5px #ffab447c;
+	}
+	
+	.title2 {
+		font-size: 1.4rem;
+		top: 31.8%;
+		letter-spacing: 9px;
+		text-shadow: 0 0 1px #ff0c24,
+						   0 0 5px #fe7d85,
+						   0 0 20px #cd000d, 0 0 20px #cd000d, 0 0 20px #cd000d, 0 0 20px #cd000d,
+						   0 0 40px #cd000d,
+						   0 0 80px #cd000d,
+						   0 0 120px #cd000d,
+						   0 0 160px #cd000d;
+		-webkit-text-stroke: 4px #fe7d8648;
+		-webkit-background-clip: text;
+		-moz-background-clip: text;
+		background-clip: text;
+	}
+}
+/* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */ 
