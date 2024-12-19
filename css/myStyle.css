@@ -2055,7 +2055,8 @@ ul.navlist {
 
     .cables {
 		height: 30%;
-		top: 41.5%;
+		top: 41.5%;	    
+		bottom: 0;
 	}
 
     .navlist li {
