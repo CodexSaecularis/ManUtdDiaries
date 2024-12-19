@@ -1,0 +1,2214 @@
+@font-face{
+	font-family: BeonMedium;
+	src: url(/fonts/BeonMedium-6d51.otf);
+}
+
+@font-face {
+	font-family: Celinea;
+	src: url(../fonts/Celinea-nRGpO.otf);
+}
+
+@font-face {
+	font-family: LIBRARY3AMsoft;
+	src: url(../fonts/Library3amsoft-6zgq.otf);
+}
+
+@font-face {
+	font-family: Rookworst;
+	src: url(../fonts/Rookworst-RpBXe.ttf);
+}
+
+/* @font-face {
+	font-family: LostWages;
+	src: url(../fonts/Lostwages-vZl9.ttf) format('ttf');
+} */
+
+@font-face {
+	font-family: Neoneon;
+	src: url(../fonts/Neoneon-3zaD6.otf);
+}
+
+@font-face {
+	font-family: Salonica;
+	src: url(../fonts/Salonica-eZnJO.otf);
+}
+
+@font-face {
+	font-family: raleway_f;
+	src: url(../fonts/raleway-black.woff2);
+}
+
+@font-face{
+	font-family: myFont;
+	src: url(../fonts/edit-undo.dot-brk.ttf);
+}
+
+@font-face {
+	font-family: Zekton;
+	src: url(../fonts/zekton\ rg.otf);
+}
+
+@font-face {
+	font-family: Lateef;
+	src: url(../fonts/Lateef-4ePB.ttf);
+}
+
+@font-face {
+	font-family: Lampen;
+	src: url(../fonts/10mal12Lampen.ttf);
+}
+
+@font-face {
+	font-family: X Company;
+	src: url(../fonts/XCompany-GOR9y.ttf);
+}
+
+@font-face {
+	font-family: Delight;
+	src: url(../fonts/Delight-vmpW4.otf);
+}
+
+@font-face {
+	font-family: Ketosag Condensed;
+	src: url(../fonts/KetosagCondensed-B12l.otf);
+}
+
+@font-face {
+	font-family: Better Grade;
+	src: url(../fonts/BetterGrade-519DV.ttf);
+}
+
+@font-face {
+	font-family: Majanan;
+	src: url(../fonts/Majanan-ywm3M.otf);
+}
+
+@font-face {
+	font-family: Uppen Arms NF;
+	src: url(../fonts/UppenArmsNf-LRWD.ttf);
+}
+
+@font-face {
+	font-family: Trueno Round Italic;
+	src: url(../fonts/TruenoRoundItalic-16PB.otf);
+}
+
+@font-face {
+	font-family: Barcelona24;
+	src: url(../fonts/Barcelona-2024.otf);
+}
+
+@font-face {
+	/* Could use this font-family thanks to taxicala's answer: https://stackoverflow.com/questions/33572719/font-family-css-uses-incorrect-font */
+	font-family: Premier\ League\ 23-24\ Tipografstore;
+	src: url(../fonts/Premier\ League\ 23-24\ Tipografstore.ttf);
+}
+
+@font-face {
+	font-family: Agency FB;
+	src: url(../fonts/AGENCYR.TTF);
+}
+
+@font-face {
+	/* Could use this font-family thanks to taxicala's answer: https://stackoverflow.com/questions/33572719/font-family-css-uses-incorrect-font */
+	font-family: Manchester\ United\ 23-24\ Tipogra;
+	src: url(../fonts/Manchester\ United\ 23-24\ Tipogra.otf);
+}
+
+@font-face {
+	font-family: Poppins Regular;
+	src: url(../fonts/Poppins-Regular.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* none // helps eliminate any listing bulletpoint */
+	list-style: none;
+	scroll-behavior: smooth;
+}
+
+/* MAKING PARALLAX IMG FIT THE SCREEN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+section {
+	min-height: 100vh;
+}
+
+.parallax-home {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: -4;
+}
+
+.parallax-home img {
+	/* addition // without this, the images are thrown there too big // took it from main.css (Website);
+	but I eliminated it because I customized each parallax img (skyk, flag, ground) to make the flag smaller */
+	/* width: 100%; */
+	/* end of addition */
+	position: absolute;
+	object-fit: cover;
+	pointer-events: none;
+}
+/* MAKING PARALLAX IMG FIT THE SCREEN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+
+
+:root {
+	--index: calc(1vw + 1vh);
+	--text: #e7e7e0;
+	--transition: transform .75s cubic-bezier(.075, .5, 0, 1);
+}
+
+.layer {
+	transition: var(--transition);
+}
+
+.sky {
+	width: 100%;
+	transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+}
+
+.flag {
+	width: 60%;
+	left: 37%;
+	top: 25%;
+	transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+}
+
+.ground {
+	width: 100%;
+	transform: translate3d(0, calc(var(--scrollTop) / 20), 0);
+}
+
+/* TITLE: REVISIT OLD MATCHES - MAN UTD DIARIES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* I had to deactivate this 'cuz I couldn't figure out how to break lines while maintaining " #text " .
+    the lines title1, title2, and ::selection were taken from main.css (Website) */
+/* .parallax-home #text {
+	position: relative;
+	display: flex;
+	font-size: 2.5 rem;
+	text-shadow: 0 10px 4px rgba (0, 0, 0, 0.85);
+	vertical-align: middle;
+	top: 50%;
+} */
+
+.title1 {
+	/* the idea of putting color: transparent came from Ivošš' answer: https://stackoverflow.com/questions/2889501/inner-text-shadow-with-css */
+	/* original color: #ff7434; */
+	color: transparent;
+	position: absolute;
+	font-size: 1.5rem;
+	top: 69.5%;
+	font-family: raleway_f;
+	font-weight: 900;
+	letter-spacing: 7px;
+	/* the idea of making the text-shadow stronger (more visible) came from this answer:display:
+	    https://stackoverflow.com/questions/42109416/how-to-create-a-bigger-stronger-text-shadow
+		I simply stacked more shadows in the second line so as to make the immediate text shadow stronger*/
+	text-shadow: 0 0 5px #ff0434,
+	                   0 0 5px yellow,
+	                   0 0 20px #cd000d,
+					   0 0 40px #cd000d,
+	                   0 0 80px #cd000d,
+					   0 0 120px #cd000d,
+					   0 0 160px #cd000d;
+	/* font border // https://www.geeksforgeeks.org/css-font-border/#using-textstroke-property */
+	/* original yellow #ffac44 */
+	/* -webkit-text-stroke: 3px #ffac44; */
+	/* original -webkit-text-stroke: 2px yellow; */
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	-webkit-text-stroke: 2.5px #ffab447c;
+	transform: translate3d(0, calc(var(--scrollTop) / 5.5), 0);
+}
+
+.title2 {
+	/* the idea of putting color: transparent came from Ivošš' answer: https://stackoverflow.com/questions/2889501/inner-text-shadow-with-css */
+	/* original color: #ff0c24; */
+	color: transparent;
+	position: absolute;
+	font-size: 3.4rem;
+	top: 74.8%;
+	font-family: raleway_f;
+	font-weight: 900;
+	letter-spacing: 9px;
+	/* the idea of making the text-shadow stronger (more visible) came from this answer:display:
+	    https://stackoverflow.com/questions/42109416/how-to-create-a-bigger-stronger-text-shadow
+		I simply stacked more shadows in the second line so as to make the immediate text shadow stronger*/
+	text-shadow: 0 0 1px #ff0c24,
+	                   0 0 5px #fe7d85,
+	                   0 0 20px #cd000d, 0 0 20px #cd000d, 0 0 20px #cd000d, 0 0 20px #cd000d,
+					   0 0 40px #cd000d,
+	                   0 0 80px #cd000d,
+					   0 0 120px #cd000d,
+					   0 0 160px #cd000d;
+	/* font border // https://www.geeksforgeeks.org/css-font-border/#using-textstroke-property */
+	/* original -webkit-text-stroke: 3px #fe7d85; */
+	-webkit-text-stroke: 4px #fe7d8648;
+	/* reflection effect, but better not to use it without water effect.
+	    here are ideas, but it gets more complex https://css-tricks.com/creating-realistic-reflections-with-css/
+		also here: https://freefrontend.com/css-water-effects/*/
+	/* -webkit-box-reflect: below -20px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4)); */
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	transform: translate3d(0, calc(var(--scrollTop) / 5.5), 0);
+}
+/* TITLE: REVISIT OLD MATCHES - MAN UTD DIARIES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+
+::selection{  /* color for when text is highlighted by user */
+	background-color: #ac141b;
+}
+
+::-webkit-scrollbar {
+	height: .1rem;
+	width: .5rem;
+}
+::-webkit-scrollbar-track {
+	background-color:  #ac141b;
+}
+::-webkit-scrollbar-thumb {
+	background-color: black;
+	/* border-radius value deactivated. Use border-radius:3px as an alternative to make the edges rounded, but not too rounded */
+	/* border-radius: 5rem; */
+	/* could the value below modify the top and bottom border to an image (arrow)? */
+	/* border-image-source: url(../); */
+	/* an even better idea is the two black horizontal stripes with the white background-color near the top and bottom edges */
+	/* addition // playing with the values, I stumbled upon this one */
+	/* HEX color of the color below: #D3D0D0 */
+    border-inline-color: rgb(211, 208, 208);
+	border-inline-style: solid;
+	/* vertical value found here: https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-color */
+	writing-mode: vertical-lr;
+	/* playing with the values, I stumbled upon this one */
+	border-inline-width: 8px;
+}
+
+body {
+	background-color: black;
+    color:  #fff;
+    overflow-x:  hidden;
+	align-items: center;
+	/* default cursor */
+	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='28px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23080101' d='M 2.5,3.5 C 7.1586,6.16843 11.4919,9.3351 15.5,13C 9.07438,12.1868 4.74104,14.6868 2.5,20.5C 1.16667,14.8333 1.16667,9.16667 2.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23af231e' d='M 3.5,1.5 C 9.3796,5.26653 15.0463,9.26653 20.5,13.5C 17.023,14.3227 13.3563,14.8227 9.5,15C 8.74756,15.6708 8.41423,16.5041 8.5,17.5C 7.20027,20.4323 5.20027,22.7656 2.5,24.5C 2.5,23.1667 2.5,21.8333 2.5,20.5C 4.74104,14.6868 9.07438,12.1868 15.5,13C 11.4919,9.3351 7.1586,6.16843 2.5,3.5C 2.32842,2.50838 2.66175,1.84171 3.5,1.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bab7d0' d='M 20.5,13.5 C 21.1667,13.8333 21.8333,14.1667 22.5,14.5C 22.5,15.5 22.5,16.5 22.5,17.5C 17.8665,16.8663 13.1998,16.8663 8.5,17.5C 8.41423,16.5041 8.74756,15.6708 9.5,15C 13.3563,14.8227 17.023,14.3227 20.5,13.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23b4bcca' d='M -0.5,-0.5 C 0.166667,-0.5 0.833333,-0.5 1.5,-0.5C 2.16667,0.166667 2.83333,0.833333 3.5,1.5C 2.66175,1.84171 2.32842,2.50838 2.5,3.5C 1.16667,9.16667 1.16667,14.8333 2.5,20.5C 2.5,21.8333 2.5,23.1667 2.5,24.5C 1.89022,25.391 1.55688,26.391 1.5,27.5C 0.833333,27.5 0.166667,27.5 -0.5,27.5C -0.5,18.1667 -0.5,8.83333 -0.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, auto;
+}
+
+#links {  /* universal pointer cursor for links */
+	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='30px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f90605' d='M 11.5,-0.5 C 12.5,-0.5 13.5,-0.5 14.5,-0.5C 14.5,2.16667 14.5,4.83333 14.5,7.5C 13.8333,6.16667 13.1667,4.83333 12.5,3.5C 12.1667,3.5 11.8333,3.5 11.5,3.5C 11.5,2.16667 11.5,0.833333 11.5,-0.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23040404' d='M 9.5,3.5 C 10.1667,3.5 10.8333,3.5 11.5,3.5C 11.8333,3.5 12.1667,3.5 12.5,3.5C 12.5,5.16667 12.5,6.83333 12.5,8.5C 13.9527,10.229 15.9527,11.229 18.5,11.5C 19.4742,13.7427 19.8076,16.076 19.5,18.5C 18.0795,21.2613 17.4129,24.2613 17.5,27.5C 15.5,27.5 13.5,27.5 11.5,27.5C 11.1185,22.737 9.11854,18.737 5.5,15.5C 6.56764,14.5655 7.90097,14.2322 9.5,14.5C 9.5,10.8333 9.5,7.16667 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23aa2822' d='M 12.5,3.5 C 13.1667,4.83333 13.8333,6.16667 14.5,7.5C 15.1667,7.5 15.8333,7.5 16.5,7.5C 15.4324,8.43448 14.099,8.76781 12.5,8.5C 12.5,6.83333 12.5,5.16667 12.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%235a5c5e' d='M 9.5,3.5 C 9.5,7.16667 9.5,10.8333 9.5,14.5C 7.90097,14.2322 6.56764,14.5655 5.5,15.5C 4.95691,15.44 4.62358,15.1067 4.5,14.5C 5.68884,13.5713 7.02218,13.238 8.5,13.5C 8.18723,9.95815 8.52056,6.62482 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f41a13' d='M 17.5,7.5 C 19.1172,8.038 20.7839,8.37133 22.5,8.5C 22.5,12.8333 22.5,17.1667 22.5,21.5C 20.7773,23.78 20.1107,26.4467 20.5,29.5C 17.5,29.5 14.5,29.5 11.5,29.5C 13.5,28.8333 15.5,28.1667 17.5,27.5C 17.4129,24.2613 18.0795,21.2613 19.5,18.5C 20.4767,15.7131 20.81,12.7131 20.5,9.5C 18.8212,9.71481 17.8212,9.04814 17.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bea6ab' d='M 16.5,7.5 C 16.8333,7.5 17.1667,7.5 17.5,7.5C 17.8212,9.04814 18.8212,9.71481 20.5,9.5C 20.81,12.7131 20.4767,15.7131 19.5,18.5C 19.8076,16.076 19.4742,13.7427 18.5,11.5C 15.9527,11.229 13.9527,10.229 12.5,8.5C 14.099,8.76781 15.4324,8.43448 16.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f0edf0' d='M 7.5,-0.5 C 8.83333,-0.5 10.1667,-0.5 11.5,-0.5C 11.5,0.833333 11.5,2.16667 11.5,3.5C 10.8333,3.5 10.1667,3.5 9.5,3.5C 8.52056,6.62482 8.18723,9.95815 8.5,13.5C 7.02218,13.238 5.68884,13.5713 4.5,14.5C 4.62358,15.1067 4.95691,15.44 5.5,15.5C 9.11854,18.737 11.1185,22.737 11.5,27.5C 13.5,27.5 15.5,27.5 17.5,27.5C 15.5,28.1667 13.5,28.8333 11.5,29.5C 10.8333,29.5 10.1667,29.5 9.5,29.5C 9.04814,25.4246 7.54814,21.7579 5,18.5C 3.54905,16.5359 1.71572,15.2026 -0.5,14.5C -0.5,13.1667 -0.5,11.8333 -0.5,10.5C 2.19853,10.4661 4.69853,11.1328 7,12.5C 7.49902,8.17944 7.66568,3.84611 7.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, pointer;
+}
+a .scoreboard-result {  /* pointer cursor for the scoreboard */
+	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='30px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f90605' d='M 11.5,-0.5 C 12.5,-0.5 13.5,-0.5 14.5,-0.5C 14.5,2.16667 14.5,4.83333 14.5,7.5C 13.8333,6.16667 13.1667,4.83333 12.5,3.5C 12.1667,3.5 11.8333,3.5 11.5,3.5C 11.5,2.16667 11.5,0.833333 11.5,-0.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23040404' d='M 9.5,3.5 C 10.1667,3.5 10.8333,3.5 11.5,3.5C 11.8333,3.5 12.1667,3.5 12.5,3.5C 12.5,5.16667 12.5,6.83333 12.5,8.5C 13.9527,10.229 15.9527,11.229 18.5,11.5C 19.4742,13.7427 19.8076,16.076 19.5,18.5C 18.0795,21.2613 17.4129,24.2613 17.5,27.5C 15.5,27.5 13.5,27.5 11.5,27.5C 11.1185,22.737 9.11854,18.737 5.5,15.5C 6.56764,14.5655 7.90097,14.2322 9.5,14.5C 9.5,10.8333 9.5,7.16667 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23aa2822' d='M 12.5,3.5 C 13.1667,4.83333 13.8333,6.16667 14.5,7.5C 15.1667,7.5 15.8333,7.5 16.5,7.5C 15.4324,8.43448 14.099,8.76781 12.5,8.5C 12.5,6.83333 12.5,5.16667 12.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%235a5c5e' d='M 9.5,3.5 C 9.5,7.16667 9.5,10.8333 9.5,14.5C 7.90097,14.2322 6.56764,14.5655 5.5,15.5C 4.95691,15.44 4.62358,15.1067 4.5,14.5C 5.68884,13.5713 7.02218,13.238 8.5,13.5C 8.18723,9.95815 8.52056,6.62482 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f41a13' d='M 17.5,7.5 C 19.1172,8.038 20.7839,8.37133 22.5,8.5C 22.5,12.8333 22.5,17.1667 22.5,21.5C 20.7773,23.78 20.1107,26.4467 20.5,29.5C 17.5,29.5 14.5,29.5 11.5,29.5C 13.5,28.8333 15.5,28.1667 17.5,27.5C 17.4129,24.2613 18.0795,21.2613 19.5,18.5C 20.4767,15.7131 20.81,12.7131 20.5,9.5C 18.8212,9.71481 17.8212,9.04814 17.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bea6ab' d='M 16.5,7.5 C 16.8333,7.5 17.1667,7.5 17.5,7.5C 17.8212,9.04814 18.8212,9.71481 20.5,9.5C 20.81,12.7131 20.4767,15.7131 19.5,18.5C 19.8076,16.076 19.4742,13.7427 18.5,11.5C 15.9527,11.229 13.9527,10.229 12.5,8.5C 14.099,8.76781 15.4324,8.43448 16.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f0edf0' d='M 7.5,-0.5 C 8.83333,-0.5 10.1667,-0.5 11.5,-0.5C 11.5,0.833333 11.5,2.16667 11.5,3.5C 10.8333,3.5 10.1667,3.5 9.5,3.5C 8.52056,6.62482 8.18723,9.95815 8.5,13.5C 7.02218,13.238 5.68884,13.5713 4.5,14.5C 4.62358,15.1067 4.95691,15.44 5.5,15.5C 9.11854,18.737 11.1185,22.737 11.5,27.5C 13.5,27.5 15.5,27.5 17.5,27.5C 15.5,28.1667 13.5,28.8333 11.5,29.5C 10.8333,29.5 10.1667,29.5 9.5,29.5C 9.04814,25.4246 7.54814,21.7579 5,18.5C 3.54905,16.5359 1.71572,15.2026 -0.5,14.5C -0.5,13.1667 -0.5,11.8333 -0.5,10.5C 2.19853,10.4661 4.69853,11.1328 7,12.5C 7.49902,8.17944 7.66568,3.84611 7.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, pointer;
+}
+[itemid="links"] {
+	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='30px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f90605' d='M 11.5,-0.5 C 12.5,-0.5 13.5,-0.5 14.5,-0.5C 14.5,2.16667 14.5,4.83333 14.5,7.5C 13.8333,6.16667 13.1667,4.83333 12.5,3.5C 12.1667,3.5 11.8333,3.5 11.5,3.5C 11.5,2.16667 11.5,0.833333 11.5,-0.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23040404' d='M 9.5,3.5 C 10.1667,3.5 10.8333,3.5 11.5,3.5C 11.8333,3.5 12.1667,3.5 12.5,3.5C 12.5,5.16667 12.5,6.83333 12.5,8.5C 13.9527,10.229 15.9527,11.229 18.5,11.5C 19.4742,13.7427 19.8076,16.076 19.5,18.5C 18.0795,21.2613 17.4129,24.2613 17.5,27.5C 15.5,27.5 13.5,27.5 11.5,27.5C 11.1185,22.737 9.11854,18.737 5.5,15.5C 6.56764,14.5655 7.90097,14.2322 9.5,14.5C 9.5,10.8333 9.5,7.16667 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23aa2822' d='M 12.5,3.5 C 13.1667,4.83333 13.8333,6.16667 14.5,7.5C 15.1667,7.5 15.8333,7.5 16.5,7.5C 15.4324,8.43448 14.099,8.76781 12.5,8.5C 12.5,6.83333 12.5,5.16667 12.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%235a5c5e' d='M 9.5,3.5 C 9.5,7.16667 9.5,10.8333 9.5,14.5C 7.90097,14.2322 6.56764,14.5655 5.5,15.5C 4.95691,15.44 4.62358,15.1067 4.5,14.5C 5.68884,13.5713 7.02218,13.238 8.5,13.5C 8.18723,9.95815 8.52056,6.62482 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f41a13' d='M 17.5,7.5 C 19.1172,8.038 20.7839,8.37133 22.5,8.5C 22.5,12.8333 22.5,17.1667 22.5,21.5C 20.7773,23.78 20.1107,26.4467 20.5,29.5C 17.5,29.5 14.5,29.5 11.5,29.5C 13.5,28.8333 15.5,28.1667 17.5,27.5C 17.4129,24.2613 18.0795,21.2613 19.5,18.5C 20.4767,15.7131 20.81,12.7131 20.5,9.5C 18.8212,9.71481 17.8212,9.04814 17.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bea6ab' d='M 16.5,7.5 C 16.8333,7.5 17.1667,7.5 17.5,7.5C 17.8212,9.04814 18.8212,9.71481 20.5,9.5C 20.81,12.7131 20.4767,15.7131 19.5,18.5C 19.8076,16.076 19.4742,13.7427 18.5,11.5C 15.9527,11.229 13.9527,10.229 12.5,8.5C 14.099,8.76781 15.4324,8.43448 16.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f0edf0' d='M 7.5,-0.5 C 8.83333,-0.5 10.1667,-0.5 11.5,-0.5C 11.5,0.833333 11.5,2.16667 11.5,3.5C 10.8333,3.5 10.1667,3.5 9.5,3.5C 8.52056,6.62482 8.18723,9.95815 8.5,13.5C 7.02218,13.238 5.68884,13.5713 4.5,14.5C 4.62358,15.1067 4.95691,15.44 5.5,15.5C 9.11854,18.737 11.1185,22.737 11.5,27.5C 13.5,27.5 15.5,27.5 17.5,27.5C 15.5,28.1667 13.5,28.8333 11.5,29.5C 10.8333,29.5 10.1667,29.5 9.5,29.5C 9.04814,25.4246 7.54814,21.7579 5,18.5C 3.54905,16.5359 1.71572,15.2026 -0.5,14.5C -0.5,13.1667 -0.5,11.8333 -0.5,10.5C 2.19853,10.4661 4.69853,11.1328 7,12.5C 7.49902,8.17944 7.66568,3.84611 7.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, pointer;
+}
+
+/* MENU 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+header {
+    /* padding: 50px 10%; */
+	/* before cross-browser // original padding-left: 35px (with .logo); */
+	padding-left: 2.6%;
+	/* before cross-browser // original margin-top: -35.8% (with .logo); */
+	margin-top: -69vh;
+    justify-content: space-between;
+    align-items: center;
+    /* 100% // my best guess is so that contents occupy the width of the entire screen */
+    width: 100%;
+    z-index: 1;
+}
+/* MENU 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+
+/* LYING DEVIL "LOGO" 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* https://www.youtube.com/watch?v=hK6dMdxt3hQ // how to put logo between menu options*/
+.logo img {
+	position: relative;
+	/* before cross-browser // original non-neon logo width: 150px; */
+	width: 38%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	/* addition // control distance between logo and "SUPPORT & DONATE" */
+	/* margin-right: 50px; */
+	/* margin-left: 50%; */
+	/* changes the size of the devil without affecting distance between it and the text */
+	padding: 0 .5em;
+	/* addition to eliminate this devil/transparent box to make menu text cross-browser, although not perfect fix. */
+	display: none;
+}
+
+.animated-gif {
+	position: absolute;
+	/* before cross-browser // original width: 139px; */
+	width: 10.3%;
+	/* before cross-browser // original top: 807px; */
+	margin-top: -223.4vh;
+	/* before cross-browser // original margin-left; 586.5px; */
+	left: 43.2%;
+}
+/* LYING DEVIL "LOGO" 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+
+/* MENU 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+ul.navlist {
+	display: flex;
+	align-items: center;
+}
+
+.navlist li {
+	margin-left: 1rem;
+	/* original padding: 0 1em // padding modifies the space between menu text */
+	padding: 0 3em;
+	text-align: center;
+}
+/* MENU 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+
+/* CONTACT ME 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.navlist li a {
+	/* this removes link underline */
+	text-decoration: none;
+	align-content: center;
+	/* addition // aligns text vertically // https://www.youtube.com/watch?v=Jkp103YhW7A 19:00 */
+	text-align: center;
+}
+
+.line1 {
+	font-family: BeonMedium;
+	text-decoration: none;
+	font-size: 2rem;
+	vertical-align: middle;
+	/* idea for space between letters */
+	letter-spacing: 1px;
+	cursor: pointer;
+	color: #fff;
+	text-shadow: 0 0 10px #da020e,
+	                   0 0 20px #da020e,
+					   0 0 40px #da020e,
+	                   0 0 80px #da020e,
+					   0 0 120px #da020e,
+					   0 0 160px #da020e;
+}
+
+.line1 span {
+	color: #fff;
+	text-shadow: 0 0 10px #da020e,
+	                   0 0 20px #da020e,
+					   0 0 40px #da020e,
+	                   0 0 80px #da020e,
+					   0 0 120px #da020e,
+					   0 0 160px #da020e;
+}
+
+.line2 {
+	font-family: BeonMedium;
+	text-decoration: none;
+	font-size: 2rem;
+	vertical-align: middle;
+	z-index: 1;
+	color: #fff;
+	text-shadow: 0 0 10px #da020e,
+	                   0 0 20px #da020e,
+					   0 0 40px #da020e,
+	                   0 0 80px #da020e,
+					   0 0 120px #da020e,
+					   0 0 160px #da020e;
+}
+
+.line3 {
+	font-family: Uppen Arms NF;
+	text-decoration: none;
+	font-size: 1.2rem;
+	vertical-align: middle;
+	color: #fff;
+	text-shadow: 0 0 10px #fff,
+	                   0 0 20px #fff,
+					   0 0 40px #fff,
+	                   0 0 80px #fff,
+					   0 0 120px #fff,
+					   0 0 160px #fff;
+}
+
+/* BULBS FOR THE MENU OPTION 1 // BULBS 1-9 GO FROM LEFT TO RIGHT, WHICH ARE THE BIGGER ONES*/
+/* adding properties to this class allows me to move the whole bulb board */
+.menu-bulbs {
+	position: absolute;
+	margin-top: -6.2vh;
+}
+/* end of addition */
+
+.bulb1 {
+	content: '';
+	position: absolute;
+	background: #e7d0a3;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(109px, 139px);
+	box-shadow: 0 0 10px red, 0 0 10px rgb(255, 102, 0),
+	                   0 0 20px yellow,
+					   0 0 40px #ffd47c,
+	                   0 0 80px #ffd47c,
+					   0 0 120px #ffd47c,
+					   0 0 160px #ffd47c,
+					   inset 0 0 1px rgb(255, 102, 0);
+}
+
+.bulb2 {
+	content: '';
+	position: absolute;
+	background: #e7d0a3;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(121px, 158px);
+	box-shadow: 0 0 10px red, 0 0 10px red,
+	                   0 0 20px yellow,
+					   0 0 40px #ffd47c,
+	                   0 0 80px #ffd47c,
+					   0 0 120px #ffd47c,
+					   0 0 160px #ffd47c;
+}
+
+.bulb3 {
+	content: '';
+	position: absolute;
+	background: #e7d0a3;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(141px, 169px);
+	box-shadow: 0 0 10px red, 0 0 10px rgb(255, 102, 0),
+	                   0 0 20px yellow,
+					   0 0 40px #ffd47c,
+	                   0 0 80px #ffd47c,
+					   0 0 120px #ffd47c,
+					   0 0 160px #ffd47c,
+					   inset 0 0 1px rgb(255, 102, 0);
+}
+
+.bulb4 {
+	content: '';
+	position: absolute;
+	background: #e7d0a3;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(165px, 172px);
+	box-shadow: 0 0 10px red, 0 0 10px rgb(255, 102, 0),
+	                   0 0 20px yellow,
+					   0 0 40px #ffd47c,
+	                   0 0 80px #ffd47c,
+					   0 0 120px #ffd47c,
+					   0 0 160px #ffd47c,
+					   inset 0 0 1px rgb(255, 102, 0);
+}
+
+.bulb5 {
+	content: '';
+	position: absolute;
+	background: #e7d0a3;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(189px, 172px);
+	box-shadow: 0 0 10px red, 0 0 10px red,
+	                   0 0 20px yellow,
+					   0 0 40px #ffd47c,
+	                   0 0 80px #ffd47c,
+					   0 0 120px #ffd47c,
+					   0 0 160px #ffd47c;
+}
+
+.bulb6 {
+	content: '';
+	position: absolute;
+	background: #e7d0a3;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(213px, 172px);
+	box-shadow: 0 0 10px red, 0 0 10px rgb(255, 102, 0),
+	                   0 0 20px yellow,
+					   0 0 40px #ffd47c,
+	                   0 0 80px #ffd47c,
+					   0 0 120px #ffd47c,
+					   0 0 160px #ffd47c,
+					   inset 0 0 1px rgb(255, 102, 0);
+}
+
+.bulb7 {
+	content: '';
+	position: absolute;
+	background: #e7d0a3;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(237px, 168px);
+	box-shadow: 0 0 10px red, 0 0 10px rgb(255, 102, 0),
+	                   0 0 20px yellow,
+					   0 0 40px #ffd47c,
+	                   0 0 80px #ffd47c,
+					   0 0 120px #ffd47c,
+					   0 0 160px #ffd47c,
+					   inset 0 0 1px rgb(255, 102, 0);
+}
+
+.bulb8 {
+	content: '';
+	position: absolute;
+	background: #e7d0a3;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(253px, 158px);
+	box-shadow: 0 0 10px red, 0 0 10px red,
+	                   0 0 20px yellow,
+					   0 0 40px #ffd47c,
+	                   0 0 80px #ffd47c,
+					   0 0 120px #ffd47c,
+					   0 0 160px #ffd47c;
+}
+
+.bulb9 {
+	content: '';
+	position: absolute;
+	background: #e7d0a3;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(265px, 139px);
+	box-shadow: 0 0 10px red, 0 0 10px red,
+	                   0 0 20px yellow,
+					   0 0 40px #ffd47c,
+	                   0 0 80px #ffd47c,
+					   0 0 120px #ffd47c,
+					   0 0 160px #ffd47c;
+}
+
+.bulb10 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #68cf93;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(140px, 145px);
+	box-shadow: 0 0 10px rgb(2, 131, 54), 0 0 10px rgba(2, 131, 54),
+	                   0 0 20px rgba(2, 131, 54),
+					   0 0 40px rgba(2, 131, 54),
+	                   0 0 80px rgba(2, 131, 54),
+					   0 0 120px rgba(2, 131, 54),
+					   0 0 160px rgba(2, 131, 54);
+}
+
+.bulb11 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #68cf93;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(146px, 145px);
+	box-shadow: 0 0 10px rgb(2, 131, 54), 0 0 10px rgba(2, 131, 54),
+	                   0 0 20px rgba(2, 131, 54),
+					   0 0 40px rgba(2, 131, 54),
+	                   0 0 80px rgba(2, 131, 54),
+					   0 0 120px rgba(2, 131, 54),
+					   0 0 160px rgba(2, 131, 54);
+}
+
+.bulb12 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #68cf93;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(152px, 145px);
+	box-shadow: 0 0 10px rgb(2, 131, 54), 0 0 10px rgba(2, 131, 54),
+	                   0 0 20px rgba(2, 131, 54),
+					   0 0 40px rgba(2, 131, 54),
+	                   0 0 80px rgba(2, 131, 54),
+					   0 0 120px rgba(2, 131, 54),
+					   0 0 160px rgba(2, 131, 54);
+}
+
+.bulb13 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(158px, 145px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb14 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(164px, 145px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb15 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(170px, 145px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb16 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(176px, 145px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb17 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #68cf93;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(182px, 145px);
+	box-shadow: 0 0 10px rgb(2, 131, 54), 0 0 10px rgba(2, 131, 54),
+	                   0 0 20px rgba(2, 131, 54),
+					   0 0 40px rgba(2, 131, 54),
+	                   0 0 80px rgba(2, 131, 54),
+					   0 0 120px rgba(2, 131, 54),
+					   0 0 160px rgba(2, 131, 54);
+}
+
+.bulb18 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #68cf93;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(188px, 145px);
+	box-shadow: 0 0 10px rgb(2, 131, 54), 0 0 10px rgba(2, 131, 54),
+	                   0 0 20px rgba(2, 131, 54),
+					   0 0 40px rgba(2, 131, 54),
+	                   0 0 80px rgba(2, 131, 54),
+					   0 0 120px rgba(2, 131, 54),
+					   0 0 160px rgba(2, 131, 54);
+}
+
+.bulb19 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #68cf93;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(194px, 145px);
+	box-shadow: 0 0 10px rgb(2, 131, 54), 0 0 10px rgba(2, 131, 54),
+	                   0 0 20px rgba(2, 131, 54),
+					   0 0 40px rgba(2, 131, 54),
+	                   0 0 80px rgba(2, 131, 54),
+					   0 0 120px rgba(2, 131, 54),
+					   0 0 160px rgba(2, 131, 54);
+}
+
+.bulb20 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #68cf93;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(200px, 145px);
+	box-shadow: 0 0 10px rgb(2, 131, 54), 0 0 10px rgba(2, 131, 54),
+	                   0 0 20px rgba(2, 131, 54),
+					   0 0 40px rgba(2, 131, 54),
+	                   0 0 80px rgba(2, 131, 54),
+					   0 0 120px rgba(2, 131, 54),
+					   0 0 160px rgba(2, 131, 54);
+}
+
+.bulb21 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(206px, 145px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb22 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(212px, 145px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb23 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(218px, 145px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb24 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(224px, 145px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb25 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #68cf93;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(230px, 145px);
+	box-shadow: 0 0 10px rgb(2, 131, 54), 0 0 10px rgba(2, 131, 54),
+	                   0 0 20px rgba(2, 131, 54),
+					   0 0 40px rgba(2, 131, 54),
+	                   0 0 80px rgba(2, 131, 54),
+					   0 0 120px rgba(2, 131, 54),
+					   0 0 160px rgba(2, 131, 54);
+}
+
+.bulb26 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #68cf93;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(236px, 145px);
+	box-shadow: 0 0 10px rgb(2, 131, 54), 0 0 10px rgba(2, 131, 54),
+	                   0 0 20px rgba(2, 131, 54),
+					   0 0 40px rgba(2, 131, 54),
+	                   0 0 80px rgba(2, 131, 54),
+					   0 0 120px rgba(2, 131, 54),
+					   0 0 160px rgba(2, 131, 54);
+}
+
+.bulb27 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #68cf93;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(242px, 145px);
+	box-shadow: 0 0 10px rgb(2, 131, 54), 0 0 10px rgba(2, 131, 54),
+	                   0 0 20px rgba(2, 131, 54),
+					   0 0 40px rgba(2, 131, 54),
+	                   0 0 80px rgba(2, 131, 54),
+					   0 0 120px rgba(2, 131, 54),
+					   0 0 160px rgba(2, 131, 54);
+}
+
+.bulb28 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #68cf93;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(146px, 151px);
+	box-shadow: 0 0 10px rgb(2, 131, 54), 0 0 10px rgba(2, 131, 54),
+	                   0 0 20px rgba(2, 131, 54),
+					   0 0 40px rgba(2, 131, 54),
+	                   0 0 80px rgba(2, 131, 54),
+					   0 0 120px rgba(2, 131, 54),
+					   0 0 160px rgba(2, 131, 54);
+}
+
+.bulb29 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #68cf93;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(152px, 151px);
+	box-shadow: 0 0 10px rgb(2, 131, 54), 0 0 10px rgba(2, 131, 54),
+	                   0 0 20px rgba(2, 131, 54),
+					   0 0 40px rgba(2, 131, 54),
+	                   0 0 80px rgba(2, 131, 54),
+					   0 0 120px rgba(2, 131, 54),
+					   0 0 160px rgba(2, 131, 54);
+}
+
+.bulb30 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(158px, 151px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb31 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(164px, 151px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb32 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(170px, 151px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb33 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(176px, 151px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb34 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #68cf93;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(182px, 151px);
+	box-shadow: 0 0 10px rgb(2, 131, 54), 0 0 10px rgba(2, 131, 54),
+	                   0 0 20px rgba(2, 131, 54),
+					   0 0 40px rgba(2, 131, 54),
+	                   0 0 80px rgba(2, 131, 54),
+					   0 0 120px rgba(2, 131, 54),
+					   0 0 160px rgba(2, 131, 54);
+}
+
+.bulb35 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #68cf93;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(188px, 151px);
+	box-shadow: 0 0 10px rgb(2, 131, 54), 0 0 10px rgba(2, 131, 54),
+	                   0 0 20px rgba(2, 131, 54),
+					   0 0 40px rgba(2, 131, 54),
+	                   0 0 80px rgba(2, 131, 54),
+					   0 0 120px rgba(2, 131, 54),
+					   0 0 160px rgba(2, 131, 54);
+}
+
+.bulb36 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #68cf93;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(194px, 151px);
+	box-shadow: 0 0 10px rgb(2, 131, 54), 0 0 10px rgba(2, 131, 54),
+	                   0 0 20px rgba(2, 131, 54),
+					   0 0 40px rgba(2, 131, 54),
+	                   0 0 80px rgba(2, 131, 54),
+					   0 0 120px rgba(2, 131, 54),
+					   0 0 160px rgba(2, 131, 54);
+}
+
+.bulb37 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #68cf93;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(200px, 151px);
+	box-shadow: 0 0 10px rgb(2, 131, 54), 0 0 10px rgba(2, 131, 54),
+	                   0 0 20px rgba(2, 131, 54),
+					   0 0 40px rgba(2, 131, 54),
+	                   0 0 80px rgba(2, 131, 54),
+					   0 0 120px rgba(2, 131, 54),
+					   0 0 160px rgba(2, 131, 54);
+}
+
+.bulb38 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(206px, 151px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb39 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(212px, 151px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb40 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(218px, 151px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb41 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(224px, 151px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb42 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #68cf93;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(230px, 151px);
+	box-shadow: 0 0 10px rgb(2, 131, 54), 0 0 10px rgba(2, 131, 54),
+	                   0 0 20px rgba(2, 131, 54),
+					   0 0 40px rgba(2, 131, 54),
+	                   0 0 80px rgba(2, 131, 54),
+					   0 0 120px rgba(2, 131, 54),
+					   0 0 160px rgba(2, 131, 54);
+}
+
+.bulb43 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #68cf93;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(236px, 151px);
+	box-shadow: 0 0 10px rgb(2, 131, 54), 0 0 10px rgba(2, 131, 54),
+	                   0 0 20px rgba(2, 131, 54),
+					   0 0 40px rgba(2, 131, 54),
+	                   0 0 80px rgba(2, 131, 54),
+					   0 0 120px rgba(2, 131, 54),
+					   0 0 160px rgba(2, 131, 54);
+}
+
+.bulb44 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(158px, 157px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb45 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(164px, 157px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb46 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(170px, 157px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb47 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(176px, 157px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb48 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #68cf93;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(182px, 157px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb49 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #68cf93;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(188px, 157px);
+	box-shadow: 0 0 10px rgb(2, 131, 54), 0 0 10px rgba(2, 131, 54),
+	                   0 0 20px rgba(2, 131, 54),
+					   0 0 40px rgba(2, 131, 54),
+	                   0 0 80px rgba(2, 131, 54),
+					   0 0 120px rgba(2, 131, 54),
+					   0 0 160px rgba(2, 131, 54);
+}
+
+.bulb50 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #68cf93;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(194px, 157px);
+	box-shadow: 0 0 10px rgb(2, 131, 54), 0 0 10px rgba(2, 131, 54),
+	                   0 0 20px rgba(2, 131, 54),
+					   0 0 40px rgba(2, 131, 54),
+	                   0 0 80px rgba(2, 131, 54),
+					   0 0 120px rgba(2, 131, 54),
+					   0 0 160px rgba(2, 131, 54);
+}
+
+.bulb51 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #68cf93;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(200px, 157px);
+	box-shadow: 0 0 10px rgb(2, 131, 54), 0 0 10px rgba(2, 131, 54),
+	                   0 0 20px rgba(2, 131, 54),
+					   0 0 40px rgba(2, 131, 54),
+	                   0 0 80px rgba(2, 131, 54),
+					   0 0 120px rgba(2, 131, 54),
+					   0 0 160px rgba(2, 131, 54);
+}
+
+.bulb52 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(206px, 157px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb53 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(212px, 157px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb54 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(218px, 157px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.bulb55 {
+	/*  rgba(2,131,54,0.6)  #ffcf3e */
+	content: '';
+	position: absolute;
+	background: #f1d170;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	/* X(the less the more left) Y(the less the higher) */
+	transform: translate(224px, 157px);
+	box-shadow: 0 0 10px #ffcf3e, 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+/* BULBS FOR THE MENU OPTION 1 */
+/* CONTACT ME 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+
+/* MEET THE CREATOR 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.navlist li b {
+	/* this removes link underline */
+	text-decoration: none;
+	align-content: center;
+	/* addition // aligns text vertically // https://www.youtube.com/watch?v=Jkp103YhW7A 19:00 */
+	text-align: center;
+	font-family: Celinea;
+	font-size: 4rem;
+	font-weight: lighter;
+	vertical-align: middle;
+	letter-spacing: 1px;
+	cursor: pointer;
+	/* addition // controls space between lines // https://www.uvm.edu/~bnelson/computer/css/changethespacingbetweenlines.html#:~:text=Use%20the%20line%2Dheight%20property,of%20vertical%20space%20between%20lines. */
+	line-height: 40pt;
+	/* addition // slant text effect; curiously enough, I luckily came up with the display value and it turns out to be essential for the...
+	...slant text effect to work, I just don't know why. // https://www.youtube.com/watch?v=r9Y3sweN-7M&list=PL5e68lK9hEzdGazIG1ONnb7TJ74Q69rH7&index=15 5:09 */
+	transform: skewY(-15deg);
+	display: inline-block;
+	/* addition without devil/transparent box (.logo)
+	   this helps add space bewteen "Meet The Creator" and "SUPPORT" */
+	margin-right: 149px;
+}
+
+.line4 {
+	color: #fff;
+	text-shadow: 0 0 10px #fff,
+	                   0 0 20px #fff,
+					   0 0 40px #fff,
+	                   0 0 80px #fff,
+					   0 0 120px #fff,
+					   0 0 160px #fff;
+}
+
+.line4 span {
+	color: #fff;
+	text-shadow: 0 0 10px #da020e, 0 0 10px #da020e,
+	                   0 0 20px #da020e, 0 0 20px #da020e,
+					   0 0 40px #da020e, 0 0 40px #da020e,
+	                   0 0 80px #da020e, 0 0 80px #da020e,
+					   0 0 120px #da020e, 0 0 120px #da020e,
+					   0 0 160px #da020e, 0 0 160px #da020e, 0 0 160px #da020e, 0 0 160px #da020e;
+}
+
+.line5 {
+	color: #fff;
+	text-shadow: 0 0 10px #fff,
+	                   0 0 20px #fff,
+					   0 0 40px #fff,
+	                   0 0 80px #fff,
+					   0 0 120px #fff,
+					   0 0 160px #fff;
+}
+/* MEET THE CREATOR 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+
+/* SUPPORT & DONATE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.navlist li d {
+	/* this removes link underline */
+	text-decoration: none;
+	align-content: center;
+	/* addition // aligns text vertically // https://www.youtube.com/watch?v=Jkp103YhW7A 19:00 */
+	text-align: center;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.line6 {
+	font-family: LIBRARY3AMsoft;
+	font-size: 2rem;
+	/* idea for space between letters */
+	letter-spacing: 1px;
+	color: #fff;
+	text-shadow: 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.line7 span {
+	font-family: LIBRARY3AMsoft;
+	font-size: 2rem;
+	color: #a8ddbe;
+	text-shadow: 0 0 10px #028336,
+	                   0 0 20px #028336,
+					   0 0 40px #028336,
+	                   0 0 80px #028336,
+					   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
+					   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
+}
+
+.line7 {
+	font-family: Neoneon;
+	font-size: 2rem;
+	color: #a8ddbe;
+	text-shadow: 0 0 10px #028336,
+	                   0 0 20px #028336,
+					   0 0 40px #028336,
+	                   0 0 80px #028336,
+					   0 0 120px #028336,
+					   0 0 160px #028336;
+}
+
+.line7-5 span {
+	position: absolute;
+	transform: translate(-45px, 20px) scale(4, 4);
+	color: white;
+	z-index: -1;
+	text-shadow: 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e;
+}
+
+.line7-5 span2 {
+	position: absolute;
+	transform: translate(0px, 15px) scale(3.25, 3.25);
+	color: white;
+	z-index: -1;
+	text-shadow: 0 0 10px #fffe, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff;
+}
+
+.line7-5 span3 {
+	position: absolute;
+	transform: translate(40px, 10px) scale(2.5, 2.5);
+	color: white;
+	z-index: -1;
+	text-shadow: 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e;
+}
+/* SUPPORT & DONATE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+
+/* WANNA LEARN A LANGUAGE? 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.navlist li e {
+	/* this removes link underline */
+	text-decoration: none;
+	align-content: center;
+	/* addition // aligns text vertically // https://www.youtube.com/watch?v=Jkp103YhW7A 19:00 */
+	text-align: center;
+	cursor: pointer;
+	vertical-align: middle;
+	line-height: 20pt;
+	/* addition to drop this text independently */
+	position: absolute;
+	transform: translateY(-30px)
+}
+
+.line8 {
+	font-family: Rookworst;
+	font-size: 3rem;
+	color: yellow;
+	-webkit-text-stroke: 1px red;
+	text-shadow: 0 0 10px #da020e,
+	                   0 0 20px #da020e,
+                   	   0 0 40px #da020e;
+}
+
+.line9 {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 1.5rem;
+	transform: translateY(5px);
+	color: white;
+	text-shadow: 0 0 10px #fffe,
+	                   0 0 20px #fffe,
+					   0 0 40px #fffe,
+					   0 0 80px #fffe,
+					   0 0 120px #fffe,
+					   0 0 160px #fffe,
+					   0 0 180px #fffe;
+}
+
+.line9 span {
+	position: absolute;
+	writing-mode: vertical-lr;
+	text-orientation: upright;
+	letter-spacing: -25px;
+	transform: translate(-40px, -10px);
+}
+
+.line9 span2 {
+	position: absolute;
+	writing-mode: vertical-lr;
+	text-orientation: upright;
+	letter-spacing: -25px;
+	transform: translate(-30px, -3px);
+}
+
+.line9 span3 {
+	position: absolute;
+	writing-mode: vertical-lr;
+	text-orientation: upright;
+	letter-spacing: -25px;
+	transform: translate(-35px, 4px);
+}
+
+.line10 {
+	font-family: Salonica;
+	font-size: 4rem;
+	transform: translateX(-5px);
+	color: white;
+	text-shadow: 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e,
+	                   0 0 20px #da020e,
+					   0 0 40px #da020e,
+					   0 0 80px #da020e,
+					   0 0 120px #da020e;
+}
+
+.line11 {
+	/* I came up with this position value to keep the rest of the text in its place */
+	position: absolute;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 1.3rem;
+	/* translateY overwrites translateX when written separately, this new way helps me adjust the two axis at the same time
+	Answer by Akshay: https://stackoverflow.com/questions/29648494/translatex-and-translatey-on-same-element
+	transform: translate(X, Y) */
+	transform: translate(155px, -88px);
+	/* https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation */
+	text-orientation: upright;
+	writing-mode: vertical-rl;
+	letter-spacing: -4px;
+	color: white;
+	text-shadow: 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.line12 span {
+	font-family: Zekton;
+	font-size: 1.6rem;
+	position: absolute;
+	transform: translate(-60px, 15px);
+	color: #fff;
+	text-shadow: 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.line12 span2 {
+	font-family: Lateef;
+	font-size: 3rem;
+	position: absolute;
+	transform: translate(-20px, -2px);
+	color: #a8ddbe;
+	text-shadow: 0 0 10px #028336,
+	                   0 0 20px #028336,
+					   0 0 40px #028336,
+	                   0 0 80px #028336,
+					   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
+					   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
+}
+
+.line12 span3 {
+	font-family: Josefin Sans, Consolas, 'Courier New', monospace;
+	font-size: 1.5rem;
+	position: absolute;
+	transform: translate(10px, 20px);
+	color: #fff;
+	text-shadow: 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+}
+
+.line12 span4 {
+	font-family: Josefin Sans, Consolas, 'Courier New', monospace;
+	font-size: 1.5rem;
+	position: absolute;
+	transform: translate(40px, 10px);
+	color: #a8ddbe;
+	text-shadow: 0 0 10px #028336,
+	                   0 0 20px #028336,
+					   0 0 40px #028336,
+	                   0 0 80px #028336,
+					   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
+					   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
+}
+/* WANNA LEARN A LANGUAGE? 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+
+/* SCOREBOARD (NEWS BANNER) 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.scoreboard-PL {
+	position: absolute;
+	width: 123.5px;
+	/* before cross-browser // original left: 617px */
+	left: 45.44%;
+	/* before cross-browser // original margin-top: -513px; */
+    top: 120.5%;
+	/* top: 80vh; */
+	background-size: cover;
+	display: flex;
+	overflow: hidden;
+	white-space: nowrap;
+	z-index: 5;
+	background: #3D195B;
+	box-shadow: 0 0 5px #3D195B,
+	                   0 0 25px #3D195B,
+					   0 0 50px #3D195B, 0 0 50px #3D195B, 0 0 50px #3D195B,
+					   0 0 200px #3D195B, 0 0 200px #3D195B, 0 0 300px #3D195B, 0 0 400px #3D195B;
+	cursor: pointer;
+}
+
+.scoreboard-PL .PL {
+	display: flex;
+}
+
+.scoreboard-PL .PL div {
+	color: #fff;
+	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
+	font-family: monospace;
+	font-size: 1em;
+	white-space: nowrap;
+	font-weight: 100;
+	display: flex;
+	animation: animate2 10s linear infinite;
+	animation-delay: -10s;
+}
+
+.scoreboard-PL .PL div span {
+	/* I was trying to make this ⮟ symbol aligned with the rest of the text because it dropped a bit, so I played
+	   with different properties, and even tried this one "margin-top", but maybe I put a lower value (-15px),
+	   and didn't try other values (like, -2px). I read Md. Rakibul Islam's answer below, and I tried -2px value,
+	   but I swear I had tried it, too! I guess I actually didn't. Anyways, the link is below.
+	   https://stackoverflow.com/questions/76853866/icon-and-text-are-not-aligned */
+	margin-top: -2px;
+	color: #da020e;
+	text-shadow: 0 0 2px #da020e, 0 0 2px #da020e, 0 0 2px #da020e, 0 0 2px #da020e;
+}
+
+.scoreboard-PL .PL div span2 {
+	color: #ffc40c;
+	text-shadow: 0 0 2px #ffc40c, 0 0 2px #ffc40c, #ffc40c, 0 0 2px #ffc40c;
+}
+
+.scoreboard-PL .PL div span3 {
+	color: #589444;
+	text-shadow: 0 0 2px #589444, 0 0 2px #589444, 0 0 2px #589444;
+}
+
+.scoreboard-PL .PL div:nth-child(2) {
+	animation: animate3 10s linear infinite;
+	animation-delay: -5s;
+}
+@keyframes animate2 {
+	0%
+	{
+		transform: translateX(100%);
+	}
+	100%
+	{
+		transform: translateX(-100%);
+	}
+}
+@keyframes animate3 {
+	0%
+	{
+		transform: translateX(0);
+	}
+	100%
+	{
+		transform: translateX(-200%);
+	}
+}
+/* SCOREBOARD (NEWS BANNER) 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+
+/* SCOREBOARD (TEAMS) 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.scoreboard-teams {
+	position: absolute;
+	width: 123.5px;
+	/* before cross-browser // left: 617px */
+	left: 45.45%;
+	/* before cross-browser // margin-top: -498px */
+	top: 122.8%;
+	/* "background-size: cover" when there's no img for background*/
+	/* background-size: cover; */
+	display: flex;
+	overflow: hidden;
+	white-space: nowrap;
+	z-index: 7;
+	cursor: pointer;
+	font-family: myFont;
+	font-size: .95em;
+	background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led\ texture.jpg);
+    /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+	background-size: 150% 150%;
+}
+
+.home span {
+	color: #da020e;
+	text-shadow: 0 0 2px #da020e;
+			           /* 0 0 25px #da020e, 0 0 50px #da020e, 0 0 50px #da020e,
+					   0 0 50px #da020e, 0 0 50px #da020e, 0 0 50px #da020e,
+					   0 0 200px #da020e, 0 0 200px #da020e, 0 0 300px #da020e, 0 0 400px #da020e; */
+	opacity: none;
+}
+
+.home {
+	color: #fff;
+	/* text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff,
+		               0 0 25px #fff, 0 0 50px #fff, 0 0 50px #fff,
+					   0 0 50px #fff, 0 0 50px #fff, 0 0 50px #fff,
+					   0 0 200px #fff, 0 0 200px #fff, 0 0 300px #fff, 0 0 400px #fff; */
+    opacity: none;
+}
+/* SCOREBOARD (TEAMS) 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+
+/* SCOREBOARD (RESULT, FINAL/REAL SCORE) 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+.scoreboard-result {	
+	color: white;
+	position: absolute;
+	width: 65.2px;
+	/* before cross-browser // left: 676.4px; */
+	left: 49.81%;
+	/* before cross-browser // margin-top: -498px; */
+	top: 122.8%;
+	/* "background-size: cover" when there's no img for background*/
+	/* background-size: cover; */
+	display: flex;
+	overflow: hidden;
+	white-space: nowrap;
+	z-index: 8;
+	cursor: pointer;
+	font-family: myFont;
+	font-size: .95em;
+	background: transparent;
+    /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+	background-size: 150% 150%;
+	text-align: center;
+}
+
+/* allows me put both the result (0-0) and the text "final/real score" side by side
+    Mr. Hugo's answer: https://stackoverflow.com/questions/37711138/display-2-ps-side-by-side
+	I had to add a few id in the HTML*/
+#scoreboard .scoreboard-result, #scoreboard .final-real {display: inline;}
+
+.final-real {
+	background: linear-gradient(rgba(254,29,18,0.6), rgba(254,29,18,0.6)), url(../parallax/led\ texture.jpg);
+	position: absolute;
+	background-size: 150% 150%;
+	/* box-shadow: 0 0 5px #fe1d12,
+	                   0 0 25px #fe1d12,
+					   0 0 50px #fe1d12, 0 0 50px #fe1d12, 0 0 50px #fe1d12,
+					   0 0 200px #fe1d12, 0 0 200px #fe1d12, 0 0 300px #fe1d12, 0 0 400px #fe1d12; */
+	/* after using "&thinsp;", the red mini-box left a space on the right that showed the background img,
+	so I put this "right:0" value to eliminate any space on that right. Answer by Garry Shutler.
+	https://stackoverflow.com/questions/65536/how-to-put-text-in-the-upper-right-or-lower-right-corner-of-a-box-using-css */
+	right: 0;
+}
+
+.box-shadow {
+	background-color: transparent;
+	/* shadow on bottom and right only: https://css-tricks.com/almanac/properties/b/box-shadow/ */
+	box-shadow: 4px 4px 50px 3px #da020e;
+	position: absolute;
+	z-index: 4;
+	width: 65.2px;
+	height: 31px;
+	/* before cross-browser // left: 676.4px; */
+	left: 49.81%;
+	/* before cross-browser // margin-top: -498px; */
+	top: 122.8%;
+}
+
+.scoreboard-result2 {
+	color: white;
+	position: absolute;
+	width: 65.2px;
+	/* before cross-browser // left: 676.4px; */
+	left: 49.81%;
+	/* before cross-browser // margin-top: -498px; */
+	top: 122.8%;
+	/* "background-size: cover" when there's no img for background*/
+	/* background-size: cover; */
+	display: flex;
+	overflow: hidden;
+	white-space: nowrap;
+	z-index: 7;
+	cursor: pointer;
+	font-family: myFont;
+	font-size: .95em;
+	background: transparent;
+    /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+	background-size: 150% 150%;
+	/* allows me to put the text aligned vertically */
+	text-align: center;
+	align-items: center;
+}
+
+/* allows me put both the result (0-0) and the text "final/real score" side by side
+    Mr. Hugo's answer: https://stackoverflow.com/questions/37711138/display-2-ps-side-by-side
+	I had to add a few id in the HTML*/
+#scoreboard2 .scoreboard-result2, #scoreboard2 .final-real2 {display: inline;}
+
+.final-real2 {
+	color: #ffcf3e;
+	background: linear-gradient(rgba(2,131,54,0.6), rgba(2,131,54,0.6)), url(../parallax/led\ texture.jpg);
+	position: absolute;
+	background-size: 150% 150%;
+	/* box-shadow: 0 0 5px #fe1d12,
+	                   0 0 25px #fe1d12,
+					   0 0 50px #fe1d12, 0 0 50px #fe1d12, 0 0 50px #fe1d12,
+					   0 0 200px #fe1d12, 0 0 200px #fe1d12, 0 0 300px #fe1d12, 0 0 400px #fe1d12; */
+	/* after using "&thinsp;", the red mini-box left a space on the right that showed the background img,
+	so I put this "right:0" value to eliminate any space on that right. Answer by Garry Shutler.
+	https://stackoverflow.com/questions/65536/how-to-put-text-in-the-upper-right-or-lower-right-corner-of-a-box-using-css */
+	right: 0;
+}
+
+.box-shadow2 {
+	background-color: transparent;
+	/* shadow on bottom and right only: https://css-tricks.com/almanac/properties/b/box-shadow/ */
+	box-shadow: 4px 4px 50px 3px #028336;
+	position: absolute;
+	z-index: 4;
+	width: 65.2px;
+	height: 31px;
+	/* before cross-browser // left: 676.4px; */
+	left: 49.81%;
+	/* before cross-browser // margin-top: -498px; */
+	top: 122.8%;
+}
+/* SCOREBOARD (RESULT, FINAL/REAL SCORE) 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+
+/* OPACITY ANIMATION OF SCOREBOARD 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+/* I found that slideshow from top to bottom is only possible with gsap/javascript/bootstrap or stuff like that
+    I thought opacity animation was a good idea
+	https://www.w3.org/Style/Examples/007/slideshow.en.html */
+#scoreboard {
+	animation: 5s autoplay infinite linear;
+}
+
+@keyframes autoplay {
+	0% {opacity: 0.0}
+	4% {opacity: 1.0}
+	33.33% {opacity: 1.0}
+	37.33% {opacity: 0.0}
+	100% {opacity: 0.0}
+  }
+
+
+#scoreboard2 {
+	animation: 5s autoplay2 infinite linear;
+}
+
+@keyframes autoplay2 {
+	0% {opacity: 0.0}
+	4% {opacity: 0.0}
+	41.33% {opacity: 0.0}
+	42.33% {opacity: 0.2}
+	48.33% {opacity: 0.5}
+	51.33% {opacity: 1.0}
+	100% {opacity: 1.0}
+  }
+
+#box-shadow {
+	animation: 5s autoplay3 infinite linear;
+}
+
+@keyframes autoplay3 {
+	0% {opacity: 0.0}
+	4% {opacity: 1.0}
+	33.33% {opacity: 1.0}
+	37.33% {opacity: 0.0}
+	100% {opacity: 0.0}
+  }
+
+#box-shadow2 {
+	animation: 5s autoplay4 infinite linear;
+}
+
+@keyframes autoplay4 {
+	0% {opacity: 0.0}
+	4% {opacity: 0.0}
+	41.33% {opacity: 0.0}
+	42.33% {opacity: 0.2}
+	48.33% {opacity: 0.5}
+	51.33% {opacity: 1.0}
+	100% {opacity: 1.0}
+}
+/* OPACITY ANIMATION OF SCOREBOARD 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+
+/* CABLES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.cables {
+	position: absolute;
+	object-fit: cover;
+	display: inline-block;
+	width: 100%;
+	z-index: 2;
+	/* addition for the cross-browser modification */
+	bottom: -45.1vh;
+}
+/* CABLES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+
+/* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */
+/* make responsive, and changing px to %: https://www.youtube.com/watch?v=YSdMqb-Mk6Y */
+@media only screen and (max-width: 600px) {
+	/* https://stackoverflow.com/questions/23110412/css-scale-several-images-to-fit-viewport-keeping-aspect-ratio */
+	html, body {
+		overflow-x: hidden;
+	}
+    body {
+        overflow-y: hidden;
+    }
+
+	.parallax-home img {
+		width: 170%;  /* how big the sky and ground are */
+		top: 0;
+        left: -40%;  /* moves the sky and ground to the left */
+	}
+	#flag {
+        width: 70%;
+        left: 20%;
+        top: 18%;
+	}
+
+	.title1 {
+		font-size: .8rem;
+		top: 29%;
+		-webkit-text-stroke: .5px #ffab447c;
+	}
+	.title2 {
+		font-size: 1.4rem;
+		top: 32%;        
+		-webkit-text-stroke: 2px #fe7d8648;
+	}
+
+    .cables {
+		height: 30%;
+		top: 41.5%;
+	}
+
+    .navlist li {
+    margin-left: 0;
+	padding: .7em;  /* the space between menu text */
+    margin-top: -260%;
+    z-index: 2;  /* addition: so that the cables shadow doesn't block the menu */
+    }
+    .line1 {
+        font-size: .7rem;
+    }    
+    .line2 {
+        font-size: .7rem;
+    }    
+    .line3 {
+        font-size: .57rem;
+    }
+    .navlist li b {
+        font-size: 1.4rem;  /* font size for all of "Meet The Creator" (.line4 and .line5)*/
+        line-height: 15pt;  /* space between lines */
+        margin-right: 0;  /* without devil/transparent box (.logo); adds/removes space between "Meet The Creator" and "SUPPORT" */
+    }
+    .line6 {
+        font-size: .7rem;
+    }    
+    .line7 span {
+        font-size: .7rem;
+    }    
+    .line7 {
+        font-size: .7rem;
+    }    
+    .line7-5 span { display: none;}    
+    .line7-5 span2 { display: none;}    
+    .line7-5 span3 { display: none;}
+    .navlist li e {
+        transform: translateY(-24px)
+    }    
+    .line8 {
+        font-size: 1rem;
+        -webkit-text-stroke: .2px red;
+    }    
+    .line9 {
+        font-size: .6rem;
+        transform: translateY(-15px);
+    }    
+    .line9 span  { display: none;}    
+    .line9 span2  { display: none;}    
+    .line9 span3  { display: none;}    
+    .line10 {
+        font-size: 1.4rem;
+        transform: translate(-3px, -30px);
+    }    
+    .line11 {
+        font-size: .4rem;
+        transform: translate(47px, -74px);
+        letter-spacing: 1px;
+    }    
+    .line12 span {
+        font-size: .5rem;
+        transform: translate(-25px, -45px);
+    }
+    .line12 span2 {
+        font-size: 1rem;
+        transform: translate(-10px, -45px);
+    }
+    .line12 span3 {
+        font-size: .4rem;
+        transform: translate(5px, -40px);
+    }
+    .line12 span4 {
+        font-size: .4rem;
+        transform: translate(15px, -45px);
+    }
+    
+	.menu-bulbs { display: none;}
+
+	.scoreboard-PL {
+		width: 24.5%;
+		left: 37.8%;
+		top: 55.4%;
+		z-index: 5;
+	}	
+	.scoreboard-PL .PL div {
+		color: #fff;
+		text-shadow: 0 0 2px #fff;
+		font-family: monospace;
+		font-size: .75em;
+		white-space: nowrap;
+		font-weight: 100;
+		display: flex;
+		animation: animate2 10s linear infinite;
+		animation-delay: -10s;
+	}
+	
+	.scoreboard-PL .PL div span {
+		/* I was trying to make this ⮟ symbol aligned with the rest of the text because it dropped a bit, so I played
+		   with different properties, and even tried this one "margin-top", but maybe I put a lower value (-15px),
+		   and didn't try other values (like, -2px). I read Md. Rakibul Islam's answer below, and I tried -2px value,
+		   but I swear I had tried it, too! I guess I actually didn't. Anyways, the link is below.
+		   https://stackoverflow.com/questions/76853866/icon-and-text-are-not-aligned */
+		margin-top: -2px;
+		color: #da020e;
+		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e, 0 0 2px #da020e, 0 0 2px #da020e;
+	}
+	
+	.scoreboard-teams {
+	/* width: 88px; SEE IF % RESIZES BETTER THAN PX */
+	width: 24.5%;
+	left: 37.8%;
+	top: 57.1%;
+	display: flex;
+	overflow: hidden;
+	white-space: nowrap;
+	z-index: 7;
+	cursor: pointer;
+	font-family: myFont;
+	font-size: .6em;
+	background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led\ texture.jpg);
+    /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+	background-size: 150% 150%;
+    }
+    /* SCOREBOARD (RESULT, FINAL/REAL SCORE) 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+    .scoreboard-result {
+	width: 65.2px;
+	left: 49.81%;
+	top: 57.1%;
+	font-size: .6em;
+    }
+    /* puts both the result (0-0) and the text "final/real score" side by side
+       margin-right property controls space between these two*/
+    #scoreboard .scoreboard-result, #scoreboard .final-real {display: inline; margin-right: 30.7%;}
+    .box-shadow {
+	box-shadow: 0px 0px 40px 0px #da020e;
+	width: 33px;
+	height: 20px;
+	left: 53.3%;
+	top: 57.1%;
+    }
+    .scoreboard-result2 {
+	width: 65.2px;
+	left: 49.81%;
+	top: 57.1%;
+	font-size: .6em;
+    }
+    /* allows me put both the result (0-0) and the text "final/real score" side by side
+       margin-right property controls space between these two*/
+    #scoreboard2 .scoreboard-result2, #scoreboard2 .final-real2 {display: inline; margin-right: 30.7%;}
+    .box-shadow2 {
+	box-shadow: 0px 0px 40px 0px #028336;
+	width: 33px;
+	height: 20px;
+	left: 53.3%;
+	top: 57.1%;
+    }
+}
+/* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */
