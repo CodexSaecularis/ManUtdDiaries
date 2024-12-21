@@ -71,7 +71,7 @@ body {
 
 
 /* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */
-/* make responsive, and changing px to %: https://www.youtube.com/watch?v=YSdMqb-Mk6Y */
+/* use vw for font-size and line-height, use % for margin-top, left, etc; play with 'vw' and '%' anyways */
 @media only screen and (max-width: 600px) {
 	/* https://stackoverflow.com/questions/23110412/css-scale-several-images-to-fit-viewport-keeping-aspect-ratio */
 	html, body {
@@ -93,10 +93,10 @@ body {
 		left: -28%;  /* moves the sky and ground to the left */
 	}
 	.title {
-		border: solid red 1px;
+		/* border: solid red 1px; */
 		position: absolute;
 		margin-top: 52%;
-		width: 100%;
+		width: 100%;  /* to cover the width of the screen */
 	}
 	.title h1 {
 		color: transparent;
@@ -113,7 +113,19 @@ body {
 		-webkit-background-clip: text;
 		-moz-background-clip: text;
 		background-clip: text;
-		-webkit-text-stroke: 2.5px #ffab447c;		
+		-webkit-text-stroke: 1px #ffab447c;		
+	}
+	.title h2 {
+		transform: translateY(-10%);
+		color: transparent;
+		font-size: 3vw;
+		font-family: raleway_f;
+		/* font border // https://www.geeksforgeeks.org/css-font-border/#using-textstroke-property */
+		/* original -webkit-text-stroke: 3px #fe7d85; */
+		-webkit-text-stroke: 1px #fe7d8648;
+		-webkit-background-clip: text;
+		-moz-background-clip: text;
+		background-clip: text;
 	}
 	#flag {
 		position: absolute;
@@ -768,21 +780,23 @@ body {
 	/* 2023/24 (TEXT) */
 	.brick-wall h1 {
 		position: absolute;
-		/* width: 123.5px; */
-		/* before cross-browser // original left: 480px; */
 		margin-top: -46%;
 		left: 25.5%;
-		/* margin-top: -79.5vh; */
 		background-size: cover;
 		z-index: 7;
 		font-family: raleway_f;
 		font-size: 11vw;
 		mix-blend-mode: overlay;
-	}
-	
+	}	
 	.brick-wall h1 span {
-		/* color: #ef5268; */
 		color: #ec334d;
+	}
+	#cable-box { display: none; }
+	.gallery-banner {
+		position: absolute;
+		width: 100%;
+		margin-top: -32.35%;
+		z-index: 2;
 	}
 }
 /* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */
