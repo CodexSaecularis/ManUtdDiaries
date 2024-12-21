@@ -92,14 +92,17 @@ body {
 		width: 150%;  /* how big the sky and ground are */
 		left: -28%;  /* moves the sky and ground to the left */
 	}
-	.title1 {
+	.title {
+		border: solid red 1px;
 		position: absolute;
-		top: 50px;
+		margin-top: 52%;
+		width: 100%;
+	}
+	.title h1 {
 		color: transparent;
+		font-size: 4vw;
 		font-family: raleway_f;
-		font-size: .8rem;
-		font-weight: 900;
-		letter-spacing: 7px;
+		letter-spacing: 1vw;
 		text-shadow: 0 0 5px #ff0434,
 						   0 0 5px yellow,
 						   0 0 20px #cd000d,
@@ -110,27 +113,15 @@ body {
 		-webkit-background-clip: text;
 		-moz-background-clip: text;
 		background-clip: text;
-		-webkit-text-stroke: .5px #ffab447c;
+		-webkit-text-stroke: 2.5px #ffab447c;		
 	}
-	.title2 {
+	#flag {
 		position: absolute;
-		top: 200px;
-		color: transparent;
-		font-family: raleway_f;
-		font-size: 1.4rem;
-		font-weight: 900;
-		letter-spacing: 9px;
-		text-shadow: 0 0 1px #ff0c24,
-						   0 0 5px #fe7d85,
-						   0 0 20px #cd000d, 0 0 20px #cd000d, 0 0 20px #cd000d, 0 0 20px #cd000d,
-						   0 0 40px #cd000d,
-						   0 0 80px #cd000d,
-						   0 0 120px #cd000d,
-						   0 0 160px #cd000d;
-		-webkit-text-stroke: 2px #fe7d8648;
-		-webkit-background-clip: text;
-		-moz-background-clip: text;
-		background-clip: text;
+		margin-top: 20%;
+		left: 7%;
+		width: 100%;
+		transform:rotate(-15deg);
+		z-index: 1;
 	}
 	/* UNDERGROUND SUPPORT 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.underground-cables {
@@ -145,7 +136,7 @@ body {
 	.select-season {
 		/* border: solid red 1px; */
 		position: absolute;
-		margin-top: -35.3vw;  /* with respect to .underground-cables */
+		margin-top: -34.5%;  /* with respect to .underground-cables */
 		margin-left: .5vw;  /* moves everything to the left/right */
 		z-index: 8;
 		width: 27vw;
@@ -451,7 +442,7 @@ body {
 		height: 7vw;
 		width: 16%;  /* responsive: exact width so it won't exceed right margin; adjust according to screen width (@media) */
 		margin-top: -35%;  /* with respect to .underground-cables original -34.7% */
-		left: 83.6%;
+		left: 83.4%;
 		display: flex;
 		overflow: hidden;
 		white-space: nowrap;
@@ -515,12 +506,11 @@ body {
     /* MENU 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	header {
 		/* border: solid red 1px; */
-		margin-top: -27%;  /* with respect to .underground-cables original -34.7% */
+		margin-top: -23%;  /* with respect to .underground-cables original -34.7% */
 		justify-content: space-between;
 		align-items: center;
-		/* 100% // my best guess is so that contents occupy the width of the entire screen */
-		width: 100%;
-		height: 25vw;
+		width: 100%;  /* 100% // my best guess is so that text occupies the width of the screen */
+		height: 23vw;  /* this specific height 'cuz it coincides with the border line of .cables */
 	}
 	ul.navlist {
 		display: flex;
@@ -532,11 +522,11 @@ body {
 	}	
 	/* CONTACT ME 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.navlist li a {
-		/* this removes link underline */
-		text-decoration: none;
+		display: inline-block;  /* allows me to move this text freely */
+		transform: translateY(25%);
+		text-decoration: none;  /* this removes link underline */
 		align-content: center;
-		/* addition // aligns text vertically // https://www.youtube.com/watch?v=Jkp103YhW7A 19:00 */
-		text-align: center;
+		text-align: center;  /* aligns text vertically // https://www.youtube.com/watch?v=Jkp103YhW7A 19:00 */
 	}	
 	.line1 {
 		font-family: BeonMedium;
@@ -601,11 +591,9 @@ body {
 		font-size: 10vw;
 		font-weight: lighter;
 		vertical-align: middle;
-		letter-spacing: 1px;
-		cursor: pointer;
 		line-height: 7vw;
 		transform: skewY(-15deg);
-		display: inline-block;
+		display: inline-block;  /* allows me to move this text freely */
 	}
 	
 	.line4 {
@@ -616,8 +604,7 @@ body {
 						   0 0 80px #fff,
 						   0 0 120px #fff,
 						   0 0 160px #fff;
-	}
-	
+	}	
 	.line4 span {
 		color: #fff;
 		text-shadow: 0 0 10px #da020e, 0 0 10px #da020e,
@@ -626,8 +613,7 @@ body {
 						   0 0 80px #da020e, 0 0 80px #da020e,
 						   0 0 120px #da020e, 0 0 120px #da020e,
 						   0 0 160px #da020e, 0 0 160px #da020e, 0 0 160px #da020e, 0 0 160px #da020e;
-	}
-	
+	}	
 	.line5 {
 		color: #fff;
 		text-shadow: 0 0 10px #fff,
@@ -636,11 +622,11 @@ body {
 						   0 0 80px #fff,
 						   0 0 120px #fff,
 						   0 0 160px #fff;
-	}
-	/* MEET THE CREATOR 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	
+	}	
 	/* SUPPORT & DONATE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.navlist li d {
+		display: inline-block;  /* allows me to move this text freely */
+		transform: translateY(10%);
 		/* this removes link underline */
 		text-decoration: none;
 		align-content: center;
@@ -648,12 +634,10 @@ body {
 		text-align: center;
 		cursor: pointer;
 		vertical-align: middle;
-	}
-	
+	}	
 	.line6 {
 		font-family: LIBRARY3AMsoft;
-		font-size: 3.2vw;
-		/* idea for space between letters */
+		font-size: 3.3vw;
 		letter-spacing: 1px;
 		color: #fff;
 		text-shadow: 0 0 10px #ffcf3e,
@@ -662,11 +646,10 @@ body {
 						   0 0 80px #ffcf3e,
 						   0 0 120px #ffcf3e,
 						   0 0 160px #ffcf3e;
-	}
-	
+	}	
 	.line7 span {
 		font-family: LIBRARY3AMsoft;
-		font-size: 3.2vw;
+		font-size: 3.3vw;
 		color: #a8ddbe;
 		text-shadow: 0 0 10px #028336,
 						   0 0 20px #028336,
@@ -674,11 +657,10 @@ body {
 						   0 0 80px #028336,
 						   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
 						   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
-	}
-	
+	}	
 	.line7 {
 		font-family: Neoneon;
-		font-size: 3.2vw;
+		font-size: 3.3vw;
 		color: #a8ddbe;
 		text-shadow: 0 0 10px #028336,
 						   0 0 20px #028336,
@@ -690,17 +672,14 @@ body {
 	.line7-5 { display: none; }	
 	/* WANNA LEARN A LANGUAGE? 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.navlist li e {
-		/* this removes link underline */
 		text-decoration: none;
 		align-content: center;
-		/* addition // aligns text vertically // https://www.youtube.com/watch?v=Jkp103YhW7A 19:00 */
 		text-align: center;
 		cursor: pointer;
 		vertical-align: middle;
-		line-height: 20pt;
-		/* addition to drop this text independently */
-		position: absolute;
-		transform: translateY(-30px)
+		line-height: 5vw;
+		display: inline-block;  /* allows me to move this text freely */
+		transform: translateY(-7%)
 	}	
 	.line8 {
 		font-family: Rookworst;
@@ -715,7 +694,7 @@ body {
 	.line10 {
 		font-family: Salonica;
 		font-size: 10vw;
-		transform: translateX(-5px);
+		transform: translateX(5%);
 		color: white;
 		text-shadow: 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e,
 						   0 0 20px #da020e,
@@ -728,7 +707,7 @@ body {
 		font-family: Zekton;
 		font-size: 3vw;
 		position: absolute;
-		transform: translate(-60px, 15px);
+		transform: translate(-390%, 30%);
 		color: #fff;
 		text-shadow: 0 0 10px #ffcf3e,
 						   0 0 20px #ffcf3e,
@@ -741,7 +720,7 @@ body {
 		font-family: Lateef;
 		font-size: 6vw;
 		position: absolute;
-		transform: translate(-20px, -2px);
+		transform: translate(-70%, 0%);
 		color: #a8ddbe;
 		text-shadow: 0 0 10px #028336,
 						   0 0 20px #028336,
@@ -749,13 +728,12 @@ body {
 						   0 0 80px #028336,
 						   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
 						   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
-	}
-	
+	}	
 	.line12 span3 {
 		font-family: Josefin Sans, Consolas, 'Courier New', monospace;
-		font-size: 3vw;
+		font-size: 3.5vw;
 		position: absolute;
-		transform: translate(10px, 20px);
+		transform: translate(100%, 50%);
 		color: #fff;
 		text-shadow: 0 0 10px #ffcf3e,
 						   0 0 20px #ffcf3e,
@@ -764,12 +742,11 @@ body {
 						   0 0 120px #ffcf3e,
 						   0 0 160px #ffcf3e;
 	}
-
 	.line12 span4 {
 		font-family: Josefin Sans, Consolas, 'Courier New', monospace;
 		font-size: 3vw;
 		position: absolute;
-		transform: translate(40px, 10px);
+		transform: translate(300%, 10%);
 		color: #a8ddbe;
 		text-shadow: 0 0 10px #028336,
 						   0 0 20px #028336,
@@ -777,6 +754,35 @@ body {
 						   0 0 80px #028336,
 						   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
 						   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
+	}
+	/* BRICKS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.bricks {
+		position: relative;
+		border: solid green 1px;
+		margin-top: -50%;  /* with respect to header (menu) */
+		width: 200%;
+		left: -44%;
+		z-index: -4;
+	}
+	
+	/* 2023/24 (TEXT) */
+	.brick-wall h1 {
+		position: absolute;
+		/* width: 123.5px; */
+		/* before cross-browser // original left: 480px; */
+		margin-top: -46%;
+		left: 25.5%;
+		/* margin-top: -79.5vh; */
+		background-size: cover;
+		z-index: 7;
+		font-family: raleway_f;
+		font-size: 11vw;
+		mix-blend-mode: overlay;
+	}
+	
+	.brick-wall h1 span {
+		/* color: #ef5268; */
+		color: #ec334d;
 	}
 }
 /* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */
