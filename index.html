@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Responsive</title> 
+     <link rel="stylesheet" href="css/global.css">
+     <link rel="icon" href="parallax/Man Utd.ico">  <!-- Michał Perłakowski: https://stackoverflow.com/questions/4888377/how-to-add-a-browser-tab-icon-favicon-for-a-website -->
+</head>
+
+<body>
+     
+    <section class="parallax-home">
+          <img src="parallax/sky.png" class="sky">
+          <!-- original: <h1 id="text">MAN UTD DIARIES</h1> -->
+          <!-- <h1 id="text">REVISIT OLD MATCHES<p>MAN UTD DIARIES<p></h1> -->
+          <!-- <h2 id="text" class="line13">MAN UTD DIARIES</h2> -->
+          <!-- <div class="title"><span class="title1">REVISIT OLD MATCHES</span>
+                                    <span class="title2"><br>MAN UTD DIARIES</span>
+            </div> -->
+            <div class="title1">REVISIT OLD MATCHES</div>
+          <div class="title2">MAN UTD DIARIES</div>
+          <img src="parallax/ground1.png" class="ground">
+    </section>
+
+    <section class="underground-cables">          
+          <img src="parallax/cables3.png" class="cables">
+    </section>
+
+    <section class="select-season">
+          <div class="nav_container-season">                    
+               <ul class="dropdown-season">
+                    <li class="season-list">
+                         <a class="checkbox-size" id="dropdown-pointer">  <!-- deleted href="#" to stop any page jump -->
+                              <input type="checkbox" class="dropdown-check"><span class="select-season-title"><span1><br />since <span2>2023</span2></span1><span3><br />SELECT SEASON</span3>
+                         </a>
+
+                         <div class="dropdown-content-display">
+                              <ul class="dropdown-sub-season">                                   
+                                   <li class="dropdown-li">
+                                        <img class="season-content" src="underground/1base1-mobile.png" alt="">
+                                        <img class="season-content" src="underground/1base3.png" alt="">
+                                        <img class="season-content" src="underground/1base4.png" alt="">
+                                        <img class="season-content" src="underground/1base5.png" alt="">
+                                             <a class="season-19-20" href="/seasons/2024-25/2024-25.html" target="_blank" id="links">
+                                                  <img src="/underground/1base2.png">
+                                             </a>                                             
+                                             <a class="season-20-21" href="/2024-25.html" target="_blank" id="links">
+                                                  <img src="/underground/1base2.png">
+                                             </a>
+                                        <img class="season-content" src="underground/1base6.png" alt="">
+                                        <img class="season-content" src="underground/1base7.png" alt="">
+                                   </li>
+                              </ul>
+                         </div>
+                         
+                    </li>
+               </ul>
+          </div>
+     </section>
+
+     <!-- how to create jump link: https://blog.hubspot.com/marketing/jump-link-same-page -->
+    <a href="#jump">
+          <!-- https://www.youtube.com/watch?v=3T4rD_P2nc8&list=PL5e68lK9hEzdGazIG1ONnb7TJ74Q69rH7&index=128
+               Although I had to make a few adjustments here in HTML and in CSS -->
+          <div class="scoreboard-PL" id="links">
+               <div class="PL">
+                    <!-- I learned of "&nbsp;" value to add non-breaking space thanks to: https://blog.hubspot.com/website/html-space#:~:text=The%20simplest%20way%20to%20add,%3B%20or%20. -->
+                    <!-- (⮝ ⮞) -->
+                    <div>Premier League >>&nbsp;<span>⮟&nbsp;</span>8th >>&nbsp;<span2>5/10&nbsp;</span2>(1H) >>&nbsp;<span3>7.5/10&nbsp;</span3>(2H) >>&nbsp;</div>
+                    <div>Premier League >>&nbsp;<span>⮟&nbsp;</span>8th >>&nbsp;<span2>5/10&nbsp;</span2>(1H) >>&nbsp;<span3>7.5/10&nbsp;</span3>(2H) >>&nbsp;</div>
+               </div>
+          </div>
+
+          <!-- SCOREBOARD -->    
+          <div class="scoreboard-teams" id="links">
+               <div class="home">
+                    <p><span>&nbsp;MUN</span></p>
+                    <p>&nbsp;LIV</p>
+               </div>
+          </div>
+              
+          <div class="scoreboard-teams-mobile" id="links">
+               <div class="home">
+                    <p><span>&nbsp;MAN UNITED</span></p>
+                    <p>&nbsp;LIVERPOOL</p>
+               </div>
+          </div>
+
+          <div class="scoreboard-result" id="scoreboard">
+               <div class="result" id="text-left">
+                    <!-- smaller than regular space // answer by knittle: https://stackoverflow.com/questions/2720770/how-to-create-small-spaces-in-html -->
+                    <p>0&thinsp;</p>
+                    <p>0&thinsp;</p>
+               </div>
+               <div class="final-real" id="text-right">
+                    <p>&thinsp;FINAL&thinsp;</p>
+                    <p>&thinsp;SCORE&thinsp;</p>
+               </div>
+          </div>
+
+          <div class="scoreboard-result2" id="scoreboard2">
+               <div class="result2" id="text-left2">
+                    <p>1&thinsp;</p>
+                    <p>0&thinsp;</p>
+               </div>
+               <div class="final-real2" id="text-right2">
+                    <p>&thinsp;REAL&thinsp;</p>
+                    <p>&thinsp;SCORE&thinsp;</p>
+               </div>
+          </div>
+     </a>     
+
+     <!-- CLOCK -->
+     <div class="clock" id="timeboard">
+      <div class="time" id="time">
+           <p id="clock"></p>
+      </div>
+      <div class="republik-of-mancunia" id="republik-of-mancunia">
+           <p>ЯEPUБLIK ФF</p>
+           <p>MAИCUИIA</p>
+      </div>
+      </div>
+
+     <!-- VERTICAL STRIPES FOR THE CLOCK -->
+     <div class="clock-vertical-stripes">
+          <div class="clock-vertical-stripe1"></div>
+          <div class="clock-vertical-stripe2"></div>
+          <div class="clock-vertical-stripe3"></div>
+          <div class="clock-vertical-stripe4"></div>
+          <div class="clock-vertical-stripe5"></div>
+          <div class="clock-vertical-stripe6"></div>
+     </div>
+     <!-- VERTICAL STRIPES FOR THE CLOCK -->
+
+    <script src="js/script.js"></script>
+    <!-- https://www.youtube.com/watch?v=-likemsorlw -->
+    <script>
+     var getClock = function() {
+          document.getElementById("clock").innerHTML = new Date() .toLocaleString("en-GB",{timeZone: 'Europe/London', timeStyle:"short", hourcycle:'h24'});
+     }
+     getClock();
+     setInterval(getClock, 1000);
+    </script>
+     <!-- CLOCK -->
+
+    <header>
+        <ul class="navlist">
+            <li><a href="#contact">
+                        <div class="line1">
+                            WANN<span>A</span> SAY
+                        </div>
+                        <div class="line2">
+                            SOMETHING?
+                        </div>
+                        <div class="line3">
+                            contact me
+                        </div>
+                </a>
+            </li>
+            <li><b href="#know-me">
+                        <div class="line4">
+                            Meet <span>The</span>
+                        </div>
+                        <div class="line5">
+                            Creator
+                        </div>
+                </b>
+            </li>
+            <li><d href="#support">
+                    <div class="line6">
+                            SUPPORT
+                    </div>
+                    <div class="line7">
+                            <span>&</span> DONATE
+                    </div>
+                    <div class="line7-5">
+                            <span>⇩</span><span2>⇩</span2><span3>⇩</span3>
+                    </div>
+                </d>
+            </li>
+            <li><e href="#learn-a-language">
+                        <div class="line8">
+                             WANNA LEARN <span>A</span>
+                        </div>
+                        <div class="line9">
+                             <span>➡</span><span2>➡</span2><span3>➡</span3>A
+                        </div>
+                        <div class="line10">
+                             language?
+                        </div>
+                        <div class="line11">
+                             SIUUU
+                        </div>
+                        <div class="line12">
+                             <span>Я</span><span2>ق</span2><span3>Ñ</span3><span4>曼</span4>
+                               
+                        </div>
+                </e>
+            </li>
+        </ul>
+    </header>
+
+</body>
