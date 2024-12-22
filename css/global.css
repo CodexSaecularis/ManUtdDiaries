@@ -315,30 +315,6 @@ body {
 	.scoreboard-PL .PL div span3 {
 		color: #589444;
 		text-shadow: 0 0 2px #589444, 0 0 2px #589444, 0 0 2px #589444;
-	}	
-	.scoreboard-PL .PL div:nth-child(2) {
-		animation: animate3 10s linear infinite;
-		animation-delay: -5s;
-	}
-	@keyframes animate2 {
-		0%
-		{
-			transform: translateX(100%);
-		}
-		100%
-		{
-			transform: translateX(-100%);
-		}
-	}
-	@keyframes animate3 {
-		0%
-		{
-			transform: translateX(0);
-		}
-		100%
-		{
-			transform: translateX(-200%);
-		}
 	}
 	/* SCOREBOARD (TEAMS) 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.scoreboard-teams { display: none; }  /* PC version */
