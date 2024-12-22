@@ -1126,5 +1126,16 @@ body {
 		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
 		pointer-events: none;
 	}
+	.dropdown_link-transition {
+		/* border: solid 1px red; */
+		background-image: url(../underground/AIG-player-stats-below.png);
+		background-size: 122% 100%;
+		color: white;
+		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
 }
 /* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */
