@@ -65,8 +65,8 @@
                <div class="PL">
                     <!-- I learned of "&nbsp;" value to add non-breaking space thanks to: https://blog.hubspot.com/website/html-space#:~:text=The%20simplest%20way%20to%20add,%3B%20or%20. -->
                     <!-- (⮝ ⮞ ⮟ &#11167;) -->
-                    <div>Premier League >>&nbsp;<span>&#129095;&nbsp;</span>8th >>&nbsp;<span2>5/10&nbsp;</span2>(1H) >>&nbsp;<span3>7.5/10&nbsp;</span3>(2H) >>&nbsp;</div>
-                    <div>Premier League >>&nbsp;<span>&#x2B9F;&nbsp;</span>8th >>&nbsp;<span2>5/10&nbsp;</span2>(1H) >>&nbsp;<span3>7.5/10&nbsp;</span3>(2H) >>&nbsp;</div>
+                    <div>Premier League >>&nbsp;<span>&#11167;&nbsp;</span>8th >>&nbsp;<span2>5/10&nbsp;</span2>(1H) >>&nbsp;<span3>7.5/10&nbsp;</span3>(2H) >>&nbsp;</div>
+                    <div>Premier League >>&nbsp;<span>⮟&nbsp;</span>8th >>&nbsp;<span2>5/10&nbsp;</span2>(1H) >>&nbsp;<span3>7.5/10&nbsp;</span3>(2H) >>&nbsp;</div>
                </div>
           </div>
 
@@ -107,7 +107,10 @@
                     <p>&thinsp;SCORE&thinsp;</p>
                </div>
           </div>
-     </a>     
+     </a>
+
+     <div class="box-shadow" id="box-shadow"></div> 
+     <div class="box-shadow2" id="box-shadow2"></div>
 
      <!-- CLOCK -->
      <div class="clock" id="timeboard">
@@ -325,6 +328,73 @@
                               <input type="checkbox" class="dropdown_check-transition"><span class="player-stats-below"></span>
                          </a>
                     </li>
+
+
+
+
+                    <li class="dropdown_list" id="jump">
+                         <a href="#" class="dropdown_link-preseason" id="dropdowns">
+                              <span class="open2">OPEN</span>
+                              <span class="close2">CLOSE</span>
+
+                              <input type="checkbox" class="dropdown_check"><span class="player-stats-below"></span>
+                         </a>
+
+                         <div class="dropdown_content">
+                              <ul class="dropdown_sub">
+                                   <li class="dropdown_li">
+                                        <!-- I added this class to make dropdown content fit the width of screen -->
+                                        <!-- <img class="transfers-content" src="underground/player-stats-dropdown.png" alt=""> -->
+                                   </li>
+                              </ul>
+                         </div>
+                    </li>
+
+
+
+
+                    <li class="dropdown_list" id="jump">
+                         <a href="#" class="dropdown_link-1st-match" id="dropdowns">
+
+                              <input type="checkbox" class="dropdown_check"><span class="player-stats-below"></span>
+                         </a>
+
+                         <div class="dropdown-background">
+                              <div class="dropdown_content-matches">
+                                   <ul class="dropdown_sub">
+                                        <li class="dropdown_li">
+                                             <!-- I added this class to make dropdown content fit the width of screen width="100%" height="286" -->
+                                             <img class="dropdown-content-historical" src="underground/1st-match-content.png" alt="">
+                                             <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content2.png" alt="">
+                                             <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content3.png" alt="">
+                                             <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content4.png" alt="">
+                                             <img class="dropdown-content-historical" src="underground/1st-match-content5.png" alt="">                                               
+                                             <iframe src="https://widgets.sofascore.com/embed/attackMomentum?id=12436494&widgetTheme=dark"></iframe>                                                   
+                                             <img class="dropdown-content-historical1" src="underground/1st-match-content6.png" alt="">          
+                                             <img class="dropdown-content" src="underground/1st-match-content7.png" alt="">                                                                      
+                                             <img class="dropdown-content" src="underground/1st-match-content8.png" alt="">                                                                        
+                                             <img class="dropdown-content" src="underground/1st-match-content9.png" alt="">                                                                                                                          
+                                             <img class="dropdown-content" src="underground/1st-match-content10.png" alt="">                                                                                                                          
+                                             <img class="dropdown-content" src="underground/1st-match-content11.png" alt="">                                                                                                                          
+                                             <img class="dropdown-content" src="underground/1st-match-content12.png" alt="">                                                                                                                          
+                                             <img class="dropdown-content" src="underground/1st-match-content13.png" alt="">                                                                                                                          
+                                             <img class="dropdown-content" src="underground/1st-match-content14.png" alt="">
+                                        </li>
+                                   </ul>
+                              </div>
+                         </div>
+                         
+                         <div class="links1">
+                              <!-- add link to website: https://www.youtube.com/shorts/44t-FMQVGDM
+                                   value to open link in new tab: https://stackoverflow.com/questions/17711146/how-to-open-link-in-a-new-tab-in-html -->
+                              <a href="https://www.flashscore.com/match/KK9ggF3s/#/news" target="_blank" id="links">
+                                   https://www.flashscore.com/match/KK9ggF3s/#/news
+                              </a>
+                         </div>
+
+                    </li>
+
+                    
 
                </ul>
           </div>

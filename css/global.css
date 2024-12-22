@@ -433,6 +433,7 @@ body {
 		51.33% {opacity: 1.0}
 		100% {opacity: 1.0}
 	}
+	.box-shadow .box-shadow2 { display: none; }
 	/* CLOCK 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.clock {
 		/* border: solid red 1px; */
@@ -967,7 +968,12 @@ body {
 	
 	.dropdown-content-historical {
 		margin-top: -.7%;
-		width: 100%;
+		width: 125%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
+		height: 100%;
+	}
+
+	#dropdown-content-match {		
+		width: 125%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
 		height: 100%;
 	}
 	
@@ -978,7 +984,7 @@ body {
 	}
 	
 	.dropdown-content {
-		width: 122%;
+		width: 122%;  /* has to coincide with width in background-image under .dropdown_link-transfers below */
 		height: 100%;
 	}
 	
@@ -998,7 +1004,7 @@ body {
 	.dropdown_link-transfers {
 		/* border: solid red 1px; */
 		background-image: url(../underground/AIG-transfers.png);
-		background-size: 122% 100%;  /* width and height  // also, width has to coincide with width under ..dropdown-content */
+		background-size: 122% 100%;  /* width and height  // also, width has to coincide with width under .dropdown-content above */
 		color: white;
 		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 		text-decoration: none;
@@ -1132,6 +1138,38 @@ body {
 		background-size: 122% 100%;
 		color: white;
 		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	/* PRESEASON AND MATCHES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	#jump {	margin-left: -5.5vw;  /* moves all match dropdowns as well preseason */ }
+	.dropdown-background {
+		background-image: none;  /* no iron column background for match content */
+		background-size: 100%;
+	}
+	.dropdown_link-preseason {
+		/* border: solid 1px red; */
+		background-image: url(../underground/pre-season.png);
+		background-size: 125% 100.5%;  /* width and height  // also, width has to coincide with width under #dropdown-content-match and .dropdown-content-historical above */
+		color: white;
+		/* increase the padding to increase the height of container //
+		   the code from the tutorial had 'padding: 1em .6em' , the latter value (.6em) is the space between text and left screen border */
+		padding: 5.16vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown_link-1st-match {
+		/* border: solid 1px red; */
+		background-image: url(../underground/1st-match.png);
+		background-size: 125% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above */
+		color: white;
+		/* increase the padding to increase the height of container //
+		   the code from the tutorial had 'padding: 1em .6em' , the latter value (.6em) is the space between text and left screen border */
+		padding: 6.5vw;
 		text-decoration: none;
 		display: flex;
 		align-items: center;
