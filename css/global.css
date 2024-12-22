@@ -951,14 +951,12 @@ body {
 
 	.links1 {
 		/* border: solid 1px red; */
+		opacity: 0;
 		position: absolute;
 		font-family: Agency FB;
-		font-size: 0.78em;
-		color: #e0dcdc;
-		transform: translate(-50px, -100px);
-		/* important to make location cross-browser */
-		left: 50%;
-		opacity: 0;
+		font-size: 2.1vw;
+		margin-top: -45.8%;
+		margin-left: 51.1%;
 		display: var(--links-display, none) !important;
 	}
 
@@ -974,8 +972,15 @@ body {
 	}
 
 	.dropdown-content-historical1 {
-		margin-top: -21.4%;
+		display: none;  /* responsive version of this img without the iframe */
+		margin-top: -.2%;
 		width: 100%;
+		height: 100%;
+	}
+
+	.dropdown-content-historical3 {
+		margin-top: -.2%;
+		width: 125%;
 		height: 100%;
 	}
 
@@ -984,12 +989,7 @@ body {
 		height: 100%;
 	}
 
-	iframe {
-		width: 25%;
-		height: 290px;
-		margin-left: 23%;
-		border: none;
-	}
+	iframe { display: none;	}  /* this iframe doesn't adopt the right height */
 
 	.dropdown-content-historical2 {
 		margin-top: -30%;
