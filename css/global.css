@@ -1019,7 +1019,7 @@ body {
 	/* TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdown_link-transfers {
 		/* border: solid red 1px; */
-		background-image: url(/underground/AIG-transfers.png);
+		background-image: url(../underground/AIG-transfers.png);
 		background-size: 122% 100%;  /* width and height  // also, width has to coincide with width under ..dropdown-content */
 		color: white;
 		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -1051,7 +1051,7 @@ body {
 	/* TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdown_link-stats {
 		/* border: solid 1px red; */
-		background-image: url(/underground/AIG-stats.png);
+		background-image: url(../underground/AIG-stats.png);
 		background-size: 122% 100%;
 		color: white;
 		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -1090,7 +1090,7 @@ body {
 	/* PLAYER PERFORMANCE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdown_link-player-performance {
 		/* border: solid 1px red; */
-		background-image: url(/underground/AIG-performance.png);
+		background-image: url(../underground/AIG-performance.png);
 		background-size: 122% 100%;
 		color: white;
 		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
