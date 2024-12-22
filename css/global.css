@@ -74,7 +74,8 @@ body {
 }
 
 /* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */
-/* use vw for font-size and line-height, use % for margin-top, left, etc; play with 'vw' and '%' anyways */
+/* use vw for font-size and line-height, use % for margin-top, left, etc; play with 'vw' and '%' anyways
+   use url:(../) before any url source in CSS, but src="" without slash (/) at the beginning in HTML */
 @media only screen and (max-width: 600px) {
 	/* https://stackoverflow.com/questions/23110412/css-scale-several-images-to-fit-viewport-keeping-aspect-ratio */
 	html, body {
@@ -242,9 +243,8 @@ body {
 		pointer-events: var(--on-tap, none);  /* responsive: somehow, the link is clickable even when the dropdown is not box-checked, so this rule prevents clicks */
 	}
 	.season-19-20 img {
-		border: solid 1px red;
-		opacity: 0;
 		position: absolute;
+		opacity: 0;
 		width: 107.9px;
 		height: 108.5px;
 		margin-top: 2px;  /* 109.8px the lower the value, the higher the object goes */
@@ -295,8 +295,7 @@ body {
 		white-space: nowrap;
 		font-weight: 100;
 		display: flex;
-		animation: animate2 10s linear infinite;
-		animation-delay: -10s;
+		animation: none;  /* no animation for mobile as it slows down the user experience */
 	}	
 	.scoreboard-PL .PL div span {
 		/* I was trying to make this ⮟ symbol aligned with the rest of the text because it dropped a bit, so I played
@@ -315,6 +314,9 @@ body {
 	.scoreboard-PL .PL div span3 {
 		color: #589444;
 		text-shadow: 0 0 2px #589444, 0 0 2px #589444, 0 0 2px #589444;
+	}	
+	.scoreboard-PL .PL div:nth-child(2) {
+		animation: none;  /* no animation for mobile as it slows down the user experience */
 	}
 	/* SCOREBOARD (TEAMS) 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.scoreboard-teams { display: none; }  /* PC version */
@@ -1078,8 +1080,9 @@ body {
 	.player-performance-title {
 		position: absolute;
 		font-family: Majanan;
-		font-size: 5vw;
-		letter-spacing: 0.3px;
+		font-size: 6vw;
+		font-weight: 900;
+		letter-spacing: 0.3vw;
 		color: #fff;
 		text-shadow: 0 0 10px #d821c3,
 						   0 0 20px #d821c3,
@@ -1087,13 +1090,41 @@ body {
 						   0 0 80px #d821c3,
 						   0 0 120px #d821c3,
 						   0 0 160px #d821c3;
-		transform: translate(560px, 4px);
-		margin-right: 20%;
+		margin-top: 1%;
+		left: 53%;
 		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
 		pointer-events: none;
 	}	
 	.player-performance-title span1 {
 		font-size: 4vw;
+	}
+	/* PLAYER STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.dropdown_link-player-stats {
+		/* border: solid 1px red; */
+		background-image: url(../underground/AIG-player-stats.png);
+		background-size: 122% 100%;
+		color: white;
+		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.player-stats-title {
+		position: absolute;
+		font-family: Uppen Arms NF;
+		font-size: 3.5vw;
+		color: #b9c2d7;
+		text-shadow: 0 0 10px #17347a, 0 0 10px #17347a, 0 0 10px #17347a,
+						   0 0 20px #17347a, 0 0 20px #17347a,
+						   0 0 40px #17347a, 0 0 40px #17347a,
+						   0 0 80px #17347a, 0 0 80px #17347a, 0 0 80px #17347a,
+						   0 0 120px #17347a, 0 0 120px #17347a, 0 0 120px #17347a,
+						   0 0 160px #17347a, 0 0 160px #17347a;
+		margin-right: 20%;
+		left: 52.5%;
+		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
+		pointer-events: none;
 	}
 }
 /* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */
