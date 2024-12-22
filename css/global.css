@@ -827,20 +827,6 @@ body {
 	.dropdown {
 		position: absolute;
 	}
-	/* TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.dropdown_link-transfers {
-		/* border: solid red 1px; */
-		background-image: url(/underground/AIG-transfers.png);
-		background-size: 122% 100%;  /* width and height  // also, width has to coincide with width under ..dropdown-content */
-		color: white;
-		/* increase the padding to increase the height of container //
-		   the code from the tutorial had 'padding: 1em .6em' , the latter value (.6em) is the space between text and left screen border */
-		padding: 7.2vw;  /* control width via background-size (width), and height via padding */
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
-	}
 	.dropdown_list:has( :checked ) {
 		--rows: 1fr;
 		/* addition to make SEE and HIDE toggle */
@@ -869,9 +855,10 @@ body {
 	.open1 {
 		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
 		font-family: Trueno Round Italic;
-		font-size: 0.9em;
-		letter-spacing: 0.5px;
-		transform: translate(470px, 45px);
+		font-size: 1.8vw;
+		letter-spacing: .05vw;
+		margin-top: 8%;  /* the higher, the lower */
+		left: 47%;
 		color: #f8cccf;
 		text-shadow: 0 0 10px #028336, 0 0 10px #028336, 0 0 10px #028336,
 						   0 0 20px #028336, 0 0 20px #028336,
@@ -903,9 +890,10 @@ body {
 	.close1 {
 		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
 		font-family: Trueno Round Italic;
-		font-size: 0.9em;
-		letter-spacing: 0.5px;
-		transform: translate(742.5px, 45px);
+		font-size: 1.8vw;
+		letter-spacing: .05vw;
+		margin-top: 8%;  /* the higher, the lower */
+		left: 71.5%;
 		color: white;
 		text-shadow: 0 0 10px #ffcf3e,
 						   0 0 20px #ffcf3e,
@@ -984,15 +972,8 @@ body {
 	.dropdown_li {
 		list-style: none;
 	}
-	/* 	DROPDOWN CODING: TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	
-	/* 	DROPDOWN ARTWORK: TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.iron-columns {
-		position: absolute;
-		top: 423.7%;
-		width: 100%;
-	}
-	
+
 	.links1 {
 		/* border: solid 1px red; */
 		position: absolute;
@@ -1035,18 +1016,108 @@ body {
 		width: 100%;
 		height: 100%;
 	}
+	/* TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.dropdown_link-transfers {
+		/* border: solid red 1px; */
+		background-image: url(/underground/AIG-transfers.png);
+		background-size: 122% 100%;  /* width and height  // also, width has to coincide with width under ..dropdown-content */
+		color: white;
+		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.transfers-title {
+		position: absolute;
+		font-family: Delight;
+		font-size: 5vw;
+		color: #a8ddbe;
+		text-shadow: 0 0 10px #13b48a, 0 0 10px #13b48a,
+						   0 0 20px #13b48a,
+						   0 0 40px #13b48a, 0 0 40px #13b48a,
+						   0 0 80px #13b48a,
+						   0 0 120px #13b48a, 0 0 120px #13b48a,
+						   0 0 160px #13b48a;
+		transform: translate(248%, -10%);
+		margin-right: 20%;
+		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
+		pointer-events: none;
+	}	
+	.transfers-title span1 {
+		font-family: Ketosag Condensed;
+		font-size: 5vw;
+	}
+	/* TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdown_link-stats {
 		/* border: solid 1px red; */
 		background-image: url(/underground/AIG-stats.png);
 		background-size: 122% 100%;
 		color: white;
-		/* increase the padding to increase the height of container //
-		   the code from the tutorial had 'padding: 1em .6em' , the latter value (.6em) is the space between text and left screen border */
-		padding: 7.2vw;  /* control width via background-size (width), and height via padding */
+		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 		text-decoration: none;
 		display: flex;
 		align-items: center;
 		position: relative;
+	}
+	.stats-title {
+		position: absolute;
+		font-family: Better Grade;
+		font-size: 9vw;
+		color: #f8cccf;
+		text-shadow: 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e,
+						   0 0 20px #da020e,
+						   0 0 40px #da020e,
+						   0 0 80px #da020e,
+						   0 0 120px #da020e;
+		margin-top: 1%;
+		left: 64%;
+		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
+		pointer-events: none;
+	}	
+	.stats-title span1 {
+		position: absolute;
+		font-family: myFont;
+		font-size: 4vw;
+		transform: translate(-100%, 90%);
+		color: #ffdccc;
+		text-shadow: 0 0 10px #ffb330, 0 0 10px #ffb330, 0 0 10px #ffb330, 0 0 10px #ffb330,
+						   0 0 20px #fe5201, 0 0 20px #fe5201, 0 0 20px #fe5201,
+							  0 0 40px #fe5201, 0 0 40px #fe5201,
+						   0 0 80px #fe5201, 0 0 80px #fe5201,
+						   0 0 120px #fe5201, 0 0 120px #fe5201;
+	}
+	/* PLAYER PERFORMANCE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.dropdown_link-player-performance {
+		/* border: solid 1px red; */
+		background-image: url(/underground/AIG-performance.png);
+		background-size: 122% 100%;
+		color: white;
+		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.player-performance-title {
+		position: absolute;
+		font-family: Majanan;
+		font-size: 5vw;
+		letter-spacing: 0.3px;
+		color: #fff;
+		text-shadow: 0 0 10px #d821c3,
+						   0 0 20px #d821c3,
+						   0 0 40px #d821c3,
+						   0 0 80px #d821c3,
+						   0 0 120px #d821c3,
+						   0 0 160px #d821c3;
+		transform: translate(560px, 4px);
+		margin-right: 20%;
+		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
+		pointer-events: none;
+	}	
+	.player-performance-title span1 {
+		font-size: 4vw;
 	}
 }
 /* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */
