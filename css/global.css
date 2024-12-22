@@ -69,6 +69,9 @@ body {
 	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='28px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23080101' d='M 2.5,3.5 C 7.1586,6.16843 11.4919,9.3351 15.5,13C 9.07438,12.1868 4.74104,14.6868 2.5,20.5C 1.16667,14.8333 1.16667,9.16667 2.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23af231e' d='M 3.5,1.5 C 9.3796,5.26653 15.0463,9.26653 20.5,13.5C 17.023,14.3227 13.3563,14.8227 9.5,15C 8.74756,15.6708 8.41423,16.5041 8.5,17.5C 7.20027,20.4323 5.20027,22.7656 2.5,24.5C 2.5,23.1667 2.5,21.8333 2.5,20.5C 4.74104,14.6868 9.07438,12.1868 15.5,13C 11.4919,9.3351 7.1586,6.16843 2.5,3.5C 2.32842,2.50838 2.66175,1.84171 3.5,1.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bab7d0' d='M 20.5,13.5 C 21.1667,13.8333 21.8333,14.1667 22.5,14.5C 22.5,15.5 22.5,16.5 22.5,17.5C 17.8665,16.8663 13.1998,16.8663 8.5,17.5C 8.41423,16.5041 8.74756,15.6708 9.5,15C 13.3563,14.8227 17.023,14.3227 20.5,13.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23b4bcca' d='M -0.5,-0.5 C 0.166667,-0.5 0.833333,-0.5 1.5,-0.5C 2.16667,0.166667 2.83333,0.833333 3.5,1.5C 2.66175,1.84171 2.32842,2.50838 2.5,3.5C 1.16667,9.16667 1.16667,14.8333 2.5,20.5C 2.5,21.8333 2.5,23.1667 2.5,24.5C 1.89022,25.391 1.55688,26.391 1.5,27.5C 0.833333,27.5 0.166667,27.5 -0.5,27.5C -0.5,18.1667 -0.5,8.83333 -0.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, auto;
 }
 
+#season-links {  /* specific for select season on hover */
+	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='30px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f90605' d='M 11.5,-0.5 C 12.5,-0.5 13.5,-0.5 14.5,-0.5C 14.5,2.16667 14.5,4.83333 14.5,7.5C 13.8333,6.16667 13.1667,4.83333 12.5,3.5C 12.1667,3.5 11.8333,3.5 11.5,3.5C 11.5,2.16667 11.5,0.833333 11.5,-0.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23040404' d='M 9.5,3.5 C 10.1667,3.5 10.8333,3.5 11.5,3.5C 11.8333,3.5 12.1667,3.5 12.5,3.5C 12.5,5.16667 12.5,6.83333 12.5,8.5C 13.9527,10.229 15.9527,11.229 18.5,11.5C 19.4742,13.7427 19.8076,16.076 19.5,18.5C 18.0795,21.2613 17.4129,24.2613 17.5,27.5C 15.5,27.5 13.5,27.5 11.5,27.5C 11.1185,22.737 9.11854,18.737 5.5,15.5C 6.56764,14.5655 7.90097,14.2322 9.5,14.5C 9.5,10.8333 9.5,7.16667 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23aa2822' d='M 12.5,3.5 C 13.1667,4.83333 13.8333,6.16667 14.5,7.5C 15.1667,7.5 15.8333,7.5 16.5,7.5C 15.4324,8.43448 14.099,8.76781 12.5,8.5C 12.5,6.83333 12.5,5.16667 12.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%235a5c5e' d='M 9.5,3.5 C 9.5,7.16667 9.5,10.8333 9.5,14.5C 7.90097,14.2322 6.56764,14.5655 5.5,15.5C 4.95691,15.44 4.62358,15.1067 4.5,14.5C 5.68884,13.5713 7.02218,13.238 8.5,13.5C 8.18723,9.95815 8.52056,6.62482 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f41a13' d='M 17.5,7.5 C 19.1172,8.038 20.7839,8.37133 22.5,8.5C 22.5,12.8333 22.5,17.1667 22.5,21.5C 20.7773,23.78 20.1107,26.4467 20.5,29.5C 17.5,29.5 14.5,29.5 11.5,29.5C 13.5,28.8333 15.5,28.1667 17.5,27.5C 17.4129,24.2613 18.0795,21.2613 19.5,18.5C 20.4767,15.7131 20.81,12.7131 20.5,9.5C 18.8212,9.71481 17.8212,9.04814 17.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bea6ab' d='M 16.5,7.5 C 16.8333,7.5 17.1667,7.5 17.5,7.5C 17.8212,9.04814 18.8212,9.71481 20.5,9.5C 20.81,12.7131 20.4767,15.7131 19.5,18.5C 19.8076,16.076 19.4742,13.7427 18.5,11.5C 15.9527,11.229 13.9527,10.229 12.5,8.5C 14.099,8.76781 15.4324,8.43448 16.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f0edf0' d='M 7.5,-0.5 C 8.83333,-0.5 10.1667,-0.5 11.5,-0.5C 11.5,0.833333 11.5,2.16667 11.5,3.5C 10.8333,3.5 10.1667,3.5 9.5,3.5C 8.52056,6.62482 8.18723,9.95815 8.5,13.5C 7.02218,13.238 5.68884,13.5713 4.5,14.5C 4.62358,15.1067 4.95691,15.44 5.5,15.5C 9.11854,18.737 11.1185,22.737 11.5,27.5C 13.5,27.5 15.5,27.5 17.5,27.5C 15.5,28.1667 13.5,28.8333 11.5,29.5C 10.8333,29.5 10.1667,29.5 9.5,29.5C 9.04814,25.4246 7.54814,21.7579 5,18.5C 3.54905,16.5359 1.71572,15.2026 -0.5,14.5C -0.5,13.1667 -0.5,11.8333 -0.5,10.5C 2.19853,10.4661 4.69853,11.1328 7,12.5C 7.49902,8.17944 7.66568,3.84611 7.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, pointer;
+}
 
 /* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */
 /* use vw for font-size and line-height, use % for margin-top, left, etc; play with 'vw' and '%' anyways */
@@ -132,7 +135,7 @@ body {
 		margin-top: 20%;
 		left: 7%;
 		width: 100%;
-		transform:rotate(-15deg);
+		transform: rotate(-15deg);
 		z-index: 1;
 	}
 	/* UNDERGROUND SUPPORT 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -163,6 +166,7 @@ body {
 	}
 	.season-list:has( :checked ) {
 		--rows: 1fr;
+	    --on-tap: auto;  /* for #season-links */
 	}
 	.checkbox-size {
 		/* border: solid 1px red; */
@@ -231,12 +235,16 @@ body {
 		list-style: none;
 	}
 	.season-content {
-		/* border: solid 1px red;	 */
+		/* border: solid 1px red; */
 		width: 304px;  /* how big the dropdown content is */
 	}
+	#season-links {
+		pointer-events: var(--on-tap, none);  /* responsive: somehow, the link is clickable even when the dropdown is not box-checked, so this rule prevents clicks */
+	}
 	.season-19-20 img {
-		position: absolute;
+		border: solid 1px red;
 		opacity: 0;
+		position: absolute;
 		width: 107.9px;
 		height: 108.5px;
 		margin-top: 2px;  /* 109.8px the lower the value, the higher the object goes */
@@ -770,17 +778,15 @@ body {
 	/* BRICKS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.bricks {
 		position: relative;
-		border: solid green 1px;
+		/* border: solid red 1px; */
 		margin-top: -50%;  /* with respect to header (menu) */
 		width: 200%;
 		left: -44%;
 		z-index: -4;
 	}
-	
-	/* 2023/24 (TEXT) */
-	.brick-wall h1 {
+	.brick-wall h1 {  /* 2023/24 (TEXT) */
 		position: absolute;
-		margin-top: -46%;
+		margin-top: -46%;  /* with respect to header (menu) */
 		left: 25.5%;
 		background-size: cover;
 		z-index: 7;
@@ -788,15 +794,259 @@ body {
 		font-size: 11vw;
 		mix-blend-mode: overlay;
 	}	
-	.brick-wall h1 span {
+	.brick-wall h1 span {  /* 2023/24 (TEXT) */
 		color: #ec334d;
 	}
+	.trophies {
+		left: -37.5%;
+		width: 180%;
+		transform: translate(-21%, -180%);  /* for any reason, this is the only way I can move this div */
+	}
 	#cable-box { display: none; }
+	.brick-wall h2, h3, h4, h5, h6, h7 { display: none;}  /* "THE BICYCLE KICK, ...." */
 	.gallery-banner {
 		position: absolute;
 		width: 100%;
-		margin-top: -32.35%;
+		margin-top: -32.35%;  /* with respect to header (menu) */
 		z-index: 2;
+	}
+	/* DROPDOWNS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.dropdowns-section {
+		position: relative;  /* responsive: 'relative' to eliminate overflow excess x-wise on mobile */
+		margin-top: 18%;
+		margin-left: -29.5vw;
+		/* width: 150%;   -31vw  */
+		height: 150vw;
+		z-index: 2;
+	}
+	.nav_container {
+		position: relative;
+		background-color: gray;
+		justify-items: center;
+	}
+	.dropdown {
+		position: absolute;
+	}
+	/* TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.dropdown_link-transfers {
+		/* border: solid red 1px; */
+		background-image: url(/underground/AIG-transfers.png);
+		background-size: 122% 100%;  /* width and height  // also, width has to coincide with width under ..dropdown-content */
+		color: white;
+		/* increase the padding to increase the height of container //
+		   the code from the tutorial had 'padding: 1em .6em' , the latter value (.6em) is the space between text and left screen border */
+		padding: 7.2vw;  /* control width via background-size (width), and height via padding */
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown_list:has( :checked ) {
+		--rows: 1fr;
+		/* addition to make SEE and HIDE toggle */
+		--open-display: none;
+		--close-display: inline-block;
+		/* addition for the links */
+		--links-display: flex;
+	}	
+	.open {
+		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
+		font-family: Trueno Round Italic;
+		font-size: 1.8vw;
+		letter-spacing: .05vw;
+		margin-top: 8%;  /* the higher, the lower */
+		left: 49.5%;
+		color: #a8ddbe;
+		text-shadow: 0 0 10px #da020e, 0 0 10px #da020e,
+						   0 0 20px #da020e,
+						   0 0 40px #da020e,
+						   0 0 80px #da020e,
+						   0 0 120px #da020e;
+		/* I learned how to make custom properties (variable) for 'display'
+			 https://www.reddit.com/r/css/comments/t2zcot/can_css_variables_custom_properties_be_used_to/ */
+		display: var(--open-display) !important;
+	}	
+	.open1 {
+		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
+		font-family: Trueno Round Italic;
+		font-size: 0.9em;
+		letter-spacing: 0.5px;
+		transform: translate(470px, 45px);
+		color: #f8cccf;
+		text-shadow: 0 0 10px #028336, 0 0 10px #028336, 0 0 10px #028336,
+						   0 0 20px #028336, 0 0 20px #028336,
+						   0 0 40px #028336,
+						   0 0 80px #028336,
+						   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
+						   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
+		/* I learned how to make custom properties (variable) for 'display'
+			 https://www.reddit.com/r/css/comments/t2zcot/can_css_variables_custom_properties_be_used_to/ */
+		display: var(--open-display) !important;
+	}	
+	.close {
+		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
+		font-family: Trueno Round Italic;
+		font-size: 1.8vw;
+		letter-spacing: .05vw;
+		margin-top: 8%;  /* the higher, the lower */
+		left: 69%;
+		color: #fff;
+		text-shadow: 0 0 10px #fff,
+						   0 0 20px #fff,
+						   0 0 40px #fff,
+						   0 0 80px #fff,
+						   0 0 120px #fff,
+						   0 0 160px #fff;
+		/* inspired by another custom property (variable), I added "none" to make "HIDE" not visible when the checkbox is unchecked. */
+		display: var(--close-display, none) !important;
+	}	
+	.close1 {
+		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
+		font-family: Trueno Round Italic;
+		font-size: 0.9em;
+		letter-spacing: 0.5px;
+		transform: translate(742.5px, 45px);
+		color: white;
+		text-shadow: 0 0 10px #ffcf3e,
+						   0 0 20px #ffcf3e,
+						   0 0 40px #ffcf3e,
+						   0 0 80px #ffcf3e,
+						   0 0 120px #ffcf3e,
+						   0 0 160px #ffcf3e;
+		/* inspired by another custom property (variable), I added "none" to make "HIDE" not visible when the checkbox is unchecked. */
+		display: var(--close-display, none) !important;
+	}	
+	.close4 {
+		position: absolute;
+		background: url(/underground/close-UCL.png);
+		background-size: 100%;
+		/* to control image size, I need these font values */
+		font-family: 'Courier New', Courier, monospace;
+		font-size: 3.4em;
+		top: 28.5%;
+		left: 49.3%;
+		display: var(--close-display, none) !important;
+	}	
+	.dropdown_check {
+		position: absolute;
+		/* if checkbox is not set at this width and height, you will not be able to click anywhere to see/hide content */
+		width: 100%;  /* lower the value eliminate overflow x-wise that can be seen when tapping on mobile */
+		height: 100%;
+		opacity: 0;  /* to make checkbox visible, put 'opacity: 1' */
+		cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='30px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f90605' d='M 11.5,-0.5 C 12.5,-0.5 13.5,-0.5 14.5,-0.5C 14.5,2.16667 14.5,4.83333 14.5,7.5C 13.8333,6.16667 13.1667,4.83333 12.5,3.5C 12.1667,3.5 11.8333,3.5 11.5,3.5C 11.5,2.16667 11.5,0.833333 11.5,-0.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23040404' d='M 9.5,3.5 C 10.1667,3.5 10.8333,3.5 11.5,3.5C 11.8333,3.5 12.1667,3.5 12.5,3.5C 12.5,5.16667 12.5,6.83333 12.5,8.5C 13.9527,10.229 15.9527,11.229 18.5,11.5C 19.4742,13.7427 19.8076,16.076 19.5,18.5C 18.0795,21.2613 17.4129,24.2613 17.5,27.5C 15.5,27.5 13.5,27.5 11.5,27.5C 11.1185,22.737 9.11854,18.737 5.5,15.5C 6.56764,14.5655 7.90097,14.2322 9.5,14.5C 9.5,10.8333 9.5,7.16667 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23aa2822' d='M 12.5,3.5 C 13.1667,4.83333 13.8333,6.16667 14.5,7.5C 15.1667,7.5 15.8333,7.5 16.5,7.5C 15.4324,8.43448 14.099,8.76781 12.5,8.5C 12.5,6.83333 12.5,5.16667 12.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%235a5c5e' d='M 9.5,3.5 C 9.5,7.16667 9.5,10.8333 9.5,14.5C 7.90097,14.2322 6.56764,14.5655 5.5,15.5C 4.95691,15.44 4.62358,15.1067 4.5,14.5C 5.68884,13.5713 7.02218,13.238 8.5,13.5C 8.18723,9.95815 8.52056,6.62482 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f41a13' d='M 17.5,7.5 C 19.1172,8.038 20.7839,8.37133 22.5,8.5C 22.5,12.8333 22.5,17.1667 22.5,21.5C 20.7773,23.78 20.1107,26.4467 20.5,29.5C 17.5,29.5 14.5,29.5 11.5,29.5C 13.5,28.8333 15.5,28.1667 17.5,27.5C 17.4129,24.2613 18.0795,21.2613 19.5,18.5C 20.4767,15.7131 20.81,12.7131 20.5,9.5C 18.8212,9.71481 17.8212,9.04814 17.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bea6ab' d='M 16.5,7.5 C 16.8333,7.5 17.1667,7.5 17.5,7.5C 17.8212,9.04814 18.8212,9.71481 20.5,9.5C 20.81,12.7131 20.4767,15.7131 19.5,18.5C 19.8076,16.076 19.4742,13.7427 18.5,11.5C 15.9527,11.229 13.9527,10.229 12.5,8.5C 14.099,8.76781 15.4324,8.43448 16.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f0edf0' d='M 7.5,-0.5 C 8.83333,-0.5 10.1667,-0.5 11.5,-0.5C 11.5,0.833333 11.5,2.16667 11.5,3.5C 10.8333,3.5 10.1667,3.5 9.5,3.5C 8.52056,6.62482 8.18723,9.95815 8.5,13.5C 7.02218,13.238 5.68884,13.5713 4.5,14.5C 4.62358,15.1067 4.95691,15.44 5.5,15.5C 9.11854,18.737 11.1185,22.737 11.5,27.5C 13.5,27.5 15.5,27.5 17.5,27.5C 15.5,28.1667 13.5,28.8333 11.5,29.5C 10.8333,29.5 10.1667,29.5 9.5,29.5C 9.04814,25.4246 7.54814,21.7579 5,18.5C 3.54905,16.5359 1.71572,15.2026 -0.5,14.5C -0.5,13.1667 -0.5,11.8333 -0.5,10.5C 2.19853,10.4661 4.69853,11.1328 7,12.5C 7.49902,8.17944 7.66568,3.84611 7.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, pointer;
+	}	
+	.dropdown_check-transition {
+		position: absolute;
+		/* if checkbox is not set at this width and height, you will not be able to click anywhere to see/hide content */
+		width: 100%;
+		height: 100%;
+		/* to make checkbox visible, put 'opacity: 1' */
+		opacity: 0;
+		cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='28px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23080101' d='M 2.5,3.5 C 7.1586,6.16843 11.4919,9.3351 15.5,13C 9.07438,12.1868 4.74104,14.6868 2.5,20.5C 1.16667,14.8333 1.16667,9.16667 2.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23af231e' d='M 3.5,1.5 C 9.3796,5.26653 15.0463,9.26653 20.5,13.5C 17.023,14.3227 13.3563,14.8227 9.5,15C 8.74756,15.6708 8.41423,16.5041 8.5,17.5C 7.20027,20.4323 5.20027,22.7656 2.5,24.5C 2.5,23.1667 2.5,21.8333 2.5,20.5C 4.74104,14.6868 9.07438,12.1868 15.5,13C 11.4919,9.3351 7.1586,6.16843 2.5,3.5C 2.32842,2.50838 2.66175,1.84171 3.5,1.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bab7d0' d='M 20.5,13.5 C 21.1667,13.8333 21.8333,14.1667 22.5,14.5C 22.5,15.5 22.5,16.5 22.5,17.5C 17.8665,16.8663 13.1998,16.8663 8.5,17.5C 8.41423,16.5041 8.74756,15.6708 9.5,15C 13.3563,14.8227 17.023,14.3227 20.5,13.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23b4bcca' d='M -0.5,-0.5 C 0.166667,-0.5 0.833333,-0.5 1.5,-0.5C 2.16667,0.166667 2.83333,0.833333 3.5,1.5C 2.66175,1.84171 2.32842,2.50838 2.5,3.5C 1.16667,9.16667 1.16667,14.8333 2.5,20.5C 2.5,21.8333 2.5,23.1667 2.5,24.5C 1.89022,25.391 1.55688,26.391 1.5,27.5C 0.833333,27.5 0.166667,27.5 -0.5,27.5C -0.5,18.1667 -0.5,8.83333 -0.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, auto;
+	}	
+	.transfers-title {
+		position: absolute;
+		font-family: Delight;
+		font-size: 5vw;
+		color: #a8ddbe;
+		text-shadow: 0 0 10px #13b48a, 0 0 10px #13b48a,
+						   0 0 20px #13b48a,
+						   0 0 40px #13b48a, 0 0 40px #13b48a,
+						   0 0 80px #13b48a,
+						   0 0 120px #13b48a, 0 0 120px #13b48a,
+						   0 0 160px #13b48a;
+		transform: translate(248%, -10%);
+		margin-right: 20%;
+		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
+		pointer-events: none;
+	}	
+	.transfers-title span1 {
+		font-family: Ketosag Condensed;
+		font-size: 5vw;
+	}
+	.dropdown_content {
+		display: grid;
+		grid-template-rows: var(--rows, 0fr);
+		/* addition // important to eliminate border margin between separate content images; alex's answer here: https://stackoverflow.com/questions/7641678/use-css-to-remove-the-space-between-images */
+		font-size: 0;
+		/* end of addition */
+	}	
+	.dropdown_content-matches {
+		display: grid;
+		grid-template-rows: var(--rows, 0fr);
+		/* addition // important to eliminate border margin between separate content images; alex's answer here: https://stackoverflow.com/questions/7641678/use-css-to-remove-the-space-between-images */
+		font-size: 0;
+		/* end of addition */
+	}	
+	.dropdown_sub {
+		overflow: hidden;
+	}
+	.dropdown_li {
+		list-style: none;
+	}
+	/* 	DROPDOWN CODING: TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	
+	/* 	DROPDOWN ARTWORK: TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.iron-columns {
+		position: absolute;
+		top: 423.7%;
+		width: 100%;
+	}
+	
+	.links1 {
+		/* border: solid 1px red; */
+		position: absolute;
+		font-family: Agency FB;
+		font-size: 0.78em;
+		color: #e0dcdc;
+		transform: translate(-50px, -100px);
+		/* important to make location cross-browser */
+		left: 50%;	
+		opacity: 0;
+		display: var(--links-display, none) !important;
+	}
+	
+	.dropdown-content-historical {
+		margin-top: -.7%;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.dropdown-content-historical1 {
+		margin-top: -21.4%;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.dropdown-content {
+		width: 122%;
+		height: 100%;
+	}
+	
+	iframe {
+		width: 25%;
+		height: 290px;
+		margin-left: 23%;
+		border: none;
+	}
+	
+	.dropdown-content-historical2 {
+		margin-top: -30%;
+		width: 100%;
+		height: 100%;
+	}
+	.dropdown_link-stats {
+		/* border: solid 1px red; */
+		background-image: url(/underground/AIG-stats.png);
+		background-size: 122% 100%;
+		color: white;
+		/* increase the padding to increase the height of container //
+		   the code from the tutorial had 'padding: 1em .6em' , the latter value (.6em) is the space between text and left screen border */
+		padding: 7.2vw;  /* control width via background-size (width), and height via padding */
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
 	}
 }
 /* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */
