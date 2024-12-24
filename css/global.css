@@ -85,7 +85,7 @@ body {
 	.parallax-home {
 		/* border: solid red 1px; */
 		position: relative;
-		display: flex;  /* merges .sky and .ground in one image */
+		display: table-cell;  /* for Mozilla // original was display:flex, which merges .sky and .ground in one image */
 		text-align: center;
 	}
 	.parallax-home img {
@@ -93,10 +93,18 @@ body {
 		width: 150%;  /* how big the sky and ground are */
 		left: -28%;  /* moves the sky and ground to the left */
 	}
+	#flag {
+		position: absolute;
+		margin-top: -53%;  /* for Mozilla // original was margin-top:20% */
+		left: 7%;
+		width: 100%;
+		transform: rotate(-15deg);
+		z-index: 1;
+	}
 	.title {
 		/* border: solid red 1px; */
 		position: absolute;
-		margin-top: 52%;
+		margin-top: -21%;  /* for Mozilla // original was margi-top:52% */
 		width: 100%;  /* to cover the width of the screen */
 	}
 	.title h1 {
@@ -128,16 +136,9 @@ body {
 		-moz-background-clip: text;
 		background-clip: text;
 	}
-	#flag {
-		position: absolute;
-		margin-top: 20%;
-		left: 7%;
-		width: 100%;
-		transform: rotate(-15deg);
-		z-index: 1;
-	}
+	.ground { display: none; }  /* for Mozilla */
 	/* UNDERGROUND SUPPORT 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.underground-cables {
+	.underground-cables {  /* for any reason, after adapting for Mozilla, everything from here goes down a tiny bity */
 		/* border: solid red 1px; */
 		position: relative;
 		z-index: -1;
