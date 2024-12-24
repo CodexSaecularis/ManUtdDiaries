@@ -85,7 +85,7 @@ body {
 	.parallax-home {
 		/* border: solid red 1px; */
 		position: relative;
-		display: table-cell;  /* for Mozilla // original was display:flex, which merges .sky and .ground in one image */
+		display: table;  /* for Mozilla // original was display:flex, which merges .sky and .ground in one image */
 		text-align: center;
 	}
 	.parallax-home img {
@@ -352,7 +352,7 @@ body {
 		color: white;
 		position: absolute;
 		width: 15%;  /* space between score and .final-real */
-		/* height: 5%; */
+		height: 6.7vw;
 		line-height: 3.7vw;
 		margin-top: -33.3%;  /* with respect to .underground-cables */
 		left: 62.7%;
@@ -385,6 +385,7 @@ body {
 		color: white;
 		position: absolute;
 		width: 15%;  /* space between score and .final-real2 */
+		height: 6.7vw;
 		line-height: 3.7vw;
 		margin-top: -33.3%;  /* with respect to .underground-cables */
 		left: 62.7%;
@@ -400,7 +401,6 @@ body {
 		background-size: 150% 150%;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
-		align-items: center;
 	}
 	/* allows me put both the result (0-0) and the text "final/real score" side by side
 		Mr. Hugo's answer: https://stackoverflow.com/questions/37711138/display-2-ps-side-by-side
