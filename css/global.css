@@ -75,7 +75,7 @@ body {
 /* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */
 /* use vw for font-size and line-height, use % for margin-top, left, etc; play with 'vw' and '%' anyways
    use url:(../) before any url source in CSS, but src="" without slash (/) at the beginning in HTML */
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1366px) {  /* screen width of this laptop: 1366 */
 	::-webkit-scrollbar { display: none; }
 	::-webkit-scrollbar-thumb { display: none; }
 
@@ -294,15 +294,18 @@ body {
 		display: flex;
 		animation: none;  /* no animation for mobile as it slows down the user experience */
 	}
-	.scoreboard-PL .PL div span {
-		/* I was trying to make this ⮟ symbol aligned with the rest of the text because it dropped a bit, so I played
-		   with different properties, and even tried this one "margin-top", but maybe I put a lower value (-15px),
-		   and didn't try other values (like, -2px). I read Md. Rakibul Islam's answer below, and I tried -2px value,
-		   but I swear I had tried it, too! I guess I actually didn't. Anyways, the link is below.
-		   https://stackoverflow.com/questions/76853866/icon-and-text-are-not-aligned */
-		margin-top: -2px;
-		color: #da020e;
-		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e, 0 0 2px #da020e, 0 0 2px #da020e;
+	.scoreboard-PL .PL div span { display: none; }
+	.scoreboard-PL .PL div span1 {
+		font-weight: 900;
+		font-size: 4vw;  /* addition for mobile */
+		margin-top: -.8%;  /* addition for mobile */
+		/* ▲ */
+		color: #028336;
+		/* • */
+		/* color: gray; */
+		/* ▼ */
+		/* color: #da020e; */
+		text-shadow: none;
 	}
 	.scoreboard-PL .PL div span2 {
 		color: #ffc40c;
@@ -1169,7 +1172,7 @@ body {
 	}
 	/* BOTTOM 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.bottom {
-		border: solid 1px red;
+		/* border: solid 1px red; */
 		left: 22%;
 		background-image: url(../underground/1base-5.png);
 		background-repeat: no-repeat;
@@ -1188,10 +1191,10 @@ body {
 	.bottom-isometric {
 		position: absolute;
 		color: #b8b4b4;
-		left: 38.1%;
-		margin-top: 19.1%;
+		left: 52%;
+		margin-top: 14.7%;
 		font-family: Manchester\ United\ 23-24\ Tipogra;
-		font-size: 4em;
+		font-size: 6vw;
 		transform: skewY(11deg) rotate3d(0, 1, 0, 60deg);
 		z-index: -1;
 	}
@@ -1210,19 +1213,18 @@ body {
 					   -8px 0.5px 1px #555,
 					   -9px 0.5px 1px #555,
 					   -10px 0.5px 1px #555;
-	/* important to leave the isometric 3d effect behind */
-	z-index: -1;
+	z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	
 	.bottom-GGMU {
 		position: absolute;
-		left: 58%;
-		margin-top: 30%;
+		margin-top: 25%;
+		left: 68.4%;
 		text-align: center;
-		line-height: 90pt;
+		/* line-height: 90pt; */
 		font-weight: 900;
 		font-family: Agency FB;
-		font-size: 4em;
+		font-size: 5vw;
 		mix-blend-mode: overlay;
 		transform: skewY(-2deg);
 	}
@@ -1508,13 +1510,13 @@ body {
 	
 	.email-cursor-text {
 		/* border: solid 1px red; */
-		padding: 6px;
 		position: absolute;
 		font-family: Poppins Regular;
-		font-size: 0.8em;
+		font-size: 1.2vw;
 		color: #a6a6a6;
-		left: 11.5%;
-		margin-top: 72.35%;
+		left: 31%;
+		margin-top: 57.22%;
+		padding: 6px;  /* to increase cursor margin */
 		cursor: text;
 	}
 }
