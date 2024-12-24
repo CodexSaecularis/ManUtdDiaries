@@ -387,6 +387,7 @@ body {
 		color: white;
 		position: absolute;
 		width: 15%;  /* space between score and .final-real2 */
+		line-height: 3vw;
 		margin-top: -33.3%;  /* with respect to .underground-cables */
 		left: 62.7%;
 		display: flex;
