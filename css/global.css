@@ -1232,7 +1232,7 @@ body {
 	.OT-banners-bottom {
 		position: absolute;
 		height: 1.3vw;
-		line-height: 1.5vw;  /* responsive: center text top to bottom */		
+		line-height: 1.5vw;  /* responsive: center text top to bottom; this time, same as height didn't work */
 		left: 0;
 		margin-top: 55%;
 		background: white;
@@ -1258,6 +1258,7 @@ body {
 		   rmurph46's answer below. It's simply half of the value in animation duration but negative. I needed to know that to make long carrousels
 		   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
 		animation: animate2 80s linear infinite;
+		/* animation: none; */
 		animation-delay: -40s;
 	}
 	
@@ -1270,7 +1271,6 @@ body {
 	}
 	
 	.OT-banners-bottom .banners div span2 {
-		margin-top: -2px;
 		color: #ffc40c;
 		text-shadow: 0 0 2px #ffc40c;
 		background: #a01c1c;
@@ -1284,14 +1284,12 @@ body {
 	}
 	
 	.OT-banners-bottom .banners div span4 {
-		margin-top: -2px;
 		color: rgb(76, 103, 192);
 		text-shadow: 0 0 2px yellow, 0 0 2px yellow;
 		background: #a01c1c;
 	}
 	
 	.OT-banners-bottom .banners div span5 {
-		margin-top: -2px;
 		color: rgb(204, 204, 90);
 		text-shadow: 0 0 2px rgb(90, 186, 224);
 		background: #640505;
@@ -1312,7 +1310,6 @@ body {
 	}
 	
 	.OT-banners-bottom .banners div span8 {
-		margin-top: -2px;
 		background: white;
 	}
 	
@@ -1329,12 +1326,10 @@ body {
 	}
 	
 	.OT-banners-bottom .banners div span11 {
-		margin-top: -2px;
 		background: white;
 	}
 	
 	.OT-banners-bottom .banners div span12 {
-		margin-top: -1px;
 		font-size: .9em;
 		background: white;
 		/* got this filter here: https://www.w3schools.com/cssref/css3_pr_filter.php */
@@ -1378,7 +1373,6 @@ body {
 	}
 	
 	.OT-banners-bottom .banners div span18 {
-		margin-top: -1px;
 		font-size: .9em;
 		background: white;
 		filter: grayscale(100%);
@@ -1392,7 +1386,6 @@ body {
 	}
 	
 	.OT-banners-bottom .banners div span20 {
-		margin-top: -1px;
 		font-size: .9em;
 		background: #a01c1c;
 	}
@@ -1453,7 +1446,6 @@ body {
 	}
 	
 	.OT-banners-bottom .banners div span29 {
-		margin-top: -1px;
 		background: white;
 	}
 	
@@ -1479,7 +1471,6 @@ body {
 	}
 	
 	.OT-banners-bottom .banners div span33 {
-		margin-top: -1px;
 		background: white;
 		/* fiddle by Platte Gruber: https://stackoverflow.com/questions/32875695/flip-mirror-an-image-horizontally-vertically-with-css */
 		transform: rotateY(180deg);
@@ -1487,6 +1478,7 @@ body {
 	
 	.OT-banners-bottom .banners div:nth-child(2) {
 		animation: animate3 80s linear infinite;
+		/* animation: none; */
 	}
 	@keyframes animate2 {
 		0%
