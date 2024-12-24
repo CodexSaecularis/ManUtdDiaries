@@ -1167,5 +1167,355 @@ body {
 		align-items: center;
 		position: relative;
 	}
+	/* BOTTOM 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.bottom {
+		border: solid 1px red;
+		left: 22%;
+		background-image: url(../underground/1base-5.png);
+		background-repeat: no-repeat;
+		background-size: 100.15% 117.7%;  /* don't modify this, only padding if you want the img larger or smaller */
+		color: white;
+		/* increase the padding to increase the height of container //
+		   the code from the tutorial had 'padding: 1em .6em' , the latter value (.6em) is the space between text and left screen border */
+		padding: 40%;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: absolute;
+		pointer-events: none;
+	}
+	
+	.bottom-isometric {
+		position: absolute;
+		color: #b8b4b4;
+		left: 38.1%;
+		margin-top: 19.1%;
+		font-family: Manchester\ United\ 23-24\ Tipogra;
+		font-size: 4em;
+		transform: skewY(11deg) rotate3d(0, 1, 0, 60deg);
+		z-index: -1;
+	}
+	
+	/* isometric effect based on code here: https://codepen.io/jgrose/pen/WQjGmW */
+	.bottom-isometric::before {
+	content: "2023/24";
+	position: absolute;
+	text-shadow: -1px 0.5px 1px #555,
+					   -2px 0.5px 1px #555,
+					   -3px 0.5px 1px #555,
+					   -4px 0.5px 1px #555,
+					   -5px 0.5px 1px #555,
+					   -6px 0.5px 1px #555,
+					   -7px 0.5px 1px #555,
+					   -8px 0.5px 1px #555,
+					   -9px 0.5px 1px #555,
+					   -10px 0.5px 1px #555;
+	/* important to leave the isometric 3d effect behind */
+	z-index: -1;
+	}
+	
+	.bottom-GGMU {
+		position: absolute;
+		left: 58%;
+		margin-top: 30%;
+		text-align: center;
+		line-height: 90pt;
+		font-weight: 900;
+		font-family: Agency FB;
+		font-size: 4em;
+		mix-blend-mode: overlay;
+		transform: skewY(-2deg);
+	}
+	.OT-banners-bottom {
+		position: absolute;
+		height: 1.3vw;
+		line-height: 1.5vw;  /* responsive: center text top to bottom */		
+		left: 0;
+		margin-top: 55%;
+		background: white;
+		background-size: cover;
+		display: flex;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	.OT-banners-bottom .banners {
+		display: flex;
+	}
+	
+	.OT-banners-bottom .banners div {
+		color: #fff;
+		font-family: monospace;
+		font-size: 1vw;
+		white-space: nowrap;
+		font-weight: 100;
+		/* important value in this div to make the text occupy the entirity of the box; I was playing with text-align and display values in different divs,
+		   but I figured it out thanks to Wazeed's answer: https://stackoverflow.com/questions/10283138/center-a-div-without-knowing-the-height */
+		display: flex;
+		/* I was already aware of this carrousel animation, but knowing exactly what value to put in animation-delay was thanks to
+		   rmurph46's answer below. It's simply half of the value in animation duration but negative. I needed to know that to make long carrousels
+		   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
+		animation: animate2 80s linear infinite;
+		animation-delay: -40s;
+	}
+	
+	.OT-banners-bottom .banners div span {
+		color: white;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
+		/* found out of 50% as a value for split color, and not gradient // Answer by Terry: https://stackoverflow.com/questions/50434409/how-can-i-make-a-split-color-box */
+		background-image: linear-gradient(to bottom, #cc1724 50%, #1e2526 50%);
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners-bottom .banners div span2 {
+		margin-top: -2px;
+		color: #ffc40c;
+		text-shadow: 0 0 2px #ffc40c;
+		background: #a01c1c;
+	}
+	
+	.OT-banners-bottom .banners div span3 {
+		color: white;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+		background: #a01c1c;
+		transform: scaleX(1.1) scaleY(1.1);
+	}
+	
+	.OT-banners-bottom .banners div span4 {
+		margin-top: -2px;
+		color: rgb(76, 103, 192);
+		text-shadow: 0 0 2px yellow, 0 0 2px yellow;
+		background: #a01c1c;
+	}
+	
+	.OT-banners-bottom .banners div span5 {
+		margin-top: -2px;
+		color: rgb(204, 204, 90);
+		text-shadow: 0 0 2px rgb(90, 186, 224);
+		background: #640505;
+	}
+	
+	.OT-banners-bottom .banners div span6 {
+		color: white;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
+		background: #1e2526;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners-bottom .banners div span7 {
+		font-family: 'Times New Roman', Times, serif;
+		color: white;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+		background: #a01c1c;
+	}
+	
+	.OT-banners-bottom .banners div span8 {
+		margin-top: -2px;
+		background: white;
+	}
+	
+	.OT-banners-bottom .banners div span9 {
+		color: #b93939;
+		text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
+		background: white;
+	}
+	
+	.OT-banners-bottom .banners div span10 {
+		color: black;
+		text-shadow: 0 0 2px black, 0 0 2px black;
+		background: white;
+	}
+	
+	.OT-banners-bottom .banners div span11 {
+		margin-top: -2px;
+		background: white;
+	}
+	
+	.OT-banners-bottom .banners div span12 {
+		margin-top: -1px;
+		font-size: .9em;
+		background: white;
+		/* got this filter here: https://www.w3schools.com/cssref/css3_pr_filter.php */
+		filter: grayscale(100%);
+	}
+	
+	.OT-banners-bottom .banners div span13 {
+		font-size: .8em;
+		/* answer by Reinier Koops: https://stackoverflow.com/questions/15904211/css-filter-grayscale-i-want-it-black */
+		filter: brightness(10%);
+		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
+		/* transform: scaleX(-.5); */
+	}
+	
+	.OT-banners-bottom .banners div span14 {
+		color: #b93939;
+		text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
+		background: white;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners-bottom .banners div span15 {
+		color: black;
+		text-shadow: 0 0 2px black, 0 0 2px black;
+		background: white;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners-bottom .banners div span16 {
+		color: #b93939;
+		text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
+		background: white;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners-bottom .banners div span17 {
+		font-size: .8em;
+		filter: brightness(10%);
+		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
+		/* transform: scaleX(-.5); */
+	}
+	
+	.OT-banners-bottom .banners div span18 {
+		margin-top: -1px;
+		font-size: .9em;
+		background: white;
+		filter: grayscale(100%);
+	}
+	
+	.OT-banners-bottom .banners div span19 {
+		color: white;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+		background: #a01c1c;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners-bottom .banners div span20 {
+		margin-top: -1px;
+		font-size: .9em;
+		background: #a01c1c;
+	}
+	
+	.OT-banners-bottom .banners div span21 {
+		color: white;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+		background: #a01c1c;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners-bottom .banners div span22 {
+		color: white;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+		background:#cc1724;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners-bottom .banners div span23 {
+		font-size: .8em;
+		filter: brightness(10%);
+		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
+		/* transform: scaleX(-.5); */
+	}
+	
+	.OT-banners-bottom .banners div span24 {
+		font-size: .8em;
+	}
+	
+	.OT-banners-bottom .banners div span25 {
+		font-size: .8em;
+		filter: brightness(10%);
+		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
+		/* transform: scaleX(-.5); */
+	}
+	
+	.OT-banners-bottom .banners div span26 {
+		color: white;
+		font-size: .7em;
+		font-family: raleway_f;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+		background: #1e2526;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners-bottom .banners div span27 {
+		color: white;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
+		background: #1e2526;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners-bottom .banners div span28 {
+		color: #a01c1c;
+		text-shadow: 0 0 2px #a01c1c, 0 0 2px #a01c1c, 0 0 2px #a01c1c;
+		background: #1e2526;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners-bottom .banners div span29 {
+		margin-top: -1px;
+		background: white;
+	}
+	
+	.OT-banners-bottom .banners div span30 {
+		color: black;
+		text-shadow: 0 0 2px black, 0 0 2px black;
+		background: white;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners-bottom .banners div span31 {
+		color: #a01c1c;
+		text-shadow: 0 0 2px #a01c1c, 0 0 2px #a01c1c, 0 0 2px #a01c1c;
+		background: white;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners-bottom .banners div span32 {
+		color: black;
+		text-shadow: 0 0 2px black, 0 0 2px black;
+		background: white;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners-bottom .banners div span33 {
+		margin-top: -1px;
+		background: white;
+		/* fiddle by Platte Gruber: https://stackoverflow.com/questions/32875695/flip-mirror-an-image-horizontally-vertically-with-css */
+		transform: rotateY(180deg);
+	}
+	
+	.OT-banners-bottom .banners div:nth-child(2) {
+		animation: animate3 80s linear infinite;
+	}
+	@keyframes animate2 {
+		0%
+		{
+			transform: translateX(100%);
+		}
+		100%
+		{
+			transform: translateX(-100%);
+		}
+	}
+	@keyframes animate3 {
+		0%
+		{
+			transform: translateX(0);
+		}
+		100%
+		{
+			transform: translateX(-200%);
+		}
+	}
+	
+	.email-cursor-text {
+		/* border: solid 1px red; */
+		padding: 6px;
+		position: absolute;
+		font-family: Poppins Regular;
+		font-size: 0.8em;
+		color: #a6a6a6;
+		left: 11.5%;
+		margin-top: 72.35%;
+		cursor: text;
+	}
 }
 /* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */
