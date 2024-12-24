@@ -75,7 +75,7 @@ body {
 /* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */
 /* use vw for font-size and line-height, use % for margin-top, left, etc; play with 'vw' and '%' anyways
    use url:(../) before any url source in CSS, but src="" without slash (/) at the beginning in HTML */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1366px) {
 	::-webkit-scrollbar { display: none; }
 	::-webkit-scrollbar-thumb { display: none; }
 
