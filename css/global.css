@@ -352,7 +352,7 @@ body {
 		color: white;
 		position: absolute;
 		width: 15%;  /* space between score and .final-real */
-		height: 6.7vw;
+		height: 8.5vw;
 		line-height: 3.7vw;
 		margin-top: -33.3%;  /* with respect to .underground-cables */
 		left: 62.7%;
@@ -385,7 +385,7 @@ body {
 		color: white;
 		position: absolute;
 		width: 15%;  /* space between score and .final-real2 */
-		height: 6.7vw;
+		height: 8.5vw;
 		line-height: 3.7vw;
 		margin-top: -33.3%;  /* with respect to .underground-cables */
 		left: 62.7%;
