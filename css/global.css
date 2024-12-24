@@ -323,7 +323,7 @@ body {
 	/* SCOREBOARD (TEAMS) 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.scoreboard-teams { display: none; }  /* PC version */
 	.scoreboard-teams-mobile {  /* mobile version */
-		border: solid red 1px;
+		/* border: solid red 1px; */
 		position: absolute;
 		width: 40%;
 		margin-top: -33.3%;  /* with respect to .underground-cables */
@@ -353,8 +353,6 @@ body {
 		position: absolute;
 		width: 15%;  /* space between score and .final-real */
 		/* height: 5%; */
-		padding: 0;  /* exp */
-		margin: 0;  /* exp */
 		line-height: 3.7vw;
 		margin-top: -33.3%;  /* with respect to .underground-cables */
 		left: 62.7%;
@@ -387,7 +385,7 @@ body {
 		color: white;
 		position: absolute;
 		width: 15%;  /* space between score and .final-real2 */
-		line-height: 3vw;
+		line-height: 3.7vw;
 		margin-top: -33.3%;  /* with respect to .underground-cables */
 		left: 62.7%;
 		display: flex;
