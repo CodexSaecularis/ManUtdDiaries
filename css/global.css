@@ -352,8 +352,8 @@ body {
 		color: white;
 		position: absolute;
 		width: 15%;  /* space between score and .final-real */
-		height: 7.15vw;
-		line-height: 3.7vw;
+		height: 7.17vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
+		line-height: 3.7vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
 		margin-top: -33.3%;  /* with respect to .underground-cables */
 		left: 62.7%;
 		display: flex;
@@ -385,8 +385,8 @@ body {
 		color: white;
 		position: absolute;
 		width: 15%;  /* space between score and .final-real2 */
-		height: 7.18vw;
-		line-height: 3.7vw;
+		height: 7.17vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
+		line-height: 3.7vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
 		margin-top: -33.3%;  /* with respect to .underground-cables */
 		left: 62.7%;
 		display: flex;
@@ -525,7 +525,7 @@ body {
 		padding: 0 2vw;  /* the space between menu text */
 	}
 	/* CONTACT ME 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.navlist li a {
+	.navlist li .contact-me {
 		display: inline-block;  /* allows me to move this text freely */
 		transform: translateY(25%);
 		text-decoration: none;  /* this removes link underline */
@@ -585,7 +585,7 @@ body {
 						   0 0 160px #fff;
 	}
 	/* MEET THE CREATOR 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.navlist li b {
+	.navlist li .know-me {
 		/* this removes link underline */
 		text-decoration: none;
 		align-content: center;
@@ -628,7 +628,7 @@ body {
 						   0 0 160px #fff;
 	}
 	/* SUPPORT & DONATE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.navlist li d {
+	.navlist li .support {
 		display: inline-block;  /* allows me to move this text freely */
 		transform: translateY(10%);
 		/* this removes link underline */
@@ -675,7 +675,7 @@ body {
 	}
 	.line7-5 { display: none; }
 	/* WANNA LEARN A LANGUAGE? 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.navlist li e {
+	.navlist li .learn-language {
 		text-decoration: none;
 		align-content: center;
 		text-align: center;
@@ -1503,8 +1503,8 @@ body {
 		font-size: 1.2vw;
 		color: #a6a6a6;
 		left: 31%;
-		margin-top: 57.22%;
-		padding: 6px;  /* to increase cursor margin */
+		margin-top: 56.8%;
+		padding: 6px;  /* to increase cursor margin for mouse (cursor:text) */
 		cursor: text;
 	}
 }

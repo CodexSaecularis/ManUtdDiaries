@@ -1,0 +1,48 @@
+@font-face { font-family: Agency FB; src: url(../fonts/AGENCYR.TTF); }
+
+::selection{  /* color for when text is highlighted by user */
+	background-color: #ac141b;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none; /* none // helps eliminate any listing bulletpoint */
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: black;
+    color:  #fff;
+	overflow-x: hidden;
+    overflow-y: hidden;
+	/* default cursor */
+	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='28px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23080101' d='M 2.5,3.5 C 7.1586,6.16843 11.4919,9.3351 15.5,13C 9.07438,12.1868 4.74104,14.6868 2.5,20.5C 1.16667,14.8333 1.16667,9.16667 2.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23af231e' d='M 3.5,1.5 C 9.3796,5.26653 15.0463,9.26653 20.5,13.5C 17.023,14.3227 13.3563,14.8227 9.5,15C 8.74756,15.6708 8.41423,16.5041 8.5,17.5C 7.20027,20.4323 5.20027,22.7656 2.5,24.5C 2.5,23.1667 2.5,21.8333 2.5,20.5C 4.74104,14.6868 9.07438,12.1868 15.5,13C 11.4919,9.3351 7.1586,6.16843 2.5,3.5C 2.32842,2.50838 2.66175,1.84171 3.5,1.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bab7d0' d='M 20.5,13.5 C 21.1667,13.8333 21.8333,14.1667 22.5,14.5C 22.5,15.5 22.5,16.5 22.5,17.5C 17.8665,16.8663 13.1998,16.8663 8.5,17.5C 8.41423,16.5041 8.74756,15.6708 9.5,15C 13.3563,14.8227 17.023,14.3227 20.5,13.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23b4bcca' d='M -0.5,-0.5 C 0.166667,-0.5 0.833333,-0.5 1.5,-0.5C 2.16667,0.166667 2.83333,0.833333 3.5,1.5C 2.66175,1.84171 2.32842,2.50838 2.5,3.5C 1.16667,9.16667 1.16667,14.8333 2.5,20.5C 2.5,21.8333 2.5,23.1667 2.5,24.5C 1.89022,25.391 1.55688,26.391 1.5,27.5C 0.833333,27.5 0.166667,27.5 -0.5,27.5C -0.5,18.1667 -0.5,8.83333 -0.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, auto;
+}
+
+/* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */
+/* use vw for font-size and line-height, use % for margin-top, left, etc; play with 'vw' and '%' anyways
+   use url:(../) before any url source in CSS, but src="" without slash (/) at the beginning in HTML */
+@media only screen and (max-width: 1366px) {  /* screen width of this laptop: 1366 */
+	/* idea of adding position:relative in DD.'s answer: https://stackoverflow.com/questions/8635799/overflow-xhidden-still-can-scroll?rq=3 */
+	html, body { position: relative; overflow-x: hidden; }  /* responsiveness */
+	/* CONTACT 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.contact img {
+        width: 100%;
+        object-fit: cover;
+	}
+    .contact span {
+        /* border: solid 1px red; */
+        position: absolute;
+        left: 45.3%;
+        /* top: 14.2%; */
+        margin-top: 6.9%;
+        font-family: Agency FB;
+        font-size: 1.47vw;
+        color: #a6a6a6;
+        padding: .3vw;  /* to increase cursor margin for mouse (cursor:text) */
+        cursor: text;
+    }
+    /* DONATE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+}
