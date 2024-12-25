@@ -1,3 +1,5 @@
+<!-- see how many MBs it is; should be less than 5: https://tools.pingdom.com/#64fb603e3f000000
+     filter images to reduce size: https://tinypng.com/ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +15,7 @@
      
      <section class="parallax-home">
           <img src="parallax/sky.png" class="sky">
-          <img src="parallax/flag1.png" id="flag">
+          <img src="parallax/flag1.png" id="flag">  <!-- class doesn't seem to work -->
                <div class="title">
                     <h1 id="text1">REVISIT OLD MATCHES</h1>
                     <h2 id="text2">MAN UTD DIARIES</h2>
@@ -147,7 +149,7 @@
 
     <header>
         <ul class="navlist">
-            <li><a href="#contact">
+            <li><a class="contact-me" href="contact.html">
                         <div class="line1">
                             WANN<span>A</span> SAY
                         </div>
@@ -159,16 +161,16 @@
                         </div>
                 </a>
             </li>
-            <li><b href="#know-me">
+            <li><a class="know-me" href="/contact.html">
                         <div class="line4">
                             Meet <span>The</span>
                         </div>
                         <div class="line5">
                             Creator
                         </div>
-                </b>
+                    </a>
             </li>
-            <li><d href="#support">
+            <li><a class="support" href="underground/contact.png">
                     <div class="line6">
                             SUPPORT
                     </div>
@@ -178,9 +180,9 @@
                     <div class="line7-5">
                             <span>⇩</span><span2>⇩</span2><span3>⇩</span3>
                     </div>
-                </d>
+               </a>
             </li>
-            <li><e href="#learn-a-language">
+            <li><a class="learn-language" href="seasons/2026/select.html">
                         <div class="line8">
                              WANNA LEARN <span>A</span>
                         </div>
@@ -197,10 +199,17 @@
                              <span>Я</span><span2>ق</span2><span3>Ñ</span3><span4>曼</span4>
                                
                         </div>
-                </e>
+                    </a>
             </li>
         </ul>
     </header>
+
+        <!-- MENU LINKS -->
+        <a class="link-contact" href="/select.html" id="links"></a>
+        <a class="link-knowme" href="/select.html" id="links"></a>   
+        <a class="link-donate" href="/select.html" id="links"></a>   
+        <a class="link-learn-language" href="/select.html" id="links"></a>  
+        <!-- MENU LINKS -->
 
       <!-- UNDERGROUND ARTWORK -->
     <section class="brick-wall" id="brick-wall">
@@ -433,3 +442,4 @@
 
 
 </body>
+</html>

@@ -525,7 +525,7 @@ body {
 		padding: 0 2vw;  /* the space between menu text */
 	}
 	/* CONTACT ME 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.navlist li .contact-me {
+	.contact-me {
 		display: inline-block;  /* allows me to move this text freely */
 		transform: translateY(25%);
 		text-decoration: none;  /* this removes link underline */
@@ -585,7 +585,7 @@ body {
 						   0 0 160px #fff;
 	}
 	/* MEET THE CREATOR 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.navlist li .know-me {
+	.know-me {
 		/* this removes link underline */
 		text-decoration: none;
 		align-content: center;
@@ -1502,9 +1502,9 @@ body {
 		font-family: Poppins Regular;
 		font-size: 1.2vw;
 		color: #a6a6a6;
-		left: 31%;
-		margin-top: 56.8%;
-		padding: 6px;  /* to increase cursor margin for mouse (cursor:text) */
+		left: 31.3%;
+		margin-top: 57.86%;
+		padding: .3vw;  /* to increase cursor margin for mouse (cursor:text) */
 		cursor: text;
 	}
 }
