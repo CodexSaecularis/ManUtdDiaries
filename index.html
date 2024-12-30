@@ -1,13 +1,11 @@
-<!-- see how many MBs it is; should be less than 5: https://tools.pingdom.com/#64fb603e3f000000
-     filter images to reduce size: https://tinypng.com/ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Responsive</title> 
-     <link rel="stylesheet" href="css/global.css">
+     <title>Ultimate</title> 
+     <link rel="stylesheet" href="css/ultimate.css">
      <link rel="icon" href="parallax/Man Utd.ico">  <!-- Michał Perłakowski: https://stackoverflow.com/questions/4888377/how-to-add-a-browser-tab-icon-favicon-for-a-website -->
 </head>
 
@@ -15,7 +13,8 @@
      
      <section class="parallax-home">
           <img src="parallax/sky.png" class="sky">
-          <img src="parallax/flag1.png" id="flag">  <!-- class doesn't seem to work -->
+          <img src="parallax/flag1.png" id="flag">  <!-- for mobile // class doesn't seem to work -->          
+          <img src="parallax/flag2.png" id="flag2">  <!-- for PC // class doesn't seem to work -->
                <div class="title">
                     <h1 id="text1">REVISIT OLD MATCHES</h1>
                     <h2 id="text2">MAN UTD DIARIES</h2>
@@ -23,7 +22,8 @@
           <img src="parallax/ground1.png" class="ground">
      </section>
 
-    <section class="underground-cables">          
+    <section class="underground-cables">
+          <img src="parallax/cables1.png" class="cables2">
           <img src="parallax/cables3.png" class="cables">
     </section>
 
@@ -38,7 +38,8 @@
                          <div class="dropdown-content-display">
                               <ul class="dropdown-sub-season">                                   
                                    <li class="dropdown-li">
-                                        <img class="season-content" src="underground/1base1-mobile.png" alt="">
+                                        <img class="season-content-pc" src="underground/1base1-alt.png" alt="">
+                                        <img class="season-content-mobile" src="underground/1base1-mobile.png" alt="">
                                         <img class="season-content" src="underground/1base3.png" alt="">
                                         <img class="season-content" src="underground/1base4.png" alt="">
                                         <img class="season-content" src="underground/1base5.png" alt="">
@@ -61,6 +62,7 @@
 
      <!-- how to create jump link: https://blog.hubspot.com/marketing/jump-link-same-page -->
     <a href="#jump">
+     <div class="relative">
           <!-- https://www.youtube.com/watch?v=3T4rD_P2nc8&list=PL5e68lK9hEzdGazIG1ONnb7TJ74Q69rH7&index=128
                Although I had to make a few adjustments here in HTML and in CSS -->
           <div class="scoreboard-PL" id="links">
@@ -75,8 +77,8 @@
           <!-- SCOREBOARD -->    
           <div class="scoreboard-teams" id="links">
                <div class="home">
-                    <p><span>&nbsp;MUN</span></p>
-                    <p>&nbsp;LIV</p>
+                    <p><span>&nbsp;MANCHESTER UNITED</span></p>
+                    <p>&nbsp;LIVERPOOL</p>
                </div>
           </div>
               
@@ -109,6 +111,7 @@
                     <p>&thinsp;SCORE&thinsp;</p>
                </div>
           </div>
+     </div>
      </a>
 
      <div class="box-shadow" id="box-shadow"></div> 
@@ -146,6 +149,10 @@
      setInterval(getClock, 1000);
     </script>
      <!-- CLOCK -->
+
+     <section class="underground-irons" id="underground-irons">
+          <img src="underground/irons2.png" alt="" id="irons" class="irons">
+    </section>
 
     <header>
         <ul class="navlist">
@@ -204,12 +211,9 @@
         </ul>
     </header>
 
-        <!-- MENU LINKS -->
-        <a class="link-contact" href="/select.html" id="links"></a>
-        <a class="link-knowme" href="/select.html" id="links"></a>   
-        <a class="link-donate" href="/select.html" id="links"></a>   
-        <a class="link-learn-language" href="/select.html" id="links"></a>  
-        <!-- MENU LINKS -->
+    <section class="devil">
+     <img class="animated-gif" src="parallax/logo-neon.png">
+    </section>
 
       <!-- UNDERGROUND ARTWORK -->
     <section class="brick-wall" id="brick-wall">
@@ -218,6 +222,7 @@
           <h1>2023/<span>24</span></h1>
           <img src="underground/cable-box-left.png" alt="" id="cable-box" class="cable-box-left">
           <img src="underground/cable-box-right.png" alt="" id="cable-box" class="cable-box-right">
+          <img src="underground/gallery-banner.png" alt="" id="gallerybanner" class="gallery-banner-pc">
           <img src="underground/gallery-banner1.png" alt="" id="gallerybanner" class="gallery-banner">
           <h2>THE BICYCLE KICK</h2>
           <h3>LIVERPOOL <span>FA CUP</span></h3>
