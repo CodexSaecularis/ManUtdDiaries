@@ -63,6 +63,8 @@
 	scroll-behavior: smooth;
 }
 
+html {position: relative;}
+
 body {
 	position: relative;
 	min-width: 1101px;
