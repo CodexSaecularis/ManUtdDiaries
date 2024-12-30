@@ -64,6 +64,7 @@
 }
 
 body {
+	position: relative;
 	min-width: 1101px;
 	background-color: black;
     color:  #fff;
