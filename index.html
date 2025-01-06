@@ -107,7 +107,7 @@
                     <p>0&thinsp;</p>
                </div>
                <div class="final-real2" id="text-right2">
-                    <p>&thinsp;REAL&thinsp;</p>
+                    <p>&thinsp;FAIR&thinsp;</p>
                     <p>&thinsp;SCORE&thinsp;</p>
                </div>
           </div>
@@ -222,17 +222,166 @@
           <h1>2023/<span>24</span></h1>
           <img src="underground/cable-box-left.png" alt="" id="cable-box" class="cable-box-left">
           <img src="underground/cable-box-right.png" alt="" id="cable-box" class="cable-box-right">
-          <img src="underground/gallery-banner.png" alt="" id="gallerybanner" class="gallery-banner-pc">
+          <img src="underground/gallery-banner-pc-blur.png" alt="" id="gallerybanner" class="gallery-banner-pc">
+          <img src="underground/gallery-banner-mobile.png" alt="" id="gallerybanner" class="gallery-banner-mobile">
+          <div id="photo-blur">
+               <img src="underground/gallery-banner(backup).png" class="photo-blur">
+          </div>
+          <div id="gallery-blur1">
+               <img src="underground/gallery-banner-blur.png" class="gallery-blur">
+          </div>
           <img src="underground/gallery-banner1.png" alt="" id="gallerybanner" class="gallery-banner">
-          <h2>THE BICYCLE KICK</h2>
-          <h3>LIVERPOOL <span>FA CUP</span></h3>
-          <h4>FUTURE IS BRIGHT</h4>
-          <h5>INJURY CRISIS</h5>
-          <h6>BEATING CITY</h6>
-          <h7>MAINOO'S BREAKTHROUGH</h7>
-          <img src="underground//trophies-23-24.png" alt="" id="trophies" class="trophies">
+          <h2 id="photo-text1">THE BICYCLE KICK</h2>
+          <h3 id="photo-text2">LIVERPOOL <span>FA CUP</span></h3>
+          <h4 id="photo-text3">FUTURE IS BRIGHT</h4>
+          <h5 id="photo-text4">INJURY CRISIS</h5>
+          <h6 id="photo-text5">BEATING CITY</h6>
+          <h7 id="photo-text6">MAINOO'S BREAKTHROUGH</h7>
+          <img src="underground/trophies-23-24.png" alt="" id="trophies" class="trophies">
+          <div class="cuboid-holder">
+               <img src="underground/holder.png" class="holder">
+          </div>
     </section>
     <!-- UNDERGROUND ARTWORK -->
+
+    <!-- <div class="holder1">
+     <img src="underground/holder.png" class="holder">
+</div> -->
+
+    <div class="class-button-photo">    <!-- photo gallery -->
+     <button type="button" onclick="show()" id="button-gallery2">
+      Reveal Image
+  </button>
+  <button type="button" onclick="show()" id="button-gallery3">
+     Reveal Image
+ </button>
+ 
+  <script>
+      function show() {
+          /* Access image by id and change 
+          the display property to block*/
+          document.getElementById('photo-blur')
+              .style.display = "block";
+          document.getElementById('photo-text1')  /* THE BICYCLE KICK */
+              .style.display = "initial";
+          document.getElementById('photo-text2')
+              .style.display = "initial";
+          document.getElementById('photo-text3')
+              .style.display = "initial";
+          document.getElementById('photo-text4')
+              .style.display = "initial";
+          document.getElementById('photo-text5')
+              .style.display = "initial";
+          document.getElementById('photo-text6')  /* MAINOO'S BREAKTHROUGH */
+              .style.display = "initial";
+          document.getElementById('button-gallery2')  /* button 1 */
+              .style.display = "none";
+          document.getElementById('button-gallery3')  /* button 2 */
+              .style.display = "none";
+      }
+  </script>
+  </div>
+
+  <div class="class-button-gallery">       <!-- 'expectations' -->
+     <button type="button" onclick="show2()" id="button-gallery">
+      Show Image
+  </button>
+ 
+  <script>
+      function show2() {
+          /* Access image by id and change 
+          the display property to block*/
+          document.getElementById('gallery-blur1')
+              .style.display = "block";
+          document.getElementById('button-gallery')
+              .style.display = "none";
+      }
+  </script>
+  </div>
+
+         <!-- LEGEND TO MATCH RATINGS -->
+     <div class="legend">
+          <div class="legend-1">3 -</div>
+          <div class="legend-2">4</div>
+          <div class="legend-3">5</div>
+          <div class="legend-4">6</div>
+          <div class="legend-5">7</div>
+          <div class="legend-6">8</div>
+          <div class="legend-7">10<span>out of 10 performance</span></div>
+          <div class="legend-8">
+               <div id="first-half">
+                    <!-- smaller than regular space // answer by knittle: https://stackoverflow.com/questions/2720770/how-to-create-small-spaces-in-html -->
+                    <p>1H&thinsp;</p>
+               </div>
+               <div id="second-half">
+                    <p>&thinsp;2H&thinsp;</p>
+               </div>
+          </div>
+     </div>
+     <!-- LEGEND TO MATCH RATINGS -->
+
+     <div class="class-button-photo">    <!-- photo gallery -->
+          <button type="button" onclick="show3()" id="button-gallery4">
+           Reveal Score
+       </button>
+      
+       <script>
+           function show3() {
+               /* Access image by id and change 
+               the display property to block*/
+               document.getElementById('result')  /* score - match #1 */
+                   .style.display = "initial";  /* initial when it comes to text */
+               document.getElementById('result1')  /* score - match #2 */
+                   .style.display = "initial";  /* initial when it comes to text */
+               document.getElementById('ratings')
+                   .style.display = "initial";
+               document.getElementById('button-gallery4')  /* button 1 */
+                   .style.display = "none";
+           }
+       </script>
+       </div>
+
+    <div class="date-and-result">
+         <!-- line break: https://developer.mozilla.org/en-US/docs/Web/CSS/line-break -->
+         <a href="#match1"><h8><span id="date1">Sat, 22 Nov 2024</span><br />Man Utd <span id="result">1</span><br />Bournemouth <span id="result1">2</span></h8></a>
+         <h9><span id="date1">Sat, 24 Aug 2024</span><br />Tottenham 2<br />Man Utd 0</h9>
+         <h10><span id="date1">Sat, 1 Sep 2023</span><br />Man Utd 3<br />Forest 2</h10>
+         <h11><span id="date1">Sat, 1 Sep 2023</span><br />Arsenal 3<br />Man Utd 1</h11>
+         <h12><span id="date1">Sat, 1 Sep 2023</span><br />Man Utd 1<br />Brighton 3</h12>
+         <h13><span id="date1">Sat, 1 Sep 2023</span><br />Bayern 4<br />Man Utd 3</h13>
+         <h14><span id="date1">Sat, 1 Sep 2023</span><br />Burnley 0<br />Man Utd 1</h14>
+         <h15><span id="date1">Sat, 1 Sep 2023</span><br />Bournemouth 2<br />Man Utd 2</h15>
+         <h16><span id="date1">Sat, 1 Sep 2023</span><br />Man Utd 3<br />C. Palace 0</h16>
+         <h17><span id="date1">Sat, 1 Sep 2023</span><br />Man Utd 2<br />Galatasaray 3</h17>
+         <h18><span id="date1">Sat, 1 Sep 2023</span><br />Man Utd 2<br />Galatasaray 3</h18>
+    </div>
+
+     <div class="ratings">
+         <img src="underground/match-performance-o-meter.png" id="ratings">
+    </div>
+
+        <!-- CUBOIDS -->
+        <section class="cuboid1" id="cuboid1">
+          <div>
+               <span style="--i:0;" id="cuboid1-side1"></span>
+               <span style="--i:1;" id="cuboid1-side4"></span>
+               <span style="--i:2;" id="cuboid1-side3"></span>
+               <span style="--i:3;" id="cuboid1-side2"></span>
+          </div>
+    </section>
+    <section class="cuboid2" id="cuboid2">
+     <div>
+          <span style="--i:0;" id="cuboid2-side1"></span>
+          <span style="--i:1;" id="cuboid2-side4"></span>
+          <span style="--i:2;" id="cuboid2-side3"></span>
+          <span style="--i:3;" id="cuboid2-side2"></span>
+     </div>
+</section>
+    <!-- CUBOIDS -->
+
+
+
+
 
 
 
@@ -349,7 +498,7 @@
 
 
 
-                    <li class="dropdown_list" id="jump">
+                    <li class="dropdown_list" id="jump" itemid="dropdown-matches">
                          <a href="#" class="dropdown_link-preseason" id="dropdowns">
                               <span class="open2">OPEN</span>
                               <span class="close2">CLOSE</span>
@@ -370,7 +519,7 @@
 
 
 
-                    <li class="dropdown_list" id="jump">
+                    <li class="dropdown_list" itemid="dropdown-matches">
                          <a href="#" class="dropdown_link-1st-match" id="dropdowns">
 
                               <input type="checkbox" class="dropdown_check"><span class="player-stats-below"></span>
@@ -386,8 +535,8 @@
                                              <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content3.png" alt="">
                                              <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content4.png" alt="">
                                              <img class="dropdown-content-historical" id="dropdown-content-match" src="underground/1st-match-content5.png" alt="">                                               
-                                             <iframe src="https://widgets.sofascore.com/embed/attackMomentum?id=12436494&widgetTheme=dark"></iframe>
-                                             <img class="dropdown-content-historical1" id="dropdown-content-match" src="underground/1st-match-content6.png" alt="">
+                <!-- display:none --> <iframe src="https://widgets.sofascore.com/embed/attackMomentum?id=12436494&widgetTheme=dark"></iframe>
+                <!-- display:none --> <img class="dropdown-content-historical1" id="dropdown-content-match" src="underground/1st-match-content6.png" alt="">
                                              <img class="dropdown-content-historical3" src="underground/1st-match-content6-5.png" alt="">          
                                              <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content7.png" alt="">                                                                      
                                              <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content8.png" alt="">                                                                        
