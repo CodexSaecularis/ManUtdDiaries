@@ -5002,7 +5002,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 
 /* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */
 @media only screen and (max-width: 570px) {  /* MOBILE  📱 */
-	html, body { position: relative; overflow-x: hidden; background-color: #ac141b; min-width: auto;}
+	html, body { position: relative; overflow-x: hidden; background-color: black; min-width: auto;}
 	::-webkit-scrollbar { display: none; }
 	::-webkit-scrollbar-thumb { display: none; }
 	.parallax-home {
