@@ -63,10 +63,8 @@
 	scroll-behavior: smooth;
 }
 
-html {position: relative;}
-
 body {
-	position: relative;
+	position: relative;  /* for Mozilla desktop view on mobile */
 	min-width: 1101px;
 	background-color: black;
     color:  #fff;
@@ -272,7 +270,7 @@ body {
 }
 /* WRAP FOR CAROUSEL, TEAMS, AND SCORE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .relative {
-	position: relative;
+	position: relative;  /* I created this wrapper with this only line to make stuff fit cross-browser */
 }
 /* WRAP FOR CAROUSEL, TEAMS, AND SCORE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* SCOREBOARD CAROUSEL 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -801,7 +799,7 @@ ul.navlist {
 					   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
 					   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
 }
-/* BRICKS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* BRICKS & TROPHIES【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .bricks {
 	position: relative;
 	/* border: solid red 1px; */
@@ -823,7 +821,7 @@ ul.navlist {
 .brick-wall h1 span {  /* 2023/24 (TEXT) */
 	color: #ec334d;
 }
-.trophies {  /* when more trophies, simply edit the brick wall larger, and move .gallery-banner-pc lower */
+.trophies {  /* when more trophies, simply edit the brick wall larger, and get everything down from .brick-wall */
 	width: 100%;
 	transform: translateY(-498%);  /* for Mozilla, best way to move this img */
 }
@@ -843,7 +841,7 @@ ul.navlist {
 /* CABLE BOXES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* GALLERY PHOTO TEXT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .brick-wall h2, h3, h4, h5, h6, h7 {
-	border: solid 1px red;
+	/* border: solid 1px red; */
 	position: absolute;
 	display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
 	width: 13.15%;  /* width of each text */
@@ -881,6 +879,7 @@ ul.navlist {
 /* GALLERY PHOTO TEXT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* GALLERY【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .gallery-banner { display: none; }  /* for mobile */
+.gallery-banner-mobile { display: none; }  /* for mobile */
 .gallery-banner-pc {
 	position: absolute;
 	width: 100%;
@@ -889,11 +888,465 @@ ul.navlist {
 	z-index: 2;
 }
 /* GALLERY【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.class-button-photo {
+	position: relative;
+}
+#button-gallery2 {
+	border: solid 1px red;
+	position: absolute;
+	z-index: 2;
+	margin-top: -60%;
+	left: 50%;
+	width: 15%;
+	height: auto;
+	font-size: 3vw;
+	font-family: monospace;
+	color: white;
+	background-color: green;
+}
+#button-gallery3 {
+	border: solid 1px red;
+	position: absolute;
+	z-index: 2;
+	margin-top: -60%;
+	left: 70%;
+	width: 15%;
+	height: auto;
+	font-size: 3vw;
+	font-family: monospace;
+	color: white;
+	background-color: green;
+}
+#photo-blur {
+	display: none;
+	margin-top: -55.15%;  /* with respect to header (menu) */
+	position: absolute;
+}
+#photo-text1 { display: none; }   /* for button */
+#photo-text2 { display: none; }   /* for button */
+#photo-text3 { display: none; }   /* for button */
+#photo-text4 { display: none; }   /* for button */
+#photo-text5 { display: none; }   /* for button */
+#photo-text6 { display: none; }   /* for button */
+.photo-blur {
+	width: 100%;
+	position: relative;
+	z-index: 2;
+}
+/* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* GALLERY: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.class-button-gallery {
+	position: relative;
+}
+#button-gallery {
+	border: solid 1px red;
+	position: absolute;
+	z-index: 2;
+	margin-top: -35%;
+	left: 50%;
+	width: 15%;
+	height: auto;
+	font-size: 3vw;
+	font-family: monospace;
+	color: white;
+	background-color: green;
+}
+#gallery-blur1 {
+	display: none;
+	margin-top: -40.6%;  /* with respect to header (menu) */
+	position: absolute;
+}
+.gallery-blur {
+	width: 100%;
+	position: relative;
+	z-index: 2;
+}
+/* GALLERY: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.legend {
+	position: relative; 
+	margin-top: -9.5%;
+	z-index: 2;
+}
+.legend-1 {
+	position: absolute;
+	left: 28.5%;
+	width: 1.8%;
+	/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+	background: radial-gradient(#e61b22, #9d0e16);
+	box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16,
+	                   0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 5px #9d0e16,
+					   0 0 50px #9d0e16;
+	font-family: Century Gothic;
+	font-size: 1vw;
+	/* allows me to put the text aligned vertically */
+	text-align: center;
+	/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+	line-height: 185%;
+	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+}
+
+.legend-2 {
+	position: absolute;
+	left: 32.5%;
+	width: 1.8%;
+	/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+	background: radial-gradient(#eb6121, #9a360a);
+	box-shadow: 0 0 5px #9a360a, 0 0 5px #9a360a, 0 0 15px #9a360a, 0 0 5px #9a360a,
+	                   0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 5px #9a360a,
+					   0 0 50px #9a360a;
+	font-family: Century Gothic;
+	font-size: 1vw;
+	/* allows me to put the text aligned vertically */
+	text-align: center;
+	/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+	line-height: 185%;
+	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+}
+
+.legend-3 {
+	position: absolute;
+	left: 36.5%;
+	width: 1.8%;
+	/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+	background: radial-gradient(#fcc00d, #997000);
+	box-shadow: 0 0 5px #997000, 0 0 5px #997000, 0 0 15px #997000, 0 0 5px #997000,
+	                   0 0 25px #997000, 0 0 25px #997000, 0 0 25px #997000, 0 0 5px #997000,
+					   0 0 50px #997000;
+	font-family: Century Gothic;
+	font-size: 1vw;
+	/* allows me to put the text aligned vertically */
+	text-align: center;
+	/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+	line-height: 185%;
+	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+}
+
+.legend-4 {
+	position: absolute;
+	left: 40.5%;
+	width: 1.8%;
+	/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+	background: radial-gradient(#c5b700, #7f7501);
+	box-shadow: 0 0 5px #7f7501, 0 0 5px #7f7501, 0 0 15px #7f7501, 0 0 5px #7f7501,
+	                   0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 5px #7f7501,
+					   0 0 50px #7f7501;
+	font-family: Century Gothic;
+	font-size: 1vw;
+	/* allows me to put the text aligned vertically */
+	text-align: center;
+	/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+	line-height: 185%;
+	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+}
+
+.legend-5 {
+	position: absolute;
+	left: 44.5%;
+	width: 1.8%;
+	/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+	background: radial-gradient(#88c03c, #4a681f);
+	box-shadow: 0 0 5px #4a681f, 0 0 5px #4a681f, 0 0 15px #4a681f, 0 0 5px #4a681f,
+	                   0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 5px #4a681f,
+					   0 0 50px #4a681f;
+	font-family: Century Gothic;
+	font-size: 1vw;
+	/* allows me to put the text aligned vertically */
+	text-align: center;
+	/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+	line-height: 185%;
+	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+}
+
+.legend-6 {
+	position: absolute;
+	left: 48.5%;
+	width: 1.8%;
+	/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+	background: radial-gradient(#47813d, #2b4c24);
+	box-shadow: 0 0 5px #2b4c24, 0 0 5px #2b4c24, 0 0 15px #2b4c24, 0 0 5px #2b4c24,
+	                   0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 5px #2b4c24,
+					   0 0 50px #2b4c24;
+	font-family: Century Gothic;
+	font-size: 1vw;
+	/* allows me to put the text aligned vertically */
+	text-align: center;
+	/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+	line-height: 185%;
+	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+}
+
+.legend-7 {
+	position: absolute;
+	left: 52.5%;
+	width: 1.8%;
+	/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+	background: radial-gradient(#009f4d, #015326);
+	box-shadow: 0 0 5px #015326, 0 0 5px #015326, 0 0 15px #015326, 0 0 5px #015326,
+	                   0 0 25px #015326, 0 0 25px #015326, 0 0 25px #015326, 0 0 5px #015326,
+					   0 0 50px #015326;
+	font-family: Century Gothic;
+	font-size: 1vw;
+	/* allows me to put the text aligned vertically */
+	text-align: center;
+	/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+	line-height: 185%;
+	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+}
+
+.legend-7 span {
+	/* border: solid red 1px; */
+	text-align: left;
+	position: absolute;
+	width: 700%;
+	transform: translateX(8%);
+}
+
+.legend-8 {
+	position: absolute;
+	left: 70.5%;
+	width: 2.5%;
+	font-family: Century Gothic;
+	font-size: 1vw;
+	color: white;
+	/* diagonal line inside square // Nitheesh's answer: https://stackoverflow.com/questions/60388805/make-diagonal-line-for-div-square */
+	border: 1px solid #404040;
+    background: linear-gradient(to bottom right, #262626 calc(50% - 3px),  #404040 calc(50% - 1px), #262626 50%, #262626 50%);
+}
+#first-half { transform: translate(-7%, -5%); }  /* 1H */
+#second-half { transform: translate(35%, 0%); }  /*2H */
+/* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+#button-gallery4 {
+	border: solid 1px red;
+	position: absolute;
+	z-index: 2;
+	margin-top: -10%;
+	left: 50%;
+	width: 15%;
+	height: auto;
+	font-size: 3vw;
+	font-family: monospace;
+	color: white;
+	background-color: green;
+}
+/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.date-and-result h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {  /*1st row */
+	/* border: solid 1px red; */
+	position: absolute;
+	display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
+	width: 7.3%;  /* width of each text */
+	margin-top: 6.8%;
+	font-family: Century Gothic;
+	color: white;
+	font-size: .97vw;
+	text-align: center;  /* centers it left to right */
+	padding-top: 2%;
+	z-index: 4;
+}
+.date-and-result h18, h19, h20, h21, h22, h23, h24, h25, h26, h27 {  /*2nd row */
+	/* border: solid 1px red; */
+	position: absolute;
+	display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
+	width: 7.3%;  /* width of each text */
+	margin-top: 12.3%;
+	font-family: Century Gothic;
+	font-size: .97vw;
+	text-align: center;  /* centers it left to right */
+	padding-top: 2%;
+	z-index: 4;
+}
+.date-and-result h8, h18 {
+	left: 15%;  /* 7,05 points of increments */
+}
+.date-and-result h9 {
+	left: 22.05%;  /* 7,05 points of increments */
+}
+.date-and-result h10 {
+	left: 29.1%;  /* 7,05 points of increments */
+}
+.date-and-result h11 {
+	left: 36.2%;  /* 7,05 points of increments */
+}
+.date-and-result h12 {
+	left: 43.25%;  /* 7,05 points of increments */
+}
+.date-and-result h13 {
+	left: 50.25%;  /* 7,05 points of increments */
+}
+.date-and-result h14 {
+	left: 57.3%;  /* 7,05 points of increments */
+}
+.date-and-result h15 {
+	left: 64.35%;  /* 7,05 points of increments */
+}
+.date-and-result h16 {
+	left: 71.4%;  /* 7,05 points of increments */
+}
+.date-and-result h17 {
+	left: 78.45%;  /* 7,05 points of increments */
+}
+#date1 {
+	font-size: .81vw;
+}
+#result { display: none;}   /* for button */
+#result1 { display: none; }   /* for button */
+.match-calendar-text2 {
+	width: 6.9%;
+	height: auto;
+	/* border: solid 1px red; */
+	position: absolute;
+	/* before cross-browser and no red box // margin-top: -300px; */
+	margin-top: -3.4%;
+	/* before cross-browser and no red box // left: 905.5px; */
+	left: 22.4%;
+	z-index: 7;
+	cursor: pointer;
+	font-family: Century Gothic;
+	font-size: .8em;
+	/* allows me to put the text aligned vertically */
+	text-align: center;
+	align-items: center;
+	vertical-align: middle;
+	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+}
+#date2 {
+	color: white;
+	position: absolute;
+	font-size: .75em;
+	/* border: solid 1px red; */
+	text-shadow: none;
+	width: 95px;
+	height: auto;
+	transform: translate(-47px, -40px);
+}
+/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+#ratings {
+	display: none;
+	margin-top: -2.5%;  /* with respect to header (menu) */
+	position: absolute;
+	width: 100%;
+}
+.ratings {
+	position: relative;
+	z-index: 2;
+}
+/* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* CUBOID HOLDERS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.cuboid-holder {
+	position: relative;
+}
+.holder {
+	position: absolute;
+	margin-top: 16.6%;
+	width: 100%;
+	z-index: 3;
+}
+/* CUBOID HOLDERS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* ROTATING CUBOIDS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* how to: https://www.youtube.com/watch?v=nOdDtnHWaDo */
+/* (LEFT 1) BLUE WEMBLEY 1968 */
+.cuboid1 {
+	position: absolute;
+	margin-top: 34%;
+	left: 6%;
+	width: 4.5%;  /* how wide */
+	height: 2%;  /* how tall */
+	transform-style: preserve-3d;
+	animation: animate4 10s linear infinite;
+	z-index: 2;
+}
+@keyframes animate4 {
+	0%
+	{
+		transform: rotateX(-5deg) rotateY(0deg);
+	}
+	100%
+	{
+		transform: rotateX(-5deg) rotateY(360deg);
+	}
+}
+.cuboid1 div {
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+}
+.cuboid1 div span {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/* I could've tried more different properties to put the badge and color at the same time in a short-hand code like this, and maybe would've found it,
+	   but I wanted to find out quickly. It's dodger's answer: https://stackoverflow.com/questions/8195215/css-background-image-on-background-color */
+	background: url(../underground/badge-wembley-1968.png), linear-gradient(#05163c 10%, #082464 50%);
+	box-shadow: 0 0 5px rgb(8,36,100),
+	                   0 0 25px rgb(8,36,100),
+					   0 0 50px rgb(8,36,100),
+					   0 0 200px rgb(8,36,100);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(2.21vw);  /* translateZ is how separate the sides are from each other, deactivate box-shadow to see neatly any gap between edges */
+	background-size: 100%;
+}
+#cuboid1-side2, #cuboid1-side4 {  /* I came up with this to customize each side*/
+	background: url(../underground/wembley-1968.png), linear-gradient(#05163c 10%, #082464 50%);
+	background-size: 100%;
+}
+/* (LEFT 1) BLUE WEMBLEY 1968 */
+/* (RIGHT 1) RED WEMBLEY 1958 */
+.cuboid2 {
+	position: absolute;
+	margin-top: 34%;
+	right: 6%;
+	width: 4.5%;  /* how wide */
+	height: 2%;  /* how tall */
+	transform-style: preserve-3d;
+	animation: animate5 10s linear infinite;
+	z-index: 2;
+}
+@keyframes animate5 {
+	0%
+	{
+		transform: rotateX(-5deg) rotateY(0deg);
+	}
+	100%
+	{
+		transform: rotateX(-5deg) rotateY(-360deg);
+	}
+}
+.cuboid2 div {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+}
+.cuboid2 div span {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/* end of note */
+	/* I could've tried more different properties to put the badge and color at the same time in a short-hand code like this, and maybe would've found it,
+	   but I wanted to find out quickly. It's dodger's answer: https://stackoverflow.com/questions/8195215/css-background-image-on-background-color */
+	background: url(../underground/badge-wembley-1958.png), linear-gradient(#621115 10%, #a31d23 50%);
+	box-shadow: 0 0 5px rgb(163, 29, 35),
+	                   0 0 25px rgb(163, 29, 35),
+					   0 0 50px rgb(163, 29, 35),
+					   0 0 200px rgb(163, 29, 35);
+	transform: rotateY(calc(90deg * var(--i))) translateZ(2.21vw);  /* translateZ is how separate the sides are from each other, deactivate box-shadow to see neatly any gap between edges */
+	background-size: 100%;
+}
+/* I came up with this to customize each side*/
+#cuboid2-side1, #cuboid2-side3 {
+	background: url(../underground/wembley-1958.png), linear-gradient(#621115 10%, #a31d23 50%);
+	background-size: 100%;
+}
+/* (RIGHT 1) RED WEMBLEY 1958 */
+/* ROTATING CUBOIDS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* DROPDOWNS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .dropdowns-section {
 	position: relative;  /* responsive: 'relative' to eliminate overflow excess x-wise on mobile */
-	margin-top: 50%;
-	margin-left: -29.5vw;
+	margin-top: 60%;
+	margin-left: -5.8vw;  /* bottom 29.5vw */
 	height: 150vw;
 	z-index: 2;
 }
@@ -916,10 +1369,10 @@ ul.navlist {
 .open {
 	position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
 	font-family: Trueno Round Italic;
-	font-size: 1.8vw;
+	font-size: 1.2vw;
 	letter-spacing: .05vw;
-	margin-top: 8%;  /* the higher, the lower */
-	left: 49.5%;
+	margin-top: 7%;  /* the higher, the lower */
+	left: 42.3%;
 	color: #a8ddbe;
 	text-shadow: 0 0 10px #da020e, 0 0 10px #da020e,
 					   0 0 20px #da020e,
@@ -933,10 +1386,10 @@ ul.navlist {
 .open1 {
 	position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
 	font-family: Trueno Round Italic;
-	font-size: 1.8vw;
+	font-size: 1.2vw;
 	letter-spacing: .05vw;
-	margin-top: 8%;  /* the higher, the lower */
-	left: 47%;
+	margin-top: 6.9%;  /* the higher, the lower */
+	left: 40%;
 	color: #f8cccf;
 	text-shadow: 0 0 10px #028336, 0 0 10px #028336, 0 0 10px #028336,
 					   0 0 20px #028336, 0 0 20px #028336,
@@ -951,10 +1404,10 @@ ul.navlist {
 .close {
 	position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
 	font-family: Trueno Round Italic;
-	font-size: 1.8vw;
+	font-size: 1.2vw;
 	letter-spacing: .05vw;
-	margin-top: 8%;  /* the higher, the lower */
-	left: 69%;
+	margin-top: 7%;  /* the higher, the lower */
+	left: 58.8%;
 	color: #fff;
 	text-shadow: 0 0 10px #fff,
 					   0 0 20px #fff,
@@ -968,10 +1421,10 @@ ul.navlist {
 .close1 {
 	position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
 	font-family: Trueno Round Italic;
-	font-size: 1.8vw;
+	font-size: 1.2vw;
 	letter-spacing: .05vw;
-	margin-top: 8%;  /* the higher, the lower */
-	left: 71.5%;
+	margin-top: 6.9%; /* the higher, the lower */
+	left: 61%;
 	color: white;
 	text-shadow: 0 0 10px #ffcf3e,
 					   0 0 20px #ffcf3e,
@@ -988,7 +1441,7 @@ ul.navlist {
 	background-size: 100%;
 	/* to control image size, I need these font values */
 	font-family: 'Courier New', Courier, monospace;
-	font-size: 3.4em;
+	font-size: 1.2vw;
 	top: 28.5%;
 	left: 49.3%;
 	display: var(--close-display, none) !important;
@@ -1009,26 +1462,6 @@ ul.navlist {
 	/* to make checkbox visible, put 'opacity: 1' */
 	opacity: 0;
 	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='28px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23080101' d='M 2.5,3.5 C 7.1586,6.16843 11.4919,9.3351 15.5,13C 9.07438,12.1868 4.74104,14.6868 2.5,20.5C 1.16667,14.8333 1.16667,9.16667 2.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23af231e' d='M 3.5,1.5 C 9.3796,5.26653 15.0463,9.26653 20.5,13.5C 17.023,14.3227 13.3563,14.8227 9.5,15C 8.74756,15.6708 8.41423,16.5041 8.5,17.5C 7.20027,20.4323 5.20027,22.7656 2.5,24.5C 2.5,23.1667 2.5,21.8333 2.5,20.5C 4.74104,14.6868 9.07438,12.1868 15.5,13C 11.4919,9.3351 7.1586,6.16843 2.5,3.5C 2.32842,2.50838 2.66175,1.84171 3.5,1.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bab7d0' d='M 20.5,13.5 C 21.1667,13.8333 21.8333,14.1667 22.5,14.5C 22.5,15.5 22.5,16.5 22.5,17.5C 17.8665,16.8663 13.1998,16.8663 8.5,17.5C 8.41423,16.5041 8.74756,15.6708 9.5,15C 13.3563,14.8227 17.023,14.3227 20.5,13.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23b4bcca' d='M -0.5,-0.5 C 0.166667,-0.5 0.833333,-0.5 1.5,-0.5C 2.16667,0.166667 2.83333,0.833333 3.5,1.5C 2.66175,1.84171 2.32842,2.50838 2.5,3.5C 1.16667,9.16667 1.16667,14.8333 2.5,20.5C 2.5,21.8333 2.5,23.1667 2.5,24.5C 1.89022,25.391 1.55688,26.391 1.5,27.5C 0.833333,27.5 0.166667,27.5 -0.5,27.5C -0.5,18.1667 -0.5,8.83333 -0.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, auto;
-}
-.transfers-title {
-	position: absolute;
-	font-family: Delight;
-	font-size: 5vw;
-	color: #a8ddbe;
-	text-shadow: 0 0 10px #13b48a, 0 0 10px #13b48a,
-					   0 0 20px #13b48a,
-					   0 0 40px #13b48a, 0 0 40px #13b48a,
-					   0 0 80px #13b48a,
-					   0 0 120px #13b48a, 0 0 120px #13b48a,
-					   0 0 160px #13b48a;
-	transform: translate(248%, -10%);
-	margin-right: 20%;
-	/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
-	pointer-events: none;
-}
-.transfers-title span1 {
-	font-family: Ketosag Condensed;
-	font-size: 5vw;
 }
 .dropdown_content {
 	display: grid;
@@ -1052,47 +1485,44 @@ ul.navlist {
 }
 
 
-.links1 {
+.links1 {  /* Mozilla renders it 1 or 2 px more down */
 	/* border: solid 1px red; */
-	opacity: 0;
+	opacity: 1;  /* it's best to make the link visible from here; opacity: 1 */
 	position: absolute;
 	font-family: Agency FB;
-	font-size: 2.1vw;
-	margin-top: -45.8%;
-	margin-left: 51.1%;
+	font-size: 1.36vw;
+	margin-top: -36.55%;
+	margin-left: 40.8%;
 	display: var(--links-display, none) !important;
 }
 
 .dropdown-content-historical {
 	margin-top: -.7%;
-	width: 125%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
+	width: 95%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
 	height: 100%;
 }
 
 #dropdown-content-match {
-	width: 125%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
+	/* position: fixed; */
+	width: 95%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
 	height: 100%;
 }
 
-.dropdown-content-historical1 {
-	display: none;  /* responsive version of this img without the iframe */
-	margin-top: -.2%;
-	width: 100%;
-	height: 100%;
-}
 
-.dropdown-content-historical3 {
+.dropdown-content-historical1 {	display: none; }  /* PC version with the iframe */
+
+.dropdown-content-historical3 {  /* responsive version of this img without the iframe */
 	margin-top: -.2%;
-	width: 125%;
+	width: 95%;
 	height: 100%;
 }
 
 .dropdown-content {
-	width: 122%;  /* has to coincide with width in background-image under .dropdown_link-transfers below */
+	width: 104%;  /* has to coincide with width in background-image under .dropdown_link-transfers below */
 	height: 100%;
 }
 
-iframe { display: none;	}  /* this iframe doesn't adopt the right height */
+iframe { display: none;	}  /* not responsive when shrinking/enlarging screen width */
 
 .dropdown-content-historical2 {
 	margin-top: -30%;
@@ -1103,9 +1533,9 @@ iframe { display: none;	}  /* this iframe doesn't adopt the right height */
 .dropdown_link-transfers {
 	/* border: solid red 1px; */
 	background-image: url(../underground/AIG-transfers.png);
-	background-size: 122% 100%;  /* width and height  // also, width has to coincide with width under .dropdown-content above */
+	background-size: 104% 100%;  /* width and height  // also, width has to coincide with width under .dropdown-content above */
 	color: white;
-	padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+	padding: 5.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 	text-decoration: none;
 	display: flex;
 	align-items: center;
@@ -1114,7 +1544,7 @@ iframe { display: none;	}  /* this iframe doesn't adopt the right height */
 .transfers-title {
 	position: absolute;
 	font-family: Delight;
-	font-size: 5vw;
+	font-size: 2.4vw;
 	color: #a8ddbe;
 	text-shadow: 0 0 10px #13b48a, 0 0 10px #13b48a,
 					   0 0 20px #13b48a,
@@ -1122,22 +1552,22 @@ iframe { display: none;	}  /* this iframe doesn't adopt the right height */
 					   0 0 80px #13b48a,
 					   0 0 120px #13b48a, 0 0 120px #13b48a,
 					   0 0 160px #13b48a;
-	transform: translate(248%, -10%);
+	transform: translate(376%, -7%);
 	margin-right: 20%;
 	/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
 	pointer-events: none;
 }
 .transfers-title span1 {
 	font-family: Ketosag Condensed;
-	font-size: 5vw;
+	font-size: 2.4vw;
 }
-/* TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .dropdown_link-stats {
 	/* border: solid 1px red; */
 	background-image: url(../underground/AIG-stats.png);
-	background-size: 122% 100%;
+	background-size: 104% 100%;
 	color: white;
-	padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+	padding: 5.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 	text-decoration: none;
 	display: flex;
 	align-items: center;
@@ -1146,23 +1576,23 @@ iframe { display: none;	}  /* this iframe doesn't adopt the right height */
 .stats-title {
 	position: absolute;
 	font-family: Better Grade;
-	font-size: 9vw;
+	font-size: 5vw;
 	color: #f8cccf;
 	text-shadow: 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e,
 					   0 0 20px #da020e,
 					   0 0 40px #da020e,
 					   0 0 80px #da020e,
 					   0 0 120px #da020e;
-	margin-top: 1%;
-	left: 64%;
+	margin-top: 0%;
+	left: 55.4%;
 	/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
 	pointer-events: none;
 }
 .stats-title span1 {
 	position: absolute;
 	font-family: myFont;
-	font-size: 4vw;
-	transform: translate(-100%, 90%);
+	font-size: 2.7vw;
+	transform: translate(-105%, 70%);
 	color: #ffdccc;
 	text-shadow: 0 0 10px #ffb330, 0 0 10px #ffb330, 0 0 10px #ffb330, 0 0 10px #ffb330,
 					   0 0 20px #fe5201, 0 0 20px #fe5201, 0 0 20px #fe5201,
@@ -1174,9 +1604,9 @@ iframe { display: none;	}  /* this iframe doesn't adopt the right height */
 .dropdown_link-player-performance {
 	/* border: solid 1px red; */
 	background-image: url(../underground/AIG-performance.png);
-	background-size: 122% 100%;
+	background-size: 104% 100%;
 	color: white;
-	padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+	padding: 5.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 	text-decoration: none;
 	display: flex;
 	align-items: center;
@@ -1185,8 +1615,8 @@ iframe { display: none;	}  /* this iframe doesn't adopt the right height */
 .player-performance-title {
 	position: absolute;
 	font-family: Majanan;
-	font-size: 6vw;
-	font-weight: 900;
+	font-size: 3vw;
+	font-weight:bold;
 	letter-spacing: 0.3vw;
 	color: #fff;
 	text-shadow: 0 0 10px #d821c3,
@@ -1195,21 +1625,45 @@ iframe { display: none;	}  /* this iframe doesn't adopt the right height */
 					   0 0 80px #d821c3,
 					   0 0 120px #d821c3,
 					   0 0 160px #d821c3;
-	margin-top: 1%;
-	left: 53%;
+	margin-top: .3%;
+	left: 45.9%;
 	/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
 	pointer-events: none;
 }
 .player-performance-title span1 {
-	font-size: 4vw;
+	font-size: 2vw;
+}
+.player-performance-title::before {
+	content: '';
+	position: absolute;
+	width: 23%;
+	height: 4%;
+	background-color: yellow;
+	box-shadow: 0 0 10px #ffcf3e,
+	                   0 0 20px #ffcf3e,
+					   0 0 40px #ffcf3e,
+	                   0 0 80px #ffcf3e,
+					   0 0 120px #ffcf3e,
+					   0 0 160px #ffcf3e;
+	transform: translate(35%, 135%);
+}
+.player-performance-title::after {
+	content: '';
+	position: absolute;
+	width: 53%;
+	height: 4%;
+	background-color: #68e569;
+	box-shadow: 0 0 10px #03d305, 0 0 10px #03d305,
+	                   0 0 20px #03d305;
+	transform: translate(-103%, 135%);
 }
 /* PLAYER STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .dropdown_link-player-stats {
 	/* border: solid 1px red; */
 	background-image: url(../underground/AIG-player-stats.png);
-	background-size: 122% 100%;
+	background-size: 104% 100%;
 	color: white;
-	padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+	padding: 5.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 	text-decoration: none;
 	display: flex;
 	align-items: center;
@@ -1218,7 +1672,7 @@ iframe { display: none;	}  /* this iframe doesn't adopt the right height */
 .player-stats-title {
 	position: absolute;
 	font-family: Uppen Arms NF;
-	font-size: 3.5vw;
+	font-size: 2vw;
 	color: #b9c2d7;
 	text-shadow: 0 0 10px #17347a, 0 0 10px #17347a, 0 0 10px #17347a,
 					   0 0 20px #17347a, 0 0 20px #17347a,
@@ -1226,24 +1680,26 @@ iframe { display: none;	}  /* this iframe doesn't adopt the right height */
 					   0 0 80px #17347a, 0 0 80px #17347a, 0 0 80px #17347a,
 					   0 0 120px #17347a, 0 0 120px #17347a, 0 0 120px #17347a,
 					   0 0 160px #17347a, 0 0 160px #17347a;
-	margin-right: 20%;
-	left: 52.5%;
+	margin-top: .7%;
+	left: 45.7%;
 	/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
 	pointer-events: none;
 }
 .dropdown_link-transition {
 	/* border: solid 1px red; */
 	background-image: url(../underground/AIG-player-stats-below.png);
-	background-size: 122% 100%;
+	background-size: 104% 100%;
 	color: white;
-	padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+	padding: 5.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 	text-decoration: none;
 	display: flex;
 	align-items: center;
 	position: relative;
 }
 /* PRESEASON AND MATCHES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-#jump {	margin-left: -5.5vw;  /* moves all match dropdowns as well preseason */ }
+[itemid="dropdown-matches"] { /* moves all match dropdowns as well as preseason */
+	margin-right: -10vw;
+}
 .dropdown-background {
 	background-image: none;  /* no iron column background for match content */
 	background-size: 100%;
@@ -1251,9 +1707,9 @@ iframe { display: none;	}  /* this iframe doesn't adopt the right height */
 .dropdown_link-preseason {
 	/* border: solid 1px red; */
 	background-image: url(../underground/pre-season.png);
-	background-size: 125% 100%;  /* width and height  // also, width has to coincide with width under #dropdown-content-match and .dropdown-content-historical above */
+	background-size: 95% 100%;  /* width and height  // also, width has to coincide with width under #dropdown-content-match and .dropdown-content-historical above */
 	color: white;
-	padding: 4.3vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+	padding: 3.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 	text-decoration: none;
 	display: flex;
 	align-items: center;
@@ -1262,9 +1718,9 @@ iframe { display: none;	}  /* this iframe doesn't adopt the right height */
 .dropdown_link-1st-match {
 	/* border: solid 1px red; */
 	background-image: url(../underground/1st-match.png);
-	background-size: 125% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above */
+	background-size: 95% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above */
 	color: white;
-	padding: 6.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+	padding: 4vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 	text-decoration: none;
 	display: flex;
 	align-items: center;
@@ -1273,14 +1729,14 @@ iframe { display: none;	}  /* this iframe doesn't adopt the right height */
 /* BOTTOM 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .bottom {
 	/* border: solid 1px red; */
-	left: 22%;
+	left: 5.48%;
 	background-image: url(../underground/1base-5.png);
 	background-repeat: no-repeat;
 	background-size: 100.15% 117.7%;  /* don't modify this, only padding if you want the img larger or smaller */
 	color: white;
 	/* increase the padding to increase the height of container //
 	   the code from the tutorial had 'padding: 1em .6em' , the latter value (.6em) is the space between text and left screen border */
-	padding: 40%;
+	padding: 47.25%;
 	text-decoration: none;
 	display: flex;
 	align-items: center;
@@ -1290,10 +1746,10 @@ iframe { display: none;	}  /* this iframe doesn't adopt the right height */
 .bottom-isometric {
 	position: absolute;
 	color: #b8b4b4;
-	left: 52%;
-	margin-top: 14.7%;
+	left: 42%;
+	margin-top: 18.3%;
 	font-family: Manchester\ United\ 23-24\ Tipogra;
-	font-size: 6vw;
+	font-size: 4.5vw;
 	transform: skewY(11deg) rotate3d(0, 1, 0, 60deg);
 	z-index: -1;
 }	
@@ -1304,13 +1760,17 @@ position: absolute;
 text-shadow: -1px 0.5px 1px #555,
 				   -2px 0.5px 1px #555,
 				   -3px 0.5px 1px #555,
-				   -4px 0.5px 1px #555;
+				   -4px 0.5px 1px #555,
+				   -5px 0.5px 1px #555,
+				   -6px 0.5px 1px #555,
+				   -7px 0.5px 1px #555,
+				   -8px 0.5px 1px #555;
 z-index: -1;  /* important to leave the isometric 3d effect behind */
 }	
 .bottom-GGMU {
 	position: absolute;
-	margin-top: 25%;
-	left: 68.4%;
+	margin-top: 30%;
+	left: 60%;
 	text-align: center;
 	/* line-height: 90pt; */
 	font-weight: 900;
@@ -1324,8 +1784,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	height: 1.3vw;
 	line-height: 1.5vw;  /* responsive: center text top to bottom; this time, same as height didn't work */
 	left: 0;
-	right: 0;
-	margin-top: 55%;
+	margin-top: 65.5%;
 	background: white;
 	background-size: cover;
 	display: flex;
@@ -1596,10 +2055,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	/* border: solid 1px red; */
 	position: absolute;
 	font-family: Poppins Regular;
-	font-size: 1.2vw;
+	font-size: 1vw;
 	color: #a6a6a6;
-	left: 31.3%;
-	margin-top: 57.86%;
+	left: 16.5%;
+	margin-top: 68.5%;
 	padding: .3vw;  /* to increase cursor margin for mouse (cursor:text) */
 	cursor: text;
 }
@@ -2518,7 +2977,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 
 	.links1 {
 		/* border: solid 1px red; */
-		opacity: 0;
+		opacity: 0;  /* it's best to make the link visible from here; opacity: 1 */
 		position: absolute;
 		font-family: Agency FB;
 		font-size: 2.1vw;
@@ -2529,25 +2988,26 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 
 	.dropdown-content-historical {
 		margin-top: -.7%;
-		width: 125%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
+		width: 116.3%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
 		height: 100%;
 	}
 
 	#dropdown-content-match {
-		width: 125%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
+		width: 116.3%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
 		height: 100%;
 	}
 
 	.dropdown-content-historical1 {
-		display: none;  /* responsive version of this img without the iframe */
+		display: none;  /* PC version with the iframe */
 		margin-top: -.2%;
 		width: 100%;
 		height: 100%;
 	}
 
-	.dropdown-content-historical3 {
+	.dropdown-content-historical3 {  /* responsive version of this img without the iframe */
+		display: initial;
 		margin-top: -.2%;
-		width: 125%;
+		width: 116.3%;
 		height: 100%;
 	}
 
@@ -2707,7 +3167,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: relative;
 	}
 	/* PRESEASON AND MATCHES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	#jump {	margin-left: -5.5vw;  /* moves all match dropdowns as well preseason */ }
+	[itemid="dropdown-matches"] { /* moves all match dropdowns as well as preseason */
+		margin-left: -5vw; 
+	}
 	.dropdown-background {
 		background-image: none;  /* no iron column background for match content */
 		background-size: 100%;
@@ -2715,9 +3177,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.dropdown_link-preseason {
 		/* border: solid 1px red; */
 		background-image: url(../underground/pre-season.png);
-		background-size: 125% 100%;  /* width and height  // also, width has to coincide with width under #dropdown-content-match and .dropdown-content-historical above */
+		background-size: 116.3% 100%;  /* width and height  // also, width has to coincide with width under #dropdown-content-match and .dropdown-content-historical above */
 		color: white;
-		padding: 4.3vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		padding: 5.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 		text-decoration: none;
 		display: flex;
 		align-items: center;
@@ -2726,7 +3188,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.dropdown_link-1st-match {
 		/* border: solid 1px red; */
 		background-image: url(../underground/1st-match.png);
-		background-size: 125% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above */
+		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above */
 		color: white;
 		padding: 6.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 		text-decoration: none;
@@ -2763,13 +3225,13 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}	
 	/* isometric effect based on code here: https://codepen.io/jgrose/pen/WQjGmW */
 	.bottom-isometric::before {
-	content: "2023/24";
-	position: absolute;
-	text-shadow: -1px 0.5px 1px #555,
-					   -2px 0.5px 1px #555,
-					   -3px 0.5px 1px #555,
-					   -4px 0.5px 1px #555;
-	z-index: -1;  /* important to leave the isometric 3d effect behind */
+		content: "2023/24";
+		position: absolute;
+		text-shadow: -1px 0.5px 1px #555,
+						   -2px 0.5px 1px #555,
+						   -3px 0.5px 1px #555,
+				   		   -4px 0.5px 1px #555;
+		z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}	
 	.bottom-GGMU {
 		position: absolute;
@@ -3984,7 +4446,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 
 	.links1 {
 		/* border: solid 1px red; */
-		opacity: 0;
+		opacity: 0;  /* it's best to make the link visible from here; opacity: 1 */
 		position: absolute;
 		font-family: Agency FB;
 		font-size: 2.1vw;
@@ -3995,25 +4457,26 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 
 	.dropdown-content-historical {
 		margin-top: -.7%;
-		width: 125%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
+		width: 116.3%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
 		height: 100%;
 	}
 
 	#dropdown-content-match {
-		width: 125%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
+		width: 116.3%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
 		height: 100%;
 	}
 
 	.dropdown-content-historical1 {
-		display: none;  /* responsive version of this img without the iframe */
+		display: none;  /* PC version with the iframe */
 		margin-top: -.2%;
 		width: 100%;
 		height: 100%;
 	}
 
-	.dropdown-content-historical3 {
+	.dropdown-content-historical3 {  /* responsive version of this img without the iframe */
+		display: initial;
 		margin-top: -.2%;
-		width: 125%;
+		width: 116.3%;
 		height: 100%;
 	}
 
@@ -4173,7 +4636,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: relative;
 	}
 	/* PRESEASON AND MATCHES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	#jump {	margin-left: -5.5vw;  /* moves all match dropdowns as well preseason */ }
+	[itemid="dropdown-matches"] { /* moves all match dropdowns as well as preseason */
+		margin-left: -5vw; 
+	}
 	.dropdown-background {
 		background-image: none;  /* no iron column background for match content */
 		background-size: 100%;
@@ -4181,9 +4646,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.dropdown_link-preseason {
 		/* border: solid 1px red; */
 		background-image: url(../underground/pre-season.png);
-		background-size: 125% 100%;  /* width and height  // also, width has to coincide with width under #dropdown-content-match and .dropdown-content-historical above */
+		background-size: 116.3% 100%;  /* width and height  // also, width has to coincide with width under #dropdown-content-match and .dropdown-content-historical above */
 		color: white;
-		padding: 4.3vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		padding: 4.8vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 		text-decoration: none;
 		display: flex;
 		align-items: center;
@@ -4192,7 +4657,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.dropdown_link-1st-match {
 		/* border: solid 1px red; */
 		background-image: url(../underground/1st-match.png);
-		background-size: 125% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above */
+		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above */
 		color: white;
 		padding: 6.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 		text-decoration: none;
@@ -5260,19 +5725,390 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		transform: translate(-21%, -180%);  /* for any reason, this is the only way I can move this div */
 	}
 	#cable-box { display: none; }
-	.brick-wall h2, h3, h4, h5, h6, h7 { display: none;}  /* "THE BICYCLE KICK, ...." */
-	.gallery-banner-pc { display: none; }  /* for mobile */
-	.gallery-banner {
-		display: initial;  /* overwrites code for PC */
+	.brick-wall h2, h3, h4, h5, h6, h7 {  /* "THE BICYCLE KICK, ...." */
+		/* border: solid 1px red; */
 		position: absolute;
-		width: 100%;
-		margin-top: -32.35%;  /* with respect to header (menu) */
+		display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
+		width: 13.15%;  /* width of each text */
+		margin-top: -9%;
+		font-family: raleway_f;
+		font-size: 1vw;
+		text-align: center;  /* centers it left to right */
 		z-index: 2;
 	}
+	.gallery-banner-pc { display: none; }  /* for PC */
+	.gallery-banner-mobile { 
+		display: initial;  /* delete when it's done cross device */
+		position: absolute;
+		width: 100%;
+		margin-top: -29%;  /* with respect to header (menu) */
+		z-index: 2; }  /* for PC */
+	.gallery-banner {
+		display: initial;
+		margin-top: 37%;
+		left: -19%;
+		width: 137%;
+	}
+	/* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.class-button-photo {
+		position: relative;
+	}
+	#button-gallery2 {
+		border: solid 1px red;
+		border: none;
+		position: absolute;
+		z-index: 2;
+		margin-top: -45%;
+		left: 50%;
+		width: 15%;
+		height: auto;
+		font-size: 3vw;
+		font-family: Trueno Round Italic;
+		color: white;
+		background-color: green;
+	}
+	#button-gallery3 {
+		border: solid 1px red;
+		border: none;
+		z-index: 2;
+		margin-top: -45%;
+		left: 70%;
+		width: 15%;
+		height: auto;
+		font-size: 3vw;
+		font-family: Trueno Round Italic;
+		color: white;
+		background-color: green;
+	}
+	#photo-blur {
+		display: none;
+		margin-top: -20.59%;  /* with respect to header (menu) */
+		position: absolute;
+	}
+	#photo-text1 { display: none; }   /* for button */
+	#photo-text2 { display: none; }   /* for button */
+	#photo-text3 { display: none; }   /* for button */
+	#photo-text4 { display: none; }   /* for button */
+	#photo-text5 { display: none; }   /* for button */
+	#photo-text6 { display: none; }   /* for button */
+	.photo-blur {
+		width: 100%;
+		position: relative;
+		z-index: 2;
+	}
+	/* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* GALLERY: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.class-button-gallery {
+		position: relative;
+	}
+	#button-gallery {
+		border: solid 1px red;
+		border: none;
+		position: absolute;
+		z-index: 2;
+		margin-top: -25%;
+		left: 50%;
+		width: 15%;
+		height: auto;
+		font-size: 3vw;
+		font-family: Trueno Round Italic;
+		color: white;
+		background-color: green;
+	}
+	#gallery-blur1 {
+		display: none;
+		margin-top: -6%;  /* with respect to header (menu) */
+		position: absolute;
+	}
+	.gallery-blur {
+		width: 100%;
+		position: relative;
+		z-index: 2;
+	}
+	/* GALLERY: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.legend {
+		position: relative; 
+		margin-top: 23%;
+		z-index: 2;
+	}
+	.legend-1 {
+		position: absolute;
+		left: 28.5%;
+		width: 1.8%;
+		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+		background: radial-gradient(#e61b22, #9d0e16);
+		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16,
+						   0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 5px #9d0e16,
+						   0 0 50px #9d0e16;
+		font-family: Century Gothic;
+		font-size: 1vw;
+		/* allows me to put the text aligned vertically */
+		text-align: center;
+		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+		line-height: 185%;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	}
+	
+	.legend-2 {
+		position: absolute;
+		left: 32.5%;
+		width: 1.8%;
+		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+		background: radial-gradient(#eb6121, #9a360a);
+		box-shadow: 0 0 5px #9a360a, 0 0 5px #9a360a, 0 0 15px #9a360a, 0 0 5px #9a360a,
+						   0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 5px #9a360a,
+						   0 0 50px #9a360a;
+		font-family: Century Gothic;
+		font-size: 1vw;
+		/* allows me to put the text aligned vertically */
+		text-align: center;
+		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+		line-height: 185%;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	}
+	
+	.legend-3 {
+		position: absolute;
+		left: 36.5%;
+		width: 1.8%;
+		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+		background: radial-gradient(#fcc00d, #997000);
+		box-shadow: 0 0 5px #997000, 0 0 5px #997000, 0 0 15px #997000, 0 0 5px #997000,
+						   0 0 25px #997000, 0 0 25px #997000, 0 0 25px #997000, 0 0 5px #997000,
+						   0 0 50px #997000;
+		font-family: Century Gothic;
+		font-size: 1vw;
+		/* allows me to put the text aligned vertically */
+		text-align: center;
+		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+		line-height: 185%;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	}
+	
+	.legend-4 {
+		position: absolute;
+		left: 40.5%;
+		width: 1.8%;
+		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+		background: radial-gradient(#c5b700, #7f7501);
+		box-shadow: 0 0 5px #7f7501, 0 0 5px #7f7501, 0 0 15px #7f7501, 0 0 5px #7f7501,
+						   0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 5px #7f7501,
+						   0 0 50px #7f7501;
+		font-family: Century Gothic;
+		font-size: 1vw;
+		/* allows me to put the text aligned vertically */
+		text-align: center;
+		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+		line-height: 185%;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	}
+	
+	.legend-5 {
+		position: absolute;
+		left: 44.5%;
+		width: 1.8%;
+		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+		background: radial-gradient(#88c03c, #4a681f);
+		box-shadow: 0 0 5px #4a681f, 0 0 5px #4a681f, 0 0 15px #4a681f, 0 0 5px #4a681f,
+						   0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 5px #4a681f,
+						   0 0 50px #4a681f;
+		font-family: Century Gothic;
+		font-size: 1vw;
+		/* allows me to put the text aligned vertically */
+		text-align: center;
+		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+		line-height: 185%;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	}
+	
+	.legend-6 {
+		position: absolute;
+		left: 48.5%;
+		width: 1.8%;
+		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+		background: radial-gradient(#47813d, #2b4c24);
+		box-shadow: 0 0 5px #2b4c24, 0 0 5px #2b4c24, 0 0 15px #2b4c24, 0 0 5px #2b4c24,
+						   0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 5px #2b4c24,
+						   0 0 50px #2b4c24;
+		font-family: Century Gothic;
+		font-size: 1vw;
+		/* allows me to put the text aligned vertically */
+		text-align: center;
+		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+		line-height: 185%;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	}
+	
+	.legend-7 {
+		position: absolute;
+		left: 52.5%;
+		width: 1.8%;
+		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+		background: radial-gradient(#009f4d, #015326);
+		box-shadow: 0 0 5px #015326, 0 0 5px #015326, 0 0 15px #015326, 0 0 5px #015326,
+						   0 0 25px #015326, 0 0 25px #015326, 0 0 25px #015326, 0 0 5px #015326,
+						   0 0 50px #015326;
+		font-family: Century Gothic;
+		font-size: 1vw;
+		/* allows me to put the text aligned vertically */
+		text-align: center;
+		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+		line-height: 185%;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	}
+	
+	.legend-7 span {
+		/* border: solid red 1px; */
+		text-align: left;
+		position: absolute;
+		width: 700%;
+		transform: translateX(8%);
+	}
+	
+	.legend-8 {
+		position: absolute;
+		left: 70.5%;
+		width: 2.5%;
+		font-family: Century Gothic;
+		font-size: 1vw;
+		color: white;
+		/* diagonal line inside square // Nitheesh's answer: https://stackoverflow.com/questions/60388805/make-diagonal-line-for-div-square */
+		border: 1px solid #404040;
+		background: linear-gradient(to bottom right, #262626 calc(50% - 3px),  #404040 calc(50% - 1px), #262626 50%, #262626 50%);
+	}
+	#first-half { transform: translate(-7%, -5%); }  /* 1H */
+	#second-half { transform: translate(35%, 0%); }  /*2H */
+	/* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	#button-gallery4 {
+		border: solid 1px red;
+		position: absolute;
+		z-index: 2;
+		margin-top: 5%;
+		left: 50%;
+		width: 15%;
+		height: auto;
+		font-size: 3vw;
+		font-family: monospace;
+		color: white;
+		background-color: green;
+	}
+	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.date-and-result h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {  /*1st row */
+		/* border: solid 1px red; */
+		position: absolute;
+		display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
+		width: 9.8%;  /* width of each text */
+		margin-top: 12.5%;
+		font-family: Century Gothic;
+		color: white;
+		font-size: 1.3vw;
+		text-align: center;  /* centers it left to right */
+		padding-top: 2%;
+		z-index: 4;
+	}
+	.date-and-result h18, h19, h20, h21, h22, h23, h24, h25, h26, h27 {  /*2nd row */
+		/* border: solid 1px red; */
+		position: absolute;
+		display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
+		width: 7.3%;  /* width of each text */
+		margin-top: 25%;
+		font-family: Century Gothic;
+		font-size: .97vw;
+		text-align: center;  /* centers it left to right */
+		padding-top: 2%;
+		z-index: 4;
+	}
+	.date-and-result h8, h18 {
+		left: 1.8%;  /* 7,05 points of increments */
+	}
+	.date-and-result h9 {
+		left: 22.05%;  /* 7,05 points of increments */
+	}
+	.date-and-result h10 {
+		left: 29.1%;  /* 7,05 points of increments */
+	}
+	.date-and-result h11 {
+		left: 36.2%;  /* 7,05 points of increments */
+	}
+	.date-and-result h12 {
+		left: 43.25%;  /* 7,05 points of increments */
+	}
+	.date-and-result h13 {
+		left: 50.25%;  /* 7,05 points of increments */
+	}
+	.date-and-result h14 {
+		left: 57.3%;  /* 7,05 points of increments */
+	}
+	.date-and-result h15 {
+		left: 64.35%;  /* 7,05 points of increments */
+	}
+	.date-and-result h16 {
+		left: 71.4%;  /* 7,05 points of increments */
+	}
+	.date-and-result h17 {
+		left: 78.45%;  /* 7,05 points of increments */
+	}
+	#date1 {
+		font-size: 1.2vw;
+	}
+	#result { display: none;}   /* for button */
+	#result1 { display: none; }   /* for button */
+	.match-calendar-text2 {
+		width: 6.9%;
+		height: auto;
+		/* border: solid 1px red; */
+		position: absolute;
+		/* before cross-browser and no red box // margin-top: -300px; */
+		margin-top: -3.4%;
+		/* before cross-browser and no red box // left: 905.5px; */
+		left: 22.4%;
+		z-index: 7;
+		cursor: pointer;
+		font-family: Century Gothic;
+		font-size: .8em;
+		/* allows me to put the text aligned vertically */
+		text-align: center;
+		align-items: center;
+		vertical-align: middle;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	}
+	#date2 {
+		color: white;
+		position: absolute;
+		font-size: .75em;
+		/* border: solid 1px red; */
+		text-shadow: none;
+		width: 95px;
+		height: auto;
+		transform: translate(-47px, -40px);
+	}
+	/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	#ratings {
+		display: none;
+		margin-top: -2.5%;  /* with respect to header (menu) */
+		position: absolute;
+		width: 100%;
+	}
+	.ratings {
+		position: relative;
+		z-index: 2;
+	}
+	/* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* CUBOID HOLDERS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.cuboid-holder { display: none; }
+	/* CUBOID HOLDERS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* ROTATING CUBOIDS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.cuboid1 { display: none; }
+	.cuboid2 { display: none; }
+	/* ROTATING CUBOIDS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* DROPDOWNS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdowns-section {
 		position: relative;  /* responsive: 'relative' to eliminate overflow excess x-wise on mobile */
-		margin-top: 18%;
+		margin-top: 113%;
 		margin-left: -29.5vw;
 		height: 150vw;
 		z-index: 2;
@@ -5434,7 +6270,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 
 	.links1 {
 		/* border: solid 1px red; */
-		opacity: 0;
+		opacity: 0;  /* it's best to make the link visible from here; opacity: 1 */
 		position: absolute;
 		font-family: Agency FB;
 		font-size: 2.1vw;
@@ -5445,25 +6281,26 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 
 	.dropdown-content-historical {
 		margin-top: -.7%;
-		width: 125%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
+		width: 116.3%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
 		height: 100%;
 	}
 
 	#dropdown-content-match {
-		width: 125%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
+		width: 116.3%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
 		height: 100%;
 	}
 
 	.dropdown-content-historical1 {
-		display: none;  /* responsive version of this img without the iframe */
+		display: none;  /* PC version with the iframe */
 		margin-top: -.2%;
 		width: 100%;
 		height: 100%;
 	}
 
-	.dropdown-content-historical3 {
+	.dropdown-content-historical3 {  /* responsive version of this img without the iframe */
+		display: initial;
 		margin-top: -.2%;
-		width: 125%;
+		width: 116.3%;
 		height: 100%;
 	}
 
@@ -5623,7 +6460,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: relative;
 	}
 	/* PRESEASON AND MATCHES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	#jump {	margin-left: -5.5vw;  /* moves all match dropdowns as well preseason */ }
+	[itemid="dropdown-matches"] { /* moves all match dropdowns as well as preseason */
+		margin-left: -5vw; 
+	}
 	.dropdown-background {
 		background-image: none;  /* no iron column background for match content */
 		background-size: 100%;
@@ -5631,7 +6470,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.dropdown_link-preseason {
 		/* border: solid 1px red; */
 		background-image: url(../underground/pre-season.png);
-		background-size: 125% 100%;  /* width and height  // also, width has to coincide with width under #dropdown-content-match and .dropdown-content-historical above */
+		background-size: 116.3% 100%;  /* width and height  // also, width has to coincide with width under #dropdown-content-match and .dropdown-content-historical above */
 		color: white;
 		padding: 4.3vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 		text-decoration: none;
@@ -5642,7 +6481,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.dropdown_link-1st-match {
 		/* border: solid 1px red; */
 		background-image: url(../underground/1st-match.png);
-		background-size: 125% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above */
+		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above */
 		color: white;
 		padding: 6.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 		text-decoration: none;
