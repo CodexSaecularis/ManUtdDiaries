@@ -236,11 +236,11 @@ body {
 	list-style: none;
 }
 .season-content-mobile { display: none; }  /* for mobile */
-.season-content-pc {
+.season-content-pc {  /* click to close */
 	/* border: solid 1px red; */
 	width: 320px;  /* how big the dropdown content is */
 }
-.season-content {
+.season-content {  /* body */
 	/* border: solid 1px red; */
 	width: 320px;  /* how much % of the dropdown content to show width-wise */
 }
@@ -281,7 +281,7 @@ body {
 	width: 21.6%;
 	height: 2vw;  /* addition for resposiveness */
 	margin-top: -14.5%;  /* with respect to .underground-cables */
-	left: 37.635%;
+	left: 38.4%;
 	background-size: cover;
 	display: flex;
 	overflow: hidden;
@@ -341,7 +341,7 @@ body {
 	width: 21.6%;
 	height: 2.7vw;  /* addition for Mozilla: to help make .scoreboard-result be exact same height as .scoreboard-teams */
 	margin-top: -12.95%;  /* with respect to .underground-cables */
-	left: 37.635%;
+	left: 38.4%;
 	/* margin-left: 37.635%; */
 	display: flex;
 	overflow: hidden;
@@ -350,8 +350,9 @@ body {
 	cursor: pointer;
 	font-family: myFont;
 	font-size: 1.3vw;
+	/* background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led.png);	 */
 	background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led\ texture.jpg);
-	background-size: 60% 300%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+	background-size: 100% 120%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 }
 .home span {
 	color: #da020e;
@@ -370,7 +371,7 @@ body {
 	height: 2.7vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
 	line-height: 1.4vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
 	margin-top: -12.95%;  /* with respect to .underground-cables */
-	left: 53.7%;
+	left: 54.46%;
 	display: flex;
 	overflow: hidden;
 	white-space: nowrap;
@@ -388,7 +389,7 @@ body {
 	I had to add a few id in the HTML*/
 #scoreboard .scoreboard-result, #scoreboard .final-real {display: inline;}
 .final-real {
-	background: linear-gradient(rgba(254,29,18,0.6), rgba(254,29,18,0.6)), url(../parallax/led\ texture.jpg);
+	background: linear-gradient(rgba(254,29,18,0.7), rgba(254,29,18,0.7)), url(../parallax/led\ texture.jpg);
 	position: absolute;
 	background-size: 60% 300%;
 	/* after using "&thinsp;", the red mini-box left a space on the right that showed the background img,
@@ -403,7 +404,7 @@ body {
 	height: 2.7vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
 	line-height: 1.4vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
 	margin-top: -12.95%;  /* with respect to .underground-cables */
-	left: 53.7%;
+	left: 54.46%;
 	display: flex;
 	overflow: hidden;
 	white-space: nowrap;
@@ -423,7 +424,7 @@ body {
 #scoreboard2 .scoreboard-result2, #scoreboard2 .final-real2 {display: inline;}
 .final-real2 {
 	color: #ffcf3e;
-	background: linear-gradient(rgba(2,131,54,0.6), rgba(2,131,54,0.6)), url(../parallax/led\ texture.jpg);
+	background: linear-gradient(rgba(2,131,54,0.8), rgba(2,131,54,0.8)), url(../parallax/led\ texture.jpg);
 	position: absolute;
 	background-size: 60% 300%;
 	/* after using "&thinsp;", the red mini-box left a space on the right that showed the background img,
@@ -454,73 +455,366 @@ body {
 	100% {opacity: 1.0}
 }
 .box-shadow .box-shadow2 { display: none; }
+/* SCOREBOARD (RESULT) 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* OT BANNERS CAROUSEL 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.OT-banners {
+	position: absolute;
+	width: 21%;
+	height: 1.3vw;
+	line-height: 1.5vw;
+	left: 64.7%;
+	margin-top: -14.4%;  /* with respect to .underground-cables */
+	background-size: cover;
+	display: flex;
+	overflow: hidden;
+	white-space: nowrap;
+	z-index: 5;
+	background: white;
+}
+
+.OT-banners .banners {
+	display: flex;
+}
+
+.OT-banners .banners div {
+	color: #fff;
+	font-family: monospace;
+	font-size: 1vw;
+	white-space: nowrap;
+	font-weight: 100;
+	/* important value in this div to make the text occupy the entirity of the box; I was playing with text-align and display values in different divs,
+	   but I figured it out thanks to Wazeed's answer: https://stackoverflow.com/questions/10283138/center-a-div-without-knowing-the-height */
+	display: flex;
+	/* I was already aware of this carrousel animation, but knowing exactly what value to put in animation-delay was thanks to
+	   rmurph46's answer below. It's simply half of the value in animation duration but negative. I needed to know that to make long carrousels
+	   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
+	animation: animate2 80s linear infinite;
+	animation-delay: -40s;
+}
+
+.OT-banners .banners div span {
+	color: white;
+	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
+	/* found out of 50% as a value for split color, and not gradient // Answer by Terry: https://stackoverflow.com/questions/50434409/how-can-i-make-a-split-color-box */
+	background-image: linear-gradient(to bottom, #cc1724 50%, #1e2526 50%);
+	transform: scaleY(1.1);
+}
+
+
+
+.OT-banners .banners div span2 {
+	margin-top: -2px;
+	color: #ffc40c;
+	text-shadow: 0 0 2px #ffc40c;
+	background: #a01c1c;
+}
+
+.OT-banners .banners div span3 {
+	color: white;
+	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	background: #a01c1c;
+	transform: scaleX(1.1) scaleY(1.1);
+}
+
+.OT-banners .banners div span4 {
+	margin-top: -2px;
+	color: rgb(76, 103, 192);
+	text-shadow: 0 0 2px yellow, 0 0 2px yellow;
+	background: #a01c1c;
+}
+
+.OT-banners .banners div span5 {
+	margin-top: -2px;
+	color: rgb(204, 204, 90);
+	text-shadow: 0 0 2px rgb(90, 186, 224);
+	background: #640505;
+}
+
+.OT-banners .banners div span6 {
+	color: white;
+	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
+	background: #1e2526;
+	transform: scaleY(1.1);
+}
+
+.OT-banners .banners div span7 {
+	font-family: 'Times New Roman', Times, serif;
+	color: white;
+	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	background: #a01c1c;
+}
+
+.OT-banners .banners div span8 {
+	margin-top: -2px;
+	background: white;
+}
+
+.OT-banners .banners div span9 {
+	color: #b93939;
+	text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
+	background: white;
+}
+
+.OT-banners .banners div span10 {
+	color: black;
+	text-shadow: 0 0 2px black, 0 0 2px black;
+	background: white;
+}
+
+.OT-banners .banners div span11 {
+	margin-top: -2px;
+	background: white;
+}
+
+.OT-banners .banners div span12 {
+	margin-top: -1px;
+	font-size: .9em;
+	background: white;
+	/* got this filter here: https://www.w3schools.com/cssref/css3_pr_filter.php */
+	filter: grayscale(100%);
+}
+
+.OT-banners .banners div span13 {
+	font-size: .8em;
+	/* answer by Reinier Koops: https://stackoverflow.com/questions/15904211/css-filter-grayscale-i-want-it-black */
+	filter: brightness(10%);
+	/* this property is perfect to make the trophies look slimmer, but it ruins the space */
+	/* transform: scaleX(-.5); */
+}
+
+.OT-banners .banners div span14 {
+	color: #b93939;
+	text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
+	background: white;
+	transform: scaleY(1.1);
+}
+
+.OT-banners .banners div span15 {
+	color: black;
+	text-shadow: 0 0 2px black, 0 0 2px black;
+	background: white;
+	transform: scaleY(1.1);
+}
+
+.OT-banners .banners div span16 {
+	color: #b93939;
+	text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
+	background: white;
+	transform: scaleY(1.1);
+}
+
+.OT-banners .banners div span17 {
+	font-size: .8em;
+	filter: brightness(10%);
+	/* this property is perfect to make the trophies look slimmer, but it ruins the space */
+	/* transform: scaleX(-.5); */
+}
+
+.OT-banners .banners div span18 {
+	margin-top: -1px;
+	font-size: .9em;
+	background: white;
+	filter: grayscale(100%);
+}
+
+.OT-banners .banners div span19 {
+	color: white;
+	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	background: #a01c1c;
+	transform: scaleY(1.1);
+}
+
+.OT-banners .banners div span20 {
+	margin-top: -1px;
+	font-size: .9em;
+	background: #a01c1c;
+}
+
+.OT-banners .banners div span21 {
+	color: white;
+	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	background: #a01c1c;
+	transform: scaleY(1.1);
+}
+
+.OT-banners .banners div span22 {
+	color: white;
+	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	background:#cc1724;
+	transform: scaleY(1.1);
+}
+
+.OT-banners .banners div span23 {
+	font-size: .8em;
+	filter: brightness(10%);
+	/* this property is perfect to make the trophies look slimmer, but it ruins the space */
+	/* transform: scaleX(-.5); */
+}
+
+.OT-banners .banners div span24 {
+	font-size: .8em;
+}
+
+.OT-banners .banners div span25 {
+	font-size: .8em;
+	filter: brightness(10%);
+	/* this property is perfect to make the trophies look slimmer, but it ruins the space */
+	/* transform: scaleX(-.5); */
+}
+
+.OT-banners .banners div span26 {
+	color: white;
+	font-size: .7em;
+	font-family: raleway_f;
+	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	background: #1e2526;
+	transform: scaleY(1.1);
+}
+
+.OT-banners .banners div span27 {
+	color: white;
+	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
+	background: #1e2526;
+	transform: scaleY(1.1);
+}
+
+.OT-banners .banners div span28 {
+	color: #a01c1c;
+	text-shadow: 0 0 2px #a01c1c, 0 0 2px #a01c1c, 0 0 2px #a01c1c;
+	background: #1e2526;
+	transform: scaleY(1.1);
+}
+
+.OT-banners .banners div span29 {
+	margin-top: -1px;
+	background: white;
+}
+
+.OT-banners .banners div span30 {
+	color: black;
+	text-shadow: 0 0 2px black, 0 0 2px black;
+	background: white;
+	transform: scaleY(1.1);
+}
+
+.OT-banners .banners div span31 {
+	color: #a01c1c;
+	text-shadow: 0 0 2px #a01c1c, 0 0 2px #a01c1c, 0 0 2px #a01c1c;
+	background: white;
+	transform: scaleY(1.1);
+}
+
+.OT-banners .banners div span32 {
+	color: black;
+	text-shadow: 0 0 2px black, 0 0 2px black;
+	background: white;
+	transform: scaleY(1.1);
+}
+
+.OT-banners .banners div span33 {
+	margin-top: -1px;
+	background: white;
+	/* fiddle by Platte Gruber: https://stackoverflow.com/questions/32875695/flip-mirror-an-image-horizontally-vertically-with-css */
+	transform: rotateY(180deg);
+}
+
+.OT-banners .banners div:nth-child(2) {
+	animation: animate3 80s linear infinite;
+}
+@keyframes animate2 {
+	0%
+	{
+		transform: translateX(100%);
+	}
+	100%
+	{
+		transform: translateX(-100%);
+	}
+}
+@keyframes animate3 {
+	0%
+	{
+		transform: translateX(0);
+	}
+	100%
+	{
+		transform: translateX(-200%);
+	}
+}
+/* OT BANNERS CAROUSEL 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* CLOCK 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .clock {
 	/* border: solid red 1px; */
 	position: absolute;
-	height: 7vw;
-	width: 16%;  /* responsive: exact width so it won't exceed right margin; adjust according to screen width (@media) */
-	margin-top: -35%;  /* with respect to .underground-cables */
-	left: 83.4%;
+	height: 2.85vw;
+	width: 21%;  /* responsive: exact width so it won't exceed right margin; adjust according to screen width (@media) */
+	margin-top: -13%;  /* with respect to .underground-cables */
+	left: 64.7%;
 	display: flex;
 	overflow: hidden;
 	white-space: nowrap;
 	z-index: 7;
 	font-family: Lampen;
-	font-size: 3.4vw;
-	line-height: 7vw;  /* should be same as height to center text top to bottom */
+	font-size: 1.3vw;
+	line-height: 5.5vw;  /* should be same as height to center text top to bottom */
 	background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led\ texture.jpg);
 	/* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
-	background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+	background-size: 80% 110%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 	text-align: center;
 	align-items: center;
 }
 .time {
 	transform: translateX(40%) scaleY(1.5);  /* translateX to move clock away from left margin; scaleY to make text taller */
 }
-.republik-of-mancunia { display: none; }
 .clock-vertical-stripes {
 	content: '';
 }
 .clock-vertical-stripe1 {
-	width: .8%;
-	height: 7vw;
-	margin-top: -35%;  /* with respect to .underground-cables*/
-	left: 83.6%;
+	width: .4%;
+	height: 2.85vw;
+	margin-top: -13%;  /* with respect to .underground-cables*/
+	left: 64.7%;
 	background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led\ texture.jpg);
 	background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 	position: absolute;
 	z-index: 7;
 }
 .clock-vertical-stripe2 {
-	width: .8%;
-	height: 7vw;
-	margin-top: -35%;  /* with respect to .underground-cables */
-	left: 84.5%;
+	width: .4%;
+	height: 2.85vw;
+	margin-top: -13%;  /* with respect to .underground-cables*/
+	left: 65%;
 	background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led\ texture.jpg);
 	background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 	position: absolute;
 	z-index: 7;
 }
 .clock-vertical-stripe3 {
-	width: .8%;
-	height: 7vw;
-	margin-top: -35%;  /* with respect to .underground-cables */
-	left: 98%;
+	width: .4%;
+	height: 2.85vw;
+	margin-top: -13%;  /* with respect to .underground-cables*/
+	left: 70.5%;
 	background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led\ texture.jpg);
 	background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 	position: absolute;
 	z-index: 7;
 }
 .clock-vertical-stripe4 {
-	width: .8%;
-	height: 7vw;
-	margin-top: -35%;  /* with respect to .underground-cables */
-	left: 99%;
+	width: .4%;
+	height: 2.85vw;
+	margin-top: -13%;  /* with respect to .underground-cables*/
+	left: 70.8%;
 	background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led\ texture.jpg);
 	background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 	position: absolute;
 	z-index: 7;
+}
+.republik-of-mancunia {
+	display: initial;  /* delete this when the media query for computer is done */
+	transform: translateX(62%);
+	font-size: 1.3vw;
+	letter-spacing: 2px;
+	line-height: 1.3vw;
 }
 /* IRONS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .irons {
@@ -1194,35 +1488,6 @@ ul.navlist {
 }
 #result { display: none;}   /* for button */
 #result1 { display: none; }   /* for button */
-.match-calendar-text2 {
-	width: 6.9%;
-	height: auto;
-	/* border: solid 1px red; */
-	position: absolute;
-	/* before cross-browser and no red box // margin-top: -300px; */
-	margin-top: -3.4%;
-	/* before cross-browser and no red box // left: 905.5px; */
-	left: 22.4%;
-	z-index: 7;
-	cursor: pointer;
-	font-family: Century Gothic;
-	font-size: .8em;
-	/* allows me to put the text aligned vertically */
-	text-align: center;
-	align-items: center;
-	vertical-align: middle;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-}
-#date2 {
-	color: white;
-	position: absolute;
-	font-size: .75em;
-	/* border: solid 1px red; */
-	text-shadow: none;
-	width: 95px;
-	height: auto;
-	transform: translate(-47px, -40px);
-}
 /* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 #ratings {
@@ -2081,32 +2346,36 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		display: table;  /* for Mozilla // original was display:flex, which merges .sky and .ground in one image */
 		text-align: center;
 	}
+	.parallax-home {
+		/* border: solid red 1px; */
+		position: relative;
+		display: flex;  /* merges .sky and .ground in one image; I deactivated .ground, tho */
+		text-align: center;
+	}
 	.parallax-home img {
 		position: relative;  /* allows me to move the sky, and not the text */
-		width: 130%;  /* how big the sky and ground are */
-		left: -20%;  /* moves the sky and ground to the left */
+		width: 100%;  /* how big the sky and ground are */
 	}
-	#flag {
-		display: initial;  /* overwrites display:none for PC */
-		position: absolute;
-		margin-top: -43%;  /* for Mozilla // original was margin-top:20% */
-		left: 7.5%;
-		width: 80%;
+	#flag { display: none; }
+	#flag2 {
+		position: absolute;  /* for PC */
+		margin-top: 14%;
+		left: 47%;
+		width: 50%;
 		transform: rotate(-15deg);
 		z-index: 1;
 	}
-	#flag2 { display: none; }
 	.title {
 		/* border: solid red 1px; */
 		position: absolute;
-		margin-top: -18.5%;  /* for Mozilla // original was margi-top:52% */
+		margin-top: 34%;
 		width: 100%;  /* to cover the width of the screen */
 	}
 	.title h1 {
 		color: transparent;
-		font-size: 4vw;
+		font-size: 3vw;
 		font-family: raleway_f;
-		letter-spacing: 1vw;
+		letter-spacing: .5vw;
 		text-shadow: 0 0 5px #ff0434,
 						   0 0 5px yellow,
 						   0 0 20px #cd000d,
@@ -2122,7 +2391,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.title h2 {
 		transform: translateY(-10%);
 		color: transparent;
-		font-size: 3vw;
+		font-size: 2vw;
 		font-family: raleway_f;
 		/* font border // https://www.geeksforgeeks.org/css-font-border/#using-textstroke-property */
 		/* original -webkit-text-stroke: 3px #fe7d85; */
@@ -2138,20 +2407,21 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: relative;
 		z-index: -1;
 	}
-	.cables2 { display: none; }  /* for PC */
-    .cables {
-		display: initial;  /* overwrites display:none for PC */
-		width: 250%;
+	.cables { display: none; }  /* for mobile */
+	.cables2 {
+		width: 147%;
+		/* width: 130vw; */
+		margin-left: -18.8%;
 	}
 	/* SELECT SEASON 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.select-season {
 		/* border: solid red 1px; */
 		position: absolute;
-		margin-top: -29%;  /* with respect to .underground-cables */
-		margin-left: 2vw;  /* moves everything to the left/right */
+		margin-top: -17%;  /* with respect to .underground-cables */
+		margin-left: 10%;  /* moves everything to the left/right */
 		z-index: 8;
-		width: 20vw;
-		height: 8vw;  /* addition to actually see this div container border lines */
+		width: 10.7vw;  /* reduces cursor:pointer clickability away from the title  */
+		height: 6vw;  /* addition to actually see this div container border lines */
 	}
 	.nav_container-season {
 		/* border: solid red 1px; */
@@ -2160,17 +2430,17 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	.dropdown-season {
 		/* border: solid red 1px; */
-		width: 85%;  /* addition to reduce cursor:pointer clickability away from the title */
+		width: 86%;  /* addition to reduce cursor:pointer clickability away from the title */
 		position: absolute;  /* for any reason, without this, Mozilla renders .select-season a bit more to the left */
 	}
 	.season-list:has( :checked ) {
 		--rows: 1fr;
-	    --on-tap: auto;  /* for #season-links */
+		--on-tap: auto;  /* for #season-links */
 	}
 	.checkbox-size {
 		/* border: solid 1px red; */
 		color: white;
-		padding: 3vw;  /* increase the padding to increase the size of container */
+		padding: 2vw;  /* increase the padding to increase the size of container */
 		text-decoration: none;
 		display: flex;
 		align-items: center;
@@ -2189,17 +2459,17 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	.select-season-title {  /* title: since 2023 SELECT SEASON */
 		/* border: solid 1px red; */
-		width: 95%;  /* adddition to actually see the borders, adjust if text collapses */
+		width: 125%;  /* adddition to actually see the borders, adjust if text collapses */
 		position: absolute;
 		text-align: center;
 		transform: translate(-3%, -15%);
 		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
 		pointer-events: none;
-		line-height: 3.4vw;
+		line-height: 1.7vw;
 	}
 	.select-season-title span1 {
 		font-family: QumpellkaNo12;
-		font-size: 2.5vw;
+		font-size: 1.7vw;
 		color: #b9c2d7;
 		text-shadow: 0 0 10px #17347a, 0 0 10px #17347a, 0 0 10px #17347a,
 						   0 0 20px #17347a, 0 0 20px #17347a,
@@ -2209,11 +2479,11 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 160px #17347a, 0 0 160px #17347a;
 	}
 	.select-season-title span2 {
-		font-size: 2.3vw;
+		font-size: 1.7vw;
 	}
 	.select-season-title span3 {
 		font-family: Manchester\ United\ 23-24\ Tipogra;
-		font-size: 2.3vw;
+		font-size: 1.7vw;
 		color: #a8ddbe;
 		text-shadow: 0 0 10px #13b48a, 0 0 10px #13b48a,
 						   0 0 20px #13b48a,
@@ -2230,32 +2500,31 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.dropdown-sub-season {		
 		/* border: solid 1px red; */
 		overflow: hidden;
-		width: 320%;  /* how much % of the dropdown content to show width-wise */
-		transform: initial;  /* overwrites code for PC */
+		width: 320px;  /* how big the dropdown content is */
+		transform: translate(20px, -5px);
 	}
 	.dropdown-li {  /* no use for this, but just in case... */
 		list-style: none;
 	}
-	.season-content-pc { display: none; }  /* for PC */
-	.season-content-mobile {
-		display: initial;  /* overwrites display:none for PC */
+	.season-content-mobile { display: none; }  /* for mobile */
+	.season-content-pc {  /* tap to close */
 		/* border: solid 1px red; */
-		width: 304px;  /* how big the dropdown content is */
+		width: 320px;  /* how big the dropdown content is */
 	}
-	.season-content {
+	.season-content {  /* body */
 		/* border: solid 1px red; */
-		width: 304px;  /* how big the dropdown content is */
+		width: 320px;  /* how much % of the dropdown content to show width-wise */
 	}
 	#season-links {
-		pointer-events: var(--on-tap, none);  /* responsive: somehow, the link is clickable even when the dropdown is not box-checked, so this rule prevents clicks */
+		pointer-events: var(--on-tap, none);  /* somehow, the link is clickable even when the dropdown is not box-checked, so this rule prevents clicks */
 	}
 	.season-19-20 img {
 		position: absolute;
 		opacity: 0;
-		width: 107.9px;
-		height: 108.5px;
+		width: 113px;
+		height: 114px;
 		margin-top: 2px;  /* 109.8px the lower the value, the higher the object goes */
-		margin-left: -261.4px;  /* -154.4px the lower the value, the more to the left */
+		margin-left: -275px;  /* -154.4px the lower the value, the more to the left */
 	}
 	.season-19-20:hover img {
 		opacity: 1;
@@ -2263,32 +2532,37 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.season-20-21 img {
 		position: absolute;
 		opacity: 0;
-		width: 107.9px;
-		height: 108.5px;
-		margin-top: 2px;  /* 109.8px the lower the value, the higher the object goes */
-		margin-left: -151px;  /* -154.4px the lower the value, the more to the left */
+		width: 113px;
+		height: 114px;
+		margin-top: 2px;  /* the lower the value, the higher the object goes */
+		margin-left: -159px;  /* the lower the value, the more to the left */
 	}
 	.season-20-21:hover img {
 		opacity: 1;
 	}
-    /* SCOREBOARD CAROUSEL 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* WRAP FOR CAROUSEL, TEAMS, AND SCORE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.relative {
+		position: relative;  /* I created this wrapper with this only line to make stuff fit cross-browser */
+	}
+	/* WRAP FOR CAROUSEL, TEAMS, AND SCORE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* SCOREBOARD CAROUSEL 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.scoreboard-PL {
 		/* border: solid red 1px; */
 		position: absolute;
-		width: 33.2%;
-		height: 4.2vw;  /* addition for resposiveness */
-		margin-top: -30%;  /* with respect to .underground-cables */
-		left: 30.8%;
+		width: 26.4%;
+		height: 2vw;  /* addition for resposiveness */
+		margin-top: -17.7%;  /* with respect to .underground-cables */
+		left: 36%;
 		background-size: cover;
 		display: flex;
 		overflow: hidden;
 		white-space: nowrap;
 		z-index: 5;
 		background: #3D195B;
-		box-shadow: 0 0 5px #3D195B,
+		/* box-shadow: 0 0 5px #3D195B,
 						   0 0 25px #3D195B,
 						   0 0 50px #3D195B, 0 0 50px #3D195B, 0 0 50px #3D195B,
-						   0 0 200px #3D195B, 0 0 200px #3D195B, 0 0 300px #3D195B, 0 0 400px #3D195B;
+						   0 0 200px #3D195B, 0 0 200px #3D195B, 0 0 300px #3D195B, 0 0 400px #3D195B; */
 		cursor: pointer;
 	}
 	.scoreboard-PL .PL {
@@ -2298,7 +2572,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		color: #fff;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
 		font-family: monospace;
-		font-size: 2.4vw;
+		font-size: 1.4vw;
 		white-space: nowrap;
 		font-weight: 100;
 		display: flex;
@@ -2307,8 +2581,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.scoreboard-PL .PL div span { display: none; }
 	.scoreboard-PL .PL div span1 {
 		font-weight: 900;
-		font-size: 3.2vw;  /* addition for mobile */
-		margin-top: -.2%;  /* addition for mobile */
+		font-size: 1.6vw;  /* addition for mobile */
+		margin-top: -.8%;  /* addition for mobile */
 		/* ▲ */
 		color: #028336;
 		/* • */
@@ -2319,8 +2593,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
 	}
 	.scoreboard-PL .PL div span2 {
-		color: transparent;
-		text-shadow: none;
+		color: #ffc40c;
+		text-shadow: 0 0 2px #ffc40c, 0 0 2px #ffc40c, #ffc40c, 0 0 2px #ffc40c;
 	}
 	.scoreboard-PL .PL div span3 {
 		color: #589444;
@@ -2330,22 +2604,26 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		animation: none;  /* no animation for mobile as it slows down the user experience */
 	}
 	/* SCOREBOARD (TEAMS) 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.scoreboard-teams { display: none; }  /* PC version */
-	.scoreboard-teams-mobile {  /* mobile version */
+	.scoreboard-teams-mobile { display: none; }  /* mobile version */
+	.scoreboard-teams {  /* mobile version */
 		/* border: solid red 1px; */
 		position: absolute;
-		width: 33.2%;
-		margin-top: -26.7%;  /* with respect to .underground-cables */
-		left: 30.8%;
+		/* position: relative; */
+		width: 26.4%;
+		height: 3.4vw;  /* addition for Mozilla: to help make .scoreboard-result be exact same height as .scoreboard-teams */
+		margin-top: -16%;  /* with respect to .underground-cables */
+		left: 36%;
+		/* margin-left: 37.635%; */
 		display: flex;
 		overflow: hidden;
 		white-space: nowrap;
 		z-index: 7;
 		cursor: pointer;
 		font-family: myFont;
-		font-size: 2.5vw;
+		font-size: 1.6vw;
+		/* background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led.png);	 */
 		background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led\ texture.jpg);
-		background-size: 150% 150%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+		background-size: 100% 120%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 	}
 	.home span {
 		color: #da020e;
@@ -2360,18 +2638,18 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.scoreboard-result {
 		color: white;
 		position: absolute;
-		width: 11.6%;  /* space between score and .final-real */
-		height: 5.2vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-		line-height: 2.7vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-		margin-top: -26.7%;  /* with respect to .underground-cables */
-		left: 52.4%;
+		width: 6.8%;  /* space between score and .final-real1 */
+		height: 3.4vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
+		line-height: 1.8vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
+		margin-top: -16%;  /* with respect to .underground-cables */
+		left: 55.6%;
 		display: flex;
 		overflow: hidden;
 		white-space: nowrap;
 		z-index: 8;
 		cursor: pointer;
 		font-family: myFont;
-		font-size: 2.5vw;
+		font-size: 1.6vw;
 		background: transparent;
 		/* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		/* background-size: 150% 150%; */
@@ -2382,9 +2660,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		I had to add a few id in the HTML*/
 	#scoreboard .scoreboard-result, #scoreboard .final-real {display: inline;}
 	.final-real {
-		background: linear-gradient(rgba(254,29,18,0.6), rgba(254,29,18,0.6)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(254,29,18,0.7), rgba(254,29,18,0.7)), url(../parallax/led\ texture.jpg);
 		position: absolute;
-		background-size: 150% 150%;
+		background-size: 60% 300%;
 		/* after using "&thinsp;", the red mini-box left a space on the right that showed the background img,
 		so I put this "right:0" value to eliminate any space on that right. Answer by Garry Shutler.
 		https://stackoverflow.com/questions/65536/how-to-put-text-in-the-upper-right-or-lower-right-corner-of-a-box-using-css */
@@ -2393,18 +2671,18 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.scoreboard-result2 {
 		color: white;
 		position: absolute;
-		width: 11.6%;  /* space between score and .final-real2 */
-		height: 5.2vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-		line-height: 2.7vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-		margin-top: -26.7%;  /* with respect to .underground-cables */
-		left: 52.4%;
+		width: 6.8%;  /* space between score and .final-real2 */
+		height: 3.4vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
+		line-height: 1.8vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
+		margin-top: -16%;  /* with respect to .underground-cables */
+		left: 55.6%;
 		display: flex;
 		overflow: hidden;
 		white-space: nowrap;
 		z-index: 7;
 		cursor: pointer;
 		font-family: myFont;
-		font-size: 2.5vw;
+		font-size: 1.6vw;
 		background: transparent;
 		/* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		background-size: 150% 150%;
@@ -2417,9 +2695,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	#scoreboard2 .scoreboard-result2, #scoreboard2 .final-real2 {display: inline;}
 	.final-real2 {
 		color: #ffcf3e;
-		background: linear-gradient(rgba(2,131,54,0.6), rgba(2,131,54,0.6)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(2,131,54,0.8), rgba(2,131,54,0.8)), url(../parallax/led\ texture.jpg);
 		position: absolute;
-		background-size: 150% 150%;
+		background-size: 60% 300%;
 		/* after using "&thinsp;", the red mini-box left a space on the right that showed the background img,
 		so I put this "right:0" value to eliminate any space on that right. Answer by Garry Shutler.
 		https://stackoverflow.com/questions/65536/how-to-put-text-in-the-upper-right-or-lower-right-corner-of-a-box-using-css */
@@ -2448,89 +2726,386 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		100% {opacity: 1.0}
 	}
 	.box-shadow .box-shadow2 { display: none; }
+	/* SCOREBOARD (RESULT) 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* OT BANNERS CAROUSEL 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.OT-banners {
+		position: absolute;
+		width: 25.7%;
+		height: 1.8vw;
+		line-height: 1.6vw;
+		left: 68.2%;
+		margin-top: -17.7%;  /* with respect to .underground-cables */
+		background-size: cover;
+		display: flex;
+		overflow: hidden;
+		white-space: nowrap;
+		z-index: 5;
+		background: white;
+	}
+	
+	.OT-banners .banners {
+		display: flex;
+	}
+	
+	.OT-banners .banners div {
+		color: #fff;
+		font-family: monospace;
+		font-size: 1.5vw;
+		white-space: nowrap;
+		font-weight: 100;
+		/* important value in this div to make the text occupy the entirity of the box; I was playing with text-align and display values in different divs,
+		   but I figured it out thanks to Wazeed's answer: https://stackoverflow.com/questions/10283138/center-a-div-without-knowing-the-height */
+		display: flex;
+		/* I was already aware of this carrousel animation, but knowing exactly what value to put in animation-delay was thanks to
+		   rmurph46's answer below. It's simply half of the value in animation duration but negative. I needed to know that to make long carrousels
+		   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
+		animation: animate2 80s linear infinite;
+		animation-delay: -40s;
+	}
+	
+	.OT-banners .banners div span {
+		color: white;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
+		/* found out of 50% as a value for split color, and not gradient // Answer by Terry: https://stackoverflow.com/questions/50434409/how-can-i-make-a-split-color-box */
+		background-image: linear-gradient(to bottom, #cc1724 50%, #1e2526 50%);
+		transform: scaleY(1.1);
+	}
+	
+	
+	
+	.OT-banners .banners div span2 {
+		margin-top: -2px;
+		color: #ffc40c;
+		text-shadow: 0 0 2px #ffc40c;
+		background: #a01c1c;
+	}
+	
+	.OT-banners .banners div span3 {
+		color: white;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+		background: #a01c1c;
+		transform: scaleX(1.1) scaleY(1.1);
+	}
+	
+	.OT-banners .banners div span4 {
+		margin-top: -2px;
+		color: rgb(76, 103, 192);
+		text-shadow: 0 0 2px yellow, 0 0 2px yellow;
+		background: #a01c1c;
+	}
+	
+	.OT-banners .banners div span5 {
+		margin-top: -2px;
+		color: rgb(204, 204, 90);
+		text-shadow: 0 0 2px rgb(90, 186, 224);
+		background: #640505;
+	}
+	
+	.OT-banners .banners div span6 {
+		color: white;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
+		background: #1e2526;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners .banners div span7 {
+		font-family: 'Times New Roman', Times, serif;
+		color: white;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+		background: #a01c1c;
+	}
+	
+	.OT-banners .banners div span8 {
+		margin-top: -2px;
+		background: white;
+	}
+	
+	.OT-banners .banners div span9 {
+		color: #b93939;
+		text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
+		background: white;
+	}
+	
+	.OT-banners .banners div span10 {
+		color: black;
+		text-shadow: 0 0 2px black, 0 0 2px black;
+		background: white;
+	}
+	
+	.OT-banners .banners div span11 {
+		margin-top: -2px;
+		background: white;
+	}
+	
+	.OT-banners .banners div span12 {
+		margin-top: -1px;
+		font-size: .9em;
+		background: white;
+		/* got this filter here: https://www.w3schools.com/cssref/css3_pr_filter.php */
+		filter: grayscale(100%);
+	}
+	
+	.OT-banners .banners div span13 {
+		font-size: .8em;
+		/* answer by Reinier Koops: https://stackoverflow.com/questions/15904211/css-filter-grayscale-i-want-it-black */
+		filter: brightness(10%);
+		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
+		/* transform: scaleX(-.5); */
+	}
+	
+	.OT-banners .banners div span14 {
+		color: #b93939;
+		text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
+		background: white;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners .banners div span15 {
+		color: black;
+		text-shadow: 0 0 2px black, 0 0 2px black;
+		background: white;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners .banners div span16 {
+		color: #b93939;
+		text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
+		background: white;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners .banners div span17 {
+		font-size: .8em;
+		filter: brightness(10%);
+		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
+		/* transform: scaleX(-.5); */
+	}
+	
+	.OT-banners .banners div span18 {
+		margin-top: -1px;
+		font-size: .9em;
+		background: white;
+		filter: grayscale(100%);
+	}
+	
+	.OT-banners .banners div span19 {
+		color: white;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+		background: #a01c1c;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners .banners div span20 {
+		margin-top: -1px;
+		font-size: .9em;
+		background: #a01c1c;
+	}
+	
+	.OT-banners .banners div span21 {
+		color: white;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+		background: #a01c1c;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners .banners div span22 {
+		color: white;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+		background:#cc1724;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners .banners div span23 {
+		font-size: .8em;
+		filter: brightness(10%);
+		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
+		/* transform: scaleX(-.5); */
+	}
+	
+	.OT-banners .banners div span24 {
+		font-size: .8em;
+	}
+	
+	.OT-banners .banners div span25 {
+		font-size: .8em;
+		filter: brightness(10%);
+		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
+		/* transform: scaleX(-.5); */
+	}
+	
+	.OT-banners .banners div span26 {
+		color: white;
+		font-size: .7em;
+		font-family: raleway_f;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+		background: #1e2526;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners .banners div span27 {
+		color: white;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
+		background: #1e2526;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners .banners div span28 {
+		color: #a01c1c;
+		text-shadow: 0 0 2px #a01c1c, 0 0 2px #a01c1c, 0 0 2px #a01c1c;
+		background: #1e2526;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners .banners div span29 {
+		margin-top: -1px;
+		background: white;
+	}
+	
+	.OT-banners .banners div span30 {
+		color: black;
+		text-shadow: 0 0 2px black, 0 0 2px black;
+		background: white;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners .banners div span31 {
+		color: #a01c1c;
+		text-shadow: 0 0 2px #a01c1c, 0 0 2px #a01c1c, 0 0 2px #a01c1c;
+		background: white;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners .banners div span32 {
+		color: black;
+		text-shadow: 0 0 2px black, 0 0 2px black;
+		background: white;
+		transform: scaleY(1.1);
+	}
+	
+	.OT-banners .banners div span33 {
+		margin-top: -1px;
+		background: white;
+		/* fiddle by Platte Gruber: https://stackoverflow.com/questions/32875695/flip-mirror-an-image-horizontally-vertically-with-css */
+		transform: rotateY(180deg);
+	}
+	
+	.OT-banners .banners div:nth-child(2) {
+		animation: animate3 80s linear infinite;
+	}
+	@keyframes animate2 {
+		0%
+		{
+			transform: translateX(100%);
+		}
+		100%
+		{
+			transform: translateX(-100%);
+		}
+	}
+	@keyframes animate3 {
+		0%
+		{
+			transform: translateX(0);
+		}
+		100%
+		{
+			transform: translateX(-200%);
+		}
+	}
+	/* OT BANNERS CAROUSEL 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* CLOCK 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.clock {
 		/* border: solid red 1px; */
 		position: absolute;
-		height: 5.5vw;
-		width: 32%;  /* responsive: exact width so it won't exceed right margin; adjust according to screen width (@media) */
-		margin-top: -28.4%;  /* with respect to .underground-cables */
-		left: 68.7%;
+		height: 3.5vw;
+		width: 25.7%;  /* responsive: exact width so it won't exceed right margin; adjust according to screen width (@media) */
+		margin-top: -16%;  /* with respect to .underground-cables */
+		left: 68.2%;
 		display: flex;
 		overflow: hidden;
 		white-space: nowrap;
 		z-index: 7;
 		font-family: Lampen;
-		font-size: 2.5vw;
+		font-size: 1.6vw;
 		line-height: 5.5vw;  /* should be same as height to center text top to bottom */
 		background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led\ texture.jpg);
 		/* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
-		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+		background-size: 80% 110%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		text-align: center;
 		align-items: center;
 	}
 	.time {
 		transform: translateX(40%) scaleY(1.5);  /* translateX to move clock away from left margin; scaleY to make text taller */
 	}
-	.republik-of-mancunia {
-		display: initial;  /* delete this when the media query for computer is done */
-		transform: translateX(35%);
-		font-size: 2.5vw;
-		letter-spacing: 2px;
-		line-height: 2.5vw;
-	}
 	.clock-vertical-stripes {
 		content: '';
 	}
 	.clock-vertical-stripe1 {
-		width: .8%;
-		height: 5.5vw;
-		margin-top: -28.4%;  /* with respect to .underground-cables*/
-		left: 68.7%;
+		width: .4%;
+		height: 3.5vw;
+		margin-top: -16%;  /* with respect to .underground-cables*/
+		left: 68.2%;
 		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led\ texture.jpg);
 		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		position: absolute;
 		z-index: 7;
 	}
 	.clock-vertical-stripe2 {
-		width: .8%;
-		height: 5.5vw;
-		margin-top: -28.4%;  /* with respect to .underground-cables */
-		left: 69.5%;
+		width: .4%;
+		height: 3.5vw;
+		margin-top: -16%;  /* with respect to .underground-cables*/
+		left: 68.5%;
 		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led\ texture.jpg);
 		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		position: absolute;
 		z-index: 7;
 	}
 	.clock-vertical-stripe3 {
-		width: .8%;
-		height: 5.5vw;
-		margin-top: -28.4%;  /* with respect to .underground-cables */
-		left: 79%;
+		width: .4%;
+		height: 3.5vw;
+		margin-top: -16%;  /* with respect to .underground-cables*/
+		left: 75.2%;
 		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led\ texture.jpg);
 		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		position: absolute;
 		z-index: 7;
 	}
 	.clock-vertical-stripe4 {
-		width: .8%;
-		height: 5.5vw;
-		margin-top: -28.4%;  /* with respect to .underground-cables */
-		left: 79.8%;
+		width: .4%;
+		height: 3.5vw;
+		margin-top: -16%;  /* with respect to .underground-cables*/
+		left: 75.5%;
 		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led\ texture.jpg);
 		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		position: absolute;
 		z-index: 7;
 	}
-    /* MENU 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.republik-of-mancunia {
+		display: initial;  /* delete this when the media query for computer is done */
+		transform: translateX(62%);
+		font-size: 1.6vw;
+		letter-spacing: 2px;
+		line-height: 1.3vw;
+	}
+	/* IRONS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.irons {
+		/* border: solid red; */
+		position: relative;
+		object-fit: cover;
+		width: 95%;
+		left: 2.96%;
+		z-index: -2;
+		margin-top: -19%;  /* with respect to .underground-cables */
+	}
+	/* IRONS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* MENU 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	header {
 		/* border: solid red 1px; */
-		margin-top: -19%;  /* with respect to .underground-cables */
+		margin-top: -18%;  /* with respect to .underground-cables */
 		justify-content: space-between;
 		align-items: center;
-		margin-left: 2%;  /* addition to center it for tablet */
 		width: 100%;  /* 100% // my best guess is so that text occupies the width of the screen */
-		height: 23vw;  /* this specific height 'cuz it coincides with the border line of .cables; comment for mobile */
+		height: 23vw;  /* this specific height 'cuz it coincides with the border line of .cables */
 	}
 	ul.navlist {
 		display: flex;
@@ -2538,12 +3113,12 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	.navlist li {
 		text-align: center;
-		padding: 0 2vw;  /* the space between menu text */
+		padding: 0 6%;  /* the space between menu text */
 	}
 	/* CONTACT ME 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.contact-me {
 		display: inline-block;  /* allows me to move this text freely */
-		transform: translateY(25%);
+		transform: translate(11%, 18%);
 		text-decoration: none;  /* this removes link underline */
 		align-content: center;
 		text-align: center;  /* aligns text vertically // https://www.youtube.com/watch?v=Jkp103YhW7A 19:00 */
@@ -2551,9 +3126,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.line1 {
 		font-family: BeonMedium;
 		text-decoration: none;
-		font-size: 3vw;
+		font-size: 2.2vw;
 		vertical-align: middle;
-		/* idea for space between letters */
 		letter-spacing: 1px;
 		cursor: pointer;
 		color: #fff;
@@ -2576,7 +3150,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.line2 {
 		font-family: BeonMedium;
 		text-decoration: none;
-		font-size: 3vw;
+		font-size: 2.2vw;
 		vertical-align: middle;
 		z-index: 1;
 		color: #fff;
@@ -2590,7 +3164,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.line3 {
 		font-family: Uppen Arms NF;
 		text-decoration: none;
-		font-size: 3vw;
+		font-size: 1.5vw;
 		vertical-align: middle;
 		color: #fff;
 		text-shadow: 0 0 10px #fff,
@@ -2608,14 +3182,15 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* addition // aligns text vertically // https://www.youtube.com/watch?v=Jkp103YhW7A 19:00 */
 		text-align: center;
 		font-family: Celinea;
-		font-size: 10vw;
+		font-size: 5vw;
 		font-weight: lighter;
 		vertical-align: middle;
-		line-height: 7vw;
-		transform: skewY(-15deg);
+		/* margin-right: 30vw; */
+		line-height: 3.8vw;
+		transform: skewY(-15deg) translate(-17%, 10%);
 		display: inline-block;  /* allows me to move this text freely */
 	}
-
+	
 	.line4 {
 		color: #fff;
 		text-shadow: 0 0 10px #fff,
@@ -2643,10 +3218,23 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 120px #fff,
 						   0 0 160px #fff;
 	}
+	/* LYING DEVIL【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.devil { display: none; }
+	/* .devil {
+		position: relative;
+		z-index: -3;
+	}
+	.animated-gif {
+		position: absolute;
+		width: 10.3%;
+		margin-top: -25vw;
+		margin-left: 43.2%;
+	} */
+	/* LYING DEVIL【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* SUPPORT & DONATE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.support {
 		display: inline-block;  /* allows me to move this text freely */
-		transform: translateY(10%);
+		transform: translate(50%, 20%);
 		/* this removes link underline */
 		text-decoration: none;
 		align-content: center;
@@ -2657,7 +3245,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	.line6 {
 		font-family: LIBRARY3AMsoft;
-		font-size: 3.3vw;
+		font-size: 2.3vw;
 		letter-spacing: 1px;
 		color: #fff;
 		text-shadow: 0 0 10px #ffcf3e,
@@ -2669,7 +3257,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	.line7 span {
 		font-family: LIBRARY3AMsoft;
-		font-size: 3.3vw;
+		font-size: 2.3vw;
 		color: #a8ddbe;
 		text-shadow: 0 0 10px #028336,
 						   0 0 20px #028336,
@@ -2680,7 +3268,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	.line7 {
 		font-family: Neoneon;
-		font-size: 3.3vw;
+		font-size: 2.3vw;
 		color: #a8ddbe;
 		text-shadow: 0 0 10px #028336,
 						   0 0 20px #028336,
@@ -2697,15 +3285,16 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		text-align: center;
 		cursor: pointer;
 		vertical-align: middle;
-		line-height: 5vw;
+		line-height: 3vw;
 		display: inline-block;  /* allows me to move this text freely */
-		transform: translateY(-7%)
+		transform: translate(19%, 28%);
+		/* transform: translate(19%, 13%); */
 	}
 	.line8 {
 		font-family: Rookworst;
-		font-size: 6vw;
+		font-size: 3.3vw;
 		color: yellow;
-		-webkit-text-stroke: .1vw red;
+		-webkit-text-stroke: .05vw red;
 		text-shadow: 0 0 10px #da020e,
 						   0 0 20px #da020e,
 						   0 0 40px #da020e;
@@ -2713,7 +3302,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.line9 { display: none; }
 	.line10 {
 		font-family: Salonica;
-		font-size: 10vw;
+		font-size: 4.5vw;
 		transform: translateX(5%);
 		color: white;
 		text-shadow: 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e,
@@ -2725,9 +3314,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.line11 { display: none; }
 	.line12 span {
 		font-family: Zekton;
-		font-size: 3vw;
+		font-size: 1.8vw;
+		position: relative;
 		position: absolute;
-		transform: translate(-390%, 30%);
+		transform: translate(-360%, 30%);
 		color: #fff;
 		text-shadow: 0 0 10px #ffcf3e,
 						   0 0 20px #ffcf3e,
@@ -2738,9 +3328,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	.line12 span2 {
 		font-family: Lateef;
-		font-size: 6vw;
+		font-size: 3.5vw;
 		position: absolute;
-		transform: translate(-70%, 0%);
+		transform: translate(-110%, -10%);
 		color: #a8ddbe;
 		text-shadow: 0 0 10px #028336,
 						   0 0 20px #028336,
@@ -2751,9 +3341,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	.line12 span3 {
 		font-family: Josefin Sans, Consolas, 'Courier New', monospace;
-		font-size: 3.5vw;
+		font-size: 1.6vw;
 		position: absolute;
-		transform: translate(100%, 50%);
+		transform: translate(50%, 40%);
 		color: #fff;
 		text-shadow: 0 0 10px #ffcf3e,
 						   0 0 20px #ffcf3e,
@@ -2764,9 +3354,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	.line12 span4 {
 		font-family: Josefin Sans, Consolas, 'Courier New', monospace;
-		font-size: 3vw;
+		font-size: 1.8vw;
 		position: absolute;
-		transform: translate(300%, 10%);
+		transform: translate(170%, 20%);
 		color: #a8ddbe;
 		text-shadow: 0 0 10px #028336,
 						   0 0 20px #028336,
@@ -2775,7 +3365,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
 						   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
 	}
-	.underground-irons { display: none; }  /* for PC */
 	/* BRICKS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.bricks {
 		position: relative;
@@ -2783,7 +3372,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		margin-top: -50%;  /* with respect to header (menu) */
 		width: 200%;
 		left: -44%;
-		z-index: -2;
+		z-index: -3;
 	}
 	.brick-wall h1 {  /* 2023/24 (TEXT) */
 		position: absolute;
@@ -2803,20 +3392,370 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		width: 180%;
 		transform: translate(-21%, -180%);  /* for any reason, this is the only way I can move this div */
 	}
+	/* CABLE BOXES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#cable-box { display: none; }
-	.brick-wall h2, h3, h4, h5, h6, h7 { display: none;}  /* "THE BICYCLE KICK, ...." */
-	.gallery-banner-pc { display: none; }  /* for mobile */
-	.gallery-banner {
-		display: initial;  /* overwrites code for PC */
+	/* CABLE BOXES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* GALLERY PHOTO TEXT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.brick-wall h2, h3, h4, h5, h6, h7 {
+		/* border: solid 1px red; */
 		position: absolute;
-		width: 100%;
-		margin-top: -32.35%;  /* with respect to header (menu) */
+		display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
+		width: 13.15%;  /* width of each text */
+		margin-top: -9%;
+		font-family: raleway_f;
+		font-size: 1vw;
+		text-align: center;  /* centers it left to right */
 		z-index: 2;
 	}
+	.gallery-banner-pc { display: none; }  /* for PC */
+	.gallery-banner-mobile { 
+		display: initial;
+		position: absolute;
+		width: 100%;
+		margin-top: -29%;  /* with respect to header (menu) */
+		z-index: 2; }  /* for PC */
+	.gallery-banner {
+		position: absolute;
+		display: initial;  /* overwrites code for PC */
+		margin-top: 37%;
+		left: -19%;  /* same as #ratings below */
+		width: 137%;
+	}
+	/* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.class-button-photo {
+		position: relative;
+	}
+	#button-gallery2 {
+		border: solid 1px red;
+		border: none;
+		position: absolute;
+		z-index: 2;
+		margin-top: -45%;
+		left: 50%;
+		width: 15%;
+		height: auto;
+		font-size: 3vw;
+		font-family: Trueno Round Italic;
+		color: white;
+		background-color: green;
+	}
+	#button-gallery3 {
+		border: solid 1px red;
+		border: none;
+		z-index: 2;
+		margin-top: -45%;
+		left: 70%;
+		width: 15%;
+		height: auto;
+		font-size: 3vw;
+		font-family: Trueno Round Italic;
+		color: white;
+		background-color: green;
+	}
+	#photo-blur {
+		display: none;
+		margin-top: -20.59%;  /* with respect to header (menu) */
+		position: absolute;
+	}
+	#photo-text1 { display: none; }   /* for button */
+	#photo-text2 { display: none; }   /* for button */
+	#photo-text3 { display: none; }   /* for button */
+	#photo-text4 { display: none; }   /* for button */
+	#photo-text5 { display: none; }   /* for button */
+	#photo-text6 { display: none; }   /* for button */
+	.photo-blur {
+		width: 100%;
+		position: relative;
+		z-index: 2;
+	}
+	/* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* GALLERY: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.class-button-gallery {
+		position: relative;
+	}
+	#button-gallery {
+		border: solid 1px red;
+		border: none;
+		position: absolute;
+		z-index: 2;
+		margin-top: -25%;
+		left: 50%;
+		width: 15%;
+		height: auto;
+		font-size: 3vw;
+		font-family: Trueno Round Italic;
+		color: white;
+		background-color: green;
+	}
+	#gallery-blur1 {
+		display: none;
+		margin-top: -6%;  /* with respect to header (menu) */
+		position: absolute;
+	}
+	.gallery-blur {
+		width: 100%;
+		position: relative;
+		z-index: 2;
+	}
+	/* GALLERY: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.legend {
+		position: relative; 
+		margin-top: 23%;
+		z-index: 2;
+	}
+	.legend-1 {
+		position: absolute;
+		left: 15.8%;
+		width: 3.4%;
+		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+		background: radial-gradient(#e61b22, #9d0e16);
+		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16,
+						   0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 5px #9d0e16,
+						   0 0 50px #9d0e16;
+		font-family: Century Gothic;
+		font-size: 1.8vw;
+		/* allows me to put the text aligned vertically */
+		text-align: center;
+		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+		line-height: 150%;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	}
+	
+	.legend-2 {
+		position: absolute;
+		left: 21.3%;
+		width: 3.4%;
+		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+		background: radial-gradient(#eb6121, #9a360a);
+		box-shadow: 0 0 5px #9a360a, 0 0 5px #9a360a, 0 0 15px #9a360a, 0 0 5px #9a360a,
+						   0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 5px #9a360a,
+						   0 0 50px #9a360a;
+		font-family: Century Gothic;
+		font-size: 1.8vw;
+		/* allows me to put the text aligned vertically */
+		text-align: center;
+		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+		line-height: 150%;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	}
+	
+	.legend-3 {
+		position: absolute;
+		left: 26.8%;
+		width: 3.4%;
+		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+		background: radial-gradient(#fcc00d, #997000);
+		box-shadow: 0 0 5px #997000, 0 0 5px #997000, 0 0 15px #997000, 0 0 5px #997000,
+						   0 0 25px #997000, 0 0 25px #997000, 0 0 25px #997000, 0 0 5px #997000,
+						   0 0 50px #997000;
+		font-family: Century Gothic;
+		font-size: 1.8vw;
+		/* allows me to put the text aligned vertically */
+		text-align: center;
+		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+		line-height: 150%;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	}
+	
+	.legend-4 {
+		position: absolute;
+		left: 32.3%;
+		width: 3.4%;
+		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+		background: radial-gradient(#c5b700, #7f7501);
+		box-shadow: 0 0 5px #7f7501, 0 0 5px #7f7501, 0 0 15px #7f7501, 0 0 5px #7f7501,
+						   0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 5px #7f7501,
+						   0 0 50px #7f7501;
+		font-family: Century Gothic;
+		font-size: 1.8vw;
+		/* allows me to put the text aligned vertically */
+		text-align: center;
+		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+		line-height: 150%;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	}
+	
+	.legend-5 {
+		position: absolute;
+		left: 37.8%;
+		width: 3.4%;
+		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+		background: radial-gradient(#88c03c, #4a681f);
+		box-shadow: 0 0 5px #4a681f, 0 0 5px #4a681f, 0 0 15px #4a681f, 0 0 5px #4a681f,
+						   0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 5px #4a681f,
+						   0 0 50px #4a681f;
+		font-family: Century Gothic;
+		font-size: 1.8vw;
+		/* allows me to put the text aligned vertically */
+		text-align: center;
+		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+		line-height: 150%;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	}
+	
+	.legend-6 {
+		position: absolute;
+		left: 43.3%;
+		width: 3.4%;
+		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+		background: radial-gradient(#47813d, #2b4c24);
+		box-shadow: 0 0 5px #2b4c24, 0 0 5px #2b4c24, 0 0 15px #2b4c24, 0 0 5px #2b4c24,
+						   0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 5px #2b4c24,
+						   0 0 50px #2b4c24;
+		font-family: Century Gothic;
+		font-size: 1.8vw;
+		/* allows me to put the text aligned vertically */
+		text-align: center;
+		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+		line-height: 150%;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	}
+	
+	.legend-7 {
+		position: absolute;
+		left: 48.8%;
+		width: 3.4%;
+		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+		background: radial-gradient(#009f4d, #015326);
+		box-shadow: 0 0 5px #015326, 0 0 5px #015326, 0 0 15px #015326, 0 0 5px #015326,
+						   0 0 25px #015326, 0 0 25px #015326, 0 0 25px #015326, 0 0 5px #015326,
+						   0 0 50px #015326;
+		font-family: Century Gothic;
+		font-size: 1.8vw;
+		/* allows me to put the text aligned vertically */
+		text-align: center;
+		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+		line-height: 150%;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	}
+	
+	.legend-7 span {
+		/* border: solid red 1px; */
+		text-align: left;
+		position: absolute;
+		width: 700%;
+		font-size: 1.5vw;
+		transform: translateX(8%);
+	}
+	
+	.legend-8 {
+		position: absolute;
+		left: 78.3%;
+		width: 5.1%;
+		font-family: Century Gothic;
+		font-size: 1.8vw;
+		color: white;
+		line-height: 100%;
+		/* diagonal line inside square // Nitheesh's answer: https://stackoverflow.com/questions/60388805/make-diagonal-line-for-div-square */
+		border: 1px solid #404040;
+		background: linear-gradient(to bottom right, #262626 calc(50% - 3px),  #404040 calc(50% - 1px), #262626 50%, #262626 50%);
+	}
+	#first-half { transform: translate(2%, 5%); }  /* 1H */
+	#second-half { transform: translate(40%, 0%); }  /*2H */
+	/* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	#button-gallery4 {
+		border: solid 1px red;
+		position: absolute;
+		z-index: 2;
+		margin-top: 5%;
+		left: 50%;
+		width: 15%;
+		height: auto;
+		font-size: 3vw;
+		font-family: monospace;
+		color: white;
+		background-color: green;
+	}
+	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.date-and-result h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {  /*1st row */
+		/* border: solid 1px red; */
+		position: absolute;
+		display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
+		width: 9.8%;  /* width of each text */
+		margin-top: 13.32%;
+		/* margin-top: 12.94%; */
+		font-family: Century Gothic;
+		color: white;
+		font-size: 1.3vw;
+		text-align: center;  /* centers it left to right */
+		padding-top: 2.7%;  /* distance between the top of the box and text */
+		z-index: 4;
+	}
+	.date-and-result h18, h19, h20, h21, h22, h23, h24, h25, h26, h27 {  /*2nd row */
+		/* border: solid 1px red; */
+		position: absolute;
+		display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
+		width: 9.8%;  /* width of each text */
+		margin-top: 20.9%;
+		font-family: Century Gothic;
+		font-size: 1.3vw;
+		text-align: center;  /* centers it left to right */
+		padding-top: 2.7%;
+		z-index: 4;
+	}
+	.date-and-result h8, h18 {
+		left: 1.7%;
+	}
+	.date-and-result h9 {
+		left: 11.35%;
+	}
+	.date-and-result h10 {
+		left: 20.97%;
+	}
+	.date-and-result h11 {
+		left: 30.59%;
+	}
+	.date-and-result h12 {
+		left: 40.3%;
+	}
+	.date-and-result h13 {
+		left: 49.92%;
+	}
+	.date-and-result h14 {
+		left: 59.56%;
+	}
+	.date-and-result h15 {
+		left: 69.3%;
+	}
+	.date-and-result h16 {
+		left: 79%;
+	}
+	.date-and-result h17 {
+		left: 88.6%;
+	}
+	#date1 {
+		font-size: 1.11vw;
+	}
+	#result { display: none;}   /* for button */
+	#result1 { display: none; }   /* for button */
+	/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	#ratings {
+		display: none;
+		position: absolute;
+		margin-top: .5%;  /* with respect to header (menu) */
+		left: -19%;  /* same as .gallery-banner above */
+		width: 137%;
+	}
+	.ratings {
+		position: relative;
+		z-index: 2;
+	}
+	/* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* CUBOID HOLDERS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.cuboid-holder { display: none; }
+	/* CUBOID HOLDERS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* ROTATING CUBOIDS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.cuboid1 { display: none; }
+	.cuboid2 { display: none; }
+	/* ROTATING CUBOIDS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* DROPDOWNS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdowns-section {
 		position: relative;  /* responsive: 'relative' to eliminate overflow excess x-wise on mobile */
-		margin-top: 18%;
+		margin-top: 110%;
 		margin-left: -29.5vw;
 		height: 150vw;
 		z-index: 2;
@@ -3706,12 +4645,12 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		list-style: none;
 	}
 	.season-content-pc { display: none; }  /* for PC */
-	.season-content-mobile {
+	.season-content-mobile {  /* tap to close */
 		display: initial;  /* overwrites display:none for PC */
 		/* border: solid 1px red; */
 		width: 304px;  /* how big the dropdown content is */
 	}
-	.season-content {
+	.season-content {  /* body */
 		/* border: solid 1px red; */
 		width: 304px;  /* how big the dropdown content is */
 	}
@@ -3917,6 +4856,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		100% {opacity: 1.0}
 	}
 	.box-shadow .box-shadow2 { display: none; }
+	.OT-banners { display: none; } /* for PC and larger tablet */
 	/* CLOCK 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.clock {
 		/* border: solid red 1px; */
@@ -4272,20 +5212,370 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		width: 180%;
 		transform: translate(-21%, -180%);  /* for any reason, this is the only way I can move this div */
 	}
+	/* CABLE BOXES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#cable-box { display: none; }
-	.brick-wall h2, h3, h4, h5, h6, h7 { display: none;}  /* "THE BICYCLE KICK, ...." */
-	.gallery-banner-pc { display: none; }  /* for mobile */
-	.gallery-banner {
-		display: initial;  /* overwrites code for PC */
+	/* CABLE BOXES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* GALLERY PHOTO TEXT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.brick-wall h2, h3, h4, h5, h6, h7 {
+		/* border: solid 1px red; */
 		position: absolute;
-		width: 100%;
-		margin-top: -32.35%;  /* with respect to header (menu) */
+		display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
+		width: 13.15%;  /* width of each text */
+		margin-top: -9%;
+		font-family: raleway_f;
+		font-size: 1vw;
+		text-align: center;  /* centers it left to right */
 		z-index: 2;
 	}
+	.gallery-banner-pc { display: none; }  /* for PC */
+	.gallery-banner-mobile { 
+		display: initial;
+		position: absolute;
+		width: 100%;
+		margin-top: -29%;  /* with respect to header (menu) */
+		z-index: 2; }  /* for PC */
+	.gallery-banner {
+		position: absolute;
+		display: initial;  /* overwrites code for PC */
+		margin-top: 37%;
+		left: -19%;  /* same as #ratings below */
+		width: 137%;
+	}
+	/* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.class-button-photo {
+		position: relative;
+	}
+	#button-gallery2 {
+		border: solid 1px red;
+		border: none;
+		position: absolute;
+		z-index: 2;
+		margin-top: -45%;
+		left: 50%;
+		width: 15%;
+		height: auto;
+		font-size: 3vw;
+		font-family: Trueno Round Italic;
+		color: white;
+		background-color: green;
+	}
+	#button-gallery3 {
+		border: solid 1px red;
+		border: none;
+		z-index: 2;
+		margin-top: -45%;
+		left: 70%;
+		width: 15%;
+		height: auto;
+		font-size: 3vw;
+		font-family: Trueno Round Italic;
+		color: white;
+		background-color: green;
+	}
+	#photo-blur {
+		display: none;
+		margin-top: -20.59%;  /* with respect to header (menu) */
+		position: absolute;
+	}
+	#photo-text1 { display: none; }   /* for button */
+	#photo-text2 { display: none; }   /* for button */
+	#photo-text3 { display: none; }   /* for button */
+	#photo-text4 { display: none; }   /* for button */
+	#photo-text5 { display: none; }   /* for button */
+	#photo-text6 { display: none; }   /* for button */
+	.photo-blur {
+		width: 100%;
+		position: relative;
+		z-index: 2;
+	}
+	/* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* GALLERY: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.class-button-gallery {
+		position: relative;
+	}
+	#button-gallery {
+		border: solid 1px red;
+		border: none;
+		position: absolute;
+		z-index: 2;
+		margin-top: -25%;
+		left: 50%;
+		width: 15%;
+		height: auto;
+		font-size: 3vw;
+		font-family: Trueno Round Italic;
+		color: white;
+		background-color: green;
+	}
+	#gallery-blur1 {
+		display: none;
+		margin-top: -6%;  /* with respect to header (menu) */
+		position: absolute;
+	}
+	.gallery-blur {
+		width: 100%;
+		position: relative;
+		z-index: 2;
+	}
+	/* GALLERY: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.legend {
+		position: relative; 
+		margin-top: 23%;
+		z-index: 2;
+	}
+	.legend-1 {
+		position: absolute;
+		left: 15.8%;
+		width: 3.4%;
+		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+		background: radial-gradient(#e61b22, #9d0e16);
+		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16,
+						   0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 5px #9d0e16,
+						   0 0 50px #9d0e16;
+		font-family: Century Gothic;
+		font-size: 1.8vw;
+		/* allows me to put the text aligned vertically */
+		text-align: center;
+		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+		line-height: 150%;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	}
+	
+	.legend-2 {
+		position: absolute;
+		left: 21.3%;
+		width: 3.4%;
+		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+		background: radial-gradient(#eb6121, #9a360a);
+		box-shadow: 0 0 5px #9a360a, 0 0 5px #9a360a, 0 0 15px #9a360a, 0 0 5px #9a360a,
+						   0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 5px #9a360a,
+						   0 0 50px #9a360a;
+		font-family: Century Gothic;
+		font-size: 1.8vw;
+		/* allows me to put the text aligned vertically */
+		text-align: center;
+		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+		line-height: 150%;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	}
+	
+	.legend-3 {
+		position: absolute;
+		left: 26.8%;
+		width: 3.4%;
+		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+		background: radial-gradient(#fcc00d, #997000);
+		box-shadow: 0 0 5px #997000, 0 0 5px #997000, 0 0 15px #997000, 0 0 5px #997000,
+						   0 0 25px #997000, 0 0 25px #997000, 0 0 25px #997000, 0 0 5px #997000,
+						   0 0 50px #997000;
+		font-family: Century Gothic;
+		font-size: 1.8vw;
+		/* allows me to put the text aligned vertically */
+		text-align: center;
+		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+		line-height: 150%;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	}
+	
+	.legend-4 {
+		position: absolute;
+		left: 32.3%;
+		width: 3.4%;
+		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+		background: radial-gradient(#c5b700, #7f7501);
+		box-shadow: 0 0 5px #7f7501, 0 0 5px #7f7501, 0 0 15px #7f7501, 0 0 5px #7f7501,
+						   0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 5px #7f7501,
+						   0 0 50px #7f7501;
+		font-family: Century Gothic;
+		font-size: 1.8vw;
+		/* allows me to put the text aligned vertically */
+		text-align: center;
+		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+		line-height: 150%;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	}
+	
+	.legend-5 {
+		position: absolute;
+		left: 37.8%;
+		width: 3.4%;
+		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+		background: radial-gradient(#88c03c, #4a681f);
+		box-shadow: 0 0 5px #4a681f, 0 0 5px #4a681f, 0 0 15px #4a681f, 0 0 5px #4a681f,
+						   0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 5px #4a681f,
+						   0 0 50px #4a681f;
+		font-family: Century Gothic;
+		font-size: 1.8vw;
+		/* allows me to put the text aligned vertically */
+		text-align: center;
+		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+		line-height: 150%;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	}
+	
+	.legend-6 {
+		position: absolute;
+		left: 43.3%;
+		width: 3.4%;
+		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+		background: radial-gradient(#47813d, #2b4c24);
+		box-shadow: 0 0 5px #2b4c24, 0 0 5px #2b4c24, 0 0 15px #2b4c24, 0 0 5px #2b4c24,
+						   0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 5px #2b4c24,
+						   0 0 50px #2b4c24;
+		font-family: Century Gothic;
+		font-size: 1.8vw;
+		/* allows me to put the text aligned vertically */
+		text-align: center;
+		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+		line-height: 150%;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	}
+	
+	.legend-7 {
+		position: absolute;
+		left: 48.8%;
+		width: 3.4%;
+		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
+		background: radial-gradient(#009f4d, #015326);
+		box-shadow: 0 0 5px #015326, 0 0 5px #015326, 0 0 15px #015326, 0 0 5px #015326,
+						   0 0 25px #015326, 0 0 25px #015326, 0 0 25px #015326, 0 0 5px #015326,
+						   0 0 50px #015326;
+		font-family: Century Gothic;
+		font-size: 1.8vw;
+		/* allows me to put the text aligned vertically */
+		text-align: center;
+		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
+		line-height: 150%;
+		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+	}
+	
+	.legend-7 span {
+		/* border: solid red 1px; */
+		text-align: left;
+		position: absolute;
+		width: 700%;
+		font-size: 1.5vw;
+		transform: translateX(8%);
+	}
+	
+	.legend-8 {
+		position: absolute;
+		left: 78.3%;
+		width: 5.1%;
+		font-family: Century Gothic;
+		font-size: 1.8vw;
+		color: white;
+		line-height: 100%;
+		/* diagonal line inside square // Nitheesh's answer: https://stackoverflow.com/questions/60388805/make-diagonal-line-for-div-square */
+		border: 1px solid #404040;
+		background: linear-gradient(to bottom right, #262626 calc(50% - 3px),  #404040 calc(50% - 1px), #262626 50%, #262626 50%);
+	}
+	#first-half { transform: translate(2%, 5%); }  /* 1H */
+	#second-half { transform: translate(40%, 0%); }  /*2H */
+	/* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	#button-gallery4 {
+		border: solid 1px red;
+		position: absolute;
+		z-index: 2;
+		margin-top: 5%;
+		left: 50%;
+		width: 15%;
+		height: auto;
+		font-size: 3vw;
+		font-family: monospace;
+		color: white;
+		background-color: green;
+	}
+	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.date-and-result h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {  /*1st row */
+		/* border: solid 1px red; */
+		position: absolute;
+		display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
+		width: 9.8%;  /* width of each text */
+		margin-top: 13.32%;
+		/* margin-top: 12.94%; */
+		font-family: Century Gothic;
+		color: white;
+		font-size: 1.3vw;
+		text-align: center;  /* centers it left to right */
+		padding-top: 2%;
+		z-index: 4;
+	}
+	.date-and-result h18, h19, h20, h21, h22, h23, h24, h25, h26, h27 {  /*2nd row */
+		/* border: solid 1px red; */
+		position: absolute;
+		display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
+		width: 9.8%;  /* width of each text */
+		margin-top: 20.9%;
+		font-family: Century Gothic;
+		font-size: 1.3vw;
+		text-align: center;  /* centers it left to right */
+		padding-top: 2%;
+		z-index: 4;
+	}
+	.date-and-result h8, h18 {
+		left: 1.7%;
+	}
+	.date-and-result h9 {
+		left: 11.35%;
+	}
+	.date-and-result h10 {
+		left: 20.97%;
+	}
+	.date-and-result h11 {
+		left: 30.59%;
+	}
+	.date-and-result h12 {
+		left: 40.3%;
+	}
+	.date-and-result h13 {
+		left: 49.92%;
+	}
+	.date-and-result h14 {
+		left: 59.56%;
+	}
+	.date-and-result h15 {
+		left: 69.3%;
+	}
+	.date-and-result h16 {
+		left: 79%;
+	}
+	.date-and-result h17 {
+		left: 88.6%;
+	}
+	#date1 {
+		font-size: 1.11vw;
+	}
+	#result { display: none;}   /* for button */
+	#result1 { display: none; }   /* for button */
+	/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	#ratings {
+		display: none;
+		position: absolute;
+		margin-top: -.15%;  /* with respect to header (menu) */
+		left: -19%;  /* same as .gallery-banner above */
+		width: 137%;
+	}
+	.ratings {
+		position: relative;
+		z-index: 2;
+	}
+	/* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* CUBOID HOLDERS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.cuboid-holder { display: none; }
+	/* CUBOID HOLDERS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* ROTATING CUBOIDS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.cuboid1 { display: none; }
+	.cuboid2 { display: none; }
+	/* ROTATING CUBOIDS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* DROPDOWNS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdowns-section {
 		position: relative;  /* responsive: 'relative' to eliminate overflow excess x-wise on mobile */
-		margin-top: 18%;
+		margin-top: 110%;
 		margin-left: -29.5vw;
 		height: 150vw;
 		z-index: 2;
@@ -5003,7 +6293,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 
 /* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */
 @media only screen and (max-width: 570px) {  /* MOBILE  📱 */
-	html, body { position: relative; overflow-x: hidden; background-color: black; min-width: auto;}
+	html, body { position: relative; overflow-x: hidden; background-color: #ac141b; min-width: auto;}
 	::-webkit-scrollbar { display: none; }
 	::-webkit-scrollbar-thumb { display: none; }
 	.parallax-home {
@@ -5158,22 +6448,23 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-size: 0;  /* addition // important to eliminate border margin between separate images; alex's answer here: https://stackoverflow.com/questions/7641678/use-css-to-remove-the-space-between-images */
 	}
 	.dropdown-sub-season {		
-		/* border: solid 1px red; */
+		border: solid 1px red;
 		overflow: hidden;
-		width: 320%;  /* how much % of the dropdown content to show width-wise */
+		width: 370%;  /* how much % of the dropdown content to show width-wise */
 		transform: initial;  /* overwrites code for PC */
 	}
 	.dropdown-li {  /* no use for this, but just in case... */
 		list-style: none;
 	}
 	.season-content-pc { display: none; }  /* for PC */
-	.season-content-mobile {
+	.season-content-mobile {  /* tap to close */
+		display: initial;
 		/* border: solid 1px red; */
-		width: 304px;  /* how big the dropdown content is */
+		width: 280px;  /* how big the dropdown content is */
 	}
-	.season-content {
+	.season-content {  /* body */
 		/* border: solid 1px red; */
-		width: 304px;  /* how big the dropdown content is */
+		width: 280px;  /* how big the dropdown content is */
 	}
 	#season-links {
 		pointer-events: var(--on-tap, none);  /* responsive: somehow, the link is clickable even when the dropdown is not box-checked, so this rule prevents clicks */
@@ -5181,10 +6472,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.season-19-20 img {
 		position: absolute;
 		opacity: 0;
-		width: 107.9px;
-		height: 108.5px;
-		margin-top: 2px;  /* 109.8px the lower the value, the higher the object goes */
-		margin-left: -261.4px;  /* -154.4px the lower the value, the more to the left */
+		width: 100px;
+		height: 100px;
+		margin-top: 1.9px;  /* 109.8px the lower the value, the higher the object goes */
+		margin-left: -241px;  /* -154.4px the lower the value, the more to the left */
 	}
 	.season-19-20:hover img {
 		opacity: 1;
@@ -5192,10 +6483,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.season-20-21 img {
 		position: absolute;
 		opacity: 0;
-		width: 107.9px;
-		height: 108.5px;
-		margin-top: 2px;  /* 109.8px the lower the value, the higher the object goes */
-		margin-left: -151px;  /* -154.4px the lower the value, the more to the left */
+		width: 100px;
+		height: 100px;
+		margin-top: 1.9px;  /* 109.8px the lower the value, the higher the object goes */
+		margin-left: -139px;  /* -154.4px the lower the value, the more to the left */
 	}
 	.season-20-21:hover img {
 		opacity: 1;
@@ -5377,6 +6668,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		100% {opacity: 1.0}
 	}
 	.box-shadow .box-shadow2 { display: none; }
+	.OT-banners { display: none; } /* for PC and larger tablet */
 	/* CLOCK 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.clock {
 		/* border: solid red 1px; */
@@ -5725,8 +7017,11 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		width: 180%;
 		transform: translate(-21%, -180%);  /* for any reason, this is the only way I can move this div */
 	}
+	/* CABLE BOXES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#cable-box { display: none; }
-	.brick-wall h2, h3, h4, h5, h6, h7 {  /* "THE BICYCLE KICK, ...." */
+	/* CABLE BOXES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* GALLERY PHOTO TEXT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.brick-wall h2, h3, h4, h5, h6, h7 {
 		/* border: solid 1px red; */
 		position: absolute;
 		display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
@@ -5739,15 +7034,16 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	.gallery-banner-pc { display: none; }  /* for PC */
 	.gallery-banner-mobile { 
-		display: initial;  /* delete when it's done cross device */
+		display: initial;
 		position: absolute;
 		width: 100%;
 		margin-top: -29%;  /* with respect to header (menu) */
 		z-index: 2; }  /* for PC */
 	.gallery-banner {
-		display: initial;
+		position: absolute;
+		display: initial;  /* overwrites code for PC */
 		margin-top: 37%;
-		left: -19%;
+		left: -19%;  /* same as #ratings below */
 		width: 137%;
 	}
 	/* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -5835,127 +7131,127 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	.legend-1 {
 		position: absolute;
-		left: 28.5%;
-		width: 1.8%;
+		left: 15.8%;
+		width: 3.4%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#e61b22, #9d0e16);
 		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16,
 						   0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 5px #9d0e16,
 						   0 0 50px #9d0e16;
 		font-family: Century Gothic;
-		font-size: 1vw;
+		font-size: 2.4vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 185%;
+		line-height: 150%;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-2 {
 		position: absolute;
-		left: 32.5%;
-		width: 1.8%;
+		left: 21.3%;
+		width: 3.4%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#eb6121, #9a360a);
 		box-shadow: 0 0 5px #9a360a, 0 0 5px #9a360a, 0 0 15px #9a360a, 0 0 5px #9a360a,
 						   0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 5px #9a360a,
 						   0 0 50px #9a360a;
 		font-family: Century Gothic;
-		font-size: 1vw;
+		font-size: 2.4vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 185%;
+		line-height: 150%;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-3 {
 		position: absolute;
-		left: 36.5%;
-		width: 1.8%;
+		left: 26.8%;
+		width: 3.4%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#fcc00d, #997000);
 		box-shadow: 0 0 5px #997000, 0 0 5px #997000, 0 0 15px #997000, 0 0 5px #997000,
 						   0 0 25px #997000, 0 0 25px #997000, 0 0 25px #997000, 0 0 5px #997000,
 						   0 0 50px #997000;
 		font-family: Century Gothic;
-		font-size: 1vw;
+		font-size: 2.4vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 185%;
+		line-height: 150%;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-4 {
 		position: absolute;
-		left: 40.5%;
-		width: 1.8%;
+		left: 32.3%;
+		width: 3.4%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#c5b700, #7f7501);
 		box-shadow: 0 0 5px #7f7501, 0 0 5px #7f7501, 0 0 15px #7f7501, 0 0 5px #7f7501,
 						   0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 5px #7f7501,
 						   0 0 50px #7f7501;
 		font-family: Century Gothic;
-		font-size: 1vw;
+		font-size: 2.4vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 185%;
+		line-height: 150%;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-5 {
 		position: absolute;
-		left: 44.5%;
-		width: 1.8%;
+		left: 37.8%;
+		width: 3.4%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#88c03c, #4a681f);
 		box-shadow: 0 0 5px #4a681f, 0 0 5px #4a681f, 0 0 15px #4a681f, 0 0 5px #4a681f,
 						   0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 5px #4a681f,
 						   0 0 50px #4a681f;
 		font-family: Century Gothic;
-		font-size: 1vw;
+		font-size: 2.4vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 185%;
+		line-height: 150%;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-6 {
 		position: absolute;
-		left: 48.5%;
-		width: 1.8%;
+		left: 43.3%;
+		width: 3.4%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#47813d, #2b4c24);
 		box-shadow: 0 0 5px #2b4c24, 0 0 5px #2b4c24, 0 0 15px #2b4c24, 0 0 5px #2b4c24,
 						   0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 5px #2b4c24,
 						   0 0 50px #2b4c24;
 		font-family: Century Gothic;
-		font-size: 1vw;
+		font-size: 2.4vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 185%;
+		line-height: 150%;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-7 {
 		position: absolute;
-		left: 52.5%;
-		width: 1.8%;
+		left: 48.8%;
+		width: 3.4%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#009f4d, #015326);
 		box-shadow: 0 0 5px #015326, 0 0 5px #015326, 0 0 15px #015326, 0 0 5px #015326,
 						   0 0 25px #015326, 0 0 25px #015326, 0 0 25px #015326, 0 0 5px #015326,
 						   0 0 50px #015326;
 		font-family: Century Gothic;
-		font-size: 1vw;
+		font-size: 2.4vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 185%;
+		line-height: 150%;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
@@ -5964,21 +7260,23 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		text-align: left;
 		position: absolute;
 		width: 700%;
+		font-size: 1.9vw;
 		transform: translateX(8%);
 	}
 	
 	.legend-8 {
 		position: absolute;
-		left: 70.5%;
-		width: 2.5%;
+		left: 78.3%;
+		width: 5.5%;
 		font-family: Century Gothic;
-		font-size: 1vw;
+		font-size: 2vw;
 		color: white;
+		line-height: 100%;
 		/* diagonal line inside square // Nitheesh's answer: https://stackoverflow.com/questions/60388805/make-diagonal-line-for-div-square */
 		border: 1px solid #404040;
 		background: linear-gradient(to bottom right, #262626 calc(50% - 3px),  #404040 calc(50% - 1px), #262626 50%, #262626 50%);
 	}
-	#first-half { transform: translate(-7%, -5%); }  /* 1H */
+	#first-half { transform: translate(2%, 5%); }  /* 1H */
 	#second-half { transform: translate(35%, 0%); }  /*2H */
 	/* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -6002,7 +7300,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
 		width: 9.8%;  /* width of each text */
-		margin-top: 12.5%;
+		margin-top: 13.32%;
+		/* margin-top: 12.94%; */
 		font-family: Century Gothic;
 		color: white;
 		font-size: 1.3vw;
@@ -6014,85 +7313,57 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* border: solid 1px red; */
 		position: absolute;
 		display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
-		width: 7.3%;  /* width of each text */
-		margin-top: 25%;
+		width: 9.8%;  /* width of each text */
+		margin-top: 20.9%;
 		font-family: Century Gothic;
-		font-size: .97vw;
+		font-size: 1.3vw;
 		text-align: center;  /* centers it left to right */
 		padding-top: 2%;
 		z-index: 4;
 	}
 	.date-and-result h8, h18 {
-		left: 1.8%;  /* 7,05 points of increments */
+		left: 1.7%;
 	}
 	.date-and-result h9 {
-		left: 22.05%;  /* 7,05 points of increments */
+		left: 11.35%;
 	}
 	.date-and-result h10 {
-		left: 29.1%;  /* 7,05 points of increments */
+		left: 20.97%;
 	}
 	.date-and-result h11 {
-		left: 36.2%;  /* 7,05 points of increments */
+		left: 30.59%;
 	}
 	.date-and-result h12 {
-		left: 43.25%;  /* 7,05 points of increments */
+		left: 40.3%;
 	}
 	.date-and-result h13 {
-		left: 50.25%;  /* 7,05 points of increments */
+		left: 49.92%;
 	}
 	.date-and-result h14 {
-		left: 57.3%;  /* 7,05 points of increments */
+		left: 59.56%;
 	}
 	.date-and-result h15 {
-		left: 64.35%;  /* 7,05 points of increments */
+		left: 69.3%;
 	}
 	.date-and-result h16 {
-		left: 71.4%;  /* 7,05 points of increments */
+		left: 79%;
 	}
 	.date-and-result h17 {
-		left: 78.45%;  /* 7,05 points of increments */
+		left: 88.6%;
 	}
 	#date1 {
-		font-size: 1.2vw;
+		font-size: 1.11vw;
 	}
 	#result { display: none;}   /* for button */
 	#result1 { display: none; }   /* for button */
-	.match-calendar-text2 {
-		width: 6.9%;
-		height: auto;
-		/* border: solid 1px red; */
-		position: absolute;
-		/* before cross-browser and no red box // margin-top: -300px; */
-		margin-top: -3.4%;
-		/* before cross-browser and no red box // left: 905.5px; */
-		left: 22.4%;
-		z-index: 7;
-		cursor: pointer;
-		font-family: Century Gothic;
-		font-size: .8em;
-		/* allows me to put the text aligned vertically */
-		text-align: center;
-		align-items: center;
-		vertical-align: middle;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	}
-	#date2 {
-		color: white;
-		position: absolute;
-		font-size: .75em;
-		/* border: solid 1px red; */
-		text-shadow: none;
-		width: 95px;
-		height: auto;
-		transform: translate(-47px, -40px);
-	}
 	/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#ratings {
 		display: none;
-		margin-top: -2.5%;  /* with respect to header (menu) */
 		position: absolute;
-		width: 100%;
+		margin-top: -.15%;  /* with respect to header (menu) */
+		left: -19%;  /* same as .gallery-banner above */
+		width: 137%;
 	}
 	.ratings {
 		position: relative;
