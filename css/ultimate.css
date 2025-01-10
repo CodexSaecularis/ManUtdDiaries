@@ -1134,13 +1134,13 @@ ul.navlist {
 	position: relative;  /* makes z-index actually work for this img */
 	width: 32%;
 	z-index: -4;
-	transform: translate(-10%, -110.2%);  /* for Mozilla, best way to move this img */
+	transform: translate(-10%, -109%);  /* for Mozilla, best way to move this img */
 }
 .cable-box-right {
 	position: relative;  /* makes z-index actually work for this img */
 	width: 26.8%;
 	z-index: -4;
-	transform: translate(154%, -109.4%);  /* for Mozilla, best way to move this img */
+	transform: translate(154%, -109%);  /* for Mozilla, best way to move this img */
 }
 /* CABLE BOXES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* GALLERY PHOTO TEXT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -1777,11 +1777,10 @@ ul.navlist {
 	position: absolute;
 	background: url(/underground/close-UCL.png);
 	background-size: 100%;
-	/* to control image size, I need these font values */
-	font-family: 'Courier New', Courier, monospace;
-	font-size: 1.2vw;
-	top: 28.5%;
-	left: 49.3%;
+	font-family: 'Courier New', Courier, monospace;	 /* to control image size, I need these font values */
+	font-size: 4.3vw; 	/* to control image size, I need these font values */
+	top: 29%;
+	left: 46.9%;
 	display: var(--close-display, none) !important;
 }
 .dropdown_check {
@@ -2514,6 +2513,18 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 	animation-play-state: none;
 }
 /* 	BUTTON: SHOW SCORE AND NEWS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+/* 	DATE | TIME | COMPETITION STAGE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+.close3 {
+	/* border: solid 1px red; */
+	position: absolute;
+	top: 86%;
+	left: 40.85%;
+	font-family: Agency FB;
+	font-size: 1vw;
+	color: #e0dcdc;
+	text-align: center;
+}
+/* 	DATE | TIME | COMPETITION STAGE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 /* BOTTOM 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .bottom {
 	/* border: solid 1px red; */
@@ -4434,11 +4445,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		background: url(/underground/close-UCL.png);
 		background-size: 100%;
-		/* to control image size, I need these font values */
-		font-family: 'Courier New', Courier, monospace;
-		font-size: 3.4em;
-		top: 28.5%;
-		left: 49.3%;
+		font-family: 'Courier New', Courier, monospace;	 /* to control image size, I need these font values */
+		font-size: 6.8vw; 	/* to control image size, I need these font values */
+		top: 29.7%;
+		left: 57.34%;
 		display: var(--close-display, none) !important;
 	}
 	.dropdown_check {
@@ -5170,6 +5180,19 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		animation-play-state: none;
 	}
 	/* 	BUTTON: SHOW SCORE AND NEWS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+	/* 	DATE | TIME | COMPETITION STAGE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+	.close3 {
+		/* border: solid 1px red; */
+		position: absolute;
+		width: 18%;
+		top: 86.6%;
+		left: 49.55%;
+		font-family: Agency FB;
+		font-size: 1.53vw;
+		color: #e0dcdc;
+		text-align: center;
+	}
+	/* 	DATE | TIME | COMPETITION STAGE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* BOTTOM 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.bottom {
 		/* border: solid 1px red; */
@@ -6766,11 +6789,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		background: url(/underground/close-UCL.png);
 		background-size: 100%;
-		/* to control image size, I need these font values */
-		font-family: 'Courier New', Courier, monospace;
-		font-size: 3.4em;
-		top: 28.5%;
-		left: 49.3%;
+		font-family: 'Courier New', Courier, monospace;	 /* to control image size, I need these font values */
+		font-size: 6.8vw; 	/* to control image size, I need these font values */
+		top: 29.7%;
+		left: 57.34%;
 		display: var(--close-display, none) !important;
 	}
 	.dropdown_check {
@@ -8634,11 +8656,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		background: url(/underground/close-UCL.png);
 		background-size: 100%;
-		/* to control image size, I need these font values */
-		font-family: 'Courier New', Courier, monospace;
-		font-size: 3.4em;
-		top: 28.5%;
-		left: 49.3%;
+		font-family: 'Courier New', Courier, monospace;	 /* to control image size, I need these font values */
+		font-size: 6.8vw; 	/* to control image size, I need these font values */
+		top: 29.7%;
+		left: 57.34%;
 		display: var(--close-display, none) !important;
 	}
 	.dropdown_check {
