@@ -63,7 +63,6 @@
 	list-style: none; /* none // helps eliminate any listing bulletpoint */
 	scroll-behavior: smooth;
 }
-
 body {
 	position: relative;  /* for Mozilla desktop view on mobile */
 	min-width: 1101px;
@@ -74,6 +73,16 @@ body {
 	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='28px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23080101' d='M 2.5,3.5 C 7.1586,6.16843 11.4919,9.3351 15.5,13C 9.07438,12.1868 4.74104,14.6868 2.5,20.5C 1.16667,14.8333 1.16667,9.16667 2.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23af231e' d='M 3.5,1.5 C 9.3796,5.26653 15.0463,9.26653 20.5,13.5C 17.023,14.3227 13.3563,14.8227 9.5,15C 8.74756,15.6708 8.41423,16.5041 8.5,17.5C 7.20027,20.4323 5.20027,22.7656 2.5,24.5C 2.5,23.1667 2.5,21.8333 2.5,20.5C 4.74104,14.6868 9.07438,12.1868 15.5,13C 11.4919,9.3351 7.1586,6.16843 2.5,3.5C 2.32842,2.50838 2.66175,1.84171 3.5,1.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bab7d0' d='M 20.5,13.5 C 21.1667,13.8333 21.8333,14.1667 22.5,14.5C 22.5,15.5 22.5,16.5 22.5,17.5C 17.8665,16.8663 13.1998,16.8663 8.5,17.5C 8.41423,16.5041 8.74756,15.6708 9.5,15C 13.3563,14.8227 17.023,14.3227 20.5,13.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23b4bcca' d='M -0.5,-0.5 C 0.166667,-0.5 0.833333,-0.5 1.5,-0.5C 2.16667,0.166667 2.83333,0.833333 3.5,1.5C 2.66175,1.84171 2.32842,2.50838 2.5,3.5C 1.16667,9.16667 1.16667,14.8333 2.5,20.5C 2.5,21.8333 2.5,23.1667 2.5,24.5C 1.89022,25.391 1.55688,26.391 1.5,27.5C 0.833333,27.5 0.166667,27.5 -0.5,27.5C -0.5,18.1667 -0.5,8.83333 -0.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, auto;
 }
 /* idea of adding position:relative in DD.'s answer: https://stackoverflow.com/questions/8635799/overflow-xhidden-still-can-scroll?rq=3 */
+
+#links {  /* universal pointer cursor for links and scoreboard */
+	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='30px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f90605' d='M 11.5,-0.5 C 12.5,-0.5 13.5,-0.5 14.5,-0.5C 14.5,2.16667 14.5,4.83333 14.5,7.5C 13.8333,6.16667 13.1667,4.83333 12.5,3.5C 12.1667,3.5 11.8333,3.5 11.5,3.5C 11.5,2.16667 11.5,0.833333 11.5,-0.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23040404' d='M 9.5,3.5 C 10.1667,3.5 10.8333,3.5 11.5,3.5C 11.8333,3.5 12.1667,3.5 12.5,3.5C 12.5,5.16667 12.5,6.83333 12.5,8.5C 13.9527,10.229 15.9527,11.229 18.5,11.5C 19.4742,13.7427 19.8076,16.076 19.5,18.5C 18.0795,21.2613 17.4129,24.2613 17.5,27.5C 15.5,27.5 13.5,27.5 11.5,27.5C 11.1185,22.737 9.11854,18.737 5.5,15.5C 6.56764,14.5655 7.90097,14.2322 9.5,14.5C 9.5,10.8333 9.5,7.16667 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23aa2822' d='M 12.5,3.5 C 13.1667,4.83333 13.8333,6.16667 14.5,7.5C 15.1667,7.5 15.8333,7.5 16.5,7.5C 15.4324,8.43448 14.099,8.76781 12.5,8.5C 12.5,6.83333 12.5,5.16667 12.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%235a5c5e' d='M 9.5,3.5 C 9.5,7.16667 9.5,10.8333 9.5,14.5C 7.90097,14.2322 6.56764,14.5655 5.5,15.5C 4.95691,15.44 4.62358,15.1067 4.5,14.5C 5.68884,13.5713 7.02218,13.238 8.5,13.5C 8.18723,9.95815 8.52056,6.62482 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f41a13' d='M 17.5,7.5 C 19.1172,8.038 20.7839,8.37133 22.5,8.5C 22.5,12.8333 22.5,17.1667 22.5,21.5C 20.7773,23.78 20.1107,26.4467 20.5,29.5C 17.5,29.5 14.5,29.5 11.5,29.5C 13.5,28.8333 15.5,28.1667 17.5,27.5C 17.4129,24.2613 18.0795,21.2613 19.5,18.5C 20.4767,15.7131 20.81,12.7131 20.5,9.5C 18.8212,9.71481 17.8212,9.04814 17.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bea6ab' d='M 16.5,7.5 C 16.8333,7.5 17.1667,7.5 17.5,7.5C 17.8212,9.04814 18.8212,9.71481 20.5,9.5C 20.81,12.7131 20.4767,15.7131 19.5,18.5C 19.8076,16.076 19.4742,13.7427 18.5,11.5C 15.9527,11.229 13.9527,10.229 12.5,8.5C 14.099,8.76781 15.4324,8.43448 16.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f0edf0' d='M 7.5,-0.5 C 8.83333,-0.5 10.1667,-0.5 11.5,-0.5C 11.5,0.833333 11.5,2.16667 11.5,3.5C 10.8333,3.5 10.1667,3.5 9.5,3.5C 8.52056,6.62482 8.18723,9.95815 8.5,13.5C 7.02218,13.238 5.68884,13.5713 4.5,14.5C 4.62358,15.1067 4.95691,15.44 5.5,15.5C 9.11854,18.737 11.1185,22.737 11.5,27.5C 13.5,27.5 15.5,27.5 17.5,27.5C 15.5,28.1667 13.5,28.8333 11.5,29.5C 10.8333,29.5 10.1667,29.5 9.5,29.5C 9.04814,25.4246 7.54814,21.7579 5,18.5C 3.54905,16.5359 1.71572,15.2026 -0.5,14.5C -0.5,13.1667 -0.5,11.8333 -0.5,10.5C 2.19853,10.4661 4.69853,11.1328 7,12.5C 7.49902,8.17944 7.66568,3.84611 7.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, pointer;
+}
+[itemid="links"] { /* universal pointer cursor for buttons */
+	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='30px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f90605' d='M 11.5,-0.5 C 12.5,-0.5 13.5,-0.5 14.5,-0.5C 14.5,2.16667 14.5,4.83333 14.5,7.5C 13.8333,6.16667 13.1667,4.83333 12.5,3.5C 12.1667,3.5 11.8333,3.5 11.5,3.5C 11.5,2.16667 11.5,0.833333 11.5,-0.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23040404' d='M 9.5,3.5 C 10.1667,3.5 10.8333,3.5 11.5,3.5C 11.8333,3.5 12.1667,3.5 12.5,3.5C 12.5,5.16667 12.5,6.83333 12.5,8.5C 13.9527,10.229 15.9527,11.229 18.5,11.5C 19.4742,13.7427 19.8076,16.076 19.5,18.5C 18.0795,21.2613 17.4129,24.2613 17.5,27.5C 15.5,27.5 13.5,27.5 11.5,27.5C 11.1185,22.737 9.11854,18.737 5.5,15.5C 6.56764,14.5655 7.90097,14.2322 9.5,14.5C 9.5,10.8333 9.5,7.16667 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23aa2822' d='M 12.5,3.5 C 13.1667,4.83333 13.8333,6.16667 14.5,7.5C 15.1667,7.5 15.8333,7.5 16.5,7.5C 15.4324,8.43448 14.099,8.76781 12.5,8.5C 12.5,6.83333 12.5,5.16667 12.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%235a5c5e' d='M 9.5,3.5 C 9.5,7.16667 9.5,10.8333 9.5,14.5C 7.90097,14.2322 6.56764,14.5655 5.5,15.5C 4.95691,15.44 4.62358,15.1067 4.5,14.5C 5.68884,13.5713 7.02218,13.238 8.5,13.5C 8.18723,9.95815 8.52056,6.62482 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f41a13' d='M 17.5,7.5 C 19.1172,8.038 20.7839,8.37133 22.5,8.5C 22.5,12.8333 22.5,17.1667 22.5,21.5C 20.7773,23.78 20.1107,26.4467 20.5,29.5C 17.5,29.5 14.5,29.5 11.5,29.5C 13.5,28.8333 15.5,28.1667 17.5,27.5C 17.4129,24.2613 18.0795,21.2613 19.5,18.5C 20.4767,15.7131 20.81,12.7131 20.5,9.5C 18.8212,9.71481 17.8212,9.04814 17.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bea6ab' d='M 16.5,7.5 C 16.8333,7.5 17.1667,7.5 17.5,7.5C 17.8212,9.04814 18.8212,9.71481 20.5,9.5C 20.81,12.7131 20.4767,15.7131 19.5,18.5C 19.8076,16.076 19.4742,13.7427 18.5,11.5C 15.9527,11.229 13.9527,10.229 12.5,8.5C 14.099,8.76781 15.4324,8.43448 16.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f0edf0' d='M 7.5,-0.5 C 8.83333,-0.5 10.1667,-0.5 11.5,-0.5C 11.5,0.833333 11.5,2.16667 11.5,3.5C 10.8333,3.5 10.1667,3.5 9.5,3.5C 8.52056,6.62482 8.18723,9.95815 8.5,13.5C 7.02218,13.238 5.68884,13.5713 4.5,14.5C 4.62358,15.1067 4.95691,15.44 5.5,15.5C 9.11854,18.737 11.1185,22.737 11.5,27.5C 13.5,27.5 15.5,27.5 17.5,27.5C 15.5,28.1667 13.5,28.8333 11.5,29.5C 10.8333,29.5 10.1667,29.5 9.5,29.5C 9.04814,25.4246 7.54814,21.7579 5,18.5C 3.54905,16.5359 1.71572,15.2026 -0.5,14.5C -0.5,13.1667 -0.5,11.8333 -0.5,10.5C 2.19853,10.4661 4.69853,11.1328 7,12.5C 7.49902,8.17944 7.66568,3.84611 7.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, pointer;
+}
+.date-and-result a {  /* universal pointer cursor for the match grid */
+	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='30px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f90605' d='M 11.5,-0.5 C 12.5,-0.5 13.5,-0.5 14.5,-0.5C 14.5,2.16667 14.5,4.83333 14.5,7.5C 13.8333,6.16667 13.1667,4.83333 12.5,3.5C 12.1667,3.5 11.8333,3.5 11.5,3.5C 11.5,2.16667 11.5,0.833333 11.5,-0.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23040404' d='M 9.5,3.5 C 10.1667,3.5 10.8333,3.5 11.5,3.5C 11.8333,3.5 12.1667,3.5 12.5,3.5C 12.5,5.16667 12.5,6.83333 12.5,8.5C 13.9527,10.229 15.9527,11.229 18.5,11.5C 19.4742,13.7427 19.8076,16.076 19.5,18.5C 18.0795,21.2613 17.4129,24.2613 17.5,27.5C 15.5,27.5 13.5,27.5 11.5,27.5C 11.1185,22.737 9.11854,18.737 5.5,15.5C 6.56764,14.5655 7.90097,14.2322 9.5,14.5C 9.5,10.8333 9.5,7.16667 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23aa2822' d='M 12.5,3.5 C 13.1667,4.83333 13.8333,6.16667 14.5,7.5C 15.1667,7.5 15.8333,7.5 16.5,7.5C 15.4324,8.43448 14.099,8.76781 12.5,8.5C 12.5,6.83333 12.5,5.16667 12.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%235a5c5e' d='M 9.5,3.5 C 9.5,7.16667 9.5,10.8333 9.5,14.5C 7.90097,14.2322 6.56764,14.5655 5.5,15.5C 4.95691,15.44 4.62358,15.1067 4.5,14.5C 5.68884,13.5713 7.02218,13.238 8.5,13.5C 8.18723,9.95815 8.52056,6.62482 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f41a13' d='M 17.5,7.5 C 19.1172,8.038 20.7839,8.37133 22.5,8.5C 22.5,12.8333 22.5,17.1667 22.5,21.5C 20.7773,23.78 20.1107,26.4467 20.5,29.5C 17.5,29.5 14.5,29.5 11.5,29.5C 13.5,28.8333 15.5,28.1667 17.5,27.5C 17.4129,24.2613 18.0795,21.2613 19.5,18.5C 20.4767,15.7131 20.81,12.7131 20.5,9.5C 18.8212,9.71481 17.8212,9.04814 17.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bea6ab' d='M 16.5,7.5 C 16.8333,7.5 17.1667,7.5 17.5,7.5C 17.8212,9.04814 18.8212,9.71481 20.5,9.5C 20.81,12.7131 20.4767,15.7131 19.5,18.5C 19.8076,16.076 19.4742,13.7427 18.5,11.5C 15.9527,11.229 13.9527,10.229 12.5,8.5C 14.099,8.76781 15.4324,8.43448 16.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f0edf0' d='M 7.5,-0.5 C 8.83333,-0.5 10.1667,-0.5 11.5,-0.5C 11.5,0.833333 11.5,2.16667 11.5,3.5C 10.8333,3.5 10.1667,3.5 9.5,3.5C 8.52056,6.62482 8.18723,9.95815 8.5,13.5C 7.02218,13.238 5.68884,13.5713 4.5,14.5C 4.62358,15.1067 4.95691,15.44 5.5,15.5C 9.11854,18.737 11.1185,22.737 11.5,27.5C 13.5,27.5 15.5,27.5 17.5,27.5C 15.5,28.1667 13.5,28.8333 11.5,29.5C 10.8333,29.5 10.1667,29.5 9.5,29.5C 9.04814,25.4246 7.54814,21.7579 5,18.5C 3.54905,16.5359 1.71572,15.2026 -0.5,14.5C -0.5,13.1667 -0.5,11.8333 -0.5,10.5C 2.19853,10.4661 4.69853,11.1328 7,12.5C 7.49902,8.17944 7.66568,3.84611 7.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, pointer;
+}
 
 .parallax-home {
 	/* border: solid red 1px; */
@@ -236,7 +245,7 @@ body {
 	list-style: none;
 }
 .season-content-mobile { display: none; }  /* for mobile */
-.season-content-pc {  /* click to close */
+.season-content-pc {  /* click to close, click to revisit season */
 	/* border: solid 1px red; */
 	width: 320px;  /* how big the dropdown content is */
 }
@@ -1184,34 +1193,78 @@ ul.navlist {
 }
 /* GALLERY【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-.class-button-photo {
+.class-button-photo {  /* WRAP */
 	position: relative;
 }
 #button-gallery2 {
-	border: solid 1px red;
+	border: none;
 	position: absolute;
+	margin-top: -65.4%;
+	left: 3.7%;
+	width: 12.3%;
+	height: 6vw;
+	background-color: transparent;
 	z-index: 2;
-	margin-top: -60%;
-	left: 50%;
-	width: 15%;
-	height: auto;
-	font-size: 3vw;
-	font-family: monospace;
-	color: white;
-	background-color: green;
 }
 #button-gallery3 {
-	border: solid 1px red;
+	border: none;
 	position: absolute;
+	margin-top: -65.4%;
+	left: 17.3%;
+	width: 12.3%;
+	height: 6vw;
+	background-color: transparent;
 	z-index: 2;
-	margin-top: -60%;
-	left: 70%;
-	width: 15%;
-	height: auto;
-	font-size: 3vw;
-	font-family: monospace;
-	color: white;
-	background-color: green;
+}
+#button-gallery5 {
+	border: none;
+	position: absolute;
+	margin-top: -65.4%;
+	left: 30.9%;
+	width: 12.3%;
+	height: 6vw;
+	background-color: transparent;
+	z-index: 2;
+}
+#button-gallery6 {
+	border: none;
+	position: absolute;
+	margin-top: -65.4%;
+	left: 53.3%;
+	width: 12.3%;
+	height: 6vw;
+	background-color: transparent;
+	z-index: 2;
+}
+#button-gallery7 {
+	border: none;
+	position: absolute;
+	margin-top: -65.4%;
+	left: 53.3%;
+	width: 12.3%;
+	height: 6vw;
+	background-color: transparent;
+	z-index: 2;
+}
+#button-gallery8 {
+	border: none;
+	position: absolute;
+	margin-top: -65.4%;
+	left: 66.9%;
+	width: 12.3%;
+	height: 6vw;
+	background-color: transparent;
+	z-index: 2;
+}
+#button-gallery9 {
+	border: none;
+	position: absolute;
+	margin-top: -65.4%;
+	left: 80.4%;
+	width: 12.3%;
+	height: 6vw;
+	background-color: transparent;
+	z-index: 2;
 }
 #photo-blur {
 	display: none;
@@ -1235,18 +1288,27 @@ ul.navlist {
 	position: relative;
 }
 #button-gallery {
-	border: solid 1px red;
+	border: none;
+	border-radius: 0 0 1.5vw 1.5vw;  /* https://www.w3schools.com/css/css3_borders.asp */
 	position: absolute;
 	z-index: 2;
-	margin-top: -35%;
-	left: 50%;
+	margin-top: -53.5%;
+	left: 42.8%;
 	width: 15%;
-	height: auto;
-	font-size: 3vw;
-	font-family: monospace;
+	height: 3vw;
+	font-size: 1.2vw;
+	font-family: Manchester\ United\ 23-24\ Tipogra;
 	color: white;
-	background-color: green;
+	background: url(../underground/button.png), #820202;
+	background-size: 100% 100%;
 }
+#button-gallery:hover {
+	color: #f0f50c;
+	background: url(../underground/button.png), radial-gradient(#ef0017 -20%, #820202);  /* -20% here reduces the radius of #ef0017 color */
+	background-size: 100% 100%;
+	box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
+}
+#button-gallery span2 { display: none; }  /* TAP TO READ TEXT */
 #gallery-blur1 {
 	display: none;
 	margin-top: -40.6%;  /* with respect to header (menu) */
@@ -1414,18 +1476,28 @@ ul.navlist {
 /* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 #button-gallery4 {
-	border: solid 1px red;
+	border: none;
+	border-radius: 1.5vw;
 	position: absolute;
 	z-index: 2;
-	margin-top: -10%;
-	left: 50%;
-	width: 15%;
-	height: auto;
-	font-size: 3vw;
-	font-family: monospace;
+	margin-top: 3.6%;
+	/* left: 42.8%; */
+	left: 38.9%;
+	width: 23%;
+	height: 3vw;
+	font-size: 1vw;
+	font-family: Manchester\ United\ 23-24\ Tipogra;
 	color: white;
-	background-color: green;
+	background: url(../underground/button.png), #820202;
+	background-size: 100% 100%;
 }
+#button-gallery4:hover {
+	color: #f0f50c;
+	background: url(../underground/button.png), radial-gradient(#ef0017 -20%, #820202);
+	background-size: 100% 100%;
+	box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
+}
+#button-gallery4 span2 { display: none; }  /* TAP TO READ TEXT */
 /* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .date-and-result h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {  /*1st row */
@@ -1975,7 +2047,7 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 	background-image: url(../underground/pre-season.png);
 	background-size: 95% 100%;  /* width and height  // also, width has to coincide with width under #dropdown-content-match and .dropdown-content-historical above */
 	color: white;
-	padding: 3.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+	padding: 4.15vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 	text-decoration: none;
 	display: flex;
 	align-items: center;
@@ -1983,7 +2055,7 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 }
 .dropdown_link-1st-match {
 	/* border: solid 1px red; */
-	background-image: url(../underground/1st-match.png);
+	background-image: url(../underground/1st-match1.png);
 	background-size: 95% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above */
 	color: white;
 	padding: 4vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -1992,6 +2064,462 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 	align-items: center;
 	position: relative;
 }
+
+/* 	POST-MATCH NEWS MATCH 1 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+#pre-match1 { display: none; }  /* for button */
+#pre-match1-skew { display: none; }  /* for button */
+#post-match1 { display: none; }  /* for button */
+#post-match1-skew { display: none; }  /* for button */
+.pre-match1 {
+	position: absolute;
+	width: 18.6%;
+	height: 16%;
+	left: 20.9%;
+	top: 33%;
+	background-size: cover;
+	display: flex;
+	overflow: hidden;
+	white-space: nowrap;
+	background: #d8d8d9;
+	pointer-events: none;
+}
+
+.pre-match1 .news1 {
+	display: flex;
+}
+
+.pre-match1 .news1 div {
+	font-family: Trueno Round Italic;
+	font-size: 1vw;
+	white-space: nowrap;
+	/* important value in this div to make the text occupy the entirity of the box; I was playing with text-align and display values in different divs,
+	   but I figured it out thanks to Wazeed's answer: https://stackoverflow.com/questions/10283138/center-a-div-without-knowing-the-height */
+	display: flex;
+	/* I was already aware of this carrousel animation, but knowing exactly what value to put in animation-delay was thanks to
+	   rmurph46's answer below. It's simply half of the value in animation duration but negative. I needed to know that to make long carrousels
+	   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
+	animation: animate2 40s linear infinite;
+	animation-delay: -20s;
+}
+
+.pre-match1 .news1 div span {
+	color: #d8d8d9;
+	background-color: #c00101;
+}
+
+.pre-match1 .news1 div span2 {
+	color: #c00101;
+}
+
+.pre-match1 .news1 div span3 {
+	color: #d8d8d9;
+	background-color: #1e2526;
+}
+
+.pre-match1 .news1 div span4 {
+	color: #d8d8d9;
+	background-color: #1e2526;
+	font-size: 1.7vw;
+	margin-top: -.3%;
+}
+
+.pre-match1 .news1 div:nth-child(2) {
+	animation: animate3 40s linear infinite;
+}
+@keyframes animate2 {
+	0%
+	{
+		transform: translateX(100%);
+	}
+	100%
+	{
+		transform: translateX(-100%);
+	}
+}
+@keyframes animate3 {
+	0%
+	{
+		transform: translateX(0);
+	}
+	100%
+	{
+		transform: translateX(-200%);
+	}
+}
+
+.pre-match1-skew {
+	position: absolute;
+	width: 8%;
+	height: 16%;
+	left: 36.83%;
+	top: 30%;
+	background-size: cover;
+	display: flex;
+	overflow: hidden;
+	white-space: nowrap;
+	background: #d8d8d9;
+	pointer-events: none;
+	z-index: -1;
+	/* the transform:skewY value was found here: https://www.youtube.com/watch?v=Wg7jJhzWNq8&list=PL5e68lK9hEzdGazIG1ONnb7TJ74Q69rH7&index=101
+	   I found out how to use rotate3d here (Ctrl+F5 search .rotated): https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d */
+	transform: skewY(-8.5deg) rotate3d(0, 1, 0, 70deg);
+}
+
+.pre-match1-skew .news1-skew {
+	display: flex;
+	/* after trial and error, I decided to simply put this value inspired by the vid below. This value helps the content coincide.
+	   timestamp 4:47 https://www.youtube.com/watch?v=Wg7jJhzWNq8&list=PL5e68lK9hEzdGazIG1ONnb7TJ74Q69rH7&index=100 */
+	/* margin-left: 19px with skewY(10deg) only, without rotate3d */
+	/* margin-left: -266px; */
+	margin-left: -230%;
+}
+
+.pre-match1-skew .news1-skew div {
+	font-family: Trueno Round Italic;
+	font-size: 1vw;
+	white-space: nowrap;
+	/* important value in this div to make the text occupy the entirity of the box; I was playing with text-align and display values in different divs,
+	   but I figured it out thanks to Wazeed's answer: https://stackoverflow.com/questions/10283138/center-a-div-without-knowing-the-height */
+	display: flex;
+	/* I was already aware of this carrousel animation, but knowing exactly what value to put in animation-delay was thanks to
+	   rmurph46's answer below. It's simply half of the value in animation duration but negative. I needed to know that to make long carrousels
+	   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
+	animation: animate2 40s linear infinite;
+	animation-delay: -20s;
+}
+
+.pre-match1-skew .news1-skew div span {
+	color: #d8d8d9;
+	background-color: #c00101;
+}
+
+.pre-match1-skew .news1-skew div span2 {
+	color: #c00101;
+}
+
+.pre-match1-skew .news1-skew div span3 {
+	color: #d8d8d9;
+	background-color: #1e2526;
+}
+
+.pre-match1-skew .news1-skew div span4 {
+	color: #d8d8d9;
+	background-color: #1e2526;
+	font-size: 1.7vw;
+	margin-top: -.3%;
+}
+
+.pre-match1-skew .news1-skew div:nth-child(2) {
+	animation: animate3 40s linear infinite;
+}
+@keyframes animate2 {
+	0%
+	{
+		transform: translateX(100%);
+	}
+	100%
+	{
+		transform: translateX(-100%);
+	}
+}
+@keyframes animate3 {
+	0%
+	{
+		transform: translateX(0);
+	}
+	100%
+	{
+		transform: translateX(-200%);
+	}
+}
+/* 	POST-MATCH NEWS MATCH 1 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+.post-match1 {
+	position: absolute;
+	width: 18.6%;
+	height: 16%;
+	left: 56.2%;
+	top: 33%;
+	background-size: cover;
+	display: flex;
+	overflow: hidden;
+	white-space: nowrap;
+	background: #d8d8d9;
+	pointer-events: none;
+}
+
+.post-match1 .news1 {
+	display: flex;
+}
+
+.post-match1 .news1 div {
+	font-family: Trueno Round Italic;
+	font-size: 1vw;
+	white-space: nowrap;
+	/* important value in this div to make the text occupy the entirity of the box; I was playing with text-align and display values in different divs,
+	   but I figured it out thanks to Wazeed's answer: https://stackoverflow.com/questions/10283138/center-a-div-without-knowing-the-height */
+	display: flex;
+	/* I was already aware of this carrousel animation, but knowing exactly what value to put in animation-delay was thanks to
+	   rmurph46's answer below. It's simply half of the value in animation duration but negative. I needed to know that to make long carrousels
+	   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
+	animation: animate2 40s linear infinite;
+	animation-delay: -20s;
+}
+
+.post-match1 .news1 div span {
+	color: #d8d8d9;
+	background-color: #c00101;
+}
+
+.post-match1 .news1 div span2 {
+	color: #c00101;
+}
+
+.post-match1 .news1 div span3 {
+	color: #d8d8d9;
+	background-color: #1e2526;
+}
+
+.post-match1 .news1 div span4 {
+	color: #d8d8d9;
+	background-color: #1e2526;
+	font-size: 1.7vw;
+	margin-top: -.3%;
+}
+
+.post-match1 .news1 div:nth-child(2) {
+	animation: animate3 40s linear infinite;
+}
+@keyframes animate2 {
+	0%
+	{
+		transform: translateX(100%);
+	}
+	100%
+	{
+		transform: translateX(-100%);
+	}
+}
+@keyframes animate3 {
+	0%
+	{
+		transform: translateX(0);
+	}
+	100%
+	{
+		transform: translateX(-200%);
+	}
+}
+
+.post-match1-skew {
+	position: absolute;
+	width: 8%;
+	height: 16%;
+	left: 50.85%;
+	top: 30%;
+	background-size: cover;
+	display: flex;
+	overflow: hidden;
+	white-space: nowrap;
+	background: #d8d8d9;
+	pointer-events: none;
+	z-index: -1;
+	/* the transform:skewY value was found here: https://www.youtube.com/watch?v=Wg7jJhzWNq8&list=PL5e68lK9hEzdGazIG1ONnb7TJ74Q69rH7&index=101
+	   I found out how to use rotate3d here (Ctrl+F5 search .rotated): https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d */
+	transform: skewY(8.5deg) rotate3d(0, 1, 0, 70deg);
+}
+
+.post-match1-skew .news1-skew {
+	display: flex;
+	/* after trial and error, I decided to simply put this value inspired by the vid below. This value helps the content coincide.
+	   timestamp 4:47 https://www.youtube.com/watch?v=Wg7jJhzWNq8&list=PL5e68lK9hEzdGazIG1ONnb7TJ74Q69rH7&index=100 */
+	/* margin-left: 19px with skewY(10deg) only, without rotate3d */
+	/* margin-left: -472px; */
+	margin-left: 100%;
+}
+
+.post-match1-skew .news1-skew div {
+	font-family: Trueno Round Italic;
+	font-size: 1vw;
+	white-space: nowrap;
+	/* important value in this div to make the text occupy the entirity of the box; I was playing with text-align and display values in different divs,
+	   but I figured it out thanks to Wazeed's answer: https://stackoverflow.com/questions/10283138/center-a-div-without-knowing-the-height */
+	display: flex;
+	/* I was already aware of this carrousel animation, but knowing exactly what value to put in animation-delay was thanks to
+	   rmurph46's answer below. It's simply half of the value in animation duration but negative. I needed to know that to make long carrousels
+	   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
+	animation: animate2 40s linear infinite;
+	animation-delay: -20s;
+}
+
+.post-match1-skew .news1-skew div span {
+	color: #d8d8d9;
+	background-color: #c00101;
+}
+
+.post-match1-skew .news1-skew div span2 {
+	color: #c00101;
+}
+
+.post-match1-skew .news1-skew div span3 {
+	color: #d8d8d9;
+	background-color: #1e2526;
+}
+
+.post-match1-skew .news1-skew div span4 {
+	color: #d8d8d9;
+	background-color: #1e2526;
+	font-size: 1.7vw;
+	margin-top: -.3%;
+}
+
+.post-match1-skew .news1-skew div:nth-child(2) {
+	animation: animate3 40s linear infinite;
+}
+@keyframes animate2 {
+	0%
+	{
+		transform: translateX(100%);
+	}
+	100%
+	{
+		transform: translateX(-100%);
+	}
+}
+@keyframes animate3 {
+	0%
+	{
+		transform: translateX(0);
+	}
+	100%
+	{
+		transform: translateX(-200%);
+	}
+}
+/* 	POST-MATCH NEWS MATCH 1 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+/* 	BUTTON: SHOW SCORE AND NEWS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+.cover {
+	/* border: solid 1px green; */
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .08%;
+}
+#button-gallery20 {
+	border: none;
+	border-radius: .1vw;
+	position: absolute;
+	z-index: 2;
+	margin-top: -5.65%;
+	left: 40.8%;
+	width: 14.2%;
+	height: auto;  /* changed it from 1vw to auto for Mozilla 'cuz the text shows cut off at the bottom as the box (button) is too small */
+	line-height: 1vw;  /* addition for Mozilla 'cuz the text shows cut off at the bottom as the box (button) is too small */
+	font-family: Lampen;
+	font-size: 1.2vw;
+	color: #ef0017;
+	background: #262626;
+	overflow: hidden;  /* for animation: hides each child outside the button */
+}
+#button-gallery20:hover {
+	color: black;
+	background: #ef0017;
+	box-shadow: 0 0 5px #ef0017,
+					   0 0 25px #ef0017,
+					   0 0 50px #ef0017,
+					   0 0 200px #ef0017;
+}
+/* 	BUTTON: ROTATE ANIMATION  */
+/* animation: https://www.youtube.com/watch?v=vCq1C52v7xE */
+.class-button-photo:nth-child(1) {
+	filter: hue-rotate(90deg);
+}
+.class-button-photo:nth-child(3) {
+	filter: hue-rotate(270deg);
+}
+.class-button-photo span {
+	position: absolute;
+	display: block;
+}
+
+#button-gallery20 span:nth-child(1) {  /* top line */
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 10%;
+	background: linear-gradient(90deg, transparent, #ef0017);
+	animation: rotate1 0.8s linear infinite;
+	animation-delay: 0s;
+}
+@keyframes rotate1 {
+	0% {
+		left: -100%;
+	}
+	50%,100%{		
+		left: 100%;
+	}
+}
+
+#button-gallery20 span:nth-child(3) {  /* bottom line */
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: .15vw;
+	/* height: 10%; */
+	background: linear-gradient(270deg, transparent, #ef0017);
+	animation: rotate3 0.8s linear infinite;
+	animation-delay: 0.4s;
+}
+@keyframes rotate3 {
+	0% {
+		right: -100%;
+	}
+	50%,100%{		
+		right: 100%;
+	}
+}
+
+#button-gallery20 span:nth-child(2) {  /* right line */
+	top: -100%;
+	right: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #ef0017);
+	animation: rotate2 0.8s linear infinite;
+	animation-delay: 0.2s;
+}
+@keyframes rotate2 {
+	0% {
+		top: -100%;
+	}
+	50%,100%{		
+		top: 100%;
+	}
+}
+
+#button-gallery20 span:nth-child(4) {  /* left line */
+	bottom: -100%;
+	left: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #ef0017);
+	animation: rotate4 0.8s linear infinite;
+	animation-delay: 0.6s;
+}
+@keyframes rotate4 {
+	0% {
+		bottom: -100%;
+	}
+	50%,100%{		
+		bottom: 100%;
+	}
+}
+
+#button-gallery20:hover span {
+	background: linear-gradient(transparent, white);
+	/* animation-play-state: none; */  /* original property; didn't delete it for further reference */
+}
+/* 	BUTTON: SHOW SCORE AND NEWS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 /* BOTTOM 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .bottom {
 	/* border: solid 1px red; */
@@ -2054,7 +2582,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	background: white;
 	background-size: cover;
 	display: flex;
-	overflow: hidden;
+	overflow-x: hidden;
 	white-space: nowrap;
 }
 .OT-banners-bottom .banners {
@@ -2507,7 +3035,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		list-style: none;
 	}
 	.season-content-mobile { display: none; }  /* for mobile */
-	.season-content-pc {  /* tap to close */
+	.season-content-pc {  /* click to close, click to revisit season */
 		/* border: solid 1px red; */
 		width: 320px;  /* how big the dropdown content is */
 	}
@@ -3413,7 +3941,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		width: 100%;
 		margin-top: -29%;  /* with respect to header (menu) */
-		z-index: 2; }  /* for PC */
+	}
 	.gallery-banner {
 		position: absolute;
 		display: initial;  /* overwrites code for PC */
@@ -3426,31 +3954,74 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: relative;
 	}
 	#button-gallery2 {
-		border: solid 1px red;
 		border: none;
 		position: absolute;
+		margin-top: -41.7%;
+		left: 3.7%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
 		z-index: 2;
-		margin-top: -45%;
-		left: 50%;
-		width: 15%;
-		height: auto;
-		font-size: 3vw;
-		font-family: Trueno Round Italic;
-		color: white;
-		background-color: green;
 	}
 	#button-gallery3 {
-		border: solid 1px red;
 		border: none;
+		position: absolute;
+		margin-top: -41.7%;
+		left: 17.3%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
 		z-index: 2;
-		margin-top: -45%;
-		left: 70%;
-		width: 15%;
-		height: auto;
-		font-size: 3vw;
-		font-family: Trueno Round Italic;
-		color: white;
-		background-color: green;
+	}
+	#button-gallery5 {
+		border: none;
+		position: absolute;
+		margin-top: -41.7%;
+		left: 30.9%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
+		z-index: 2;
+	}
+	#button-gallery6 {
+		border: none;
+		position: absolute;
+		margin-top: -41.7%;
+		left: 53.3%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
+		z-index: 2;
+	}
+	#button-gallery7 {
+		border: none;
+		position: absolute;
+		margin-top: -41.7%;
+		left: 53.3%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
+		z-index: 2;
+	}
+	#button-gallery8 {
+		border: none;
+		position: absolute;
+		margin-top: -41.7%;
+		left: 66.9%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
+		z-index: 2;
+	}
+	#button-gallery9 {
+		border: none;
+		position: absolute;
+		margin-top: -41.7%;
+		left: 80.4%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
+		z-index: 2;
 	}
 	#photo-blur {
 		display: none;
@@ -3474,19 +4045,28 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: relative;
 	}
 	#button-gallery {
-		border: solid 1px red;
 		border: none;
+		border-radius: 0 0 1.5vw 1.5vw;
 		position: absolute;
 		z-index: 2;
-		margin-top: -25%;
-		left: 50%;
+		margin-top: -30%;
+		left: 42.8%;
 		width: 15%;
-		height: auto;
-		font-size: 3vw;
-		font-family: Trueno Round Italic;
+		height: 3vw;
+		font-size: 1.1vw;
+		font-family: Manchester\ United\ 23-24\ Tipogra;
 		color: white;
-		background-color: green;
+		background: url(../underground/button.png), #820202;
+		background-size: 100% 100%;
 	}
+	#button-gallery:hover {
+		color: #f0f50c;
+		background: url(../underground/button.png), radial-gradient(#ef0017 -20%, #820202);  /* -20% here reduces the radius of #ef0017 color */
+		background-size: 100% 100%;
+		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
+	}
+	#button-gallery span1 { display: none; }  /* CLICK TO READ TEXT */
+	#button-gallery span2 { display: initial; }  /* TAP TO READ TEXT */
 	#gallery-blur1 {
 		display: none;
 		margin-top: -6%;  /* with respect to header (menu) */
@@ -3506,127 +4086,127 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	.legend-1 {
 		position: absolute;
-		left: 15.8%;
-		width: 3.4%;
+		left: 20.3%;
+		width: 2.5%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#e61b22, #9d0e16);
 		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16,
 						   0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 5px #9d0e16,
 						   0 0 50px #9d0e16;
 		font-family: Century Gothic;
-		font-size: 1.8vw;
+		font-size: 1.3vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 150%;
+		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-2 {
 		position: absolute;
-		left: 21.3%;
-		width: 3.4%;
+		left: 25.8%;
+		width: 2.5%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#eb6121, #9a360a);
 		box-shadow: 0 0 5px #9a360a, 0 0 5px #9a360a, 0 0 15px #9a360a, 0 0 5px #9a360a,
 						   0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 5px #9a360a,
 						   0 0 50px #9a360a;
 		font-family: Century Gothic;
-		font-size: 1.8vw;
+		font-size: 1.3vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 150%;
+		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-3 {
 		position: absolute;
-		left: 26.8%;
-		width: 3.4%;
+		left: 31.3%;
+		width: 2.5%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#fcc00d, #997000);
 		box-shadow: 0 0 5px #997000, 0 0 5px #997000, 0 0 15px #997000, 0 0 5px #997000,
 						   0 0 25px #997000, 0 0 25px #997000, 0 0 25px #997000, 0 0 5px #997000,
 						   0 0 50px #997000;
 		font-family: Century Gothic;
-		font-size: 1.8vw;
+		font-size: 1.3vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 150%;
+		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-4 {
 		position: absolute;
-		left: 32.3%;
-		width: 3.4%;
+		left: 36.8%;
+		width: 2.5%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#c5b700, #7f7501);
 		box-shadow: 0 0 5px #7f7501, 0 0 5px #7f7501, 0 0 15px #7f7501, 0 0 5px #7f7501,
 						   0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 5px #7f7501,
 						   0 0 50px #7f7501;
 		font-family: Century Gothic;
-		font-size: 1.8vw;
+		font-size: 1.3vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 150%;
+		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-5 {
 		position: absolute;
-		left: 37.8%;
-		width: 3.4%;
+		left: 42.3%;
+		width: 2.5%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#88c03c, #4a681f);
 		box-shadow: 0 0 5px #4a681f, 0 0 5px #4a681f, 0 0 15px #4a681f, 0 0 5px #4a681f,
 						   0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 5px #4a681f,
 						   0 0 50px #4a681f;
 		font-family: Century Gothic;
-		font-size: 1.8vw;
+		font-size: 1.3vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 150%;
+		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-6 {
 		position: absolute;
-		left: 43.3%;
-		width: 3.4%;
+		left: 47.8%;
+		width: 2.5%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#47813d, #2b4c24);
 		box-shadow: 0 0 5px #2b4c24, 0 0 5px #2b4c24, 0 0 15px #2b4c24, 0 0 5px #2b4c24,
 						   0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 5px #2b4c24,
 						   0 0 50px #2b4c24;
 		font-family: Century Gothic;
-		font-size: 1.8vw;
+		font-size: 1.3vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 150%;
+		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-7 {
 		position: absolute;
-		left: 48.8%;
-		width: 3.4%;
+		left: 53.3%;
+		width: 2.5%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#009f4d, #015326);
 		box-shadow: 0 0 5px #015326, 0 0 5px #015326, 0 0 15px #015326, 0 0 5px #015326,
 						   0 0 25px #015326, 0 0 25px #015326, 0 0 25px #015326, 0 0 5px #015326,
 						   0 0 50px #015326;
 		font-family: Century Gothic;
-		font-size: 1.8vw;
+		font-size: 1.3vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 150%;
+		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
@@ -3635,39 +4215,50 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		text-align: left;
 		position: absolute;
 		width: 700%;
-		font-size: 1.5vw;
+		font-size: 1.3vw;
 		transform: translateX(8%);
 	}
 	
 	.legend-8 {
 		position: absolute;
-		left: 78.3%;
-		width: 5.1%;
+		left: 74.5%;
+		width: 5.3%;
 		font-family: Century Gothic;
-		font-size: 1.8vw;
+		font-size: 1.3vw;
 		color: white;
-		line-height: 100%;
+		line-height: 2.1vw;
 		/* diagonal line inside square // Nitheesh's answer: https://stackoverflow.com/questions/60388805/make-diagonal-line-for-div-square */
 		border: 1px solid #404040;
 		background: linear-gradient(to bottom right, #262626 calc(50% - 3px),  #404040 calc(50% - 1px), #262626 50%, #262626 50%);
 	}
-	#first-half { transform: translate(2%, 5%); }  /* 1H */
-	#second-half { transform: translate(40%, 0%); }  /*2H */
+	#first-half { transform: translate(9%, 5%); }  /* 1H */
+	#second-half { transform: translate(48%, 0%); }  /*2H */
 	/* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#button-gallery4 {
-		border: solid 1px red;
+		border: none;
+		border-radius: 1.5vw;
 		position: absolute;
 		z-index: 2;
-		margin-top: 5%;
-		left: 50%;
-		width: 15%;
-		height: auto;
-		font-size: 3vw;
-		font-family: monospace;
+		margin-top: 7.3%;
+		/* left: 42.8%; */
+		left: 36.5%;
+		width: 27%;
+		height: 3vw;
+		font-size: 1.3vw;
+		font-family: Manchester\ United\ 23-24\ Tipogra;
 		color: white;
-		background-color: green;
+		background: url(../underground/button.png), #820202;
+		background-size: 100% 100%;
 	}
+	#button-gallery4:hover {
+		color: #f0f50c;
+		background: url(../underground/button.png), radial-gradient(#ef0017 -20%, #820202);
+		background-size: 100% 100%;
+		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
+	}
+	#button-gallery4 span1 { display: none; }  /* CLICK TO REVEAL SCORES... */
+	#button-gallery4 span2 { display: initial; }  /* TAP TO REVEAL SCORES */
 	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.date-and-result h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {  /*1st row */
@@ -4119,7 +4710,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-image: url(../underground/pre-season.png);
 		background-size: 116.3% 100%;  /* width and height  // also, width has to coincide with width under #dropdown-content-match and .dropdown-content-historical above */
 		color: white;
-		padding: 5.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		padding: 6.3vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 		text-decoration: none;
 		display: flex;
 		align-items: center;
@@ -4645,7 +5236,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		list-style: none;
 	}
 	.season-content-pc { display: none; }  /* for PC */
-	.season-content-mobile {  /* tap to close */
+	.season-content-mobile {  /* tap to close, tap to revisit season */
 		display: initial;  /* overwrites display:none for PC */
 		/* border: solid 1px red; */
 		width: 304px;  /* how big the dropdown content is */
@@ -5233,7 +5824,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		width: 100%;
 		margin-top: -29%;  /* with respect to header (menu) */
-		z-index: 2; }  /* for PC */
+	}
 	.gallery-banner {
 		position: absolute;
 		display: initial;  /* overwrites code for PC */
@@ -5246,31 +5837,74 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: relative;
 	}
 	#button-gallery2 {
-		border: solid 1px red;
 		border: none;
 		position: absolute;
+		margin-top: -41.7%;
+		left: 3.7%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
 		z-index: 2;
-		margin-top: -45%;
-		left: 50%;
-		width: 15%;
-		height: auto;
-		font-size: 3vw;
-		font-family: Trueno Round Italic;
-		color: white;
-		background-color: green;
 	}
 	#button-gallery3 {
-		border: solid 1px red;
 		border: none;
+		position: absolute;
+		margin-top: -41.7%;
+		left: 17.3%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
 		z-index: 2;
-		margin-top: -45%;
-		left: 70%;
-		width: 15%;
-		height: auto;
-		font-size: 3vw;
-		font-family: Trueno Round Italic;
-		color: white;
-		background-color: green;
+	}
+	#button-gallery5 {
+		border: none;
+		position: absolute;
+		margin-top: -41.7%;
+		left: 30.9%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
+		z-index: 2;
+	}
+	#button-gallery6 {
+		border: none;
+		position: absolute;
+		margin-top: -41.7%;
+		left: 53.3%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
+		z-index: 2;
+	}
+	#button-gallery7 {
+		border: none;
+		position: absolute;
+		margin-top: -41.7%;
+		left: 53.3%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
+		z-index: 2;
+	}
+	#button-gallery8 {
+		border: none;
+		position: absolute;
+		margin-top: -41.7%;
+		left: 66.9%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
+		z-index: 2;
+	}
+	#button-gallery9 {
+		border: none;
+		position: absolute;
+		margin-top: -41.7%;
+		left: 80.4%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
+		z-index: 2;
 	}
 	#photo-blur {
 		display: none;
@@ -5294,19 +5928,28 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: relative;
 	}
 	#button-gallery {
-		border: solid 1px red;
 		border: none;
+		border-radius: 0 0 1.5vw 1.5vw;
 		position: absolute;
 		z-index: 2;
-		margin-top: -25%;
-		left: 50%;
+		margin-top: -30%;
+		left: 42.8%;
 		width: 15%;
-		height: auto;
-		font-size: 3vw;
-		font-family: Trueno Round Italic;
+		height: 3vw;
+		font-size: 1.1vw;
+		font-family: Manchester\ United\ 23-24\ Tipogra;
 		color: white;
-		background-color: green;
+		background: url(../underground/button.png), #820202;
+		background-size: 100% 100%;
 	}
+	#button-gallery:hover {
+		color: #f0f50c;
+		background: url(../underground/button.png), radial-gradient(#ef0017 -20%, #820202);  /* -20% here reduces the radius of #ef0017 color */
+		background-size: 100% 100%;
+		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
+	}
+	#button-gallery span1 { display: none; }  /* CLICK TO READ TEXT */
+	#button-gallery span2 { display: initial; }  /* TAP TO READ TEXT */
 	#gallery-blur1 {
 		display: none;
 		margin-top: -6%;  /* with respect to header (menu) */
@@ -5326,127 +5969,127 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	.legend-1 {
 		position: absolute;
-		left: 15.8%;
-		width: 3.4%;
+		left: 20.3%;
+		width: 2.5%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#e61b22, #9d0e16);
 		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16,
 						   0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 5px #9d0e16,
 						   0 0 50px #9d0e16;
 		font-family: Century Gothic;
-		font-size: 1.8vw;
+		font-size: 1.3vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 150%;
+		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-2 {
 		position: absolute;
-		left: 21.3%;
-		width: 3.4%;
+		left: 25.8%;
+		width: 2.5%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#eb6121, #9a360a);
 		box-shadow: 0 0 5px #9a360a, 0 0 5px #9a360a, 0 0 15px #9a360a, 0 0 5px #9a360a,
 						   0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 5px #9a360a,
 						   0 0 50px #9a360a;
 		font-family: Century Gothic;
-		font-size: 1.8vw;
+		font-size: 1.3vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 150%;
+		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-3 {
 		position: absolute;
-		left: 26.8%;
-		width: 3.4%;
+		left: 31.3%;
+		width: 2.5%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#fcc00d, #997000);
 		box-shadow: 0 0 5px #997000, 0 0 5px #997000, 0 0 15px #997000, 0 0 5px #997000,
 						   0 0 25px #997000, 0 0 25px #997000, 0 0 25px #997000, 0 0 5px #997000,
 						   0 0 50px #997000;
 		font-family: Century Gothic;
-		font-size: 1.8vw;
+		font-size: 1.3vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 150%;
+		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-4 {
 		position: absolute;
-		left: 32.3%;
-		width: 3.4%;
+		left: 36.8%;
+		width: 2.5%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#c5b700, #7f7501);
 		box-shadow: 0 0 5px #7f7501, 0 0 5px #7f7501, 0 0 15px #7f7501, 0 0 5px #7f7501,
 						   0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 5px #7f7501,
 						   0 0 50px #7f7501;
 		font-family: Century Gothic;
-		font-size: 1.8vw;
+		font-size: 1.3vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 150%;
+		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-5 {
 		position: absolute;
-		left: 37.8%;
-		width: 3.4%;
+		left: 42.3%;
+		width: 2.5%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#88c03c, #4a681f);
 		box-shadow: 0 0 5px #4a681f, 0 0 5px #4a681f, 0 0 15px #4a681f, 0 0 5px #4a681f,
 						   0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 5px #4a681f,
 						   0 0 50px #4a681f;
 		font-family: Century Gothic;
-		font-size: 1.8vw;
+		font-size: 1.3vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 150%;
+		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-6 {
 		position: absolute;
-		left: 43.3%;
-		width: 3.4%;
+		left: 47.8%;
+		width: 2.5%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#47813d, #2b4c24);
 		box-shadow: 0 0 5px #2b4c24, 0 0 5px #2b4c24, 0 0 15px #2b4c24, 0 0 5px #2b4c24,
 						   0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 5px #2b4c24,
 						   0 0 50px #2b4c24;
 		font-family: Century Gothic;
-		font-size: 1.8vw;
+		font-size: 1.3vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 150%;
+		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-7 {
 		position: absolute;
-		left: 48.8%;
-		width: 3.4%;
+		left: 53.3%;
+		width: 2.5%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#009f4d, #015326);
 		box-shadow: 0 0 5px #015326, 0 0 5px #015326, 0 0 15px #015326, 0 0 5px #015326,
 						   0 0 25px #015326, 0 0 25px #015326, 0 0 25px #015326, 0 0 5px #015326,
 						   0 0 50px #015326;
 		font-family: Century Gothic;
-		font-size: 1.8vw;
+		font-size: 1.3vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 150%;
+		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
@@ -5455,18 +6098,18 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		text-align: left;
 		position: absolute;
 		width: 700%;
-		font-size: 1.5vw;
+		font-size: 1.3vw;
 		transform: translateX(8%);
 	}
 	
 	.legend-8 {
 		position: absolute;
-		left: 78.3%;
-		width: 5.1%;
+		left: 74.5%;
+		width: 5.3%;
 		font-family: Century Gothic;
-		font-size: 1.8vw;
+		font-size: 1.3vw;
 		color: white;
-		line-height: 100%;
+		line-height: 2.1vw;
 		/* diagonal line inside square // Nitheesh's answer: https://stackoverflow.com/questions/60388805/make-diagonal-line-for-div-square */
 		border: 1px solid #404040;
 		background: linear-gradient(to bottom right, #262626 calc(50% - 3px),  #404040 calc(50% - 1px), #262626 50%, #262626 50%);
@@ -5476,18 +6119,29 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	/* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#button-gallery4 {
-		border: solid 1px red;
+		border: none;
+		border-radius: 1.5vw;
 		position: absolute;
 		z-index: 2;
-		margin-top: 5%;
-		left: 50%;
-		width: 15%;
-		height: auto;
-		font-size: 3vw;
-		font-family: monospace;
+		margin-top: 7.3%;
+		/* left: 42.8%; */
+		left: 36.5%;
+		width: 27%;
+		height: 3vw;
+		font-size: 1.3vw;
+		font-family: Manchester\ United\ 23-24\ Tipogra;
 		color: white;
-		background-color: green;
+		background: url(../underground/button.png), #820202;
+		background-size: 100% 100%;
 	}
+	#button-gallery4:hover {
+		color: #f0f50c;
+		background: url(../underground/button.png), radial-gradient(#ef0017 -20%, #820202);
+		background-size: 100% 100%;
+		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
+	}
+	#button-gallery4 span1 { display: none; }  /* CLICK TO REVEAL SCORES... */
+	#button-gallery4 span2 { display: initial; }  /* TAP TO REVEAL SCORES */
 	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.date-and-result h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {  /*1st row */
@@ -5939,7 +6593,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-image: url(../underground/pre-season.png);
 		background-size: 116.3% 100%;  /* width and height  // also, width has to coincide with width under #dropdown-content-match and .dropdown-content-historical above */
 		color: white;
-		padding: 4.8vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		padding: 6.3vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 		text-decoration: none;
 		display: flex;
 		align-items: center;
@@ -6448,7 +7102,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-size: 0;  /* addition // important to eliminate border margin between separate images; alex's answer here: https://stackoverflow.com/questions/7641678/use-css-to-remove-the-space-between-images */
 	}
 	.dropdown-sub-season {		
-		border: solid 1px red;
+		/* border: solid 1px red; */
 		overflow: hidden;
 		width: 370%;  /* how much % of the dropdown content to show width-wise */
 		transform: initial;  /* overwrites code for PC */
@@ -6457,8 +7111,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		list-style: none;
 	}
 	.season-content-pc { display: none; }  /* for PC */
-	.season-content-mobile {  /* tap to close */
-		display: initial;
+	.season-content-mobile {  /* tap to close, tap to revisit season */
+		display: initial;  /* overwrites code for PC */
 		/* border: solid 1px red; */
 		width: 280px;  /* how big the dropdown content is */
 	}
@@ -7051,31 +7705,75 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: relative;
 	}
 	#button-gallery2 {
-		border: solid 1px red;
 		border: none;
+		border-radius: 0 0 1.5vw 1.5vw;
 		position: absolute;
+		margin-top: -42.2%;
+		left: 3.7%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
 		z-index: 2;
-		margin-top: -45%;
-		left: 50%;
-		width: 15%;
-		height: auto;
-		font-size: 3vw;
-		font-family: Trueno Round Italic;
-		color: white;
-		background-color: green;
 	}
 	#button-gallery3 {
-		border: solid 1px red;
 		border: none;
+		position: absolute;
+		margin-top: -42.2%;
+		left: 17.3%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
 		z-index: 2;
-		margin-top: -45%;
-		left: 70%;
-		width: 15%;
-		height: auto;
-		font-size: 3vw;
-		font-family: Trueno Round Italic;
-		color: white;
-		background-color: green;
+	}
+	#button-gallery5 {
+		border: none;
+		position: absolute;
+		margin-top: -42.2%;
+		left: 30.9%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
+		z-index: 2;
+	}
+	#button-gallery6 {
+		border: none;
+		position: absolute;
+		margin-top: -42.2%;
+		left: 53.3%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
+		z-index: 2;
+	}
+	#button-gallery7 {
+		border: none;
+		position: absolute;
+		margin-top: -42.2%;
+		left: 53.3%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
+		z-index: 2;
+	}
+	#button-gallery8 {
+		border: none;
+		position: absolute;
+		margin-top: -42.2%;
+		left: 66.9%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
+		z-index: 2;
+	}
+	#button-gallery9 {
+		border: none;
+		position: absolute;
+		margin-top: -42.2%;
+		left: 80.4%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
+		z-index: 2;
 	}
 	#photo-blur {
 		display: none;
@@ -7099,19 +7797,27 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: relative;
 	}
 	#button-gallery {
-		border: solid 1px red;
 		border: none;
 		position: absolute;
 		z-index: 2;
-		margin-top: -25%;
-		left: 50%;
+		margin-top: -30%;
+		left: 42.8%;
 		width: 15%;
-		height: auto;
-		font-size: 3vw;
-		font-family: Trueno Round Italic;
+		height: 3vw;
+		font-size: 1.1vw;
+		font-family: Manchester\ United\ 23-24\ Tipogra;
 		color: white;
-		background-color: green;
+		background: url(../underground/button.png), #820202;
+		background-size: 100% 100%;
 	}
+	#button-gallery:hover {
+		color: #f0f50c;
+		background: url(../underground/button.png), radial-gradient(#ef0017 -20%, #820202);  /* -20% here reduces the radius of #ef0017 color */
+		background-size: 100% 100%;
+		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
+	}
+	#button-gallery span1 { display: none; }  /* CLICK TO READ TEXT */
+	#button-gallery span2 { display: initial; }  /* TAP TO READ TEXT */
 	#gallery-blur1 {
 		display: none;
 		margin-top: -6%;  /* with respect to header (menu) */
@@ -7131,127 +7837,127 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	.legend-1 {
 		position: absolute;
-		left: 15.8%;
-		width: 3.4%;
+		left: 20.3%;
+		width: 2.5%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#e61b22, #9d0e16);
 		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16,
 						   0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 5px #9d0e16,
 						   0 0 50px #9d0e16;
 		font-family: Century Gothic;
-		font-size: 2.4vw;
+		font-size: 1.3vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 150%;
+		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-2 {
 		position: absolute;
-		left: 21.3%;
-		width: 3.4%;
+		left: 25.8%;
+		width: 2.5%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#eb6121, #9a360a);
 		box-shadow: 0 0 5px #9a360a, 0 0 5px #9a360a, 0 0 15px #9a360a, 0 0 5px #9a360a,
 						   0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 5px #9a360a,
 						   0 0 50px #9a360a;
 		font-family: Century Gothic;
-		font-size: 2.4vw;
+		font-size: 1.3vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 150%;
+		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-3 {
 		position: absolute;
-		left: 26.8%;
-		width: 3.4%;
+		left: 31.3%;
+		width: 2.5%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#fcc00d, #997000);
 		box-shadow: 0 0 5px #997000, 0 0 5px #997000, 0 0 15px #997000, 0 0 5px #997000,
 						   0 0 25px #997000, 0 0 25px #997000, 0 0 25px #997000, 0 0 5px #997000,
 						   0 0 50px #997000;
 		font-family: Century Gothic;
-		font-size: 2.4vw;
+		font-size: 1.3vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 150%;
+		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-4 {
 		position: absolute;
-		left: 32.3%;
-		width: 3.4%;
+		left: 36.8%;
+		width: 2.5%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#c5b700, #7f7501);
 		box-shadow: 0 0 5px #7f7501, 0 0 5px #7f7501, 0 0 15px #7f7501, 0 0 5px #7f7501,
 						   0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 5px #7f7501,
 						   0 0 50px #7f7501;
 		font-family: Century Gothic;
-		font-size: 2.4vw;
+		font-size: 1.3vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 150%;
+		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-5 {
 		position: absolute;
-		left: 37.8%;
-		width: 3.4%;
+		left: 42.3%;
+		width: 2.5%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#88c03c, #4a681f);
 		box-shadow: 0 0 5px #4a681f, 0 0 5px #4a681f, 0 0 15px #4a681f, 0 0 5px #4a681f,
 						   0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 5px #4a681f,
 						   0 0 50px #4a681f;
 		font-family: Century Gothic;
-		font-size: 2.4vw;
+		font-size: 1.3vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 150%;
+		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-6 {
 		position: absolute;
-		left: 43.3%;
-		width: 3.4%;
+		left: 47.8%;
+		width: 2.5%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#47813d, #2b4c24);
 		box-shadow: 0 0 5px #2b4c24, 0 0 5px #2b4c24, 0 0 15px #2b4c24, 0 0 5px #2b4c24,
 						   0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 5px #2b4c24,
 						   0 0 50px #2b4c24;
 		font-family: Century Gothic;
-		font-size: 2.4vw;
+		font-size: 1.3vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 150%;
+		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
 	.legend-7 {
 		position: absolute;
-		left: 48.8%;
-		width: 3.4%;
+		left: 53.3%;
+		width: 2.5%;
 		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#009f4d, #015326);
 		box-shadow: 0 0 5px #015326, 0 0 5px #015326, 0 0 15px #015326, 0 0 5px #015326,
 						   0 0 25px #015326, 0 0 25px #015326, 0 0 25px #015326, 0 0 5px #015326,
 						   0 0 50px #015326;
 		font-family: Century Gothic;
-		font-size: 2.4vw;
+		font-size: 1.3vw;
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 150%;
+		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	
@@ -7260,39 +7966,50 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		text-align: left;
 		position: absolute;
 		width: 700%;
-		font-size: 1.9vw;
+		font-size: 1.3vw;
 		transform: translateX(8%);
 	}
 	
 	.legend-8 {
 		position: absolute;
-		left: 78.3%;
-		width: 5.5%;
+		left: 74.5%;
+		width: 5.3%;
 		font-family: Century Gothic;
-		font-size: 2vw;
+		font-size: 1.3vw;
 		color: white;
-		line-height: 100%;
+		line-height: 2.1vw;
 		/* diagonal line inside square // Nitheesh's answer: https://stackoverflow.com/questions/60388805/make-diagonal-line-for-div-square */
 		border: 1px solid #404040;
 		background: linear-gradient(to bottom right, #262626 calc(50% - 3px),  #404040 calc(50% - 1px), #262626 50%, #262626 50%);
 	}
-	#first-half { transform: translate(2%, 5%); }  /* 1H */
-	#second-half { transform: translate(35%, 0%); }  /*2H */
+	#first-half { transform: translate(6%, 1%); }  /* 1H */
+	#second-half { transform: translate(55%, 4%); }  /*2H */
 	/* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#button-gallery4 {
-		border: solid 1px red;
+		border: none;
+		border-radius: 1.5vw;
 		position: absolute;
 		z-index: 2;
-		margin-top: 5%;
-		left: 50%;
-		width: 15%;
-		height: auto;
-		font-size: 3vw;
-		font-family: monospace;
+		margin-top: 7.3%;
+		/* left: 42.8%; */
+		left: 36.5%;
+		width: 27%;
+		height: 3vw;
+		font-size: 1.3vw;
+		font-family: Manchester\ United\ 23-24\ Tipogra;
 		color: white;
-		background-color: green;
+		background: url(../underground/button.png), #820202;
+		background-size: 100% 100%;
 	}
+	#button-gallery4:hover {
+		color: #f0f50c;
+		background: url(../underground/button.png), radial-gradient(#ef0017 -20%, #820202);
+		background-size: 100% 100%;
+		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
+	}
+	#button-gallery4 span1 { display: none; }  /* CLICK TO REVEAL SCORES... */
+	#button-gallery4 span2 { display: initial; }  /* TAP TO REVEAL SCORES */
 	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.date-and-result h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {  /*1st row */
@@ -7744,7 +8461,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-image: url(../underground/pre-season.png);
 		background-size: 116.3% 100%;  /* width and height  // also, width has to coincide with width under #dropdown-content-match and .dropdown-content-historical above */
 		color: white;
-		padding: 4.3vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		padding: 6.3vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 		text-decoration: none;
 		display: flex;
 		align-items: center;
