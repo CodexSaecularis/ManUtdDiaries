@@ -2064,12 +2064,7 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 	align-items: center;
 	position: relative;
 }
-
 /* 	POST-MATCH NEWS MATCH 1 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
-#pre-match1 { display: none; }  /* for button */
-#pre-match1-skew { display: none; }  /* for button */
-#post-match1 { display: none; }  /* for button */
-#post-match1-skew { display: none; }  /* for button */
 .pre-match1 {
 	position: absolute;
 	width: 18.6%;
@@ -2417,7 +2412,7 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 	line-height: 1vw;  /* addition for Mozilla 'cuz the text shows cut off at the bottom as the box (button) is too small */
 	font-family: Lampen;
 	font-size: 1.2vw;
-	color: #ef0017;
+	color: white;
 	background: #262626;
 	overflow: hidden;  /* for animation: hides each child outside the button */
 }
@@ -2516,8 +2511,7 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 }
 
 #button-gallery20:hover span {
-	background: linear-gradient(transparent, white);
-	/* animation-play-state: none; */  /* original property; didn't delete it for further reference */
+	animation-play-state: none;
 }
 /* 	BUTTON: SHOW SCORE AND NEWS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 /* BOTTOM 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -4719,7 +4713,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.dropdown_link-1st-match {
 		/* border: solid 1px red; */
 		background-image: url(../underground/1st-match.png);
-		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above */
+		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above, and .cover */
 		color: white;
 		padding: 6.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 		text-decoration: none;
@@ -4727,6 +4721,455 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		align-items: center;
 		position: relative;
 	}
+	/* 	POST-MATCH NEWS MATCH 1 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+	.pre-match1 {
+		position: absolute;
+		width: 22.7%;
+		height: 15%;
+		left: 25.6%;
+		top: 33%;
+		background-size: cover;
+		display: flex;
+		overflow: hidden;
+		white-space: nowrap;
+		background: #d8d8d9;
+		pointer-events: none;
+	}
+	
+	.pre-match1 .news1 {
+		display: flex;
+	}
+	
+	.pre-match1 .news1 div {
+		font-family: Trueno Round Italic;
+		font-size: 1.7vw;
+		white-space: nowrap;
+		/* important value in this div to make the text occupy the entirity of the box; I was playing with text-align and display values in different divs,
+		   but I figured it out thanks to Wazeed's answer: https://stackoverflow.com/questions/10283138/center-a-div-without-knowing-the-height */
+		display: flex;
+		/* I was already aware of this carrousel animation, but knowing exactly what value to put in animation-delay was thanks to
+		   rmurph46's answer below. It's simply half of the value in animation duration but negative. I needed to know that to make long carrousels
+		   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
+		animation: animate2 40s linear infinite;
+		animation-delay: -20s;
+	}
+	
+	.pre-match1 .news1 div span {
+		color: #d8d8d9;
+		background-color: #c00101;
+	}
+	
+	.pre-match1 .news1 div span2 {
+		color: #c00101;
+	}
+	
+	.pre-match1 .news1 div span3 {
+		color: #d8d8d9;
+		background-color: #1e2526;
+	}
+	
+	.pre-match1 .news1 div span4 {
+		color: #d8d8d9;
+		background-color: #1e2526;
+		font-size: 2.4vw;
+		margin-top: -.2%;
+	}
+
+	.pre-match1 .news1 div:nth-child(2) {
+		animation: animate3 40s linear infinite;
+	}
+	@keyframes animate2 {
+		0%
+		{
+			transform: translateX(100%);
+		}
+		100%
+		{
+			transform: translateX(-100%);
+		}
+	}
+	@keyframes animate3 {
+		0%
+		{
+			transform: translateX(0);
+		}
+		100%
+		{
+			transform: translateX(-200%);
+		}
+	}
+
+	.pre-match1-skew {
+		position: absolute;
+		width: 8%;
+		height: 15%;
+		left: 45.6%;
+		top: 30.5%;
+		background-size: cover;
+		display: flex;
+		overflow: hidden;
+		white-space: nowrap;
+		background: #d8d8d9;
+		pointer-events: none;
+		z-index: -1;
+		/* the transform:skewY value was found here: https://www.youtube.com/watch?v=Wg7jJhzWNq8&list=PL5e68lK9hEzdGazIG1ONnb7TJ74Q69rH7&index=101
+		   I found out how to use rotate3d here (Ctrl+F5 search .rotated): https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d */
+		transform: skewY(-8.5deg) rotate3d(0, 1, 0, 70deg);
+	}
+
+	.pre-match1-skew .news1-skew {
+		display: flex;
+		/* after trial and error, I decided to simply put this value inspired by the vid below. This value helps the content coincide.
+		   timestamp 4:47 https://www.youtube.com/watch?v=Wg7jJhzWNq8&list=PL5e68lK9hEzdGazIG1ONnb7TJ74Q69rH7&index=100 */
+		/* margin-left: 19px with skewY(10deg) only, without rotate3d */
+		/* margin-left: -266px; */
+		margin-left: -280%;
+	}
+	
+	.pre-match1-skew .news1-skew div {
+		font-family: Trueno Round Italic;
+		font-size: 1.7vw;
+		white-space: nowrap;
+		/* important value in this div to make the text occupy the entirity of the box; I was playing with text-align and display values in different divs,
+		   but I figured it out thanks to Wazeed's answer: https://stackoverflow.com/questions/10283138/center-a-div-without-knowing-the-height */
+		display: flex;
+		/* I was already aware of this carrousel animation, but knowing exactly what value to put in animation-delay was thanks to
+		   rmurph46's answer below. It's simply half of the value in animation duration but negative. I needed to know that to make long carrousels
+		   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
+		animation: animate2 40s linear infinite;
+		animation-delay: -20s;
+	}
+	
+	.pre-match1-skew .news1-skew div span {
+		color: #d8d8d9;
+		background-color: #c00101;
+	}
+	
+	.pre-match1-skew .news1-skew div span2 {
+		color: #c00101;
+	}
+	
+	.pre-match1-skew .news1-skew div span3 {
+		color: #d8d8d9;
+		background-color: #1e2526;
+	}
+	
+	.pre-match1-skew .news1-skew div span4 {
+		color: #d8d8d9;
+		background-color: #1e2526;
+		font-size: 2.4vw;
+		margin-top: -.2%;
+	}
+	
+	.pre-match1-skew .news1-skew div:nth-child(2) {
+		animation: animate3 40s linear infinite;
+	}
+	@keyframes animate2 {
+		0%
+		{
+			transform: translateX(100%);
+		}
+		100%
+		{
+			transform: translateX(-100%);
+		}
+	}
+	@keyframes animate3 {
+		0%
+		{
+			transform: translateX(0);
+		}
+		100%
+		{
+			transform: translateX(-200%);
+		}
+	}
+	/* 	POST-MATCH NEWS MATCH 1 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+	.post-match1 {
+		position: absolute;
+		width: 22.7%;
+		height: 15%;
+		left: 68.8%;
+		top: 33%;
+		background-size: cover;
+		display: flex;
+		overflow: hidden;
+		white-space: nowrap;
+		background: #d8d8d9;
+		pointer-events: none;
+	}
+	
+	.post-match1 .news1 {
+		display: flex;
+	}
+	
+	.post-match1 .news1 div {
+		font-family: Trueno Round Italic;
+		font-size: 1.7vw;
+		white-space: nowrap;
+		/* important value in this div to make the text occupy the entirity of the box; I was playing with text-align and display values in different divs,
+		   but I figured it out thanks to Wazeed's answer: https://stackoverflow.com/questions/10283138/center-a-div-without-knowing-the-height */
+		display: flex;
+		/* I was already aware of this carrousel animation, but knowing exactly what value to put in animation-delay was thanks to
+		   rmurph46's answer below. It's simply half of the value in animation duration but negative. I needed to know that to make long carrousels
+		   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
+		animation: animate2 40s linear infinite;
+		animation-delay: -20s;
+	}
+	
+	.post-match1 .news1 div span {
+		color: #d8d8d9;
+		background-color: #c00101;
+	}
+	
+	.post-match1 .news1 div span2 {
+		color: #c00101;
+	}
+	
+	.post-match1 .news1 div span3 {
+		color: #d8d8d9;
+		background-color: #1e2526;
+	}
+	
+	.post-match1 .news1 div span4 {
+		color: #d8d8d9;
+		background-color: #1e2526;
+		font-size: 2.4vw;
+		margin-top: -.2%;
+	}
+	
+	.post-match1 .news1 div:nth-child(2) {
+		animation: animate3 40s linear infinite;
+	}
+	@keyframes animate2 {
+		0%
+		{
+			transform: translateX(100%);
+		}
+		100%
+		{
+			transform: translateX(-100%);
+		}
+	}
+	@keyframes animate3 {
+		0%
+		{
+			transform: translateX(0);
+		}
+		100%
+		{
+			transform: translateX(-200%);
+		}
+	}
+	
+	.post-match1-skew {
+		position: absolute;
+		width: 8%;
+		height: 15%;
+		left: 63.45%;
+		top: 30.5%;
+		background-size: cover;
+		display: flex;
+		overflow: hidden;
+		white-space: nowrap;
+		background: #d8d8d9;
+		pointer-events: none;
+		z-index: -1;
+		/* the transform:skewY value was found here: https://www.youtube.com/watch?v=Wg7jJhzWNq8&list=PL5e68lK9hEzdGazIG1ONnb7TJ74Q69rH7&index=101
+		   I found out how to use rotate3d here (Ctrl+F5 search .rotated): https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d */
+		transform: skewY(8.5deg) rotate3d(0, 1, 0, 70deg);
+	}
+	
+	.post-match1-skew .news1-skew {
+		display: flex;
+		/* after trial and error, I decided to simply put this value inspired by the vid below. This value helps the content coincide.
+		   timestamp 4:47 https://www.youtube.com/watch?v=Wg7jJhzWNq8&list=PL5e68lK9hEzdGazIG1ONnb7TJ74Q69rH7&index=100 */
+		/* margin-left: 19px with skewY(10deg) only, without rotate3d */
+		/* margin-left: -472px; */
+		margin-left: 100%;
+	}
+	
+	.post-match1-skew .news1-skew div {
+		font-family: Trueno Round Italic;
+		font-size: 1.7vw;
+		white-space: nowrap;
+		/* important value in this div to make the text occupy the entirity of the box; I was playing with text-align and display values in different divs,
+		   but I figured it out thanks to Wazeed's answer: https://stackoverflow.com/questions/10283138/center-a-div-without-knowing-the-height */
+		display: flex;
+		/* I was already aware of this carrousel animation, but knowing exactly what value to put in animation-delay was thanks to
+		   rmurph46's answer below. It's simply half of the value in animation duration but negative. I needed to know that to make long carrousels
+		   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
+		animation: animate2 40s linear infinite;
+		animation-delay: -20s;
+	}
+	
+	.post-match1-skew .news1-skew div span {
+		color: #d8d8d9;
+		background-color: #c00101;
+	}
+	
+	.post-match1-skew .news1-skew div span2 {
+		color: #c00101;
+	}
+	
+	.post-match1-skew .news1-skew div span3 {
+		color: #d8d8d9;
+		background-color: #1e2526;
+	}
+	
+	.post-match1-skew .news1-skew div span4 {
+		color: #d8d8d9;
+		background-color: #1e2526;
+		font-size: 2.4vw;
+		margin-top: -.2%;
+	}
+	
+	.post-match1-skew .news1-skew div:nth-child(2) {
+		animation: animate3 40s linear infinite;
+	}
+	@keyframes animate2 {
+		0%
+		{
+			transform: translateX(100%);
+		}
+		100%
+		{
+			transform: translateX(-100%);
+		}
+	}
+	@keyframes animate3 {
+		0%
+		{
+			transform: translateX(0);
+		}
+		100%
+		{
+			transform: translateX(-200%);
+		}
+	}
+	/* 	BUTTON: SHOW SCORE AND NEWS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+	.cover {
+		/* border: solid 1px green; */
+		position: absolute;
+		width: 116.3%;  /* same as background-size:116.3% under .dropdown_link-1st-match above */
+		height: 100%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#button-gallery20 {
+		border: none;
+		border-radius: .1vw;
+		position: absolute;
+		z-index: 2;
+		margin-top: -7.4%;
+		left: 49.9%;
+		width: 17.3%;
+		height: auto;  /* changed it from 1vw to auto for Mozilla 'cuz the text shows cut off at the bottom as the box (button) is too small */
+		line-height: 1.7vw;  /* addition for Mozilla 'cuz the text shows cut off at the bottom as the box (button) is too small */
+		font-family: Lampen;
+		font-size: 1.75vw;
+		color: white;
+		background: #262626;
+		overflow: hidden;  /* for animation: hides each child outside the button */
+	}
+	#button-gallery20:hover {
+		color: black;
+		background: #ef0017;
+		box-shadow: 0 0 5px #ef0017,
+						   0 0 25px #ef0017,
+						   0 0 50px #ef0017,
+						   0 0 200px #ef0017;
+	}
+	/* 	BUTTON: ROTATE ANIMATION  */
+	/* animation: https://www.youtube.com/watch?v=vCq1C52v7xE */
+	.class-button-photo:nth-child(1) {
+		filter: hue-rotate(90deg);
+	}
+	.class-button-photo:nth-child(3) {
+		filter: hue-rotate(270deg);
+	}
+	.class-button-photo span {
+		position: absolute;
+		display: block;
+	}
+	
+	#button-gallery20 span:nth-child(1) {  /* top line */
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 10%;
+		background: linear-gradient(90deg, transparent, #ef0017);
+		animation: rotate1 0.8s linear infinite;
+		animation-delay: 0s;
+	}
+	@keyframes rotate1 {
+		0% {
+			left: -100%;
+		}
+		50%,100%{		
+			left: 100%;
+		}
+	}
+	
+	#button-gallery20 span:nth-child(3) {  /* bottom line */
+		bottom: 0;
+		right: -100%;
+		width: 100%;
+		height: .15vw;
+		/* height: 10%; */
+		background: linear-gradient(270deg, transparent, #ef0017);
+		animation: rotate3 0.8s linear infinite;
+		animation-delay: 0.4s;
+	}
+	@keyframes rotate3 {
+		0% {
+			right: -100%;
+		}
+		50%,100%{		
+			right: 100%;
+		}
+	}
+	
+	#button-gallery20 span:nth-child(2) {  /* right line */
+		top: -100%;
+		right: 0;
+		width: 2%;
+		height: 100%;
+		background: linear-gradient(180deg, transparent, #ef0017);
+		animation: rotate2 0.8s linear infinite;
+		animation-delay: 0.2s;
+	}
+	@keyframes rotate2 {
+		0% {
+			top: -100%;
+		}
+		50%,100%{		
+			top: 100%;
+		}
+	}
+	
+	#button-gallery20 span:nth-child(4) {  /* left line */
+		bottom: -100%;
+		left: 0;
+		width: 2%;
+		height: 100%;
+		background: linear-gradient(360deg, transparent, #ef0017);
+		animation: rotate4 0.8s linear infinite;
+		animation-delay: 0.6s;
+	}
+	@keyframes rotate4 {
+		0% {
+			bottom: -100%;
+		}
+		50%,100%{		
+			bottom: 100%;
+		}
+	}
+	
+	#button-gallery20:hover span {
+		animation-play-state: none;
+	}
+	/* 	BUTTON: SHOW SCORE AND NEWS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* BOTTOM 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.bottom {
 		/* border: solid 1px red; */
