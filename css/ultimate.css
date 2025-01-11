@@ -2425,12 +2425,6 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 }
 /* 	BUTTON: ROTATE ANIMATION  */
 /* animation: https://www.youtube.com/watch?v=vCq1C52v7xE */
-.class-button-photo:nth-child(1) {
-	filter: hue-rotate(90deg);
-}
-.class-button-photo:nth-child(3) {
-	filter: hue-rotate(270deg);
-}
 .class-button-photo span {
 	position: absolute;
 	display: block;
@@ -2525,6 +2519,63 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 	text-align: center;
 }
 /* 	DATE | TIME | COMPETITION STAGE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+/* 	BUTTON: SHOW MATCH STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+#button2 h71 { display: none; }  /* mobile: TAP FOR... */
+#button2 {
+	border: none;
+	position: relative;
+	margin-top: 2%;
+	left: 30.2%;
+	width: 35%;
+	height: 2.2vw;
+	font-size: 1.3vw;
+	font-family: Manchester\ United\ 23-24\ Tipogra;
+	color: black;
+	background: transparent;
+	text-align: center;
+	z-index: 1;
+}
+#button2:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: red;
+	opacity: .7;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: top;
+	transition: .2s;
+	top: -10%;
+	left: -3%;
+}
+#button2:hover:before {
+	top: -20%;
+	left: 0;
+	transform: perspective(1000px) rotateX(80deg);
+}
+#button2:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	opacity: .9;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: bottom;
+	transition: .2s;
+	bottom: -10%;
+	right: -1%;
+}
+#button2:hover:after {
+	bottom: -20%;
+	right: 0;
+	transform: perspective(1000px) rotateX(-80deg);
+}
+#button2:hover h70 { color: rgb(211, 208, 208); }
+#image { display: none; }  /* for button */
+/* 	BUTTON: SHOW MATCH STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 /* BOTTOM 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .bottom {
 	/* border: solid 1px red; */
@@ -2867,7 +2918,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
     html, body {  /* responsiveness */
 		position: relative;
 		overflow-x: hidden;
-		background-color: green;
+		background-color: black;
 		min-width: auto;  /* overwrites min-width for desktop */
 		z-index: -3;  /* addition to make .cables and .bricks show */
 	}
@@ -5092,12 +5143,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	/* 	BUTTON: ROTATE ANIMATION  */
 	/* animation: https://www.youtube.com/watch?v=vCq1C52v7xE */
-	.class-button-photo:nth-child(1) {
-		filter: hue-rotate(90deg);
-	}
-	.class-button-photo:nth-child(3) {
-		filter: hue-rotate(270deg);
-	}
 	.class-button-photo span {
 		position: absolute;
 		display: block;
@@ -5193,6 +5238,64 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		text-align: center;
 	}
 	/* 	DATE | TIME | COMPETITION STAGE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+	/* 	BUTTON: SHOW MATCH STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+	#button2 h70 { display: none; }  /* CLICK HERE FOR */
+	#button2 h71 { display: initial; }  /* TAP HERE FOR... */
+	#button2 {
+		border: none;
+		position: relative;
+		margin-top: 2%;
+		left: 41.3%;
+		width: 35%;
+		height: 2.2vw;
+		font-size: 1.8vw;
+		font-family: Manchester\ United\ 23-24\ Tipogra;
+		color: black;
+		background: transparent;
+		text-align: center;
+		z-index: 1;
+	}
+	#button2:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: red;
+		opacity: .7;
+		z-index: -1;
+		mix-blend-mode: multiply;
+		transform-origin: top;
+		transition: .2s;
+		top: -10%;
+		left: 0%;
+	}
+	#button2:hover:before {
+		top: -20%;
+		left: 0;
+		transform: perspective(1000px) rotateX(80deg);
+	}
+	#button2:after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: white;
+		opacity: .9;
+		z-index: -1;
+		mix-blend-mode: multiply;
+		transform-origin: bottom;
+		transition: .2s;
+		bottom: -10%;
+		right: -1%;
+	}
+	#button2:hover:after {
+		bottom: -20%;
+		right: 0;
+		transform: perspective(1000px) rotateX(-80deg);
+	}
+	#button2:hover h70 { color: rgb(211, 208, 208); }
+	#image { display: none; }  /* for button */
+	/* 	BUTTON: SHOW MATCH STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* BOTTOM 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.bottom {
 		/* border: solid 1px red; */
@@ -5534,7 +5637,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
     html, body {  /* responsiveness */
 		position: relative;
 		overflow-x: hidden;
-		background-color: gray;
+		background-color: black;
 		min-width: auto;  /* overwrites min-width for desktop */
 		z-index: -3;  /* addition to make .cables and .bricks show */
 	}
@@ -7075,6 +7178,52 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		align-items: center;
 		position: relative;
 	}
+	/* 	BUTTON: SHOW MATCH STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+	#button2 h70 { display: none; }  /* CLICK HERE FOR */
+	#button2 h71 { display: initial; }  /* TAP HERE FOR... */
+	#button2 {
+		border: none;
+		position: relative;
+		margin-top: 2%;
+		left: 41.3%;
+		width: 35%;
+		height: 2.2vw;
+		font-size: 1.8vw;
+		font-family: Manchester\ United\ 23-24\ Tipogra;
+		color: rgb(211, 208, 208);
+		background: transparent;
+		text-align: center;
+		z-index: 1;
+	}
+	#button2:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: red;
+		opacity: .7;
+		mix-blend-mode: multiply;
+		transform-origin: top;
+		top: -20%;
+		left: 0;
+		transform: perspective(1000px) rotateX(80deg);
+	}
+	#button2:after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: white;
+		opacity: .9;
+		mix-blend-mode: multiply;
+		transform-origin: bottom;
+		bottom: -20%;
+		right: 0;
+		transform: perspective(1000px) rotateX(-80deg);
+	}
+	#button2:hover h70 { color: rgb(211, 208, 208); }
+	#image { display: none; }  /* for button */
+	/* 	BUTTON: SHOW MATCH STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* BOTTOM 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.bottom {
 		/* border: solid 1px red; */
@@ -7412,7 +7561,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 
 /* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */
 @media only screen and (max-width: 570px) {  /* MOBILE  📱 */
-	html, body { position: relative; overflow-x: hidden; background-color: #ac141b; min-width: auto;}
+	html, body { position: relative; overflow-x: hidden; background-color: black; min-width: auto;}
 	::-webkit-scrollbar { display: none; }
 	::-webkit-scrollbar-thumb { display: none; }
 	.parallax-home {

@@ -606,7 +606,7 @@
                                    <span></span>
                                    <span></span>
                                    <span></span>
-                                   <h60>SEE SCORE & STANDINGS</h60>
+                                   <h60>CLICK FOR SCORE & NEWS</h60>
                            </button>
                           
                            <script>
@@ -623,6 +623,25 @@
                               <div class="dropdown_content-matches">
                                    <ul class="dropdown_sub">
                                         <li class="dropdown_li">
+                                             <!-- show image onclick, I used the first method here: https://www.geeksforgeeks.org/how-to-show-images-on-click-using-html/ -->
+                                            <button type="button" onclick="show15()" id="button2" itemid="links">
+                                              <h70>CLICK HERE FOR MATCH STATS, STARTING XI, COMMENTS, AND MORE</h70>
+                                              <h71>TAP HERE FOR MATCH STATS, STARTING XI, COMMENTS, AND MORE</h71>
+                                          </button>
+                                      
+                                          <script>
+                                              function show15() {
+                                                  /* Access image by id and change 
+                                                  the display property to block*/
+                                                  document.getElementById('image')
+                                                      .style.display = "block";
+                                                  document.getElementById('button2')
+                                                      .style.display = "none";
+                                                  document.getElementById('bottom')
+                                                      .style.display = "none";
+                                              }
+                                          </script>
+                                          <div id="image">
                                              <!-- I added this class to make dropdown content fit the width of screen width="100%" height="286" -->
                                              <img class="dropdown-content-historical" src="underground/1st-match-content.png" alt="">
                                              <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content2.png" alt="">
@@ -640,6 +659,10 @@
                                              <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content12.png" alt="">                                                                                                                          
                                              <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content13.png" alt="">                                                                                                                          
                                              <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content14.png" alt="">
+                                        </div>
+                                        <div id="bottom">
+                                         <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content14-alt.png" alt="">
+                                        </div>
                                         </li>
                                    </ul>
                               </div>
