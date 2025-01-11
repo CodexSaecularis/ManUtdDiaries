@@ -8028,8 +8028,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		cursor: pointer;
 		font-family: myFont;
 		font-size: 3.4vw;
-		background: linear-gradient(rgba(27,27,27,0.8), rgba(27,27,27,0.8)), url(../parallax/led1.png);
-		background-size: 150% 150%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+		background: linear-gradient(rgba(27,27,27,0.8), rgba(27,27,27,0.8)), url(../parallax/led5.png);
+		background-size: 200% 200%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 	}
 	.home span {
 		color: #da020e;
