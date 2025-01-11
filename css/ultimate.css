@@ -416,9 +416,9 @@ body {
 	cursor: pointer;
 	font-family: myFont;
 	font-size: 1.3vw;
-	/* background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led.png);	 */
-	background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led\ texture.jpg);
-	background-size: 100% 120%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+	/* background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led.png); */
+	background: linear-gradient(rgba(27,27,27,0.8), rgba(27,27,27,0.8)), url(../parallax/led1.png);
+	background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 }
 .home span {
 	color: #da020e;
@@ -455,9 +455,9 @@ body {
 	I had to add a few id in the HTML*/
 #scoreboard .scoreboard-result, #scoreboard .final-real {display: inline;}
 .final-real {
-	background: linear-gradient(rgba(254,29,18,0.7), rgba(254,29,18,0.7)), url(../parallax/led\ texture.jpg);
+	background: url(../parallax/led3.png);
 	position: absolute;
-	background-size: 60% 300%;
+	background-size: 100% 100%;
 	/* after using "&thinsp;", the red mini-box left a space on the right that showed the background img,
 	so I put this "right:0" value to eliminate any space on that right. Answer by Garry Shutler.
 	https://stackoverflow.com/questions/65536/how-to-put-text-in-the-upper-right-or-lower-right-corner-of-a-box-using-css */
@@ -490,9 +490,9 @@ body {
 #scoreboard2 .scoreboard-result2, #scoreboard2 .final-real2 {display: inline;}
 .final-real2 {
 	color: #ffcf3e;
-	background: linear-gradient(rgba(2,131,54,0.8), rgba(2,131,54,0.8)), url(../parallax/led\ texture.jpg);
+	background: linear-gradient(rgba(2,131,54,0.6), rgba(2,131,54,0.6)), url(../parallax/led4.png);
 	position: absolute;
-	background-size: 60% 300%;
+	background-size: 100% 100%;
 	/* after using "&thinsp;", the red mini-box left a space on the right that showed the background img,
 	so I put this "right:0" value to eliminate any space on that right. Answer by Garry Shutler.
 	https://stackoverflow.com/questions/65536/how-to-put-text-in-the-upper-right-or-lower-right-corner-of-a-box-using-css */
@@ -8028,7 +8028,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		cursor: pointer;
 		font-family: myFont;
 		font-size: 3.4vw;
-		background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(27,27,27,0.8), rgba(27,27,27,0.8)), url(../parallax/led1.png);
 		background-size: 150% 150%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 	}
 	.home span {
