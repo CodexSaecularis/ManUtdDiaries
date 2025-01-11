@@ -2523,7 +2523,8 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 	/* border: solid 1px red; */
 	position: absolute;
 	top: 86%;
-	left: 40.85%;
+	left: 40.35%;
+	width: 15%;
 	font-family: Agency FB;
 	font-size: 1vw;
 	color: #e0dcdc;
