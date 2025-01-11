@@ -2076,6 +2076,7 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 	white-space: nowrap;
 	background: #d8d8d9;
 	pointer-events: none;
+	z-index: -2;
 }
 
 .pre-match1 .news1 {
@@ -2153,7 +2154,7 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 	white-space: nowrap;
 	background: #d8d8d9;
 	pointer-events: none;
-	z-index: -1;
+	z-index: -2;
 	/* the transform:skewY value was found here: https://www.youtube.com/watch?v=Wg7jJhzWNq8&list=PL5e68lK9hEzdGazIG1ONnb7TJ74Q69rH7&index=101
 	   I found out how to use rotate3d here (Ctrl+F5 search .rotated): https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d */
 	transform: skewY(-8.5deg) rotate3d(0, 1, 0, 70deg);
@@ -2239,6 +2240,7 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 	white-space: nowrap;
 	background: #d8d8d9;
 	pointer-events: none;
+	z-index: -2;
 }
 
 .post-match1 .news1 {
@@ -2316,7 +2318,7 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 	white-space: nowrap;
 	background: #d8d8d9;
 	pointer-events: none;
-	z-index: -1;
+	z-index: -2;
 	/* the transform:skewY value was found here: https://www.youtube.com/watch?v=Wg7jJhzWNq8&list=PL5e68lK9hEzdGazIG1ONnb7TJ74Q69rH7&index=101
 	   I found out how to use rotate3d here (Ctrl+F5 search .rotated): https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d */
 	transform: skewY(8.5deg) rotate3d(0, 1, 0, 70deg);
@@ -2391,7 +2393,16 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 }
 /* 	POST-MATCH NEWS MATCH 1 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 /* 	BUTTON: SHOW SCORE AND NEWS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
-.cover {
+#cover1 {
+	/* border: solid 1px green; */
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .095%;
+	z-index: -1;
+}
+#cover {
 	/* border: solid 1px green; */
 	position: absolute;
 	width: 95%;
@@ -2504,7 +2515,7 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 }
 
 #button-gallery20:hover span {
-	animation-play-state: none;
+	animation-play-state: paused;
 }
 /* 	BUTTON: SHOW SCORE AND NEWS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 /* 	DATE | TIME | COMPETITION STAGE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
@@ -4773,7 +4784,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	.dropdown_link-1st-match {
 		/* border: solid 1px red; */
-		background-image: url(../underground/1st-match.png);
+		background-image: url(../underground/1st-match1.png);
 		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above, and .cover */
 		color: white;
 		padding: 6.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -5109,7 +5120,16 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		}
 	}
 	/* 	BUTTON: SHOW SCORE AND NEWS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
-	.cover {
+	#cover1 {
+		/* border: solid 1px green; */
+		position: absolute;
+		width: 116.3%;  /* same as background-size:116.3% under .dropdown_link-1st-match above */
+		height: 100%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#cover {
+		/* border: soli
 		/* border: solid 1px green; */
 		position: absolute;
 		width: 116.3%;  /* same as background-size:116.3% under .dropdown_link-1st-match above */
@@ -5222,7 +5242,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	
 	#button-gallery20:hover span {
-		animation-play-state: none;
+		animation-play-state: paused;
 	}
 	/* 	BUTTON: SHOW SCORE AND NEWS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* 	DATE | TIME | COMPETITION STAGE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
@@ -7169,7 +7189,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	.dropdown_link-1st-match {
 		/* border: solid 1px red; */
-		background-image: url(../underground/1st-match.png);
+		background-image: url(../underground/1st-match1.png);
 		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above */
 		color: white;
 		padding: 6.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -9082,7 +9102,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	.dropdown_link-1st-match {
 		/* border: solid 1px red; */
-		background-image: url(../underground/1st-match.png);
+		background-image: url(../underground/1st-match1.png);
 		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above */
 		color: white;
 		padding: 6.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
