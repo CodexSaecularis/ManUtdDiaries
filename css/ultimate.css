@@ -6048,6 +6048,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
+		z-index: 90;
 	}
 	#cover-2 {
 		/* border: solid 1px green; */
@@ -6056,7 +6057,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
-		z-index: -1;
+		z-index: 90;
 	}
 	#button-gallery21 {
 		border: none;
