@@ -5285,7 +5285,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		--close-display: inline-block;
 		/* addition for the links */
 		--links-display: flex;
-		--spins-display: none;
 	}
 	.open {
 		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
@@ -6048,7 +6047,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
-		z-index: 90;
 	}
 	#cover-2 {
 		/* border: solid 1px green; */
@@ -6057,7 +6055,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
-		z-index: 90;
 	}
 	#button-gallery21 {
 		border: none;
@@ -6297,8 +6294,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	#image2 { display: none; }  /* for button */
 	/* 	BUTTON: SHOW MATCH STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* BADGE-SPONSOR SPIN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.badges-and-sponsors { display: var(--spins-display, none); }
-	.badges-and-sponsors1 { display: var(--spins-display, none); }
+	.badges-and-sponsors { display: none !important; }  /* for PC */
+	.badges-and-sponsors1 { display: none !important; }  /* for PC */
 	/* BADGE-SPONSOR SPIN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* BOTTOM 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.bottom {
