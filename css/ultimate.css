@@ -147,7 +147,7 @@ body {
 	background-clip: text;
 }
 .ground { display: none; }  /* for Mozilla */
-/* LED SIGN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* ZEPPELIN LED SIGN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .wrapper {
 	position: absolute;
 	box-sizing: content-box;
@@ -195,7 +195,7 @@ body {
 		transform: translateY(-200%);
 	}
 }
-/* LED SIGN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* ZEPPELIN LED SIGN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* UNDERGROUND SUPPORT 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .underground-cables {  /* for any reason, after adapting for Mozilla, everything from here goes down a tiny bity */
 	/* border: solid red 1px; */
@@ -1737,6 +1737,13 @@ ul.navlist {
 }
 /* (RIGHT 1) RED WEMBLEY 1958 */
 /* ROTATING CUBOIDS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* VERTICAL SIGNS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.iron-columns {
+	position: absolute;
+	top: 60%;
+	width: 100%;
+}
+/* VERTICAL SIGNS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* DROPDOWNS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .dropdowns-section {
 	position: relative;  /* responsive: 'relative' to eliminate overflow excess x-wise on mobile */
@@ -1758,8 +1765,10 @@ ul.navlist {
 	/* addition to make SEE and HIDE toggle */
 	--open-display: none;
 	--close-display: inline-block;
-	/* addition for the links */
+	/* for the links */
 	--links-display: flex;
+	/* for the in-match-reaction badge & sponsor spins */
+	--spins-display: inline-block;
 }
 .open {
 	position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
@@ -1916,7 +1925,13 @@ ul.navlist {
 	height: 100%;
 }
 
-iframe { display: none;	}  /* not responsive when shrinking/enlarging screen width */
+/* iframe { display: none;	} */  /* not responsive when shrinking/enlarging screen width */
+iframe {
+    width: 23.6%;
+    height: 290px;
+	margin-left: 21.8%;
+    border: none;
+}
 
 .dropdown-content-historical2 {
 	margin-top: -30%;
@@ -2090,7 +2105,7 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 	align-items: center;
 	position: relative;
 }
-/* PRESEASON AND MATCHES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* PRESEASON, MATCHES, INTERNATIONAL BREAK 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 [itemid="dropdown-matches"] { /* moves all match dropdowns as well as preseason */
 	margin-right: -10vw;
 }
@@ -2100,7 +2115,7 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 }
 .dropdown_link-preseason {
 	/* border: solid 1px red; */
-	background-image: url(../underground/pre-season.png);
+	background-image: url(../underground/pre-season1.png);
 	background-size: 95% 100%;  /* width and height  // also, width has to coincide with width under #dropdown-content-match and .dropdown-content-historical above */
 	color: white;
 	padding: 4.15vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -2120,6 +2135,29 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 	align-items: center;
 	position: relative;
 }
+.dropdown_link-2nd-match {
+	/* border: solid 1px red; */
+	background-image: url(../underground/1st-match2.png);
+	background-size: 95% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above */
+	color: white;
+	padding: 4vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown_link-international-break {
+	/* border: solid 1px red; */
+	background-image: url(../underground/break.png);
+	background-size: 102.3% 100%;
+	color: white;
+	padding: .7vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+/* PRESEASON, MATCHES, INTERNATIONAL BREAK 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* 	POST-MATCH NEWS MATCH 1 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 .pre-match1 {
 	position: absolute;
@@ -2156,7 +2194,7 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 
 .pre-match1 .news1 div span {
 	color: #d8d8d9;
-	background-color: #c00101;
+	background-color: #a52129;  /* edit here */
 }
 
 .pre-match1 .news1 div span2 {
@@ -2242,7 +2280,7 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 
 .pre-match1-skew .news1-skew div span {
 	color: #d8d8d9;
-	background-color: #c00101;
+	background-color: #b92a2f;
 }
 
 .pre-match1-skew .news1-skew div span2 {
@@ -2320,7 +2358,7 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 
 .post-match1 .news1 div span {
 	color: #d8d8d9;
-	background-color: #c00101;
+	background-color: #b92a2f;
 }
 
 .post-match1 .news1 div span2 {
@@ -2406,7 +2444,7 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 
 .post-match1-skew .news1-skew div span {
 	color: #d8d8d9;
-	background-color: #c00101;
+	background-color: #b92a2f;
 }
 
 .post-match1-skew .news1-skew div span2 {
@@ -2491,7 +2529,49 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 					   0 0 50px #ef0017,
 					   0 0 200px #ef0017;
 }
-/* 	BUTTON: ROTATE ANIMATION  */
+
+#cover2 {
+	/* border: solid 1px green; */
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .095%;
+	z-index: -1;
+}
+#cover-2 {
+	/* border: solid 1px green; */
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .08%;
+}
+#button-gallery21 {
+	border: none;
+	border-radius: .1vw;
+	position: absolute;
+	z-index: 2;
+	margin-top: -5.65%;
+	left: 40.8%;
+	width: 14.2%;
+	height: auto;  /* changed it from 1vw to auto for Mozilla 'cuz the text shows cut off at the bottom as the box (button) is too small */
+	line-height: 1vw;  /* addition for Mozilla 'cuz the text shows cut off at the bottom as the box (button) is too small */
+	font-family: Lampen;
+	font-size: 1.2vw;
+	color: white;
+	background: #262626;
+	overflow: hidden;  /* for animation: hides each child outside the button */
+}
+#button-gallery21:hover {
+	color: black;
+	background: #ef0017;
+	box-shadow: 0 0 5px #ef0017,
+					   0 0 25px #ef0017,
+					   0 0 50px #ef0017,
+					   0 0 200px #ef0017;
+}
+/* 	BUTTON: ROTATE ANIMATION // MATCH 1 */
 /* animation: https://www.youtube.com/watch?v=vCq1C52v7xE */
 .class-button-photo span {
 	position: absolute;
@@ -2574,6 +2654,83 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 #button-gallery20:hover span {
 	animation-play-state: paused;
 }
+/* 	BUTTON: ROTATE ANIMATION // MATCH 2  */
+#button-gallery21 span:nth-child(1) {  /* top line */
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 10%;
+	background: linear-gradient(90deg, transparent, #ef0017);
+	animation: rotate1 0.8s linear infinite;
+	animation-delay: 0s;
+}
+@keyframes rotate1 {
+	0% {
+		left: -100%;
+	}
+	50%,100%{		
+		left: 100%;
+	}
+}
+
+#button-gallery21 span:nth-child(3) {  /* bottom line */
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: .15vw;
+	/* height: 10%; */
+	background: linear-gradient(270deg, transparent, #ef0017);
+	animation: rotate3 0.8s linear infinite;
+	animation-delay: 0.4s;
+}
+@keyframes rotate3 {
+	0% {
+		right: -100%;
+	}
+	50%,100%{		
+		right: 100%;
+	}
+}
+
+#button-gallery21 span:nth-child(2) {  /* right line */
+	top: -100%;
+	right: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #ef0017);
+	animation: rotate2 0.8s linear infinite;
+	animation-delay: 0.2s;
+}
+@keyframes rotate2 {
+	0% {
+		top: -100%;
+	}
+	50%,100%{		
+		top: 100%;
+	}
+}
+
+#button-gallery21 span:nth-child(4) {  /* left line */
+	bottom: -100%;
+	left: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #ef0017);
+	animation: rotate4 0.8s linear infinite;
+	animation-delay: 0.6s;
+}
+@keyframes rotate4 {
+	0% {
+		bottom: -100%;
+	}
+	50%,100%{		
+		bottom: 100%;
+	}
+}
+
+#button-gallery21:hover span {
+	animation-play-state: paused;
+}
 /* 	BUTTON: SHOW SCORE AND NEWS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 /* 	DATE | TIME | COMPETITION STAGE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 .close3 {
@@ -2644,7 +2801,639 @@ iframe { display: none;	}  /* not responsive when shrinking/enlarging screen wid
 }
 #button2:hover h70 { color: rgb(211, 208, 208); }
 #image { display: none; }  /* for button */
+
+
+#button3 h71 { display: none; }  /* mobile: TAP FOR... */
+#button3 {
+	border: none;
+	position: relative;
+	margin-top: 2%;
+	left: 30.2%;
+	width: 35%;
+	height: 2.2vw;
+	font-size: 1.3vw;
+	font-family: Manchester\ United\ 23-24\ Tipogra;
+	color: black;
+	background: transparent;
+	text-align: center;
+	z-index: 1;
+}
+#button3:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: red;
+	opacity: .7;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: top;
+	transition: .2s;
+	top: -10%;
+	left: -3%;
+}
+#button3:hover:before {
+	top: -20%;
+	left: 0;
+	transform: perspective(1000px) rotateX(80deg);
+}
+#button3:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	opacity: .9;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: bottom;
+	transition: .2s;
+	bottom: -10%;
+	right: -1%;
+}
+#button3:hover:after {
+	bottom: -20%;
+	right: 0;
+	transform: perspective(1000px) rotateX(-80deg);
+}
+#button3:hover h70 { color: rgb(211, 208, 208); }
+#image2 { display: none; }  /* for button */
 /* 	BUTTON: SHOW MATCH STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+/* BADGE-SPONSOR SPIN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* BADGE-SPONSOR SPIN: HISTORICAL */
+.wrapper1-left {
+	position: absolute;
+	box-sizing: content-box;
+	background: url(../underground/1-shirt9.png);
+	background-size: 100% 100%;
+	text-align: center;
+	padding: 0% .5%;  /* border margin */
+	width: 3%;
+	height: 6.15vw;
+	display: flex;
+	margin-top: -16.65%;
+	left: 7%;
+}
+.words1-left { overflow: hidden; }
+.words1-left img {
+	width: 100%;
+	position: relative;
+	display: block;
+	animation: spin_words2 6s infinite;
+}
+@keyframes spin_words2 {
+	0% {
+		transform: translateY(-200%);
+	}
+	10% {
+		transform: translateY(-200%);
+	}
+	30% {
+		transform: translateY(-102%);
+	}
+	40% {
+		transform: translateY(-102%);
+	}
+	50% {
+		transform: translateY(-102%);
+	}
+	70% {
+		transform: translateY(-102%);
+	}
+	90% {
+		transform: translateY(-0.5%);
+	}
+	100% {
+		transform: translateY(-0.5%);
+	}
+}
+
+
+.wrapper1-right {
+	position: absolute;
+	box-sizing: content-box;
+	background: url(../underground/1-shirt9.png);
+	background-size: 100% 100%;
+	text-align: center;
+	padding: 0% .5%;  /* border margin */
+	width: 3%;
+	height: 6.15vw;
+	display: flex;
+	margin-top: -16.65%;
+	left: 94.4%;
+}
+.words1-right { overflow: hidden; }
+.words1-right img {
+	width: 100%;
+	position: relative;
+	display: block;
+	animation: spin_words2 6s infinite;
+}
+@keyframes spin_words2 {
+	0% {
+		transform: translateY(-200%);
+	}
+	10% {
+		transform: translateY(-200%);
+	}
+	30% {
+		transform: translateY(-102%);
+	}
+	40% {
+		transform: translateY(-102%);
+	}
+	50% {
+		transform: translateY(-102%);
+	}
+	70% {
+		transform: translateY(-102%);
+	}
+	90% {
+		transform: translateY(-0.5%);
+	}
+	100% {
+		transform: translateY(-0.5%);
+	}
+}
+/* BADGE-SPONSOR SPIN: HISTORICAL */
+
+/* BADGE-SPONSOR SPIN: STARTING XI */
+.wrapper1-5-left {
+	position: absolute;
+	box-sizing: content-box;
+	background: url(../underground/1-shirt9.png);
+	background-size: 100% 100%;
+	text-align: center;
+	padding: 0% .5%;  /* border margin */
+	width: 3%;
+	height: 6.15vw;
+	display: flex;
+	margin-top: -44%;
+	left: 7%;
+}
+.words1-5-left { overflow: hidden; }
+.words1-5-left img {
+	width: 100%;
+	position: relative;
+	display: block;
+	animation: spin_words2 6s infinite;
+}
+@keyframes spin_words2 {
+	0% {
+		transform: translateY(-200%);
+	}
+	10% {
+		transform: translateY(-200%);
+	}
+	30% {
+		transform: translateY(-102%);
+	}
+	40% {
+		transform: translateY(-102%);
+	}
+	50% {
+		transform: translateY(-102%);
+	}
+	70% {
+		transform: translateY(-102%);
+	}
+	90% {
+		transform: translateY(-0.5%);
+	}
+	100% {
+		transform: translateY(-0.5%);
+	}
+}
+.badges-and-sponsors { display: var(--spins-display, none); }
+.badges-and-sponsors1 { display: var(--spins-display, none); }
+.wrapper1-5-right {
+	position: absolute;
+	box-sizing: content-box;
+	background: url(../underground/1-shirt9.png);
+	background-size: 100% 100%;
+	text-align: center;
+	padding: 0% .5%;  /* border margin */
+	width: 3%;
+	height: 6.15vw;
+	display: flex;
+	margin-top: -44%;
+	left: 94.4%;
+}
+.words1-5-right { overflow: hidden; }
+.words1-5-right img {
+	width: 100%;
+	position: relative;
+	display: block;
+	animation: spin_words2 6s infinite;
+}
+@keyframes spin_words2 {
+	0% {
+		transform: translateY(-200%);
+	}
+	10% {
+		transform: translateY(-200%);
+	}
+	30% {
+		transform: translateY(-102%);
+	}
+	40% {
+		transform: translateY(-102%);
+	}
+	50% {
+		transform: translateY(-102%);
+	}
+	70% {
+		transform: translateY(-102%);
+	}
+	90% {
+		transform: translateY(-0.5%);
+	}
+	100% {
+		transform: translateY(-0.5%);
+	}
+}
+/* BADGE-SPONSOR SPIN: STARTING XI */
+
+
+/* BADGE-SPONSOR SPIN: BATCH 1 */
+.wrapper2 {
+	position: absolute;
+	box-sizing: content-box;
+	background: url(../underground/1-shirt.png);
+	background-size: 100% 100%;
+	text-align: center;
+	padding: 0% .5%;  /* border margin */
+	width: 3%;
+	height: 6.15vw;  /* vw value avoids height enlargement when another dropdown is opened, original was % value */
+	display: flex;
+	margin-top: -44.13%;
+	left: 7%;
+}
+.words2 { overflow: hidden; }
+.words2 img {
+	width: 100%;
+	position: relative;
+	display: block;
+	animation: spin_words2 6s infinite;
+}
+@keyframes spin_words2 {
+	0% {
+		transform: translateY(-200%);
+	}
+	10% {
+		transform: translateY(-200%);
+	}
+	30% {
+		transform: translateY(-102%);
+	}
+	40% {
+		transform: translateY(-102%);
+	}
+	50% {
+		transform: translateY(-102%);
+	}
+	70% {
+		transform: translateY(-102%);
+	}
+	90% {
+		transform: translateY(-0.5%);
+	}
+	100% {
+		transform: translateY(-0.5%);
+	}
+}
+
+.wrapper7 {
+	position: absolute;
+	box-sizing: content-box;
+	background: url(../underground/1-shirt2.png);
+	background-size: 100% 100%;
+	text-align: center;
+	padding: 0% .5%;  /* border margin */
+	width: 3%;
+	height: 6.15vw;
+	display: flex;
+	margin-top: -36.9%;
+	left: 94.4%;
+}
+.words7 { overflow: hidden; }
+.words7 img {
+	width: 100%;
+	position: relative;
+	display: block;
+	animation: spin_words2 6s infinite;
+}
+@keyframes spin_words2 {
+	0% {
+		transform: translateY(-200%);
+	}
+	10% {
+		transform: translateY(-200%);
+	}
+	30% {
+		transform: translateY(-102%);
+	}
+	40% {
+		transform: translateY(-102%);
+	}
+	50% {
+		transform: translateY(-102%);
+	}
+	70% {
+		transform: translateY(-102%);
+	}
+	90% {
+		transform: translateY(-0.5%);
+	}
+	100% {
+		transform: translateY(-0.5%);
+	}
+}
+
+.wrapper9 {
+	position: absolute;
+	box-sizing: content-box;
+	background: url(../underground/1-shirt4.png);
+	background-size: 100% 100%;
+	text-align: center;
+	padding: 0% .5%;  /* border margin */
+	width: 3%;
+	height: 6.15vw;
+	display: flex;
+	margin-top: -22.44%;
+	left: 94.4%;
+}
+.words9 { overflow: hidden; }
+.words9 img {
+	width: 100%;
+	position: relative;
+	display: block;
+	animation: spin_words2 6s infinite;
+}
+@keyframes spin_words2 {
+	0% {
+		transform: translateY(-200%);
+	}
+	10% {
+		transform: translateY(-200%);
+	}
+	30% {
+		transform: translateY(-102%);
+	}
+	40% {
+		transform: translateY(-102%);
+	}
+	50% {
+		transform: translateY(-102%);
+	}
+	70% {
+		transform: translateY(-102%);
+	}
+	90% {
+		transform: translateY(-0.5%);
+	}
+	100% {
+		transform: translateY(-0.5%);
+	}
+}
+
+.wrapper5 {
+	position: absolute;
+	box-sizing: content-box;
+	background: url(../underground/1-shirt3.png);
+	background-size: 100% 100%;
+	text-align: center;
+	padding: 0% .5%;  /* border margin */
+	width: 3%;
+	height: 6.15vw;
+	display: flex;
+	margin-top: -22.44%;
+	left: 7%;
+}
+.words5 { overflow: hidden; }
+.words5 img {
+	width: 100%;
+	position: relative;
+	display: block;
+	animation: spin_words2 6s infinite;
+}
+@keyframes spin_words2 {
+	0% {
+		transform: translateY(-200%);
+	}
+	10% {
+		transform: translateY(-200%);
+	}
+	30% {
+		transform: translateY(-102%);
+	}
+	40% {
+		transform: translateY(-102%);
+	}
+	50% {
+		transform: translateY(-102%);
+	}
+	70% {
+		transform: translateY(-102%);
+	}
+	90% {
+		transform: translateY(-0.5%);
+	}
+	100% {
+		transform: translateY(-0.5%);
+	}
+}
+
+.wrapper6 {
+	position: absolute;
+	box-sizing: content-box;
+	background: url(../underground/1-shirt5.png);
+	background-size: 100% 100%;
+	text-align: center;
+	padding: 0% .5%;  /* border margin */
+	width: 3%;
+	height: 6.15vw;
+	display: flex;
+	margin-top: -44.13%;
+	left: 94.4%;
+}
+.words6 { overflow: hidden; }
+.words6 img {
+	width: 100%;
+	position: relative;
+	display: block;
+	animation: spin_words2 6s infinite;
+}
+@keyframes spin_words2 {
+	0% {
+		transform: translateY(-200%);
+	}
+	10% {
+		transform: translateY(-200%);
+	}
+	30% {
+		transform: translateY(-102%);
+	}
+	40% {
+		transform: translateY(-102%);
+	}
+	50% {
+		transform: translateY(-102%);
+	}
+	70% {
+		transform: translateY(-102%);
+	}
+	90% {
+		transform: translateY(-0.5%);
+	}
+	100% {
+		transform: translateY(-0.5%);
+	}
+}
+
+.wrapper3 {
+	position: absolute;
+	box-sizing: content-box;
+	background: url(../underground/1-shirt6.png);
+	background-size: 100% 100%;
+	text-align: center;
+	padding: 0% .5%;  /* border margin */
+	width: 3%;
+	height: 6.15vw;
+	display: flex;
+	margin-top: -36.9%;
+	left: 7%;
+
+}
+.words3 { overflow: hidden; }
+.words3 img {
+	width: 100%;
+	position: relative;
+	display: block;
+	animation: spin_words2 6s infinite;
+}
+@keyframes spin_words2 {
+	0% {
+		transform: translateY(-200%);
+	}
+	10% {
+		transform: translateY(-200%);
+	}
+	30% {
+		transform: translateY(-102%);
+	}
+	40% {
+		transform: translateY(-102%);
+	}
+	50% {
+		transform: translateY(-102%);
+	}
+	70% {
+		transform: translateY(-102%);
+	}
+	90% {
+		transform: translateY(-0.5%);
+	}
+	100% {
+		transform: translateY(-0.5%);
+	}
+}
+
+.wrapper8 {
+	position: absolute;
+	box-sizing: content-box;
+	background: url(../underground/1-shirt7.png);
+	background-size: 100% 100%;
+	text-align: center;
+	padding: 0% .5%;  /* border margin */
+	width: 3%;
+	height: 6.15vw;
+	display: flex;
+	margin-top: -29.67%;
+	left: 94.4%;
+}
+.words8 { overflow: hidden; }
+.words8 img {
+	width: 100%;
+	position: relative;
+	display: block;
+	animation: spin_words2 6s infinite;
+}
+@keyframes spin_words2 {
+	0% {
+		transform: translateY(-200%);
+	}
+	10% {
+		transform: translateY(-200%);
+	}
+	30% {
+		transform: translateY(-102%);
+	}
+	40% {
+		transform: translateY(-102%);
+	}
+	50% {
+		transform: translateY(-102%);
+	}
+	70% {
+		transform: translateY(-102%);
+	}
+	90% {
+		transform: translateY(-0.5%);
+	}
+	100% {
+		transform: translateY(-0.5%);
+	}
+}
+
+.wrapper4 {
+	position: absolute;
+	box-sizing: content-box;
+	background: url(../underground/1-shirt8.png);
+	background-size: 100% 100%;
+	text-align: center;
+	padding: 0% .5%;  /* border margin */
+	width: 3%;
+	height: 6.15vw;
+	display: flex;
+	margin-top: -29.67%;
+	left: 7%;
+}
+.words4 { overflow: hidden; }
+.words4 img {
+	width: 100%;
+	position: relative;
+	display: block;
+	animation: spin_words2 6s infinite;
+}
+@keyframes spin_words2 {
+	0% {
+		transform: translateY(-200%);
+	}
+	10% {
+		transform: translateY(-200%);
+	}
+	30% {
+		transform: translateY(-102%);
+	}
+	40% {
+		transform: translateY(-102%);
+	}
+	50% {
+		transform: translateY(-102%);
+	}
+	70% {
+		transform: translateY(-102%);
+	}
+	90% {
+		transform: translateY(-0.5%);
+	}
+	100% {
+		transform: translateY(-0.5%);
+	}
+}
+/* BADGE-SPONSOR SPIN: BATCH 1 */
+/* BADGE-SPONSOR SPIN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* BOTTOM 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .bottom {
 	/* border: solid 1px red; */
@@ -4468,6 +5257,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.cuboid1 { display: none; }
 	.cuboid2 { display: none; }
 	/* ROTATING CUBOIDS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* VERTICAL SIGNS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.iron-columns { display: none; }
+	/* VERTICAL SIGNS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* DROPDOWNS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdowns-section {
 		position: relative;  /* responsive: 'relative' to eliminate overflow excess x-wise on mobile */
@@ -4821,7 +5613,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		align-items: center;
 		position: relative;
 	}
-	/* PRESEASON AND MATCHES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* PRESEASON, MATCHES, INTERNATIONAL BREAK 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	[itemid="dropdown-matches"] { /* moves all match dropdowns as well as preseason */
 		margin-left: -5vw; 
 	}
@@ -4851,6 +5643,29 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		align-items: center;
 		position: relative;
 	}
+	.dropdown_link-2nd-match {
+		/* border: solid 1px red; */
+		background-image: url(../underground/1st-match2.png);
+		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above */
+		color: white;
+		padding: 6.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown_link-international-break {
+		/* border: solid 1px red; */
+		background-image: url(../underground/break.png);
+		background-size: 120% 100%;
+		color: white;
+		padding: 1.137vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	/* PRESEASON, MATCHES, INTERNATIONAL BREAK 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* 	POST-MATCH NEWS MATCH 1 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	.pre-match1 {
 		position: absolute;
@@ -4886,7 +5701,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	
 	.pre-match1 .news1 div span {
 		color: #d8d8d9;
-		background-color: #c00101;
+		background-color: #b92a2f;
 	}
 	
 	.pre-match1 .news1 div span2 {
@@ -4972,7 +5787,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	
 	.pre-match1-skew .news1-skew div span {
 		color: #d8d8d9;
-		background-color: #c00101;
+		background-color: #b92a2f;
 	}
 	
 	.pre-match1-skew .news1-skew div span2 {
@@ -5049,7 +5864,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	
 	.post-match1 .news1 div span {
 		color: #d8d8d9;
-		background-color: #c00101;
+		background-color: #b92a2f;
 	}
 	
 	.post-match1 .news1 div span2 {
@@ -5135,7 +5950,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	
 	.post-match1-skew .news1-skew div span {
 		color: #d8d8d9;
-		background-color: #c00101;
+		background-color: #b92a2f;
 	}
 	
 	.post-match1-skew .news1-skew div span2 {
@@ -5187,7 +6002,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		margin-top: .08%;
 	}
 	#cover {
-		/* border: soli
 		/* border: solid 1px green; */
 		position: absolute;
 		width: 116.3%;  /* same as background-size:116.3% under .dropdown_link-1st-match above */
@@ -5212,6 +6026,47 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		overflow: hidden;  /* for animation: hides each child outside the button */
 	}
 	#button-gallery20:hover {
+		color: black;
+		background: #ef0017;
+		box-shadow: 0 0 5px #ef0017,
+						   0 0 25px #ef0017,
+						   0 0 50px #ef0017,
+						   0 0 200px #ef0017;
+	}
+
+	#cover2 {
+		/* border: solid 1px green; */
+		position: absolute;
+		width: 116.3%;  /* same as background-size:116.3% under .dropdown_link-1st-match above */
+		height: 100%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#cover-2 {
+		/* border: solid 1px green; */
+		position: absolute;
+		width: 116.3%;  /* same as background-size:116.3% under .dropdown_link-1st-match above */
+		height: 100%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#button-gallery21 {
+		border: none;
+		border-radius: .1vw;
+		position: absolute;
+		z-index: 2;
+		margin-top: -7.4%;
+		left: 49.9%;
+		width: 17.3%;
+		height: auto;  /* changed it from 1vw to auto for Mozilla 'cuz the text shows cut off at the bottom as the box (button) is too small */
+		line-height: 1.7vw;  /* addition for Mozilla 'cuz the text shows cut off at the bottom as the box (button) is too small */
+		font-family: Lampen;
+		font-size: 1.75vw;
+		color: white;
+		background: #262626;
+		overflow: hidden;  /* for animation: hides each child outside the button */
+	}
+	#button-gallery21:hover {
 		color: black;
 		background: #ef0017;
 		box-shadow: 0 0 5px #ef0017,
@@ -5371,9 +6226,71 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		right: 0;
 		transform: perspective(1000px) rotateX(-80deg);
 	}
-	#button2:hover h70 { color: rgb(211, 208, 208); }
+	#button2:hover h71 { color: rgb(211, 208, 208); }
 	#image { display: none; }  /* for button */
+
+
+	#button3 h70 { display: none; }  /* CLICK HERE FOR */
+	#button3 h71 { display: initial; }  /* TAP HERE FOR... */
+	#button3 {
+		border: none;
+		position: relative;
+		margin-top: 2%;
+		left: 41.3%;
+		width: 35%;
+		height: 2.2vw;
+		font-size: 1.8vw;
+		font-family: Manchester\ United\ 23-24\ Tipogra;
+		color: black;
+		background: transparent;
+		text-align: center;
+		z-index: 1;
+	}
+	#button3:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: red;
+		opacity: .7;
+		z-index: -1;
+		mix-blend-mode: multiply;
+		transform-origin: top;
+		transition: .2s;
+		top: -10%;
+		left: 0%;
+	}
+	#button3:hover:before {
+		top: -20%;
+		left: 0;
+		transform: perspective(1000px) rotateX(80deg);
+	}
+	#button3:after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: white;
+		opacity: .9;
+		z-index: -1;
+		mix-blend-mode: multiply;
+		transform-origin: bottom;
+		transition: .2s;
+		bottom: -10%;
+		right: -1%;
+	}
+	#button3:hover:after {
+		bottom: -20%;
+		right: 0;
+		transform: perspective(1000px) rotateX(-80deg);
+	}
+	#button3:hover h71 { color: rgb(211, 208, 208); }
+	#image2 { display: none; }  /* for button */
 	/* 	BUTTON: SHOW MATCH STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+	/* BADGE-SPONSOR SPIN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.badges-and-sponsors { display: none !important; }  /* for PC */
+	.badges-and-sponsors1 { display: none !important; }  /* for PC */
+	/* BADGE-SPONSOR SPIN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* BOTTOM 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.bottom {
 		/* border: solid 1px red; */
@@ -6932,6 +7849,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.cuboid1 { display: none; }
 	.cuboid2 { display: none; }
 	/* ROTATING CUBOIDS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* VERTICAL SIGNS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.iron-columns { display: none; }
+	/* VERTICAL SIGNS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* DROPDOWNS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdowns-section {
 		position: relative;  /* responsive: 'relative' to eliminate overflow excess x-wise on mobile */
@@ -8904,6 +9824,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.cuboid1 { display: none; }
 	.cuboid2 { display: none; }
 	/* ROTATING CUBOIDS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* VERTICAL SIGNS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.iron-columns { display: none; }
+	/* VERTICAL SIGNS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* DROPDOWNS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdowns-section {
 		position: relative;  /* responsive: 'relative' to eliminate overflow excess x-wise on mobile */

@@ -9,21 +9,17 @@
      <link rel="icon" href="parallax/Man Utd.ico">  <!-- Michał Perłakowski: https://stackoverflow.com/questions/4888377/how-to-add-a-browser-tab-icon-favicon-for-a-website -->
 </head>
 
-<body>
-     
+<body>     
      <section class="parallax-home">
           <img src="parallax/sky1.png" class="sky">
           <img src="parallax/sky1-cover.png" id="sky-cover">
-
-          <!-- spin animation: https://www.youtube.com/watch?v=f0qX-lkk8Y8 -->
-          <div class="wrapper">
+          <div class="wrapper">  <!-- spin animation: https://www.youtube.com/watch?v=f0qX-lkk8Y8 -->
                <div class="words">
                     <span>GGMU</span>
                     <span>BACK AMORIM</span>
                     <span>GGMU</span>
                </div>
           </div>
-
           <img src="parallax/flag1.png" id="flag">  <!-- for mobile // class doesn't seem to work -->          
           <img src="parallax/flag2.png" id="flag2">  <!-- for PC // class doesn't seem to work -->
                <div class="title">
@@ -41,11 +37,11 @@
     <section class="select-season">
           <div class="nav_container-season">                    
                <ul class="dropdown-season">
+
                     <li class="season-list">
                          <a class="checkbox-size" id="dropdown-pointer">  <!-- deleted href="#" to stop any page jump -->
                               <input type="checkbox" class="dropdown-check"><span class="select-season-title"><span1><br />since <span2>2023</span2></span1><span3><br />SELECT SEASON</span3>
                          </a>
-
                          <div class="dropdown-content-display">
                               <ul class="dropdown-sub-season">                                   
                                    <li class="dropdown-li">
@@ -64,9 +60,9 @@
                                         <img class="season-content" src="underground/1base7.png" alt="">
                                    </li>
                               </ul>
-                         </div>
-                         
+                         </div>                         
                     </li>
+
                </ul>
           </div>
      </section>
@@ -91,15 +87,13 @@
                     <p><span>&nbsp;MANCHESTER UNITED</span></p>
                     <p>&nbsp;LIVERPOOL</p>
                </div>
-          </div>
-              
+          </div>              
           <div class="scoreboard-teams-mobile" id="links">
                <div class="home">
                     <p><span>&nbsp;MAN UNITED</span></p>
                     <p>&nbsp;LIVERPOOL</p>
                </div>
           </div>
-
           <div class="scoreboard-result" id="scoreboard">
                <div class="result" id="text-left">
                     <!-- smaller than regular space // answer by knittle: https://stackoverflow.com/questions/2720770/how-to-create-small-spaces-in-html -->
@@ -111,7 +105,6 @@
                     <p>&thinsp;SCORE&thinsp;</p>
                </div>
           </div>
-
           <div class="scoreboard-result2" id="scoreboard2">
                <div class="result2" id="text-left2">
                     <p>1&thinsp;</p>
@@ -129,7 +122,6 @@
      <div class="box-shadow2" id="box-shadow2"></div>
 
      <!-- OLD TRAFFORD BANNERS -->
-
      <div class="OT-banners">
           <div class="banners">
              <!-- I learned of "&nbsp;" value to add non-breaking space thanks to: https://blog.hubspot.com/website/html-space#:~:text=The%20simplest%20way%20to%20add,%3B%20or%20. -->
@@ -139,16 +131,15 @@
           </div>
      </div>
 
-
      <!-- CLOCK -->
      <div class="clock" id="timeboard">
-      <div class="time" id="time">
-           <p id="clock"></p>
-      </div>
-      <div class="republik-of-mancunia" id="republik-of-mancunia">
-           <p>ЯEPUБLIK ФF</p>
-           <p>MAИCUИIA</p>
-      </div>
+          <div class="time" id="time">
+               <p id="clock"></p>
+          </div>
+          <div class="republik-of-mancunia" id="republik-of-mancunia">
+               <p>ЯEPUБLIK ФF</p>
+               <p>MAИCUИIA</p>
+          </div>
       </div>
 
      <!-- VERTICAL STRIPES FOR THE CLOCK -->
@@ -162,84 +153,84 @@
      </div>
      <!-- VERTICAL STRIPES FOR THE CLOCK -->
 
-    <script src="js/script.js"></script>
-    <!-- https://www.youtube.com/watch?v=-likemsorlw -->
-    <script>
-     var getClock = function() {
+     <script src="js/script.js"></script>
+     <!-- https://www.youtube.com/watch?v=-likemsorlw -->
+     <script>
+          var getClock = function() {
           document.getElementById("clock").innerHTML = new Date() .toLocaleString("en-GB",{timeZone: 'Europe/London', timeStyle:"short", hourcycle:'h24'});
-     }
-     getClock();
-     setInterval(getClock, 1000);
+          }
+          getClock();
+          setInterval(getClock, 1000);
     </script>
      <!-- CLOCK -->
 
      <section class="underground-irons" id="underground-irons">
           <img src="underground/irons2.png" alt="" id="irons" class="irons">
-    </section>
+     </section>
 
     <header>
-        <ul class="navlist">
-            <li><a class="contact-me" href="contact.html" id="links">
-                        <div class="line1" id="links">  <!-- targets #links cursor for this only line-->
-                            WANN<span>A</span> SAY
-                        </div>
-                        <div class="line2">
-                            SOMETHING?
-                        </div>
-                        <div class="line3">
-                            contact me
-                        </div>
-                </a>
-            </li>
-            <li><a class="know-me" href="contact.html" id="links">
-                        <div class="line4">
-                            Meet <span>The</span>
-                        </div>
-                        <div class="line5">
-                            Creator
-                        </div>
+          <ul class="navlist">
+               <li><a class="contact-me" href="contact.html" id="links">
+                         <div class="line1" id="links">  <!-- targets #links cursor for this only line-->
+                              WANN<span>A</span> SAY
+                         </div>
+                         <div class="line2">
+                              SOMETHING?
+                         </div>
+                         <div class="line3">
+                              contact me
+                         </div>
                     </a>
-            </li>
-            <li><a class="support" href="support.html" id="links">
-                    <div class="line6">
-                            SUPPORT
-                    </div>
-                    <div class="line7">
-                            <span>&</span> DONATE
-                    </div>
-                    <div class="line7-5">
-                            <span>⇩</span><span2>⇩</span2><span3>⇩</span3>
-                    </div>
-               </a>
-            </li>
-            <li><a class="learn-language" href="learn.html" id="links">
-                        <div class="line8">
-                             WANNA LEARN <span>A</span>
-                        </div>
-                        <div class="line9">
-                             <span>➡</span><span2>➡</span2><span3>➡</span3>A
-                        </div>
-                        <div class="line10">
-                             language?
-                        </div>
-                        <div class="line11">
-                             SIUUU
-                        </div>
-                        <div class="line12">
-                             <span>Я</span><span2>ق</span2><span3>Ñ</span3><span4>曼</span4>
+               </li>
+               <li><a class="know-me" href="contact.html" id="links">
+                         <div class="line4">
+                              Meet <span>The</span>
+                         </div>
+                         <div class="line5">
+                              Creator
+                         </div>
+                    </a>
+               </li>
+               <li><a class="support" href="support.html" id="links">
+                         <div class="line6">
+                              SUPPORT
+                         </div>
+                         <div class="line7">
+                              <span>&</span> DONATE
+                         </div>
+                         <div class="line7-5">
+                              <span>⇩</span><span2>⇩</span2><span3>⇩</span3>
+                         </div>
+                    </a>
+               </li>
+               <li><a class="learn-language" href="learn.html" id="links">
+                         <div class="line8">
+                              WANNA LEARN <span>A</span>
+                         </div>
+                         <div class="line9">
+                              <span>➡</span><span2>➡</span2><span3>➡</span3>A
+                         </div>
+                         <div class="line10">
+                              language?
+                         </div>
+                         <div class="line11">
+                              SIUUU
+                         </div>
+                         <div class="line12">
+                              <span>Я</span><span2>ق</span2><span3>Ñ</span3><span4>曼</span4>
                                
-                        </div>
+                         </div>
                     </a>
-            </li>
-        </ul>
-    </header>
+               </li>
+          </ul>
+     </header>
 
     <section class="devil">
-     <img class="animated-gif" src="parallax/logo-neon.png">
+          <img class="animated-gif" src="parallax/logo-neon.png">
     </section>
 
       <!-- UNDERGROUND ARTWORK -->
-    <section class="brick-wall" id="brick-wall">
+     <section class="brick-wall" id="brick-wall">
           <img src="underground/brick-wall.png" alt="" id="bricks" class="bricks">
           <h1>2023/<span>24</span></h1>
           <h1>2023/<span>24</span></h1>
@@ -264,84 +255,75 @@
           <div class="cuboid-holder">
                <img src="underground/holder.png" class="holder">
           </div>
-    </section>
-    <!-- UNDERGROUND ARTWORK -->
+     </section>
+     <!-- UNDERGROUND ARTWORK -->
 
-    <!-- <div class="holder1">
-     <img src="underground/holder.png" class="holder">
-</div> -->
+     <!-- <div class="holder1">
+          <img src="underground/holder.png" class="holder">
+     </div> -->
 
-    <div class="class-button-photo">    <!-- photo gallery -->
-     <button type="button" onclick="show()" id="button-gallery2" itemid="links">
-  </button>
-  <button type="button" onclick="show()" id="button-gallery3" itemid="links">
- </button>
- <button type="button" onclick="show()" id="button-gallery5" itemid="links">
-</button>
-<button type="button" onclick="show()" id="button-gallery6" itemid="links">
-</button>
-<button type="button" onclick="show()" id="button-gallery7" itemid="links">
-</button>
-<button type="button" onclick="show()" id="button-gallery8" itemid="links">
-</button>
-<button type="button" onclick="show()" id="button-gallery9" itemid="links">
-</button>
- 
-  <script>
-      function show() {
-          /* Access image by id and change 
-          the display property to block*/
-          document.getElementById('photo-blur')
-              .style.display = "block";
-          document.getElementById('photo-text1')  /* THE BICYCLE KICK */
-              .style.display = "initial";
-          document.getElementById('photo-text2')
-              .style.display = "initial";
-          document.getElementById('photo-text3')
-              .style.display = "initial";
-          document.getElementById('photo-text4')
-              .style.display = "initial";
-          document.getElementById('photo-text5')
-              .style.display = "initial";
-          document.getElementById('photo-text6')  /* MAINOO'S BREAKTHROUGH */
-              .style.display = "initial";
-          document.getElementById('button-gallery2')  /* button 1 */
-              .style.display = "none";
-          document.getElementById('button-gallery3')  /* button 2 */
-              .style.display = "none";
-          document.getElementById('button-gallery5')  /* button 3 */
-              .style.display = "none";
-          document.getElementById('button-gallery6')  /* button 3 */
-              .style.display = "none";
-          document.getElementById('button-gallery7')  /* button 3 */
-              .style.display = "none";
-          document.getElementById('button-gallery8')  /* button 3 */
-              .style.display = "none";
-          document.getElementById('button-gallery9')  /* button 3 */
-              .style.display = "none";
-      }
-  </script>
-  </div>
+     <div class="class-button-photo">    <!-- photo gallery -->
+          <button type="button" onclick="show()" id="button-gallery2" itemid="links"></button>
+          <button type="button" onclick="show()" id="button-gallery3" itemid="links"></button>
+          <button type="button" onclick="show()" id="button-gallery5" itemid="links"></button>
+          <button type="button" onclick="show()" id="button-gallery6" itemid="links"></button>
+          <button type="button" onclick="show()" id="button-gallery7" itemid="links"></button>
+          <button type="button" onclick="show()" id="button-gallery8" itemid="links"></button>
+          <button type="button" onclick="show()" id="button-gallery9" itemid="links"></button>
+          <script>
+               function show() {
+                    /* Access image by id and change 
+                    the display property to block*/
+                    document.getElementById('photo-blur')
+                         .style.display = "block";
+                    document.getElementById('photo-text1')  /* THE BICYCLE KICK */
+                         .style.display = "initial";
+                    document.getElementById('photo-text2')
+                         .style.display = "initial";
+                    document.getElementById('photo-text3')
+                         .style.display = "initial";
+                    document.getElementById('photo-text4')
+                         .style.display = "initial";
+                    document.getElementById('photo-text5')
+                         .style.display = "initial";
+                    document.getElementById('photo-text6')  /* MAINOO'S BREAKTHROUGH */
+                         .style.display = "initial";
+                    document.getElementById('button-gallery2')  /* button 1 */
+                         .style.display = "none";
+                    document.getElementById('button-gallery3')  /* button 2 */
+                         .style.display = "none";
+                    document.getElementById('button-gallery5')  /* button 3 */
+                         .style.display = "none";
+                    document.getElementById('button-gallery6')  /* button 3 */
+                         .style.display = "none";
+                    document.getElementById('button-gallery7')  /* button 3 */
+                         .style.display = "none";
+                    document.getElementById('button-gallery8')  /* button 3 */
+                         .style.display = "none";
+                    document.getElementById('button-gallery9')  /* button 3 */
+                         .style.display = "none";
+               }
+          </script>
+     </div>
 
-  <div class="class-button-gallery">       <!-- 'expectations' -->
-     <button type="button" onclick="show2()" id="button-gallery" itemid="links">
-      <span1>CLICK TO READ TEXT</span1>
-      <span2>TAP TO READ TEXT</span2>
-  </button>
- 
-  <script>
-      function show2() {
-          /* Access image by id and change 
-          the display property to block*/
-          document.getElementById('gallery-blur1')
-              .style.display = "block";
-          document.getElementById('button-gallery')
-              .style.display = "none";
-      }
-  </script>
-  </div>
+     <div class="class-button-gallery">       <!-- 'expectations' -->
+          <button type="button" onclick="show2()" id="button-gallery" itemid="links">
+               <span1>CLICK TO READ TEXT</span1>
+               <span2>TAP TO READ TEXT</span2>
+          </button> 
+          <script>
+               function show2() {
+                    /* Access image by id and change 
+                    the display property to block*/
+                    document.getElementById('gallery-blur1')
+                         .style.display = "block";
+                    document.getElementById('button-gallery')
+                         .style.display = "none";
+               }
+          </script>
+     </div>
 
-         <!-- LEGEND TO MATCH RATINGS -->
+     <!-- LEGEND TO MATCH RATINGS -->
      <div class="legend">
           <div class="legend-1">3 -</div>
           <div class="legend-2">4</div>
@@ -366,98 +348,89 @@
           <button type="button" onclick="show3()" id="button-gallery4" itemid="links">
                <span1>CLICK TO REVEAL SCORES AND MATCH RATINGS</span1>
                <span2>TAP TO REVEAL SCORES AND MATCH RATINGS</span2>
-       </button>
+          </button>
       
-       <script>
-           function show3() {
-               /* Access image by id and change 
-               the display property to block*/
-               document.getElementById('result')  /* score - match #1 */
-                   .style.display = "initial";  /* initial when it comes to text */
-               document.getElementById('result1')  /* score - match #2 */
-                   .style.display = "initial";  /* initial when it comes to text */
-               document.getElementById('ratings')
-                   .style.display = "initial";
-               document.getElementById('button-gallery4')  /* button 1 */
-                   .style.display = "none";
-           }
-       </script>
-       </div>
+          <script>
+               function show3() {
+                    /* Access image by id and change 
+                    the display property to block*/
+                    document.getElementById('result')  /* score - match #1 */
+                         .style.display = "initial";  /* initial when it comes to text */
+                    document.getElementById('result1')  /* score - match #2 */
+                         .style.display = "initial";  /* initial when it comes to text */
+                    document.getElementById('ratings')
+                         .style.display = "initial";
+                    document.getElementById('button-gallery4')  /* button 1 */
+                         .style.display = "none";
+               }
+          </script>
+     </div>
 
-    <div class="date-and-result">
-         <!-- line break: https://developer.mozilla.org/en-US/docs/Web/CSS/line-break -->
+     <div class="date-and-result">
+          <!-- line break: https://developer.mozilla.org/en-US/docs/Web/CSS/line-break -->
           <!-- longest date: Wed, 22 Aug 2222; longest team: Bournemouth 2 -->
-         <a href="#match1"><h8><span id="date1">Wed, 22 Aug 2222</span><br />Man Utd <span id="result">1</span><br />Bournemouth <span id="result1">2</span></h8></a>
-         <a href="#match2"><h9><span id="date1">Wed, 22 Aug 2222</span><br />Tottenham 2<br />Man Utd 0</h9></a>
-         <h10><span id="date1">Wed, 22 Aug 2222</span><br />Man Utd 3<br />Forest 2</h10>
-         <h11><span id="date1">Wed, 22 Aug 2222</span><br />Arsenal 3<br />Man Utd 1</h11>
-         <h12><span id="date1">Wed, 22 Aug 2222</span><br />Man Utd 1<br />Brighton 3</h12>
-         <h13><span id="date1">Wed, 22 Aug 2222</span><br />Bayern 4<br />Man Utd 3</h13>
-         <h14><span id="date1">Wed, 22 Aug 2222</span><br />Burnley 0<br />Man Utd 1</h14>
-         <h15><span id="date1">Wed, 22 Aug 2222</span><br />Bournemouth 2<br />Man Utd 2</h15>
-         <h16><span id="date1">Wed, 22 Aug 2222</span><br />Man Utd 3<br />C. Palace 0</h16>
-         <h17><span id="date1">Wed, 22 Aug 2222</span><br />Man Utd 2<br />Galatasaray 3</h17>
-         <h18><span id="date1">Wed, 22 Aug 2222</span><br />Man Utd 2<br />Bournemouth 2</h18>
-    </div>
+          <a href="#match1"><h8><span id="date1">Wed, 22 Aug 2222</span><br />Man Utd <span id="result">1</span><br />Bournemouth <span id="result1">2</span></h8></a>
+          <a href="#match2"><h9><span id="date1">Wed, 22 Aug 2222</span><br />Tottenham 2<br />Man Utd 0</h9></a>
+          <h10><span id="date1">Wed, 22 Aug 2222</span><br />Man Utd 3<br />Forest 2</h10>
+          <h11><span id="date1">Wed, 22 Aug 2222</span><br />Arsenal 3<br />Man Utd 1</h11>
+          <h12><span id="date1">Wed, 22 Aug 2222</span><br />Man Utd 1<br />Brighton 3</h12>
+          <h13><span id="date1">Wed, 22 Aug 2222</span><br />Bayern 4<br />Man Utd 3</h13>
+          <h14><span id="date1">Wed, 22 Aug 2222</span><br />Burnley 0<br />Man Utd 1</h14>
+          <h15><span id="date1">Wed, 22 Aug 2222</span><br />Bournemouth 2<br />Man Utd 2</h15>
+          <h16><span id="date1">Wed, 22 Aug 2222</span><br />Man Utd 3<br />C. Palace 0</h16>
+          <h17><span id="date1">Wed, 22 Aug 2222</span><br />Man Utd 2<br />Galatasaray 3</h17>
+          <h18><span id="date1">Wed, 22 Aug 2222</span><br />Man Utd 2<br />Bournemouth 2</h18>
+     </div>
 
      <div class="ratings">
-         <img src="underground/match-performance-o-meter.png" id="ratings">
-    </div>
+          <img src="underground/match-performance-o-meter.png" id="ratings">
+     </div>
 
-        <!-- CUBOIDS -->
-        <section class="cuboid1" id="cuboid1">
+     <!-- CUBOIDS -->
+     <section class="cuboid1" id="cuboid1">
           <div>
                <span style="--i:0;" id="cuboid1-side1"></span>
                <span style="--i:1;" id="cuboid1-side4"></span>
                <span style="--i:2;" id="cuboid1-side3"></span>
                <span style="--i:3;" id="cuboid1-side2"></span>
           </div>
-    </section>
-    <section class="cuboid2" id="cuboid2">
-     <div>
-          <span style="--i:0;" id="cuboid2-side1"></span>
-          <span style="--i:1;" id="cuboid2-side4"></span>
-          <span style="--i:2;" id="cuboid2-side3"></span>
-          <span style="--i:3;" id="cuboid2-side2"></span>
-     </div>
-</section>
-    <!-- CUBOIDS -->
+     </section>
+     <section class="cuboid2" id="cuboid2">
+          <div>
+               <span style="--i:0;" id="cuboid2-side1"></span>
+               <span style="--i:1;" id="cuboid2-side4"></span>
+               <span style="--i:2;" id="cuboid2-side3"></span>
+               <span style="--i:3;" id="cuboid2-side2"></span>
+          </div>
+     </section>
+     <!-- CUBOIDS -->
 
-
-
-
-
-
-
+     <img class="iron-columns" src="underground/transfers.png">
 
      <!-- DROPDOWNS -->
-      <!-- https://www.youtube.com/watch?v=uupOWz65O4M-->
-      <section class="dropdowns-section">
-          <div class="nav_container">
-               
+     <!-- https://www.youtube.com/watch?v=uupOWz65O4M-->
+     <section class="dropdowns-section">
+          <div class="nav_container">               
                <ul class="dropdown" id="menu">
+                    
                     <li class="dropdown_list">
                          <a href="#" class="dropdown_link-transfers" id="dropdowns">
                               <span class="open" id="open">OPEN</span>
                               <span class="close" id="close">CLOSE</span>
-
                               <!-- <input type="checkbox" class="dropdown_check"><span class="transfers-title">transfers</span> -->
                               <input type="checkbox" class="dropdown_check"><span class="transfers-title">trans<span1>f</span1>ers</span>
                          </a>
-
                          <div class="dropdown_content">
-
                               <ul class="dropdown_sub">
-
                                    <li class="dropdown_li">
                                         <!-- I added this class to make dropdown content fit the width of screen -->
                                         <img class="dropdown-content" src="underground/transfers-dropdown.png" alt="">
+                                        <img class="dropdown-content" src="underground/transfers-dropdown1.png" alt="">
+                                        <img class="dropdown-content" src="underground/transfers-dropdown2.png" alt="">
+                                        <img class="dropdown-content" src="underground/transfers-dropdown3.png" alt="">
                                    </li>
-
                               </ul>
-
                          </div>
-
                     </li>
 
 
@@ -465,23 +438,24 @@
                          <a href="#" class="dropdown_link-stats" id="dropdowns">
                               <span class="open1">OPEN</span>
                               <span class="close1">CLOSE</span>
-
                               <input type="checkbox" class="dropdown_check"><span class="stats-title"><span1>23/24&nbsp;</span1>&nbsp;stats</span>
                          </a>
-
                          <div class="dropdown_content">
-
                               <ul class="dropdown_sub">
-
                                    <li class="dropdown_li">
                                         <!-- I added this class to make dropdown content fit the width of screen -->
-                                        <img class="dropdown-content" src="underground/stats-dropdown.png" alt="">
+                                        <!-- <img class="dropdown-content" src="underground/stats-dropdown.png" alt=""> -->
+                                        <img class="dropdown-content" src="underground/stats-dropdown1.png" alt="">
+                                        <img class="dropdown-content" src="underground/stats-dropdown2.png" alt="">
+                                        <img class="dropdown-content" src="underground/stats-dropdown3.png" alt="">
+                                        <img class="dropdown-content" src="underground/stats-dropdown4.png" alt="">
+                                        <img class="dropdown-content" src="underground/stats-dropdown5.png" alt="">
+                                        <img class="dropdown-content" src="underground/stats-dropdown6.png" alt="">
+                                        <img class="dropdown-content" src="underground/stats-dropdown7.png" alt="">
+                                        <img class="dropdown-content" src="underground/stats-dropdown8.png" alt="">
                                    </li>
-
                               </ul>
-
                          </div>
-
                     </li>
 
 
@@ -489,23 +463,17 @@
                          <a href="#" class="dropdown_link-player-performance" id="dropdowns">
                               <span class="open">OPEN</span>
                               <span class="close">CLOSE</span>
-
                               <input type="checkbox" class="dropdown_check"><span class="player-performance-title">P<span1>layer</span1> P<span1>erformance</span1></span>
                          </a>
-
                          <div class="dropdown_content">
-
                               <ul class="dropdown_sub">
-
                                    <li class="dropdown_li">
                                         <!-- I added this class to make dropdown content fit the width of screen -->
                                         <img class="dropdown-content" src="underground/player-performance-dropdown.png" alt="">
+                                        <img class="dropdown-content" src="underground/player-performance-dropdown2.png" alt="">
                                    </li>
-
                               </ul>
-
                          </div>
-
                     </li>
 
 
@@ -513,23 +481,17 @@
                          <a href="#" class="dropdown_link-player-stats" id="dropdowns">
                               <span class="open1">OPEN</span>
                               <span class="close1">CLOSE</span>
-
                               <input type="checkbox" class="dropdown_check"><span class="player-stats-title">Player Stats</span>
                          </a>
-
                          <div class="dropdown_content">
-
                               <ul class="dropdown_sub">
-
                                    <li class="dropdown_li">
                                         <!-- I added this class to make dropdown content fit the width of screen -->
                                         <img class="dropdown-content" src="underground/player-stats-dropdown.png" alt="">
+                                        <img class="dropdown-content" src="underground/player-stats-dropdown2.png" alt="">
                                    </li>
-
                               </ul>
-
                          </div>
-
                     </li>
 
 
@@ -540,14 +502,10 @@
                     </li>
 
 
-
-
                     <li class="dropdown_list" id="jump" itemid="dropdown-matches">
                          <a href="#" class="dropdown_link-preseason" id="dropdowns">
-
                               <input type="checkbox" class="dropdown_check"><span class="player-stats-below"></span>
                          </a>
-
                          <div class="dropdown_content">
                               <ul class="dropdown_sub">
                                    <li class="dropdown_li">
@@ -559,59 +517,42 @@
                     </li>
 
 
-
-
                     <li class="dropdown_list" itemid="dropdown-matches" id="match1">
                          <a href="#" class="dropdown_link-1st-match" id="dropdowns">
-
                               <div class="pre-match1">
                                    <div class="news1">
-                                      <!-- I learned of "&nbsp;" value to add non-breaking space thanks to: https://blog.hubspot.com/website/html-space#:~:text=The%20simplest%20way%20to%20add,%3B%20or%20. -->
+                                        <!-- I learned of "&nbsp;" value to add non-breaking space thanks to: https://blog.hubspot.com/website/html-space#:~:text=The%20simplest%20way%20to%20add,%3B%20or%20. -->
                                         <div><span>&nbsp;&nbsp;WE ARE 14TH IN THE PREM AND 5TH IN THE LEAGUE PHASE OF THE CHAMPIONS LEAGUE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;RUUD'S LAST MATCH AS INTERIM WITH A GRATE RECORD: WIN - DRAW - WIN - WIN&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;AMORIM'S SPORTING BEAT 5-3 AWAY AGAINST BRAGA WITH A COMEBACK BEFORE HIS ARRIVAL AT CARRIGTON AS OUR NEW MANAGER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;NORTHERN WEMBLEY IS NEW OLD TRAFFORD&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;VALENCIA FLOODS</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
                                         <div><span>&nbsp;&nbsp;WE ARE 14TH IN THE PREM AND 5TH IN THE LEAGUE PHASE OF THE CHAMPIONS LEAGUE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;RUUD'S LAST MATCH AS INTERIM WITH A GRATE RECORD: WIN - DRAW - WIN - WIN&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;AMORIM'S SPORTING BEAT 5-3 AWAY AGAINST BRAGA WITH A COMEBACK BEFORE HIS ARRIVAL AT CARRIGTON AS OUR NEW MANAGER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;NORTHERN WEMBLEY IS NEW OLD TRAFFORD&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;VALENCIA FLOODS</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
                                    </div>
                               </div>
-
-                              
-
-                                   <div class="pre-match1-skew">
-                                        <div class="news1-skew">
-                                             <!-- I learned of "&nbsp;" value to add non-breaking space thanks to: https://blog.hubspot.com/website/html-space#:~:text=The%20simplest%20way%20to%20add,%3B%20or%20. -->
-                                             <div><span>&nbsp;&nbsp;WE ARE 14TH IN THE PREM AND 5TH IN THE LEAGUE PHASE OF THE CHAMPIONS LEAGUE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;RUUD'S LAST MATCH AS INTERIM WITH A GRATE RECORD: WIN - DRAW - WIN - WIN&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;AMORIM'S SPORTING BEAT 5-3 AWAY AGAINST BRAGA WITH A COMEBACK BEFORE HIS ARRIVAL AT CARRIGTON AS OUR NEW MANAGER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;NORTHERN WEMBLEY IS NEW OLD TRAFFORD&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;VALENCIA FLOODS</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
-                                             <div><span>&nbsp;&nbsp;WE ARE 14TH IN THE PREM AND 5TH IN THE LEAGUE PHASE OF THE CHAMPIONS LEAGUE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;RUUD'S LAST MATCH AS INTERIM WITH A GRATE RECORD: WIN - DRAW - WIN - WIN&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;AMORIM'S SPORTING BEAT 5-3 AWAY AGAINST BRAGA WITH A COMEBACK BEFORE HIS ARRIVAL AT CARRIGTON AS OUR NEW MANAGER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;NORTHERN WEMBLEY IS NEW OLD TRAFFORD&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;VALENCIA FLOODS</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
-                                        </div>
+                              <div class="pre-match1-skew">
+                                   <div class="news1-skew">
+                                        <!-- I learned of "&nbsp;" value to add non-breaking space thanks to: https://blog.hubspot.com/website/html-space#:~:text=The%20simplest%20way%20to%20add,%3B%20or%20. -->
+                                        <div><span>&nbsp;&nbsp;WE ARE 14TH IN THE PREM AND 5TH IN THE LEAGUE PHASE OF THE CHAMPIONS LEAGUE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;RUUD'S LAST MATCH AS INTERIM WITH A GRATE RECORD: WIN - DRAW - WIN - WIN&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;AMORIM'S SPORTING BEAT 5-3 AWAY AGAINST BRAGA WITH A COMEBACK BEFORE HIS ARRIVAL AT CARRIGTON AS OUR NEW MANAGER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;NORTHERN WEMBLEY IS NEW OLD TRAFFORD&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;VALENCIA FLOODS</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
+                                        <div><span>&nbsp;&nbsp;WE ARE 14TH IN THE PREM AND 5TH IN THE LEAGUE PHASE OF THE CHAMPIONS LEAGUE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;RUUD'S LAST MATCH AS INTERIM WITH A GRATE RECORD: WIN - DRAW - WIN - WIN&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;AMORIM'S SPORTING BEAT 5-3 AWAY AGAINST BRAGA WITH A COMEBACK BEFORE HIS ARRIVAL AT CARRIGTON AS OUR NEW MANAGER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;NORTHERN WEMBLEY IS NEW OLD TRAFFORD&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;VALENCIA FLOODS</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
                                    </div>
-
-
-
-                                   
-
-                                   <div class="post-match1">
-                                        <div class="news1">
-                                           <!-- I learned of "&nbsp;" value to add non-breaking space thanks to: https://blog.hubspot.com/website/html-space#:~:text=The%20simplest%20way%20to%20add,%3B%20or%20. -->
-                                             <div><span>&nbsp;&nbsp;WE ARE 14TH IN THE PREM AND 5TH IN THE LEAGUE PHASE OF THE CHAMPIONS LEAGUE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;RUUD'S LAST MATCH AS INTERIM WITH A GRATE RECORD: WIN - DRAW - WIN - WIN&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;AMORIM'S SPORTING BEAT 5-3 AWAY AGAINST BRAGA WITH A COMEBACK BEFORE HIS ARRIVAL AT CARRIGTON AS OUR NEW MANAGER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;NORTHERN WEMBLEY IS NEW OLD TRAFFORD&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;VALENCIA FLOODS</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
-                                             <div><span>&nbsp;&nbsp;WE ARE 14TH IN THE PREM AND 5TH IN THE LEAGUE PHASE OF THE CHAMPIONS LEAGUE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;RUUD'S LAST MATCH AS INTERIM WITH A GRATE RECORD: WIN - DRAW - WIN - WIN&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;AMORIM'S SPORTING BEAT 5-3 AWAY AGAINST BRAGA WITH A COMEBACK BEFORE HIS ARRIVAL AT CARRIGTON AS OUR NEW MANAGER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;NORTHERN WEMBLEY IS NEW OLD TRAFFORD&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;VALENCIA FLOODS</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
-                                        </div>
+                              </div>
+                              <div class="post-match1">
+                                   <div class="news1">
+                                        <!-- I learned of "&nbsp;" value to add non-breaking space thanks to: https://blog.hubspot.com/website/html-space#:~:text=The%20simplest%20way%20to%20add,%3B%20or%20. -->
+                                        <div><span>&nbsp;&nbsp;WE ARE 14TH IN THE PREM AND 5TH IN THE LEAGUE PHASE OF THE CHAMPIONS LEAGUE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;RUUD'S LAST MATCH AS INTERIM WITH A GRATE RECORD: WIN - DRAW - WIN - WIN&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;AMORIM'S SPORTING BEAT 5-3 AWAY AGAINST BRAGA WITH A COMEBACK BEFORE HIS ARRIVAL AT CARRIGTON AS OUR NEW MANAGER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;NORTHERN WEMBLEY IS NEW OLD TRAFFORD&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;VALENCIA FLOODS</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
+                                        <div><span>&nbsp;&nbsp;WE ARE 14TH IN THE PREM AND 5TH IN THE LEAGUE PHASE OF THE CHAMPIONS LEAGUE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;RUUD'S LAST MATCH AS INTERIM WITH A GRATE RECORD: WIN - DRAW - WIN - WIN&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;AMORIM'S SPORTING BEAT 5-3 AWAY AGAINST BRAGA WITH A COMEBACK BEFORE HIS ARRIVAL AT CARRIGTON AS OUR NEW MANAGER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;NORTHERN WEMBLEY IS NEW OLD TRAFFORD&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;VALENCIA FLOODS</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
                                    </div>
-
-                                   <div class="post-match1-skew">
-                                        <div class="news1-skew">
-                                             <!-- I learned of "&nbsp;" value to add non-breaking space thanks to: https://blog.hubspot.com/website/html-space#:~:text=The%20simplest%20way%20to%20add,%3B%20or%20. -->
-                                             <div><span>&nbsp;&nbsp;WE ARE 14TH IN THE PREM AND 5TH IN THE LEAGUE PHASE OF THE CHAMPIONS LEAGUE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;RUUD'S LAST MATCH AS INTERIM WITH A GRATE RECORD: WIN - DRAW - WIN - WIN&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;AMORIM'S SPORTING BEAT 5-3 AWAY AGAINST BRAGA WITH A COMEBACK BEFORE HIS ARRIVAL AT CARRIGTON AS OUR NEW MANAGER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;NORTHERN WEMBLEY IS NEW OLD TRAFFORD&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;VALENCIA FLOODS</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
-                                             <div><span>&nbsp;&nbsp;WE ARE 14TH IN THE PREM AND 5TH IN THE LEAGUE PHASE OF THE CHAMPIONS LEAGUE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;RUUD'S LAST MATCH AS INTERIM WITH A GRATE RECORD: WIN - DRAW - WIN - WIN&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;AMORIM'S SPORTING BEAT 5-3 AWAY AGAINST BRAGA WITH A COMEBACK BEFORE HIS ARRIVAL AT CARRIGTON AS OUR NEW MANAGER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;NORTHERN WEMBLEY IS NEW OLD TRAFFORD&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;VALENCIA FLOODS</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
-                                        </div>
+                              </div>
+                              <div class="post-match1-skew">
+                                   <div class="news1-skew">
+                                        <!-- I learned of "&nbsp;" value to add non-breaking space thanks to: https://blog.hubspot.com/website/html-space#:~:text=The%20simplest%20way%20to%20add,%3B%20or%20. -->
+                                        <div><span>&nbsp;&nbsp;WE ARE 14TH IN THE PREM AND 5TH IN THE LEAGUE PHASE OF THE CHAMPIONS LEAGUE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;RUUD'S LAST MATCH AS INTERIM WITH A GRATE RECORD: WIN - DRAW - WIN - WIN&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;AMORIM'S SPORTING BEAT 5-3 AWAY AGAINST BRAGA WITH A COMEBACK BEFORE HIS ARRIVAL AT CARRIGTON AS OUR NEW MANAGER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;NORTHERN WEMBLEY IS NEW OLD TRAFFORD&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;VALENCIA FLOODS</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
+                                        <div><span>&nbsp;&nbsp;WE ARE 14TH IN THE PREM AND 5TH IN THE LEAGUE PHASE OF THE CHAMPIONS LEAGUE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;RUUD'S LAST MATCH AS INTERIM WITH A GRATE RECORD: WIN - DRAW - WIN - WIN&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;AMORIM'S SPORTING BEAT 5-3 AWAY AGAINST BRAGA WITH A COMEBACK BEFORE HIS ARRIVAL AT CARRIGTON AS OUR NEW MANAGER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;NORTHERN WEMBLEY IS NEW OLD TRAFFORD&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;VALENCIA FLOODS</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
                                    </div>
-                              
+                              </div>                              
                               <img src="underground/1st-match-cover1.png" class="cover1" id="cover1">
                               <img src="underground/1st-match-cover.png" class="cover" id="cover">
                               <span class="close4">&nbsp;</span>
                               <span class="close3">MON, 22 AUG 2024 | 22:00 | LEAGUE PHASE MATCH 8</span>
-
-                              <input type="checkbox" class="dropdown_check"><span class="player-stats-below"></span>  <!-- this goes last to avoid page jump -->
-
-                              
+                              <input type="checkbox" class="dropdown_check"><span class="player-stats-below"></span>  <!-- this goes last to avoid page jump -->                              
                          </a>
-
                          <div class="class-button-photo">    <!-- photo gallery -->
                               <button type="button" onclick="show7()" id="button-gallery20" itemid="links">
                                    <span></span>
@@ -619,77 +560,155 @@
                                    <span></span>
                                    <span></span>
                                    <h60>CLICK FOR SCORE & NEWS</h60>
-                           </button>
-                          
-                           <script>
-                               function show7() {
-                                   document.getElementById('cover1')
-                                       .style.display = "none";
-                                   document.getElementById('cover')
-                                       .style.display = "none";
-                                   document.getElementById('button-gallery20')  /* button 20 */
-                                       .style.display = "none";
-                               }
-                           </script>
-                           </div>
-
+                              </button>
+                              <script>
+                                   function show7() {
+                                        document.getElementById('cover1')
+                                             .style.display = "none";
+                                        document.getElementById('cover')
+                                             .style.display = "none";
+                                        document.getElementById('button-gallery20')  /* button 20 */
+                                             .style.display = "none";
+                                   }
+                              </script>
+                         </div>
                          <div class="dropdown-background">
                               <div class="dropdown_content-matches">
                                    <ul class="dropdown_sub">
                                         <li class="dropdown_li">
                                              <!-- show image onclick, I used the first method here: https://www.geeksforgeeks.org/how-to-show-images-on-click-using-html/ -->
-                                            <button type="button" onclick="show15()" id="button2" itemid="links">
-                                              <h70>CLICK HERE FOR MATCH STATS, STARTING XI, COMMENTS, AND MORE</h70>
-                                              <h71>TAP HERE FOR MATCH STATS, STARTING XI, COMMENTS, AND MORE</h71>
-                                          </button>
-                                      
-                                          <script>
-                                              function show15() {
-                                                  /* Access image by id and change 
-                                                  the display property to block*/
-                                                  document.getElementById('image')
-                                                      .style.display = "block";
-                                                  document.getElementById('button2')
-                                                      .style.display = "none";
-                                                  document.getElementById('bottom')
-                                                      .style.display = "none";
-                                              }
-                                          </script>
-                                          <div id="image">
-                                             <!-- I added this class to make dropdown content fit the width of screen width="100%" height="286" -->
-                                             <img class="dropdown-content-historical" src="underground/1st-match-content-alt.png" alt="">
-                                             <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content2.png" alt="">
-                                             <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content3.png" alt="">
-                                             <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content4.png" alt="">
-                                             
-          <div class="wrapper1">
-               <div class="words1">
-                    <img src="underground/AIG.png" alt="">
-                    <img src="underground/badge.png" alt="">
-                    <img src="underground/AIG.png" alt="">
-               </div>
-          </div>
-                                             <img class="dropdown-content-historical" id="dropdown-content-match" src="underground/1st-match-content5.png" alt="">                                               
-                <!-- display:none --> <!-- <iframe src="https://widgets.sofascore.com/embed/attackMomentum?id=12436494&widgetTheme=dark"></iframe> -->
-                <!-- display:none --> <!-- <img class="dropdown-content-historical1" id="dropdown-content-match" src="underground/1st-match-content6.png" alt=""> -->
-                                             <img class="dropdown-content-historical3" src="underground/1st-match-content6-5.png" alt="">          
-                                             <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content7.png" alt="">                                                                      
-                                             <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content8.png" alt="">                                                                        
-                                             <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content9.png" alt="">                                                                                                                          
-                                             <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content10.png" alt="">                                                                                                                          
-                                             <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content11.png" alt="">                                                                                                                          
-                                             <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content12.png" alt="">                                                                                                                          
-                                             <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content13.png" alt="">                                                                                                                          
-                                             <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content14.png" alt="">
-                                        </div>
-                                        <div id="bottom">
-                                         <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content14-alt.png" alt="">
-                                        </div>
-                                        </li>
+                                             <button type="button" onclick="show15()" id="button2" itemid="links">
+                                                  <h70>CLICK HERE FOR MATCH STATS, STARTING XI, COMMENTS, AND MORE</h70>
+                                                  <h71>TAP HERE FOR MATCH STATS, STARTING XI, COMMENTS, AND MORE</h71>
+                                             </button>                                      
+                                             <script>
+                                                  function show15() {
+                                                       /* Access image by id and change 
+                                                       the display property to block*/
+                                                       document.getElementById('image')
+                                                            .style.display = "block";
+                                                       document.getElementById('button2')
+                                                            .style.display = "none";
+                                                       document.getElementById('bottom')
+                                                            .style.display = "none";
+                                                  }
+                                             </script>
+                                             <div id="image">
+                                                  <!-- I added this class to make dropdown content fit the width of screen width="100%" height="286" -->
+                                                  <img class="dropdown-content-historical" src="underground/1st-match-content.png" alt="">
+                                                  <div class="badges-and-sponsors">
+                                                       <div class="wrapper1-left">
+                                                            <div class="words1-left">
+                                                                 <img src="underground/Snapdragon.png" alt="">
+                                                                 <img src="underground/badge-color.png" alt="">
+                                                                 <img src="underground/Snapdragon.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                       <div class="wrapper1-right">
+                                                            <div class="words1-right">
+                                                                 <img src="underground/badge-color.png" alt="">
+                                                                 <img src="underground/Snapdragon.png" alt="">
+                                                                 <img src="underground/badge-color.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content2.png" alt="">
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content3.png" alt="">
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content4.png" alt="">
+                                                  <img class="dropdown-content-historical" id="dropdown-content-match" src="underground/1st-match-content5.png" alt="">                                               
+                                                  <!-- display:none --> <!-- <iframe src="https://widgets.sofascore.com/embed/attackMomentum?id=12436494&widgetTheme=dark"></iframe> -->
+                                                  <!-- display:none --> <!-- <img class="dropdown-content-historical1" id="dropdown-content-match" src="underground/1st-match-content6.png" alt=""> -->
+                                                  <img class="dropdown-content-historical3" src="underground/1st-match-content6-5.png" alt="">          
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content7.png" alt="">  
+                                                  <div class="badges-and-sponsors">
+                                                       <div class="wrapper1-5-left">
+                                                            <div class="words1-5-left">
+                                                                 <img src="underground/Snapdragon.png" alt="">
+                                                                 <img src="underground/badge-color.png" alt="">
+                                                                 <img src="underground/Snapdragon.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                       <div class="wrapper1-5-right">
+                                                            <div class="words1-5-right">
+                                                                 <img src="underground/badge-color.png" alt="">
+                                                                 <img src="underground/Snapdragon.png" alt="">
+                                                                 <img src="underground/badge-color.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                  </div>                                                                
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content8.png" alt="">                                                                        
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content9.png" alt="">                                                                                                                          
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content10.png" alt="">                                                                                                                          
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content11.png" alt="">                                                                                                                          
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content12.png" alt="">                                                                                                                          
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content13.png" alt="">                                                                                                                          
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content14.png" alt="">
+                                             </div>
+                                             <div id="bottom">
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content14-alt.png" alt="">
+                                                  <div class="badges-and-sponsors1">
+                                                       <div class="wrapper2">
+                                                            <div class="words2">
+                                                                 <img src="underground/AIG.png" alt="">
+                                                                 <img src="underground/badge-color.png" alt="">
+                                                                 <img src="underground/AIG.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                       <div class="wrapper3">
+                                                            <div class="words3">
+                                                                 <img src="underground/badge-color.png" alt="">
+                                                                 <img src="underground/Vodafone-black.png" alt="">
+                                                                 <img src="underground/badge-color.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                       <div class="wrapper4">
+                                                            <div class="words4">
+                                                                 <img src="underground/Chevrolet.png" alt="">
+                                                                 <img src="underground/badge-white.png" alt="">
+                                                                 <img src="underground/Chevrolet.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                       <div class="wrapper5">
+                                                            <div class="words5">
+                                                                 <img src="underground/badge1.png" alt="">
+                                                                 <img src="underground/Sharp.png" alt="">
+                                                                 <img src="underground/badge1.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                       <div class="wrapper6">
+                                                            <div class="words6">
+                                                                 <img src="underground/badge2.png" alt="">
+                                                                 <img src="underground/Sharp-red.png" alt="">
+                                                                 <img src="underground/badge2.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                       <div class="wrapper7">
+                                                            <div class="words7">
+                                                                 <img src="underground/Vodafone.png" alt="">
+                                                                 <img src="underground/badge-color.png" alt="">
+                                                                 <img src="underground/Vodafone.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                       <div class="wrapper8">
+                                                            <div class="words8">
+                                                                 <img src="underground/badge-black.png" alt="">
+                                                                 <img src="underground/Sharp-black.png" alt="">
+                                                                 <img src="underground/badge-black.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                       <div class="wrapper9">
+                                                            <div class="words9">
+                                                                 <img src="underground/AIG-color.png" alt="">
+                                                                 <img src="underground/badge-color.png" alt="">
+                                                                 <img src="underground/AIG-color.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </li>                                        
                                    </ul>
                               </div>
-                         </div>
-                         
+                         </div>                         
                          <div class="links1">
                               <!-- add link to website: https://www.youtube.com/shorts/44t-FMQVGDM
                                    value to open link in new tab: https://stackoverflow.com/questions/17711146/how-to-open-link-in-a-new-tab-in-html -->
@@ -697,42 +716,231 @@
                                    https://www.flashscore.com/match/KK9ggF3s/#/news
                               </a>
                          </div>
-
                     </li>
+
+
+                    <li class="dropdown_list" itemid="dropdown-matches" id="match2">
+                         <a href="#" class="dropdown_link-2nd-match" id="dropdowns">
+                              <div class="pre-match1">
+                                   <div class="news1">
+                                        <!-- I learned of "&nbsp;" value to add non-breaking space thanks to: https://blog.hubspot.com/website/html-space#:~:text=The%20simplest%20way%20to%20add,%3B%20or%20. -->
+                                        <div><span>&nbsp;&nbsp;WE ARE 14TH IN THE PREM AND 5TH IN THE LEAGUE PHASE OF THE CHAMPIONS LEAGUE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;RUUD'S LAST MATCH AS INTERIM WITH A GRATE RECORD: WIN - DRAW - WIN - WIN&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;AMORIM'S SPORTING BEAT 5-3 AWAY AGAINST BRAGA WITH A COMEBACK BEFORE HIS ARRIVAL AT CARRIGTON AS OUR NEW MANAGER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;NORTHERN WEMBLEY IS NEW OLD TRAFFORD&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;VALENCIA FLOODS</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
+                                        <div><span>&nbsp;&nbsp;WE ARE 14TH IN THE PREM AND 5TH IN THE LEAGUE PHASE OF THE CHAMPIONS LEAGUE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;RUUD'S LAST MATCH AS INTERIM WITH A GRATE RECORD: WIN - DRAW - WIN - WIN&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;AMORIM'S SPORTING BEAT 5-3 AWAY AGAINST BRAGA WITH A COMEBACK BEFORE HIS ARRIVAL AT CARRIGTON AS OUR NEW MANAGER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;NORTHERN WEMBLEY IS NEW OLD TRAFFORD&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;VALENCIA FLOODS</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
+                                   </div>
+                              </div>
+                              <div class="pre-match1-skew">
+                                   <div class="news1-skew">
+                                        <!-- I learned of "&nbsp;" value to add non-breaking space thanks to: https://blog.hubspot.com/website/html-space#:~:text=The%20simplest%20way%20to%20add,%3B%20or%20. -->
+                                        <div><span>&nbsp;&nbsp;WE ARE 14TH IN THE PREM AND 5TH IN THE LEAGUE PHASE OF THE CHAMPIONS LEAGUE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;RUUD'S LAST MATCH AS INTERIM WITH A GRATE RECORD: WIN - DRAW - WIN - WIN&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;AMORIM'S SPORTING BEAT 5-3 AWAY AGAINST BRAGA WITH A COMEBACK BEFORE HIS ARRIVAL AT CARRIGTON AS OUR NEW MANAGER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;NORTHERN WEMBLEY IS NEW OLD TRAFFORD&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;VALENCIA FLOODS</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
+                                        <div><span>&nbsp;&nbsp;WE ARE 14TH IN THE PREM AND 5TH IN THE LEAGUE PHASE OF THE CHAMPIONS LEAGUE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;RUUD'S LAST MATCH AS INTERIM WITH A GRATE RECORD: WIN - DRAW - WIN - WIN&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;AMORIM'S SPORTING BEAT 5-3 AWAY AGAINST BRAGA WITH A COMEBACK BEFORE HIS ARRIVAL AT CARRIGTON AS OUR NEW MANAGER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;NORTHERN WEMBLEY IS NEW OLD TRAFFORD&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;VALENCIA FLOODS</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
+                                   </div>
+                              </div>
+                              <div class="post-match1">
+                                   <div class="news1">
+                                        <!-- I learned of "&nbsp;" value to add non-breaking space thanks to: https://blog.hubspot.com/website/html-space#:~:text=The%20simplest%20way%20to%20add,%3B%20or%20. -->
+                                        <div><span>&nbsp;&nbsp;WE ARE 14TH IN THE PREM AND 5TH IN THE LEAGUE PHASE OF THE CHAMPIONS LEAGUE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;RUUD'S LAST MATCH AS INTERIM WITH A GRATE RECORD: WIN - DRAW - WIN - WIN&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;AMORIM'S SPORTING BEAT 5-3 AWAY AGAINST BRAGA WITH A COMEBACK BEFORE HIS ARRIVAL AT CARRIGTON AS OUR NEW MANAGER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;NORTHERN WEMBLEY IS NEW OLD TRAFFORD&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;VALENCIA FLOODS</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
+                                        <div><span>&nbsp;&nbsp;WE ARE 14TH IN THE PREM AND 5TH IN THE LEAGUE PHASE OF THE CHAMPIONS LEAGUE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;RUUD'S LAST MATCH AS INTERIM WITH A GRATE RECORD: WIN - DRAW - WIN - WIN&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;AMORIM'S SPORTING BEAT 5-3 AWAY AGAINST BRAGA WITH A COMEBACK BEFORE HIS ARRIVAL AT CARRIGTON AS OUR NEW MANAGER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;NORTHERN WEMBLEY IS NEW OLD TRAFFORD&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;VALENCIA FLOODS</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
+                                   </div>
+                              </div>
+                              <div class="post-match1-skew">
+                                   <div class="news1-skew">
+                                        <!-- I learned of "&nbsp;" value to add non-breaking space thanks to: https://blog.hubspot.com/website/html-space#:~:text=The%20simplest%20way%20to%20add,%3B%20or%20. -->
+                                        <div><span>&nbsp;&nbsp;WE ARE 14TH IN THE PREM AND 5TH IN THE LEAGUE PHASE OF THE CHAMPIONS LEAGUE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;RUUD'S LAST MATCH AS INTERIM WITH A GRATE RECORD: WIN - DRAW - WIN - WIN&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;AMORIM'S SPORTING BEAT 5-3 AWAY AGAINST BRAGA WITH A COMEBACK BEFORE HIS ARRIVAL AT CARRIGTON AS OUR NEW MANAGER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;NORTHERN WEMBLEY IS NEW OLD TRAFFORD&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;VALENCIA FLOODS</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
+                                        <div><span>&nbsp;&nbsp;WE ARE 14TH IN THE PREM AND 5TH IN THE LEAGUE PHASE OF THE CHAMPIONS LEAGUE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;RUUD'S LAST MATCH AS INTERIM WITH A GRATE RECORD: WIN - DRAW - WIN - WIN&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;AMORIM'S SPORTING BEAT 5-3 AWAY AGAINST BRAGA WITH A COMEBACK BEFORE HIS ARRIVAL AT CARRIGTON AS OUR NEW MANAGER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;NORTHERN WEMBLEY IS NEW OLD TRAFFORD&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;VALENCIA FLOODS</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
+                                   </div>
+                              </div>                              
+                              <img src="underground/2nd-match-cover1.png" class="cover1" id="cover2">
+                              <img src="underground/2nd-match-cover.png" class="cover" id="cover-2">
+                              <span class="close4">&nbsp;</span>
+                              <span class="close3">MON, 22 AUG 2024 | 22:00 | LEAGUE PHASE MATCH 8</span>
+                              <input type="checkbox" class="dropdown_check"><span class="player-stats-below"></span>  <!-- this goes last to avoid page jump -->                              
+                         </a>
+                         <div class="class-button-photo">    <!-- photo gallery -->
+                              <button type="button" onclick="show8()" id="button-gallery21" itemid="links">
+                                   <span></span>
+                                   <span></span>
+                                   <span></span>
+                                   <span></span>
+                                   <h60>CLICK FOR SCORE & NEWS</h60>
+                              </button>
+                              <script>
+                                   function show8() {
+                                        document.getElementById('cover2')
+                                             .style.display = "none";
+                                        document.getElementById('cover-2')
+                                             .style.display = "none";
+                                        document.getElementById('button-gallery21')  /* button 21 */
+                                             .style.display = "none";
+                                   }
+                              </script>
+                         </div>
+                         <div class="dropdown-background">
+                              <div class="dropdown_content-matches">
+                                   <ul class="dropdown_sub">
+                                        <li class="dropdown_li">
+                                             <!-- show image onclick, I used the first method here: https://www.geeksforgeeks.org/how-to-show-images-on-click-using-html/ -->
+                                             <button type="button" onclick="show16()" id="button3" itemid="links">
+                                                  <h70>CLICK HERE FOR MATCH STATS, STARTING XI, COMMENTS, AND MORE</h70>
+                                                  <h71>TAP HERE FOR MATCH STATS, STARTING XI, COMMENTS, AND MORE</h71>
+                                             </button>                                      
+                                             <script>
+                                                  function show16() {
+                                                       /* Access image by id and change 
+                                                       the display property to block*/
+                                                       document.getElementById('image2')
+                                                            .style.display = "block";
+                                                       document.getElementById('button3')
+                                                            .style.display = "none";
+                                                       document.getElementById('bottom2')
+                                                            .style.display = "none";
+                                                  }
+                                             </script>
+                                             <div id="image2">
+                                                  <!-- I added this class to make dropdown content fit the width of screen width="100%" height="286" -->
+                                                  <img class="dropdown-content-historical" src="underground/1st-match-content.png" alt="">
+                                                  <div class="badges-and-sponsors">
+                                                       <div class="wrapper1-left">
+                                                            <div class="words1-left">
+                                                                 <img src="underground/Snapdragon.png" alt="">
+                                                                 <img src="underground/badge-color.png" alt="">
+                                                                 <img src="underground/Snapdragon.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                       <div class="wrapper1-right">
+                                                            <div class="words1-right">
+                                                                 <img src="underground/badge-color.png" alt="">
+                                                                 <img src="underground/Snapdragon.png" alt="">
+                                                                 <img src="underground/badge-color.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content2.png" alt="">
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content3.png" alt="">
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content4.png" alt="">
+                                                  <img class="dropdown-content-historical" id="dropdown-content-match" src="underground/1st-match-content5.png" alt="">                                               
+                                                  <!-- display:none --> <!-- <iframe src="https://widgets.sofascore.com/embed/attackMomentum?id=12436494&widgetTheme=dark"></iframe> -->
+                                                  <!-- display:none --> <!-- <img class="dropdown-content-historical1" id="dropdown-content-match" src="underground/1st-match-content6.png" alt=""> -->
+                                                  <img class="dropdown-content-historical3" src="underground/1st-match-content6-5.png" alt="">          
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content7.png" alt="">  
+                                                  <div class="badges-and-sponsors">
+                                                       <div class="wrapper1-5-left">
+                                                            <div class="words1-5-left">
+                                                                 <img src="underground/Snapdragon.png" alt="">
+                                                                 <img src="underground/badge-color.png" alt="">
+                                                                 <img src="underground/Snapdragon.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                       <div class="wrapper1-5-right">
+                                                            <div class="words1-5-right">
+                                                                 <img src="underground/badge-color.png" alt="">
+                                                                 <img src="underground/Snapdragon.png" alt="">
+                                                                 <img src="underground/badge-color.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                  </div>                                                                
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content8.png" alt="">                                                                        
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content9.png" alt="">                                                                                                                          
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content10.png" alt="">                                                                                                                          
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content11.png" alt="">                                                                                                                          
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content12.png" alt="">                                                                                                                          
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content13.png" alt="">                                                                                                                          
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content14.png" alt="">
+                                             </div>
+                                             <div id="bottom2">
+                                                  <img class="dropdown-content" id="dropdown-content-match" src="underground/1st-match-content14-alt.png" alt="">
+                                                  <div class="badges-and-sponsors1">
+                                                       <div class="wrapper2">
+                                                            <div class="words2">
+                                                                 <img src="underground/AIG.png" alt="">
+                                                                 <img src="underground/badge-color.png" alt="">
+                                                                 <img src="underground/AIG.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                       <div class="wrapper3">
+                                                            <div class="words3">
+                                                                 <img src="underground/badge-color.png" alt="">
+                                                                 <img src="underground/Vodafone-black.png" alt="">
+                                                                 <img src="underground/badge-color.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                       <div class="wrapper4">
+                                                            <div class="words4">
+                                                                 <img src="underground/Chevrolet.png" alt="">
+                                                                 <img src="underground/badge-white.png" alt="">
+                                                                 <img src="underground/Chevrolet.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                       <div class="wrapper5">
+                                                            <div class="words5">
+                                                                 <img src="underground/badge1.png" alt="">
+                                                                 <img src="underground/Sharp.png" alt="">
+                                                                 <img src="underground/badge1.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                       <div class="wrapper6">
+                                                            <div class="words6">
+                                                                 <img src="underground/badge2.png" alt="">
+                                                                 <img src="underground/Sharp-red.png" alt="">
+                                                                 <img src="underground/badge2.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                       <div class="wrapper7">
+                                                            <div class="words7">
+                                                                 <img src="underground/Vodafone.png" alt="">
+                                                                 <img src="underground/badge-color.png" alt="">
+                                                                 <img src="underground/Vodafone.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                       <div class="wrapper8">
+                                                            <div class="words8">
+                                                                 <img src="underground/badge-black.png" alt="">
+                                                                 <img src="underground/Sharp-black.png" alt="">
+                                                                 <img src="underground/badge-black.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                       <div class="wrapper9">
+                                                            <div class="words9">
+                                                                 <img src="underground/AIG-color.png" alt="">
+                                                                 <img src="underground/badge-color.png" alt="">
+                                                                 <img src="underground/AIG-color.png" alt="">
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </li>                                        
+                                   </ul>
+                              </div>
+                         </div>                         
+                         <div class="links1">
+                              <!-- add link to website: https://www.youtube.com/shorts/44t-FMQVGDM
+                                   value to open link in new tab: https://stackoverflow.com/questions/17711146/how-to-open-link-in-a-new-tab-in-html -->
+                              <a href="https://www.flashscore.com/match/KK9ggF3s/#/news" target="_blank" id="links">
+                                   https://www.flashscore.com/match/KK9ggF3s/#/news
+                              </a>
+                         </div>
+                    </li>
+                    
 
                     <li class="dropdown_list">
                          <a href="#" class="bottom"  id="dropdown-transition">
                               <input type="checkbox" class="dropdown_check-transition">
-                         </a>
-               
-                         <div class="bottom-isometric">2023/24</div>
-               
+                         </a>               
+                         <div class="bottom-isometric">2023/24</div>               
                          <div class="bottom-GGMU">GGMU</div>
-                         <div class="bottom-GGMU">GGMU</div>
-               
+                         <div class="bottom-GGMU">GGMU</div>               
                          <div class="OT-banners-bottom">
                               <div class="banners">
-                                 <!-- I learned of "&nbsp;" value to add non-breaking space thanks to: https://blog.hubspot.com/website/html-space#:~:text=The%20simplest%20way%20to%20add,%3B%20or%20. -->
-                                 <!-- (⮝) -->
+                                   <!-- I learned of "&nbsp;" value to add non-breaking space thanks to: https://blog.hubspot.com/website/html-space#:~:text=The%20simplest%20way%20to%20add,%3B%20or%20. -->
+                                   <!-- (⮝) -->
                                    <div><span>&nbsp;&nbsp;ONE LOVE STRETFORD END MUFC&nbsp;&nbsp;</span><span2>&nbsp;★★★&nbsp;&nbsp;</span2><span3>&nbsp;ЯEPUБLIC OF MAИCUИIA ЯED AЯMY&nbsp;</span3><span4>&thinsp;&thinsp;௹&nbsp;</span4><span5>❅</span5><span6>FEB 6TH 1958 THE FLOWERS OF MANCHESTER</span6><span7>&nbsp;&nbsp;MUFC&nbsp;&nbsp;THE&nbsp;&nbsp;RELIGION&nbsp;&nbsp;</span7><span8>&ThinSpace;🌈</span8><span9>&nbsp;RAINBOW DEVILS&nbsp;</span9><span10>&nbsp;LGBTQ+ SUPPORTERS CLUB</span10><span11>&ThinSpace;🌈&ThinSpace;</span11><span12>🙋🏻‍♂️&nbsp;</span12><span13>🏆🔴🏆🏆🏆🏆🏆🔴🏆🏆🔴🏆🏆🔴🏆🔴🏆🏆🏆🏆&nbsp;</span13><span14>THE IMPOSSIBLE DREAM&nbsp;</span14><span15>SIR ALEX 26 YEARS&nbsp;</span15><span16>MADE POSSIBLE....&nbsp;</span16><span17>🏆🏆🏆🔴🏆🏆🏆🔴🏆🏆🔴🏆🏆🏆🏆🔴🏆🔴🏆&nbsp;</span17><span18>🙋🏻‍♂️&nbsp;</span18><span19>&nbsp;EVERY SINGLE ONE OF US&nbsp;</span19><span20>👤&nbsp;</span20><span21>LOVES SIR ALEX FERGUSON&nbsp;</span21><span22>&nbsp;GREATEST OF ENGLISH FOOTBALL&nbsp;</span22><span23>&nbsp;🏆🏆🏆🏆🏆🏆</span23><span24>&nbsp;🔥&nbsp;</span24><span25>🏆🏆🔴🏆&nbsp;</span25><span26>&nbsp;&nbsp;&nbsp;WE'VE WON IT ALL&nbsp;</span26><span27>&nbsp;&nbsp;&nbsp;SIR BOBBY&nbsp;</span27><span28>FOREVER LOVED&nbsp;</span28><span29>&nbsp;🗣️</span29><span30>&nbsp;"IT'S GLORY AND HONOUR" THE GREAT MAN HE SAID&nbsp;&nbsp;"THERE'S NOTHING LIKE BEING A</span30><span31>&nbsp;RED</span31><span32>"&nbsp;</span32><span33>&nbsp;&nbsp;🗣️</span33></div>
                                    <div><span>&nbsp;&nbsp;ONE LOVE STRETFORD END MUFC&nbsp;&nbsp;</span><span2>&nbsp;★★★&nbsp;&nbsp;</span2><span3>&nbsp;ЯEPUБLIC OF MAИCUИIA ЯED AЯMY&nbsp;</span3><span4>&thinsp;&thinsp;௹&nbsp;</span4><span5>❅</span5><span6>FEB 6TH 1958 THE FLOWERS OF MANCHESTER</span6><span7>&nbsp;&nbsp;MUFC&nbsp;&nbsp;THE&nbsp;&nbsp;RELIGION&nbsp;&nbsp;</span7><span8>&ThinSpace;🌈</span8><span9>&nbsp;RAINBOW DEVILS&nbsp;</span9><span10>&nbsp;LGBTQ+ SUPPORTERS CLUB</span10><span11>&ThinSpace;🌈&ThinSpace;</span11><span12>🙋🏻‍♂️&nbsp;</span12><span13>🏆🔴🏆🏆🏆🏆🏆🔴🏆🏆🔴🏆🏆🔴🏆🔴🏆🏆🏆🏆&nbsp;</span13><span14>THE IMPOSSIBLE DREAM&nbsp;</span14><span15>SIR ALEX 26 YEARS&nbsp;</span15><span16>MADE POSSIBLE....&nbsp;</span16><span17>🏆🏆🏆🔴🏆🏆🏆🔴🏆🏆🔴🏆🏆🏆🏆🔴🏆🔴🏆&nbsp;</span17><span18>🙋🏻‍♂️&nbsp;</span18><span19>&nbsp;EVERY SINGLE ONE OF US&nbsp;</span19><span20>👤&nbsp;</span20><span21>LOVES SIR ALEX FERGUSON&nbsp;</span21><span22>&nbsp;GREATEST OF ENGLISH FOOTBALL&nbsp;</span22><span23>&nbsp;🏆🏆🏆🏆🏆🏆</span23><span24>&nbsp;🔥&nbsp;</span24><span25>🏆🏆🔴🏆&nbsp;</span25><span26>&nbsp;&nbsp;&nbsp;WE'VE WON IT ALL&nbsp;</span26><span27>&nbsp;&nbsp;&nbsp;SIR BOBBY&nbsp;</span27><span28>FOREVER LOVED&nbsp;</span28><span29>&nbsp;🗣️</span29><span30>&nbsp;"IT'S GLORY AND HONOUR" THE GREAT MAN HE SAID&nbsp;&nbsp;"THERE'S NOTHING LIKE BEING A</span30><span31>&nbsp;RED</span31><span32>"&nbsp;</span32><span33>&nbsp;&nbsp;🗣️</span33></div>
                               </div>
-                         </div>
-               
+                         </div>               
                          <div class="email-cursor-text">idierco@gmail.com</div>
                     </li>
 
-                    
-
                </ul>
           </div>
-      </section>
-
-
-
-
-
-
-
+     </section>
 </body>
 </html>
