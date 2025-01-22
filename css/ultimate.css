@@ -5285,6 +5285,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		--close-display: inline-block;
 		/* addition for the links */
 		--links-display: flex;
+		--spins-display: none;
 	}
 	.open {
 		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
@@ -6295,8 +6296,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	#image2 { display: none; }  /* for button */
 	/* 	BUTTON: SHOW MATCH STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* BADGE-SPONSOR SPIN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.badges-and-sponsors { display: none !important; }  /* for PC */
-	.badges-and-sponsors1 { display: none !important; }  /* for PC */
+	.badges-and-sponsors { display: var(--spins-display, none); }
+	.badges-and-sponsors1 { display: var(--spins-display, none); }
 	/* BADGE-SPONSOR SPIN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* BOTTOM 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.bottom {
