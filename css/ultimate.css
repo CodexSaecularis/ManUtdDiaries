@@ -2137,6 +2137,7 @@ iframe {
 }
 .dropdown_link-2nd-match {
 	/* border: solid 1px red; */
+	border: none;
 	background-image: url(../underground/1st-match2.png);
 	background-size: 95% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above */
 	color: white;
@@ -2488,6 +2489,7 @@ iframe {
 }
 /* 	POST-MATCH NEWS MATCH 1 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 /* 	BUTTON: SHOW SCORE AND NEWS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+#button-gallery20 h61 { display: none; }  /* TAP FOR... */
 #cover1 {
 	/* border: solid 1px green; */
 	position: absolute;
@@ -2530,6 +2532,7 @@ iframe {
 					   0 0 200px #ef0017;
 }
 
+#button-gallery21 h61 { display: none; }  /* TAP FOR... */
 #cover2 {
 	/* border: solid 1px green; */
 	position: absolute;
@@ -5993,6 +5996,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		}
 	}
 	/* 	BUTTON: SHOW SCORE AND NEWS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
+	#button-gallery20 h60 { display: none; }  /* CLICK FOR... */
+	#button-gallery20 h61 { display: initial; }  /* TAP FOR... */
 	#cover1 {
 		/* border: solid 1px green; */
 		position: absolute;
@@ -6034,6 +6039,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 200px #ef0017;
 	}
 
+	#button-gallery21 h60 { display: none; }  /* CLICK FOR... */
+	#button-gallery21 h61 { display: initial; }  /* TAP FOR... */
 	#cover2 {
 		/* border: solid 1px green; */
 		position: absolute;
