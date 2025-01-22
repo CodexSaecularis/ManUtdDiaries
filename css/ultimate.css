@@ -2137,7 +2137,6 @@ iframe {
 }
 .dropdown_link-2nd-match {
 	/* border: solid 1px red; */
-	border: none;
 	background-image: url(../underground/1st-match2.png);
 	background-size: 95% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above */
 	color: white;
@@ -6005,6 +6004,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
+		z-index: 0;
 	}
 	#cover {
 		/* border: solid 1px green; */
