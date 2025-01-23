@@ -9673,7 +9673,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-image: url(../underground/break.png);
 		background-size: 120% 100%;
 		color: white;
-		padding: 1.137vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		padding: .7vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 		text-decoration: none;
 		display: flex;
 		align-items: center;
