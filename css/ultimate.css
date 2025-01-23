@@ -87,14 +87,14 @@ body {
 .parallax-home {
 	/* border: solid red 1px; */
 	position: relative;
-	display: flex;  /* merges .sky and .ground in one image; I deactivated .ground, tho */
+	display: flex;  /* merges the sky and .ground in one image; I deactivated .ground, tho */
 	text-align: center;
 }
 .parallax-home img {
 	position: relative;  /* allows me to move the sky, and not the text */
 	width: 100%;  /* how big the sky and ground are */
 }
-#sky-cover {
+#led-cover {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -102,8 +102,8 @@ body {
 	z-index: 1;
 	opacity: .7;
 }
-#flag { display: none; }
-#flag2 {
+#flag-mobile { display: none; }
+#flag-pc {
 	position: absolute;  /* for PC */
 	margin-top: 14%;
 	left: 47%;
@@ -148,7 +148,7 @@ body {
 }
 .ground { display: none; }  /* for Mozilla */
 /* ZEPPELIN LED SIGN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-.wrapper {
+.zeppelin-led {
 	position: absolute;
 	box-sizing: content-box;
 	/* background-color: #009f4d; */
@@ -160,16 +160,16 @@ body {
 	margin-top: 1.6%;
 	left: 45.2%;
 }
-.words { overflow: hidden; }
-.words span {
+.led-words { overflow: hidden; }
+.led-words span {
 	font-family: myFont;
 	font-size: 2.5vw;
 	color: yellow;
 	display: block;
 	height: 100%;
-	animation: spin_words 6s infinite;
+	animation: spin-words 6s infinite;
 }
-@keyframes spin_words {
+@keyframes spin-words {
 	0% {
 		transform: translateY(-1%);
 	}
@@ -197,22 +197,22 @@ body {
 }
 /* ZEPPELIN LED SIGN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* UNDERGROUND SUPPORT 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-.underground-cables {  /* for any reason, after adapting for Mozilla, everything from here goes down a tiny bity */
+.underground {  /* for any reason, after adapting for Mozilla, everything from here goes down a tiny bity */
 	/* border: solid red 1px; */
 	position: relative;
 	z-index: -1;
 }
-.cables { display: none; }  /* for mobile */
-.cables2 {
+.underground-large {
 	width: 120%;
 	/* width: 130vw; */
 	margin-left: -6.3%;
 }
+.underground-small { display: none; }  /* for mobile */
 /* SELECT SEASON 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .select-season {
 	/* border: solid red 1px; */
 	position: absolute;
-	margin-top: -14.2%;  /* with respect to .underground-cables */
+	margin-top: -14.2%;  /* with respect to .underground */
 	margin-left: 5.7%;  /* moves everything to the left/right */
 	z-index: 8;
 	width: 10.7vw;  /* reduces cursor:pointer clickability away from the title  */
@@ -301,8 +301,8 @@ body {
 .dropdown-li {  /* no use for this, but just in case... */
 	list-style: none;
 }
-.season-content-mobile { display: none; }  /* for mobile */
-.season-content-pc {  /* click to close, click to revisit season */
+.season-header-mobile { display: none; }  /* for mobile */
+.season-header-pc {  /* click to close, click to revisit season */
 	/* border: solid 1px red; */
 	width: 320px;  /* how big the dropdown content is */
 }
@@ -336,7 +336,7 @@ body {
 	opacity: 1;
 }
 /* WRAP FOR CAROUSEL, TEAMS, AND SCORE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-.relative {
+.scoreboard-wrapper {
 	position: relative;  /* I created this wrapper with this only line to make stuff fit cross-browser */
 }
 /* WRAP FOR CAROUSEL, TEAMS, AND SCORE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -346,7 +346,7 @@ body {
 	position: absolute;
 	width: 21.6%;
 	height: 2vw;  /* addition for resposiveness */
-	margin-top: -14.5%;  /* with respect to .underground-cables */
+	margin-top: -14.5%;  /* with respect to .underground */
 	left: 38.4%;
 	background-size: cover;
 	display: flex;
@@ -406,7 +406,7 @@ body {
 	/* position: relative; */
 	width: 21.6%;
 	height: 2.7vw;  /* addition for Mozilla: to help make .scoreboard-result be exact same height as .scoreboard-teams */
-	margin-top: -12.95%;  /* with respect to .underground-cables */
+	margin-top: -12.95%;  /* with respect to .underground */
 	left: 38.4%;
 	/* margin-left: 37.635%; */
 	display: flex;
@@ -417,7 +417,7 @@ body {
 	font-family: myFont;
 	font-size: 1.3vw;
 	/* background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led.png); */
-	background: linear-gradient(rgba(27,27,27,0.8), rgba(27,27,27,0.8)), url(../parallax/led1.png);
+	background: linear-gradient(rgba(27,27,27,0.8), rgba(27,27,27,0.8)), url(../parallax/led-gray.png);
 	background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 }
 .home span {
@@ -433,10 +433,10 @@ body {
 .scoreboard-result {
 	color: white;
 	position: absolute;
-	width: 5.5%;  /* space between score and .final-real2 */
+	width: 5.5%;  /* space between score and .final-fair2 */
 	height: 2.7vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
 	line-height: 1.4vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-	margin-top: -12.95%;  /* with respect to .underground-cables */
+	margin-top: -12.95%;  /* with respect to .underground */
 	left: 54.46%;
 	display: flex;
 	overflow: hidden;
@@ -450,12 +450,12 @@ body {
 	/* background-size: 150% 150%; */
 	text-align: center;
 }
-/* allows me put both the result (0-0) and the text "final/real score" side by side
+/* allows me put both the result (0-0) and the text "final/fair score" side by side
 	Mr. Hugo's answer: https://stackoverflow.com/questions/37711138/display-2-ps-side-by-side
 	I had to add a few id in the HTML*/
-#scoreboard .scoreboard-result, #scoreboard .final-real {display: inline;}
-.final-real {
-	background: url(../parallax/led3.png);
+#scoreboard .scoreboard-result, #scoreboard .final-fair {display: inline;}
+.final-fair {
+	background: url(../parallax/led-red.png);
 	position: absolute;
 	background-size: 100% 100%;
 	/* after using "&thinsp;", the red mini-box left a space on the right that showed the background img,
@@ -466,10 +466,10 @@ body {
 .scoreboard-result2 {
 	color: white;
 	position: absolute;
-	width: 5.5%;  /* space between score and .final-real2 */
+	width: 5.5%;  /* space between score and .final-fair2 */
 	height: 2.7vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
 	line-height: 1.4vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-	margin-top: -12.95%;  /* with respect to .underground-cables */
+	margin-top: -12.95%;  /* with respect to .underground */
 	left: 54.46%;
 	display: flex;
 	overflow: hidden;
@@ -484,13 +484,13 @@ body {
 	/* allows me to put the text aligned vertically */
 	text-align: center;
 }
-/* allows me put both the result (0-0) and the text "final/real score" side by side
+/* allows me put both the result (0-0) and the text "final/fair score" side by side
 	Mr. Hugo's answer: https://stackoverflow.com/questions/37711138/display-2-ps-side-by-side
 	I had to add a few id in the HTML*/
-#scoreboard2 .scoreboard-result2, #scoreboard2 .final-real2 {display: inline;}
-.final-real2 {
+#scoreboard2 .scoreboard-result2, #scoreboard2 .final-fair2 {display: inline;}
+.final-fair2 {
 	color: #ffcf3e;
-	background: linear-gradient(rgba(2,131,54,0.6), rgba(2,131,54,0.6)), url(../parallax/led4.png);
+	background: linear-gradient(rgba(2,131,54,0.6), rgba(2,131,54,0.6)), url(../parallax/led-green.png);
 	position: absolute;
 	background-size: 100% 100%;
 	/* after using "&thinsp;", the red mini-box left a space on the right that showed the background img,
@@ -529,7 +529,7 @@ body {
 	height: 1.3vw;
 	line-height: 1.5vw;
 	left: 64.7%;
-	margin-top: -14.4%;  /* with respect to .underground-cables */
+	margin-top: -14.4%;  /* with respect to .underground */
 	background-size: cover;
 	display: flex;
 	overflow: hidden;
@@ -814,7 +814,7 @@ body {
 	position: absolute;
 	height: 2.85vw;
 	width: 21%;  /* responsive: exact width so it won't exceed right margin; adjust according to screen width (@media) */
-	margin-top: -13%;  /* with respect to .underground-cables */
+	margin-top: -13%;  /* with respect to .underground */
 	left: 64.7%;
 	display: flex;
 	overflow: hidden;
@@ -823,7 +823,7 @@ body {
 	font-family: Lampen;
 	font-size: 1.3vw;
 	line-height: 5.5vw;  /* should be same as height to center text top to bottom */
-	background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led\ texture.jpg);
+	background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led-black.jpg);
 	/* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 	background-size: 80% 110%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 	text-align: center;
@@ -838,9 +838,9 @@ body {
 .clock-vertical-stripe1 {
 	width: .4%;
 	height: 2.85vw;
-	margin-top: -13%;  /* with respect to .underground-cables*/
+	margin-top: -13%;  /* with respect to .underground */
 	left: 64.7%;
-	background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led\ texture.jpg);
+	background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led-black.jpg);
 	background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 	position: absolute;
 	z-index: 7;
@@ -848,9 +848,9 @@ body {
 .clock-vertical-stripe2 {
 	width: .4%;
 	height: 2.85vw;
-	margin-top: -13%;  /* with respect to .underground-cables*/
+	margin-top: -13%;  /* with respect to .underground */
 	left: 65%;
-	background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led\ texture.jpg);
+	background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led-black.jpg);
 	background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 	position: absolute;
 	z-index: 7;
@@ -858,9 +858,9 @@ body {
 .clock-vertical-stripe3 {
 	width: .4%;
 	height: 2.85vw;
-	margin-top: -13%;  /* with respect to .underground-cables*/
+	margin-top: -13%;  /* with respect to .underground */
 	left: 70.5%;
-	background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led\ texture.jpg);
+	background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led-black.jpg);
 	background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 	position: absolute;
 	z-index: 7;
@@ -868,9 +868,9 @@ body {
 .clock-vertical-stripe4 {
 	width: .4%;
 	height: 2.85vw;
-	margin-top: -13%;  /* with respect to .underground-cables*/
+	margin-top: -13%;  /* with respect to .underground */
 	left: 70.8%;
-	background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led\ texture.jpg);
+	background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led-black.jpg);
 	background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 	position: absolute;
 	z-index: 7;
@@ -890,17 +890,17 @@ body {
 	width: 95%;
 	left: 2.96%;
 	z-index: -3;
-    margin-top: -16.85%;  /* with respect to .underground-cables */
+    margin-top: -16.85%;  /* with respect to .underground */
 }
 /* IRONS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* MENU 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 header {
 	/* border: solid red 1px; */
-	margin-top: -18%;  /* with respect to .underground-cables */
+	margin-top: -18%;  /* with respect to .underground */
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;  /* 100% // my best guess is so that text occupies the width of the screen */
-	height: 23vw;  /* this specific height 'cuz it coincides with the border line of .cables */
+	height: 23vw;  /* this specific height 'cuz it coincides with the border line of .underground-large */
 }
 ul.navlist {
 	display: flex;
@@ -1013,19 +1013,6 @@ ul.navlist {
 					   0 0 120px #fff,
 					   0 0 160px #fff;
 }
-/* LYING DEVIL【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-.devil { display: none; }
-/* .devil {
-	position: relative;
-	z-index: -3;
-}
-.animated-gif {
-	position: absolute;
-	width: 10.3%;
-	margin-top: -25vw;
-	margin-left: 43.2%;
-} */
-/* LYING DEVIL【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* SUPPORT & DONATE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .support {
 	display: inline-block;  /* allows me to move this text freely */
@@ -1239,9 +1226,9 @@ ul.navlist {
 }
 /* GALLERY PHOTO TEXT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* GALLERY【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-.gallery-banner { display: none; }  /* for mobile */
-.gallery-banner-mobile { display: none; }  /* for mobile */
-.gallery-banner-pc {
+.match-grid { display: none; }  /* for mobile */
+.blur-mobile { display: none; }  /* for mobile */
+.blur-pc {
 	position: absolute;
 	width: 100%;
 	margin-top: -18.5%;  /* with respect to header (menu) */
@@ -1250,10 +1237,10 @@ ul.navlist {
 }
 /* GALLERY【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-.class-button-photo {  /* WRAP */
+.button-wrapper {  /* WRAP */
 	position: relative;
 }
-#button-gallery2 {
+#button-gallery1 {
 	border: none;
 	position: absolute;
 	margin-top: -65.4%;
@@ -1263,7 +1250,7 @@ ul.navlist {
 	background-color: transparent;
 	z-index: 2;
 }
-#button-gallery3 {
+#button-gallery2 {
 	border: none;
 	position: absolute;
 	margin-top: -65.4%;
@@ -1273,7 +1260,7 @@ ul.navlist {
 	background-color: transparent;
 	z-index: 2;
 }
-#button-gallery5 {
+#button-gallery3 {
 	border: none;
 	position: absolute;
 	margin-top: -65.4%;
@@ -1283,27 +1270,27 @@ ul.navlist {
 	background-color: transparent;
 	z-index: 2;
 }
+#button-gallery4 {
+	border: none;
+	position: absolute;
+	margin-top: -65.4%;
+	left: 53.3%;
+	width: 12.3%;
+	height: 6vw;
+	background-color: transparent;
+	z-index: 2;
+}
+#button-gallery5 {
+	border: none;
+	position: absolute;
+	margin-top: -65.4%;
+	left: 53.3%;
+	width: 12.3%;
+	height: 6vw;
+	background-color: transparent;
+	z-index: 2;
+}
 #button-gallery6 {
-	border: none;
-	position: absolute;
-	margin-top: -65.4%;
-	left: 53.3%;
-	width: 12.3%;
-	height: 6vw;
-	background-color: transparent;
-	z-index: 2;
-}
-#button-gallery7 {
-	border: none;
-	position: absolute;
-	margin-top: -65.4%;
-	left: 53.3%;
-	width: 12.3%;
-	height: 6vw;
-	background-color: transparent;
-	z-index: 2;
-}
-#button-gallery8 {
 	border: none;
 	position: absolute;
 	margin-top: -65.4%;
@@ -1313,7 +1300,7 @@ ul.navlist {
 	background-color: transparent;
 	z-index: 2;
 }
-#button-gallery9 {
+#button-gallery7 {
 	border: none;
 	position: absolute;
 	margin-top: -65.4%;
@@ -1323,28 +1310,25 @@ ul.navlist {
 	background-color: transparent;
 	z-index: 2;
 }
-#photo-blur {
+#show-gallery {
 	display: none;
 	margin-top: -55.15%;  /* with respect to header (menu) */
 	position: absolute;
 }
-#photo-text1 { display: none; }   /* for button */
-#photo-text2 { display: none; }   /* for button */
-#photo-text3 { display: none; }   /* for button */
-#photo-text4 { display: none; }   /* for button */
-#photo-text5 { display: none; }   /* for button */
-#photo-text6 { display: none; }   /* for button */
-.photo-blur {
+#gallery-text1 { display: none; }   /* for button */
+#gallery-text2 { display: none; }   /* for button */
+#gallery-text3 { display: none; }   /* for button */
+#gallery-text4 { display: none; }   /* for button */
+#gallery-text5 { display: none; }   /* for button */
+#gallery-text6 { display: none; }   /* for button */
+.gallery {
 	width: 100%;
 	position: relative;
 	z-index: 2;
 }
 /* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* GALLERY: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-.class-button-gallery {
-	position: relative;
-}
-#button-gallery {
+#button-read-text {
 	border: none;
 	border-radius: 0 0 1.5vw 1.5vw;  /* https://www.w3schools.com/css/css3_borders.asp */
 	position: absolute;
@@ -1359,19 +1343,19 @@ ul.navlist {
 	background: url(../underground/button.png), #820202;
 	background-size: 100% 100%;
 }
-#button-gallery:hover {
+#button-read-text:hover {
 	color: #f0f50c;
 	background: url(../underground/button.png), radial-gradient(#ef0017 -20%, #820202);  /* -20% here reduces the radius of #ef0017 color */
 	background-size: 100% 100%;
 	box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
 }
-#button-gallery span2 { display: none; }  /* TAP TO READ TEXT */
-#gallery-blur1 {
+#button-read-text span2 { display: none; }  /* TAP TO READ TEXT */
+#show-expectations {
 	display: none;
 	margin-top: -40.6%;  /* with respect to header (menu) */
 	position: absolute;
 }
-.gallery-blur {
+.expectations {
 	width: 100%;
 	position: relative;
 	z-index: 2;
@@ -1532,7 +1516,7 @@ ul.navlist {
 #second-half { transform: translate(35%, 0%); }  /*2H */
 /* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-#button-gallery4 {
+#button-ratings {
 	border: none;
 	border-radius: 1.5vw;
 	position: absolute;
@@ -1548,13 +1532,13 @@ ul.navlist {
 	background: url(../underground/button.png), #820202;
 	background-size: 100% 100%;
 }
-#button-gallery4:hover {
+#button-ratings:hover {
 	color: #f0f50c;
 	background: url(../underground/button.png), radial-gradient(#ef0017 -20%, #820202);
 	background-size: 100% 100%;
 	box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
 }
-#button-gallery4 span2 { display: none; }  /* TAP TO READ TEXT */
+#button-ratings span2 { display: none; }  /* TAP TO READ TEXT */
 /* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .date-and-result h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {  /*1st row */
@@ -1612,22 +1596,24 @@ ul.navlist {
 .date-and-result h17 {
 	left: 78.45%;  /* 7,05 points of increments */
 }
-#date1 {
+#date {
 	font-size: .81vw;
 }
-#result { display: none;}   /* for button */
-#result1 { display: none; }   /* for button */
+#result-1h { display: none;}   /* for button */
+#result-1v { display: none; }   /* for button */
+#result-2h { display: none;}   /* for button */
+#result-2v { display: none; }   /* for button */
 /* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-#ratings {
+.match-ratings-wrapper {
+	position: relative;
+	z-index: 2;
+}
+#match-ratings {
 	display: none;
 	margin-top: -2.5%;  /* with respect to header (menu) */
 	position: absolute;
 	width: 100%;
-}
-.ratings {
-	position: relative;
-	z-index: 2;
 }
 /* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* CUBOID HOLDERS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -1738,7 +1724,7 @@ ul.navlist {
 /* (RIGHT 1) RED WEMBLEY 1958 */
 /* ROTATING CUBOIDS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* VERTICAL SIGNS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-.iron-columns {
+.vertical-neon-signs {
 	position: absolute;
 	top: 60%;
 	width: 100%;
@@ -1787,7 +1773,7 @@ ul.navlist {
 		 https://www.reddit.com/r/css/comments/t2zcot/can_css_variables_custom_properties_be_used_to/ */
 	display: var(--open-display) !important;
 }
-.open1 {
+.open2 {
 	position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
 	font-family: Trueno Round Italic;
 	font-size: 1.2vw;
@@ -1822,7 +1808,7 @@ ul.navlist {
 	/* inspired by another custom property (variable), I added "none" to make "HIDE" not visible when the checkbox is unchecked. */
 	display: var(--close-display, none) !important;
 }
-.close1 {
+.close2 {
 	position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
 	font-family: Trueno Round Italic;
 	font-size: 1.2vw;
@@ -1839,9 +1825,9 @@ ul.navlist {
 	/* inspired by another custom property (variable), I added "none" to make "HIDE" not visible when the checkbox is unchecked. */
 	display: var(--close-display, none) !important;
 }
-.close4 {
+.hide-UCL {
 	position: absolute;
-	background: url(/underground/close-UCL.png);
+	background: url(/underground/hide-UCL.png);
 	background-size: 100%;
 	font-family: 'Courier New', Courier, monospace;	 /* to control image size, I need these font values */
 	font-size: 4.3vw; 	/* to control image size, I need these font values */
@@ -1899,49 +1885,28 @@ ul.navlist {
 	display: var(--links-display, none) !important;
 }
 
-.dropdown-content-historical {
+.dropdown-content {  /* for Tranfers, 23/24 Stats, Player Performance, Player Stats */
+	width: 104%;  /* has to coincide with width in background-image under .dropdown-transfers below */
+	height: 100%;
+}
+.content-match {
+	width: 95%;  /* has to coincide with width in background-image under .dropdown-1st-match below */
+	height: 100%;
+}
+.content-match1 {  /* for 'historical' and 'threat' */
 	margin-top: -.7%;
-	width: 95%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
+	width: 95%;  /* has to coincide with width in background-image under .dropdown-1st-match below */
 	height: 100%;
 }
-
-#dropdown-content-match {
-	/* position: fixed; */
-	width: 95%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
-	height: 100%;
-}
-
-
-.dropdown-content-historical1 {	display: none; }  /* PC version with the iframe */
-
-.dropdown-content-historical3 {  /* responsive version of this img without the iframe */
+.content-match2 {  /* for Sofascore and other stats */
 	margin-top: -.2%;
 	width: 95%;
 	height: 100%;
 }
-
-.dropdown-content {
-	width: 104%;  /* has to coincide with width in background-image under .dropdown_link-transfers below */
-	height: 100%;
-}
-
-/* iframe { display: none;	} */  /* not responsive when shrinking/enlarging screen width */
-iframe {
-    width: 23.6%;
-    height: 290px;
-	margin-left: 21.8%;
-    border: none;
-}
-
-.dropdown-content-historical2 {
-	margin-top: -30%;
-	width: 100%;
-	height: 100%;
-}
 /* TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-.dropdown_link-transfers {
+.dropdown-transfers {
 	/* border: solid red 1px; */
-	background-image: url(../underground/AIG-transfers.png);
+	background-image: url(../underground/transfers.png);
 	background-size: 104% 100%;  /* width and height  // also, width has to coincide with width under .dropdown-content above */
 	color: white;
 	padding: 5.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -1971,9 +1936,9 @@ iframe {
 	font-size: 2.4vw;
 }
 /* STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-.dropdown_link-stats {
+.dropdown-stats {
 	/* border: solid 1px red; */
-	background-image: url(../underground/AIG-stats.png);
+	background-image: url(../underground/stats.png);
 	background-size: 104% 100%;
 	color: white;
 	padding: 5.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -2010,9 +1975,9 @@ iframe {
 					   0 0 120px #fe5201, 0 0 120px #fe5201;
 }
 /* PLAYER PERFORMANCE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-.dropdown_link-player-performance {
+.dropdown-player-performance {
 	/* border: solid 1px red; */
-	background-image: url(../underground/AIG-performance.png);
+	background-image: url(../underground/player-perf.png);
 	background-size: 104% 100%;
 	color: white;
 	padding: 5.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -2067,9 +2032,9 @@ iframe {
 	transform: translate(-103%, 135%);
 }
 /* PLAYER STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-.dropdown_link-player-stats {
+.dropdown-player-stats {
 	/* border: solid 1px red; */
-	background-image: url(../underground/AIG-player-stats.png);
+	background-image: url(../underground/player-stats.png);
 	background-size: 104% 100%;
 	color: white;
 	padding: 5.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -2094,9 +2059,9 @@ iframe {
 	/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
 	pointer-events: none;
 }
-.dropdown_link-transition {
+.dropdown-transition {
 	/* border: solid 1px red; */
-	background-image: url(../underground/AIG-player-stats-below.png);
+	background-image: url(../underground/transition.png);
 	background-size: 104% 100%;
 	color: white;
 	padding: 5.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -2109,14 +2074,10 @@ iframe {
 [itemid="dropdown-matches"] { /* moves all match dropdowns as well as preseason */
 	margin-right: -10vw;
 }
-.dropdown-background {
-	background-image: none;  /* no iron column background for match content */
-	background-size: 100%;
-}
-.dropdown_link-preseason {
+.dropdown-preseason {
 	/* border: solid 1px red; */
-	background-image: url(../underground/pre-season1.png);
-	background-size: 95% 100%;  /* width and height  // also, width has to coincide with width under #dropdown-content-match and .dropdown-content-historical above */
+	background-image: url(../underground/pre-season.png);
+	background-size: 95% 100%;  /* width and height  // also, width has to coincide with width under .content-match and .content-match1 above */
 	color: white;
 	padding: 4.15vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 	text-decoration: none;
@@ -2124,10 +2085,10 @@ iframe {
 	align-items: center;
 	position: relative;
 }
-.dropdown_link-1st-match {
+.dropdown-1st-match {
 	/* border: solid 1px red; */
-	background-image: url(../underground/1st-match1.png);
-	background-size: 95% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above */
+	background-image: url(../underground/1st-match.png);
+	background-size: 95% 115%;  /* width and height  // also, width has to coincide with width under .content-match above */
 	color: white;
 	padding: 4vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 	text-decoration: none;
@@ -2137,8 +2098,8 @@ iframe {
 }
 .dropdown_link-2nd-match {
 	/* border: solid 1px red; */
-	background-image: url(../underground/1st-match2.png);
-	background-size: 95% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above */
+	background-image: url(../underground/2nd-match.png);
+	background-size: 95% 115%;  /* width and height  // also, width has to coincide with width under .content-match above */
 	color: white;
 	padding: 4vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 	text-decoration: none;
@@ -2488,8 +2449,8 @@ iframe {
 }
 /* 	POST-MATCH NEWS MATCH 1 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 /* 	BUTTON: SHOW SCORE AND NEWS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
-#button-gallery20 h61 { display: none; }  /* TAP FOR... */
-#cover1 {
+#button-score-news1 h61 { display: none; }  /* TAP FOR... */
+#cover1-news {
 	/* border: solid 1px green; */
 	position: absolute;
 	width: 95%;
@@ -2498,7 +2459,7 @@ iframe {
 	margin-top: .095%;
 	z-index: -1;
 }
-#cover {
+#cover1-score {
 	/* border: solid 1px green; */
 	position: absolute;
 	width: 95%;
@@ -2506,7 +2467,7 @@ iframe {
 	margin-left: -3.48%;
 	margin-top: .08%;
 }
-#button-gallery20 {
+#button-score-news1 {
 	border: none;
 	border-radius: .1vw;
 	position: absolute;
@@ -2522,7 +2483,7 @@ iframe {
 	background: #262626;
 	overflow: hidden;  /* for animation: hides each child outside the button */
 }
-#button-gallery20:hover {
+#button-score-news1:hover {
 	color: black;
 	background: #ef0017;
 	box-shadow: 0 0 5px #ef0017,
@@ -2531,8 +2492,8 @@ iframe {
 					   0 0 200px #ef0017;
 }
 
-#button-gallery21 h61 { display: none; }  /* TAP FOR... */
-#cover2 {
+#button-score-news2 h61 { display: none; }  /* TAP FOR... */
+#cover2-news {
 	/* border: solid 1px green; */
 	position: absolute;
 	width: 95%;
@@ -2541,7 +2502,7 @@ iframe {
 	margin-top: .095%;
 	z-index: -1;
 }
-#cover-2 {
+#cover2-score {
 	/* border: solid 1px green; */
 	position: absolute;
 	width: 95%;
@@ -2549,7 +2510,7 @@ iframe {
 	margin-left: -3.48%;
 	margin-top: .08%;
 }
-#button-gallery21 {
+#button-score-news2 {
 	border: none;
 	border-radius: .1vw;
 	position: absolute;
@@ -2565,7 +2526,7 @@ iframe {
 	background: #262626;
 	overflow: hidden;  /* for animation: hides each child outside the button */
 }
-#button-gallery21:hover {
+#button-score-news2:hover {
 	color: black;
 	background: #ef0017;
 	box-shadow: 0 0 5px #ef0017,
@@ -2575,12 +2536,12 @@ iframe {
 }
 /* 	BUTTON: ROTATE ANIMATION // MATCH 1 */
 /* animation: https://www.youtube.com/watch?v=vCq1C52v7xE */
-.class-button-photo span {
+.button-wrapper span {
 	position: absolute;
 	display: block;
 }
 
-#button-gallery20 span:nth-child(1) {  /* top line */
+#button-score-news1 span:nth-child(1) {  /* top line */
 	top: 0;
 	left: -100%;
 	width: 100%;
@@ -2598,7 +2559,7 @@ iframe {
 	}
 }
 
-#button-gallery20 span:nth-child(3) {  /* bottom line */
+#button-score-news1 span:nth-child(3) {  /* bottom line */
 	bottom: 0;
 	right: -100%;
 	width: 100%;
@@ -2617,7 +2578,7 @@ iframe {
 	}
 }
 
-#button-gallery20 span:nth-child(2) {  /* right line */
+#button-score-news1 span:nth-child(2) {  /* right line */
 	top: -100%;
 	right: 0;
 	width: 2%;
@@ -2635,7 +2596,7 @@ iframe {
 	}
 }
 
-#button-gallery20 span:nth-child(4) {  /* left line */
+#button-score-news1 span:nth-child(4) {  /* left line */
 	bottom: -100%;
 	left: 0;
 	width: 2%;
@@ -2653,11 +2614,11 @@ iframe {
 	}
 }
 
-#button-gallery20:hover span {
+#button-score-news1:hover span {
 	animation-play-state: paused;
 }
 /* 	BUTTON: ROTATE ANIMATION // MATCH 2  */
-#button-gallery21 span:nth-child(1) {  /* top line */
+#button-score-news2 span:nth-child(1) {  /* top line */
 	top: 0;
 	left: -100%;
 	width: 100%;
@@ -2675,7 +2636,7 @@ iframe {
 	}
 }
 
-#button-gallery21 span:nth-child(3) {  /* bottom line */
+#button-score-news2 span:nth-child(3) {  /* bottom line */
 	bottom: 0;
 	right: -100%;
 	width: 100%;
@@ -2694,7 +2655,7 @@ iframe {
 	}
 }
 
-#button-gallery21 span:nth-child(2) {  /* right line */
+#button-score-news2 span:nth-child(2) {  /* right line */
 	top: -100%;
 	right: 0;
 	width: 2%;
@@ -2712,7 +2673,7 @@ iframe {
 	}
 }
 
-#button-gallery21 span:nth-child(4) {  /* left line */
+#button-score-news2 span:nth-child(4) {  /* left line */
 	bottom: -100%;
 	left: 0;
 	width: 2%;
@@ -2730,12 +2691,12 @@ iframe {
 	}
 }
 
-#button-gallery21:hover span {
+#button-score-news2:hover span {
 	animation-play-state: paused;
 }
 /* 	BUTTON: SHOW SCORE AND NEWS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 /* 	DATE | TIME | COMPETITION STAGE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
-.close3 {
+.date-time {
 	/* border: solid 1px red; */
 	position: absolute;
 	top: 86%;
@@ -2748,8 +2709,8 @@ iframe {
 }
 /* 	DATE | TIME | COMPETITION STAGE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 /* 	BUTTON: SHOW MATCH STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
-#button2 h71 { display: none; }  /* mobile: TAP FOR... */
-#button2 {
+#button-stats1 h71 { display: none; }  /* mobile: TAP FOR... */
+#button-stats1 {
 	border: none;
 	position: relative;
 	margin-top: 2%;
@@ -2763,7 +2724,7 @@ iframe {
 	text-align: center;
 	z-index: 1;
 }
-#button2:before {
+#button-stats1:before {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -2777,12 +2738,12 @@ iframe {
 	top: -10%;
 	left: -3%;
 }
-#button2:hover:before {
+#button-stats1:hover:before {
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
-#button2:after {
+#button-stats1:after {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -2796,17 +2757,17 @@ iframe {
 	bottom: -10%;
 	right: -1%;
 }
-#button2:hover:after {
+#button-stats1:hover:after {
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
 }
-#button2:hover h70 { color: rgb(211, 208, 208); }
-#image { display: none; }  /* for button */
+#button-stats1:hover h70 { color: rgb(211, 208, 208); }
+#stats-1st-match { display: none; }  /* for button */
 
 
-#button3 h71 { display: none; }  /* mobile: TAP FOR... */
-#button3 {
+#button-stats2 h71 { display: none; }  /* mobile: TAP FOR... */
+#button-stats2 {
 	border: none;
 	position: relative;
 	margin-top: 2%;
@@ -2820,7 +2781,7 @@ iframe {
 	text-align: center;
 	z-index: 1;
 }
-#button3:before {
+#button-stats2:before {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -2834,12 +2795,12 @@ iframe {
 	top: -10%;
 	left: -3%;
 }
-#button3:hover:before {
+#button-stats2:hover:before {
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
-#button3:after {
+#button-stats2:after {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -2853,20 +2814,20 @@ iframe {
 	bottom: -10%;
 	right: -1%;
 }
-#button3:hover:after {
+#button-stats2:hover:after {
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
 }
-#button3:hover h70 { color: rgb(211, 208, 208); }
-#image2 { display: none; }  /* for button */
+#button-stats2:hover h70 { color: rgb(211, 208, 208); }
+#stats-2nd-match { display: none; }  /* for button */
 /* 	BUTTON: SHOW MATCH STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 /* BADGE-SPONSOR SPIN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* BADGE-SPONSOR SPIN: HISTORICAL */
-.wrapper1-left {
+.home-shirt1-left {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../underground/1-shirt9.png);
+	background: url(../underground/24-25-1st-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;  /* border margin */
@@ -2876,8 +2837,8 @@ iframe {
 	margin-top: -16.65%;
 	left: 7%;
 }
-.words1-left { overflow: hidden; }
-.words1-left img {
+.spin-badges { overflow: hidden; }  /* universal code for ALL badge & sponsor spins */
+.spin-badges img {  /* universal code for ALL badge & sponsor spins */
 	width: 100%;
 	position: relative;
 	display: block;
@@ -2909,12 +2870,10 @@ iframe {
 		transform: translateY(-0.5%);
 	}
 }
-
-
-.wrapper1-right {
+.home-shirt1-right {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../underground/1-shirt9.png);
+	background: url(../underground/24-25-1st-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;  /* border margin */
@@ -2923,47 +2882,14 @@ iframe {
 	display: flex;
 	margin-top: -16.65%;
 	left: 94.4%;
-}
-.words1-right { overflow: hidden; }
-.words1-right img {
-	width: 100%;
-	position: relative;
-	display: block;
-	animation: spin_words2 6s infinite;
-}
-@keyframes spin_words2 {
-	0% {
-		transform: translateY(-200%);
-	}
-	10% {
-		transform: translateY(-200%);
-	}
-	30% {
-		transform: translateY(-102%);
-	}
-	40% {
-		transform: translateY(-102%);
-	}
-	50% {
-		transform: translateY(-102%);
-	}
-	70% {
-		transform: translateY(-102%);
-	}
-	90% {
-		transform: translateY(-0.5%);
-	}
-	100% {
-		transform: translateY(-0.5%);
-	}
 }
 /* BADGE-SPONSOR SPIN: HISTORICAL */
 
 /* BADGE-SPONSOR SPIN: STARTING XI */
-.wrapper1-5-left {
+.home-shirt2-left {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../underground/1-shirt9.png);
+	background: url(../underground/24-25-1st-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;  /* border margin */
@@ -2973,45 +2899,11 @@ iframe {
 	margin-top: -44%;
 	left: 7%;
 }
-.words1-5-left { overflow: hidden; }
-.words1-5-left img {
-	width: 100%;
-	position: relative;
-	display: block;
-	animation: spin_words2 6s infinite;
-}
-@keyframes spin_words2 {
-	0% {
-		transform: translateY(-200%);
-	}
-	10% {
-		transform: translateY(-200%);
-	}
-	30% {
-		transform: translateY(-102%);
-	}
-	40% {
-		transform: translateY(-102%);
-	}
-	50% {
-		transform: translateY(-102%);
-	}
-	70% {
-		transform: translateY(-102%);
-	}
-	90% {
-		transform: translateY(-0.5%);
-	}
-	100% {
-		transform: translateY(-0.5%);
-	}
-}
 .badges-and-sponsors { display: var(--spins-display, none); }
-.badges-and-sponsors1 { display: var(--spins-display, none); }
-.wrapper1-5-right {
+.home-shirt2-right {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../underground/1-shirt9.png);
+	background: url(../underground/24-25-1st-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;  /* border margin */
@@ -3020,48 +2912,15 @@ iframe {
 	display: flex;
 	margin-top: -44%;
 	left: 94.4%;
-}
-.words1-5-right { overflow: hidden; }
-.words1-5-right img {
-	width: 100%;
-	position: relative;
-	display: block;
-	animation: spin_words2 6s infinite;
-}
-@keyframes spin_words2 {
-	0% {
-		transform: translateY(-200%);
-	}
-	10% {
-		transform: translateY(-200%);
-	}
-	30% {
-		transform: translateY(-102%);
-	}
-	40% {
-		transform: translateY(-102%);
-	}
-	50% {
-		transform: translateY(-102%);
-	}
-	70% {
-		transform: translateY(-102%);
-	}
-	90% {
-		transform: translateY(-0.5%);
-	}
-	100% {
-		transform: translateY(-0.5%);
-	}
 }
 /* BADGE-SPONSOR SPIN: STARTING XI */
 
 
 /* BADGE-SPONSOR SPIN: BATCH 1 */
-.wrapper2 {
+.home-07-08 {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../underground/1-shirt.png);
+	background: url(../underground/07-08-1st-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;  /* border margin */
@@ -3071,44 +2930,10 @@ iframe {
 	margin-top: -44.13%;
 	left: 7%;
 }
-.words2 { overflow: hidden; }
-.words2 img {
-	width: 100%;
-	position: relative;
-	display: block;
-	animation: spin_words2 6s infinite;
-}
-@keyframes spin_words2 {
-	0% {
-		transform: translateY(-200%);
-	}
-	10% {
-		transform: translateY(-200%);
-	}
-	30% {
-		transform: translateY(-102%);
-	}
-	40% {
-		transform: translateY(-102%);
-	}
-	50% {
-		transform: translateY(-102%);
-	}
-	70% {
-		transform: translateY(-102%);
-	}
-	90% {
-		transform: translateY(-0.5%);
-	}
-	100% {
-		transform: translateY(-0.5%);
-	}
-}
-
-.wrapper7 {
+.away-03-05 {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../underground/1-shirt2.png);
+	background: url(../underground/03-05-2nd-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;  /* border margin */
@@ -3116,93 +2941,25 @@ iframe {
 	height: 6.15vw;
 	display: flex;
 	margin-top: -36.9%;
-	left: 94.4%;
+	left: 7%;
 }
-.words7 { overflow: hidden; }
-.words7 img {
-	width: 100%;
-	position: relative;
-	display: block;
-	animation: spin_words2 6s infinite;
-}
-@keyframes spin_words2 {
-	0% {
-		transform: translateY(-200%);
-	}
-	10% {
-		transform: translateY(-200%);
-	}
-	30% {
-		transform: translateY(-102%);
-	}
-	40% {
-		transform: translateY(-102%);
-	}
-	50% {
-		transform: translateY(-102%);
-	}
-	70% {
-		transform: translateY(-102%);
-	}
-	90% {
-		transform: translateY(-0.5%);
-	}
-	100% {
-		transform: translateY(-0.5%);
-	}
-}
-
-.wrapper9 {
+.away-20-21 {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../underground/1-shirt4.png);
+	background: url(../underground/20-21-3rd-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;  /* border margin */
 	width: 3%;
 	height: 6.15vw;
 	display: flex;
-	margin-top: -22.44%;
-	left: 94.4%;
+	margin-top: -29.67%;
+	left: 7%;
 }
-.words9 { overflow: hidden; }
-.words9 img {
-	width: 100%;
-	position: relative;
-	display: block;
-	animation: spin_words2 6s infinite;
-}
-@keyframes spin_words2 {
-	0% {
-		transform: translateY(-200%);
-	}
-	10% {
-		transform: translateY(-200%);
-	}
-	30% {
-		transform: translateY(-102%);
-	}
-	40% {
-		transform: translateY(-102%);
-	}
-	50% {
-		transform: translateY(-102%);
-	}
-	70% {
-		transform: translateY(-102%);
-	}
-	90% {
-		transform: translateY(-0.5%);
-	}
-	100% {
-		transform: translateY(-0.5%);
-	}
-}
-
-.wrapper5 {
+.home-95-96 {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../underground/1-shirt3.png);
+	background: url(../underground/95-96-1st-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;  /* border margin */
@@ -3212,44 +2969,10 @@ iframe {
 	margin-top: -22.44%;
 	left: 7%;
 }
-.words5 { overflow: hidden; }
-.words5 img {
-	width: 100%;
-	position: relative;
-	display: block;
-	animation: spin_words2 6s infinite;
-}
-@keyframes spin_words2 {
-	0% {
-		transform: translateY(-200%);
-	}
-	10% {
-		transform: translateY(-200%);
-	}
-	30% {
-		transform: translateY(-102%);
-	}
-	40% {
-		transform: translateY(-102%);
-	}
-	50% {
-		transform: translateY(-102%);
-	}
-	70% {
-		transform: translateY(-102%);
-	}
-	90% {
-		transform: translateY(-0.5%);
-	}
-	100% {
-		transform: translateY(-0.5%);
-	}
-}
-
-.wrapper6 {
+.away-90-92 {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../underground/1-shirt5.png);
+	background: url(../underground/90-92-2nd-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;  /* border margin */
@@ -3259,44 +2982,10 @@ iframe {
 	margin-top: -44.13%;
 	left: 94.4%;
 }
-.words6 { overflow: hidden; }
-.words6 img {
-	width: 100%;
-	position: relative;
-	display: block;
-	animation: spin_words2 6s infinite;
-}
-@keyframes spin_words2 {
-	0% {
-		transform: translateY(-200%);
-	}
-	10% {
-		transform: translateY(-200%);
-	}
-	30% {
-		transform: translateY(-102%);
-	}
-	40% {
-		transform: translateY(-102%);
-	}
-	50% {
-		transform: translateY(-102%);
-	}
-	70% {
-		transform: translateY(-102%);
-	}
-	90% {
-		transform: translateY(-0.5%);
-	}
-	100% {
-		transform: translateY(-0.5%);
-	}
-}
-
-.wrapper3 {
+.home-02-03 {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../underground/1-shirt6.png);
+	background: url(../underground/02-03-1st-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;  /* border margin */
@@ -3304,47 +2993,12 @@ iframe {
 	height: 6.15vw;
 	display: flex;
 	margin-top: -36.9%;
-	left: 7%;
-
+	left: 94.4%;
 }
-.words3 { overflow: hidden; }
-.words3 img {
-	width: 100%;
-	position: relative;
-	display: block;
-	animation: spin_words2 6s infinite;
-}
-@keyframes spin_words2 {
-	0% {
-		transform: translateY(-200%);
-	}
-	10% {
-		transform: translateY(-200%);
-	}
-	30% {
-		transform: translateY(-102%);
-	}
-	40% {
-		transform: translateY(-102%);
-	}
-	50% {
-		transform: translateY(-102%);
-	}
-	70% {
-		transform: translateY(-102%);
-	}
-	90% {
-		transform: translateY(-0.5%);
-	}
-	100% {
-		transform: translateY(-0.5%);
-	}
-}
-
-.wrapper8 {
+.away-92-94 {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../underground/1-shirt7.png);
+	background: url(../underground/92-94-3rd-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;  /* border margin */
@@ -3354,85 +3008,18 @@ iframe {
 	margin-top: -29.67%;
 	left: 94.4%;
 }
-.words8 { overflow: hidden; }
-.words8 img {
-	width: 100%;
-	position: relative;
-	display: block;
-	animation: spin_words2 6s infinite;
-}
-@keyframes spin_words2 {
-	0% {
-		transform: translateY(-200%);
-	}
-	10% {
-		transform: translateY(-200%);
-	}
-	30% {
-		transform: translateY(-102%);
-	}
-	40% {
-		transform: translateY(-102%);
-	}
-	50% {
-		transform: translateY(-102%);
-	}
-	70% {
-		transform: translateY(-102%);
-	}
-	90% {
-		transform: translateY(-0.5%);
-	}
-	100% {
-		transform: translateY(-0.5%);
-	}
-}
-
-.wrapper4 {
+.away-08-09 {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../underground/1-shirt8.png);
+	background: url(../underground/08-09-3rd-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;  /* border margin */
 	width: 3%;
 	height: 6.15vw;
 	display: flex;
-	margin-top: -29.67%;
-	left: 7%;
-}
-.words4 { overflow: hidden; }
-.words4 img {
-	width: 100%;
-	position: relative;
-	display: block;
-	animation: spin_words2 6s infinite;
-}
-@keyframes spin_words2 {
-	0% {
-		transform: translateY(-200%);
-	}
-	10% {
-		transform: translateY(-200%);
-	}
-	30% {
-		transform: translateY(-102%);
-	}
-	40% {
-		transform: translateY(-102%);
-	}
-	50% {
-		transform: translateY(-102%);
-	}
-	70% {
-		transform: translateY(-102%);
-	}
-	90% {
-		transform: translateY(-0.5%);
-	}
-	100% {
-		transform: translateY(-0.5%);
-	}
+	margin-top: -22.44%;
+	left: 94.4%;
 }
 /* BADGE-SPONSOR SPIN: BATCH 1 */
 /* BADGE-SPONSOR SPIN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -3780,28 +3367,28 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		overflow-x: hidden;
 		background-color: black;
 		min-width: auto;  /* overwrites min-width for desktop */
-		z-index: -3;  /* addition to make .cables and .bricks show */
+		z-index: -3;  /* addition to make .underground-large and .bricks show */
 	}
     ::-webkit-scrollbar { display: none; }
     ::-webkit-scrollbar-thumb { display: none; }
 	.parallax-home {
 		/* border: solid red 1px; */
 		position: relative;
-		display: table;  /* for Mozilla // original was display:flex, which merges .sky and .ground in one image */
+		display: table;  /* for Mozilla // original was display:flex, which merges the sky and .ground in one image */
 		text-align: center;
 	}
 	.parallax-home {
 		/* border: solid red 1px; */
 		position: relative;
-		display: flex;  /* merges .sky and .ground in one image; I deactivated .ground, tho */
+		display: flex;  /* merges the sky and .ground in one image; I deactivated .ground, tho */
 		text-align: center;
 	}
 	.parallax-home img {
 		position: relative;  /* allows me to move the sky, and not the text */
 		width: 100%;  /* how big the sky and ground are */
 	}
-	#flag { display: none; }
-	#flag2 {
+	#flag-mobile { display: none; }
+	#flag-pc {
 		position: absolute;  /* for PC */
 		margin-top: 14%;
 		left: 47%;
@@ -3846,22 +3433,22 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	.ground { display: none; }  /* for Mozilla */
 	/* UNDERGROUND SUPPORT 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.underground-cables {  /* for any reason, after adapting for Mozilla, everything from here goes down a tiny bity */
+	.underground {  /* for any reason, after adapting for Mozilla, everything from here goes down a tiny bity */
 		/* border: solid red 1px; */
 		position: relative;
 		z-index: -1;
 	}
-	.cables { display: none; }  /* for mobile */
-	.cables2 {
+	.underground-large {
 		width: 147%;
 		/* width: 130vw; */
 		margin-left: -18.8%;
 	}
+	.underground-small { display: none; }  /* for mobile */
 	/* SELECT SEASON 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.select-season {
 		/* border: solid red 1px; */
 		position: absolute;
-		margin-top: -17%;  /* with respect to .underground-cables */
+		margin-top: -17%;  /* with respect to .underground */
 		margin-left: 10%;  /* moves everything to the left/right */
 		z-index: 8;
 		width: 10.7vw;  /* reduces cursor:pointer clickability away from the title  */
@@ -3950,8 +3537,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.dropdown-li {  /* no use for this, but just in case... */
 		list-style: none;
 	}
-	.season-content-mobile { display: none; }  /* for mobile */
-	.season-content-pc {  /* click to close, click to revisit season */
+	.season-header-mobile { display: none; }  /* for mobile */
+	.season-header-pc {  /* click to close, click to revisit season */
 		/* border: solid 1px red; */
 		width: 320px;  /* how big the dropdown content is */
 	}
@@ -3985,7 +3572,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		opacity: 1;
 	}
 	/* WRAP FOR CAROUSEL, TEAMS, AND SCORE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.relative {
+	.scoreboard-wrapper {
 		position: relative;  /* I created this wrapper with this only line to make stuff fit cross-browser */
 	}
 	/* WRAP FOR CAROUSEL, TEAMS, AND SCORE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -3995,7 +3582,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		width: 26.4%;
 		height: 2vw;  /* addition for resposiveness */
-		margin-top: -17.7%;  /* with respect to .underground-cables */
+		margin-top: -17.7%;  /* with respect to .underground */
 		left: 36%;
 		background-size: cover;
 		display: flex;
@@ -4055,7 +3642,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* position: relative; */
 		width: 26.4%;
 		height: 3.4vw;  /* addition for Mozilla: to help make .scoreboard-result be exact same height as .scoreboard-teams */
-		margin-top: -16%;  /* with respect to .underground-cables */
+		margin-top: -16%;  /* with respect to .underground */
 		left: 36%;
 		/* margin-left: 37.635%; */
 		display: flex;
@@ -4066,7 +3653,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-family: myFont;
 		font-size: 1.6vw;
 		/* background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led.png);	 */
-		background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led-black.jpg);
 		background-size: 100% 120%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 	}
 	.home span {
@@ -4085,7 +3672,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		width: 6.8%;  /* space between score and .final-real1 */
 		height: 3.4vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
 		line-height: 1.8vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-		margin-top: -16%;  /* with respect to .underground-cables */
+		margin-top: -16%;  /* with respect to .underground */
 		left: 55.6%;
 		display: flex;
 		overflow: hidden;
@@ -4099,12 +3686,12 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* background-size: 150% 150%; */
 		text-align: center;
 	}
-	/* allows me put both the result (0-0) and the text "final/real score" side by side
+	/* allows me put both the result (0-0) and the text "final/fair score" side by side
 		Mr. Hugo's answer: https://stackoverflow.com/questions/37711138/display-2-ps-side-by-side
 		I had to add a few id in the HTML*/
-	#scoreboard .scoreboard-result, #scoreboard .final-real {display: inline;}
-	.final-real {
-		background: linear-gradient(rgba(254,29,18,0.7), rgba(254,29,18,0.7)), url(../parallax/led\ texture.jpg);
+	#scoreboard .scoreboard-result, #scoreboard .final-fair {display: inline;}
+	.final-fair {
+		background: linear-gradient(rgba(254,29,18,0.7), rgba(254,29,18,0.7)), url(../parallax/led-black.jpg);
 		position: absolute;
 		background-size: 60% 300%;
 		/* after using "&thinsp;", the red mini-box left a space on the right that showed the background img,
@@ -4115,10 +3702,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.scoreboard-result2 {
 		color: white;
 		position: absolute;
-		width: 6.8%;  /* space between score and .final-real2 */
+		width: 6.8%;  /* space between score and .final-fair2 */
 		height: 3.4vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
 		line-height: 1.8vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-		margin-top: -16%;  /* with respect to .underground-cables */
+		margin-top: -16%;  /* with respect to .underground */
 		left: 55.6%;
 		display: flex;
 		overflow: hidden;
@@ -4133,13 +3720,13 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 	}
-	/* allows me put both the result (0-0) and the text "final/real score" side by side
+	/* allows me put both the result (0-0) and the text "final/fair score" side by side
 		Mr. Hugo's answer: https://stackoverflow.com/questions/37711138/display-2-ps-side-by-side
 		I had to add a few id in the HTML*/
-	#scoreboard2 .scoreboard-result2, #scoreboard2 .final-real2 {display: inline;}
-	.final-real2 {
+	#scoreboard2 .scoreboard-result2, #scoreboard2 .final-fair2 {display: inline;}
+	.final-fair2 {
 		color: #ffcf3e;
-		background: linear-gradient(rgba(2,131,54,0.8), rgba(2,131,54,0.8)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(2,131,54,0.8), rgba(2,131,54,0.8)), url(../parallax/led-black.jpg);
 		position: absolute;
 		background-size: 60% 300%;
 		/* after using "&thinsp;", the red mini-box left a space on the right that showed the background img,
@@ -4178,7 +3765,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		height: 1.8vw;
 		line-height: 1.6vw;
 		left: 68.2%;
-		margin-top: -17.7%;  /* with respect to .underground-cables */
+		margin-top: -17.7%;  /* with respect to .underground */
 		background-size: cover;
 		display: flex;
 		overflow: hidden;
@@ -4463,7 +4050,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		height: 3.5vw;
 		width: 25.7%;  /* responsive: exact width so it won't exceed right margin; adjust according to screen width (@media) */
-		margin-top: -16%;  /* with respect to .underground-cables */
+		margin-top: -16%;  /* with respect to .underground */
 		left: 68.2%;
 		display: flex;
 		overflow: hidden;
@@ -4472,7 +4059,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-family: Lampen;
 		font-size: 1.6vw;
 		line-height: 5.5vw;  /* should be same as height to center text top to bottom */
-		background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led-black.jpg);
 		/* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		background-size: 80% 110%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		text-align: center;
@@ -4487,9 +4074,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.clock-vertical-stripe1 {
 		width: .4%;
 		height: 3.5vw;
-		margin-top: -16%;  /* with respect to .underground-cables*/
+		margin-top: -16%;  /* with respect to .underground */
 		left: 68.2%;
-		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led-black.jpg);
 		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		position: absolute;
 		z-index: 7;
@@ -4497,9 +4084,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.clock-vertical-stripe2 {
 		width: .4%;
 		height: 3.5vw;
-		margin-top: -16%;  /* with respect to .underground-cables*/
+		margin-top: -16%;  /* with respect to .underground */
 		left: 68.5%;
-		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led-black.jpg);
 		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		position: absolute;
 		z-index: 7;
@@ -4507,9 +4094,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.clock-vertical-stripe3 {
 		width: .4%;
 		height: 3.5vw;
-		margin-top: -16%;  /* with respect to .underground-cables*/
+		margin-top: -16%;  /* with respect to .underground */
 		left: 75.2%;
-		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led-black.jpg);
 		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		position: absolute;
 		z-index: 7;
@@ -4517,9 +4104,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.clock-vertical-stripe4 {
 		width: .4%;
 		height: 3.5vw;
-		margin-top: -16%;  /* with respect to .underground-cables*/
+		margin-top: -16%;  /* with respect to .underground */
 		left: 75.5%;
-		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led-black.jpg);
 		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		position: absolute;
 		z-index: 7;
@@ -4539,17 +4126,17 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		width: 95%;
 		left: 2.96%;
 		z-index: -2;
-		margin-top: -19%;  /* with respect to .underground-cables */
+		margin-top: -19%;  /* with respect to .underground */
 	}
 	/* IRONS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* MENU 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	header {
 		/* border: solid red 1px; */
-		margin-top: -18%;  /* with respect to .underground-cables */
+		margin-top: -18%;  /* with respect to .underground */
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;  /* 100% // my best guess is so that text occupies the width of the screen */
-		height: 23vw;  /* this specific height 'cuz it coincides with the border line of .cables */
+		height: 23vw;  /* this specific height 'cuz it coincides with the border line of .underground-large */
 	}
 	ul.navlist {
 		display: flex;
@@ -4662,19 +4249,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 120px #fff,
 						   0 0 160px #fff;
 	}
-	/* LYING DEVIL【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.devil { display: none; }
-	/* .devil {
-		position: relative;
-		z-index: -3;
-	}
-	.animated-gif {
-		position: absolute;
-		width: 10.3%;
-		margin-top: -25vw;
-		margin-left: 43.2%;
-	} */
-	/* LYING DEVIL【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* SUPPORT & DONATE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.support {
 		display: inline-block;  /* allows me to move this text freely */
@@ -4851,25 +4425,25 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		text-align: center;  /* centers it left to right */
 		z-index: 2;
 	}
-	.gallery-banner-pc { display: none; }  /* for PC */
-	.gallery-banner-mobile { 
+	.blur-pc { display: none; }  /* for PC */
+	.blur-mobile { 
 		display: initial;
 		position: absolute;
 		width: 100%;
 		margin-top: -29%;  /* with respect to header (menu) */
 	}
-	.gallery-banner {
+	.match-grid {
 		position: absolute;
 		display: initial;  /* overwrites code for PC */
 		margin-top: 37%;
-		left: -19%;  /* same as #ratings below */
+		left: -19%;  /* same as #match-ratings below */
 		width: 137%;
 	}
 	/* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.class-button-photo {
+	.button-wrapper {
 		position: relative;
 	}
-	#button-gallery2 {
+	#button-gallery1 {
 		border: none;
 		position: absolute;
 		margin-top: -41.7%;
@@ -4879,7 +4453,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-color: transparent;
 		z-index: 2;
 	}
-	#button-gallery3 {
+	#button-gallery2 {
 		border: none;
 		position: absolute;
 		margin-top: -41.7%;
@@ -4889,7 +4463,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-color: transparent;
 		z-index: 2;
 	}
-	#button-gallery5 {
+	#button-gallery3 {
 		border: none;
 		position: absolute;
 		margin-top: -41.7%;
@@ -4899,27 +4473,27 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-color: transparent;
 		z-index: 2;
 	}
+	#button-gallery4 {
+		border: none;
+		position: absolute;
+		margin-top: -41.7%;
+		left: 53.3%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
+		z-index: 2;
+	}
+	#button-gallery5 {
+		border: none;
+		position: absolute;
+		margin-top: -41.7%;
+		left: 53.3%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
+		z-index: 2;
+	}
 	#button-gallery6 {
-		border: none;
-		position: absolute;
-		margin-top: -41.7%;
-		left: 53.3%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
-	}
-	#button-gallery7 {
-		border: none;
-		position: absolute;
-		margin-top: -41.7%;
-		left: 53.3%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
-	}
-	#button-gallery8 {
 		border: none;
 		position: absolute;
 		margin-top: -41.7%;
@@ -4929,7 +4503,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-color: transparent;
 		z-index: 2;
 	}
-	#button-gallery9 {
+	#button-gallery7 {
 		border: none;
 		position: absolute;
 		margin-top: -41.7%;
@@ -4939,28 +4513,25 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-color: transparent;
 		z-index: 2;
 	}
-	#photo-blur {
+	#show-gallery {
 		display: none;
 		margin-top: -20.59%;  /* with respect to header (menu) */
 		position: absolute;
 	}
-	#photo-text1 { display: none; }   /* for button */
-	#photo-text2 { display: none; }   /* for button */
-	#photo-text3 { display: none; }   /* for button */
-	#photo-text4 { display: none; }   /* for button */
-	#photo-text5 { display: none; }   /* for button */
-	#photo-text6 { display: none; }   /* for button */
-	.photo-blur {
+	#gallery-text1 { display: none; }   /* for button */
+	#gallery-text2 { display: none; }   /* for button */
+	#gallery-text3 { display: none; }   /* for button */
+	#gallery-text4 { display: none; }   /* for button */
+	#gallery-text5 { display: none; }   /* for button */
+	#gallery-text6 { display: none; }   /* for button */
+	.gallery {
 		width: 100%;
 		position: relative;
 		z-index: 2;
 	}
 	/* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* GALLERY: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.class-button-gallery {
-		position: relative;
-	}
-	#button-gallery {
+	#button-read-text {
 		border: none;
 		border-radius: 0 0 1.5vw 1.5vw;
 		position: absolute;
@@ -4975,20 +4546,20 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background: url(../underground/button.png), #820202;
 		background-size: 100% 100%;
 	}
-	#button-gallery:hover {
+	#button-read-text:hover {
 		color: #f0f50c;
 		background: url(../underground/button.png), radial-gradient(#ef0017 -20%, #820202);  /* -20% here reduces the radius of #ef0017 color */
 		background-size: 100% 100%;
 		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
 	}
-	#button-gallery span1 { display: none; }  /* CLICK TO READ TEXT */
-	#button-gallery span2 { display: initial; }  /* TAP TO READ TEXT */
-	#gallery-blur1 {
+	#button-read-text span1 { display: none; }  /* CLICK TO READ TEXT */
+	#button-read-text span2 { display: initial; }  /* TAP TO READ TEXT */
+	#show-expectations {
 		display: none;
 		margin-top: -6%;  /* with respect to header (menu) */
 		position: absolute;
 	}
-	.gallery-blur {
+	.expectations {
 		width: 100%;
 		position: relative;
 		z-index: 2;
@@ -5151,7 +4722,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	#second-half { transform: translate(48%, 0%); }  /*2H */
 	/* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	#button-gallery4 {
+	#button-ratings {
 		border: none;
 		border-radius: 1.5vw;
 		position: absolute;
@@ -5167,14 +4738,14 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background: url(../underground/button.png), #820202;
 		background-size: 100% 100%;
 	}
-	#button-gallery4:hover {
+	#button-ratings:hover {
 		color: #f0f50c;
 		background: url(../underground/button.png), radial-gradient(#ef0017 -20%, #820202);
 		background-size: 100% 100%;
 		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
 	}
-	#button-gallery4 span1 { display: none; }  /* CLICK TO REVEAL SCORES... */
-	#button-gallery4 span2 { display: initial; }  /* TAP TO REVEAL SCORES */
+	#button-ratings span1 { display: none; }  /* CLICK TO REVEAL SCORES... */
+	#button-ratings span2 { display: initial; }  /* TAP TO REVEAL SCORES */
 	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.date-and-result h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {  /*1st row */
@@ -5233,23 +4804,23 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.date-and-result h17 {
 		left: 88.6%;
 	}
-	#date1 {
+	#date {
 		font-size: 1.11vw;
 	}
 	#result { display: none;}   /* for button */
 	#result1 { display: none; }   /* for button */
 	/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	#ratings {
+	.match-ratings-wrapper {
+		position: relative;
+		z-index: 2;
+	}
+	#match-ratings {
 		display: none;
 		position: absolute;
 		margin-top: .5%;  /* with respect to header (menu) */
-		left: -19%;  /* same as .gallery-banner above */
+		left: -19%;  /* same as .match-grid above */
 		width: 137%;
-	}
-	.ratings {
-		position: relative;
-		z-index: 2;
 	}
 	/* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* CUBOID HOLDERS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -5260,7 +4831,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.cuboid2 { display: none; }
 	/* ROTATING CUBOIDS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* VERTICAL SIGNS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.iron-columns { display: none; }
+	.vertical-neon-signs { display: none; }
 	/* VERTICAL SIGNS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* DROPDOWNS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdowns-section {
@@ -5303,7 +4874,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 			 https://www.reddit.com/r/css/comments/t2zcot/can_css_variables_custom_properties_be_used_to/ */
 		display: var(--open-display) !important;
 	}
-	.open1 {
+	.open2 {
 		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
 		font-family: Trueno Round Italic;
 		font-size: 1.8vw;
@@ -5338,7 +4909,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* inspired by another custom property (variable), I added "none" to make "HIDE" not visible when the checkbox is unchecked. */
 		display: var(--close-display, none) !important;
 	}
-	.close1 {
+	.close2 {
 		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
 		font-family: Trueno Round Italic;
 		font-size: 1.8vw;
@@ -5355,9 +4926,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* inspired by another custom property (variable), I added "none" to make "HIDE" not visible when the checkbox is unchecked. */
 		display: var(--close-display, none) !important;
 	}
-	.close4 {
+	.hide-UCL {
 		position: absolute;
-		background: url(/underground/close-UCL.png);
+		background: url(/underground/hide-UCL.png);
 		background-size: 100%;
 		font-family: 'Courier New', Courier, monospace;	 /* to control image size, I need these font values */
 		font-size: 6.8vw; 	/* to control image size, I need these font values */
@@ -5435,47 +5006,29 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		display: var(--links-display, none) !important;
 	}
 
-	.dropdown-content-historical {
+	.dropdown-content {  /* for Tranfers, 23/24 Stats, Player Performance, Player Stats */
+		width: 122%;  /* has to coincide with width in background-image under .dropdown-transfers below */
+		height: 100%;
+	}
+	.content-match {
+		width: 116.3%;  /* has to coincide with width in background-image under .dropdown-1st-match below */
+		height: 100%;
+	}
+	.content-match1 {  /* for 'historical' and 'threat' */
 		margin-top: -.7%;
-		width: 116.3%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
+		width: 116.3%;  /* has to coincide with width in background-image under .dropdown-1st-match below */
 		height: 100%;
 	}
-
-	#dropdown-content-match {
-		width: 116.3%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
-		height: 100%;
-	}
-
-	.dropdown-content-historical1 {
-		display: none;  /* PC version with the iframe */
-		margin-top: -.2%;
-		width: 100%;
-		height: 100%;
-	}
-
-	.dropdown-content-historical3 {  /* responsive version of this img without the iframe */
+	.content-match2 {  /* for Sofascore and other stats */
 		display: initial;
 		margin-top: -.2%;
 		width: 116.3%;
 		height: 100%;
 	}
-
-	.dropdown-content {
-		width: 122%;  /* has to coincide with width in background-image under .dropdown_link-transfers below */
-		height: 100%;
-	}
-
-	iframe { display: none;	}  /* this iframe doesn't adopt the right height */
-
-	.dropdown-content-historical2 {
-		margin-top: -30%;
-		width: 100%;
-		height: 100%;
-	}
 	/* TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.dropdown_link-transfers {
+	.dropdown-transfers {
 		/* border: solid red 1px; */
-		background-image: url(../underground/AIG-transfers.png);
+		background-image: url(../underground/transfers.png);
 		background-size: 122% 100%;  /* width and height  // also, width has to coincide with width under .dropdown-content above */
 		color: white;
 		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -5505,9 +5058,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-size: 5vw;
 	}
 	/* TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.dropdown_link-stats {
+	.dropdown-stats {
 		/* border: solid 1px red; */
-		background-image: url(../underground/AIG-stats.png);
+		background-image: url(../underground/stats.png);
 		background-size: 122% 100%;
 		color: white;
 		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -5544,9 +5097,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 120px #fe5201, 0 0 120px #fe5201;
 	}
 	/* PLAYER PERFORMANCE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.dropdown_link-player-performance {
+	.dropdown-player-performance {
 		/* border: solid 1px red; */
-		background-image: url(../underground/AIG-performance.png);
+		background-image: url(../underground/player-perf.png);
 		background-size: 122% 100%;
 		color: white;
 		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -5577,9 +5130,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-size: 4vw;
 	}
 	/* PLAYER STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.dropdown_link-player-stats {
+	.dropdown-player-stats {
 		/* border: solid 1px red; */
-		background-image: url(../underground/AIG-player-stats.png);
+		background-image: url(../underground/player-stats.png);
 		background-size: 122% 100%;
 		color: white;
 		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -5604,9 +5157,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
 		pointer-events: none;
 	}
-	.dropdown_link-transition {
+	.dropdown-transition {
 		/* border: solid 1px red; */
-		background-image: url(../underground/AIG-player-stats-below.png);
+		background-image: url(../underground/transition.png);
 		background-size: 122% 100%;
 		color: white;
 		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -5619,14 +5172,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	[itemid="dropdown-matches"] { /* moves all match dropdowns as well as preseason */
 		margin-left: -5vw; 
 	}
-	.dropdown-background {
-		background-image: none;  /* no iron column background for match content */
-		background-size: 100%;
-	}
-	.dropdown_link-preseason {
+	.dropdown-preseason {
 		/* border: solid 1px red; */
 		background-image: url(../underground/pre-season.png);
-		background-size: 116.3% 100%;  /* width and height  // also, width has to coincide with width under #dropdown-content-match and .dropdown-content-historical above */
+		background-size: 116.3% 100%;  /* width and height  // also, width has to coincide with width under .content-match and .content-match1 above */
 		color: white;
 		padding: 6.3vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 		text-decoration: none;
@@ -5634,10 +5183,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		align-items: center;
 		position: relative;
 	}
-	.dropdown_link-1st-match {
+	.dropdown-1st-match {
 		/* border: solid 1px red; */
-		background-image: url(../underground/1st-match1.png);
-		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above, and .cover */
+		background-image: url(../underground/1st-match.png);
+		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .content-match above, and #cover1-score */
 		color: white;
 		padding: 6.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 		text-decoration: none;
@@ -5647,8 +5196,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	.dropdown_link-2nd-match {
 		/* border: solid 1px red; */
-		background-image: url(../underground/1st-match2.png);
-		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above */
+	background-image: url(../underground/2nd-match.png);
+		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .content-match above */
 		color: white;
 		padding: 6.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 		text-decoration: none;
@@ -5995,25 +5544,25 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		}
 	}
 	/* 	BUTTON: SHOW SCORE AND NEWS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
-	#button-gallery20 h60 { display: none; }  /* CLICK FOR... */
-	#button-gallery20 h61 { display: initial; }  /* TAP FOR... */
-	#cover1 {
+	#button-score-news1 h60 { display: none; }  /* CLICK FOR... */
+	#button-score-news1 h61 { display: initial; }  /* TAP FOR... */
+	#cover1-news {
 		/* border: solid 1px green; */
 		position: absolute;
-		width: 116.3%;  /* same as background-size:116.3% under .dropdown_link-1st-match above */
+		width: 116.3%;  /* same as background-size:116.3% under .dropdown-1st-match above */
 		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
-	#cover {
+	#cover1-score {
 		/* border: solid 1px green; */
 		position: absolute;
-		width: 116.3%;  /* same as background-size:116.3% under .dropdown_link-1st-match above */
+		width: 116.3%;  /* same as background-size:116.3% under .dropdown-1st-match above */
 		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
-	#button-gallery20 {
+	#button-score-news1 {
 		border: none;
 		border-radius: .1vw;
 		position: absolute;
@@ -6029,7 +5578,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background: #262626;
 		overflow: hidden;  /* for animation: hides each child outside the button */
 	}
-	#button-gallery20:hover {
+	#button-score-news1:hover {
 		color: black;
 		background: #ef0017;
 		box-shadow: 0 0 5px #ef0017,
@@ -6038,25 +5587,25 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 200px #ef0017;
 	}
 
-	#button-gallery21 h60 { display: none; }  /* CLICK FOR... */
-	#button-gallery21 h61 { display: initial; }  /* TAP FOR... */
-	#cover2 {
+	#button-score-news2 h60 { display: none; }  /* CLICK FOR... */
+	#button-score-news2 h61 { display: initial; }  /* TAP FOR... */
+	#cover2-news {
 		/* border: solid 1px green; */
 		position: absolute;
-		width: 116.3%;  /* same as background-size:116.3% under .dropdown_link-1st-match above */
+		width: 116.3%;  /* same as background-size:116.3% under .dropdown-1st-match above */
 		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
-	#cover-2 {
+	#cover2-score {
 		/* border: solid 1px green; */
 		position: absolute;
-		width: 116.3%;  /* same as background-size:116.3% under .dropdown_link-1st-match above */
+		width: 116.3%;  /* same as background-size:116.3% under .dropdown-1st-match above */
 		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
-	#button-gallery21 {
+	#button-score-news2 {
 		border: none;
 		border-radius: .1vw;
 		position: absolute;
@@ -6072,7 +5621,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background: #262626;
 		overflow: hidden;  /* for animation: hides each child outside the button */
 	}
-	#button-gallery21:hover {
+	#button-score-news2:hover {
 		color: black;
 		background: #ef0017;
 		box-shadow: 0 0 5px #ef0017,
@@ -6082,12 +5631,12 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	/* 	BUTTON: ROTATE ANIMATION  */
 	/* animation: https://www.youtube.com/watch?v=vCq1C52v7xE */
-	.class-button-photo span {
+	.button-wrapper span {
 		position: absolute;
 		display: block;
 	}
 	
-	#button-gallery20 span:nth-child(1) {  /* top line */
+	#button-score-news1 span:nth-child(1) {  /* top line */
 		top: 0;
 		left: -100%;
 		width: 100%;
@@ -6105,7 +5654,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		}
 	}
 	
-	#button-gallery20 span:nth-child(3) {  /* bottom line */
+	#button-score-news1 span:nth-child(3) {  /* bottom line */
 		bottom: 0;
 		right: -100%;
 		width: 100%;
@@ -6124,7 +5673,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		}
 	}
 	
-	#button-gallery20 span:nth-child(2) {  /* right line */
+	#button-score-news1 span:nth-child(2) {  /* right line */
 		top: -100%;
 		right: 0;
 		width: 2%;
@@ -6142,7 +5691,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		}
 	}
 	
-	#button-gallery20 span:nth-child(4) {  /* left line */
+	#button-score-news1 span:nth-child(4) {  /* left line */
 		bottom: -100%;
 		left: 0;
 		width: 2%;
@@ -6160,12 +5709,12 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		}
 	}
 	
-	#button-gallery20:hover span {
+	#button-score-news1:hover span {
 		animation-play-state: paused;
 	}
 	/* 	BUTTON: SHOW SCORE AND NEWS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* 	DATE | TIME | COMPETITION STAGE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
-	.close3 {
+	.date-time {
 		/* border: solid 1px red; */
 		position: absolute;
 		width: 18%;
@@ -6178,9 +5727,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	/* 	DATE | TIME | COMPETITION STAGE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* 	BUTTON: SHOW MATCH STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
-	#button2 h70 { display: none; }  /* CLICK HERE FOR */
-	#button2 h71 { display: initial; }  /* TAP HERE FOR... */
-	#button2 {
+	#button-stats1 h70 { display: none; }  /* CLICK HERE FOR */
+	#button-stats1 h71 { display: initial; }  /* TAP HERE FOR... */
+	#button-stats1 {
 		border: none;
 		position: relative;
 		margin-top: 2%;
@@ -6194,7 +5743,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		text-align: center;
 		z-index: 1;
 	}
-	#button2:before {
+	#button-stats1:before {
 		content: '';
 		position: absolute;
 		width: 100%;
@@ -6208,12 +5757,12 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		top: -10%;
 		left: 0%;
 	}
-	#button2:hover:before {
+	#button-stats1:hover:before {
 		top: -20%;
 		left: 0;
 		transform: perspective(1000px) rotateX(80deg);
 	}
-	#button2:after {
+	#button-stats1:after {
 		content: '';
 		position: absolute;
 		width: 100%;
@@ -6227,18 +5776,18 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		bottom: -10%;
 		right: -1%;
 	}
-	#button2:hover:after {
+	#button-stats1:hover:after {
 		bottom: -20%;
 		right: 0;
 		transform: perspective(1000px) rotateX(-80deg);
 	}
-	#button2:hover h71 { color: rgb(211, 208, 208); }
-	#image { display: none; }  /* for button */
+	#button-stats1:hover h71 { color: rgb(211, 208, 208); }
+	#stats-1st-match { display: none; }  /* for button */
 
 
-	#button3 h70 { display: none; }  /* CLICK HERE FOR */
-	#button3 h71 { display: initial; }  /* TAP HERE FOR... */
-	#button3 {
+	#button-stats2 h70 { display: none; }  /* CLICK HERE FOR */
+	#button-stats2 h71 { display: initial; }  /* TAP HERE FOR... */
+	#button-stats2 {
 		border: none;
 		position: relative;
 		margin-top: 2%;
@@ -6252,7 +5801,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		text-align: center;
 		z-index: 1;
 	}
-	#button3:before {
+	#button-stats2:before {
 		content: '';
 		position: absolute;
 		width: 100%;
@@ -6266,12 +5815,12 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		top: -10%;
 		left: 0%;
 	}
-	#button3:hover:before {
+	#button-stats2:hover:before {
 		top: -20%;
 		left: 0;
 		transform: perspective(1000px) rotateX(80deg);
 	}
-	#button3:after {
+	#button-stats2:after {
 		content: '';
 		position: absolute;
 		width: 100%;
@@ -6285,17 +5834,16 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		bottom: -10%;
 		right: -1%;
 	}
-	#button3:hover:after {
+	#button-stats2:hover:after {
 		bottom: -20%;
 		right: 0;
 		transform: perspective(1000px) rotateX(-80deg);
 	}
-	#button3:hover h71 { color: rgb(211, 208, 208); }
-	#image2 { display: none; }  /* for button */
+	#button-stats2:hover h71 { color: rgb(211, 208, 208); }
+	#stats-2nd-match { display: none; }  /* for button */
 	/* 	BUTTON: SHOW MATCH STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* BADGE-SPONSOR SPIN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.badges-and-sponsors { display: none !important; }  /* for PC */
-	.badges-and-sponsors1 { display: none !important; }  /* for PC */
 	/* BADGE-SPONSOR SPIN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* BOTTOM 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.bottom {
@@ -6640,14 +6188,14 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		overflow-x: hidden;
 		background-color: black;
 		min-width: auto;  /* overwrites min-width for desktop */
-		z-index: -3;  /* addition to make .cables and .bricks show */
+		z-index: -3;  /* addition to make .underground-small and .bricks show */
 	}
     ::-webkit-scrollbar { display: none; }
     ::-webkit-scrollbar-thumb { display: none; }
 	.parallax-home {
 		/* border: solid red 1px; */
 		position: relative;
-		display: table;  /* for Mozilla // original was display:flex, which merges .sky and .ground in one image */
+		display: table;  /* for Mozilla // original was display:flex, which merges the sky and .ground in one image */
 		text-align: center;
 	}
 	.parallax-home img {
@@ -6655,7 +6203,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		width: 130%;  /* how big the sky and ground are */
 		left: -20%;  /* moves the sky and ground to the left */
 	}
-	#flag {
+	#flag-mobile {
 		display: initial;  /* overwrites display:none for PC */
 		position: absolute;
 		margin-top: -43%;  /* for Mozilla // original was margin-top:20% */
@@ -6664,7 +6212,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		transform: rotate(-15deg);
 		z-index: 1;
 	}
-	#flag2 { display: none; }
+	#flag-pc { display: none; }
 	.title {
 		/* border: solid red 1px; */
 		position: absolute;
@@ -6702,15 +6250,15 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	.ground { display: none; }  /* for Mozilla */
 	/* LED SIGN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-#sky-cover {
-	position: absolute;
-	top: 0;
-	left: -20%;
-	display: flex;
-	z-index: 1;
-	opacity: .7;
-}	
-	.wrapper {
+	#led-cover {
+		position: absolute;
+		top: 0;
+		left: -20%;
+		display: flex;
+		z-index: 1;
+		opacity: .7;
+	}	
+	.zeppelin-led {
 		position: absolute;
 		box-sizing: content-box;
 		/* background-color: red; */
@@ -6724,16 +6272,16 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		margin-top: 2.1%;
 		left: 38.9%;
 	}
-	.words { overflow: hidden; }
-	.words span {
+	.led-words { overflow: hidden; }
+	.led-words span {
 		font-family: myFont;
 		font-size: 3.2vw;
 		color: yellow;
 		display: block;
 		height: 100%;
-		animation: spin_words 6s infinite;
+		animation: spin-words 6s infinite;
 	}
-	@keyframes spin_words {
+	@keyframes spin-words {
 		0% {
 			transform: translateY(-1%);
 		}
@@ -6761,13 +6309,13 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	/* LED SIGN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* UNDERGROUND SUPPORT 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.underground-cables {  /* for any reason, after adapting for Mozilla, everything from here goes down a tiny bity */
+	.underground {  /* for any reason, after adapting for Mozilla, everything from here goes down a tiny bity */
 		/* border: solid red 1px; */
 		position: relative;
 		z-index: -1;
 	}
-	.cables2 { display: none; }  /* for PC */
-    .cables {
+	.underground-large { display: none; }  /* for PC */
+    .underground-small {
 		display: initial;  /* overwrites display:none for PC */
 		width: 250%;
 	}
@@ -6775,7 +6323,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.select-season {
 		/* border: solid red 1px; */
 		position: absolute;
-		margin-top: -29%;  /* with respect to .underground-cables */
+		margin-top: -29%;  /* with respect to .underground */
 		margin-left: 2vw;  /* moves everything to the left/right */
 		z-index: 8;
 		width: 20vw;
@@ -6864,8 +6412,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.dropdown-li {  /* no use for this, but just in case... */
 		list-style: none;
 	}
-	.season-content-pc { display: none; }  /* for PC */
-	.season-content-mobile {  /* tap to close, tap to revisit season */
+	.season-header-pc { display: none; }  /* for PC */
+	.season-header-mobile {  /* tap to close, tap to revisit season */
 		display: initial;  /* overwrites display:none for PC */
 		/* border: solid 1px red; */
 		width: 304px;  /* how big the dropdown content is */
@@ -6905,7 +6453,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		width: 33.2%;
 		height: 4.2vw;  /* addition for resposiveness */
-		margin-top: -30%;  /* with respect to .underground-cables */
+		margin-top: -30%;  /* with respect to .underground */
 		left: 30.8%;
 		background-size: cover;
 		display: flex;
@@ -6963,7 +6511,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* border: solid red 1px; */
 		position: absolute;
 		width: 33.2%;
-		margin-top: -26.7%;  /* with respect to .underground-cables */
+		margin-top: -26.7%;  /* with respect to .underground */
 		left: 30.8%;
 		display: flex;
 		overflow: hidden;
@@ -6972,7 +6520,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		cursor: pointer;
 		font-family: myFont;
 		font-size: 2.5vw;
-		background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led-black.jpg);
 		background-size: 150% 150%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 	}
 	.home span {
@@ -6988,10 +6536,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.scoreboard-result {
 		color: white;
 		position: absolute;
-		width: 11.6%;  /* space between score and .final-real */
+		width: 11.6%;  /* space between score and .final-fair */
 		height: 5.2vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
 		line-height: 2.7vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-		margin-top: -26.7%;  /* with respect to .underground-cables */
+		margin-top: -26.7%;  /* with respect to .underground */
 		left: 52.4%;
 		display: flex;
 		overflow: hidden;
@@ -7005,12 +6553,12 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* background-size: 150% 150%; */
 		text-align: center;
 	}
-	/* allows me put both the result (0-0) and the text "final/real score" side by side
+	/* allows me put both the result (0-0) and the text "final/fair score" side by side
 		Mr. Hugo's answer: https://stackoverflow.com/questions/37711138/display-2-ps-side-by-side
 		I had to add a few id in the HTML*/
-	#scoreboard .scoreboard-result, #scoreboard .final-real {display: inline;}
-	.final-real {
-		background: linear-gradient(rgba(254,29,18,0.6), rgba(254,29,18,0.6)), url(../parallax/led\ texture.jpg);
+	#scoreboard .scoreboard-result, #scoreboard .final-fair {display: inline;}
+	.final-fair {
+		background: linear-gradient(rgba(254,29,18,0.6), rgba(254,29,18,0.6)), url(../parallax/led-black.jpg);
 		position: absolute;
 		background-size: 150% 150%;
 		/* after using "&thinsp;", the red mini-box left a space on the right that showed the background img,
@@ -7021,10 +6569,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.scoreboard-result2 {
 		color: white;
 		position: absolute;
-		width: 11.6%;  /* space between score and .final-real2 */
+		width: 11.6%;  /* space between score and .final-fair2 */
 		height: 5.2vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
 		line-height: 2.7vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-		margin-top: -26.7%;  /* with respect to .underground-cables */
+		margin-top: -26.7%;  /* with respect to .underground */
 		left: 52.4%;
 		display: flex;
 		overflow: hidden;
@@ -7039,13 +6587,13 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 	}
-	/* allows me put both the result (0-0) and the text "final/real score" side by side
+	/* allows me put both the result (0-0) and the text "final/fair score" side by side
 		Mr. Hugo's answer: https://stackoverflow.com/questions/37711138/display-2-ps-side-by-side
 		I had to add a few id in the HTML*/
-	#scoreboard2 .scoreboard-result2, #scoreboard2 .final-real2 {display: inline;}
-	.final-real2 {
+	#scoreboard2 .scoreboard-result2, #scoreboard2 .final-fair2 {display: inline;}
+	.final-fair2 {
 		color: #ffcf3e;
-		background: linear-gradient(rgba(2,131,54,0.6), rgba(2,131,54,0.6)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(2,131,54,0.6), rgba(2,131,54,0.6)), url(../parallax/led-black.jpg);
 		position: absolute;
 		background-size: 150% 150%;
 		/* after using "&thinsp;", the red mini-box left a space on the right that showed the background img,
@@ -7083,7 +6631,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		height: 5.5vw;
 		width: 32%;  /* responsive: exact width so it won't exceed right margin; adjust according to screen width (@media) */
-		margin-top: -28.4%;  /* with respect to .underground-cables */
+		margin-top: -28.4%;  /* with respect to .underground */
 		left: 68.7%;
 		display: flex;
 		overflow: hidden;
@@ -7092,7 +6640,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-family: Lampen;
 		font-size: 2.5vw;
 		line-height: 5.5vw;  /* should be same as height to center text top to bottom */
-		background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led-black.jpg);
 		/* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		text-align: center;
@@ -7114,9 +6662,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.clock-vertical-stripe1 {
 		width: .8%;
 		height: 5.5vw;
-		margin-top: -28.4%;  /* with respect to .underground-cables*/
+		margin-top: -28.4%;  /* with respect to .underground */
 		left: 68.7%;
-		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led-black.jpg);
 		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		position: absolute;
 		z-index: 7;
@@ -7124,9 +6672,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.clock-vertical-stripe2 {
 		width: .8%;
 		height: 5.5vw;
-		margin-top: -28.4%;  /* with respect to .underground-cables */
+		margin-top: -28.4%;  /* with respect to .underground */
 		left: 69.5%;
-		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led-black.jpg);
 		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		position: absolute;
 		z-index: 7;
@@ -7134,9 +6682,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.clock-vertical-stripe3 {
 		width: .8%;
 		height: 5.5vw;
-		margin-top: -28.4%;  /* with respect to .underground-cables */
+		margin-top: -28.4%;  /* with respect to .underground */
 		left: 79%;
-		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led-black.jpg);
 		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		position: absolute;
 		z-index: 7;
@@ -7144,9 +6692,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.clock-vertical-stripe4 {
 		width: .8%;
 		height: 5.5vw;
-		margin-top: -28.4%;  /* with respect to .underground-cables */
+		margin-top: -28.4%;  /* with respect to .underground */
 		left: 79.8%;
-		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led-black.jpg);
 		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		position: absolute;
 		z-index: 7;
@@ -7154,12 +6702,12 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
     /* MENU 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	header {
 		/* border: solid red 1px; */
-		margin-top: -19%;  /* with respect to .underground-cables */
+		margin-top: -19%;  /* with respect to .underground */
 		justify-content: space-between;
 		align-items: center;
 		margin-left: 2%;  /* addition to center it for tablet */
 		width: 100%;  /* 100% // my best guess is so that text occupies the width of the screen */
-		height: 23vw;  /* this specific height 'cuz it coincides with the border line of .cables; comment for mobile */
+		height: 23vw;  /* this specific height 'cuz it coincides with the border line of .underground-small; comment for mobile */
 	}
 	ul.navlist {
 		display: flex;
@@ -7447,25 +6995,25 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		text-align: center;  /* centers it left to right */
 		z-index: 2;
 	}
-	.gallery-banner-pc { display: none; }  /* for PC */
-	.gallery-banner-mobile { 
+	.blur-pc { display: none; }  /* for PC */
+	.blur-mobile { 
 		display: initial;
 		position: absolute;
 		width: 100%;
 		margin-top: -29%;  /* with respect to header (menu) */
 	}
-	.gallery-banner {
+	.match-grid {
 		position: absolute;
 		display: initial;  /* overwrites code for PC */
 		margin-top: 37%;
-		left: -19%;  /* same as #ratings below */
+		left: -19%;  /* same as #match-ratings below */
 		width: 137%;
 	}
 	/* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.class-button-photo {
+	.button-wrapper {
 		position: relative;
 	}
-	#button-gallery2 {
+	#button-gallery1 {
 		border: none;
 		position: absolute;
 		margin-top: -41.7%;
@@ -7475,7 +7023,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-color: transparent;
 		z-index: 2;
 	}
-	#button-gallery3 {
+	#button-gallery2 {
 		border: none;
 		position: absolute;
 		margin-top: -41.7%;
@@ -7485,7 +7033,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-color: transparent;
 		z-index: 2;
 	}
-	#button-gallery5 {
+	#button-gallery3 {
 		border: none;
 		position: absolute;
 		margin-top: -41.7%;
@@ -7495,27 +7043,27 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-color: transparent;
 		z-index: 2;
 	}
+	#button-gallery4 {
+		border: none;
+		position: absolute;
+		margin-top: -41.7%;
+		left: 53.3%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
+		z-index: 2;
+	}
+	#button-gallery5 {
+		border: none;
+		position: absolute;
+		margin-top: -41.7%;
+		left: 53.3%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
+		z-index: 2;
+	}
 	#button-gallery6 {
-		border: none;
-		position: absolute;
-		margin-top: -41.7%;
-		left: 53.3%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
-	}
-	#button-gallery7 {
-		border: none;
-		position: absolute;
-		margin-top: -41.7%;
-		left: 53.3%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
-	}
-	#button-gallery8 {
 		border: none;
 		position: absolute;
 		margin-top: -41.7%;
@@ -7525,7 +7073,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-color: transparent;
 		z-index: 2;
 	}
-	#button-gallery9 {
+	#button-gallery7 {
 		border: none;
 		position: absolute;
 		margin-top: -41.7%;
@@ -7535,28 +7083,25 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-color: transparent;
 		z-index: 2;
 	}
-	#photo-blur {
+	#show-gallery {
 		display: none;
 		margin-top: -20.59%;  /* with respect to header (menu) */
 		position: absolute;
 	}
-	#photo-text1 { display: none; }   /* for button */
-	#photo-text2 { display: none; }   /* for button */
-	#photo-text3 { display: none; }   /* for button */
-	#photo-text4 { display: none; }   /* for button */
-	#photo-text5 { display: none; }   /* for button */
-	#photo-text6 { display: none; }   /* for button */
-	.photo-blur {
+	#gallery-text1 { display: none; }   /* for button */
+	#gallery-text2 { display: none; }   /* for button */
+	#gallery-text3 { display: none; }   /* for button */
+	#gallery-text4 { display: none; }   /* for button */
+	#gallery-text5 { display: none; }   /* for button */
+	#gallery-text6 { display: none; }   /* for button */
+	.gallery {
 		width: 100%;
 		position: relative;
 		z-index: 2;
 	}
 	/* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* GALLERY: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.class-button-gallery {
-		position: relative;
-	}
-	#button-gallery {
+	#button-read-text {
 		border: none;
 		border-radius: 0 0 1.5vw 1.5vw;
 		position: absolute;
@@ -7571,20 +7116,20 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background: url(../underground/button.png), #820202;
 		background-size: 100% 100%;
 	}
-	#button-gallery:hover {
+	#button-read-text:hover {
 		color: #f0f50c;
 		background: url(../underground/button.png), radial-gradient(#ef0017 -20%, #820202);  /* -20% here reduces the radius of #ef0017 color */
 		background-size: 100% 100%;
 		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
 	}
-	#button-gallery span1 { display: none; }  /* CLICK TO READ TEXT */
-	#button-gallery span2 { display: initial; }  /* TAP TO READ TEXT */
-	#gallery-blur1 {
+	#button-read-text span1 { display: none; }  /* CLICK TO READ TEXT */
+	#button-read-text span2 { display: initial; }  /* TAP TO READ TEXT */
+	#show-expectations {
 		display: none;
 		margin-top: -6%;  /* with respect to header (menu) */
 		position: absolute;
 	}
-	.gallery-blur {
+	.expectations {
 		width: 100%;
 		position: relative;
 		z-index: 2;
@@ -7747,7 +7292,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	#second-half { transform: translate(40%, 0%); }  /*2H */
 	/* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	#button-gallery4 {
+	#button-ratings {
 		border: none;
 		border-radius: 1.5vw;
 		position: absolute;
@@ -7769,8 +7314,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-size: 100% 100%;
 		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
 	}
-	#button-gallery4 span1 { display: none; }  /* CLICK TO REVEAL SCORES... */
-	#button-gallery4 span2 { display: initial; }  /* TAP TO REVEAL SCORES */
+	#button-ratings span1 { display: none; }  /* CLICK TO REVEAL SCORES... */
+	#button-ratings span2 { display: initial; }  /* TAP TO REVEAL SCORES */
 	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.date-and-result h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {  /*1st row */
@@ -7829,23 +7374,23 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.date-and-result h17 {
 		left: 88.6%;
 	}
-	#date1 {
+	#date {
 		font-size: 1.11vw;
 	}
 	#result { display: none;}   /* for button */
 	#result1 { display: none; }   /* for button */
 	/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	#ratings {
+	.match-ratings-wrapper {
+		position: relative;
+		z-index: 2;
+	}
+	#match-ratings {
 		display: none;
 		position: absolute;
 		margin-top: -.15%;  /* with respect to header (menu) */
-		left: -19%;  /* same as .gallery-banner above */
+		left: -19%;  /* same as .match-grid above */
 		width: 137%;
-	}
-	.ratings {
-		position: relative;
-		z-index: 2;
 	}
 	/* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* CUBOID HOLDERS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -7856,7 +7401,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.cuboid2 { display: none; }
 	/* ROTATING CUBOIDS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* VERTICAL SIGNS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.iron-columns { display: none; }
+	.vertical-neon-signs { display: none; }
 	/* VERTICAL SIGNS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* DROPDOWNS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdowns-section {
@@ -7899,7 +7444,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 			 https://www.reddit.com/r/css/comments/t2zcot/can_css_variables_custom_properties_be_used_to/ */
 		display: var(--open-display) !important;
 	}
-	.open1 {
+	.open2 {
 		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
 		font-family: Trueno Round Italic;
 		font-size: 1.8vw;
@@ -7934,7 +7479,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* inspired by another custom property (variable), I added "none" to make "HIDE" not visible when the checkbox is unchecked. */
 		display: var(--close-display, none) !important;
 	}
-	.close1 {
+	.close2 {
 		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
 		font-family: Trueno Round Italic;
 		font-size: 1.8vw;
@@ -7951,9 +7496,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* inspired by another custom property (variable), I added "none" to make "HIDE" not visible when the checkbox is unchecked. */
 		display: var(--close-display, none) !important;
 	}
-	.close4 {
+	.hide-UCL {
 		position: absolute;
-		background: url(/underground/close-UCL.png);
+		background: url(/underground/hide-UCL.png);
 		background-size: 100%;
 		font-family: 'Courier New', Courier, monospace;	 /* to control image size, I need these font values */
 		font-size: 6.8vw; 	/* to control image size, I need these font values */
@@ -8031,47 +7576,29 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		display: var(--links-display, none) !important;
 	}
 
-	.dropdown-content-historical {
+	.dropdown-content {  /* for Tranfers, 23/24 Stats, Player Performance, Player Stats */
+		width: 122%;  /* has to coincide with width in background-image under .dropdown-transfers below */
+		height: 100%;
+	}
+	.content-match {
+		width: 116.3%;  /* has to coincide with width in background-image under .dropdown-1st-match below */
+		height: 100%;
+	}
+	.content-match1 {  /* for 'historical' and 'threat' */
 		margin-top: -.7%;
-		width: 116.3%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
+		width: 116.3%;  /* has to coincide with width in background-image under .dropdown-1st-match below */
 		height: 100%;
 	}
-
-	#dropdown-content-match {
-		width: 116.3%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
-		height: 100%;
-	}
-
-	.dropdown-content-historical1 {
-		display: none;  /* PC version with the iframe */
-		margin-top: -.2%;
-		width: 100%;
-		height: 100%;
-	}
-
-	.dropdown-content-historical3 {  /* responsive version of this img without the iframe */
+	.content-match2 {  /* for Sofascore and other stats */
 		display: initial;
 		margin-top: -.2%;
 		width: 116.3%;
 		height: 100%;
 	}
-
-	.dropdown-content {
-		width: 122%;  /* has to coincide with width in background-image under .dropdown_link-transfers below */
-		height: 100%;
-	}
-
-	iframe { display: none;	}  /* this iframe doesn't adopt the right height */
-
-	.dropdown-content-historical2 {
-		margin-top: -30%;
-		width: 100%;
-		height: 100%;
-	}
 	/* TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.dropdown_link-transfers {
+	.dropdown-transfers {
 		/* border: solid red 1px; */
-		background-image: url(../underground/AIG-transfers.png);
+		background-image: url(../underground/transfers.png);
 		background-size: 122% 100%;  /* width and height  // also, width has to coincide with width under .dropdown-content above */
 		color: white;
 		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -8101,9 +7628,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-size: 5vw;
 	}
 	/* TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.dropdown_link-stats {
+	.dropdown-stats {
 		/* border: solid 1px red; */
-		background-image: url(../underground/AIG-stats.png);
+		background-image: url(../underground/stats.png);
 		background-size: 122% 100%;
 		color: white;
 		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -8140,9 +7667,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 120px #fe5201, 0 0 120px #fe5201;
 	}
 	/* PLAYER PERFORMANCE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.dropdown_link-player-performance {
+	.dropdown-player-performance {
 		/* border: solid 1px red; */
-		background-image: url(../underground/AIG-performance.png);
+		background-image: url(../underground/player-perf.png);
 		background-size: 122% 100%;
 		color: white;
 		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -8173,9 +7700,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-size: 4vw;
 	}
 	/* PLAYER STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.dropdown_link-player-stats {
+	.dropdown-player-stats {
 		/* border: solid 1px red; */
-		background-image: url(../underground/AIG-player-stats.png);
+		background-image: url(../underground/player-stats.png);
 		background-size: 122% 100%;
 		color: white;
 		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -8200,9 +7727,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
 		pointer-events: none;
 	}
-	.dropdown_link-transition {
+	.dropdown-transition {
 		/* border: solid 1px red; */
-		background-image: url(../underground/AIG-player-stats-below.png);
+		background-image: url(../underground/transition.png);
 		background-size: 122% 100%;
 		color: white;
 		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -8215,14 +7742,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	[itemid="dropdown-matches"] { /* moves all match dropdowns as well as preseason */
 		margin-left: -5vw; 
 	}
-	.dropdown-background {
-		background-image: none;  /* no iron column background for match content */
-		background-size: 100%;
-	}
-	.dropdown_link-preseason {
+	.dropdown-preseason {
 		/* border: solid 1px red; */
 		background-image: url(../underground/pre-season.png);
-		background-size: 116.3% 100%;  /* width and height  // also, width has to coincide with width under #dropdown-content-match and .dropdown-content-historical above */
+		background-size: 116.3% 100%;  /* width and height  // also, width has to coincide with width under .content-match and .content-match1 above */
 		color: white;
 		padding: 6.3vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 		text-decoration: none;
@@ -8230,10 +7753,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		align-items: center;
 		position: relative;
 	}
-	.dropdown_link-1st-match {
+	.dropdown-1st-match {
 		/* border: solid 1px red; */
-		background-image: url(../underground/1st-match1.png);
-		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above */
+		background-image: url(../underground/1st-match.png);
+		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .content-match above */
 		color: white;
 		padding: 6.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 		text-decoration: none;
@@ -8241,52 +7764,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		align-items: center;
 		position: relative;
 	}
-	/* 	BUTTON: SHOW MATCH STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
-	#button2 h70 { display: none; }  /* CLICK HERE FOR */
-	#button2 h71 { display: initial; }  /* TAP HERE FOR... */
-	#button2 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
-		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
-		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: rgb(211, 208, 208);
-		background: transparent;
-		text-align: center;
-		z-index: 1;
-	}
-	#button2:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		top: -20%;
-		left: 0;
-		transform: perspective(1000px) rotateX(80deg);
-	}
-	#button2:after {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: white;
-		opacity: .9;
-		mix-blend-mode: multiply;
-		transform-origin: bottom;
-		bottom: -20%;
-		right: 0;
-		transform: perspective(1000px) rotateX(-80deg);
-	}
-	#button2:hover h70 { color: rgb(211, 208, 208); }
-	#image { display: none; }  /* for button */
-	/* 	BUTTON: SHOW MATCH STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* BOTTOM 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.bottom {
 		/* border: solid 1px red; */
@@ -8630,7 +8107,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.parallax-home {
 		/* border: solid red 1px; */
 		position: relative;
-		display: table;  /* for Mozilla // original was display:flex, which merges .sky and .ground in one image */
+		display: table;  /* for Mozilla // original was display:flex, which merges the sky and .ground in one image */
 		text-align: center;
 	}
 	.parallax-home img {
@@ -8638,8 +8115,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		width: 150%;  /* how big the sky and ground are */
 		left: -28%;  /* moves the sky and ground to the left */
 	}
-	#flag2 { display: none; }
-	#flag {
+	#flag-pc { display: none; }
+	#flag-mobile {
 		display: initial;  /* overwrites display:none for PC */
 		position: absolute;
 		margin-top: -53%;  /* for Mozilla // original was margin-top:20% */
@@ -8685,15 +8162,15 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	.ground { display: none; }  /* for Mozilla */
 	/* LED SIGN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-#sky-cover {
-	position: absolute;
-	top: 0;
-	left: -28%;
-	display: flex;
-	z-index: 1;
-	opacity: .7;
-}	
-	.wrapper {
+	#led-cover {
+		position: absolute;
+		top: 0;
+		left: -28%;
+		display: flex;
+		z-index: 1;
+		opacity: .7;
+	}	
+	.zeppelin-led {
 		position: absolute;
 		box-sizing: content-box;
 		/* background-color: red; */
@@ -8707,16 +8184,16 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		margin-top: 2.35%;
 		left: 39.9%;
 	}
-	.words { overflow: hidden; }
-	.words span {
+	.led-words { overflow: hidden; }
+	.led-words span {
 		font-family: myFont;
 		font-size: 3.7vw;
 		color: yellow;
 		display: block;
 		height: 100%;
-		animation: spin_words 6s infinite;
+		animation: spin-words 6s infinite;
 	}
-	@keyframes spin_words {
+	@keyframes spin-words {
 		0% {
 			transform: translateY(-1%);
 		}
@@ -8744,20 +8221,20 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	/* LED SIGN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* UNDERGROUND SUPPORT 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.underground-cables {  /* for any reason, after adapting for Mozilla, everything from here goes down a tiny bity */
+	.underground {  /* for any reason, after adapting for Mozilla, everything from here goes down a tiny bity */
 		/* border: solid red 1px; */
 		position: relative;
-		z-index: 0;  /* responsive: for any reason, z-index:-1 doesn't show the cables */
+		z-index: 0;  /* responsive: for any reason, z-index:-1 doesn't show .underground-small */
 	}
-	.cables2 { display: none; }  /* for PC */
-    .cables {
+	.underground-large { display: none; }  /* for PC */
+    .underground-small {
 		width: 305%;
 	}
 	/* SELECT SEASON 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.select-season {
 		/* border: solid red 1px; */
 		position: absolute;
-		margin-top: -34.5%;  /* with respect to .underground-cables */
+		margin-top: -34.5%;  /* with respect to .underground */
 		margin-left: .5vw;  /* moves everything to the left/right */
 		z-index: 8;
 		width: 27vw;
@@ -8846,8 +8323,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.dropdown-li {  /* no use for this, but just in case... */
 		list-style: none;
 	}
-	.season-content-pc { display: none; }  /* for PC */
-	.season-content-mobile {  /* tap to close, tap to revisit season */
+	.season-header-pc { display: none; }  /* for PC */
+	.season-header-mobile {  /* tap to close, tap to revisit season */
 		display: initial;  /* overwrites code for PC */
 		/* border: solid 1px red; */
 		width: 280px;  /* how big the dropdown content is */
@@ -8887,7 +8364,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		width: 40%;
 		height: 4.2vw;  /* addition for resposiveness */
-		margin-top: -37.3%;  /* with respect to .underground-cables */
+		margin-top: -37.3%;  /* with respect to .underground */
 		left: 37.635%;
 		background-size: cover;
 		display: flex;
@@ -8945,7 +8422,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* border: solid red 1px; */
 		position: absolute;
 		width: 40%;
-		margin-top: -33.3%;  /* with respect to .underground-cables */
+		margin-top: -33.3%;  /* with respect to .underground */
 		left: 37.635%;
 		display: flex;
 		overflow: hidden;
@@ -8954,7 +8431,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		cursor: pointer;
 		font-family: myFont;
 		font-size: 3.4vw;
-		background: linear-gradient(rgba(27,27,27,0.8), rgba(27,27,27,0.8)), url(../parallax/led5.png);
+		background: linear-gradient(rgba(27,27,27,0.8), rgba(27,27,27,0.8)), url(../parallax/led-gray-mb.png);
 		background-size: 200% 200%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 	}
 	.home span {
@@ -8970,10 +8447,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.scoreboard-result {
 		color: white;
 		position: absolute;
-		width: 15%;  /* space between score and .final-real */
+		width: 15%;  /* space between score and .final-fair */
 		height: 7.17vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
 		line-height: 3.7vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-		margin-top: -33.3%;  /* with respect to .underground-cables */
+		margin-top: -33.3%;  /* with respect to .underground */
 		left: 62.7%;
 		display: flex;
 		overflow: hidden;
@@ -8987,12 +8464,12 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* background-size: 150% 150%; */
 		text-align: center;
 	}
-	/* allows me put both the result (0-0) and the text "final/real score" side by side
+	/* allows me put both the result (0-0) and the text "final/fair score" side by side
 		Mr. Hugo's answer: https://stackoverflow.com/questions/37711138/display-2-ps-side-by-side
 		I had to add a few id in the HTML*/
-	#scoreboard .scoreboard-result, #scoreboard .final-real {display: inline;}
-	.final-real {
-		background: linear-gradient(rgba(254,29,18,0.6), rgba(254,29,18,0.6)), url(../parallax/led\ texture.jpg);
+	#scoreboard .scoreboard-result, #scoreboard .final-fair {display: inline;}
+	.final-fair {
+		background: linear-gradient(rgba(254,29,18,0.6), rgba(254,29,18,0.6)), url(../parallax/led-black.jpg);
 		position: absolute;
 		background-size: 150% 150%;
 		/* after using "&thinsp;", the red mini-box left a space on the right that showed the background img,
@@ -9003,10 +8480,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.scoreboard-result2 {
 		color: white;
 		position: absolute;
-		width: 15%;  /* space between score and .final-real2 */
+		width: 15%;  /* space between score and .final-fair2 */
 		height: 7.17vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
 		line-height: 3.7vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-		margin-top: -33.3%;  /* with respect to .underground-cables */
+		margin-top: -33.3%;  /* with respect to .underground */
 		left: 62.7%;
 		display: flex;
 		overflow: hidden;
@@ -9021,13 +8498,13 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 	}
-	/* allows me put both the result (0-0) and the text "final/real score" side by side
+	/* allows me put both the result (0-0) and the text "final/fair score" side by side
 		Mr. Hugo's answer: https://stackoverflow.com/questions/37711138/display-2-ps-side-by-side
 		I had to add a few id in the HTML*/
-	#scoreboard2 .scoreboard-result2, #scoreboard2 .final-real2 {display: inline;}
-	.final-real2 {
+	#scoreboard2 .scoreboard-result2, #scoreboard2 .final-fair2 {display: inline;}
+	.final-fair2 {
 		color: #ffcf3e;
-		background: linear-gradient(rgba(2,131,54,0.6), rgba(2,131,54,0.6)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(2,131,54,0.6), rgba(2,131,54,0.6)), url(../parallax/led-black.jpg);
 		position: absolute;
 		background-size: 150% 150%;
 		/* after using "&thinsp;", the red mini-box left a space on the right that showed the background img,
@@ -9065,7 +8542,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		height: 7vw;
 		width: 16%;  /* responsive: exact width so it won't exceed right margin; adjust according to screen width (@media) */
-		margin-top: -35%;  /* with respect to .underground-cables */
+		margin-top: -35%;  /* with respect to .underground */
 		left: 83.4%;
 		display: flex;
 		overflow: hidden;
@@ -9074,7 +8551,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-family: Lampen;
 		font-size: 3.4vw;
 		line-height: 7vw;  /* should be same as height to center text top to bottom */
-		background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led-black.jpg);
 		/* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		text-align: center;
@@ -9090,9 +8567,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.clock-vertical-stripe1 {
 		width: .8%;
 		height: 7vw;
-		margin-top: -35%;  /* with respect to .underground-cables*/
+		margin-top: -35%;  /* with respect to .underground */
 		left: 83.6%;
-		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led-black.jpg);
 		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		position: absolute;
 		z-index: 7;
@@ -9100,9 +8577,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.clock-vertical-stripe2 {
 		width: .8%;
 		height: 7vw;
-		margin-top: -35%;  /* with respect to .underground-cables */
+		margin-top: -35%;  /* with respect to .underground */
 		left: 84.5%;
-		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led-black.jpg);
 		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		position: absolute;
 		z-index: 7;
@@ -9110,9 +8587,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.clock-vertical-stripe3 {
 		width: .8%;
 		height: 7vw;
-		margin-top: -35%;  /* with respect to .underground-cables */
+		margin-top: -35%;  /* with respect to .underground */
 		left: 98%;
-		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led-black.jpg);
 		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		position: absolute;
 		z-index: 7;
@@ -9120,9 +8597,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.clock-vertical-stripe4 {
 		width: .8%;
 		height: 7vw;
-		margin-top: -35%;  /* with respect to .underground-cables */
+		margin-top: -35%;  /* with respect to .underground */
 		left: 99%;
-		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led\ texture.jpg);
+		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led-black.jpg);
 		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		position: absolute;
 		z-index: 7;
@@ -9130,11 +8607,11 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
     /* MENU 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	header {
 		/* border: solid red 1px; */
-		margin-top: -23%;  /* with respect to .underground-cables */
+		margin-top: -23%;  /* with respect to .underground */
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;  /* 100% // my best guess is so that text occupies the width of the screen */
-		height: 23vw;  /* this specific height 'cuz it coincides with the border line of .cables */
+		height: 23vw;  /* this specific height 'cuz it coincides with the border line of .underground-small */
 	}
 	ul.navlist {
 		display: flex;
@@ -9422,25 +8899,25 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		text-align: center;  /* centers it left to right */
 		z-index: 2;
 	}
-	.gallery-banner-pc { display: none; }  /* for PC */
-	.gallery-banner-mobile { 
+	.blur-pc { display: none; }  /* for PC */
+	.blur-mobile { 
 		display: initial;
 		position: absolute;
 		width: 100%;
 		margin-top: -29%;  /* with respect to header (menu) */
 		z-index: 2; }  /* for PC */
-	.gallery-banner {
+	.match-grid {
 		position: absolute;
 		display: initial;  /* overwrites code for PC */
 		margin-top: 37%;
-		left: -19%;  /* same as #ratings below */
+		left: -19%;  /* same as #match-ratings below */
 		width: 137%;
 	}
 	/* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.class-button-photo {
+	.button-wrapper {
 		position: relative;
 	}
-	#button-gallery2 {
+	#button-gallery1 {
 		border: none;
 		border-radius: 0 0 1.5vw 1.5vw;
 		position: absolute;
@@ -9451,7 +8928,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-color: transparent;
 		z-index: 2;
 	}
-	#button-gallery3 {
+	#button-gallery2 {
 		border: none;
 		position: absolute;
 		margin-top: -42.2%;
@@ -9461,7 +8938,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-color: transparent;
 		z-index: 2;
 	}
-	#button-gallery5 {
+	#button-gallery3 {
 		border: none;
 		position: absolute;
 		margin-top: -42.2%;
@@ -9471,27 +8948,27 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-color: transparent;
 		z-index: 2;
 	}
+	#button-gallery4 {
+		border: none;
+		position: absolute;
+		margin-top: -42.2%;
+		left: 53.3%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
+		z-index: 2;
+	}
+	#button-gallery5 {
+		border: none;
+		position: absolute;
+		margin-top: -42.2%;
+		left: 53.3%;
+		width: 12.3%;
+		height: 6vw;
+		background-color: transparent;
+		z-index: 2;
+	}
 	#button-gallery6 {
-		border: none;
-		position: absolute;
-		margin-top: -42.2%;
-		left: 53.3%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
-	}
-	#button-gallery7 {
-		border: none;
-		position: absolute;
-		margin-top: -42.2%;
-		left: 53.3%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
-	}
-	#button-gallery8 {
 		border: none;
 		position: absolute;
 		margin-top: -42.2%;
@@ -9501,7 +8978,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-color: transparent;
 		z-index: 2;
 	}
-	#button-gallery9 {
+	#button-gallery7 {
 		border: none;
 		position: absolute;
 		margin-top: -42.2%;
@@ -9511,28 +8988,25 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-color: transparent;
 		z-index: 2;
 	}
-	#photo-blur {
+	#show-gallery {
 		display: none;
 		margin-top: -20.59%;  /* with respect to header (menu) */
 		position: absolute;
 	}
-	#photo-text1 { display: none; }   /* for button */
-	#photo-text2 { display: none; }   /* for button */
-	#photo-text3 { display: none; }   /* for button */
-	#photo-text4 { display: none; }   /* for button */
-	#photo-text5 { display: none; }   /* for button */
-	#photo-text6 { display: none; }   /* for button */
-	.photo-blur {
+	#gallery-text1 { display: none; }   /* for button */
+	#gallery-text2 { display: none; }   /* for button */
+	#gallery-text3 { display: none; }   /* for button */
+	#gallery-text4 { display: none; }   /* for button */
+	#gallery-text5 { display: none; }   /* for button */
+	#gallery-text6 { display: none; }   /* for button */
+	.gallery {
 		width: 100%;
 		position: relative;
 		z-index: 2;
 	}
 	/* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* GALLERY: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.class-button-gallery {
-		position: relative;
-	}
-	#button-gallery {
+	#button-read-text {
 		border: none;
 		position: absolute;
 		z-index: 2;
@@ -9546,20 +9020,20 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background: url(../underground/button.png), #820202;
 		background-size: 100% 100%;
 	}
-	#button-gallery:hover {
+	#button-read-text:hover {
 		color: #f0f50c;
 		background: url(../underground/button.png), radial-gradient(#ef0017 -20%, #820202);  /* -20% here reduces the radius of #ef0017 color */
 		background-size: 100% 100%;
 		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
 	}
-	#button-gallery span1 { display: none; }  /* CLICK TO READ TEXT */
-	#button-gallery span2 { display: initial; }  /* TAP TO READ TEXT */
-	#gallery-blur1 {
+	#button-read-text span1 { display: none; }  /* CLICK TO READ TEXT */
+	#button-read-text span2 { display: initial; }  /* TAP TO READ TEXT */
+	#show-expectations {
 		display: none;
 		margin-top: -6%;  /* with respect to header (menu) */
 		position: absolute;
 	}
-	.gallery-blur {
+	.expectations {
 		width: 100%;
 		position: relative;
 		z-index: 2;
@@ -9722,7 +9196,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	#second-half { transform: translate(55%, 4%); }  /*2H */
 	/* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	#button-gallery4 {
+	#button-ratings {
 		border: none;
 		border-radius: 1.5vw;
 		position: absolute;
@@ -9744,8 +9218,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-size: 100% 100%;
 		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
 	}
-	#button-gallery4 span1 { display: none; }  /* CLICK TO REVEAL SCORES... */
-	#button-gallery4 span2 { display: initial; }  /* TAP TO REVEAL SCORES */
+	#button-ratings span1 { display: none; }  /* CLICK TO REVEAL SCORES... */
+	#button-ratings span2 { display: initial; }  /* TAP TO REVEAL SCORES */
 	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.date-and-result h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {  /*1st row */
@@ -9804,23 +9278,23 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.date-and-result h17 {
 		left: 88.6%;
 	}
-	#date1 {
+	#date {
 		font-size: 1.11vw;
 	}
 	#result { display: none;}   /* for button */
 	#result1 { display: none; }   /* for button */
 	/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	#ratings {
+	.match-ratings-wrapper {
+		position: relative;
+		z-index: 2;
+	}
+	#match-ratings {
 		display: none;
 		position: absolute;
 		margin-top: -.15%;  /* with respect to header (menu) */
-		left: -19%;  /* same as .gallery-banner above */
+		left: -19%;  /* same as .match-grid above */
 		width: 137%;
-	}
-	.ratings {
-		position: relative;
-		z-index: 2;
 	}
 	/* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* CUBOID HOLDERS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -9831,7 +9305,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.cuboid2 { display: none; }
 	/* ROTATING CUBOIDS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* VERTICAL SIGNS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.iron-columns { display: none; }
+	.vertical-neon-signs { display: none; }
 	/* VERTICAL SIGNS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* DROPDOWNS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdowns-section {
@@ -9874,7 +9348,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 			 https://www.reddit.com/r/css/comments/t2zcot/can_css_variables_custom_properties_be_used_to/ */
 		display: var(--open-display) !important;
 	}
-	.open1 {
+	.open2 {
 		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
 		font-family: Trueno Round Italic;
 		font-size: 1.8vw;
@@ -9909,7 +9383,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* inspired by another custom property (variable), I added "none" to make "HIDE" not visible when the checkbox is unchecked. */
 		display: var(--close-display, none) !important;
 	}
-	.close1 {
+	.close2 {
 		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
 		font-family: Trueno Round Italic;
 		font-size: 1.8vw;
@@ -9926,9 +9400,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* inspired by another custom property (variable), I added "none" to make "HIDE" not visible when the checkbox is unchecked. */
 		display: var(--close-display, none) !important;
 	}
-	.close4 {
+	.hide-UCL {
 		position: absolute;
-		background: url(/underground/close-UCL.png);
+		background: url(/underground/hide-UCL.png);
 		background-size: 100%;
 		font-family: 'Courier New', Courier, monospace;	 /* to control image size, I need these font values */
 		font-size: 6.8vw; 	/* to control image size, I need these font values */
@@ -10006,47 +9480,29 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		display: var(--links-display, none) !important;
 	}
 
-	.dropdown-content-historical {
+	.dropdown-content {  /* for Tranfers, 23/24 Stats, Player Performance, Player Stats */
+		width: 122%;  /* has to coincide with width in background-image under .dropdown-transfers below */
+		height: 100%;
+	}
+	.content-match {
+		width: 116.3%;  /* has to coincide with width in background-image under .dropdown-1st-match below */
+		height: 100%;
+	}
+	.content-match1 {  /* for 'historical' and 'threat' */
 		margin-top: -.7%;
-		width: 116.3%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
+		width: 116.3%;  /* has to coincide with width in background-image under .dropdown-1st-match below */
 		height: 100%;
 	}
-
-	#dropdown-content-match {
-		width: 116.3%;  /* has to coincide with width in background-image under .dropdown_link-1st-match below */
-		height: 100%;
-	}
-
-	.dropdown-content-historical1 {
-		display: none;  /* PC version with the iframe */
-		margin-top: -.2%;
-		width: 100%;
-		height: 100%;
-	}
-
-	.dropdown-content-historical3 {  /* responsive version of this img without the iframe */
+	.content-match2 {  /* for Sofascore and other stats */
 		display: initial;
 		margin-top: -.2%;
 		width: 116.3%;
 		height: 100%;
 	}
-
-	.dropdown-content {
-		width: 122%;  /* has to coincide with width in background-image under .dropdown_link-transfers below */
-		height: 100%;
-	}
-
-	iframe { display: none;	}  /* this iframe doesn't adopt the right height */
-
-	.dropdown-content-historical2 {
-		margin-top: -30%;
-		width: 100%;
-		height: 100%;
-	}
 	/* TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.dropdown_link-transfers {
+	.dropdown-transfers {
 		/* border: solid red 1px; */
-		background-image: url(../underground/AIG-transfers.png);
+		background-image: url(../underground/transfers.png);
 		background-size: 122% 100%;  /* width and height  // also, width has to coincide with width under .dropdown-content above */
 		color: white;
 		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -10076,9 +9532,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-size: 5vw;
 	}
 	/* TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.dropdown_link-stats {
+	.dropdown-stats {
 		/* border: solid 1px red; */
-		background-image: url(../underground/AIG-stats.png);
+		background-image: url(../underground/stats.png);
 		background-size: 122% 100%;
 		color: white;
 		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -10115,9 +9571,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 120px #fe5201, 0 0 120px #fe5201;
 	}
 	/* PLAYER PERFORMANCE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.dropdown_link-player-performance {
+	.dropdown-player-performance {
 		/* border: solid 1px red; */
-		background-image: url(../underground/AIG-performance.png);
+		background-image: url(../underground/player-perf.png);
 		background-size: 122% 100%;
 		color: white;
 		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -10148,9 +9604,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-size: 4vw;
 	}
 	/* PLAYER STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.dropdown_link-player-stats {
+	.dropdown-player-stats {
 		/* border: solid 1px red; */
-		background-image: url(../underground/AIG-player-stats.png);
+		background-image: url(../underground/player-stats.png);
 		background-size: 122% 100%;
 		color: white;
 		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -10175,9 +9631,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
 		pointer-events: none;
 	}
-	.dropdown_link-transition {
+	.dropdown-transition {
 		/* border: solid 1px red; */
-		background-image: url(../underground/AIG-player-stats-below.png);
+		background-image: url(../underground/transition.png);
 		background-size: 122% 100%;
 		color: white;
 		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
@@ -10190,14 +9646,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	[itemid="dropdown-matches"] { /* moves all match dropdowns as well as preseason */
 		margin-left: -5vw; 
 	}
-	.dropdown-background {
-		background-image: none;  /* no iron column background for match content */
-		background-size: 100%;
-	}
-	.dropdown_link-preseason {
+	.dropdown-preseason {
 		/* border: solid 1px red; */
 		background-image: url(../underground/pre-season.png);
-		background-size: 116.3% 100%;  /* width and height  // also, width has to coincide with width under #dropdown-content-match and .dropdown-content-historical above */
+		background-size: 116.3% 100%;  /* width and height  // also, width has to coincide with width under .content-match and .content-match1 above */
 		color: white;
 		padding: 6.3vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 		text-decoration: none;
@@ -10205,10 +9657,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		align-items: center;
 		position: relative;
 	}
-	.dropdown_link-1st-match {
+	.dropdown-1st-match {
 		/* border: solid 1px red; */
-		background-image: url(../underground/1st-match1.png);
-		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .dropdown-content-match above */
+		background-image: url(../underground/1st-match.png);
+		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .content-match above */
 		color: white;
 		padding: 6.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
 		text-decoration: none;
