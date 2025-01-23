@@ -11,5 +11,5 @@
 // https://stackoverflow.com/questions/54142435/href-link-target-open-in-same-tab-in-mobile-view
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    document.getElementById("links").target = "_self";     //change target
+    document.getElementById("links-same").target = "_self";     //change target
 }
