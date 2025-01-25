@@ -1346,7 +1346,6 @@ ul.navlist {
 	position: relative;
 	z-index: 2;
 }
-/* GALLERY: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .legend {
 	position: relative; 
@@ -1589,7 +1588,6 @@ ul.navlist {
 #result-1v { display: none; }   /* for button */
 #result-2h { display: none;}   /* for button */
 #result-2v { display: none; }   /* for button */
-/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .match-ratings-wrapper {
 	position: relative;
@@ -2104,7 +2102,6 @@ ul.navlist {
 	align-items: center;
 	position: relative;
 }
-/* PRESEASON, MATCHES, INTERNATIONAL BREAK 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* 	POST-MATCH NEWS MATCH 1 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 .pre-match1 {
 	position: absolute;
@@ -2249,26 +2246,6 @@ ul.navlist {
 .pre-match1-skew .news1-skew div:nth-child(2) {
 	animation: animate3 40s linear infinite;
 }
-@keyframes animate2 {
-	0%
-	{
-		transform: translateX(100%);
-	}
-	100%
-	{
-		transform: translateX(-100%);
-	}
-}
-@keyframes animate3 {
-	0%
-	{
-		transform: translateX(0);
-	}
-	100%
-	{
-		transform: translateX(-200%);
-	}
-}
 /* 	POST-MATCH NEWS MATCH 1 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 .post-match1 {
 	position: absolute;
@@ -2326,26 +2303,6 @@ ul.navlist {
 
 .post-match1 .news1 div:nth-child(2) {
 	animation: animate3 40s linear infinite;
-}
-@keyframes animate2 {
-	0%
-	{
-		transform: translateX(100%);
-	}
-	100%
-	{
-		transform: translateX(-100%);
-	}
-}
-@keyframes animate3 {
-	0%
-	{
-		transform: translateX(0);
-	}
-	100%
-	{
-		transform: translateX(-200%);
-	}
 }
 
 .post-match1-skew {
@@ -2412,26 +2369,6 @@ ul.navlist {
 
 .post-match1-skew .news1-skew div:nth-child(2) {
 	animation: animate3 40s linear infinite;
-}
-@keyframes animate2 {
-	0%
-	{
-		transform: translateX(100%);
-	}
-	100%
-	{
-		transform: translateX(-100%);
-	}
-}
-@keyframes animate3 {
-	0%
-	{
-		transform: translateX(0);
-	}
-	100%
-	{
-		transform: translateX(-200%);
-	}
 }
 /* 	POST-MATCH NEWS MATCH 1 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 /* 	BUTTON: SHOW SCORE AND NEWS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
@@ -2613,14 +2550,6 @@ ul.navlist {
 	animation: rotate1 0.8s linear infinite;
 	animation-delay: 0s;
 }
-@keyframes rotate1 {
-	0% {
-		left: -100%;
-	}
-	50%,100%{		
-		left: 100%;
-	}
-}
 
 #button-score-news2 span:nth-child(3) {  /* bottom line */
 	bottom: 0;
@@ -2632,14 +2561,6 @@ ul.navlist {
 	animation: rotate3 0.8s linear infinite;
 	animation-delay: 0.4s;
 }
-@keyframes rotate3 {
-	0% {
-		right: -100%;
-	}
-	50%,100%{		
-		right: 100%;
-	}
-}
 
 #button-score-news2 span:nth-child(2) {  /* right line */
 	top: -100%;
@@ -2650,14 +2571,6 @@ ul.navlist {
 	animation: rotate2 0.8s linear infinite;
 	animation-delay: 0.2s;
 }
-@keyframes rotate2 {
-	0% {
-		top: -100%;
-	}
-	50%,100%{		
-		top: 100%;
-	}
-}
 
 #button-score-news2 span:nth-child(4) {  /* left line */
 	bottom: -100%;
@@ -2667,14 +2580,6 @@ ul.navlist {
 	background: linear-gradient(360deg, transparent, #ef0017);
 	animation: rotate4 0.8s linear infinite;
 	animation-delay: 0.6s;
-}
-@keyframes rotate4 {
-	0% {
-		bottom: -100%;
-	}
-	50%,100%{		
-		bottom: 100%;
-	}
 }
 
 #button-score-news2:hover span {
@@ -3313,26 +3218,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	animation: animate3 80s linear infinite;
 	/* animation: none; */
 }
-@keyframes animate2 {
-	0%
-	{
-		transform: translateX(100%);
-	}
-	100%
-	{
-		transform: translateX(-100%);
-	}
-}
-@keyframes animate3 {
-	0%
-	{
-		transform: translateX(0);
-	}
-	100%
-	{
-		transform: translateX(-200%);
-	}
-}
 
 .email-cursor-text {
 	/* border: solid 1px red; */
@@ -3373,40 +3258,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		width: 10.7vw;  /* reduces cursor:pointer clickability away from the title  */
 		height: 6vw;  /* addition to actually see this div container border lines */
 	}
-	.nav_container-season {
-		/* border: solid red 1px; */
-		justify-items: center;
-		width: 89%;  /* addition to reduce cursor:pointer clickability away from the title */
-	}
-	.dropdown-season {
-		/* border: solid red 1px; */
-		width: 86%;  /* addition to reduce cursor:pointer clickability away from the title */
-		position: absolute;  /* for any reason, without this, Mozilla renders .select-season a bit more to the left */
-	}
-	.season-list:has( :checked ) {
-		--rows: 1fr;
-		--on-tap: auto;  /* for #season-links */
-	}
-	.checkbox-size {
-		/* border: solid 1px red; */
-		color: white;
-		padding: 2vw;  /* increase the padding to increase the size of container */
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
-	}
-	#dropdown-pointer {  /* universal pointer cursor for far left-hand side of dropdowns that somehow the dropdown itself doesn't cover */
-		cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='30px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f90605' d='M 11.5,-0.5 C 12.5,-0.5 13.5,-0.5 14.5,-0.5C 14.5,2.16667 14.5,4.83333 14.5,7.5C 13.8333,6.16667 13.1667,4.83333 12.5,3.5C 12.1667,3.5 11.8333,3.5 11.5,3.5C 11.5,2.16667 11.5,0.833333 11.5,-0.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23040404' d='M 9.5,3.5 C 10.1667,3.5 10.8333,3.5 11.5,3.5C 11.8333,3.5 12.1667,3.5 12.5,3.5C 12.5,5.16667 12.5,6.83333 12.5,8.5C 13.9527,10.229 15.9527,11.229 18.5,11.5C 19.4742,13.7427 19.8076,16.076 19.5,18.5C 18.0795,21.2613 17.4129,24.2613 17.5,27.5C 15.5,27.5 13.5,27.5 11.5,27.5C 11.1185,22.737 9.11854,18.737 5.5,15.5C 6.56764,14.5655 7.90097,14.2322 9.5,14.5C 9.5,10.8333 9.5,7.16667 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23aa2822' d='M 12.5,3.5 C 13.1667,4.83333 13.8333,6.16667 14.5,7.5C 15.1667,7.5 15.8333,7.5 16.5,7.5C 15.4324,8.43448 14.099,8.76781 12.5,8.5C 12.5,6.83333 12.5,5.16667 12.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%235a5c5e' d='M 9.5,3.5 C 9.5,7.16667 9.5,10.8333 9.5,14.5C 7.90097,14.2322 6.56764,14.5655 5.5,15.5C 4.95691,15.44 4.62358,15.1067 4.5,14.5C 5.68884,13.5713 7.02218,13.238 8.5,13.5C 8.18723,9.95815 8.52056,6.62482 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f41a13' d='M 17.5,7.5 C 19.1172,8.038 20.7839,8.37133 22.5,8.5C 22.5,12.8333 22.5,17.1667 22.5,21.5C 20.7773,23.78 20.1107,26.4467 20.5,29.5C 17.5,29.5 14.5,29.5 11.5,29.5C 13.5,28.8333 15.5,28.1667 17.5,27.5C 17.4129,24.2613 18.0795,21.2613 19.5,18.5C 20.4767,15.7131 20.81,12.7131 20.5,9.5C 18.8212,9.71481 17.8212,9.04814 17.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bea6ab' d='M 16.5,7.5 C 16.8333,7.5 17.1667,7.5 17.5,7.5C 17.8212,9.04814 18.8212,9.71481 20.5,9.5C 20.81,12.7131 20.4767,15.7131 19.5,18.5C 19.8076,16.076 19.4742,13.7427 18.5,11.5C 15.9527,11.229 13.9527,10.229 12.5,8.5C 14.099,8.76781 15.4324,8.43448 16.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f0edf0' d='M 7.5,-0.5 C 8.83333,-0.5 10.1667,-0.5 11.5,-0.5C 11.5,0.833333 11.5,2.16667 11.5,3.5C 10.8333,3.5 10.1667,3.5 9.5,3.5C 8.52056,6.62482 8.18723,9.95815 8.5,13.5C 7.02218,13.238 5.68884,13.5713 4.5,14.5C 4.62358,15.1067 4.95691,15.44 5.5,15.5C 9.11854,18.737 11.1185,22.737 11.5,27.5C 13.5,27.5 15.5,27.5 17.5,27.5C 15.5,28.1667 13.5,28.8333 11.5,29.5C 10.8333,29.5 10.1667,29.5 9.5,29.5C 9.04814,25.4246 7.54814,21.7579 5,18.5C 3.54905,16.5359 1.71572,15.2026 -0.5,14.5C -0.5,13.1667 -0.5,11.8333 -0.5,10.5C 2.19853,10.4661 4.69853,11.1328 7,12.5C 7.49902,8.17944 7.66568,3.84611 7.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, pointer;
-	}
-	.dropdown-check {
-		position: absolute;
-		/* if checkbox is not set at this width and height, you will not be able to click anywhere to see/hide content */
-		width: 100%;  /* lowering this value makes only that % of the dropdown box clickable, and not the rest */
-		height: 100%;
-		opacity: 0;  /* to make checkbox visible, put 'opacity: 1' */
-		cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='30px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f90605' d='M 11.5,-0.5 C 12.5,-0.5 13.5,-0.5 14.5,-0.5C 14.5,2.16667 14.5,4.83333 14.5,7.5C 13.8333,6.16667 13.1667,4.83333 12.5,3.5C 12.1667,3.5 11.8333,3.5 11.5,3.5C 11.5,2.16667 11.5,0.833333 11.5,-0.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23040404' d='M 9.5,3.5 C 10.1667,3.5 10.8333,3.5 11.5,3.5C 11.8333,3.5 12.1667,3.5 12.5,3.5C 12.5,5.16667 12.5,6.83333 12.5,8.5C 13.9527,10.229 15.9527,11.229 18.5,11.5C 19.4742,13.7427 19.8076,16.076 19.5,18.5C 18.0795,21.2613 17.4129,24.2613 17.5,27.5C 15.5,27.5 13.5,27.5 11.5,27.5C 11.1185,22.737 9.11854,18.737 5.5,15.5C 6.56764,14.5655 7.90097,14.2322 9.5,14.5C 9.5,10.8333 9.5,7.16667 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23aa2822' d='M 12.5,3.5 C 13.1667,4.83333 13.8333,6.16667 14.5,7.5C 15.1667,7.5 15.8333,7.5 16.5,7.5C 15.4324,8.43448 14.099,8.76781 12.5,8.5C 12.5,6.83333 12.5,5.16667 12.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%235a5c5e' d='M 9.5,3.5 C 9.5,7.16667 9.5,10.8333 9.5,14.5C 7.90097,14.2322 6.56764,14.5655 5.5,15.5C 4.95691,15.44 4.62358,15.1067 4.5,14.5C 5.68884,13.5713 7.02218,13.238 8.5,13.5C 8.18723,9.95815 8.52056,6.62482 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f41a13' d='M 17.5,7.5 C 19.1172,8.038 20.7839,8.37133 22.5,8.5C 22.5,12.8333 22.5,17.1667 22.5,21.5C 20.7773,23.78 20.1107,26.4467 20.5,29.5C 17.5,29.5 14.5,29.5 11.5,29.5C 13.5,28.8333 15.5,28.1667 17.5,27.5C 17.4129,24.2613 18.0795,21.2613 19.5,18.5C 20.4767,15.7131 20.81,12.7131 20.5,9.5C 18.8212,9.71481 17.8212,9.04814 17.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bea6ab' d='M 16.5,7.5 C 16.8333,7.5 17.1667,7.5 17.5,7.5C 17.8212,9.04814 18.8212,9.71481 20.5,9.5C 20.81,12.7131 20.4767,15.7131 19.5,18.5C 19.8076,16.076 19.4742,13.7427 18.5,11.5C 15.9527,11.229 13.9527,10.229 12.5,8.5C 14.099,8.76781 15.4324,8.43448 16.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f0edf0' d='M 7.5,-0.5 C 8.83333,-0.5 10.1667,-0.5 11.5,-0.5C 11.5,0.833333 11.5,2.16667 11.5,3.5C 10.8333,3.5 10.1667,3.5 9.5,3.5C 8.52056,6.62482 8.18723,9.95815 8.5,13.5C 7.02218,13.238 5.68884,13.5713 4.5,14.5C 4.62358,15.1067 4.95691,15.44 5.5,15.5C 9.11854,18.737 11.1185,22.737 11.5,27.5C 13.5,27.5 15.5,27.5 17.5,27.5C 15.5,28.1667 13.5,28.8333 11.5,29.5C 10.8333,29.5 10.1667,29.5 9.5,29.5C 9.04814,25.4246 7.54814,21.7579 5,18.5C 3.54905,16.5359 1.71572,15.2026 -0.5,14.5C -0.5,13.1667 -0.5,11.8333 -0.5,10.5C 2.19853,10.4661 4.69853,11.1328 7,12.5C 7.49902,8.17944 7.66568,3.84611 7.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, pointer;
-	}
 	.select-season-title {  /* title: since 2023 SELECT SEASON */
 		/* border: solid 1px red; */
 		width: 125%;  /* adddition to actually see the borders, adjust if text collapses */
@@ -3442,59 +3293,12 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 120px #13b48a, 0 0 120px #13b48a,
 						   0 0 160px #13b48a;
 	}
-	.dropdown-content-display {
-		display: grid;
-		grid-template-rows: var(--rows, 0fr);
-		font-size: 0;  /* addition // important to eliminate border margin between separate images; alex's answer here: https://stackoverflow.com/questions/7641678/use-css-to-remove-the-space-between-images */
-	}
 	.dropdown-sub-season {		
 		/* border: solid 1px red; */
 		overflow: hidden;
 		width: 320px;  /* how big the dropdown content is */
 		transform: translate(20px, -5px);
 	}
-	.dropdown-li {  /* no use for this, but just in case... */
-		list-style: none;
-	}
-	.season-header-mobile { display: none; }  /* for mobile */
-	.season-header-pc {  /* click to close, click to revisit season */
-		/* border: solid 1px red; */
-		width: 320px;  /* how big the dropdown content is */
-	}
-	.season-content {  /* body */
-		/* border: solid 1px red; */
-		width: 320px;  /* how much % of the dropdown content to show width-wise */
-	}
-	#season-links {
-		pointer-events: var(--on-tap, none);  /* somehow, the link is clickable even when the dropdown is not box-checked, so this rule prevents clicks */
-	}
-	.season-19-20 img {
-		position: absolute;
-		opacity: 0;
-		width: 113px;
-		height: 114px;
-		margin-top: 2px;  /* 109.8px the lower the value, the higher the object goes */
-		margin-left: -275px;  /* -154.4px the lower the value, the more to the left */
-	}
-	.season-19-20:hover img {
-		opacity: 1;
-	}
-	.season-20-21 img {
-		position: absolute;
-		opacity: 0;
-		width: 113px;
-		height: 114px;
-		margin-top: 2px;  /* the lower the value, the higher the object goes */
-		margin-left: -159px;  /* the lower the value, the more to the left */
-	}
-	.season-20-21:hover img {
-		opacity: 1;
-	}
-	/* WRAP FOR CAROUSEL, TEAMS, AND SCORE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.scoreboard-wrapper {
-		position: relative;  /* I created this wrapper with this only line to make stuff fit cross-browser */
-	}
-	/* WRAP FOR CAROUSEL, TEAMS, AND SCORE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* SCOREBOARD CAROUSEL 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.scoreboard-PL {
 		/* border: solid red 1px; */
@@ -3509,14 +3313,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		white-space: nowrap;
 		z-index: 5;
 		background: #3D195B;
-		/* box-shadow: 0 0 5px #3D195B,
-						   0 0 25px #3D195B,
-						   0 0 50px #3D195B, 0 0 50px #3D195B, 0 0 50px #3D195B,
-						   0 0 200px #3D195B, 0 0 200px #3D195B, 0 0 300px #3D195B, 0 0 400px #3D195B; */
 		cursor: pointer;
-	}
-	.scoreboard-PL .PL {
-		display: flex;
 	}
 	.scoreboard-PL .PL div {
 		color: #fff;
@@ -3528,42 +3325,14 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		display: flex;
 		animation: none;  /* no animation for mobile as it slows down the user experience */
 	}
-	.scoreboard-PL .PL div span { display: none; }
-	.scoreboard-PL .PL div span1 {
-		font-weight: 900;
-		font-size: 1.6vw;  /* addition for mobile */
-		margin-top: -.8%;  /* addition for mobile */
-		/* ▲ */
-		color: #028336;
-		/* • */
-		/* color: gray; */
-		/* ▼ */
-		/* color: #da020e; */
-		/* text-shadow: none; */
-		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
-	}
-	.scoreboard-PL .PL div span2 {
-		color: #ffc40c;
-		text-shadow: 0 0 2px #ffc40c, 0 0 2px #ffc40c, #ffc40c, 0 0 2px #ffc40c;
-	}
-	.scoreboard-PL .PL div span3 {
-		color: #589444;
-		text-shadow: 0 0 2px #589444, 0 0 2px #589444, 0 0 2px #589444;
-	}
-	.scoreboard-PL .PL div:nth-child(2) {
-		animation: none;  /* no animation for mobile as it slows down the user experience */
-	}
 	/* SCOREBOARD (TEAMS) 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.scoreboard-teams-mobile { display: none; }  /* mobile version */
 	.scoreboard-teams {  /* mobile version */
 		/* border: solid red 1px; */
 		position: absolute;
-		/* position: relative; */
 		width: 26.4%;
 		height: 3.4vw;  /* addition for Mozilla: to help make .scoreboard-result be exact same height as .scoreboard-teams */
 		margin-top: -16%;  /* with respect to .underground */
 		left: 36%;
-		/* margin-left: 37.635%; */
 		display: flex;
 		overflow: hidden;
 		white-space: nowrap;
@@ -3571,18 +3340,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		cursor: pointer;
 		font-family: myFont;
 		font-size: 1.6vw;
-		/* background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led.png);	 */
 		background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led-black.jpg);
-		background-size: 100% 120%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
-	}
-	.home span {
-		color: #da020e;
-		text-shadow: 0 0 2px #da020e;
-		opacity: none;
-	}
-	.home {
-		color: #fff;
-		opacity: none;
+		background-size: 100% 120%;
 	}
 	/* SCOREBOARD (RESULT) 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.scoreboard-result {
@@ -3601,14 +3360,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-family: myFont;
 		font-size: 1.6vw;
 		background: transparent;
-		/* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
-		/* background-size: 150% 150%; */
 		text-align: center;
 	}
-	/* allows me put both the result (0-0) and the text "final/fair score" side by side
-		Mr. Hugo's answer: https://stackoverflow.com/questions/37711138/display-2-ps-side-by-side
-		I had to add a few id in the HTML*/
-	#scoreboard .scoreboard-result, #scoreboard .final-fair {display: inline;}
 	.final-fair {
 		background: linear-gradient(rgba(254,29,18,0.7), rgba(254,29,18,0.7)), url(../parallax/led-black.jpg);
 		position: absolute;
@@ -3634,15 +3387,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-family: myFont;
 		font-size: 1.6vw;
 		background: transparent;
-		/* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
-		background-size: 150% 150%;
-		/* allows me to put the text aligned vertically */
-		text-align: center;
+		background-size: 150% 150%;	
+		text-align: center;	 /* allows me to put the text aligned vertically */
 	}
-	/* allows me put both the result (0-0) and the text "final/fair score" side by side
-		Mr. Hugo's answer: https://stackoverflow.com/questions/37711138/display-2-ps-side-by-side
-		I had to add a few id in the HTML*/
-	#scoreboard2 .scoreboard-result2, #scoreboard2 .final-fair2 {display: inline;}
 	.final-fair2 {
 		color: #ffcf3e;
 		background: linear-gradient(rgba(2,131,54,0.8), rgba(2,131,54,0.8)), url(../parallax/led-black.jpg);
@@ -3653,29 +3400,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		https://stackoverflow.com/questions/65536/how-to-put-text-in-the-upper-right-or-lower-right-corner-of-a-box-using-css */
 		right: 0;
 	}
-	#scoreboard2 {
-		animation: 5s autoplay infinite linear;
-	}
-	@keyframes autoplay {
-		0% {opacity: 0.0}
-		4% {opacity: 1.0}
-		33.33% {opacity: 1.0}
-		37.33% {opacity: 0.0}
-		100% {opacity: 0.0}
-	}
-	#scoreboard {
-		animation: 5s autoplay2 infinite linear;
-	}
-	@keyframes autoplay2 {
-		0% {opacity: 0.0}
-		4% {opacity: 0.0}
-		41.33% {opacity: 0.0}
-		42.33% {opacity: 0.2}
-		48.33% {opacity: 0.5}
-		51.33% {opacity: 1.0}
-		100% {opacity: 1.0}
-	}
-	.box-shadow .box-shadow2 { display: none; }
 	/* SCOREBOARD (RESULT) 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* OT BANNERS CAROUSEL 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.OT-banners {
@@ -3693,10 +3417,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background: white;
 	}
 	
-	.OT-banners .banners {
-		display: flex;
-	}
-	
 	.OT-banners .banners div {
 		color: #fff;
 		font-family: monospace;
@@ -3711,256 +3431,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
 		animation: animate2 80s linear infinite;
 		animation-delay: -40s;
-	}
-	
-	.OT-banners .banners div span {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-		/* found out of 50% as a value for split color, and not gradient // Answer by Terry: https://stackoverflow.com/questions/50434409/how-can-i-make-a-split-color-box */
-		background-image: linear-gradient(to bottom, #cc1724 50%, #1e2526 50%);
-		transform: scaleY(1.1);
-	}
-	
-	
-	
-	.OT-banners .banners div span2 {
-		margin-top: -2px;
-		color: #ffc40c;
-		text-shadow: 0 0 2px #ffc40c;
-		background: #a01c1c;
-	}
-	
-	.OT-banners .banners div span3 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background: #a01c1c;
-		transform: scaleX(1.1) scaleY(1.1);
-	}
-	
-	.OT-banners .banners div span4 {
-		margin-top: -2px;
-		color: rgb(76, 103, 192);
-		text-shadow: 0 0 2px yellow, 0 0 2px yellow;
-		background: #a01c1c;
-	}
-	
-	.OT-banners .banners div span5 {
-		margin-top: -2px;
-		color: rgb(204, 204, 90);
-		text-shadow: 0 0 2px rgb(90, 186, 224);
-		background: #640505;
-	}
-	
-	.OT-banners .banners div span6 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-		background: #1e2526;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners .banners div span7 {
-		font-family: 'Times New Roman', Times, serif;
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background: #a01c1c;
-	}
-	
-	.OT-banners .banners div span8 {
-		margin-top: -2px;
-		background: white;
-	}
-	
-	.OT-banners .banners div span9 {
-		color: #b93939;
-		text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-		background: white;
-	}
-	
-	.OT-banners .banners div span10 {
-		color: black;
-		text-shadow: 0 0 2px black, 0 0 2px black;
-		background: white;
-	}
-	
-	.OT-banners .banners div span11 {
-		margin-top: -2px;
-		background: white;
-	}
-	
-	.OT-banners .banners div span12 {
-		margin-top: -1px;
-		font-size: .9em;
-		background: white;
-		/* got this filter here: https://www.w3schools.com/cssref/css3_pr_filter.php */
-		filter: grayscale(100%);
-	}
-	
-	.OT-banners .banners div span13 {
-		font-size: .8em;
-		/* answer by Reinier Koops: https://stackoverflow.com/questions/15904211/css-filter-grayscale-i-want-it-black */
-		filter: brightness(10%);
-		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
-		/* transform: scaleX(-.5); */
-	}
-	
-	.OT-banners .banners div span14 {
-		color: #b93939;
-		text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners .banners div span15 {
-		color: black;
-		text-shadow: 0 0 2px black, 0 0 2px black;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners .banners div span16 {
-		color: #b93939;
-		text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners .banners div span17 {
-		font-size: .8em;
-		filter: brightness(10%);
-		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
-		/* transform: scaleX(-.5); */
-	}
-	
-	.OT-banners .banners div span18 {
-		margin-top: -1px;
-		font-size: .9em;
-		background: white;
-		filter: grayscale(100%);
-	}
-	
-	.OT-banners .banners div span19 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background: #a01c1c;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners .banners div span20 {
-		margin-top: -1px;
-		font-size: .9em;
-		background: #a01c1c;
-	}
-	
-	.OT-banners .banners div span21 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background: #a01c1c;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners .banners div span22 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background:#cc1724;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners .banners div span23 {
-		font-size: .8em;
-		filter: brightness(10%);
-		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
-		/* transform: scaleX(-.5); */
-	}
-	
-	.OT-banners .banners div span24 {
-		font-size: .8em;
-	}
-	
-	.OT-banners .banners div span25 {
-		font-size: .8em;
-		filter: brightness(10%);
-		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
-		/* transform: scaleX(-.5); */
-	}
-	
-	.OT-banners .banners div span26 {
-		color: white;
-		font-size: .7em;
-		font-family: raleway_f;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background: #1e2526;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners .banners div span27 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-		background: #1e2526;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners .banners div span28 {
-		color: #a01c1c;
-		text-shadow: 0 0 2px #a01c1c, 0 0 2px #a01c1c, 0 0 2px #a01c1c;
-		background: #1e2526;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners .banners div span29 {
-		margin-top: -1px;
-		background: white;
-	}
-	
-	.OT-banners .banners div span30 {
-		color: black;
-		text-shadow: 0 0 2px black, 0 0 2px black;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners .banners div span31 {
-		color: #a01c1c;
-		text-shadow: 0 0 2px #a01c1c, 0 0 2px #a01c1c, 0 0 2px #a01c1c;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners .banners div span32 {
-		color: black;
-		text-shadow: 0 0 2px black, 0 0 2px black;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners .banners div span33 {
-		margin-top: -1px;
-		background: white;
-		/* fiddle by Platte Gruber: https://stackoverflow.com/questions/32875695/flip-mirror-an-image-horizontally-vertically-with-css */
-		transform: rotateY(180deg);
-	}
-	
-	.OT-banners .banners div:nth-child(2) {
-		animation: animate3 80s linear infinite;
-	}
-	@keyframes animate2 {
-		0%
-		{
-			transform: translateX(100%);
-		}
-		100%
-		{
-			transform: translateX(-100%);
-		}
-	}
-	@keyframes animate3 {
-		0%
-		{
-			transform: translateX(0);
-		}
-		100%
-		{
-			transform: translateX(-200%);
-		}
 	}
 	/* OT BANNERS CAROUSEL 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* CLOCK 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -3983,12 +3453,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-size: 80% 110%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		text-align: center;
 		align-items: center;
-	}
-	.time {
-		transform: translateX(40%) scaleY(1.5);  /* translateX to move clock away from left margin; scaleY to make text taller */
-	}
-	.clock-vertical-stripes {
-		content: '';
 	}
 	.clock-vertical-stripe1 {
 		width: .4%;
@@ -4048,260 +3512,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		margin-top: -19%;  /* with respect to .underground */
 	}
 	/* IRONS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	/* MENU 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	header {
-		/* border: solid red 1px; */
-		margin-top: -18%;  /* with respect to .underground */
-		justify-content: space-between;
-		align-items: center;
-		width: 100%;  /* 100% // my best guess is so that text occupies the width of the screen */
-		height: 23vw;  /* this specific height 'cuz it coincides with the border line of .underground-large */
-	}
-	ul.navlist {
-		display: flex;
-		align-items: center;
-	}
-	.navlist li {
-		text-align: center;
-		padding: 0 6%;  /* the space between menu text */
-	}
-	/* CONTACT ME 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.contact-me {
-		display: inline-block;  /* allows me to move this text freely */
-		transform: translate(11%, 18%);
-		text-decoration: none;  /* this removes link underline */
-		align-content: center;
-		text-align: center;  /* aligns text vertically // https://www.youtube.com/watch?v=Jkp103YhW7A 19:00 */
-	}
-	.line1 {
-		font-family: BeonMedium;
-		text-decoration: none;
-		font-size: 2.2vw;
-		vertical-align: middle;
-		letter-spacing: 1px;
-		cursor: pointer;
-		color: #fff;
-		text-shadow: 0 0 10px #da020e,
-						   0 0 20px #da020e,
-						   0 0 40px #da020e,
-						   0 0 80px #da020e,
-						   0 0 120px #da020e,
-						   0 0 160px #da020e;
-	}
-	.line1 span {
-		color: #fff;
-		text-shadow: 0 0 10px #da020e,
-						   0 0 20px #da020e,
-						   0 0 40px #da020e,
-						   0 0 80px #da020e,
-						   0 0 120px #da020e,
-						   0 0 160px #da020e;
-	}
-	.line2 {
-		font-family: BeonMedium;
-		text-decoration: none;
-		font-size: 2.2vw;
-		vertical-align: middle;
-		z-index: 1;
-		color: #fff;
-		text-shadow: 0 0 10px #da020e,
-						   0 0 20px #da020e,
-						   0 0 40px #da020e,
-						   0 0 80px #da020e,
-						   0 0 120px #da020e,
-						   0 0 160px #da020e;
-	}
-	.line3 {
-		font-family: Uppen Arms NF;
-		text-decoration: none;
-		font-size: 1.5vw;
-		vertical-align: middle;
-		color: #fff;
-		text-shadow: 0 0 10px #fff,
-						   0 0 20px #fff,
-						   0 0 40px #fff,
-						   0 0 80px #fff,
-						   0 0 120px #fff,
-						   0 0 160px #fff;
-	}
-	/* MEET THE CREATOR 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.know-me {
-		/* this removes link underline */
-		text-decoration: none;
-		align-content: center;
-		/* addition // aligns text vertically // https://www.youtube.com/watch?v=Jkp103YhW7A 19:00 */
-		text-align: center;
-		font-family: Celinea;
-		font-size: 5vw;
-		font-weight: lighter;
-		vertical-align: middle;
-		/* margin-right: 30vw; */
-		line-height: 3.8vw;
-		transform: skewY(-15deg) translate(-17%, 10%);
-		display: inline-block;  /* allows me to move this text freely */
-	}
-	
-	.line4 {
-		color: #fff;
-		text-shadow: 0 0 10px #fff,
-						   0 0 20px #fff,
-						   0 0 40px #fff,
-						   0 0 80px #fff,
-						   0 0 120px #fff,
-						   0 0 160px #fff;
-	}
-	.line4 span {
-		color: #fff;
-		text-shadow: 0 0 10px #da020e, 0 0 10px #da020e,
-						   0 0 20px #da020e, 0 0 20px #da020e,
-						   0 0 40px #da020e, 0 0 40px #da020e,
-						   0 0 80px #da020e, 0 0 80px #da020e,
-						   0 0 120px #da020e, 0 0 120px #da020e,
-						   0 0 160px #da020e, 0 0 160px #da020e, 0 0 160px #da020e, 0 0 160px #da020e;
-	}
-	.line5 {
-		color: #fff;
-		text-shadow: 0 0 10px #fff,
-						   0 0 20px #fff,
-						   0 0 40px #fff,
-						   0 0 80px #fff,
-						   0 0 120px #fff,
-						   0 0 160px #fff;
-	}
-	/* SUPPORT & DONATE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.support {
-		display: inline-block;  /* allows me to move this text freely */
-		transform: translate(50%, 20%);
-		/* this removes link underline */
-		text-decoration: none;
-		align-content: center;
-		/* addition // aligns text vertically // https://www.youtube.com/watch?v=Jkp103YhW7A 19:00 */
-		text-align: center;
-		cursor: pointer;
-		vertical-align: middle;
-	}
-	.line6 {
-		font-family: LIBRARY3AMsoft;
-		font-size: 2.3vw;
-		letter-spacing: 1px;
-		color: #fff;
-		text-shadow: 0 0 10px #ffcf3e,
-						   0 0 20px #ffcf3e,
-						   0 0 40px #ffcf3e,
-						   0 0 80px #ffcf3e,
-						   0 0 120px #ffcf3e,
-						   0 0 160px #ffcf3e;
-	}
-	.line7 span {
-		font-family: LIBRARY3AMsoft;
-		font-size: 2.3vw;
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #028336,
-						   0 0 20px #028336,
-						   0 0 40px #028336,
-						   0 0 80px #028336,
-						   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
-						   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
-	}
-	.line7 {
-		font-family: Neoneon;
-		font-size: 2.3vw;
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #028336,
-						   0 0 20px #028336,
-						   0 0 40px #028336,
-						   0 0 80px #028336,
-						   0 0 120px #028336,
-						   0 0 160px #028336;
-	}
-	.line7-5 { display: none; }
-	/* WANNA LEARN A LANGUAGE? 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.learn-language {
-		text-decoration: none;
-		align-content: center;
-		text-align: center;
-		cursor: pointer;
-		vertical-align: middle;
-		line-height: 3vw;
-		display: inline-block;  /* allows me to move this text freely */
-		transform: translate(19%, 28%);
-		/* transform: translate(19%, 13%); */
-	}
-	.line8 {
-		font-family: Rookworst;
-		font-size: 3.3vw;
-		color: yellow;
-		-webkit-text-stroke: .05vw red;
-		text-shadow: 0 0 10px #da020e,
-						   0 0 20px #da020e,
-						   0 0 40px #da020e;
-	}
-	.line9 { display: none; }
-	.line10 {
-		font-family: Salonica;
-		font-size: 4.5vw;
-		transform: translateX(5%);
-		color: white;
-		text-shadow: 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e,
-						   0 0 20px #da020e,
-						   0 0 40px #da020e,
-						   0 0 80px #da020e,
-						   0 0 120px #da020e;
-	}
-	.line11 { display: none; }
-	.line12 span {
-		font-family: Zekton;
-		font-size: 1.8vw;
-		position: relative;
-		position: absolute;
-		transform: translate(-360%, 30%);
-		color: #fff;
-		text-shadow: 0 0 10px #ffcf3e,
-						   0 0 20px #ffcf3e,
-						   0 0 40px #ffcf3e,
-						   0 0 80px #ffcf3e,
-						   0 0 120px #ffcf3e,
-						   0 0 160px #ffcf3e;
-	}
-	.line12 span2 {
-		font-family: Lateef;
-		font-size: 3.5vw;
-		position: absolute;
-		transform: translate(-110%, -10%);
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #028336,
-						   0 0 20px #028336,
-						   0 0 40px #028336,
-						   0 0 80px #028336,
-						   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
-						   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
-	}
-	.line12 span3 {
-		font-family: Josefin Sans, Consolas, 'Courier New', monospace;
-		font-size: 1.6vw;
-		position: absolute;
-		transform: translate(50%, 40%);
-		color: #fff;
-		text-shadow: 0 0 10px #ffcf3e,
-						   0 0 20px #ffcf3e,
-						   0 0 40px #ffcf3e,
-						   0 0 80px #ffcf3e,
-						   0 0 120px #ffcf3e,
-						   0 0 160px #ffcf3e;
-	}
-	.line12 span4 {
-		font-family: Josefin Sans, Consolas, 'Courier New', monospace;
-		font-size: 1.8vw;
-		position: absolute;
-		transform: translate(170%, 20%);
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #028336,
-						   0 0 20px #028336,
-						   0 0 40px #028336,
-						   0 0 80px #028336,
-						   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
-						   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
-	}
 	/* BRICKS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.bricks {
 		position: relative;
@@ -4321,9 +3531,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-size: 11vw;
 		mix-blend-mode: overlay;
 	}
-	.brick-wall h1 span {  /* 2023/24 (TEXT) */
-		color: #ec334d;
-	}
 	.trophies {
 		left: -37.5%;
 		width: 180%;
@@ -4331,7 +3538,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	/* CABLE BOXES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#cable-box { display: none; }
-	/* CABLE BOXES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* GALLERY PHOTO TEXT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.brick-wall h2, h3, h4, h5, h6, h7 {
 		/* border: solid 1px red; */
@@ -4344,6 +3550,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		text-align: center;  /* centers it left to right */
 		z-index: 2;
 	}
+	/* GALLERY【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.blur-pc { display: none; }  /* for PC */
 	.blur-mobile { 
 		display: initial;
@@ -4351,6 +3558,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		width: 100%;
 		margin-top: -29%;  /* with respect to header (menu) */
 	}
+	/* GRAY MATCH GRID SECTION【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.match-grid {
 		position: absolute;
 		display: initial;  /* overwrites code for PC */
@@ -4359,9 +3567,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		width: 137%;
 	}
 	/* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.button-wrapper {
-		position: relative;
-	}
 	#button-gallery1 {
 		border: none;
 		position: absolute;
@@ -4437,17 +3642,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		margin-top: -20.59%;  /* with respect to header (menu) */
 		position: absolute;
 	}
-	#gallery-text1 { display: none; }   /* for button */
-	#gallery-text2 { display: none; }   /* for button */
-	#gallery-text3 { display: none; }   /* for button */
-	#gallery-text4 { display: none; }   /* for button */
-	#gallery-text5 { display: none; }   /* for button */
-	#gallery-text6 { display: none; }   /* for button */
-	.gallery {
-		width: 100%;
-		position: relative;
-		z-index: 2;
-	}
 	/* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* GALLERY: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#button-read-text {
@@ -4465,12 +3659,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background: url(../underground/button.png), #820202;
 		background-size: 100% 100%;
 	}
-	#button-read-text:hover {
-		color: #f0f50c;
-		background: url(../underground/button.png), radial-gradient(#ef0017 -20%, #820202);  /* -20% here reduces the radius of #ef0017 color */
-		background-size: 100% 100%;
-		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
-	}
 	#button-read-text span1 { display: none; }  /* CLICK TO READ TEXT */
 	#button-read-text span2 { display: initial; }  /* TAP TO READ TEXT */
 	#show-expectations {
@@ -4478,12 +3666,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		margin-top: -6%;  /* with respect to header (menu) */
 		position: absolute;
 	}
-	.expectations {
-		width: 100%;
-		position: relative;
-		z-index: 2;
-	}
-	/* GALLERY: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.legend {
 		position: relative; 
@@ -4665,7 +3847,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	#button-ratings span1 { display: none; }  /* CLICK TO REVEAL SCORES... */
 	#button-ratings span2 { display: initial; }  /* TAP TO REVEAL SCORES */
-	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.date-and-result h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {  /*1st row */
 		/* border: solid 1px red; */
@@ -4726,14 +3907,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	#date {
 		font-size: 1.11vw;
 	}
-	#result { display: none;}   /* for button */
-	#result1 { display: none; }   /* for button */
-	/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.match-ratings-wrapper {
-		position: relative;
-		z-index: 2;
-	}
 	#match-ratings {
 		display: none;
 		position: absolute;
@@ -4741,17 +3915,13 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		left: -19%;  /* same as .match-grid above */
 		width: 137%;
 	}
-	/* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* CUBOID HOLDERS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.cuboid-holder { display: none; }
-	/* CUBOID HOLDERS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ROTATING CUBOIDS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.cuboid1 { display: none; }
 	.cuboid2 { display: none; }
-	/* ROTATING CUBOIDS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* VERTICAL SIGNS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.vertical-neon-signs { display: none; }
-	/* VERTICAL SIGNS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* DROPDOWNS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdowns-section {
 		position: relative;  /* responsive: 'relative' to eliminate overflow excess x-wise on mobile */
@@ -4760,14 +3930,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		height: 150vw;
 		z-index: 2;
 	}
-	.nav_container {
-		position: relative;
-		background-color: gray;
-		justify-items: center;
-	}
-	.dropdown {
-		position: absolute;
-	}
 	.dropdown_list:has( :checked ) {
 		--rows: 1fr;
 		/* addition to make SEE and HIDE toggle */
@@ -4775,6 +3937,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		--close-display: inline-block;
 		/* addition for the links */
 		--links-display: flex;
+		--spins-display: none !important;  /* overwrites code for PC; not necessary, but in case it helps in browsing speed for mobile */
 	}
 	.open {
 		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
@@ -4855,68 +4018,11 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		left: 57.34%;
 		display: var(--close-display, none) !important;
 	}
-	.dropdown_check {
-		position: absolute;
-		/* if checkbox is not set at this width and height, you will not be able to click anywhere to see/hide content */
-		width: 100%;  /* lowering this value makes only that % of the dropdown box clickable, and not the rest */
-		height: 100%;
-		opacity: 0;  /* to make checkbox visible, put 'opacity: 1' */
-		cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='30px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f90605' d='M 11.5,-0.5 C 12.5,-0.5 13.5,-0.5 14.5,-0.5C 14.5,2.16667 14.5,4.83333 14.5,7.5C 13.8333,6.16667 13.1667,4.83333 12.5,3.5C 12.1667,3.5 11.8333,3.5 11.5,3.5C 11.5,2.16667 11.5,0.833333 11.5,-0.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23040404' d='M 9.5,3.5 C 10.1667,3.5 10.8333,3.5 11.5,3.5C 11.8333,3.5 12.1667,3.5 12.5,3.5C 12.5,5.16667 12.5,6.83333 12.5,8.5C 13.9527,10.229 15.9527,11.229 18.5,11.5C 19.4742,13.7427 19.8076,16.076 19.5,18.5C 18.0795,21.2613 17.4129,24.2613 17.5,27.5C 15.5,27.5 13.5,27.5 11.5,27.5C 11.1185,22.737 9.11854,18.737 5.5,15.5C 6.56764,14.5655 7.90097,14.2322 9.5,14.5C 9.5,10.8333 9.5,7.16667 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23aa2822' d='M 12.5,3.5 C 13.1667,4.83333 13.8333,6.16667 14.5,7.5C 15.1667,7.5 15.8333,7.5 16.5,7.5C 15.4324,8.43448 14.099,8.76781 12.5,8.5C 12.5,6.83333 12.5,5.16667 12.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%235a5c5e' d='M 9.5,3.5 C 9.5,7.16667 9.5,10.8333 9.5,14.5C 7.90097,14.2322 6.56764,14.5655 5.5,15.5C 4.95691,15.44 4.62358,15.1067 4.5,14.5C 5.68884,13.5713 7.02218,13.238 8.5,13.5C 8.18723,9.95815 8.52056,6.62482 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f41a13' d='M 17.5,7.5 C 19.1172,8.038 20.7839,8.37133 22.5,8.5C 22.5,12.8333 22.5,17.1667 22.5,21.5C 20.7773,23.78 20.1107,26.4467 20.5,29.5C 17.5,29.5 14.5,29.5 11.5,29.5C 13.5,28.8333 15.5,28.1667 17.5,27.5C 17.4129,24.2613 18.0795,21.2613 19.5,18.5C 20.4767,15.7131 20.81,12.7131 20.5,9.5C 18.8212,9.71481 17.8212,9.04814 17.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bea6ab' d='M 16.5,7.5 C 16.8333,7.5 17.1667,7.5 17.5,7.5C 17.8212,9.04814 18.8212,9.71481 20.5,9.5C 20.81,12.7131 20.4767,15.7131 19.5,18.5C 19.8076,16.076 19.4742,13.7427 18.5,11.5C 15.9527,11.229 13.9527,10.229 12.5,8.5C 14.099,8.76781 15.4324,8.43448 16.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f0edf0' d='M 7.5,-0.5 C 8.83333,-0.5 10.1667,-0.5 11.5,-0.5C 11.5,0.833333 11.5,2.16667 11.5,3.5C 10.8333,3.5 10.1667,3.5 9.5,3.5C 8.52056,6.62482 8.18723,9.95815 8.5,13.5C 7.02218,13.238 5.68884,13.5713 4.5,14.5C 4.62358,15.1067 4.95691,15.44 5.5,15.5C 9.11854,18.737 11.1185,22.737 11.5,27.5C 13.5,27.5 15.5,27.5 17.5,27.5C 15.5,28.1667 13.5,28.8333 11.5,29.5C 10.8333,29.5 10.1667,29.5 9.5,29.5C 9.04814,25.4246 7.54814,21.7579 5,18.5C 3.54905,16.5359 1.71572,15.2026 -0.5,14.5C -0.5,13.1667 -0.5,11.8333 -0.5,10.5C 2.19853,10.4661 4.69853,11.1328 7,12.5C 7.49902,8.17944 7.66568,3.84611 7.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, pointer;
-	}
-	.transition {
-		position: absolute;
-		/* if checkbox is not set at this width and height, you will not be able to click anywhere to see/hide content */
-		width: 100%;  /* lowering this value makes only that % of the dropdown box clickable, and not the rest */
-		height: 100%;
-		/* to make checkbox visible, put 'opacity: 1' */
-		opacity: 0;
-		cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='28px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23080101' d='M 2.5,3.5 C 7.1586,6.16843 11.4919,9.3351 15.5,13C 9.07438,12.1868 4.74104,14.6868 2.5,20.5C 1.16667,14.8333 1.16667,9.16667 2.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23af231e' d='M 3.5,1.5 C 9.3796,5.26653 15.0463,9.26653 20.5,13.5C 17.023,14.3227 13.3563,14.8227 9.5,15C 8.74756,15.6708 8.41423,16.5041 8.5,17.5C 7.20027,20.4323 5.20027,22.7656 2.5,24.5C 2.5,23.1667 2.5,21.8333 2.5,20.5C 4.74104,14.6868 9.07438,12.1868 15.5,13C 11.4919,9.3351 7.1586,6.16843 2.5,3.5C 2.32842,2.50838 2.66175,1.84171 3.5,1.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bab7d0' d='M 20.5,13.5 C 21.1667,13.8333 21.8333,14.1667 22.5,14.5C 22.5,15.5 22.5,16.5 22.5,17.5C 17.8665,16.8663 13.1998,16.8663 8.5,17.5C 8.41423,16.5041 8.74756,15.6708 9.5,15C 13.3563,14.8227 17.023,14.3227 20.5,13.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23b4bcca' d='M -0.5,-0.5 C 0.166667,-0.5 0.833333,-0.5 1.5,-0.5C 2.16667,0.166667 2.83333,0.833333 3.5,1.5C 2.66175,1.84171 2.32842,2.50838 2.5,3.5C 1.16667,9.16667 1.16667,14.8333 2.5,20.5C 2.5,21.8333 2.5,23.1667 2.5,24.5C 1.89022,25.391 1.55688,26.391 1.5,27.5C 0.833333,27.5 0.166667,27.5 -0.5,27.5C -0.5,18.1667 -0.5,8.83333 -0.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, auto;
-	}
-	.transfers-title {
-		position: absolute;
-		font-family: Delight;
-		font-size: 5vw;
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #13b48a, 0 0 10px #13b48a,
-						   0 0 20px #13b48a,
-						   0 0 40px #13b48a, 0 0 40px #13b48a,
-						   0 0 80px #13b48a,
-						   0 0 120px #13b48a, 0 0 120px #13b48a,
-						   0 0 160px #13b48a;
-		transform: translate(248%, -10%);
-		margin-right: 20%;
-		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
-		pointer-events: none;
-	}
-	.transfers-title span1 {
-		font-family: Ketosag Condensed;
-		font-size: 5vw;
-	}
-	.dropdown_content {
-		display: grid;
-		grid-template-rows: var(--rows, 0fr);
-		/* addition // important to eliminate border margin between separate content images; alex's answer here: https://stackoverflow.com/questions/7641678/use-css-to-remove-the-space-between-images */
-		font-size: 0;
-		/* end of addition */
-	}
-	.dropdown_content-matches {
-		display: grid;
-		grid-template-rows: var(--rows, 0fr);
-		/* addition // important to eliminate border margin between separate content images; alex's answer here: https://stackoverflow.com/questions/7641678/use-css-to-remove-the-space-between-images */
-		font-size: 0;
-		/* end of addition */
-	}
-	.dropdown_sub {
-		overflow: hidden;
-	}
-	.dropdown_li {
-		list-style: none;
-	}
 
 
 	.link1 {
 		/* border: solid 1px red; */
-		opacity: 0;  /* it's best to make the link visible from here; opacity: 1 */
+		opacity: 1;  /* it's best to make the link visible from here; opacity: 1 */
 		position: absolute;
 		font-family: Agency FB;
 		font-size: 2.1vw;
@@ -4939,7 +4045,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		height: 100%;
 	}
 	.content-match2 {  /* for Sofascore and other stats */
-		display: initial;
 		margin-top: -.2%;
 		width: 116.3%;
 		height: 100%;
@@ -4976,7 +4081,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-family: Ketosag Condensed;
 		font-size: 5vw;
 	}
-	/* TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdown-stats {
 		/* border: solid 1px red; */
 		background-image: url(../underground/stats.png);
@@ -5076,6 +4181,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
 		pointer-events: none;
 	}
+	/* TRANSITION BUFFER 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.space-transition {
 		/* border: solid 1px red; */
 		background-image: url(../underground/transition.png);
@@ -5135,7 +4241,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		align-items: center;
 		position: relative;
 	}
-	/* PRESEASON, MATCHES, INTERNATIONAL BREAK 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* 	POST-MATCH NEWS MATCH 1 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	.pre-match1 {
 		position: absolute;
@@ -5149,12 +4254,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		white-space: nowrap;
 		background: #d8d8d9;
 		pointer-events: none;
-	}
-	
-	.pre-match1 .news1 {
-		display: flex;
-	}
-	
+	}	
 	.pre-match1 .news1 div {
 		font-family: Trueno Round Italic;
 		font-size: 1.7vw;
@@ -5167,51 +4267,12 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
 		animation: animate2 40s linear infinite;
 		animation-delay: -20s;
-	}
-	
-	.pre-match1 .news1 div span {
-		color: #d8d8d9;
-		background-color: #b92a2f;
-	}
-	
-	.pre-match1 .news1 div span2 {
-		color: #c00101;
-	}
-	
-	.pre-match1 .news1 div span3 {
-		color: #d8d8d9;
-		background-color: #1e2526;
-	}
-	
+	}	
 	.pre-match1 .news1 div span4 {
 		color: #d8d8d9;
 		background-color: #1e2526;
 		font-size: 2.4vw;
 		margin-top: -.2%;
-	}
-
-	.pre-match1 .news1 div:nth-child(2) {
-		animation: animate3 40s linear infinite;
-	}
-	@keyframes animate2 {
-		0%
-		{
-			transform: translateX(100%);
-		}
-		100%
-		{
-			transform: translateX(-100%);
-		}
-	}
-	@keyframes animate3 {
-		0%
-		{
-			transform: translateX(0);
-		}
-		100%
-		{
-			transform: translateX(-200%);
-		}
 	}
 
 	.pre-match1-skew {
@@ -5231,7 +4292,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		   I found out how to use rotate3d here (Ctrl+F5 search .rotated): https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d */
 		transform: skewY(-8.5deg) rotate3d(0, 1, 0, 70deg);
 	}
-
 	.pre-match1-skew .news1-skew {
 		display: flex;
 		/* after trial and error, I decided to simply put this value inspired by the vid below. This value helps the content coincide.
@@ -5239,8 +4299,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* margin-left: 19px with skewY(10deg) only, without rotate3d */
 		/* margin-left: -266px; */
 		margin-left: -280%;
-	}
-	
+	}	
 	.pre-match1-skew .news1-skew div {
 		font-family: Trueno Round Italic;
 		font-size: 1.7vw;
@@ -5253,51 +4312,12 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
 		animation: animate2 40s linear infinite;
 		animation-delay: -20s;
-	}
-	
-	.pre-match1-skew .news1-skew div span {
-		color: #d8d8d9;
-		background-color: #b92a2f;
-	}
-	
-	.pre-match1-skew .news1-skew div span2 {
-		color: #c00101;
-	}
-	
-	.pre-match1-skew .news1-skew div span3 {
-		color: #d8d8d9;
-		background-color: #1e2526;
-	}
-	
+	}	
 	.pre-match1-skew .news1-skew div span4 {
 		color: #d8d8d9;
 		background-color: #1e2526;
 		font-size: 2.4vw;
 		margin-top: -.2%;
-	}
-	
-	.pre-match1-skew .news1-skew div:nth-child(2) {
-		animation: animate3 40s linear infinite;
-	}
-	@keyframes animate2 {
-		0%
-		{
-			transform: translateX(100%);
-		}
-		100%
-		{
-			transform: translateX(-100%);
-		}
-	}
-	@keyframes animate3 {
-		0%
-		{
-			transform: translateX(0);
-		}
-		100%
-		{
-			transform: translateX(-200%);
-		}
 	}
 	/* 	POST-MATCH NEWS MATCH 1 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	.post-match1 {
@@ -5312,12 +4332,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		white-space: nowrap;
 		background: #d8d8d9;
 		pointer-events: none;
-	}
-	
-	.post-match1 .news1 {
-		display: flex;
-	}
-	
+	}	
 	.post-match1 .news1 div {
 		font-family: Trueno Round Italic;
 		font-size: 1.7vw;
@@ -5330,51 +4345,12 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
 		animation: animate2 40s linear infinite;
 		animation-delay: -20s;
-	}
-	
-	.post-match1 .news1 div span {
-		color: #d8d8d9;
-		background-color: #b92a2f;
-	}
-	
-	.post-match1 .news1 div span2 {
-		color: #c00101;
-	}
-	
-	.post-match1 .news1 div span3 {
-		color: #d8d8d9;
-		background-color: #1e2526;
-	}
-	
+	}	
 	.post-match1 .news1 div span4 {
 		color: #d8d8d9;
 		background-color: #1e2526;
 		font-size: 2.4vw;
 		margin-top: -.2%;
-	}
-	
-	.post-match1 .news1 div:nth-child(2) {
-		animation: animate3 40s linear infinite;
-	}
-	@keyframes animate2 {
-		0%
-		{
-			transform: translateX(100%);
-		}
-		100%
-		{
-			transform: translateX(-100%);
-		}
-	}
-	@keyframes animate3 {
-		0%
-		{
-			transform: translateX(0);
-		}
-		100%
-		{
-			transform: translateX(-200%);
-		}
 	}
 	
 	.post-match1-skew {
@@ -5393,17 +4369,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* the transform:skewY value was found here: https://www.youtube.com/watch?v=Wg7jJhzWNq8&list=PL5e68lK9hEzdGazIG1ONnb7TJ74Q69rH7&index=101
 		   I found out how to use rotate3d here (Ctrl+F5 search .rotated): https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d */
 		transform: skewY(8.5deg) rotate3d(0, 1, 0, 70deg);
-	}
-	
-	.post-match1-skew .news1-skew {
-		display: flex;
-		/* after trial and error, I decided to simply put this value inspired by the vid below. This value helps the content coincide.
-		   timestamp 4:47 https://www.youtube.com/watch?v=Wg7jJhzWNq8&list=PL5e68lK9hEzdGazIG1ONnb7TJ74Q69rH7&index=100 */
-		/* margin-left: 19px with skewY(10deg) only, without rotate3d */
-		/* margin-left: -472px; */
-		margin-left: 100%;
-	}
-	
+	}	
 	.post-match1-skew .news1-skew div {
 		font-family: Trueno Round Italic;
 		font-size: 1.7vw;
@@ -5416,51 +4382,12 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
 		animation: animate2 40s linear infinite;
 		animation-delay: -20s;
-	}
-	
-	.post-match1-skew .news1-skew div span {
-		color: #d8d8d9;
-		background-color: #b92a2f;
-	}
-	
-	.post-match1-skew .news1-skew div span2 {
-		color: #c00101;
-	}
-	
-	.post-match1-skew .news1-skew div span3 {
-		color: #d8d8d9;
-		background-color: #1e2526;
-	}
-	
+	}	
 	.post-match1-skew .news1-skew div span4 {
 		color: #d8d8d9;
 		background-color: #1e2526;
 		font-size: 2.4vw;
 		margin-top: -.2%;
-	}
-	
-	.post-match1-skew .news1-skew div:nth-child(2) {
-		animation: animate3 40s linear infinite;
-	}
-	@keyframes animate2 {
-		0%
-		{
-			transform: translateX(100%);
-		}
-		100%
-		{
-			transform: translateX(-100%);
-		}
-	}
-	@keyframes animate3 {
-		0%
-		{
-			transform: translateX(0);
-		}
-		100%
-		{
-			transform: translateX(-200%);
-		}
 	}
 	/* 	BUTTON: SHOW SCORE AND NEWS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	#button-score-news1 h60 { display: none; }  /* CLICK FOR... */
@@ -5497,14 +4424,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background: #262626;
 		overflow: hidden;  /* for animation: hides each child outside the button */
 	}
-	#button-score-news1:hover {
-		color: black;
-		background: #ef0017;
-		box-shadow: 0 0 5px #ef0017,
-						   0 0 25px #ef0017,
-						   0 0 50px #ef0017,
-						   0 0 200px #ef0017;
-	}
 
 	#button-score-news2 h60 { display: none; }  /* CLICK FOR... */
 	#button-score-news2 h61 { display: initial; }  /* TAP FOR... */
@@ -5540,98 +4459,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background: #262626;
 		overflow: hidden;  /* for animation: hides each child outside the button */
 	}
-	#button-score-news2:hover {
-		color: black;
-		background: #ef0017;
-		box-shadow: 0 0 5px #ef0017,
-						   0 0 25px #ef0017,
-						   0 0 50px #ef0017,
-						   0 0 200px #ef0017;
-	}
-	/* 	BUTTON: ROTATE ANIMATION  */
-	/* animation: https://www.youtube.com/watch?v=vCq1C52v7xE */
-	.button-wrapper span {
-		position: absolute;
-		display: block;
-	}
-	
-	#button-score-news1 span:nth-child(1) {  /* top line */
-		top: 0;
-		left: -100%;
-		width: 100%;
-		height: 10%;
-		background: linear-gradient(90deg, transparent, #ef0017);
-		animation: rotate1 0.8s linear infinite;
-		animation-delay: 0s;
-	}
-	@keyframes rotate1 {
-		0% {
-			left: -100%;
-		}
-		50%,100%{		
-			left: 100%;
-		}
-	}
-	
-	#button-score-news1 span:nth-child(3) {  /* bottom line */
-		bottom: 0;
-		right: -100%;
-		width: 100%;
-		height: .15vw;
-		/* height: 10%; */
-		background: linear-gradient(270deg, transparent, #ef0017);
-		animation: rotate3 0.8s linear infinite;
-		animation-delay: 0.4s;
-	}
-	@keyframes rotate3 {
-		0% {
-			right: -100%;
-		}
-		50%,100%{		
-			right: 100%;
-		}
-	}
-	
-	#button-score-news1 span:nth-child(2) {  /* right line */
-		top: -100%;
-		right: 0;
-		width: 2%;
-		height: 100%;
-		background: linear-gradient(180deg, transparent, #ef0017);
-		animation: rotate2 0.8s linear infinite;
-		animation-delay: 0.2s;
-	}
-	@keyframes rotate2 {
-		0% {
-			top: -100%;
-		}
-		50%,100%{		
-			top: 100%;
-		}
-	}
-	
-	#button-score-news1 span:nth-child(4) {  /* left line */
-		bottom: -100%;
-		left: 0;
-		width: 2%;
-		height: 100%;
-		background: linear-gradient(360deg, transparent, #ef0017);
-		animation: rotate4 0.8s linear infinite;
-		animation-delay: 0.6s;
-	}
-	@keyframes rotate4 {
-		0% {
-			bottom: -100%;
-		}
-		50%,100%{		
-			bottom: 100%;
-		}
-	}
-	
-	#button-score-news1:hover span {
-		animation-play-state: paused;
-	}
-	/* 	BUTTON: SHOW SCORE AND NEWS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* 	DATE | TIME | COMPETITION STAGE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	.date-time {
 		/* border: solid 1px red; */
@@ -5644,7 +4471,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		color: #e0dcdc;
 		text-align: center;
 	}
-	/* 	DATE | TIME | COMPETITION STAGE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* 	BUTTON: SHOW MATCH STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	#button-stats1 h70 { display: none; }  /* CLICK HERE FOR */
 	#button-stats1 h71 { display: initial; }  /* TAP HERE FOR... */
@@ -5676,33 +4502,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		top: -10%;
 		left: 0%;
 	}
-	#button-stats1:hover:before {
-		top: -20%;
-		left: 0;
-		transform: perspective(1000px) rotateX(80deg);
-	}
-	#button-stats1:after {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: white;
-		opacity: .9;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: bottom;
-		transition: .2s;
-		bottom: -10%;
-		right: -1%;
-	}
-	#button-stats1:hover:after {
-		bottom: -20%;
-		right: 0;
-		transform: perspective(1000px) rotateX(-80deg);
-	}
 	#button-stats1:hover h71 { color: rgb(211, 208, 208); }
-	#stats-1st-match { display: none; }  /* for button */
-
 
 	#button-stats2 h70 { display: none; }  /* CLICK HERE FOR */
 	#button-stats2 h71 { display: initial; }  /* TAP HERE FOR... */
@@ -5734,36 +4534,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		top: -10%;
 		left: 0%;
 	}
-	#button-stats2:hover:before {
-		top: -20%;
-		left: 0;
-		transform: perspective(1000px) rotateX(80deg);
-	}
-	#button-stats2:after {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: white;
-		opacity: .9;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: bottom;
-		transition: .2s;
-		bottom: -10%;
-		right: -1%;
-	}
-	#button-stats2:hover:after {
-		bottom: -20%;
-		right: 0;
-		transform: perspective(1000px) rotateX(-80deg);
-	}
 	#button-stats2:hover h71 { color: rgb(211, 208, 208); }
-	#stats-2nd-match { display: none; }  /* for button */
-	/* 	BUTTON: SHOW MATCH STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* BADGE-SPONSOR SPIN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.badges-and-sponsors { display: none !important; }  /* for PC */
-	/* BADGE-SPONSOR SPIN 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* BOTTOM 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.bottom {
 		/* border: solid 1px red; */
@@ -5790,17 +4563,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-size: 6vw;
 		transform: skewY(11deg) rotate3d(0, 1, 0, 60deg);
 		z-index: -1;
-	}	
-	/* isometric effect based on code here: https://codepen.io/jgrose/pen/WQjGmW */
-	.bottom-isometric::before {
-		content: "2023/24";
-		position: absolute;
-		text-shadow: -1px 0.5px 1px #555,
-						   -2px 0.5px 1px #555,
-						   -3px 0.5px 1px #555,
-				   		   -4px 0.5px 1px #555;
-		z-index: -1;  /* important to leave the isometric 3d effect behind */
-	}	
+	}
 	.bottom-GGMU {
 		position: absolute;
 		margin-top: 25%;
@@ -5824,265 +4587,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		display: flex;
 		overflow: hidden;
 		white-space: nowrap;
-	}
-	.OT-banners-bottom .banners {
-		display: flex;
-	}
-	
-	.OT-banners-bottom .banners div {
-		color: #fff;
-		font-family: monospace;
-		font-size: 1vw;
-		white-space: nowrap;
-		font-weight: 100;
-		/* important value in this div to make the text occupy the entirity of the box; I was playing with text-align and display values in different divs,
-		   but I figured it out thanks to Wazeed's answer: https://stackoverflow.com/questions/10283138/center-a-div-without-knowing-the-height */
-		display: flex;
-		/* I was already aware of this carrousel animation, but knowing exactly what value to put in animation-delay was thanks to
-		   rmurph46's answer below. It's simply half of the value in animation duration but negative. I needed to know that to make long carrousels
-		   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
-		animation: animate2 80s linear infinite;
-		/* animation: none; */
-		animation-delay: -40s;
-	}
-	
-	.OT-banners-bottom .banners div span {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-		/* found out of 50% as a value for split color, and not gradient // Answer by Terry: https://stackoverflow.com/questions/50434409/how-can-i-make-a-split-color-box */
-		background-image: linear-gradient(to bottom, #cc1724 50%, #1e2526 50%);
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span2 {
-		color: #ffc40c;
-		text-shadow: 0 0 2px #ffc40c;
-		background: #a01c1c;
-	}
-	
-	.OT-banners-bottom .banners div span3 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background: #a01c1c;
-		transform: scaleX(1.1) scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span4 {
-		color: rgb(76, 103, 192);
-		text-shadow: 0 0 2px yellow, 0 0 2px yellow;
-		background: #a01c1c;
-	}
-	
-	.OT-banners-bottom .banners div span5 {
-		color: rgb(204, 204, 90);
-		text-shadow: 0 0 2px rgb(90, 186, 224);
-		background: #640505;
-	}
-	
-	.OT-banners-bottom .banners div span6 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-		background: #1e2526;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span7 {
-		font-family: 'Times New Roman', Times, serif;
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background: #a01c1c;
-	}
-	
-	.OT-banners-bottom .banners div span8 {
-		background: white;
-	}
-	
-	.OT-banners-bottom .banners div span9 {
-		color: #b93939;
-		text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-		background: white;
-	}
-	
-	.OT-banners-bottom .banners div span10 {
-		color: black;
-		text-shadow: 0 0 2px black, 0 0 2px black;
-		background: white;
-	}
-	
-	.OT-banners-bottom .banners div span11 {
-		background: white;
-	}
-	
-	.OT-banners-bottom .banners div span12 {
-		font-size: .9em;
-		background: white;
-		/* got this filter here: https://www.w3schools.com/cssref/css3_pr_filter.php */
-		filter: grayscale(100%);
-	}
-	
-	.OT-banners-bottom .banners div span13 {
-		font-size: .8em;
-		/* answer by Reinier Koops: https://stackoverflow.com/questions/15904211/css-filter-grayscale-i-want-it-black */
-		filter: brightness(10%);
-		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
-		/* transform: scaleX(-.5); */
-	}
-	
-	.OT-banners-bottom .banners div span14 {
-		color: #b93939;
-		text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span15 {
-		color: black;
-		text-shadow: 0 0 2px black, 0 0 2px black;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span16 {
-		color: #b93939;
-		text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span17 {
-		font-size: .8em;
-		filter: brightness(10%);
-		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
-		/* transform: scaleX(-.5); */
-	}
-	
-	.OT-banners-bottom .banners div span18 {
-		font-size: .9em;
-		background: white;
-		filter: grayscale(100%);
-	}
-	
-	.OT-banners-bottom .banners div span19 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background: #a01c1c;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span20 {
-		font-size: .9em;
-		background: #a01c1c;
-	}
-	
-	.OT-banners-bottom .banners div span21 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background: #a01c1c;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span22 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background:#cc1724;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span23 {
-		font-size: .8em;
-		filter: brightness(10%);
-		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
-		/* transform: scaleX(-.5); */
-	}
-	
-	.OT-banners-bottom .banners div span24 {
-		font-size: .8em;
-	}
-	
-	.OT-banners-bottom .banners div span25 {
-		font-size: .8em;
-		filter: brightness(10%);
-		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
-		/* transform: scaleX(-.5); */
-	}
-	
-	.OT-banners-bottom .banners div span26 {
-		color: white;
-		font-size: .7em;
-		font-family: raleway_f;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background: #1e2526;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span27 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-		background: #1e2526;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span28 {
-		color: #a01c1c;
-		text-shadow: 0 0 2px #a01c1c, 0 0 2px #a01c1c, 0 0 2px #a01c1c;
-		background: #1e2526;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span29 {
-		background: white;
-	}
-	
-	.OT-banners-bottom .banners div span30 {
-		color: black;
-		text-shadow: 0 0 2px black, 0 0 2px black;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span31 {
-		color: #a01c1c;
-		text-shadow: 0 0 2px #a01c1c, 0 0 2px #a01c1c, 0 0 2px #a01c1c;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span32 {
-		color: black;
-		text-shadow: 0 0 2px black, 0 0 2px black;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span33 {
-		background: white;
-		/* fiddle by Platte Gruber: https://stackoverflow.com/questions/32875695/flip-mirror-an-image-horizontally-vertically-with-css */
-		transform: rotateY(180deg);
-	}
-	
-	.OT-banners-bottom .banners div:nth-child(2) {
-		animation: animate3 80s linear infinite;
-		/* animation: none; */
-	}
-	@keyframes animate2 {
-		0%
-		{
-			transform: translateX(100%);
-		}
-		100%
-		{
-			transform: translateX(-100%);
-		}
-	}
-	@keyframes animate3 {
-		0%
-		{
-			transform: translateX(0);
-		}
-		100%
-		{
-			transform: translateX(-200%);
-		}
 	}
 	
 	.email-cursor-text {
@@ -6212,19 +4716,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		width: 20vw;
 		height: 8vw;  /* addition to actually see this div container border lines */
 	}
-	.nav_container-season {
-		/* border: solid red 1px; */
-		justify-items: center;
-		width: 89%;  /* addition to reduce cursor:pointer clickability away from the title */
-	}
 	.dropdown-season {
 		/* border: solid red 1px; */
 		width: 85%;  /* addition to reduce cursor:pointer clickability away from the title */
 		position: absolute;  /* for any reason, without this, Mozilla renders .select-season a bit more to the left */
-	}
-	.season-list:has( :checked ) {
-		--rows: 1fr;
-	    --on-tap: auto;  /* for #season-links */
 	}
 	.checkbox-size {
 		/* border: solid 1px red; */
@@ -6234,17 +4729,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		display: flex;
 		align-items: center;
 		position: relative;
-	}
-	#dropdown-pointer {  /* universal pointer cursor for far left-hand side of dropdowns that somehow the dropdown itself doesn't cover */
-		cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='30px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f90605' d='M 11.5,-0.5 C 12.5,-0.5 13.5,-0.5 14.5,-0.5C 14.5,2.16667 14.5,4.83333 14.5,7.5C 13.8333,6.16667 13.1667,4.83333 12.5,3.5C 12.1667,3.5 11.8333,3.5 11.5,3.5C 11.5,2.16667 11.5,0.833333 11.5,-0.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23040404' d='M 9.5,3.5 C 10.1667,3.5 10.8333,3.5 11.5,3.5C 11.8333,3.5 12.1667,3.5 12.5,3.5C 12.5,5.16667 12.5,6.83333 12.5,8.5C 13.9527,10.229 15.9527,11.229 18.5,11.5C 19.4742,13.7427 19.8076,16.076 19.5,18.5C 18.0795,21.2613 17.4129,24.2613 17.5,27.5C 15.5,27.5 13.5,27.5 11.5,27.5C 11.1185,22.737 9.11854,18.737 5.5,15.5C 6.56764,14.5655 7.90097,14.2322 9.5,14.5C 9.5,10.8333 9.5,7.16667 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23aa2822' d='M 12.5,3.5 C 13.1667,4.83333 13.8333,6.16667 14.5,7.5C 15.1667,7.5 15.8333,7.5 16.5,7.5C 15.4324,8.43448 14.099,8.76781 12.5,8.5C 12.5,6.83333 12.5,5.16667 12.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%235a5c5e' d='M 9.5,3.5 C 9.5,7.16667 9.5,10.8333 9.5,14.5C 7.90097,14.2322 6.56764,14.5655 5.5,15.5C 4.95691,15.44 4.62358,15.1067 4.5,14.5C 5.68884,13.5713 7.02218,13.238 8.5,13.5C 8.18723,9.95815 8.52056,6.62482 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f41a13' d='M 17.5,7.5 C 19.1172,8.038 20.7839,8.37133 22.5,8.5C 22.5,12.8333 22.5,17.1667 22.5,21.5C 20.7773,23.78 20.1107,26.4467 20.5,29.5C 17.5,29.5 14.5,29.5 11.5,29.5C 13.5,28.8333 15.5,28.1667 17.5,27.5C 17.4129,24.2613 18.0795,21.2613 19.5,18.5C 20.4767,15.7131 20.81,12.7131 20.5,9.5C 18.8212,9.71481 17.8212,9.04814 17.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bea6ab' d='M 16.5,7.5 C 16.8333,7.5 17.1667,7.5 17.5,7.5C 17.8212,9.04814 18.8212,9.71481 20.5,9.5C 20.81,12.7131 20.4767,15.7131 19.5,18.5C 19.8076,16.076 19.4742,13.7427 18.5,11.5C 15.9527,11.229 13.9527,10.229 12.5,8.5C 14.099,8.76781 15.4324,8.43448 16.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f0edf0' d='M 7.5,-0.5 C 8.83333,-0.5 10.1667,-0.5 11.5,-0.5C 11.5,0.833333 11.5,2.16667 11.5,3.5C 10.8333,3.5 10.1667,3.5 9.5,3.5C 8.52056,6.62482 8.18723,9.95815 8.5,13.5C 7.02218,13.238 5.68884,13.5713 4.5,14.5C 4.62358,15.1067 4.95691,15.44 5.5,15.5C 9.11854,18.737 11.1185,22.737 11.5,27.5C 13.5,27.5 15.5,27.5 17.5,27.5C 15.5,28.1667 13.5,28.8333 11.5,29.5C 10.8333,29.5 10.1667,29.5 9.5,29.5C 9.04814,25.4246 7.54814,21.7579 5,18.5C 3.54905,16.5359 1.71572,15.2026 -0.5,14.5C -0.5,13.1667 -0.5,11.8333 -0.5,10.5C 2.19853,10.4661 4.69853,11.1328 7,12.5C 7.49902,8.17944 7.66568,3.84611 7.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, pointer;
-	}
-	.dropdown-check {
-		position: absolute;
-		/* if checkbox is not set at this width and height, you will not be able to click anywhere to see/hide content */
-		width: 100%;  /* lowering this value makes only that % of the dropdown box clickable, and not the rest */
-		height: 100%;
-		opacity: 0;  /* to make checkbox visible, put 'opacity: 1' */
-		cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='30px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f90605' d='M 11.5,-0.5 C 12.5,-0.5 13.5,-0.5 14.5,-0.5C 14.5,2.16667 14.5,4.83333 14.5,7.5C 13.8333,6.16667 13.1667,4.83333 12.5,3.5C 12.1667,3.5 11.8333,3.5 11.5,3.5C 11.5,2.16667 11.5,0.833333 11.5,-0.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23040404' d='M 9.5,3.5 C 10.1667,3.5 10.8333,3.5 11.5,3.5C 11.8333,3.5 12.1667,3.5 12.5,3.5C 12.5,5.16667 12.5,6.83333 12.5,8.5C 13.9527,10.229 15.9527,11.229 18.5,11.5C 19.4742,13.7427 19.8076,16.076 19.5,18.5C 18.0795,21.2613 17.4129,24.2613 17.5,27.5C 15.5,27.5 13.5,27.5 11.5,27.5C 11.1185,22.737 9.11854,18.737 5.5,15.5C 6.56764,14.5655 7.90097,14.2322 9.5,14.5C 9.5,10.8333 9.5,7.16667 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23aa2822' d='M 12.5,3.5 C 13.1667,4.83333 13.8333,6.16667 14.5,7.5C 15.1667,7.5 15.8333,7.5 16.5,7.5C 15.4324,8.43448 14.099,8.76781 12.5,8.5C 12.5,6.83333 12.5,5.16667 12.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%235a5c5e' d='M 9.5,3.5 C 9.5,7.16667 9.5,10.8333 9.5,14.5C 7.90097,14.2322 6.56764,14.5655 5.5,15.5C 4.95691,15.44 4.62358,15.1067 4.5,14.5C 5.68884,13.5713 7.02218,13.238 8.5,13.5C 8.18723,9.95815 8.52056,6.62482 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f41a13' d='M 17.5,7.5 C 19.1172,8.038 20.7839,8.37133 22.5,8.5C 22.5,12.8333 22.5,17.1667 22.5,21.5C 20.7773,23.78 20.1107,26.4467 20.5,29.5C 17.5,29.5 14.5,29.5 11.5,29.5C 13.5,28.8333 15.5,28.1667 17.5,27.5C 17.4129,24.2613 18.0795,21.2613 19.5,18.5C 20.4767,15.7131 20.81,12.7131 20.5,9.5C 18.8212,9.71481 17.8212,9.04814 17.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bea6ab' d='M 16.5,7.5 C 16.8333,7.5 17.1667,7.5 17.5,7.5C 17.8212,9.04814 18.8212,9.71481 20.5,9.5C 20.81,12.7131 20.4767,15.7131 19.5,18.5C 19.8076,16.076 19.4742,13.7427 18.5,11.5C 15.9527,11.229 13.9527,10.229 12.5,8.5C 14.099,8.76781 15.4324,8.43448 16.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f0edf0' d='M 7.5,-0.5 C 8.83333,-0.5 10.1667,-0.5 11.5,-0.5C 11.5,0.833333 11.5,2.16667 11.5,3.5C 10.8333,3.5 10.1667,3.5 9.5,3.5C 8.52056,6.62482 8.18723,9.95815 8.5,13.5C 7.02218,13.238 5.68884,13.5713 4.5,14.5C 4.62358,15.1067 4.95691,15.44 5.5,15.5C 9.11854,18.737 11.1185,22.737 11.5,27.5C 13.5,27.5 15.5,27.5 17.5,27.5C 15.5,28.1667 13.5,28.8333 11.5,29.5C 10.8333,29.5 10.1667,29.5 9.5,29.5C 9.04814,25.4246 7.54814,21.7579 5,18.5C 3.54905,16.5359 1.71572,15.2026 -0.5,14.5C -0.5,13.1667 -0.5,11.8333 -0.5,10.5C 2.19853,10.4661 4.69853,11.1328 7,12.5C 7.49902,8.17944 7.66568,3.84611 7.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, pointer;
 	}
 	.select-season-title {  /* title: since 2023 SELECT SEASON */
 		/* border: solid 1px red; */
@@ -6281,19 +4765,11 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 120px #13b48a, 0 0 120px #13b48a,
 						   0 0 160px #13b48a;
 	}
-	.dropdown-content-display {
-		display: grid;
-		grid-template-rows: var(--rows, 0fr);
-		font-size: 0;  /* addition // important to eliminate border margin between separate images; alex's answer here: https://stackoverflow.com/questions/7641678/use-css-to-remove-the-space-between-images */
-	}
 	.dropdown-sub-season {		
 		/* border: solid 1px red; */
 		overflow: hidden;
 		width: 320%;  /* how much % of the dropdown content to show width-wise */
 		transform: initial;  /* overwrites code for PC */
-	}
-	.dropdown-li {  /* no use for this, but just in case... */
-		list-style: none;
 	}
 	.season-header-pc { display: none; }  /* for PC */
 	.season-header-mobile {  /* tap to close, tap to revisit season */
@@ -6305,9 +4781,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* border: solid 1px red; */
 		width: 304px;  /* how big the dropdown content is */
 	}
-	#season-links {
-		pointer-events: var(--on-tap, none);  /* responsive: somehow, the link is clickable even when the dropdown is not box-checked, so this rule prevents clicks */
-	}
 	.season-19-20 img {
 		position: absolute;
 		opacity: 0;
@@ -6316,9 +4789,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		margin-top: 2px;  /* 109.8px the lower the value, the higher the object goes */
 		margin-left: -261.4px;  /* -154.4px the lower the value, the more to the left */
 	}
-	.season-19-20:hover img {
-		opacity: 1;
-	}
 	.season-20-21 img {
 		position: absolute;
 		opacity: 0;
@@ -6326,9 +4796,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		height: 108.5px;
 		margin-top: 2px;  /* 109.8px the lower the value, the higher the object goes */
 		margin-left: -151px;  /* -154.4px the lower the value, the more to the left */
-	}
-	.season-20-21:hover img {
-		opacity: 1;
 	}
     /* SCOREBOARD CAROUSEL 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.scoreboard-PL {
@@ -6350,9 +4817,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 200px #3D195B, 0 0 200px #3D195B, 0 0 300px #3D195B, 0 0 400px #3D195B;
 		cursor: pointer;
 	}
-	.scoreboard-PL .PL {
-		display: flex;
-	}
 	.scoreboard-PL .PL div {
 		color: #fff;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
@@ -6363,7 +4827,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		display: flex;
 		animation: none;  /* no animation for mobile as it slows down the user experience */
 	}
-	.scoreboard-PL .PL div span { display: none; }
 	.scoreboard-PL .PL div span1 {
 		font-weight: 900;
 		font-size: 3.2vw;  /* addition for mobile */
@@ -6374,19 +4837,11 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* color: gray; */
 		/* ▼ */
 		/* color: #da020e; */
-		/* text-shadow: none; */
 		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
 	}
 	.scoreboard-PL .PL div span2 {
 		color: transparent;
 		text-shadow: none;
-	}
-	.scoreboard-PL .PL div span3 {
-		color: #589444;
-		text-shadow: 0 0 2px #589444, 0 0 2px #589444, 0 0 2px #589444;
-	}
-	.scoreboard-PL .PL div:nth-child(2) {
-		animation: none;  /* no animation for mobile as it slows down the user experience */
 	}
 	/* SCOREBOARD (TEAMS) 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.scoreboard-teams { display: none; }  /* PC version */
@@ -6404,16 +4859,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-family: myFont;
 		font-size: 2.5vw;
 		background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led-black.jpg);
-		background-size: 150% 150%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
-	}
-	.home span {
-		color: #da020e;
-		text-shadow: 0 0 2px #da020e;
-		opacity: none;
-	}
-	.home {
-		color: #fff;
-		opacity: none;
+		background-size: 150% 150%;
 	}
 	/* SCOREBOARD (RESULT) 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.scoreboard-result {
@@ -6436,10 +4882,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* background-size: 150% 150%; */
 		text-align: center;
 	}
-	/* allows me put both the result (0-0) and the text "final/fair score" side by side
-		Mr. Hugo's answer: https://stackoverflow.com/questions/37711138/display-2-ps-side-by-side
-		I had to add a few id in the HTML*/
-	#scoreboard .scoreboard-result, #scoreboard .final-fair {display: inline;}
 	.final-fair {
 		background: linear-gradient(rgba(254,29,18,0.6), rgba(254,29,18,0.6)), url(../parallax/led-black.jpg);
 		position: absolute;
@@ -6470,10 +4912,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 	}
-	/* allows me put both the result (0-0) and the text "final/fair score" side by side
-		Mr. Hugo's answer: https://stackoverflow.com/questions/37711138/display-2-ps-side-by-side
-		I had to add a few id in the HTML*/
-	#scoreboard2 .scoreboard-result2, #scoreboard2 .final-fair2 {display: inline;}
 	.final-fair2 {
 		color: #ffcf3e;
 		background: linear-gradient(rgba(2,131,54,0.6), rgba(2,131,54,0.6)), url(../parallax/led-black.jpg);
@@ -6484,29 +4922,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		https://stackoverflow.com/questions/65536/how-to-put-text-in-the-upper-right-or-lower-right-corner-of-a-box-using-css */
 		right: 0;
 	}
-	#scoreboard2 {
-		animation: 5s autoplay infinite linear;
-	}
-	@keyframes autoplay {
-		0% {opacity: 0.0}
-		4% {opacity: 1.0}
-		33.33% {opacity: 1.0}
-		37.33% {opacity: 0.0}
-		100% {opacity: 0.0}
-	}
-	#scoreboard {
-		animation: 5s autoplay2 infinite linear;
-	}
-	@keyframes autoplay2 {
-		0% {opacity: 0.0}
-		4% {opacity: 0.0}
-		41.33% {opacity: 0.0}
-		42.33% {opacity: 0.2}
-		48.33% {opacity: 0.5}
-		51.33% {opacity: 1.0}
-		100% {opacity: 1.0}
-	}
-	.box-shadow .box-shadow2 { display: none; }
 	.OT-banners { display: none; } /* for PC and larger tablet */
 	/* CLOCK 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.clock {
@@ -6529,18 +4944,12 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		text-align: center;
 		align-items: center;
 	}
-	.time {
-		transform: translateX(40%) scaleY(1.5);  /* translateX to move clock away from left margin; scaleY to make text taller */
-	}
 	.republik-of-mancunia {
 		display: initial;  /* delete this when the media query for computer is done */
 		transform: translateX(35%);
 		font-size: 2.5vw;
 		letter-spacing: 2px;
 		line-height: 2.5vw;
-	}
-	.clock-vertical-stripes {
-		content: '';
 	}
 	.clock-vertical-stripe1 {
 		width: .8%;
@@ -6592,10 +5001,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		width: 100%;  /* 100% // my best guess is so that text occupies the width of the screen */
 		height: 23vw;  /* this specific height 'cuz it coincides with the border line of .underground-small; comment for mobile */
 	}
-	ul.navlist {
-		display: flex;
-		align-items: center;
-	}
 	.navlist li {
 		text-align: center;
 		padding: 0 2vw;  /* the space between menu text */
@@ -6616,15 +5021,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* idea for space between letters */
 		letter-spacing: 1px;
 		cursor: pointer;
-		color: #fff;
-		text-shadow: 0 0 10px #da020e,
-						   0 0 20px #da020e,
-						   0 0 40px #da020e,
-						   0 0 80px #da020e,
-						   0 0 120px #da020e,
-						   0 0 160px #da020e;
-	}
-	.line1 span {
 		color: #fff;
 		text-shadow: 0 0 10px #da020e,
 						   0 0 20px #da020e,
@@ -6675,34 +5071,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		transform: skewY(-15deg);
 		display: inline-block;  /* allows me to move this text freely */
 	}
-
-	.line4 {
-		color: #fff;
-		text-shadow: 0 0 10px #fff,
-						   0 0 20px #fff,
-						   0 0 40px #fff,
-						   0 0 80px #fff,
-						   0 0 120px #fff,
-						   0 0 160px #fff;
-	}
-	.line4 span {
-		color: #fff;
-		text-shadow: 0 0 10px #da020e, 0 0 10px #da020e,
-						   0 0 20px #da020e, 0 0 20px #da020e,
-						   0 0 40px #da020e, 0 0 40px #da020e,
-						   0 0 80px #da020e, 0 0 80px #da020e,
-						   0 0 120px #da020e, 0 0 120px #da020e,
-						   0 0 160px #da020e, 0 0 160px #da020e, 0 0 160px #da020e, 0 0 160px #da020e;
-	}
-	.line5 {
-		color: #fff;
-		text-shadow: 0 0 10px #fff,
-						   0 0 20px #fff,
-						   0 0 40px #fff,
-						   0 0 80px #fff,
-						   0 0 120px #fff,
-						   0 0 160px #fff;
-	}
 	/* SUPPORT & DONATE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.support {
 		display: inline-block;  /* allows me to move this text freely */
@@ -6749,7 +5117,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 120px #028336,
 						   0 0 160px #028336;
 	}
-	.line7-5 { display: none; }
 	/* WANNA LEARN A LANGUAGE? 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.learn-language {
 		text-decoration: none;
@@ -6770,7 +5137,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 20px #da020e,
 						   0 0 40px #da020e;
 	}
-	.line9 { display: none; }
 	.line10 {
 		font-family: Salonica;
 		font-size: 10vw;
@@ -6782,7 +5148,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 80px #da020e,
 						   0 0 120px #da020e;
 	}
-	.line11 { display: none; }
 	.line12 span {
 		font-family: Zekton;
 		font-size: 3vw;
@@ -6836,370 +5201,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
 	}
 	.underground-irons { display: none; }  /* for PC */
-	/* BRICKS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.bricks {
-		position: relative;
-		/* border: solid red 1px; */
-		margin-top: -50%;  /* with respect to header (menu) */
-		width: 200%;
-		left: -44%;
-		z-index: -2;
-	}
-	.brick-wall h1 {  /* 2023/24 (TEXT) */
-		position: absolute;
-		margin-top: -46%;  /* with respect to header (menu) */
-		left: 25.5%;
-		background-size: cover;
-		z-index: 7;
-		font-family: raleway_f;
-		font-size: 11vw;
-		mix-blend-mode: overlay;
-	}
-	.brick-wall h1 span {  /* 2023/24 (TEXT) */
-		color: #ec334d;
-	}
-	.trophies {
-		left: -37.5%;
-		width: 180%;
-		transform: translate(-21%, -180%);  /* for any reason, this is the only way I can move this div */
-	}
-	/* CABLE BOXES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	#cable-box { display: none; }
-	/* CABLE BOXES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	/* GALLERY PHOTO TEXT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.brick-wall h2, h3, h4, h5, h6, h7 {
-		/* border: solid 1px red; */
-		position: absolute;
-		display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
-		width: 13.15%;  /* width of each text */
-		margin-top: -9%;
-		font-family: raleway_f;
-		font-size: 1vw;
-		text-align: center;  /* centers it left to right */
-		z-index: 2;
-	}
-	.blur-pc { display: none; }  /* for PC */
-	.blur-mobile { 
-		display: initial;
-		position: absolute;
-		width: 100%;
-		margin-top: -29%;  /* with respect to header (menu) */
-	}
-	.match-grid {
-		position: absolute;
-		display: initial;  /* overwrites code for PC */
-		margin-top: 37%;
-		left: -19%;  /* same as #match-ratings below */
-		width: 137%;
-	}
-	/* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.button-wrapper {
-		position: relative;
-	}
-	#button-gallery1 {
-		border: none;
-		position: absolute;
-		margin-top: -41.7%;
-		left: 3.7%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
-	}
-	#button-gallery2 {
-		border: none;
-		position: absolute;
-		margin-top: -41.7%;
-		left: 17.3%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
-	}
-	#button-gallery3 {
-		border: none;
-		position: absolute;
-		margin-top: -41.7%;
-		left: 30.9%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
-	}
-	#button-gallery4 {
-		border: none;
-		position: absolute;
-		margin-top: -41.7%;
-		left: 53.3%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
-	}
-	#button-gallery5 {
-		border: none;
-		position: absolute;
-		margin-top: -41.7%;
-		left: 53.3%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
-	}
-	#button-gallery6 {
-		border: none;
-		position: absolute;
-		margin-top: -41.7%;
-		left: 66.9%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
-	}
-	#button-gallery7 {
-		border: none;
-		position: absolute;
-		margin-top: -41.7%;
-		left: 80.4%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
-	}
-	#show-gallery {
-		display: none;
-		margin-top: -20.59%;  /* with respect to header (menu) */
-		position: absolute;
-	}
-	#gallery-text1 { display: none; }   /* for button */
-	#gallery-text2 { display: none; }   /* for button */
-	#gallery-text3 { display: none; }   /* for button */
-	#gallery-text4 { display: none; }   /* for button */
-	#gallery-text5 { display: none; }   /* for button */
-	#gallery-text6 { display: none; }   /* for button */
-	.gallery {
-		width: 100%;
-		position: relative;
-		z-index: 2;
-	}
-	/* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	/* GALLERY: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	#button-read-text {
-		border: none;
-		border-radius: 0 0 1.5vw 1.5vw;
-		position: absolute;
-		z-index: 2;
-		margin-top: -30%;
-		left: 42.8%;
-		width: 15%;
-		height: 3vw;
-		font-size: 1.1vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: white;
-		background: url(../underground/button.png), #820202;
-		background-size: 100% 100%;
-	}
-	#button-read-text:hover {
-		color: #f0f50c;
-		background: url(../underground/button.png), radial-gradient(#ef0017 -20%, #820202);  /* -20% here reduces the radius of #ef0017 color */
-		background-size: 100% 100%;
-		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
-	}
-	#button-read-text span1 { display: none; }  /* CLICK TO READ TEXT */
-	#button-read-text span2 { display: initial; }  /* TAP TO READ TEXT */
-	#show-expectations {
-		display: none;
-		margin-top: -6%;  /* with respect to header (menu) */
-		position: absolute;
-	}
-	.expectations {
-		width: 100%;
-		position: relative;
-		z-index: 2;
-	}
-	/* GALLERY: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.legend {
-		position: relative; 
-		margin-top: 23%;
-		z-index: 2;
-	}
-	.legend-1 {
-		position: absolute;
-		left: 20.3%;
-		width: 2.5%;
-		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
-		background: radial-gradient(#e61b22, #9d0e16);
-		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16,
-						   0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 5px #9d0e16,
-						   0 0 50px #9d0e16;
-		font-family: Century Gothic;
-		font-size: 1.3vw;
-		/* allows me to put the text aligned vertically */
-		text-align: center;
-		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 2.2vw;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	}
-	
-	.legend-2 {
-		position: absolute;
-		left: 25.8%;
-		width: 2.5%;
-		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
-		background: radial-gradient(#eb6121, #9a360a);
-		box-shadow: 0 0 5px #9a360a, 0 0 5px #9a360a, 0 0 15px #9a360a, 0 0 5px #9a360a,
-						   0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 5px #9a360a,
-						   0 0 50px #9a360a;
-		font-family: Century Gothic;
-		font-size: 1.3vw;
-		/* allows me to put the text aligned vertically */
-		text-align: center;
-		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 2.2vw;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	}
-	
-	.legend-3 {
-		position: absolute;
-		left: 31.3%;
-		width: 2.5%;
-		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
-		background: radial-gradient(#fcc00d, #997000);
-		box-shadow: 0 0 5px #997000, 0 0 5px #997000, 0 0 15px #997000, 0 0 5px #997000,
-						   0 0 25px #997000, 0 0 25px #997000, 0 0 25px #997000, 0 0 5px #997000,
-						   0 0 50px #997000;
-		font-family: Century Gothic;
-		font-size: 1.3vw;
-		/* allows me to put the text aligned vertically */
-		text-align: center;
-		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 2.2vw;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	}
-	
-	.legend-4 {
-		position: absolute;
-		left: 36.8%;
-		width: 2.5%;
-		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
-		background: radial-gradient(#c5b700, #7f7501);
-		box-shadow: 0 0 5px #7f7501, 0 0 5px #7f7501, 0 0 15px #7f7501, 0 0 5px #7f7501,
-						   0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 5px #7f7501,
-						   0 0 50px #7f7501;
-		font-family: Century Gothic;
-		font-size: 1.3vw;
-		/* allows me to put the text aligned vertically */
-		text-align: center;
-		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 2.2vw;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	}
-	
-	.legend-5 {
-		position: absolute;
-		left: 42.3%;
-		width: 2.5%;
-		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
-		background: radial-gradient(#88c03c, #4a681f);
-		box-shadow: 0 0 5px #4a681f, 0 0 5px #4a681f, 0 0 15px #4a681f, 0 0 5px #4a681f,
-						   0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 5px #4a681f,
-						   0 0 50px #4a681f;
-		font-family: Century Gothic;
-		font-size: 1.3vw;
-		/* allows me to put the text aligned vertically */
-		text-align: center;
-		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 2.2vw;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	}
-	
-	.legend-6 {
-		position: absolute;
-		left: 47.8%;
-		width: 2.5%;
-		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
-		background: radial-gradient(#47813d, #2b4c24);
-		box-shadow: 0 0 5px #2b4c24, 0 0 5px #2b4c24, 0 0 15px #2b4c24, 0 0 5px #2b4c24,
-						   0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 5px #2b4c24,
-						   0 0 50px #2b4c24;
-		font-family: Century Gothic;
-		font-size: 1.3vw;
-		/* allows me to put the text aligned vertically */
-		text-align: center;
-		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 2.2vw;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	}
-	
-	.legend-7 {
-		position: absolute;
-		left: 53.3%;
-		width: 2.5%;
-		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
-		background: radial-gradient(#009f4d, #015326);
-		box-shadow: 0 0 5px #015326, 0 0 5px #015326, 0 0 15px #015326, 0 0 5px #015326,
-						   0 0 25px #015326, 0 0 25px #015326, 0 0 25px #015326, 0 0 5px #015326,
-						   0 0 50px #015326;
-		font-family: Century Gothic;
-		font-size: 1.3vw;
-		/* allows me to put the text aligned vertically */
-		text-align: center;
-		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 2.2vw;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	}
-	
-	.legend-7 span {
-		/* border: solid red 1px; */
-		text-align: left;
-		position: absolute;
-		width: 700%;
-		font-size: 1.3vw;
-		transform: translateX(8%);
-	}
-	
-	.legend-8 {
-		position: absolute;
-		left: 74.5%;
-		width: 5.3%;
-		font-family: Century Gothic;
-		font-size: 1.3vw;
-		color: white;
-		line-height: 2.1vw;
-		/* diagonal line inside square // Nitheesh's answer: https://stackoverflow.com/questions/60388805/make-diagonal-line-for-div-square */
-		border: 1px solid #404040;
-		background: linear-gradient(to bottom right, #262626 calc(50% - 3px),  #404040 calc(50% - 1px), #262626 50%, #262626 50%);
-	}
 	#first-half { transform: translate(2%, 5%); }  /* 1H */
 	#second-half { transform: translate(40%, 0%); }  /*2H */
-	/* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	#button-ratings {
-		border: none;
-		border-radius: 1.5vw;
-		position: absolute;
-		z-index: 2;
-		margin-top: 7.3%;
-		/* left: 42.8%; */
-		left: 36.5%;
-		width: 27%;
-		height: 3vw;
-		font-size: 1.3vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: white;
-		background: url(../underground/button.png), #820202;
-		background-size: 100% 100%;
-	}
-	#button-gallery4:hover {
-		color: #f0f50c;
-		background: url(../underground/button.png), radial-gradient(#ef0017 -20%, #820202);
-		background-size: 100% 100%;
-		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
-	}
-	#button-ratings span1 { display: none; }  /* CLICK TO REVEAL SCORES... */
-	#button-ratings span2 { display: initial; }  /* TAP TO REVEAL SCORES */
-	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.date-and-result h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {  /*1st row */
 		/* border: solid 1px red; */
@@ -7227,757 +5231,13 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		padding-top: 2%;
 		z-index: 4;
 	}
-	.date-and-result h8, h18 {
-		left: 1.7%;
-	}
-	.date-and-result h9 {
-		left: 11.35%;
-	}
-	.date-and-result h10 {
-		left: 20.97%;
-	}
-	.date-and-result h11 {
-		left: 30.59%;
-	}
-	.date-and-result h12 {
-		left: 40.3%;
-	}
-	.date-and-result h13 {
-		left: 49.92%;
-	}
-	.date-and-result h14 {
-		left: 59.56%;
-	}
-	.date-and-result h15 {
-		left: 69.3%;
-	}
-	.date-and-result h16 {
-		left: 79%;
-	}
-	.date-and-result h17 {
-		left: 88.6%;
-	}
-	#date {
-		font-size: 1.11vw;
-	}
-	#result { display: none;}   /* for button */
-	#result1 { display: none; }   /* for button */
-	/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.match-ratings-wrapper {
-		position: relative;
-		z-index: 2;
-	}
 	#match-ratings {
 		display: none;
 		position: absolute;
 		margin-top: -.15%;  /* with respect to header (menu) */
 		left: -19%;  /* same as .match-grid above */
 		width: 137%;
-	}
-	/* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	/* CUBOID HOLDERS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.cuboid-holder { display: none; }
-	/* CUBOID HOLDERS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	/* ROTATING CUBOIDS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.cuboid1 { display: none; }
-	.cuboid2 { display: none; }
-	/* ROTATING CUBOIDS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	/* VERTICAL SIGNS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.vertical-neon-signs { display: none; }
-	/* VERTICAL SIGNS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	/* DROPDOWNS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.dropdowns-section {
-		position: relative;  /* responsive: 'relative' to eliminate overflow excess x-wise on mobile */
-		margin-top: 110%;
-		margin-left: -29.5vw;
-		height: 150vw;
-		z-index: 2;
-	}
-	.nav_container {
-		position: relative;
-		background-color: gray;
-		justify-items: center;
-	}
-	.dropdown {
-		position: absolute;
-	}
-	.dropdown_list:has( :checked ) {
-		--rows: 1fr;
-		/* addition to make SEE and HIDE toggle */
-		--open-display: none;
-		--close-display: inline-block;
-		/* addition for the links */
-		--links-display: flex;
-	}
-	.open {
-		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
-		font-family: Trueno Round Italic;
-		font-size: 1.8vw;
-		letter-spacing: .05vw;
-		margin-top: 8%;  /* the higher, the lower */
-		left: 49.5%;
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #da020e, 0 0 10px #da020e,
-						   0 0 20px #da020e,
-						   0 0 40px #da020e,
-						   0 0 80px #da020e,
-						   0 0 120px #da020e;
-		/* I learned how to make custom properties (variable) for 'display'
-			 https://www.reddit.com/r/css/comments/t2zcot/can_css_variables_custom_properties_be_used_to/ */
-		display: var(--open-display) !important;
-	}
-	.open2 {
-		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
-		font-family: Trueno Round Italic;
-		font-size: 1.8vw;
-		letter-spacing: .05vw;
-		margin-top: 8%;  /* the higher, the lower */
-		left: 47%;
-		color: #f8cccf;
-		text-shadow: 0 0 10px #028336, 0 0 10px #028336, 0 0 10px #028336,
-						   0 0 20px #028336, 0 0 20px #028336,
-						   0 0 40px #028336,
-						   0 0 80px #028336,
-						   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
-						   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
-		/* I learned how to make custom properties (variable) for 'display'
-			 https://www.reddit.com/r/css/comments/t2zcot/can_css_variables_custom_properties_be_used_to/ */
-		display: var(--open-display) !important;
-	}
-	.close {
-		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
-		font-family: Trueno Round Italic;
-		font-size: 1.8vw;
-		letter-spacing: .05vw;
-		margin-top: 8%;  /* the higher, the lower */
-		left: 69%;
-		color: #fff;
-		text-shadow: 0 0 10px #fff,
-						   0 0 20px #fff,
-						   0 0 40px #fff,
-						   0 0 80px #fff,
-						   0 0 120px #fff,
-						   0 0 160px #fff;
-		/* inspired by another custom property (variable), I added "none" to make "HIDE" not visible when the checkbox is unchecked. */
-		display: var(--close-display, none) !important;
-	}
-	.close2 {
-		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
-		font-family: Trueno Round Italic;
-		font-size: 1.8vw;
-		letter-spacing: .05vw;
-		margin-top: 8%;  /* the higher, the lower */
-		left: 71.5%;
-		color: white;
-		text-shadow: 0 0 10px #ffcf3e,
-						   0 0 20px #ffcf3e,
-						   0 0 40px #ffcf3e,
-						   0 0 80px #ffcf3e,
-						   0 0 120px #ffcf3e,
-						   0 0 160px #ffcf3e;
-		/* inspired by another custom property (variable), I added "none" to make "HIDE" not visible when the checkbox is unchecked. */
-		display: var(--close-display, none) !important;
-	}
-	.hide-UCL {
-		position: absolute;
-		background: url(/underground/hide-UCL.png);
-		background-size: 100%;
-		font-family: 'Courier New', Courier, monospace;	 /* to control image size, I need these font values */
-		font-size: 6.8vw; 	/* to control image size, I need these font values */
-		top: 29.7%;
-		left: 57.34%;
-		display: var(--close-display, none) !important;
-	}
-	.dropdown_check {
-		position: absolute;
-		/* if checkbox is not set at this width and height, you will not be able to click anywhere to see/hide content */
-		width: 100%;  /* lowering this value makes only that % of the dropdown box clickable, and not the rest */
-		height: 100%;
-		opacity: 0;  /* to make checkbox visible, put 'opacity: 1' */
-		cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='30px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f90605' d='M 11.5,-0.5 C 12.5,-0.5 13.5,-0.5 14.5,-0.5C 14.5,2.16667 14.5,4.83333 14.5,7.5C 13.8333,6.16667 13.1667,4.83333 12.5,3.5C 12.1667,3.5 11.8333,3.5 11.5,3.5C 11.5,2.16667 11.5,0.833333 11.5,-0.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23040404' d='M 9.5,3.5 C 10.1667,3.5 10.8333,3.5 11.5,3.5C 11.8333,3.5 12.1667,3.5 12.5,3.5C 12.5,5.16667 12.5,6.83333 12.5,8.5C 13.9527,10.229 15.9527,11.229 18.5,11.5C 19.4742,13.7427 19.8076,16.076 19.5,18.5C 18.0795,21.2613 17.4129,24.2613 17.5,27.5C 15.5,27.5 13.5,27.5 11.5,27.5C 11.1185,22.737 9.11854,18.737 5.5,15.5C 6.56764,14.5655 7.90097,14.2322 9.5,14.5C 9.5,10.8333 9.5,7.16667 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23aa2822' d='M 12.5,3.5 C 13.1667,4.83333 13.8333,6.16667 14.5,7.5C 15.1667,7.5 15.8333,7.5 16.5,7.5C 15.4324,8.43448 14.099,8.76781 12.5,8.5C 12.5,6.83333 12.5,5.16667 12.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%235a5c5e' d='M 9.5,3.5 C 9.5,7.16667 9.5,10.8333 9.5,14.5C 7.90097,14.2322 6.56764,14.5655 5.5,15.5C 4.95691,15.44 4.62358,15.1067 4.5,14.5C 5.68884,13.5713 7.02218,13.238 8.5,13.5C 8.18723,9.95815 8.52056,6.62482 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f41a13' d='M 17.5,7.5 C 19.1172,8.038 20.7839,8.37133 22.5,8.5C 22.5,12.8333 22.5,17.1667 22.5,21.5C 20.7773,23.78 20.1107,26.4467 20.5,29.5C 17.5,29.5 14.5,29.5 11.5,29.5C 13.5,28.8333 15.5,28.1667 17.5,27.5C 17.4129,24.2613 18.0795,21.2613 19.5,18.5C 20.4767,15.7131 20.81,12.7131 20.5,9.5C 18.8212,9.71481 17.8212,9.04814 17.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bea6ab' d='M 16.5,7.5 C 16.8333,7.5 17.1667,7.5 17.5,7.5C 17.8212,9.04814 18.8212,9.71481 20.5,9.5C 20.81,12.7131 20.4767,15.7131 19.5,18.5C 19.8076,16.076 19.4742,13.7427 18.5,11.5C 15.9527,11.229 13.9527,10.229 12.5,8.5C 14.099,8.76781 15.4324,8.43448 16.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f0edf0' d='M 7.5,-0.5 C 8.83333,-0.5 10.1667,-0.5 11.5,-0.5C 11.5,0.833333 11.5,2.16667 11.5,3.5C 10.8333,3.5 10.1667,3.5 9.5,3.5C 8.52056,6.62482 8.18723,9.95815 8.5,13.5C 7.02218,13.238 5.68884,13.5713 4.5,14.5C 4.62358,15.1067 4.95691,15.44 5.5,15.5C 9.11854,18.737 11.1185,22.737 11.5,27.5C 13.5,27.5 15.5,27.5 17.5,27.5C 15.5,28.1667 13.5,28.8333 11.5,29.5C 10.8333,29.5 10.1667,29.5 9.5,29.5C 9.04814,25.4246 7.54814,21.7579 5,18.5C 3.54905,16.5359 1.71572,15.2026 -0.5,14.5C -0.5,13.1667 -0.5,11.8333 -0.5,10.5C 2.19853,10.4661 4.69853,11.1328 7,12.5C 7.49902,8.17944 7.66568,3.84611 7.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, pointer;
-	}
-	.transition {
-		position: absolute;
-		/* if checkbox is not set at this width and height, you will not be able to click anywhere to see/hide content */
-		width: 100%;  /* lowering this value makes only that % of the dropdown box clickable, and not the rest */
-		height: 100%;
-		/* to make checkbox visible, put 'opacity: 1' */
-		opacity: 0;
-		cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='28px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23080101' d='M 2.5,3.5 C 7.1586,6.16843 11.4919,9.3351 15.5,13C 9.07438,12.1868 4.74104,14.6868 2.5,20.5C 1.16667,14.8333 1.16667,9.16667 2.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23af231e' d='M 3.5,1.5 C 9.3796,5.26653 15.0463,9.26653 20.5,13.5C 17.023,14.3227 13.3563,14.8227 9.5,15C 8.74756,15.6708 8.41423,16.5041 8.5,17.5C 7.20027,20.4323 5.20027,22.7656 2.5,24.5C 2.5,23.1667 2.5,21.8333 2.5,20.5C 4.74104,14.6868 9.07438,12.1868 15.5,13C 11.4919,9.3351 7.1586,6.16843 2.5,3.5C 2.32842,2.50838 2.66175,1.84171 3.5,1.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bab7d0' d='M 20.5,13.5 C 21.1667,13.8333 21.8333,14.1667 22.5,14.5C 22.5,15.5 22.5,16.5 22.5,17.5C 17.8665,16.8663 13.1998,16.8663 8.5,17.5C 8.41423,16.5041 8.74756,15.6708 9.5,15C 13.3563,14.8227 17.023,14.3227 20.5,13.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23b4bcca' d='M -0.5,-0.5 C 0.166667,-0.5 0.833333,-0.5 1.5,-0.5C 2.16667,0.166667 2.83333,0.833333 3.5,1.5C 2.66175,1.84171 2.32842,2.50838 2.5,3.5C 1.16667,9.16667 1.16667,14.8333 2.5,20.5C 2.5,21.8333 2.5,23.1667 2.5,24.5C 1.89022,25.391 1.55688,26.391 1.5,27.5C 0.833333,27.5 0.166667,27.5 -0.5,27.5C -0.5,18.1667 -0.5,8.83333 -0.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, auto;
-	}
-	.transfers-title {
-		position: absolute;
-		font-family: Delight;
-		font-size: 5vw;
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #13b48a, 0 0 10px #13b48a,
-						   0 0 20px #13b48a,
-						   0 0 40px #13b48a, 0 0 40px #13b48a,
-						   0 0 80px #13b48a,
-						   0 0 120px #13b48a, 0 0 120px #13b48a,
-						   0 0 160px #13b48a;
-		transform: translate(248%, -10%);
-		margin-right: 20%;
-		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
-		pointer-events: none;
-	}
-	.transfers-title span1 {
-		font-family: Ketosag Condensed;
-		font-size: 5vw;
-	}
-	.dropdown_content {
-		display: grid;
-		grid-template-rows: var(--rows, 0fr);
-		/* addition // important to eliminate border margin between separate content images; alex's answer here: https://stackoverflow.com/questions/7641678/use-css-to-remove-the-space-between-images */
-		font-size: 0;
-		/* end of addition */
-	}
-	.dropdown_content-matches {
-		display: grid;
-		grid-template-rows: var(--rows, 0fr);
-		/* addition // important to eliminate border margin between separate content images; alex's answer here: https://stackoverflow.com/questions/7641678/use-css-to-remove-the-space-between-images */
-		font-size: 0;
-		/* end of addition */
-	}
-	.dropdown_sub {
-		overflow: hidden;
-	}
-	.dropdown_li {
-		list-style: none;
-	}
-
-
-	.link1 {
-		/* border: solid 1px red; */
-		opacity: 0;  /* it's best to make the link visible from here; opacity: 1 */
-		position: absolute;
-		font-family: Agency FB;
-		font-size: 2.1vw;
-		margin-top: -45.8%;
-		margin-left: 51.1%;
-		display: var(--links-display, none) !important;
-	}
-
-	.dropdown-content {  /* for Tranfers, 23/24 Stats, Player Performance, Player Stats */
-		width: 122%;  /* has to coincide with width in background-image under .dropdown-transfers below */
-		height: 100%;
-	}
-	.content-match {
-		width: 116.3%;  /* has to coincide with width in background-image under .dropdown-1st-match below */
-		height: 100%;
-	}
-	.content-match1 {  /* for 'historical' and 'threat' */
-		margin-top: -.7%;
-		width: 116.3%;  /* has to coincide with width in background-image under .dropdown-1st-match below */
-		height: 100%;
-	}
-	.content-match2 {  /* for Sofascore and other stats */
-		display: initial;
-		margin-top: -.2%;
-		width: 116.3%;
-		height: 100%;
-	}
-	/* TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.dropdown-transfers {
-		/* border: solid red 1px; */
-		background-image: url(../underground/transfers.png);
-		background-size: 122% 100%;  /* width and height  // also, width has to coincide with width under .dropdown-content above */
-		color: white;
-		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
-	}
-	.transfers-title {
-		position: absolute;
-		font-family: Delight;
-		font-size: 5vw;
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #13b48a, 0 0 10px #13b48a,
-						   0 0 20px #13b48a,
-						   0 0 40px #13b48a, 0 0 40px #13b48a,
-						   0 0 80px #13b48a,
-						   0 0 120px #13b48a, 0 0 120px #13b48a,
-						   0 0 160px #13b48a;
-		transform: translate(248%, -10%);
-		margin-right: 20%;
-		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
-		pointer-events: none;
-	}
-	.transfers-title span1 {
-		font-family: Ketosag Condensed;
-		font-size: 5vw;
-	}
-	/* TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.dropdown-stats {
-		/* border: solid 1px red; */
-		background-image: url(../underground/stats.png);
-		background-size: 122% 100%;
-		color: white;
-		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
-	}
-	.stats-title {
-		position: absolute;
-		font-family: Better Grade;
-		font-size: 9vw;
-		color: #f8cccf;
-		text-shadow: 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e,
-						   0 0 20px #da020e,
-						   0 0 40px #da020e,
-						   0 0 80px #da020e,
-						   0 0 120px #da020e;
-		margin-top: 1%;
-		left: 64%;
-		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
-		pointer-events: none;
-	}
-	.stats-title span1 {
-		position: absolute;
-		font-family: myFont;
-		font-size: 4vw;
-		transform: translate(-100%, 90%);
-		color: #ffdccc;
-		text-shadow: 0 0 10px #ffb330, 0 0 10px #ffb330, 0 0 10px #ffb330, 0 0 10px #ffb330,
-						   0 0 20px #fe5201, 0 0 20px #fe5201, 0 0 20px #fe5201,
-							  0 0 40px #fe5201, 0 0 40px #fe5201,
-						   0 0 80px #fe5201, 0 0 80px #fe5201,
-						   0 0 120px #fe5201, 0 0 120px #fe5201;
-	}
-	/* PLAYER PERFORMANCE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.dropdown-player-performance {
-		/* border: solid 1px red; */
-		background-image: url(../underground/player-perf.png);
-		background-size: 122% 100%;
-		color: white;
-		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
-	}
-	.player-performance-title {
-		position: absolute;
-		font-family: Majanan;
-		font-size: 6vw;
-		font-weight: 900;
-		letter-spacing: 0.3vw;
-		color: #fff;
-		text-shadow: 0 0 10px #d821c3,
-						   0 0 20px #d821c3,
-						   0 0 40px #d821c3,
-						   0 0 80px #d821c3,
-						   0 0 120px #d821c3,
-						   0 0 160px #d821c3;
-		margin-top: 1%;
-		left: 53%;
-		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
-		pointer-events: none;
-	}
-	.player-performance-title span1 {
-		font-size: 4vw;
-	}
-	/* PLAYER STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.dropdown-player-stats {
-		/* border: solid 1px red; */
-		background-image: url(../underground/player-stats.png);
-		background-size: 122% 100%;
-		color: white;
-		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
-	}
-	.player-stats-title {
-		position: absolute;
-		font-family: Uppen Arms NF;
-		font-size: 3.5vw;
-		color: #b9c2d7;
-		text-shadow: 0 0 10px #17347a, 0 0 10px #17347a, 0 0 10px #17347a,
-						   0 0 20px #17347a, 0 0 20px #17347a,
-						   0 0 40px #17347a, 0 0 40px #17347a,
-						   0 0 80px #17347a, 0 0 80px #17347a, 0 0 80px #17347a,
-						   0 0 120px #17347a, 0 0 120px #17347a, 0 0 120px #17347a,
-						   0 0 160px #17347a, 0 0 160px #17347a;
-		margin-right: 20%;
-		left: 52.5%;
-		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
-		pointer-events: none;
-	}
-	.space-transition {
-		/* border: solid 1px red; */
-		background-image: url(../underground/transition.png);
-		background-size: 122% 100%;
-		color: white;
-		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
-	}
-	/* PRESEASON AND MATCHES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	[itemid="dropdown-matches"] { /* moves all match dropdowns as well as preseason */
-		margin-left: -5vw; 
-	}
-	.dropdown-preseason {
-		/* border: solid 1px red; */
-		background-image: url(../underground/pre-season.png);
-		background-size: 116.3% 100%;  /* width and height  // also, width has to coincide with width under .content-match and .content-match1 above */
-		color: white;
-		padding: 6.3vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
-	}
-	.dropdown-1st-match {
-		/* border: solid 1px red; */
-		background-image: url(../underground/1st-match.png);
-		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .content-match above */
-		color: white;
-		padding: 6.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
-	}
-	/* BOTTOM 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.bottom {
-		/* border: solid 1px red; */
-		left: 22%;
-		background-image: url(../underground/bottom.png);
-		background-repeat: no-repeat;
-		background-size: 100.15% 117.7%;  /* don't modify this, only padding if you want the img larger or smaller */
-		color: white;
-		/* increase the padding to increase the height of container //
-		   the code from the tutorial had 'padding: 1em .6em' , the latter value (.6em) is the space between text and left screen border */
-		padding: 40%;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: absolute;
-		pointer-events: none;
-	}	
-	.bottom-isometric {
-		position: absolute;
-		color: #b8b4b4;
-		left: 52%;
-		margin-top: 14.7%;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		font-size: 6vw;
-		transform: skewY(11deg) rotate3d(0, 1, 0, 60deg);
-		z-index: -1;
-	}	
-	/* isometric effect based on code here: https://codepen.io/jgrose/pen/WQjGmW */
-	.bottom-isometric::before {
-	content: "2023/24";
-	position: absolute;
-	text-shadow: -1px 0.5px 1px #555,
-					   -2px 0.5px 1px #555,
-					   -3px 0.5px 1px #555,
-					   -4px 0.5px 1px #555;
-	z-index: -1;  /* important to leave the isometric 3d effect behind */
-	}	
-	.bottom-GGMU {
-		position: absolute;
-		margin-top: 25%;
-		left: 68.4%;
-		text-align: center;
-		/* line-height: 90pt; */
-		font-weight: 900;
-		font-family: Agency FB;
-		font-size: 5vw;
-		mix-blend-mode: overlay;
-		transform: skewY(-2deg);
-	}
-	.OT-banners-bottom {
-		position: absolute;
-		height: 1.3vw;
-		line-height: 1.5vw;  /* responsive: center text top to bottom; this time, same as height didn't work */
-		left: 0;
-		margin-top: 55%;
-		background: white;
-		background-size: cover;
-		display: flex;
-		overflow: hidden;
-		white-space: nowrap;
-	}
-	.OT-banners-bottom .banners {
-		display: flex;
-	}
-	
-	.OT-banners-bottom .banners div {
-		color: #fff;
-		font-family: monospace;
-		font-size: 1vw;
-		white-space: nowrap;
-		font-weight: 100;
-		/* important value in this div to make the text occupy the entirity of the box; I was playing with text-align and display values in different divs,
-		   but I figured it out thanks to Wazeed's answer: https://stackoverflow.com/questions/10283138/center-a-div-without-knowing-the-height */
-		display: flex;
-		/* I was already aware of this carrousel animation, but knowing exactly what value to put in animation-delay was thanks to
-		   rmurph46's answer below. It's simply half of the value in animation duration but negative. I needed to know that to make long carrousels
-		   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
-		animation: animate2 80s linear infinite;
-		/* animation: none; */
-		animation-delay: -40s;
-	}
-	
-	.OT-banners-bottom .banners div span {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-		/* found out of 50% as a value for split color, and not gradient // Answer by Terry: https://stackoverflow.com/questions/50434409/how-can-i-make-a-split-color-box */
-		background-image: linear-gradient(to bottom, #cc1724 50%, #1e2526 50%);
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span2 {
-		color: #ffc40c;
-		text-shadow: 0 0 2px #ffc40c;
-		background: #a01c1c;
-	}
-	
-	.OT-banners-bottom .banners div span3 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background: #a01c1c;
-		transform: scaleX(1.1) scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span4 {
-		color: rgb(76, 103, 192);
-		text-shadow: 0 0 2px yellow, 0 0 2px yellow;
-		background: #a01c1c;
-	}
-	
-	.OT-banners-bottom .banners div span5 {
-		color: rgb(204, 204, 90);
-		text-shadow: 0 0 2px rgb(90, 186, 224);
-		background: #640505;
-	}
-	
-	.OT-banners-bottom .banners div span6 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-		background: #1e2526;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span7 {
-		font-family: 'Times New Roman', Times, serif;
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background: #a01c1c;
-	}
-	
-	.OT-banners-bottom .banners div span8 {
-		background: white;
-	}
-	
-	.OT-banners-bottom .banners div span9 {
-		color: #b93939;
-		text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-		background: white;
-	}
-	
-	.OT-banners-bottom .banners div span10 {
-		color: black;
-		text-shadow: 0 0 2px black, 0 0 2px black;
-		background: white;
-	}
-	
-	.OT-banners-bottom .banners div span11 {
-		background: white;
-	}
-	
-	.OT-banners-bottom .banners div span12 {
-		font-size: .9em;
-		background: white;
-		/* got this filter here: https://www.w3schools.com/cssref/css3_pr_filter.php */
-		filter: grayscale(100%);
-	}
-	
-	.OT-banners-bottom .banners div span13 {
-		font-size: .8em;
-		/* answer by Reinier Koops: https://stackoverflow.com/questions/15904211/css-filter-grayscale-i-want-it-black */
-		filter: brightness(10%);
-		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
-		/* transform: scaleX(-.5); */
-	}
-	
-	.OT-banners-bottom .banners div span14 {
-		color: #b93939;
-		text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span15 {
-		color: black;
-		text-shadow: 0 0 2px black, 0 0 2px black;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span16 {
-		color: #b93939;
-		text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span17 {
-		font-size: .8em;
-		filter: brightness(10%);
-		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
-		/* transform: scaleX(-.5); */
-	}
-	
-	.OT-banners-bottom .banners div span18 {
-		font-size: .9em;
-		background: white;
-		filter: grayscale(100%);
-	}
-	
-	.OT-banners-bottom .banners div span19 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background: #a01c1c;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span20 {
-		font-size: .9em;
-		background: #a01c1c;
-	}
-	
-	.OT-banners-bottom .banners div span21 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background: #a01c1c;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span22 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background:#cc1724;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span23 {
-		font-size: .8em;
-		filter: brightness(10%);
-		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
-		/* transform: scaleX(-.5); */
-	}
-	
-	.OT-banners-bottom .banners div span24 {
-		font-size: .8em;
-	}
-	
-	.OT-banners-bottom .banners div span25 {
-		font-size: .8em;
-		filter: brightness(10%);
-		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
-		/* transform: scaleX(-.5); */
-	}
-	
-	.OT-banners-bottom .banners div span26 {
-		color: white;
-		font-size: .7em;
-		font-family: raleway_f;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background: #1e2526;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span27 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-		background: #1e2526;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span28 {
-		color: #a01c1c;
-		text-shadow: 0 0 2px #a01c1c, 0 0 2px #a01c1c, 0 0 2px #a01c1c;
-		background: #1e2526;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span29 {
-		background: white;
-	}
-	
-	.OT-banners-bottom .banners div span30 {
-		color: black;
-		text-shadow: 0 0 2px black, 0 0 2px black;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span31 {
-		color: #a01c1c;
-		text-shadow: 0 0 2px #a01c1c, 0 0 2px #a01c1c, 0 0 2px #a01c1c;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span32 {
-		color: black;
-		text-shadow: 0 0 2px black, 0 0 2px black;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span33 {
-		background: white;
-		/* fiddle by Platte Gruber: https://stackoverflow.com/questions/32875695/flip-mirror-an-image-horizontally-vertically-with-css */
-		transform: rotateY(180deg);
-	}
-	
-	.OT-banners-bottom .banners div:nth-child(2) {
-		animation: animate3 80s linear infinite;
-		/* animation: none; */
-	}
-	@keyframes animate2 {
-		0%
-		{
-			transform: translateX(100%);
-		}
-		100%
-		{
-			transform: translateX(-100%);
-		}
-	}
-	@keyframes animate3 {
-		0%
-		{
-			transform: translateX(0);
-		}
-		100%
-		{
-			transform: translateX(-200%);
-		}
-	}
-	
-	.email-cursor-text {
-		/* border: solid 1px red; */
-		position: absolute;
-		font-family: Poppins Regular;
-		font-size: 1.2vw;
-		color: #a6a6a6;
-		left: 31.3%;
-		margin-top: 57.86%;
-		padding: .3vw;  /* to increase cursor margin for mouse (cursor:text) */
-		cursor: text;
 	}
 }
 /* TABLET: SMALLER SCREEN  🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛       */
@@ -8056,40 +5316,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		width: 27vw;
 		height: 8vw;  /* addition to actually see this div container border lines */
 	}
-	.nav_container-season {
-		/* border: solid red 1px; */
-		justify-items: center;
-		width: 89%;  /* addition to reduce cursor:pointer clickability away from the title */
-	}
-	.dropdown-season {
-		/* border: solid red 1px; */
-		width: 85%;  /* addition to reduce cursor:pointer clickability away from the title */
-		position: absolute;  /* for any reason, without this, Mozilla renders .select-season a bit more to the left */
-	}
-	.season-list:has( :checked ) {
-		--rows: 1fr;
-	    --on-tap: auto;  /* for #season-links */
-	}
-	.checkbox-size {
-		/* border: solid 1px red; */
-		color: white;
-		padding: 3vw;  /* increase the padding to increase the size of container */
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
-	}
-	#dropdown-pointer {  /* universal pointer cursor for far left-hand side of dropdowns that somehow the dropdown itself doesn't cover */
-		cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='30px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f90605' d='M 11.5,-0.5 C 12.5,-0.5 13.5,-0.5 14.5,-0.5C 14.5,2.16667 14.5,4.83333 14.5,7.5C 13.8333,6.16667 13.1667,4.83333 12.5,3.5C 12.1667,3.5 11.8333,3.5 11.5,3.5C 11.5,2.16667 11.5,0.833333 11.5,-0.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23040404' d='M 9.5,3.5 C 10.1667,3.5 10.8333,3.5 11.5,3.5C 11.8333,3.5 12.1667,3.5 12.5,3.5C 12.5,5.16667 12.5,6.83333 12.5,8.5C 13.9527,10.229 15.9527,11.229 18.5,11.5C 19.4742,13.7427 19.8076,16.076 19.5,18.5C 18.0795,21.2613 17.4129,24.2613 17.5,27.5C 15.5,27.5 13.5,27.5 11.5,27.5C 11.1185,22.737 9.11854,18.737 5.5,15.5C 6.56764,14.5655 7.90097,14.2322 9.5,14.5C 9.5,10.8333 9.5,7.16667 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23aa2822' d='M 12.5,3.5 C 13.1667,4.83333 13.8333,6.16667 14.5,7.5C 15.1667,7.5 15.8333,7.5 16.5,7.5C 15.4324,8.43448 14.099,8.76781 12.5,8.5C 12.5,6.83333 12.5,5.16667 12.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%235a5c5e' d='M 9.5,3.5 C 9.5,7.16667 9.5,10.8333 9.5,14.5C 7.90097,14.2322 6.56764,14.5655 5.5,15.5C 4.95691,15.44 4.62358,15.1067 4.5,14.5C 5.68884,13.5713 7.02218,13.238 8.5,13.5C 8.18723,9.95815 8.52056,6.62482 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f41a13' d='M 17.5,7.5 C 19.1172,8.038 20.7839,8.37133 22.5,8.5C 22.5,12.8333 22.5,17.1667 22.5,21.5C 20.7773,23.78 20.1107,26.4467 20.5,29.5C 17.5,29.5 14.5,29.5 11.5,29.5C 13.5,28.8333 15.5,28.1667 17.5,27.5C 17.4129,24.2613 18.0795,21.2613 19.5,18.5C 20.4767,15.7131 20.81,12.7131 20.5,9.5C 18.8212,9.71481 17.8212,9.04814 17.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bea6ab' d='M 16.5,7.5 C 16.8333,7.5 17.1667,7.5 17.5,7.5C 17.8212,9.04814 18.8212,9.71481 20.5,9.5C 20.81,12.7131 20.4767,15.7131 19.5,18.5C 19.8076,16.076 19.4742,13.7427 18.5,11.5C 15.9527,11.229 13.9527,10.229 12.5,8.5C 14.099,8.76781 15.4324,8.43448 16.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f0edf0' d='M 7.5,-0.5 C 8.83333,-0.5 10.1667,-0.5 11.5,-0.5C 11.5,0.833333 11.5,2.16667 11.5,3.5C 10.8333,3.5 10.1667,3.5 9.5,3.5C 8.52056,6.62482 8.18723,9.95815 8.5,13.5C 7.02218,13.238 5.68884,13.5713 4.5,14.5C 4.62358,15.1067 4.95691,15.44 5.5,15.5C 9.11854,18.737 11.1185,22.737 11.5,27.5C 13.5,27.5 15.5,27.5 17.5,27.5C 15.5,28.1667 13.5,28.8333 11.5,29.5C 10.8333,29.5 10.1667,29.5 9.5,29.5C 9.04814,25.4246 7.54814,21.7579 5,18.5C 3.54905,16.5359 1.71572,15.2026 -0.5,14.5C -0.5,13.1667 -0.5,11.8333 -0.5,10.5C 2.19853,10.4661 4.69853,11.1328 7,12.5C 7.49902,8.17944 7.66568,3.84611 7.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, pointer;
-	}
-	.dropdown-check {
-		position: absolute;
-		/* if checkbox is not set at this width and height, you will not be able to click anywhere to see/hide content */
-		width: 100%;  /* lowering this value makes only that % of the dropdown box clickable, and not the rest */
-		height: 100%;
-		opacity: 0;  /* to make checkbox visible, put 'opacity: 1' */
-		cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='30px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f90605' d='M 11.5,-0.5 C 12.5,-0.5 13.5,-0.5 14.5,-0.5C 14.5,2.16667 14.5,4.83333 14.5,7.5C 13.8333,6.16667 13.1667,4.83333 12.5,3.5C 12.1667,3.5 11.8333,3.5 11.5,3.5C 11.5,2.16667 11.5,0.833333 11.5,-0.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23040404' d='M 9.5,3.5 C 10.1667,3.5 10.8333,3.5 11.5,3.5C 11.8333,3.5 12.1667,3.5 12.5,3.5C 12.5,5.16667 12.5,6.83333 12.5,8.5C 13.9527,10.229 15.9527,11.229 18.5,11.5C 19.4742,13.7427 19.8076,16.076 19.5,18.5C 18.0795,21.2613 17.4129,24.2613 17.5,27.5C 15.5,27.5 13.5,27.5 11.5,27.5C 11.1185,22.737 9.11854,18.737 5.5,15.5C 6.56764,14.5655 7.90097,14.2322 9.5,14.5C 9.5,10.8333 9.5,7.16667 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23aa2822' d='M 12.5,3.5 C 13.1667,4.83333 13.8333,6.16667 14.5,7.5C 15.1667,7.5 15.8333,7.5 16.5,7.5C 15.4324,8.43448 14.099,8.76781 12.5,8.5C 12.5,6.83333 12.5,5.16667 12.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%235a5c5e' d='M 9.5,3.5 C 9.5,7.16667 9.5,10.8333 9.5,14.5C 7.90097,14.2322 6.56764,14.5655 5.5,15.5C 4.95691,15.44 4.62358,15.1067 4.5,14.5C 5.68884,13.5713 7.02218,13.238 8.5,13.5C 8.18723,9.95815 8.52056,6.62482 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f41a13' d='M 17.5,7.5 C 19.1172,8.038 20.7839,8.37133 22.5,8.5C 22.5,12.8333 22.5,17.1667 22.5,21.5C 20.7773,23.78 20.1107,26.4467 20.5,29.5C 17.5,29.5 14.5,29.5 11.5,29.5C 13.5,28.8333 15.5,28.1667 17.5,27.5C 17.4129,24.2613 18.0795,21.2613 19.5,18.5C 20.4767,15.7131 20.81,12.7131 20.5,9.5C 18.8212,9.71481 17.8212,9.04814 17.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bea6ab' d='M 16.5,7.5 C 16.8333,7.5 17.1667,7.5 17.5,7.5C 17.8212,9.04814 18.8212,9.71481 20.5,9.5C 20.81,12.7131 20.4767,15.7131 19.5,18.5C 19.8076,16.076 19.4742,13.7427 18.5,11.5C 15.9527,11.229 13.9527,10.229 12.5,8.5C 14.099,8.76781 15.4324,8.43448 16.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f0edf0' d='M 7.5,-0.5 C 8.83333,-0.5 10.1667,-0.5 11.5,-0.5C 11.5,0.833333 11.5,2.16667 11.5,3.5C 10.8333,3.5 10.1667,3.5 9.5,3.5C 8.52056,6.62482 8.18723,9.95815 8.5,13.5C 7.02218,13.238 5.68884,13.5713 4.5,14.5C 4.62358,15.1067 4.95691,15.44 5.5,15.5C 9.11854,18.737 11.1185,22.737 11.5,27.5C 13.5,27.5 15.5,27.5 17.5,27.5C 15.5,28.1667 13.5,28.8333 11.5,29.5C 10.8333,29.5 10.1667,29.5 9.5,29.5C 9.04814,25.4246 7.54814,21.7579 5,18.5C 3.54905,16.5359 1.71572,15.2026 -0.5,14.5C -0.5,13.1667 -0.5,11.8333 -0.5,10.5C 2.19853,10.4661 4.69853,11.1328 7,12.5C 7.49902,8.17944 7.66568,3.84611 7.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, pointer;
-	}
 	.select-season-title {  /* title: since 2023 SELECT SEASON */
 		/* border: solid 1px red; */
 	    width: 95%;  /* adddition to actually see the borders, adjust if text collapses */
@@ -8125,21 +5351,12 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 120px #13b48a, 0 0 120px #13b48a,
 						   0 0 160px #13b48a;
 	}
-	.dropdown-content-display {
-		display: grid;
-		grid-template-rows: var(--rows, 0fr);
-		font-size: 0;  /* addition // important to eliminate border margin between separate images; alex's answer here: https://stackoverflow.com/questions/7641678/use-css-to-remove-the-space-between-images */
-	}
 	.dropdown-sub-season {		
 		/* border: solid 1px red; */
 		overflow: hidden;
 		width: 370%;  /* how much % of the dropdown content to show width-wise */
 		transform: initial;  /* overwrites code for PC */
 	}
-	.dropdown-li {  /* no use for this, but just in case... */
-		list-style: none;
-	}
-	.season-header-pc { display: none; }  /* for PC */
 	.season-header-mobile {  /* tap to close, tap to revisit season */
 		display: initial;  /* overwrites code for PC */
 		/* border: solid 1px red; */
@@ -8149,9 +5366,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* border: solid 1px red; */
 		width: 280px;  /* how big the dropdown content is */
 	}
-	#season-links {
-		pointer-events: var(--on-tap, none);  /* responsive: somehow, the link is clickable even when the dropdown is not box-checked, so this rule prevents clicks */
-	}
 	.season-19-20 img {
 		position: absolute;
 		opacity: 0;
@@ -8160,9 +5374,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		margin-top: 1.9px;  /* 109.8px the lower the value, the higher the object goes */
 		margin-left: -241px;  /* -154.4px the lower the value, the more to the left */
 	}
-	.season-19-20:hover img {
-		opacity: 1;
-	}
 	.season-20-21 img {
 		position: absolute;
 		opacity: 0;
@@ -8170,9 +5381,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		height: 100px;
 		margin-top: 1.9px;  /* 109.8px the lower the value, the higher the object goes */
 		margin-left: -139px;  /* -154.4px the lower the value, the more to the left */
-	}
-	.season-20-21:hover img {
-		opacity: 1;
 	}
     /* SCOREBOARD CAROUSEL 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.scoreboard-PL {
@@ -8194,9 +5402,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 200px #3D195B, 0 0 200px #3D195B, 0 0 300px #3D195B, 0 0 400px #3D195B;
 		cursor: pointer;
 	}
-	.scoreboard-PL .PL {
-		display: flex;
-	}
 	.scoreboard-PL .PL div {
 		color: #fff;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
@@ -8207,7 +5412,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		display: flex;
 		animation: none;  /* no animation for mobile as it slows down the user experience */
 	}
-	.scoreboard-PL .PL div span { display: none; }
 	.scoreboard-PL .PL div span1 {
 		font-weight: 900;
 		font-size: 3.8vw;  /* addition for mobile */
@@ -8218,22 +5422,13 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* color: gray; */
 		/* ▼ */
 		/* color: #da020e; */
-		/* text-shadow: none; */
 		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
 	}
 	.scoreboard-PL .PL div span2 {
 		color: #ffc40c;
 		text-shadow: 0 0 2px #ffc40c, 0 0 2px #ffc40c, #ffc40c, 0 0 2px #ffc40c;
 	}
-	.scoreboard-PL .PL div span3 {
-		color: #589444;
-		text-shadow: 0 0 2px #589444, 0 0 2px #589444, 0 0 2px #589444;
-	}
-	.scoreboard-PL .PL div:nth-child(2) {
-		animation: none;  /* no animation for mobile as it slows down the user experience */
-	}
 	/* SCOREBOARD (TEAMS) 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.scoreboard-teams { display: none; }  /* PC version */
 	.scoreboard-teams-mobile {  /* mobile version */
 		/* border: solid red 1px; */
 		position: absolute;
@@ -8249,15 +5444,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-size: 3.4vw;
 		background: linear-gradient(rgba(27,27,27,0.8), rgba(27,27,27,0.8)), url(../parallax/led-gray-mb.png);
 		background-size: 200% 200%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
-	}
-	.home span {
-		color: #da020e;
-		text-shadow: 0 0 2px #da020e;
-		opacity: none;
-	}
-	.home {
-		color: #fff;
-		opacity: none;
 	}
 	/* SCOREBOARD (RESULT) 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.scoreboard-result {
@@ -8280,19 +5466,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* background-size: 150% 150%; */
 		text-align: center;
 	}
-	/* allows me put both the result (0-0) and the text "final/fair score" side by side
-		Mr. Hugo's answer: https://stackoverflow.com/questions/37711138/display-2-ps-side-by-side
-		I had to add a few id in the HTML*/
-	#scoreboard .scoreboard-result, #scoreboard .final-fair {display: inline;}
-	.final-fair {
-		background: linear-gradient(rgba(254,29,18,0.6), rgba(254,29,18,0.6)), url(../parallax/led-black.jpg);
-		position: absolute;
-		background-size: 150% 150%;
-		/* after using "&thinsp;", the red mini-box left a space on the right that showed the background img,
-		so I put this "right:0" value to eliminate any space on that right. Answer by Garry Shutler.
-		https://stackoverflow.com/questions/65536/how-to-put-text-in-the-upper-right-or-lower-right-corner-of-a-box-using-css */
-		right: 0;
-	}
 	.scoreboard-result2 {
 		color: white;
 		position: absolute;
@@ -8314,44 +5487,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		/* allows me to put the text aligned vertically */
 		text-align: center;
 	}
-	/* allows me put both the result (0-0) and the text "final/fair score" side by side
-		Mr. Hugo's answer: https://stackoverflow.com/questions/37711138/display-2-ps-side-by-side
-		I had to add a few id in the HTML*/
-	#scoreboard2 .scoreboard-result2, #scoreboard2 .final-fair2 {display: inline;}
-	.final-fair2 {
-		color: #ffcf3e;
-		background: linear-gradient(rgba(2,131,54,0.6), rgba(2,131,54,0.6)), url(../parallax/led-black.jpg);
-		position: absolute;
-		background-size: 150% 150%;
-		/* after using "&thinsp;", the red mini-box left a space on the right that showed the background img,
-		so I put this "right:0" value to eliminate any space on that right. Answer by Garry Shutler.
-		https://stackoverflow.com/questions/65536/how-to-put-text-in-the-upper-right-or-lower-right-corner-of-a-box-using-css */
-		right: 0;
-	}
-	#scoreboard2 {
-		animation: 5s autoplay infinite linear;
-	}
-	@keyframes autoplay {
-		0% {opacity: 0.0}
-		4% {opacity: 1.0}
-		33.33% {opacity: 1.0}
-		37.33% {opacity: 0.0}
-		100% {opacity: 0.0}
-	}
-	#scoreboard {
-		animation: 5s autoplay2 infinite linear;
-	}
-	@keyframes autoplay2 {
-		0% {opacity: 0.0}
-		4% {opacity: 0.0}
-		41.33% {opacity: 0.0}
-		42.33% {opacity: 0.2}
-		48.33% {opacity: 0.5}
-		51.33% {opacity: 1.0}
-		100% {opacity: 1.0}
-	}
-	.box-shadow .box-shadow2 { display: none; }
-	.OT-banners { display: none; } /* for PC and larger tablet */
 	/* CLOCK 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.clock {
 		/* border: solid red 1px; */
@@ -8373,13 +5508,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		text-align: center;
 		align-items: center;
 	}
-	.time {
-		transform: translateX(40%) scaleY(1.5);  /* translateX to move clock away from left margin; scaleY to make text taller */
-	}
 	.republik-of-mancunia { display: none; }
-	.clock-vertical-stripes {
-		content: '';
-	}
 	.clock-vertical-stripe1 {
 		width: .8%;
 		height: 7vw;
@@ -8429,310 +5558,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		width: 100%;  /* 100% // my best guess is so that text occupies the width of the screen */
 		height: 23vw;  /* this specific height 'cuz it coincides with the border line of .underground-small */
 	}
-	ul.navlist {
-		display: flex;
-		align-items: center;
-	}
-	.navlist li {
-		text-align: center;
-		padding: 0 2vw;  /* the space between menu text */
-	}
-	/* CONTACT ME 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.contact-me {
-		display: inline-block;  /* allows me to move this text freely */
-		transform: translateY(25%);
-		text-decoration: none;  /* this removes link underline */
-		align-content: center;
-		text-align: center;  /* aligns text vertically // https://www.youtube.com/watch?v=Jkp103YhW7A 19:00 */
-	}
-	.line1 {
-		font-family: BeonMedium;
-		text-decoration: none;
-		font-size: 3vw;
-		vertical-align: middle;
-		/* idea for space between letters */
-		letter-spacing: 1px;
-		cursor: pointer;
-		color: #fff;
-		text-shadow: 0 0 10px #da020e,
-						   0 0 20px #da020e,
-						   0 0 40px #da020e,
-						   0 0 80px #da020e,
-						   0 0 120px #da020e,
-						   0 0 160px #da020e;
-	}
-	.line1 span {
-		color: #fff;
-		text-shadow: 0 0 10px #da020e,
-						   0 0 20px #da020e,
-						   0 0 40px #da020e,
-						   0 0 80px #da020e,
-						   0 0 120px #da020e,
-						   0 0 160px #da020e;
-	}
-	.line2 {
-		font-family: BeonMedium;
-		text-decoration: none;
-		font-size: 3vw;
-		vertical-align: middle;
-		z-index: 1;
-		color: #fff;
-		text-shadow: 0 0 10px #da020e,
-						   0 0 20px #da020e,
-						   0 0 40px #da020e,
-						   0 0 80px #da020e,
-						   0 0 120px #da020e,
-						   0 0 160px #da020e;
-	}
-	.line3 {
-		font-family: Uppen Arms NF;
-		text-decoration: none;
-		font-size: 3vw;
-		vertical-align: middle;
-		color: #fff;
-		text-shadow: 0 0 10px #fff,
-						   0 0 20px #fff,
-						   0 0 40px #fff,
-						   0 0 80px #fff,
-						   0 0 120px #fff,
-						   0 0 160px #fff;
-	}
-	/* MEET THE CREATOR 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.know-me {
-		/* this removes link underline */
-		text-decoration: none;
-		align-content: center;
-		/* addition // aligns text vertically // https://www.youtube.com/watch?v=Jkp103YhW7A 19:00 */
-		text-align: center;
-		font-family: Celinea;
-		font-size: 10vw;
-		font-weight: lighter;
-		vertical-align: middle;
-		line-height: 7vw;
-		transform: skewY(-15deg);
-		display: inline-block;  /* allows me to move this text freely */
-	}
-
-	.line4 {
-		color: #fff;
-		text-shadow: 0 0 10px #fff,
-						   0 0 20px #fff,
-						   0 0 40px #fff,
-						   0 0 80px #fff,
-						   0 0 120px #fff,
-						   0 0 160px #fff;
-	}
-	.line4 span {
-		color: #fff;
-		text-shadow: 0 0 10px #da020e, 0 0 10px #da020e,
-						   0 0 20px #da020e, 0 0 20px #da020e,
-						   0 0 40px #da020e, 0 0 40px #da020e,
-						   0 0 80px #da020e, 0 0 80px #da020e,
-						   0 0 120px #da020e, 0 0 120px #da020e,
-						   0 0 160px #da020e, 0 0 160px #da020e, 0 0 160px #da020e, 0 0 160px #da020e;
-	}
-	.line5 {
-		color: #fff;
-		text-shadow: 0 0 10px #fff,
-						   0 0 20px #fff,
-						   0 0 40px #fff,
-						   0 0 80px #fff,
-						   0 0 120px #fff,
-						   0 0 160px #fff;
-	}
-	/* SUPPORT & DONATE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.support {
-		display: inline-block;  /* allows me to move this text freely */
-		transform: translateY(10%);
-		/* this removes link underline */
-		text-decoration: none;
-		align-content: center;
-		/* addition // aligns text vertically // https://www.youtube.com/watch?v=Jkp103YhW7A 19:00 */
-		text-align: center;
-		cursor: pointer;
-		vertical-align: middle;
-	}
-	.line6 {
-		font-family: LIBRARY3AMsoft;
-		font-size: 3.3vw;
-		letter-spacing: 1px;
-		color: #fff;
-		text-shadow: 0 0 10px #ffcf3e,
-						   0 0 20px #ffcf3e,
-						   0 0 40px #ffcf3e,
-						   0 0 80px #ffcf3e,
-						   0 0 120px #ffcf3e,
-						   0 0 160px #ffcf3e;
-	}
-	.line7 span {
-		font-family: LIBRARY3AMsoft;
-		font-size: 3.3vw;
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #028336,
-						   0 0 20px #028336,
-						   0 0 40px #028336,
-						   0 0 80px #028336,
-						   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
-						   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
-	}
-	.line7 {
-		font-family: Neoneon;
-		font-size: 3.3vw;
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #028336,
-						   0 0 20px #028336,
-						   0 0 40px #028336,
-						   0 0 80px #028336,
-						   0 0 120px #028336,
-						   0 0 160px #028336;
-	}
-	.line7-5 { display: none; }
-	/* WANNA LEARN A LANGUAGE? 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.learn-language {
-		text-decoration: none;
-		align-content: center;
-		text-align: center;
-		cursor: pointer;
-		vertical-align: middle;
-		line-height: 5vw;
-		display: inline-block;  /* allows me to move this text freely */
-		transform: translateY(-7%)
-	}
-	.line8 {
-		font-family: Rookworst;
-		font-size: 6vw;
-		color: yellow;
-		-webkit-text-stroke: .1vw red;
-		text-shadow: 0 0 10px #da020e,
-						   0 0 20px #da020e,
-						   0 0 40px #da020e;
-	}
-	.line9 { display: none; }
-	.line10 {
-		font-family: Salonica;
-		font-size: 10vw;
-		transform: translateX(5%);
-		color: white;
-		text-shadow: 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e,
-						   0 0 20px #da020e,
-						   0 0 40px #da020e,
-						   0 0 80px #da020e,
-						   0 0 120px #da020e;
-	}
-	.line11 { display: none; }
-	.line12 span {
-		font-family: Zekton;
-		font-size: 3vw;
-		position: absolute;
-		transform: translate(-390%, 30%);
-		color: #fff;
-		text-shadow: 0 0 10px #ffcf3e,
-						   0 0 20px #ffcf3e,
-						   0 0 40px #ffcf3e,
-						   0 0 80px #ffcf3e,
-						   0 0 120px #ffcf3e,
-						   0 0 160px #ffcf3e;
-	}
-	.line12 span2 {
-		font-family: Lateef;
-		font-size: 6vw;
-		position: absolute;
-		transform: translate(-70%, 0%);
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #028336,
-						   0 0 20px #028336,
-						   0 0 40px #028336,
-						   0 0 80px #028336,
-						   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
-						   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
-	}
-	.line12 span3 {
-		font-family: Josefin Sans, Consolas, 'Courier New', monospace;
-		font-size: 3.5vw;
-		position: absolute;
-		transform: translate(100%, 50%);
-		color: #fff;
-		text-shadow: 0 0 10px #ffcf3e,
-						   0 0 20px #ffcf3e,
-						   0 0 40px #ffcf3e,
-						   0 0 80px #ffcf3e,
-						   0 0 120px #ffcf3e,
-						   0 0 160px #ffcf3e;
-	}
-	.line12 span4 {
-		font-family: Josefin Sans, Consolas, 'Courier New', monospace;
-		font-size: 3vw;
-		position: absolute;
-		transform: translate(300%, 10%);
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #028336,
-						   0 0 20px #028336,
-						   0 0 40px #028336,
-						   0 0 80px #028336,
-						   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
-						   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
-	}
-	.underground-irons { display: none; }  /* for PC */
-	/* BRICKS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.bricks {
-		position: relative;
-		/* border: solid red 1px; */
-		margin-top: -50%;  /* with respect to header (menu) */
-		width: 200%;
-		left: -44%;
-		z-index: -4;
-	}
-	.brick-wall h1 {  /* 2023/24 (TEXT) */
-		position: absolute;
-		margin-top: -46%;  /* with respect to header (menu) */
-		left: 25.5%;
-		background-size: cover;
-		z-index: 7;
-		font-family: raleway_f;
-		font-size: 11vw;
-		mix-blend-mode: overlay;
-	}
-	.brick-wall h1 span {  /* 2023/24 (TEXT) */
-		color: #ec334d;
-	}
-	.trophies {
-		left: -37.5%;
-		width: 180%;
-		transform: translate(-21%, -180%);  /* for any reason, this is the only way I can move this div */
-	}
-	/* CABLE BOXES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	#cable-box { display: none; }
-	/* CABLE BOXES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* GALLERY PHOTO TEXT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.brick-wall h2, h3, h4, h5, h6, h7 {
-		/* border: solid 1px red; */
-		position: absolute;
-		display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
-		width: 13.15%;  /* width of each text */
-		margin-top: -9%;
-		font-family: raleway_f;
-		font-size: 1vw;
-		text-align: center;  /* centers it left to right */
-		z-index: 2;
-	}
-	.blur-pc { display: none; }  /* for PC */
-	.blur-mobile { 
-		display: initial;
-		position: absolute;
-		width: 100%;
-		margin-top: -29%;  /* with respect to header (menu) */
-		z-index: 2; }  /* for PC */
-	.match-grid {
-		position: absolute;
-		display: initial;  /* overwrites code for PC */
-		margin-top: 37%;
-		left: -19%;  /* same as #match-ratings below */
-		width: 137%;
-	}
-	/* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.button-wrapper {
-		position: relative;
-	}
 	#button-gallery1 {
 		border: none;
 		border-radius: 0 0 1.5vw 1.5vw;
@@ -8804,325 +5630,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-color: transparent;
 		z-index: 2;
 	}
-	#show-gallery {
-		display: none;
-		margin-top: -20.59%;  /* with respect to header (menu) */
-		position: absolute;
-	}
-	#gallery-text1 { display: none; }   /* for button */
-	#gallery-text2 { display: none; }   /* for button */
-	#gallery-text3 { display: none; }   /* for button */
-	#gallery-text4 { display: none; }   /* for button */
-	#gallery-text5 { display: none; }   /* for button */
-	#gallery-text6 { display: none; }   /* for button */
-	.gallery {
-		width: 100%;
-		position: relative;
-		z-index: 2;
-	}
-	/* GALLERY PHOTO: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	/* GALLERY: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	#button-read-text {
-		border: none;
-		position: absolute;
-		z-index: 2;
-		margin-top: -30%;
-		left: 42.8%;
-		width: 15%;
-		height: 3vw;
-		font-size: 1.1vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: white;
-		background: url(../underground/button.png), #820202;
-		background-size: 100% 100%;
-	}
-	#button-read-text:hover {
-		color: #f0f50c;
-		background: url(../underground/button.png), radial-gradient(#ef0017 -20%, #820202);  /* -20% here reduces the radius of #ef0017 color */
-		background-size: 100% 100%;
-		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
-	}
-	#button-read-text span1 { display: none; }  /* CLICK TO READ TEXT */
-	#button-read-text span2 { display: initial; }  /* TAP TO READ TEXT */
-	#show-expectations {
-		display: none;
-		margin-top: -6%;  /* with respect to header (menu) */
-		position: absolute;
-	}
-	.expectations {
-		width: 100%;
-		position: relative;
-		z-index: 2;
-	}
-	/* GALLERY: SHOW TEXT BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.legend {
-		position: relative; 
-		margin-top: 23%;
-		z-index: 2;
-	}
-	.legend-1 {
-		position: absolute;
-		left: 20.3%;
-		width: 2.5%;
-		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
-		background: radial-gradient(#e61b22, #9d0e16);
-		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16,
-						   0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 5px #9d0e16,
-						   0 0 50px #9d0e16;
-		font-family: Century Gothic;
-		font-size: 1.3vw;
-		/* allows me to put the text aligned vertically */
-		text-align: center;
-		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 2.2vw;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	}
-	
-	.legend-2 {
-		position: absolute;
-		left: 25.8%;
-		width: 2.5%;
-		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
-		background: radial-gradient(#eb6121, #9a360a);
-		box-shadow: 0 0 5px #9a360a, 0 0 5px #9a360a, 0 0 15px #9a360a, 0 0 5px #9a360a,
-						   0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 5px #9a360a,
-						   0 0 50px #9a360a;
-		font-family: Century Gothic;
-		font-size: 1.3vw;
-		/* allows me to put the text aligned vertically */
-		text-align: center;
-		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 2.2vw;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	}
-	
-	.legend-3 {
-		position: absolute;
-		left: 31.3%;
-		width: 2.5%;
-		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
-		background: radial-gradient(#fcc00d, #997000);
-		box-shadow: 0 0 5px #997000, 0 0 5px #997000, 0 0 15px #997000, 0 0 5px #997000,
-						   0 0 25px #997000, 0 0 25px #997000, 0 0 25px #997000, 0 0 5px #997000,
-						   0 0 50px #997000;
-		font-family: Century Gothic;
-		font-size: 1.3vw;
-		/* allows me to put the text aligned vertically */
-		text-align: center;
-		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 2.2vw;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	}
-	
-	.legend-4 {
-		position: absolute;
-		left: 36.8%;
-		width: 2.5%;
-		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
-		background: radial-gradient(#c5b700, #7f7501);
-		box-shadow: 0 0 5px #7f7501, 0 0 5px #7f7501, 0 0 15px #7f7501, 0 0 5px #7f7501,
-						   0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 5px #7f7501,
-						   0 0 50px #7f7501;
-		font-family: Century Gothic;
-		font-size: 1.3vw;
-		/* allows me to put the text aligned vertically */
-		text-align: center;
-		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 2.2vw;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	}
-	
-	.legend-5 {
-		position: absolute;
-		left: 42.3%;
-		width: 2.5%;
-		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
-		background: radial-gradient(#88c03c, #4a681f);
-		box-shadow: 0 0 5px #4a681f, 0 0 5px #4a681f, 0 0 15px #4a681f, 0 0 5px #4a681f,
-						   0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 5px #4a681f,
-						   0 0 50px #4a681f;
-		font-family: Century Gothic;
-		font-size: 1.3vw;
-		/* allows me to put the text aligned vertically */
-		text-align: center;
-		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 2.2vw;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	}
-	
-	.legend-6 {
-		position: absolute;
-		left: 47.8%;
-		width: 2.5%;
-		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
-		background: radial-gradient(#47813d, #2b4c24);
-		box-shadow: 0 0 5px #2b4c24, 0 0 5px #2b4c24, 0 0 15px #2b4c24, 0 0 5px #2b4c24,
-						   0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 5px #2b4c24,
-						   0 0 50px #2b4c24;
-		font-family: Century Gothic;
-		font-size: 1.3vw;
-		/* allows me to put the text aligned vertically */
-		text-align: center;
-		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 2.2vw;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	}
-	
-	.legend-7 {
-		position: absolute;
-		left: 53.3%;
-		width: 2.5%;
-		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
-		background: radial-gradient(#009f4d, #015326);
-		box-shadow: 0 0 5px #015326, 0 0 5px #015326, 0 0 15px #015326, 0 0 5px #015326,
-						   0 0 25px #015326, 0 0 25px #015326, 0 0 25px #015326, 0 0 5px #015326,
-						   0 0 50px #015326;
-		font-family: Century Gothic;
-		font-size: 1.3vw;
-		/* allows me to put the text aligned vertically */
-		text-align: center;
-		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
-		line-height: 2.2vw;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	}
-	
-	.legend-7 span {
-		/* border: solid red 1px; */
-		text-align: left;
-		position: absolute;
-		width: 700%;
-		font-size: 1.3vw;
-		transform: translateX(8%);
-	}
-	
-	.legend-8 {
-		position: absolute;
-		left: 74.5%;
-		width: 5.3%;
-		font-family: Century Gothic;
-		font-size: 1.3vw;
-		color: white;
-		line-height: 2.1vw;
-		/* diagonal line inside square // Nitheesh's answer: https://stackoverflow.com/questions/60388805/make-diagonal-line-for-div-square */
-		border: 1px solid #404040;
-		background: linear-gradient(to bottom right, #262626 calc(50% - 3px),  #404040 calc(50% - 1px), #262626 50%, #262626 50%);
-	}
 	#first-half { transform: translate(6%, 1%); }  /* 1H */
 	#second-half { transform: translate(55%, 4%); }  /*2H */
-	/* LEGEND TO THE MATCH RATINGS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	#button-ratings {
-		border: none;
-		border-radius: 1.5vw;
-		position: absolute;
-		z-index: 2;
-		margin-top: 7.3%;
-		/* left: 42.8%; */
-		left: 36.5%;
-		width: 27%;
-		height: 3vw;
-		font-size: 1.3vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: white;
-		background: url(../underground/button.png), #820202;
-		background-size: 100% 100%;
-	}
-	#button-gallery4:hover {
-		color: #f0f50c;
-		background: url(../underground/button.png), radial-gradient(#ef0017 -20%, #820202);
-		background-size: 100% 100%;
-		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
-	}
-	#button-ratings span1 { display: none; }  /* CLICK TO REVEAL SCORES... */
-	#button-ratings span2 { display: initial; }  /* TAP TO REVEAL SCORES */
-	/* SCORE & RATINGS: BUTTON【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.date-and-result h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {  /*1st row */
-		/* border: solid 1px red; */
-		position: absolute;
-		display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
-		width: 9.8%;  /* width of each text */
-		margin-top: 13.32%;
-		/* margin-top: 12.94%; */
-		font-family: Century Gothic;
-		color: white;
-		font-size: 1.3vw;
-		text-align: center;  /* centers it left to right */
-		padding-top: 2%;
-		z-index: 4;
-	}
-	.date-and-result h18, h19, h20, h21, h22, h23, h24, h25, h26, h27 {  /*2nd row */
-		/* border: solid 1px red; */
-		position: absolute;
-		display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
-		width: 9.8%;  /* width of each text */
-		margin-top: 20.9%;
-		font-family: Century Gothic;
-		font-size: 1.3vw;
-		text-align: center;  /* centers it left to right */
-		padding-top: 2%;
-		z-index: 4;
-	}
-	.date-and-result h8, h18 {
-		left: 1.7%;
-	}
-	.date-and-result h9 {
-		left: 11.35%;
-	}
-	.date-and-result h10 {
-		left: 20.97%;
-	}
-	.date-and-result h11 {
-		left: 30.59%;
-	}
-	.date-and-result h12 {
-		left: 40.3%;
-	}
-	.date-and-result h13 {
-		left: 49.92%;
-	}
-	.date-and-result h14 {
-		left: 59.56%;
-	}
-	.date-and-result h15 {
-		left: 69.3%;
-	}
-	.date-and-result h16 {
-		left: 79%;
-	}
-	.date-and-result h17 {
-		left: 88.6%;
-	}
-	#date {
-		font-size: 1.11vw;
-	}
-	#result { display: none;}   /* for button */
-	#result1 { display: none; }   /* for button */
-	/* DATE, FIXTURE AND RESULT【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	/* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.match-ratings-wrapper {
-		position: relative;
-		z-index: 2;
-	}
-	#match-ratings {
-		display: none;
-		position: absolute;
-		margin-top: -.15%;  /* with respect to header (menu) */
-		left: -19%;  /* same as .match-grid above */
-		width: 137%;
-	}
-	/* MATCH RATINGS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	/* CUBOID HOLDERS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.cuboid-holder { display: none; }
-	/* CUBOID HOLDERS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	/* ROTATING CUBOIDS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.cuboid1 { display: none; }
-	.cuboid2 { display: none; }
-	/* ROTATING CUBOIDS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	/* VERTICAL SIGNS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.vertical-neon-signs { display: none; }
-	/* VERTICAL SIGNS【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* DROPDOWNS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdowns-section {
 		position: relative;  /* responsive: 'relative' to eliminate overflow excess x-wise on mobile */
@@ -9131,359 +5641,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		height: 150vw;
 		z-index: 2;
 	}
-	.nav_container {
-		position: relative;
-		background-color: gray;
-		justify-items: center;
-	}
-	.dropdown {
-		position: absolute;
-	}
-	.dropdown_list:has( :checked ) {
-		--rows: 1fr;
-		/* addition to make SEE and HIDE toggle */
-		--open-display: none;
-		--close-display: inline-block;
-		/* addition for the links */
-		--links-display: flex;
-	}
-	.open {
-		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
-		font-family: Trueno Round Italic;
-		font-size: 1.8vw;
-		letter-spacing: .05vw;
-		margin-top: 8%;  /* the higher, the lower */
-		left: 49.5%;
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #da020e, 0 0 10px #da020e,
-						   0 0 20px #da020e,
-						   0 0 40px #da020e,
-						   0 0 80px #da020e,
-						   0 0 120px #da020e;
-		/* I learned how to make custom properties (variable) for 'display'
-			 https://www.reddit.com/r/css/comments/t2zcot/can_css_variables_custom_properties_be_used_to/ */
-		display: var(--open-display) !important;
-	}
-	.open2 {
-		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
-		font-family: Trueno Round Italic;
-		font-size: 1.8vw;
-		letter-spacing: .05vw;
-		margin-top: 8%;  /* the higher, the lower */
-		left: 47%;
-		color: #f8cccf;
-		text-shadow: 0 0 10px #028336, 0 0 10px #028336, 0 0 10px #028336,
-						   0 0 20px #028336, 0 0 20px #028336,
-						   0 0 40px #028336,
-						   0 0 80px #028336,
-						   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
-						   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
-		/* I learned how to make custom properties (variable) for 'display'
-			 https://www.reddit.com/r/css/comments/t2zcot/can_css_variables_custom_properties_be_used_to/ */
-		display: var(--open-display) !important;
-	}
-	.close {
-		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
-		font-family: Trueno Round Italic;
-		font-size: 1.8vw;
-		letter-spacing: .05vw;
-		margin-top: 8%;  /* the higher, the lower */
-		left: 69%;
-		color: #fff;
-		text-shadow: 0 0 10px #fff,
-						   0 0 20px #fff,
-						   0 0 40px #fff,
-						   0 0 80px #fff,
-						   0 0 120px #fff,
-						   0 0 160px #fff;
-		/* inspired by another custom property (variable), I added "none" to make "HIDE" not visible when the checkbox is unchecked. */
-		display: var(--close-display, none) !important;
-	}
-	.close2 {
-		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
-		font-family: Trueno Round Italic;
-		font-size: 1.8vw;
-		letter-spacing: .05vw;
-		margin-top: 8%;  /* the higher, the lower */
-		left: 71.5%;
-		color: white;
-		text-shadow: 0 0 10px #ffcf3e,
-						   0 0 20px #ffcf3e,
-						   0 0 40px #ffcf3e,
-						   0 0 80px #ffcf3e,
-						   0 0 120px #ffcf3e,
-						   0 0 160px #ffcf3e;
-		/* inspired by another custom property (variable), I added "none" to make "HIDE" not visible when the checkbox is unchecked. */
-		display: var(--close-display, none) !important;
-	}
-	.hide-UCL {
-		position: absolute;
-		background: url(/underground/hide-UCL.png);
-		background-size: 100%;
-		font-family: 'Courier New', Courier, monospace;	 /* to control image size, I need these font values */
-		font-size: 6.8vw; 	/* to control image size, I need these font values */
-		top: 29.7%;
-		left: 57.34%;
-		display: var(--close-display, none) !important;
-	}
-	.dropdown_check {
-		position: absolute;
-		/* if checkbox is not set at this width and height, you will not be able to click anywhere to see/hide content */
-		width: 100%;  /* lowering this value makes only that % of the dropdown box clickable, and not the rest */
-		height: 100%;
-		opacity: 0;  /* to make checkbox visible, put 'opacity: 1' */
-		cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='30px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f90605' d='M 11.5,-0.5 C 12.5,-0.5 13.5,-0.5 14.5,-0.5C 14.5,2.16667 14.5,4.83333 14.5,7.5C 13.8333,6.16667 13.1667,4.83333 12.5,3.5C 12.1667,3.5 11.8333,3.5 11.5,3.5C 11.5,2.16667 11.5,0.833333 11.5,-0.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23040404' d='M 9.5,3.5 C 10.1667,3.5 10.8333,3.5 11.5,3.5C 11.8333,3.5 12.1667,3.5 12.5,3.5C 12.5,5.16667 12.5,6.83333 12.5,8.5C 13.9527,10.229 15.9527,11.229 18.5,11.5C 19.4742,13.7427 19.8076,16.076 19.5,18.5C 18.0795,21.2613 17.4129,24.2613 17.5,27.5C 15.5,27.5 13.5,27.5 11.5,27.5C 11.1185,22.737 9.11854,18.737 5.5,15.5C 6.56764,14.5655 7.90097,14.2322 9.5,14.5C 9.5,10.8333 9.5,7.16667 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23aa2822' d='M 12.5,3.5 C 13.1667,4.83333 13.8333,6.16667 14.5,7.5C 15.1667,7.5 15.8333,7.5 16.5,7.5C 15.4324,8.43448 14.099,8.76781 12.5,8.5C 12.5,6.83333 12.5,5.16667 12.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%235a5c5e' d='M 9.5,3.5 C 9.5,7.16667 9.5,10.8333 9.5,14.5C 7.90097,14.2322 6.56764,14.5655 5.5,15.5C 4.95691,15.44 4.62358,15.1067 4.5,14.5C 5.68884,13.5713 7.02218,13.238 8.5,13.5C 8.18723,9.95815 8.52056,6.62482 9.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f41a13' d='M 17.5,7.5 C 19.1172,8.038 20.7839,8.37133 22.5,8.5C 22.5,12.8333 22.5,17.1667 22.5,21.5C 20.7773,23.78 20.1107,26.4467 20.5,29.5C 17.5,29.5 14.5,29.5 11.5,29.5C 13.5,28.8333 15.5,28.1667 17.5,27.5C 17.4129,24.2613 18.0795,21.2613 19.5,18.5C 20.4767,15.7131 20.81,12.7131 20.5,9.5C 18.8212,9.71481 17.8212,9.04814 17.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bea6ab' d='M 16.5,7.5 C 16.8333,7.5 17.1667,7.5 17.5,7.5C 17.8212,9.04814 18.8212,9.71481 20.5,9.5C 20.81,12.7131 20.4767,15.7131 19.5,18.5C 19.8076,16.076 19.4742,13.7427 18.5,11.5C 15.9527,11.229 13.9527,10.229 12.5,8.5C 14.099,8.76781 15.4324,8.43448 16.5,7.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23f0edf0' d='M 7.5,-0.5 C 8.83333,-0.5 10.1667,-0.5 11.5,-0.5C 11.5,0.833333 11.5,2.16667 11.5,3.5C 10.8333,3.5 10.1667,3.5 9.5,3.5C 8.52056,6.62482 8.18723,9.95815 8.5,13.5C 7.02218,13.238 5.68884,13.5713 4.5,14.5C 4.62358,15.1067 4.95691,15.44 5.5,15.5C 9.11854,18.737 11.1185,22.737 11.5,27.5C 13.5,27.5 15.5,27.5 17.5,27.5C 15.5,28.1667 13.5,28.8333 11.5,29.5C 10.8333,29.5 10.1667,29.5 9.5,29.5C 9.04814,25.4246 7.54814,21.7579 5,18.5C 3.54905,16.5359 1.71572,15.2026 -0.5,14.5C -0.5,13.1667 -0.5,11.8333 -0.5,10.5C 2.19853,10.4661 4.69853,11.1328 7,12.5C 7.49902,8.17944 7.66568,3.84611 7.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, pointer;
-	}
-	.transition {
-		position: absolute;
-		/* if checkbox is not set at this width and height, you will not be able to click anywhere to see/hide content */
-		width: 100%;  /* lowering this value makes only that % of the dropdown box clickable, and not the rest */
-		height: 100%;
-		/* to make checkbox visible, put 'opacity: 1' */
-		opacity: 0;
-		cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='28px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23080101' d='M 2.5,3.5 C 7.1586,6.16843 11.4919,9.3351 15.5,13C 9.07438,12.1868 4.74104,14.6868 2.5,20.5C 1.16667,14.8333 1.16667,9.16667 2.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23af231e' d='M 3.5,1.5 C 9.3796,5.26653 15.0463,9.26653 20.5,13.5C 17.023,14.3227 13.3563,14.8227 9.5,15C 8.74756,15.6708 8.41423,16.5041 8.5,17.5C 7.20027,20.4323 5.20027,22.7656 2.5,24.5C 2.5,23.1667 2.5,21.8333 2.5,20.5C 4.74104,14.6868 9.07438,12.1868 15.5,13C 11.4919,9.3351 7.1586,6.16843 2.5,3.5C 2.32842,2.50838 2.66175,1.84171 3.5,1.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bab7d0' d='M 20.5,13.5 C 21.1667,13.8333 21.8333,14.1667 22.5,14.5C 22.5,15.5 22.5,16.5 22.5,17.5C 17.8665,16.8663 13.1998,16.8663 8.5,17.5C 8.41423,16.5041 8.74756,15.6708 9.5,15C 13.3563,14.8227 17.023,14.3227 20.5,13.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23b4bcca' d='M -0.5,-0.5 C 0.166667,-0.5 0.833333,-0.5 1.5,-0.5C 2.16667,0.166667 2.83333,0.833333 3.5,1.5C 2.66175,1.84171 2.32842,2.50838 2.5,3.5C 1.16667,9.16667 1.16667,14.8333 2.5,20.5C 2.5,21.8333 2.5,23.1667 2.5,24.5C 1.89022,25.391 1.55688,26.391 1.5,27.5C 0.833333,27.5 0.166667,27.5 -0.5,27.5C -0.5,18.1667 -0.5,8.83333 -0.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, auto;
-	}
-	.transfers-title {
-		position: absolute;
-		font-family: Delight;
-		font-size: 5vw;
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #13b48a, 0 0 10px #13b48a,
-						   0 0 20px #13b48a,
-						   0 0 40px #13b48a, 0 0 40px #13b48a,
-						   0 0 80px #13b48a,
-						   0 0 120px #13b48a, 0 0 120px #13b48a,
-						   0 0 160px #13b48a;
-		transform: translate(248%, -10%);
-		margin-right: 20%;
-		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
-		pointer-events: none;
-	}
-	.transfers-title span1 {
-		font-family: Ketosag Condensed;
-		font-size: 5vw;
-	}
-	.dropdown_content {
-		display: grid;
-		grid-template-rows: var(--rows, 0fr);
-		/* addition // important to eliminate border margin between separate content images; alex's answer here: https://stackoverflow.com/questions/7641678/use-css-to-remove-the-space-between-images */
-		font-size: 0;
-		/* end of addition */
-	}
-	.dropdown_content-matches {
-		display: grid;
-		grid-template-rows: var(--rows, 0fr);
-		/* addition // important to eliminate border margin between separate content images; alex's answer here: https://stackoverflow.com/questions/7641678/use-css-to-remove-the-space-between-images */
-		font-size: 0;
-		/* end of addition */
-	}
-	.dropdown_sub {
-		overflow: hidden;
-	}
-	.dropdown_li {
-		list-style: none;
-	}
-
-
-	.link1 {
-		/* border: solid 1px red; */
-		opacity: 0;  /* it's best to make the link visible from here; opacity: 1 */
-		position: absolute;
-		font-family: Agency FB;
-		font-size: 2.1vw;
-		margin-top: -45.8%;
-		margin-left: 51.1%;
-		display: var(--links-display, none) !important;
-	}
-
-	.dropdown-content {  /* for Tranfers, 23/24 Stats, Player Performance, Player Stats */
-		width: 122%;  /* has to coincide with width in background-image under .dropdown-transfers below */
-		height: 100%;
-	}
-	.content-match {
-		width: 116.3%;  /* has to coincide with width in background-image under .dropdown-1st-match below */
-		height: 100%;
-	}
-	.content-match1 {  /* for 'historical' and 'threat' */
-		margin-top: -.7%;
-		width: 116.3%;  /* has to coincide with width in background-image under .dropdown-1st-match below */
-		height: 100%;
-	}
-	.content-match2 {  /* for Sofascore and other stats */
-		display: initial;
-		margin-top: -.2%;
-		width: 116.3%;
-		height: 100%;
-	}
-	/* TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.dropdown-transfers {
-		/* border: solid red 1px; */
-		background-image: url(../underground/transfers.png);
-		background-size: 122% 100%;  /* width and height  // also, width has to coincide with width under .dropdown-content above */
-		color: white;
-		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
-	}
-	.transfers-title {
-		position: absolute;
-		font-family: Delight;
-		font-size: 5vw;
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #13b48a, 0 0 10px #13b48a,
-						   0 0 20px #13b48a,
-						   0 0 40px #13b48a, 0 0 40px #13b48a,
-						   0 0 80px #13b48a,
-						   0 0 120px #13b48a, 0 0 120px #13b48a,
-						   0 0 160px #13b48a;
-		transform: translate(248%, -10%);
-		margin-right: 20%;
-		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
-		pointer-events: none;
-	}
-	.transfers-title span1 {
-		font-family: Ketosag Condensed;
-		font-size: 5vw;
-	}
-	/* TRANSFERS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.dropdown-stats {
-		/* border: solid 1px red; */
-		background-image: url(../underground/stats.png);
-		background-size: 122% 100%;
-		color: white;
-		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
-	}
-	.stats-title {
-		position: absolute;
-		font-family: Better Grade;
-		font-size: 9vw;
-		color: #f8cccf;
-		text-shadow: 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e,
-						   0 0 20px #da020e,
-						   0 0 40px #da020e,
-						   0 0 80px #da020e,
-						   0 0 120px #da020e;
-		margin-top: 1%;
-		left: 64%;
-		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
-		pointer-events: none;
-	}
-	.stats-title span1 {
-		position: absolute;
-		font-family: myFont;
-		font-size: 4vw;
-		transform: translate(-100%, 90%);
-		color: #ffdccc;
-		text-shadow: 0 0 10px #ffb330, 0 0 10px #ffb330, 0 0 10px #ffb330, 0 0 10px #ffb330,
-						   0 0 20px #fe5201, 0 0 20px #fe5201, 0 0 20px #fe5201,
-							  0 0 40px #fe5201, 0 0 40px #fe5201,
-						   0 0 80px #fe5201, 0 0 80px #fe5201,
-						   0 0 120px #fe5201, 0 0 120px #fe5201;
-	}
-	/* PLAYER PERFORMANCE 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.dropdown-player-performance {
-		/* border: solid 1px red; */
-		background-image: url(../underground/player-perf.png);
-		background-size: 122% 100%;
-		color: white;
-		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
-	}
-	.player-performance-title {
-		position: absolute;
-		font-family: Majanan;
-		font-size: 6vw;
-		font-weight: 900;
-		letter-spacing: 0.3vw;
-		color: #fff;
-		text-shadow: 0 0 10px #d821c3,
-						   0 0 20px #d821c3,
-						   0 0 40px #d821c3,
-						   0 0 80px #d821c3,
-						   0 0 120px #d821c3,
-						   0 0 160px #d821c3;
-		margin-top: 1%;
-		left: 53%;
-		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
-		pointer-events: none;
-	}
-	.player-performance-title span1 {
-		font-size: 4vw;
-	}
-	/* PLAYER STATS 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.dropdown-player-stats {
-		/* border: solid 1px red; */
-		background-image: url(../underground/player-stats.png);
-		background-size: 122% 100%;
-		color: white;
-		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
-	}
-	.player-stats-title {
-		position: absolute;
-		font-family: Uppen Arms NF;
-		font-size: 3.5vw;
-		color: #b9c2d7;
-		text-shadow: 0 0 10px #17347a, 0 0 10px #17347a, 0 0 10px #17347a,
-						   0 0 20px #17347a, 0 0 20px #17347a,
-						   0 0 40px #17347a, 0 0 40px #17347a,
-						   0 0 80px #17347a, 0 0 80px #17347a, 0 0 80px #17347a,
-						   0 0 120px #17347a, 0 0 120px #17347a, 0 0 120px #17347a,
-						   0 0 160px #17347a, 0 0 160px #17347a;
-		margin-right: 20%;
-		left: 52.5%;
-		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
-		pointer-events: none;
-	}
-	.space-transition {
-		/* border: solid 1px red; */
-		background-image: url(../underground/transition.png);
-		background-size: 122% 100%;
-		color: white;
-		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
-	}
-	/* PRESEASON AND MATCHES 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	[itemid="dropdown-matches"] { /* moves all match dropdowns as well as preseason */
-		margin-left: -5vw; 
-	}
-	.dropdown-preseason {
-		/* border: solid 1px red; */
-		background-image: url(../underground/pre-season.png);
-		background-size: 116.3% 100%;  /* width and height  // also, width has to coincide with width under .content-match and .content-match1 above */
-		color: white;
-		padding: 6.3vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
-	}
-	.dropdown-1st-match {
-		/* border: solid 1px red; */
-		background-image: url(../underground/1st-match.png);
-		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .content-match above */
-		color: white;
-		padding: 6.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
-	}
+	/* INTERNATINAL BREAK 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.space-international-break {
 		/* border: solid 1px red; */
 		background-image: url(../underground/break.png);
@@ -9496,33 +5654,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: relative;
 	}
 	/* BOTTOM 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.bottom {
-		/* border: solid 1px red; */
-		left: 22%;
-		background-image: url(../underground/bottom.png);
-		background-repeat: no-repeat;
-		background-size: 100.15% 117.7%;  /* don't modify this, only padding if you want the img larger or smaller */
-		color: white;
-		/* increase the padding to increase the height of container //
-		   the code from the tutorial had 'padding: 1em .6em' , the latter value (.6em) is the space between text and left screen border */
-		padding: 40%;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: absolute;
-		pointer-events: none;
-	}	
-	.bottom-isometric {
-		position: absolute;
-		color: #b8b4b4;
-		left: 52%;
-		margin-top: 14.7%;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		font-size: 6vw;
-		transform: skewY(11deg) rotate3d(0, 1, 0, 60deg);
-		z-index: -1;
-	}	
-	/* isometric effect based on code here: https://codepen.io/jgrose/pen/WQjGmW */
 	.bottom-isometric::before {
 	content: "2023/24";
 	position: absolute;
@@ -9531,301 +5662,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 					   -3px 0.5px 1px #555,
 					   -4px 0.5px 1px #555;
 	z-index: -1;  /* important to leave the isometric 3d effect behind */
-	}	
-	.bottom-GGMU {
-		position: absolute;
-		margin-top: 25%;
-		left: 68.4%;
-		text-align: center;
-		/* line-height: 90pt; */
-		font-weight: 900;
-		font-family: Agency FB;
-		font-size: 5vw;
-		mix-blend-mode: overlay;
-		transform: skewY(-2deg);
-	}
-	.OT-banners-bottom {
-		position: absolute;
-		height: 1.3vw;
-		line-height: 1.5vw;  /* responsive: center text top to bottom; this time, same as height didn't work */
-		left: 0;
-		margin-top: 55%;
-		background: white;
-		background-size: cover;
-		display: flex;
-		overflow: hidden;
-		white-space: nowrap;
-	}
-	.OT-banners-bottom .banners {
-		display: flex;
-	}
-	
-	.OT-banners-bottom .banners div {
-		color: #fff;
-		font-family: monospace;
-		font-size: 1vw;
-		white-space: nowrap;
-		font-weight: 100;
-		/* important value in this div to make the text occupy the entirity of the box; I was playing with text-align and display values in different divs,
-		   but I figured it out thanks to Wazeed's answer: https://stackoverflow.com/questions/10283138/center-a-div-without-knowing-the-height */
-		display: flex;
-		/* I was already aware of this carrousel animation, but knowing exactly what value to put in animation-delay was thanks to
-		   rmurph46's answer below. It's simply half of the value in animation duration but negative. I needed to know that to make long carrousels
-		   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
-		animation: animate2 80s linear infinite;
-		/* animation: none; */
-		animation-delay: -40s;
-	}
-	
-	.OT-banners-bottom .banners div span {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-		/* found out of 50% as a value for split color, and not gradient // Answer by Terry: https://stackoverflow.com/questions/50434409/how-can-i-make-a-split-color-box */
-		background-image: linear-gradient(to bottom, #cc1724 50%, #1e2526 50%);
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span2 {
-		color: #ffc40c;
-		text-shadow: 0 0 2px #ffc40c;
-		background: #a01c1c;
-	}
-	
-	.OT-banners-bottom .banners div span3 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background: #a01c1c;
-		transform: scaleX(1.1) scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span4 {
-		color: rgb(76, 103, 192);
-		text-shadow: 0 0 2px yellow, 0 0 2px yellow;
-		background: #a01c1c;
-	}
-	
-	.OT-banners-bottom .banners div span5 {
-		color: rgb(204, 204, 90);
-		text-shadow: 0 0 2px rgb(90, 186, 224);
-		background: #640505;
-	}
-	
-	.OT-banners-bottom .banners div span6 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-		background: #1e2526;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span7 {
-		font-family: 'Times New Roman', Times, serif;
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background: #a01c1c;
-	}
-	
-	.OT-banners-bottom .banners div span8 {
-		background: white;
-	}
-	
-	.OT-banners-bottom .banners div span9 {
-		color: #b93939;
-		text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-		background: white;
-	}
-	
-	.OT-banners-bottom .banners div span10 {
-		color: black;
-		text-shadow: 0 0 2px black, 0 0 2px black;
-		background: white;
-	}
-	
-	.OT-banners-bottom .banners div span11 {
-		background: white;
-	}
-	
-	.OT-banners-bottom .banners div span12 {
-		font-size: .9em;
-		background: white;
-		/* got this filter here: https://www.w3schools.com/cssref/css3_pr_filter.php */
-		filter: grayscale(100%);
-	}
-	
-	.OT-banners-bottom .banners div span13 {
-		font-size: .8em;
-		/* answer by Reinier Koops: https://stackoverflow.com/questions/15904211/css-filter-grayscale-i-want-it-black */
-		filter: brightness(10%);
-		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
-		/* transform: scaleX(-.5); */
-	}
-	
-	.OT-banners-bottom .banners div span14 {
-		color: #b93939;
-		text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span15 {
-		color: black;
-		text-shadow: 0 0 2px black, 0 0 2px black;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span16 {
-		color: #b93939;
-		text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span17 {
-		font-size: .8em;
-		filter: brightness(10%);
-		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
-		/* transform: scaleX(-.5); */
-	}
-	
-	.OT-banners-bottom .banners div span18 {
-		font-size: .9em;
-		background: white;
-		filter: grayscale(100%);
-	}
-	
-	.OT-banners-bottom .banners div span19 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background: #a01c1c;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span20 {
-		font-size: .9em;
-		background: #a01c1c;
-	}
-	
-	.OT-banners-bottom .banners div span21 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background: #a01c1c;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span22 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background:#cc1724;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span23 {
-		font-size: .8em;
-		filter: brightness(10%);
-		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
-		/* transform: scaleX(-.5); */
-	}
-	
-	.OT-banners-bottom .banners div span24 {
-		font-size: .8em;
-	}
-	
-	.OT-banners-bottom .banners div span25 {
-		font-size: .8em;
-		filter: brightness(10%);
-		/* this property is perfect to make the trophies look slimmer, but it ruins the space */
-		/* transform: scaleX(-.5); */
-	}
-	
-	.OT-banners-bottom .banners div span26 {
-		color: white;
-		font-size: .7em;
-		font-family: raleway_f;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-		background: #1e2526;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span27 {
-		color: white;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-		background: #1e2526;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span28 {
-		color: #a01c1c;
-		text-shadow: 0 0 2px #a01c1c, 0 0 2px #a01c1c, 0 0 2px #a01c1c;
-		background: #1e2526;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span29 {
-		background: white;
-	}
-	
-	.OT-banners-bottom .banners div span30 {
-		color: black;
-		text-shadow: 0 0 2px black, 0 0 2px black;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span31 {
-		color: #a01c1c;
-		text-shadow: 0 0 2px #a01c1c, 0 0 2px #a01c1c, 0 0 2px #a01c1c;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span32 {
-		color: black;
-		text-shadow: 0 0 2px black, 0 0 2px black;
-		background: white;
-		transform: scaleY(1.1);
-	}
-	
-	.OT-banners-bottom .banners div span33 {
-		background: white;
-		/* fiddle by Platte Gruber: https://stackoverflow.com/questions/32875695/flip-mirror-an-image-horizontally-vertically-with-css */
-		transform: rotateY(180deg);
-	}
-	
-	.OT-banners-bottom .banners div:nth-child(2) {
-		animation: animate3 80s linear infinite;
-		/* animation: none; */
-	}
-	@keyframes animate2 {
-		0%
-		{
-			transform: translateX(100%);
-		}
-		100%
-		{
-			transform: translateX(-100%);
-		}
-	}
-	@keyframes animate3 {
-		0%
-		{
-			transform: translateX(0);
-		}
-		100%
-		{
-			transform: translateX(-200%);
-		}
-	}
-	
-	.email-cursor-text {
-		/* border: solid 1px red; */
-		position: absolute;
-		font-family: Poppins Regular;
-		font-size: 1.2vw;
-		color: #a6a6a6;
-		left: 31.3%;
-		margin-top: 57.86%;
-		padding: .3vw;  /* to increase cursor margin for mouse (cursor:text) */
-		cursor: text;
 	}
 }
 /* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */
