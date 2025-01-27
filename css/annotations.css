@@ -6260,7 +6260,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		height: 4.2vw;  /* addition for resposiveness */
 		margin-top: -37.3%;  /* with respect to .underground */
 		left: 37.635%;
-		line-height: 1vw;
 		background-size: cover;
 		overflow: hidden;
 		white-space: nowrap;
