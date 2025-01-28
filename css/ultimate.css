@@ -3706,7 +3706,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		height: 2vw;  /* addition for resposiveness */
 		margin-top: -17.7%;  /* with respect to .underground */
 		left: 36%;		
-		line-height: 1vw;  /* brings the text up for mobile screen in real life */
+		line-height: 1.4vw;  /* brings the text up for mobile screen in real life */
 		background-size: cover;
 		overflow: hidden;
 		white-space: nowrap;
