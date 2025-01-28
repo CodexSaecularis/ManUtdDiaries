@@ -3753,7 +3753,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		text-align: center;
 	}
 	.scoreboard-UCL .UCL div {
-		margin-top: -.2%;
+		margin-top: .6%;
 		font-family: Novarese-Book;
 		font-size: 1.6vw;
 		color: #fff;
