@@ -3761,7 +3761,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		display: flex;
 	}
 	.scoreboard-UCL .UCL div span1 {
-		margin-top: .6%;
+		margin-top: .4%;
 		font-size: 1.4vw;
 	}
 	.scoreboard-UCL .UCL div span3 {
