@@ -3773,7 +3773,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
 		/* ▼ */
 		/* font-size: 1vw;
-		margin-top: 1.2%;
+		margin-top: .5%;
 		color: #da020e;
 		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e; */
 	}
