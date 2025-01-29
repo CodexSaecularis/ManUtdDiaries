@@ -3862,8 +3862,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		color: #028336;
 		text-shadow: 0 0 2px #028336, 0 0 2px #028336; */
 		/* • */
-		margin-top: -1.2%;
-		font-size: 1.4vw;
+		margin-top: -.1%;
+		font-size: 2.2vw;
 		color: gray;
 		text-shadow: 0 0 2px gray, 0 0 2px gray;
 		/* ▼ */
