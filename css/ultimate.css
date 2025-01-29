@@ -2223,8 +2223,8 @@ ul.navlist {
 	align-items: center;
 	position: relative;
 }
-.led-words-invisible { overflow: hidden; }
-.led-words-invisible span {
+.led-words-invisible { overflow: hidden; }  /* addition for Brave on mobile to eliminate the lag on the match news banners */
+.led-words-invisible span {                     /* addition for Brave on mobile to eliminate the lag on the match news banners */
 	font-family: myFont;
 	font-size: 2.5vw;
 	color: transparent;
