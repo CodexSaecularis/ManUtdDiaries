@@ -542,9 +542,10 @@ body {
 					   0 0 50px #ce3400,
 				       0 0 200px #ce3400;
 	cursor: pointer;
+	text-align: center;
 }
 .scoreboard-UEL .UEL {
-	display: flex;
+	display: inline-block;  /* need this to make text-align:center work */
 }
 .scoreboard-UEL .UEL div {
 	font-family: Europa Nuova Bold;
