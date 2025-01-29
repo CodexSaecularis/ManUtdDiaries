@@ -3838,7 +3838,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		height: 2vw;  /* addition for resposiveness */
 		margin-top: -17.7%;  /* with respect to .underground */
 		left: 36%;
-		line-height: 1.3vw;
+		line-height: 1.3vw;  /* brings the text up for mobile screen; the higher vw, the lower */
 		background-size: cover;
 		overflow: hidden;
 		white-space: nowrap;
@@ -3857,7 +3857,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.scoreboard-UEL .UEL div span1 {
 		font-weight: 900;
 		/* ▲ */
-		margin-top: 1.2%;
+		margin-top: .5%;
 		font-size: 1vw;
 		color: #028336;
 		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
