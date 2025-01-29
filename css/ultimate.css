@@ -5704,15 +5704,15 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.scoreboard-UEL .UEL div span1 {
 		font-weight: 900;
 		/* ▲ */
-		/* margin-top: .1%;
+		margin-top: .1%;
 		font-size: 1.8vw;
 		color: #028336;
-		text-shadow: 0 0 2px #028336, 0 0 2px #028336; */
+		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
 		/* • */
-		margin-top: .1%;
+		/* margin-top: .1%;
 		font-size: 3.5vw;
 		color: gray;
-		text-shadow: 0 0 2px gray, 0 0 2px gray;
+		text-shadow: 0 0 2px gray, 0 0 2px gray; */
 		/* ▼ */
 		/* font-size: 1.8vw;
 		margin-top: .1%;
