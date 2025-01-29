@@ -3857,15 +3857,15 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.scoreboard-UEL .UEL div span1 {
 		font-weight: 900;
 		/* ▲ */
-		/* margin-top: .1%;
+		margin-top: .1%;
 		font-size: 1vw;
 		color: #028336;
-		text-shadow: 0 0 2px #028336, 0 0 2px #028336; */
+		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
 		/* • */
-		margin-top: -.1%;
+		/* margin-top: .3%;
 		font-size: 2.2vw;
 		color: gray;
-		text-shadow: 0 0 2px gray, 0 0 2px gray;
+		text-shadow: 0 0 2px gray, 0 0 2px gray; */
 		/* ▼ */
 		/* font-size: 1vw;
 		margin-top: .1%;
@@ -5683,6 +5683,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		height: 4.2vw;  /* addition for resposiveness */
 		margin-top: -30%;  /* with respect to .underground */
 		left: 30.8%;
+		line-height: 2vw;  /* brings the text up for mobile screen; the higher vw, the lower */
 		background-size: cover;
 		display: flex;
 		overflow: hidden;
@@ -5703,15 +5704,15 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.scoreboard-UEL .UEL div span1 {
 		font-weight: 900;
 		/* ▲ */
-		margin-top: .1%;
+		/* margin-top: .1%;
 		font-size: 1.8vw;
 		color: #028336;
-		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
+		text-shadow: 0 0 2px #028336, 0 0 2px #028336; */
 		/* • */
-		/* margin-top: -3%;
+		margin-top: -3%;
 		font-size: 3.5vw;
 		color: gray;
-		text-shadow: 0 0 2px gray, 0 0 2px gray; */
+		text-shadow: 0 0 2px gray, 0 0 2px gray;
 		/* ▼ */
 		/* font-size: 1.8vw;
 		margin-top: .1%;
