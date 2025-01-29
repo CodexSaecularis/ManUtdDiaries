@@ -3840,11 +3840,11 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		left: 36%;
 		line-height: 1.3vw;  /* brings the text up for mobile screen; the higher vw, the lower */
 		background-size: cover;
-		display: flex;
 		overflow: hidden;
 		white-space: nowrap;
 		z-index: 5;
 		cursor: pointer;
+		text-align: center;
 	}
 	.scoreboard-UEL .UEL div {
 		font-family: Europa Nuova Bold;
