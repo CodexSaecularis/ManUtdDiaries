@@ -2223,7 +2223,15 @@ ul.navlist {
 	align-items: center;
 	position: relative;
 }
-.invisible-spin-wrapper { display: none; }
+.led-words-invisible { overflow: hidden; }
+.led-words-invisible span {
+	font-family: myFont;
+	font-size: 2.5vw;
+	color: transparent;
+	display: block;
+	height: 100%;
+	animation: spin-words 6s infinite;
+}
 /* ⟰ PLAYER STATS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* ⟱ PRESEASON, MATCHES, INTERNATIONAL BREAK ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 [itemid="dropdown-matches"] { /* moves all match dropdowns as well as preseason */
