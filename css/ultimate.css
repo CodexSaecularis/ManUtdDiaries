@@ -532,7 +532,6 @@ body {
 	margin-top: -14.5%;  /* with respect to .underground */
 	left: 38.4%;
 	background-size: cover;
-	display: flex;
 	overflow: hidden;
 	white-space: nowrap;
 	z-index: 5;
