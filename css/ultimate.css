@@ -28,7 +28,10 @@
 @font-face { font-family: Europa Nuova Bold; src: url(../fonts/EuropaNuovaBold.ttf); }
 
 /* LEARNINGS:
-						1. Use wrap divs with position:relative, and the inside divs with position:absolute or none at all // this makes code cross-browser */
+						1. Use wrap divs with position:relative, and the inside divs with position:absolute or none at all // this makes code cross-browser
+						2. Use vw for font-size and line-height, use % for margin-top, left, etc; play with 'vw' and '%' anyways
+   						3. Use url:(../) before any url source in CSS, but src="" without slash (/) at the beginning in HTML
+*/
 
 ::selection{  /* color for when text is highlighted by user */
 	background-color: #ac141b;
@@ -3625,7 +3628,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	animation: animate3 80s linear infinite;
 	/* animation: none; */
 }
-
+/* ⟱ idierco@gmail.com CONTACT ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .email-cursor-text {
 	/* border: solid 1px red; */
 	position: absolute;
@@ -3636,6 +3639,31 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	margin-top: 68.5%;
 	padding: .3vw;  /* to increase cursor margin for mouse (cursor:text) */
 	cursor: text;
+}
+/* ⟱ DONATION LINKS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.buymeacoffee {
+    border: solid 1px rgb(216, 216, 59);
+    position: absolute;
+	margin-top: 68%;
+    left: 85.6%;
+    width: 11%;
+    height: 2.6vw;
+}
+.patreon {
+    border: solid 1px orangered;
+    position: absolute;
+	margin-top: 70.4%;
+    left: 88.4%;
+    width: 8.2%;
+    height: 2vw;
+}
+.paypal {
+    border: solid 1px blue;
+    position: absolute;
+	margin-top: 72.4%;
+    left: 90%;
+    width: 6.5%;
+    height: 2.1vw;
 }
 
 /* TABLET: LARGER SCREEN  🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛       */
@@ -5323,7 +5351,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		overflow: hidden;
 		white-space: nowrap;
 	}
-
+	/* ⟱ idierco@gmail.com CONTACT ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.email-cursor-text {
 		/* border: solid 1px red; */
 		position: absolute;
@@ -5334,6 +5362,31 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		margin-top: 57.86%;
 		padding: .3vw;  /* to increase cursor margin for mouse (cursor:text) */
 		cursor: text;
+	}
+	/* ⟱ DONATION LINKS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.buymeacoffee {
+		border: solid 1px rgb(216, 216, 59);
+		position: absolute;
+		margin-top: 57.5%;
+		left: 89.8%;
+		width: 9%;
+		height: 2.9vw;
+	}
+	.patreon {
+		border: solid 1px orangered;
+		position: absolute;
+		margin-top: 59.7%;
+		left: 92.5%;
+		width: 6.3%;
+		height: 2vw;
+	}
+	.paypal {
+		border: solid 1px blue;
+		position: absolute;
+		margin-top: 61.3%;
+		left: 93.3%;
+		width: 5.5%;
+		height: 2.1vw;
 	}
 }
 /* TABLET: LARGER SCREEN  🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛       */
