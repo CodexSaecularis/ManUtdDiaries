@@ -3642,7 +3642,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 }
 /* ⟱ DONATION LINKS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .buymeacoffee {
-    border: solid 1px rgb(216, 216, 59);
+    /* border: solid 1px rgb(216, 216, 59); */
     position: absolute;
 	margin-top: 68%;
     left: 85.6%;
@@ -3650,7 +3650,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
     height: 2.6vw;
 }
 .patreon {
-    border: solid 1px orangered;
+    /* border: solid 1px orangered; */
     position: absolute;
 	margin-top: 70.4%;
     left: 88.4%;
@@ -3658,7 +3658,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
     height: 2vw;
 }
 .paypal {
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
     position: absolute;
 	margin-top: 72.4%;
     left: 90%;
@@ -5365,7 +5365,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	/* ⟱ DONATION LINKS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.buymeacoffee {
-		border: solid 1px rgb(216, 216, 59);
+		/* border: solid 1px rgb(216, 216, 59); */
 		position: absolute;
 		margin-top: 57.5%;
 		left: 89.8%;
@@ -5373,7 +5373,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		height: 2.9vw;
 	}
 	.patreon {
-		border: solid 1px orangered;
+		/* border: solid 1px orangered; */
 		position: absolute;
 		margin-top: 59.7%;
 		left: 92.5%;
@@ -5381,7 +5381,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		height: 2vw;
 	}
 	.paypal {
-		border: solid 1px blue;
+		/* border: solid 1px blue; */
 		position: absolute;
 		margin-top: 61.3%;
 		left: 93.3%;
