@@ -3150,15 +3150,15 @@ ul.navlist {
 	background: url(../underground/24-25-1st-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
-	padding: 0% .5%;  /* border margin */
+	padding: 0% .5%;
 	width: 3%;
 	height: 6.15vw;
 	display: flex;
 	margin-top: -16.65%;
 	left: 7%;
 }
-.spin-badges { overflow: hidden; }  /* universal code for ALL badge & sponsor spins */
-.spin-badges img {  /* universal code for ALL badge & sponsor spins */
+.spin-badges { overflow: hidden; }
+.spin-badges img {
 	width: 100%;
 	position: relative;
 	display: block;
@@ -3196,7 +3196,7 @@ ul.navlist {
 	background: url(../underground/24-25-1st-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
-	padding: 0% .5%;  /* border margin */
+	padding: 0% .5%;
 	width: 3%;
 	height: 6.15vw;
 	display: flex;
@@ -3210,7 +3210,7 @@ ul.navlist {
 	background: url(../underground/24-25-2nd-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
-	padding: 0% .5%;  /* border margin */
+	padding: 0% .5%;
 	width: 3%;
 	height: 6.15vw;
 	display: flex;
@@ -3223,7 +3223,7 @@ ul.navlist {
 	background: url(../underground/24-25-2nd-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
-	padding: 0% .5%;  /* border margin */
+	padding: 0% .5%;
 	width: 3%;
 	height: 6.15vw;
 	display: flex;
@@ -3237,7 +3237,7 @@ ul.navlist {
 	background: url(../underground/24-25-3rd-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
-	padding: 0% .5%;  /* border margin */
+	padding: 0% .5%;
 	width: 3%;
 	height: 6.15vw;
 	display: flex;
@@ -3250,7 +3250,7 @@ ul.navlist {
 	background: url(../underground/24-25-3rd-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
-	padding: 0% .5%;  /* border margin */
+	padding: 0% .5%;
 	width: 3%;
 	height: 6.15vw;
 	display: flex;
@@ -3265,7 +3265,7 @@ ul.navlist {
 	background: url(../underground/24-25-1st-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
-	padding: 0% .5%;  /* border margin */
+	padding: 0% .5%;
 	width: 3%;
 	height: 6.15vw;
 	display: flex;
@@ -3279,7 +3279,7 @@ ul.navlist {
 	background: url(../underground/24-25-1st-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
-	padding: 0% .5%;  /* border margin */
+	padding: 0% .5%;
 	width: 3%;
 	height: 6.15vw;
 	display: flex;
@@ -3293,7 +3293,7 @@ ul.navlist {
 	background: url(../underground/24-25-2nd-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
-	padding: 0% .5%;  /* border margin */
+	padding: 0% .5%;
 	width: 3%;
 	height: 6.15vw;
 	display: flex;
@@ -3306,7 +3306,7 @@ ul.navlist {
 	background: url(../underground/24-25-2nd-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
-	padding: 0% .5%;  /* border margin */
+	padding: 0% .5%;
 	width: 3%;
 	height: 6.15vw;
 	display: flex;
@@ -3320,7 +3320,7 @@ ul.navlist {
 	background: url(../underground/24-25-3rd-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
-	padding: 0% .5%;  /* border margin */
+	padding: 0% .5%;
 	width: 3%;
 	height: 6.15vw;
 	display: flex;
@@ -3333,7 +3333,7 @@ ul.navlist {
 	background: url(../underground/24-25-3rd-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
-	padding: 0% .5%;  /* border margin */
+	padding: 0% .5%;
 	width: 3%;
 	height: 6.15vw;
 	display: flex;
@@ -3348,9 +3348,9 @@ ul.navlist {
 	background: url(../underground/07-08-1st-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
-	padding: 0% .5%;  /* border margin */
+	padding: 0% .5%;
 	width: 3%;
-	height: 6.15vw;  /* vw value avoids height enlargement when another dropdown is opened, original was % value */
+	height: 6.15vw;
 	display: flex;
 	margin-top: -44.13%;
 	left: 7%;
@@ -3361,7 +3361,7 @@ ul.navlist {
 	background: url(../underground/03-05-2nd-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
-	padding: 0% .5%;  /* border margin */
+	padding: 0% .5%;
 	width: 3%;
 	height: 6.15vw;
 	display: flex;
@@ -3374,7 +3374,7 @@ ul.navlist {
 	background: url(../underground/20-21-3rd-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
-	padding: 0% .5%;  /* border margin */
+	padding: 0% .5%;
 	width: 3%;
 	height: 6.15vw;
 	display: flex;
@@ -3387,7 +3387,7 @@ ul.navlist {
 	background: url(../underground/95-96-1st-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
-	padding: 0% .5%;  /* border margin */
+	padding: 0% .5%;
 	width: 3%;
 	height: 6.15vw;
 	display: flex;
@@ -3400,7 +3400,7 @@ ul.navlist {
 	background: url(../underground/90-92-2nd-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
-	padding: 0% .5%;  /* border margin */
+	padding: 0% .5%;
 	width: 3%;
 	height: 6.15vw;
 	display: flex;
@@ -3413,7 +3413,7 @@ ul.navlist {
 	background: url(../underground/02-03-1st-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
-	padding: 0% .5%;  /* border margin */
+	padding: 0% .5%;
 	width: 3%;
 	height: 6.15vw;
 	display: flex;
@@ -3426,7 +3426,7 @@ ul.navlist {
 	background: url(../underground/92-94-3rd-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
-	padding: 0% .5%;  /* border margin */
+	padding: 0% .5%;
 	width: 3%;
 	height: 6.15vw;
 	display: flex;
@@ -3439,7 +3439,7 @@ ul.navlist {
 	background: url(../underground/08-09-3rd-kit.png);
 	background-size: 100% 100%;
 	text-align: center;
-	padding: 0% .5%;  /* border margin */
+	padding: 0% .5%;
 	width: 3%;
 	height: 6.15vw;
 	display: flex;
@@ -3450,14 +3450,11 @@ ul.navlist {
 /* ⟰ BADGE-SPONSOR SPIN ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* ⟱ BOTTOM ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .bottom {
-	/* border: solid 1px red; */
 	left: 5.48%;
 	background-image: url(../underground/bottom.png);
 	background-repeat: no-repeat;
-	background-size: 100.15% 117.7%;  /* don't modify this, only padding if you want the img larger or smaller */
+	background-size: 100.15% 117.7%;
 	color: white;
-	/* increase the padding to increase the height of container //
-	   the code from the tutorial had 'padding: 1em .6em' , the latter value (.6em) is the space between text and left screen border */
 	padding: 47.25%;
 	text-decoration: none;
 	display: flex;
@@ -3475,7 +3472,6 @@ ul.navlist {
 	transform: skewY(11deg) rotate3d(0, 1, 0, 60deg);
 	z-index: -1;
 }
-/* isometric effect based on code here: https://codepen.io/jgrose/pen/WQjGmW */
 .bottom-isometric::before {
 content: "2023/24";
 position: absolute;
@@ -3487,7 +3483,7 @@ text-shadow: -1px 0.5px 1px #555,
 				   -6px 0.5px 1px #555,
 				   -7px 0.5px 1px #555,
 				   -8px 0.5px 1px #555;
-z-index: -1;  /* important to leave the isometric 3d effect behind */
+z-index: -1;
 }
 .bottom-GGMU {
 	position: absolute;
@@ -3503,7 +3499,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 .OT-banners-bottom {
 	position: absolute;
 	height: 1.3vw;
-	line-height: 1.5vw;  /* responsive: center text top to bottom; this time, same as height didn't work */
+	line-height: 1.5vw;
 	left: 0;
 	margin-top: 65.5%;
 	background: white;
@@ -3521,19 +3517,13 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	font-size: 1vw;
 	white-space: nowrap;
 	font-weight: 100;
-	/* important value in this div to make the text occupy the entirity of the box; I was playing with text-align and display values in different divs,
-	   but I figured it out thanks to Wazeed's answer: https://stackoverflow.com/questions/10283138/center-a-div-without-knowing-the-height */
 	display: flex;
-	/* I was already aware of this carrousel animation, but knowing exactly what value to put in animation-delay was thanks to
-	   rmurph46's answer below. It's simply half of the value in animation duration but negative. I needed to know that to make long carrousels
-	   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
 	animation: animate2 80s linear infinite;
 	animation-delay: -40s;
 }
 .OT-banners-bottom .banners div span {
 	color: white;
 	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-	/* found out of 50% as a value for split color, and not gradient // Answer by Terry: https://stackoverflow.com/questions/50434409/how-can-i-make-a-split-color-box */
 	background-image: linear-gradient(to bottom, #cc1724 50%, #1e2526 50%);
 	transform: scaleY(1.1);
 }
@@ -3589,15 +3579,11 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 .OT-banners-bottom .banners div span12 {
 	font-size: .9em;
 	background: white;
-	/* got this filter here: https://www.w3schools.com/cssref/css3_pr_filter.php */
 	filter: grayscale(100%);
 }
 .OT-banners-bottom .banners div span13 {
 	font-size: .8em;
-	/* answer by Reinier Koops: https://stackoverflow.com/questions/15904211/css-filter-grayscale-i-want-it-black */
 	filter: brightness(10%);
-	/* this property is perfect to make the trophies look slimmer, but it ruins the space */
-	/* transform: scaleX(-.5); */
 }
 .OT-banners-bottom .banners div span14 {
 	color: #b93939;
@@ -3620,8 +3606,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 .OT-banners-bottom .banners div span17 {
 	font-size: .8em;
 	filter: brightness(10%);
-	/* this property is perfect to make the trophies look slimmer, but it ruins the space */
-	/* transform: scaleX(-.5); */
 }
 .OT-banners-bottom .banners div span18 {
 	font-size: .9em;
@@ -3653,8 +3637,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 .OT-banners-bottom .banners div span23 {
 	font-size: .8em;
 	filter: brightness(10%);
-	/* this property is perfect to make the trophies look slimmer, but it ruins the space */
-	/* transform: scaleX(-.5); */
 }
 .OT-banners-bottom .banners div span24 {
 	font-size: .8em;
@@ -3662,8 +3644,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 .OT-banners-bottom .banners div span25 {
 	font-size: .8em;
 	filter: brightness(10%);
-	/* this property is perfect to make the trophies look slimmer, but it ruins the space */
-	/* transform: scaleX(-.5); */
 }
 .OT-banners-bottom .banners div span26 {
 	color: white;
@@ -3708,28 +3688,24 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 }
 .OT-banners-bottom .banners div span33 {
 	background: white;
-	/* fiddle by Platte Gruber: https://stackoverflow.com/questions/32875695/flip-mirror-an-image-horizontally-vertically-with-css */
 	transform: rotateY(180deg);
 }
 .OT-banners-bottom .banners div:nth-child(2) {
 	animation: animate3 80s linear infinite;
-	/* animation: none; */
 }
 /* ⟱ idierco@gmail.com CONTACT ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .email-cursor-text {
-	/* border: solid 1px red; */
 	position: absolute;
 	font-family: Poppins Regular;
 	font-size: 1vw;
 	color: #a6a6a6;
 	left: 16.5%;
 	margin-top: 68.5%;
-	padding: .3vw;  /* to increase cursor margin for mouse (cursor:text) */
+	padding: .3vw;
 	cursor: text;
 }
 /* ⟱ DONATION LINKS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .buymeacoffee {
-    /* border: solid 1px rgb(216, 216, 59); */
     position: absolute;
 	margin-top: 68%;
     left: 85.6%;
@@ -3737,7 +3713,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
     height: 2.6vw;
 }
 .patreon {
-    /* border: solid 1px orangered; */
     position: absolute;
 	margin-top: 70.4%;
     left: 88.4%;
@@ -3745,7 +3720,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
     height: 2vw;
 }
 .paypal {
-    /* border: solid 1px blue; */
     position: absolute;
 	margin-top: 72.4%;
     left: 90%;
@@ -3755,12 +3729,12 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 
 /* TABLET: LARGER SCREEN  🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛       */
 @media only screen and (max-width: 1100px) {  /* TABLET: LARGER SCREEN 🔳 */
-    html, body {  /* responsiveness */
+    html, body {
 		position: relative;
 		overflow-x: hidden;
 		background-color: black;
-		min-width: auto;  /* overwrites min-width for desktop */
-		z-index: -3;  /* addition to make .underground-large and .bricks show */
+		min-width: auto;
+		z-index: -3;
 	}
     ::-webkit-scrollbar { display: none; }
     ::-webkit-scrollbar-thumb { display: none; }
@@ -3771,21 +3745,18 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	/* ⟱ SELECT SEASON ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.select-season {
-		/* border: solid red 1px; */
 		position: absolute;
-		margin-top: -17%;  /* with respect to .underground */
-		margin-left: 10%;  /* moves everything to the left/right */
+		margin-top: -17%;
+		margin-left: 10%;
 		z-index: 8;
-		width: 10.7vw;  /* reduces cursor:pointer clickability away from the title  */
-		height: 6vw;  /* addition to actually see this div container border lines */
+		width: 10.7vw;
+		height: 6vw;
 	}
-	.select-season-title {  /* title: since 2023 SELECT SEASON */
-		/* border: solid 1px red; */
-		width: 125%;  /* adddition to actually see the borders, adjust if text collapses */
+	.select-season-title {
+		width: 125%;
 		position: absolute;
 		text-align: center;
 		transform: translate(-3%, -15%);
-		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
 		pointer-events: none;
 		line-height: 1.7vw;
 	}
@@ -3815,22 +3786,20 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 160px #13b48a;
 	}
 	.dropdown-sub-season {
-		/* border: solid 1px red; */
 		overflow: hidden;
-		width: 320px;  /* how big the dropdown content is */
+		width: 320px;
 		transform: translate(20px, -5px);
 	}
 	/* ⟰ SELECT SEASON ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ SCOREBOARD CAROUSEL ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* PREMIER LEAGUE */
 	.scoreboard-PL {
-		/* border: solid red 1px; */
 		position: absolute;
 		width: 26.4%;
-		height: 2vw;  /* addition for resposiveness */
-		margin-top: -17.7%;  /* with respect to .underground */
+		height: 2vw;
+		margin-top: -17.7%;
 		left: 36%;
-		line-height: 1.4vw;  /* brings the text up for mobile screen in real life */
+		line-height: 1.4vw;
 		background-size: cover;
 		overflow: hidden;
 		white-space: nowrap;
@@ -3862,13 +3831,12 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 
 	/* CHAMPIONS LEAGUE */
 	.scoreboard-UCL {
-		/* border: solid red 1px; */
 		position: absolute;
 		width: 26.4%;
-		height: 2vw;  /* addition for resposiveness */
-		margin-top: -17.7%;  /* with respect to .underground */
+		height: 2vw;
+		margin-top: -17.7%;
 		left: 36%;
-		line-height: 1.3vw;  /* brings the text up for mobile screen; the higher vw, the lower */
+		line-height: 1.3vw;
 		background-size: cover;
 		overflow: hidden;
 		white-space: nowrap;
@@ -3904,13 +3872,12 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 
 	/* FA CUP */
 	.scoreboard-FA {
-		/* border: solid red 1px; */
 		position: absolute;
 		width: 26.4%;
-		height: 2vw;  /* addition for resposiveness */
-		margin-top: -17.7%;  /* with respect to .underground */
+		height: 2vw;
+		margin-top: -17.7%;
 		left: 36%;
-		line-height: 1.3vw;  /* brings the text up for mobile screen; the higher vw, the lower */
+		line-height: 1.3vw;
 		background-size: cover;
 		overflow: hidden;
 		white-space: nowrap;
@@ -3925,19 +3892,18 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		text-shadow: 0 0 1px #fff;
 		white-space: nowrap;
 		display: flex;
-		animation: none;  /* no animation for mobile as it slows down the user experience */
+		animation: none;
 		text-align: center;
 	}
 
 	/* EFL CUP */
 	.scoreboard-EFL {
-		/* border: solid red 1px; */
 		position: absolute;
 		width: 26.4%;
-		height: 2vw;  /* addition for resposiveness */
-		margin-top: -17.7%;  /* with respect to .underground */
+		height: 2vw;
+		margin-top: -17.7%;
 		left: 36%;
-		line-height: 1.3vw;  /* brings the text up for mobile screen; the higher vw, the lower */
+		line-height: 1.3vw;
 		background-size: cover;
 		overflow: hidden;
 		white-space: nowrap;
@@ -3950,19 +3916,18 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-size: 1.3vw;
 		white-space: nowrap;
 		display: flex;
-		animation: none;  /* no animation for mobile as it slows down the user experience */
+		animation: none;
 		text-align: center;
 	}
 
 	/* EUROPA LEAGUE */
 	.scoreboard-UEL {
-		/* border: solid red 1px; */
 		position: absolute;
 		width: 26.4%;
-		height: 2vw;  /* addition for resposiveness */
-		margin-top: -17.7%;  /* with respect to .underground */
+		height: 2vw;
+		margin-top: -17.7%;
 		left: 36%;
-		line-height: 1.3vw;  /* brings the text up for mobile screen; the higher vw, the lower */
+		line-height: 1.3vw;
 		background-size: cover;
 		overflow: hidden;
 		white-space: nowrap;
@@ -3997,12 +3962,11 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e; */
 	}
 	/* ⟱ SCOREBOARD (TEAMS) ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.scoreboard-teams {  /* mobile version */
-		/* border: solid red 1px; */
+	.scoreboard-teams {
 		position: absolute;
 		width: 26.4%;
-		height: 3.4vw;  /* addition for Mozilla: to help make .scoreboard-result be exact same height as .scoreboard-teams */
-		margin-top: -16%;  /* with respect to .underground */
+		height: 3.4vw;
+		margin-top: -16%;
 		left: 36%;
 		display: flex;
 		overflow: hidden;
@@ -4018,10 +3982,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.scoreboard-result {
 		color: white;
 		position: absolute;
-		width: 6.8%;  /* space between score and .final-real1 */
-		height: 3.4vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-		line-height: 1.8vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-		margin-top: -16%;  /* with respect to .underground */
+		width: 6.8%;
+		height: 3.4vw;
+		line-height: 1.8vw;  
+		margin-top: -16%;
 		left: 55.6%;
 		display: flex;
 		overflow: hidden;
@@ -4037,18 +4001,15 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background: linear-gradient(rgba(254,29,18,0.7), rgba(254,29,18,0.7)), url(../parallax/led-black.jpg);
 		position: absolute;
 		background-size: 60% 300%;
-		/* after using "&thinsp;", the red mini-box left a space on the right that showed the background img,
-		so I put this "right:0" value to eliminate any space on that right. Answer by Garry Shutler.
-		https://stackoverflow.com/questions/65536/how-to-put-text-in-the-upper-right-or-lower-right-corner-of-a-box-using-css */
 		right: 0;
 	}
 	.scoreboard-result2 {
 		color: white;
 		position: absolute;
-		width: 6.8%;  /* space between score and .final-fair2 */
-		height: 3.4vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-		line-height: 1.8vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-		margin-top: -16%;  /* with respect to .underground */
+		width: 6.8%;
+		height: 3.4vw;
+		line-height: 1.8vw;
+		margin-top: -16%;
 		left: 55.6%;
 		display: flex;
 		overflow: hidden;
@@ -4059,16 +4020,13 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-size: 1.6vw;
 		background: transparent;
 		background-size: 150% 150%;
-		text-align: center;	 /* allows me to put the text aligned vertically */
+		text-align: center;
 	}
 	.final-fair2 {
 		color: #ffcf3e;
 		background: linear-gradient(rgba(2,131,54,0.8), rgba(2,131,54,0.8)), url(../parallax/led-black.jpg);
 		position: absolute;
 		background-size: 60% 300%;
-		/* after using "&thinsp;", the red mini-box left a space on the right that showed the background img,
-		so I put this "right:0" value to eliminate any space on that right. Answer by Garry Shutler.
-		https://stackoverflow.com/questions/65536/how-to-put-text-in-the-upper-right-or-lower-right-corner-of-a-box-using-css */
 		right: 0;
 	}
 	/* ⟰ SCOREBOARD (RESULT) ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -4079,7 +4037,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		height: 1.8vw;
 		line-height: 1.6vw;
 		left: 68.2%;
-		margin-top: -17.7%;  /* with respect to .underground */
+		margin-top: -17.7%;
 		background-size: cover;
 		display: flex;
 		overflow: hidden;
@@ -4093,23 +4051,17 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-size: 1.5vw;
 		white-space: nowrap;
 		font-weight: 100;
-		/* important value in this div to make the text occupy the entirity of the box; I was playing with text-align and display values in different divs,
-		   but I figured it out thanks to Wazeed's answer: https://stackoverflow.com/questions/10283138/center-a-div-without-knowing-the-height */
 		display: flex;
-		/* I was already aware of this carrousel animation, but knowing exactly what value to put in animation-delay was thanks to
-		   rmurph46's answer below. It's simply half of the value in animation duration but negative. I needed to know that to make long carrousels
-		   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
 		animation: animate2 80s linear infinite;
 		animation-delay: -40s;
 	}
 	/* ⟰ OT BANNERS CAROUSEL ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ CLOCK ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.clock {
-		/* border: solid red 1px; */
 		position: absolute;
 		height: 3.5vw;
-		width: 25.7%;  /* responsive: exact width so it won't exceed right margin; adjust according to screen width (@media) */
-		margin-top: -16%;  /* with respect to .underground */
+		width: 25.7%;
+		margin-top: -16%;
 		left: 68.2%;
 		display: flex;
 		overflow: hidden;
@@ -4117,55 +4069,54 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		z-index: 7;
 		font-family: Lampen;
 		font-size: 1.6vw;
-		line-height: 5.5vw;  /* should be same as height to center text top to bottom */
+		line-height: 5.5vw;
 		background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led-black.jpg);
-		/* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
-		background-size: 80% 110%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+		background-size: 80% 110%;
 		text-align: center;
 		align-items: center;
 	}
 	.clock-vertical-stripe1 {
 		width: .4%;
 		height: 3.5vw;
-		margin-top: -16%;  /* with respect to .underground */
+		margin-top: -16%;
 		left: 68.2%;
 		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+		background-size: 180% 180%;
 		position: absolute;
 		z-index: 7;
 	}
 	.clock-vertical-stripe2 {
 		width: .4%;
 		height: 3.5vw;
-		margin-top: -16%;  /* with respect to .underground */
+		margin-top: -16%;
 		left: 68.5%;
 		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+		background-size: 180% 180%;
 		position: absolute;
 		z-index: 7;
 	}
 	.clock-vertical-stripe3 {
 		width: .4%;
 		height: 3.5vw;
-		margin-top: -16%;  /* with respect to .underground */
+		margin-top: -16%;
 		left: 75.2%;
 		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+		background-size: 180% 180%;
 		position: absolute;
 		z-index: 7;
 	}
 	.clock-vertical-stripe4 {
 		width: .4%;
 		height: 3.5vw;
-		margin-top: -16%;  /* with respect to .underground */
+		margin-top: -16%;
 		left: 75.5%;
 		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+		background-size: 180% 180%;
 		position: absolute;
 		z-index: 7;
 	}
 	.republik-of-mancunia {
-		display: initial;  /* delete this when the media query for computer is done */
+		display: initial;
 		transform: translateX(62%);
 		font-size: 1.6vw;
 		letter-spacing: 2px;
@@ -4173,26 +4124,24 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	/* ⟱ IRONS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.irons {
-		/* border: solid red; */
 		position: relative;
 		object-fit: cover;
 		width: 95%;
 		left: 2.96%;
 		z-index: -2;
-		margin-top: -19%;  /* with respect to .underground */
+		margin-top: -19%;
 	}
 	/* ⟱ BRICKS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.bricks {
-		/* border: solid red 1px; */
 		position: relative;
-		margin-top: -50%;  /* with respect to header (menu) */
+		margin-top: -50%;
 		width: 200%;
 		left: -44%;
 		z-index: -3;
 	}
-	.brick-wall h1 {  /* 2023/24 (TEXT) */
+	.brick-wall h1 {
 		position: absolute;
-		margin-top: -46%;  /* with respect to header (menu) */
+		margin-top: -46%;
 		left: 25.5%;
 		background-size: cover;
 		z-index: 7;
@@ -4203,36 +4152,35 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.trophies {
 		left: -37.5%;
 		width: 180%;
-		transform: translate(-21%, -180%);  /* for any reason, this is the only way I can move this div */
+		transform: translate(-21%, -180%);
 	}
 	/* ⟱ CABLE BOXES ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#cable-box { display: none; }
 	/* ⟱ GALLERY PHOTO TEXT ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.brick-wall h2, h3, h4, h5, h6, h7 {
-		/* border: solid 1px red; */
 		position: absolute;
-		display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
-		width: 13.15%;  /* width of each text */
+		display: inline-block;
+		width: 13.15%;
 		margin-top: -9%;
 		font-family: raleway_f;
 		font-size: 1vw;
-		text-align: center;  /* centers it left to right */
+		text-align: center;
 		z-index: 2;
 	}
 	/* ⟱ GALLERY ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.blur-pc { display: none; }  /* for PC */
+	.blur-pc { display: none; }
 	.blur-mobile {
 		display: initial;
 		position: absolute;
 		width: 100%;
-		margin-top: -29%;  /* with respect to header (menu) */
+		margin-top: -29%;
 	}
 	/* ⟱ GRAY MATCH GRID SECTION ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.match-grid {
 		position: absolute;
-		display: initial;  /* overwrites code for PC */
+		display: initial;
 		margin-top: 37%;
-		left: -19%;  /* same as #match-ratings below */
+		left: -19%;
 		width: 137%;
 	}
 	/* ⟱ GALLERY PHOTO: SHOW TEXT BUTTON ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -4308,7 +4256,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	#show-gallery {
 		display: none;
-		margin-top: -20.59%;  /* with respect to header (menu) */
+		margin-top: -20.59%;
 		position: absolute;
 	}
 	/* ⟰ GALLERY PHOTO: SHOW TEXT BUTTON ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -4328,11 +4276,11 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background: url(../underground/button.png), #820202;
 		background-size: 100% 100%;
 	}
-	#button-read-text span1 { display: none; }  /* CLICK TO READ TEXT */
-	#button-read-text span2 { display: initial; }  /* TAP TO READ TEXT */
+	#button-read-text span1 { display: none; }
+	#button-read-text span2 { display: initial; }
 	#show-expectations {
 		display: none;
-		margin-top: -6%;  /* with respect to header (menu) */
+		margin-top: -6%;
 		position: absolute;
 	}
 	/* ⟱ LEGEND TO THE MATCH RATINGS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -4345,16 +4293,13 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		left: 20.3%;
 		width: 2.5%;
-		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#e61b22, #9d0e16);
 		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16,
 						   0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 5px #9d0e16,
 						   0 0 50px #9d0e16;
 		font-family: Century Gothic;
 		font-size: 1.3vw;
-		/* allows me to put the text aligned vertically */
 		text-align: center;
-		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
 		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
@@ -4362,16 +4307,13 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		left: 25.8%;
 		width: 2.5%;
-		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#eb6121, #9a360a);
 		box-shadow: 0 0 5px #9a360a, 0 0 5px #9a360a, 0 0 15px #9a360a, 0 0 5px #9a360a,
 						   0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 5px #9a360a,
 						   0 0 50px #9a360a;
 		font-family: Century Gothic;
 		font-size: 1.3vw;
-		/* allows me to put the text aligned vertically */
 		text-align: center;
-		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
 		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
@@ -4379,16 +4321,13 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		left: 31.3%;
 		width: 2.5%;
-		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#fcc00d, #997000);
 		box-shadow: 0 0 5px #997000, 0 0 5px #997000, 0 0 15px #997000, 0 0 5px #997000,
 						   0 0 25px #997000, 0 0 25px #997000, 0 0 25px #997000, 0 0 5px #997000,
 						   0 0 50px #997000;
 		font-family: Century Gothic;
 		font-size: 1.3vw;
-		/* allows me to put the text aligned vertically */
 		text-align: center;
-		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
 		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
@@ -4396,16 +4335,13 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		left: 36.8%;
 		width: 2.5%;
-		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#c5b700, #7f7501);
 		box-shadow: 0 0 5px #7f7501, 0 0 5px #7f7501, 0 0 15px #7f7501, 0 0 5px #7f7501,
 						   0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 5px #7f7501,
 						   0 0 50px #7f7501;
 		font-family: Century Gothic;
 		font-size: 1.3vw;
-		/* allows me to put the text aligned vertically */
 		text-align: center;
-		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
 		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
@@ -4413,16 +4349,13 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		left: 42.3%;
 		width: 2.5%;
-		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#88c03c, #4a681f);
 		box-shadow: 0 0 5px #4a681f, 0 0 5px #4a681f, 0 0 15px #4a681f, 0 0 5px #4a681f,
 						   0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 5px #4a681f,
 						   0 0 50px #4a681f;
 		font-family: Century Gothic;
 		font-size: 1.3vw;
-		/* allows me to put the text aligned vertically */
 		text-align: center;
-		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
 		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
@@ -4430,16 +4363,13 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		left: 47.8%;
 		width: 2.5%;
-		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#47813d, #2b4c24);
 		box-shadow: 0 0 5px #2b4c24, 0 0 5px #2b4c24, 0 0 15px #2b4c24, 0 0 5px #2b4c24,
 						   0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 5px #2b4c24,
 						   0 0 50px #2b4c24;
 		font-family: Century Gothic;
 		font-size: 1.3vw;
-		/* allows me to put the text aligned vertically */
 		text-align: center;
-		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
 		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
@@ -4447,21 +4377,17 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		left: 53.3%;
 		width: 2.5%;
-		/* radial gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient */
 		background: radial-gradient(#009f4d, #015326);
 		box-shadow: 0 0 5px #015326, 0 0 5px #015326, 0 0 15px #015326, 0 0 5px #015326,
 						   0 0 25px #015326, 0 0 25px #015326, 0 0 25px #015326, 0 0 5px #015326,
 						   0 0 50px #015326;
 		font-family: Century Gothic;
 		font-size: 1.3vw;
-		/* allows me to put the text aligned vertically */
 		text-align: center;
-		/* allows me to put the text aligned horizontally // nonopolarity's answer: https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block */
 		line-height: 2.2vw;
 		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	.legend-7 span {
-		/* border: solid red 1px; */
 		text-align: left;
 		position: absolute;
 		width: 700%;
@@ -4476,12 +4402,11 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-size: 1.3vw;
 		color: white;
 		line-height: 2.1vw;
-		/* diagonal line inside square // Nitheesh's answer: https://stackoverflow.com/questions/60388805/make-diagonal-line-for-div-square */
 		border: 1px solid #404040;
 		background: linear-gradient(to bottom right, #262626 calc(50% - 3px),  #404040 calc(50% - 1px), #262626 50%, #262626 50%);
 	}
-	#first-half { transform: translate(9%, 5%); }  /* 1H */
-	#second-half { transform: translate(48%, 0%); }  /*2H */
+	#first-half { transform: translate(9%, 5%); }
+	#second-half { transform: translate(48%, 0%); }
 	/* ⟰ LEGEND TO THE MATCH RATINGS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ SCORE & RATINGS: BUTTON ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#button-ratings {
@@ -4505,31 +4430,29 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background-size: 100% 100%;
 		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
 	}
-	#button-ratings span1 { display: none; }  /* CLICK TO REVEAL SCORES... */
-	#button-ratings span2 { display: initial; }  /* TAP TO REVEAL SCORES */
+	#button-ratings span1 { display: none; }
+	#button-ratings span2 { display: initial; }
 	/* ⟱ DATE, FIXTURE AND RESULT ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.date-and-result h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {  /*1st row */
-		/* border: solid 1px red; */
 		position: absolute;
-		display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
-		width: 9.8%;  /* width of each text */
+		display: inline-block;
+		width: 9.8%;
 		margin-top: 13.32%;
 		font-family: Century Gothic;
 		color: white;
 		font-size: 1.3vw;
-		text-align: center;  /* centers it left to right */
-		padding-top: 2.7%;  /* distance between the top of the box and text */
+		text-align: center;
+		padding-top: 2.7%;
 		z-index: 4;
 	}
 	.date-and-result h18, h19, h20, h21, h22, h23, h24, h25, h26, h27 {  /*2nd row */
-		/* border: solid 1px red; */
 		position: absolute;
-		display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
-		width: 9.8%;  /* width of each text */
+		display: inline-block;
+		width: 9.8%;
 		margin-top: 20.9%;
 		font-family: Century Gothic;
 		font-size: 1.3vw;
-		text-align: center;  /* centers it left to right */
+		text-align: center;
 		padding-top: 2.7%;
 		z-index: 4;
 	}
@@ -4571,8 +4494,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	#match-ratings {
 		display: none;
 		position: absolute;
-		margin-top: .5%;  /* with respect to header (menu) */
-		left: -19%;  /* same as .match-grid above */
+		margin-top: .5%;
+		left: -19%;
 		width: 137%;
 	}
 	/* ⟱ CUBOID HOLDERS ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -4584,7 +4507,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.vertical-neon-signs { display: none; }
 	/* ⟱ DROPDOWNS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdowns-section {
-		position: relative;  /* responsive: 'relative' to eliminate overflow excess x-wise on mobile */
+		position: relative;
 		margin-top: 110%;
 		margin-left: -29.5vw;
 		height: 150vw;
@@ -4592,19 +4515,17 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	.dropdown_list:has( :checked ) {
 		--rows: 1fr;
-		/* addition to make SEE and HIDE toggle */
 		--open-display: none;
 		--close-display: inline-block;
-		/* addition for the links */
 		--links-display: flex;
-		--spins-display: none !important;  /* overwrites code for PC; not necessary, but in case it helps in browsing speed for mobile */
+		--spins-display: none !important;
 	}
 	.open {
-		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
+		position: absolute;
 		font-family: Trueno Round Italic;
 		font-size: 1.8vw;
 		letter-spacing: .05vw;
-		margin-top: 8%;  /* the higher, the lower */
+		margin-top: 8%;
 		left: 49.5%;
 		color: #a8ddbe;
 		text-shadow: 0 0 10px #da020e, 0 0 10px #da020e,
@@ -4612,16 +4533,14 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 40px #da020e,
 						   0 0 80px #da020e,
 						   0 0 120px #da020e;
-		/* I learned how to make custom properties (variable) for 'display'
-			 https://www.reddit.com/r/css/comments/t2zcot/can_css_variables_custom_properties_be_used_to/ */
 		display: var(--open-display) !important;
 	}
 	.open2 {
-		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
+		position: absolute;
 		font-family: Trueno Round Italic;
 		font-size: 1.8vw;
 		letter-spacing: .05vw;
-		margin-top: 8%;  /* the higher, the lower */
+		margin-top: 8%;
 		left: 47%;
 		color: #f8cccf;
 		text-shadow: 0 0 10px #028336, 0 0 10px #028336, 0 0 10px #028336,
@@ -4630,16 +4549,14 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 80px #028336,
 						   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
 						   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
-		/* I learned how to make custom properties (variable) for 'display'
-			 https://www.reddit.com/r/css/comments/t2zcot/can_css_variables_custom_properties_be_used_to/ */
 		display: var(--open-display) !important;
 	}
 	.close {
-		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
+		position: absolute;
 		font-family: Trueno Round Italic;
 		font-size: 1.8vw;
 		letter-spacing: .05vw;
-		margin-top: 8%;  /* the higher, the lower */
+		margin-top: 8%;
 		left: 69%;
 		color: #fff;
 		text-shadow: 0 0 10px #fff,
@@ -4648,15 +4565,14 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 80px #fff,
 						   0 0 120px #fff,
 						   0 0 160px #fff;
-		/* inspired by another custom property (variable), I added "none" to make "HIDE" not visible when the checkbox is unchecked. */
 		display: var(--close-display, none) !important;
 	}
 	.close2 {
-		position: absolute; /* responsiveness: makes location accurate on mobile, maybe on PC(?) */
+		position: absolute;
 		font-family: Trueno Round Italic;
 		font-size: 1.8vw;
 		letter-spacing: .05vw;
-		margin-top: 8%;  /* the higher, the lower */
+		margin-top: 8%;
 		left: 71.5%;
 		color: white;
 		text-shadow: 0 0 10px #ffcf3e,
@@ -4665,15 +4581,14 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 80px #ffcf3e,
 						   0 0 120px #ffcf3e,
 						   0 0 160px #ffcf3e;
-		/* inspired by another custom property (variable), I added "none" to make "HIDE" not visible when the checkbox is unchecked. */
 		display: var(--close-display, none) !important;
 	}
 	.hide-PL {
 		position: absolute;
 		background: url(../underground/hide-PL.png);
 		background-size: 100%;
-		font-family: 'Courier New', Courier, monospace;	 /* to control image size, I need these font values */
-		font-size: 6.8vw; 	/* to control image size, I need these font values */
+		font-family: 'Courier New', Courier, monospace;
+		font-size: 6.8vw;
 		top: 29.7%;
 		left: 57.34%;
 		display: var(--close-display, none) !important;
@@ -4682,8 +4597,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		background: url(/underground/hide-UCL.png);
 		background-size: 100%;
-		font-family: 'Courier New', Courier, monospace;	 /* to control image size, I need these font values */
-		font-size: 6.8vw; 	/* to control image size, I need these font values */
+		font-family: 'Courier New', Courier, monospace;
+		font-size: 6.8vw;
 		top: 29.7%;
 		left: 57.34%;
 		display: var(--close-display, none) !important;
@@ -4692,8 +4607,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		background: url(/underground/hide-FA.png);
 		background-size: 100%;
-		font-family: 'Courier New', Courier, monospace;	 /* to control image size, I need these font values */
-		font-size: 6.8vw; 	/* to control image size, I need these font values */
+		font-family: 'Courier New', Courier, monospace;
+		font-size: 6.8vw;
 		top: 29.7%;
 		left: 57.34%;
 		display: var(--close-display, none) !important;
@@ -4702,8 +4617,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		background: url(../underground/hide-EFL.png);
 		background-size: 100%;
-		font-family: 'Courier New', Courier, monospace;	 /* to control image size, I need these font values */
-		font-size: 6.8vw; 	/* to control image size, I need these font values */
+		font-family: 'Courier New', Courier, monospace;	
+		font-size: 6.8vw;
 		top: 29.7%;
 		left: 57.34%;
 		display: var(--close-display, none) !important;
@@ -4712,15 +4627,14 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		position: absolute;
 		background: url(../underground/hide-UEL.png);
 		background-size: 100%;
-		font-family: 'Courier New', Courier, monospace;	 /* to control image size, I need these font values */
-		font-size: 6.8vw; 	/* to control image size, I need these font values */
+		font-family: 'Courier New', Courier, monospace;	
+		font-size: 6.8vw;
 		top: 29.7%;
 		left: 57.34%;
 		display: var(--close-display, none) !important;
 	}
 	.link1 {
-		/* border: solid 1px red; */
-		opacity: 1;  /* it's best to make the link visible from here; opacity: 1 */
+		opacity: 1;
 		position: absolute;
 		font-family: Agency FB;
 		font-size: 2.1vw;
@@ -4728,20 +4642,20 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		margin-left: 51.1%;
 		display: var(--links-display, none) !important;
 	}
-	.dropdown-content {  /* for Tranfers, 23/24 Stats, Player Performance, Player Stats */
-		width: 122%;  /* has to coincide with width in background-image under .dropdown-transfers below */
+	.dropdown-content {
+		width: 122%;
 		height: 100%;
 	}
 	.content-match {
-		width: 116.3%;  /* has to coincide with width in background-image under .dropdown-1st-match below */
+		width: 116.3%;
 		height: 100%;
 	}
-	.content-match1 {  /* for 'historical' and 'threat' */
+	.content-match1 {
 		margin-top: -.7%;
-		width: 116.3%;  /* has to coincide with width in background-image under .dropdown-1st-match below */
+		width: 116.3%;
 		height: 100%;
 	}
-	.content-match2 {  /* for Sofascore and other stats */
+	.content-match2 {
 		margin-top: -.2%;
 		width: 116.3%;
 		height: 100%;
@@ -4749,11 +4663,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	/* ⟰ DROPDOWNS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ TRANSFERS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdown-transfers {
-		/* border: solid red 1px; */
 		background-image: url(../underground/transfers.png);
-		background-size: 122% 100%;  /* width and height  // also, width has to coincide with width under .dropdown-content above */
+		background-size: 122% 100%;
 		color: white;
-		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		padding: 7.2vw;
 		text-decoration: none;
 		display: flex;
 		align-items: center;
@@ -4772,7 +4685,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 160px #13b48a;
 		transform: translate(248%, -10%);
 		margin-right: 20%;
-		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
 		pointer-events: none;
 	}
 	.transfers-title span1 {
@@ -4781,11 +4693,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	/* ⟱ STATS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdown-stats {
-		/* border: solid 1px red; */
 		background-image: url(../underground/stats.png);
 		background-size: 122% 100%;
 		color: white;
-		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		padding: 7.2vw;
 		text-decoration: none;
 		display: flex;
 		align-items: center;
@@ -4803,7 +4714,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 120px #da020e;
 		margin-top: 1%;
 		left: 64%;
-		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
 		pointer-events: none;
 	}
 	.stats-title span1 {
@@ -4820,11 +4730,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	/* ⟱ PLAYER PERFORMANCE ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdown-player-performance {
-		/* border: solid 1px red; */
 		background-image: url(../underground/player-perf.png);
 		background-size: 122% 100%;
 		color: white;
-		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		padding: 7.2vw;
 		text-decoration: none;
 		display: flex;
 		align-items: center;
@@ -4845,7 +4754,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 160px #d821c3;
 		margin-top: 1%;
 		left: 53%;
-		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
 		pointer-events: none;
 	}
 	.player-performance-title span1 {
@@ -4853,11 +4761,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	/* ⟱ PLAYER STATS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdown-player-stats {
-		/* border: solid 1px red; */
 		background-image: url(../underground/player-stats.png);
 		background-size: 122% 100%;
 		color: white;
-		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		padding: 7.2vw;
 		text-decoration: none;
 		display: flex;
 		align-items: center;
@@ -4876,97 +4783,88 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 160px #17347a, 0 0 160px #17347a;
 		margin-right: 20%;
 		left: 52.5%;
-		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
 		pointer-events: none;
 	}
 	/* ⟱ TRANSITION BUFFER ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.space-transition {
-		/* border: solid 1px red; */
 		background-image: url(../underground/transition.png);
 		background-size: 122% 100%;
 		color: white;
-		padding: 7.2vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		padding: 7.2vw;
 		text-decoration: none;
 		display: flex;
 		align-items: center;
 		position: relative;
 	}
 	/* ⟱ PRESEASON, MATCHES, INTERNATIONAL BREAK ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	[itemid="dropdown-matches"] { /* moves all match dropdowns as well as preseason */
+	[itemid="dropdown-matches"] {
 		margin-left: -5vw;
 	}
 	.dropdown-preseason {
-		/* border: solid 1px red; */
 		background-image: url(../underground/pre-season.png);
-		background-size: 116.3% 100%;  /* width and height  // also, width has to coincide with width under .content-match and .content-match1 above */
+		background-size: 116.3% 100%;
 		color: white;
-		padding: 6.3vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		padding: 6.3vw;
 		text-decoration: none;
 		display: flex;
 		align-items: center;
 		position: relative;
 	}
 	.dropdown-1st-match {
-		/* border: solid 1px red; */
 		background-image: url(../underground/1st-match.png);
-		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .content-match above, and #cover1-score */
+		background-size: 116.3% 115%;
 		color: white;
-		padding: 6.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		padding: 6.5vw;
 		text-decoration: none;
 		display: flex;
 		align-items: center;
 		position: relative;
 	}
 	.dropdown-2nd-match {
-		/* border: solid 1px red; */
 		background-image: url(../underground/2nd-match.png);
-		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .content-match above */
+		background-size: 116.3% 115%;
 		color: white;
-		padding: 6.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		padding: 6.5vw;
 		text-decoration: none;
 		display: flex;
 		align-items: center;
 		position: relative;
 	}
 	.dropdown-3rd-match {
-		/* border: solid 1px red; */
 		background-image: url(../underground/3rd-match.png);
-		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .content-match above */
+		background-size: 116.3% 115%;
 		color: white;
-		padding: 6.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		padding: 6.5vw;
 		text-decoration: none;
 		display: flex;
 		align-items: center;
 		position: relative;
 	}
 	.dropdown-4th-match {
-		/* border: solid 1px red; */
 		background-image: url(../underground/4th-match.png);
-		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .content-match above */
+		background-size: 116.3% 115%;
 		color: white;
-		padding: 6.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		padding: 6.5vw;
 		text-decoration: none;
 		display: flex;
 		align-items: center;
 		position: relative;
 	}
 	.dropdown-35th-match {
-		/* border: solid 1px red; */
 		background-image: url(../underground/35th-match.png);
-		background-size: 116.3% 115%;  /* width and height  // also, width has to coincide with width under .content-match above */
+		background-size: 116.3% 115%;
 		color: white;
-		padding: 6.5vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		padding: 6.5vw;
 		text-decoration: none;
 		display: flex;
 		align-items: center;
 		position: relative;
 	}
 	.space-international-break {
-		/* border: solid 1px red; */
 		background-image: url(../underground/break.png);
 		background-size: 120% 100%;
 		color: white;
-		padding: 1.137vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		padding: 1.137vw;
 		text-decoration: none;
 		display: flex;
 		align-items: center;
@@ -4989,12 +4887,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-family: Trueno Round Italic;
 		font-size: 1.7vw;
 		white-space: nowrap;
-		/* important value in this div to make the text occupy the entirity of the box; I was playing with text-align and display values in different divs,
-		   but I figured it out thanks to Wazeed's answer: https://stackoverflow.com/questions/10283138/center-a-div-without-knowing-the-height */
 		display: flex;
-		/* I was already aware of this carrousel animation, but knowing exactly what value to put in animation-delay was thanks to
-		   rmurph46's answer below. It's simply half of the value in animation duration but negative. I needed to know that to make long carrousels
-		   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
 		animation: animate2 40s linear infinite;
 		animation-delay: -20s;
 	}
@@ -5014,28 +4907,17 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		white-space: nowrap;
 		pointer-events: none;
 		z-index: -1;
-		/* the transform:skewY value was found here: https://www.youtube.com/watch?v=Wg7jJhzWNq8&list=PL5e68lK9hEzdGazIG1ONnb7TJ74Q69rH7&index=101
-		   I found out how to use rotate3d here (Ctrl+F5 search .rotated): https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d */
 		transform: skewY(-8.5deg) rotate3d(0, 1, 0, 70deg);
 	}
 	.pre-match-skew .news-skew {
 		display: flex;
-		/* after trial and error, I decided to simply put this value inspired by the vid below. This value helps the content coincide.
-		   timestamp 4:47 https://www.youtube.com/watch?v=Wg7jJhzWNq8&list=PL5e68lK9hEzdGazIG1ONnb7TJ74Q69rH7&index=100 */
-		/* margin-left: 19px with skewY(10deg) only, without rotate3d */
-		/* margin-left: -266px; */
 		margin-left: -280%;
 	}
 	.pre-match-skew .news-skew div {
 		font-family: Trueno Round Italic;
 		font-size: 1.7vw;
 		white-space: nowrap;
-		/* important value in this div to make the text occupy the entirity of the box; I was playing with text-align and display values in different divs,
-		   but I figured it out thanks to Wazeed's answer: https://stackoverflow.com/questions/10283138/center-a-div-without-knowing-the-height */
 		display: flex;
-		/* I was already aware of this carrousel animation, but knowing exactly what value to put in animation-delay was thanks to
-		   rmurph46's answer below. It's simply half of the value in animation duration but negative. I needed to know that to make long carrousels
-		   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
 		animation: animate2 40s linear infinite;
 		animation-delay: -20s;
 	}
@@ -5060,12 +4942,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-family: Trueno Round Italic;
 		font-size: 1.7vw;
 		white-space: nowrap;
-		/* important value in this div to make the text occupy the entirity of the box; I was playing with text-align and display values in different divs,
-		   but I figured it out thanks to Wazeed's answer: https://stackoverflow.com/questions/10283138/center-a-div-without-knowing-the-height */
 		display: flex;
-		/* I was already aware of this carrousel animation, but knowing exactly what value to put in animation-delay was thanks to
-		   rmurph46's answer below. It's simply half of the value in animation duration but negative. I needed to know that to make long carrousels
-		   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
 		animation: animate2 40s linear infinite;
 		animation-delay: -20s;
 	}
@@ -5086,20 +4963,13 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		white-space: nowrap;
 		pointer-events: none;
 		z-index: -1;
-		/* the transform:skewY value was found here: https://www.youtube.com/watch?v=Wg7jJhzWNq8&list=PL5e68lK9hEzdGazIG1ONnb7TJ74Q69rH7&index=101
-		   I found out how to use rotate3d here (Ctrl+F5 search .rotated): https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d */
 		transform: skewY(8.5deg) rotate3d(0, 1, 0, 70deg);
 	}
 	.post-match-skew .news-skew div {
 		font-family: Trueno Round Italic;
 		font-size: 1.7vw;
 		white-space: nowrap;
-		/* important value in this div to make the text occupy the entirity of the box; I was playing with text-align and display values in different divs,
-		   but I figured it out thanks to Wazeed's answer: https://stackoverflow.com/questions/10283138/center-a-div-without-knowing-the-height */
 		display: flex;
-		/* I was already aware of this carrousel animation, but knowing exactly what value to put in animation-delay was thanks to
-		   rmurph46's answer below. It's simply half of the value in animation duration but negative. I needed to know that to make long carrousels
-		   https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break */
 		animation: animate2 40s linear infinite;
 		animation-delay: -20s;
 	}
@@ -5109,20 +4979,18 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	/* 	⟱ BUTTON: SHOW SCORE AND NEWS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* MATCH 1 */
-	#button-score-news1 h60 { display: none; }  /* CLICK FOR... */
-	#button-score-news1 h61 { display: initial; }  /* TAP FOR... */
+	#button-score-news1 h60 { display: none; }
+	#button-score-news1 h61 { display: initial; }
 	#cover1-score {
-		/* border: solid 1px green; */
 		position: absolute;
-		width: 116.3%;  /* same as background-size:116.3% under .dropdown-1st-match above */
+		width: 116.3%;
 		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#cover1-news {
-		/* border: solid 1px green; */
 		position: absolute;
-		width: 116.3%;  /* same as background-size:116.3% under .dropdown-1st-match above */
+		width: 116.3%;
 		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
@@ -5135,30 +5003,28 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;  /* changed it from 1vw to auto for Mozilla 'cuz the text shows cut off at the bottom as the box (button) is too small */
-		line-height: 1.7vw;  /* addition for Mozilla 'cuz the text shows cut off at the bottom as the box (button) is too small */
+		height: auto;
+		line-height: 1.7vw;
 		font-family: Lampen;
 		font-size: 1.75vw;
 		color: white;
 		background: #262626;
-		overflow: hidden;  /* for animation: hides each child outside the button */
+		overflow: hidden;
 	}
 
 	/* MATCH 2 */
-	#button-score-news2 h60 { display: none; }  /* CLICK FOR... */
-	#button-score-news2 h61 { display: initial; }  /* TAP FOR... */
+	#button-score-news2 h60 { display: none; }
+	#button-score-news2 h61 { display: initial; }
 	#cover2-score {
-		/* border: solid 1px green; */
 		position: absolute;
-		width: 116.3%;  /* same as background-size:116.3% under .dropdown-1st-match above */
+		width: 116.3%;
 		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#cover2-news {
-		/* border: solid 1px green; */
 		position: absolute;
-		width: 116.3%;  /* same as background-size:116.3% under .dropdown-1st-match above */
+		width: 116.3%;
 		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
@@ -5171,30 +5037,28 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;  /* changed it from 1vw to auto for Mozilla 'cuz the text shows cut off at the bottom as the box (button) is too small */
-		line-height: 1.7vw;  /* addition for Mozilla 'cuz the text shows cut off at the bottom as the box (button) is too small */
+		height: auto;
+		line-height: 1.7vw;
 		font-family: Lampen;
 		font-size: 1.75vw;
 		color: white;
 		background: #262626;
-		overflow: hidden;  /* for animation: hides each child outside the button */
+		overflow: hidden;
 	}
 
 	/* MATCH 3 */
-	#button-score-news3 h60 { display: none; }  /* CLICK FOR... */
-	#button-score-news3 h61 { display: initial; }  /* TAP FOR... */
+	#button-score-news3 h60 { display: none; } 
+	#button-score-news3 h61 { display: initial; }
 	#cover3-score {
-		/* border: solid 1px green; */
 		position: absolute;
-		width: 116.3%;  /* same as background-size:116.3% under .dropdown-1st-match above */
+		width: 116.3%;
 		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#cover3-news {
-		/* border: solid 1px green; */
 		position: absolute;
-		width: 116.3%;  /* same as background-size:116.3% under .dropdown-1st-match above */
+		width: 116.3%;
 		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
@@ -5207,30 +5071,28 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;  /* changed it from 1vw to auto for Mozilla 'cuz the text shows cut off at the bottom as the box (button) is too small */
-		line-height: 1.7vw;  /* addition for Mozilla 'cuz the text shows cut off at the bottom as the box (button) is too small */
+		height: auto;
+		line-height: 1.7vw;
 		font-family: Lampen;
 		font-size: 1.75vw;
 		color: white;
 		background: #262626;
-		overflow: hidden;  /* for animation: hides each child outside the button */
+		overflow: hidden;
 	}
 
 	/* MATCH 4 */
-	#button-score-news4 h60 { display: none; }  /* CLICK FOR... */
-	#button-score-news4 h61 { display: initial; }  /* TAP FOR... */
+	#button-score-news4 h60 { display: none; }
+	#button-score-news4 h61 { display: initial; }
 	#cover4-score {
-		/* border: solid 1px green; */
 		position: absolute;
-		width: 116.3%;  /* same as background-size:116.3% under .dropdown-1st-match above */
+		width: 116.3%;
 		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#cover4-news {
-		/* border: solid 1px green; */
 		position: absolute;
-		width: 116.3%;  /* same as background-size:116.3% under .dropdown-1st-match above */
+		width: 116.3%;
 		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
@@ -5243,30 +5105,28 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;  /* changed it from 1vw to auto for Mozilla 'cuz the text shows cut off at the bottom as the box (button) is too small */
-		line-height: 1.7vw;  /* addition for Mozilla 'cuz the text shows cut off at the bottom as the box (button) is too small */
+		height: auto;
+		line-height: 1.7vw;
 		font-family: Lampen;
 		font-size: 1.75vw;
 		color: white;
 		background: #262626;
-		overflow: hidden;  /* for animation: hides each child outside the button */
+		overflow: hidden;
 	}
 
 	/* MATCH 35 */
-	#button-score-news35 h60 { display: none; }  /* CLICK FOR... */
-	#button-score-news35 h61 { display: initial; }  /* TAP FOR... */
+	#button-score-news35 h60 { display: none; }
+	#button-score-news35 h61 { display: initial; }
 	#cover35-score {
-		/* border: solid 1px green; */
 		position: absolute;
-		width: 116.3%;  /* same as background-size:116.3% under .dropdown-1st-match above */
+		width: 116.3%;
 		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#cover35-news {
-		/* border: solid 1px green; */
 		position: absolute;
-		width: 116.3%;  /* same as background-size:116.3% under .dropdown-1st-match above */
+		width: 116.3%;
 		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
@@ -5279,18 +5139,17 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;  /* changed it from 1vw to auto for Mozilla 'cuz the text shows cut off at the bottom as the box (button) is too small */
-		line-height: 1.7vw;  /* addition for Mozilla 'cuz the text shows cut off at the bottom as the box (button) is too small */
+		height: auto;
+		line-height: 1.7vw;
 		font-family: Lampen;
 		font-size: 1.75vw;
 		color: white;
 		background: #262626;
-		overflow: hidden;  /* for animation: hides each child outside the button */
+		overflow: hidden;
 	}
 	/* 	⟰ BUTTON: SHOW SCORE AND NEWS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* 	⟱ DATE | TIME | COMPETITION STAGE ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	.date-time {
-		/* border: solid 1px red; */
 		position: absolute;
 		width: 18%;
 		top: 86.6%;
@@ -5302,8 +5161,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	/* 	⟱ BUTTON: SHOW MATCH STATS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* MATCH 1 */
-	#button-stats1 h70 { display: none; }  /* CLICK HERE FOR */
-	#button-stats1 h71 { display: initial; }  /* TAP HERE FOR... */
+	#button-stats1 h70 { display: none; }
+	#button-stats1 h71 { display: initial; }
 	#button-stats1 {
 		border: none;
 		position: relative;
@@ -5335,8 +5194,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	#button-stats1:hover h71 { color: rgb(211, 208, 208); }
 
 	/* MATCH 2 */
-	#button-stats2 h70 { display: none; }  /* CLICK HERE FOR */
-	#button-stats2 h71 { display: initial; }  /* TAP HERE FOR... */
+	#button-stats2 h70 { display: none; }
+	#button-stats2 h71 { display: initial; }
 	#button-stats2 {
 		border: none;
 		position: relative;
@@ -5368,8 +5227,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	#button-stats2:hover h71 { color: rgb(211, 208, 208); }
 
 	/* MATCH 3 */
-	#button-stats3 h70 { display: none; }  /* CLICK HERE FOR */
-	#button-stats3 h71 { display: initial; }  /* TAP HERE FOR... */
+	#button-stats3 h70 { display: none; }  
+	#button-stats3 h71 { display: initial; }
 	#button-stats3 {
 		border: none;
 		position: relative;
@@ -5401,8 +5260,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	#button-stats3:hover h71 { color: rgb(211, 208, 208); }
 
 	/* MATCH 4 */
-	#button-stats4 h70 { display: none; }  /* CLICK HERE FOR */
-	#button-stats4 h71 { display: initial; }  /* TAP HERE FOR... */
+	#button-stats4 h70 { display: none; }
+	#button-stats4 h71 { display: initial; }
 	#button-stats4 {
 		border: none;
 		position: relative;
@@ -5434,8 +5293,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	#button-stats4:hover h71 { color: rgb(211, 208, 208); }
 
 	/* MATCH 35 */
-	#button-stats35 h70 { display: none; }  /* CLICK HERE FOR */
-	#button-stats35 h71 { display: initial; }  /* TAP HERE FOR... */
+	#button-stats35 h70 { display: none; }
+	#button-stats35 h71 { display: initial; }
 	#button-stats35 {
 		border: none;
 		position: relative;
@@ -5467,17 +5326,14 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	#button-stats35:hover h71 { color: rgb(211, 208, 208); }
 	/* 	⟰ BUTTON: SHOW MATCH STATS ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* ⟱ BADGE-SPONSOR SPIN ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.badges-and-sponsors { display: none !important; }  /* for PC */
+	.badges-and-sponsors { display: none !important; }
 	/* ⟱ BOTTOM ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.bottom {
-		/* border: solid 1px red; */
 		left: 22%;
 		background-image: url(../underground/bottom.png);
 		background-repeat: no-repeat;
-		background-size: 100.15% 117.7%;  /* don't modify this, only padding if you want the img larger or smaller */
+		background-size: 100.15% 117.7%;
 		color: white;
-		/* increase the padding to increase the height of container //
-		   the code from the tutorial had 'padding: 1em .6em' , the latter value (.6em) is the space between text and left screen border */
 		padding: 40%;
 		text-decoration: none;
 		display: flex;
@@ -5509,7 +5365,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.OT-banners-bottom {
 		position: absolute;
 		height: 1.3vw;
-		line-height: 1.5vw;  /* responsive: center text top to bottom; this time, same as height didn't work */
+		line-height: 1.5vw;
 		left: 0;
 		margin-top: 55%;
 		background: white;
@@ -5520,19 +5376,17 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	/* ⟱ idierco@gmail.com CONTACT ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.email-cursor-text {
-		/* border: solid 1px red; */
 		position: absolute;
 		font-family: Poppins Regular;
 		font-size: 1.2vw;
 		color: #a6a6a6;
 		left: 31.3%;
 		margin-top: 57.86%;
-		padding: .3vw;  /* to increase cursor margin for mouse (cursor:text) */
+		padding: .3vw;
 		cursor: text;
 	}
 	/* ⟱ DONATION LINKS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.buymeacoffee {
-		/* border: solid 1px rgb(216, 216, 59); */
 		position: absolute;
 		margin-top: 57.5%;
 		left: 89.8%;
@@ -5540,7 +5394,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		height: 2.9vw;
 	}
 	.patreon {
-		/* border: solid 1px orangered; */
 		position: absolute;
 		margin-top: 59.7%;
 		left: 92.5%;
@@ -5548,7 +5401,6 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		height: 2vw;
 	}
 	.paypal {
-		/* border: solid 1px blue; */
 		position: absolute;
 		margin-top: 61.3%;
 		left: 93.3%;
@@ -5561,29 +5413,28 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 
 /* TABLET: SMALLER SCREEN  🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛       */
 @media only screen and (max-width: 830px) {  /* TABLET: SMALLER SCREEN ⬛ */
-    html, body {  /* responsiveness */
+    html, body {
 		position: relative;
 		overflow-x: hidden;
 		background-color: dark;
-		min-width: auto;  /* overwrites min-width for desktop */
-		z-index: -3;  /* addition to make .underground-small and .bricks show */
+		min-width: auto;
+		z-index: -3;
 	}
 	/* ⟱ SKY, FLAG, TITLE ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.parallax-home {
-		/* border: solid red 1px; */
 		position: relative;
-		display: table;  /* for Mozilla // original was display:flex, which merges the sky and .ground in one image */
+		display: table;
 		text-align: center;
 	}
 	.parallax-home img {
-		position: relative;  /* allows me to move the sky, and not the text */
-		width: 130%;  /* how big the sky and ground are */
-		left: -20%;  /* moves the sky and ground to the left */
+		position: relative;
+		width: 130%;
+		left: -20%;
 	}
 	#flag-mobile {
-		display: initial;  /* overwrites display:none for PC */
+		display: initial;
 		position: absolute;
-		margin-top: -43%;  /* for Mozilla // original was margin-top:20% */
+		margin-top: -43%;
 		left: 7.5%;
 		width: 80%;
 		transform: rotate(-15deg);
@@ -5591,10 +5442,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	#flag-pc { display: none; }
 	.title {
-		/* border: solid red 1px; */
 		position: absolute;
-		margin-top: -18.5%;  /* for Mozilla // original was margin-top:52% */
-		width: 100%;  /* to cover the width of the screen */
+		margin-top: -18.5%;
+		width: 100%;
 	}
 	.title h1 {
 		color: transparent;
@@ -5636,10 +5486,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.zeppelin-led {
 		position: absolute;
 		box-sizing: content-box;
-		/* background-color: red; */
 		background-color: transparent;
 		text-align: center;
-		padding: 0% .2%;  /* border margin */
+		padding: 0% .2%;
 		top: 0;
 		left: 0;
 		height: 5.2%;
@@ -5658,42 +5507,37 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	/* ⟰ LED SIGN ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ UNDERGROUND SUPPORT ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.underground-large { display: none; }  /* for PC */
+	.underground-large { display: none; }
     .underground-small {
-		display: initial;  /* overwrites display:none for PC */
+		display: initial;
 		width: 250%;
 	}
 	/* ⟱ SELECT SEASON ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.select-season {
-		/* border: solid red 1px; */
 		position: absolute;
-		margin-top: -29%;  /* with respect to .underground */
-		margin-left: 2vw;  /* moves everything to the left/right */
+		margin-top: -29%;  
+		margin-left: 2vw;
 		z-index: 8;
 		width: 20vw;
-		height: 8vw;  /* addition to actually see this div container border lines */
+		height: 8vw;
 	}
 	.dropdown-season {
-		/* border: solid red 1px; */
-		width: 85%;  /* addition to reduce cursor:pointer clickability away from the title */
-		position: absolute;  /* for any reason, without this, Mozilla renders .select-season a bit more to the left */
+		width: 85%;
+		position: absolute;
 	}
 	.checkbox-size {
-		/* border: solid 1px red; */
 		color: white;
-		padding: 3vw;  /* increase the padding to increase the size of container */
+		padding: 3vw;
 		text-decoration: none;
 		display: flex;
 		align-items: center;
 		position: relative;
 	}
-	.select-season-title {  /* title: since 2023 SELECT SEASON */
-		/* border: solid 1px red; */
-		width: 95%;  /* adddition to actually see the borders, adjust if text collapses */
+	.select-season-title {
+		width: 95%;
 		position: absolute;
 		text-align: center;
 		transform: translate(-3%, -15%);
-		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
 		pointer-events: none;
 		line-height: 3.4vw;
 	}
@@ -5723,48 +5567,44 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 160px #13b48a;
 	}
 	.dropdown-sub-season {
-		/* border: solid 1px red; */
 		overflow: hidden;
-		width: 320%;  /* how much % of the dropdown content to show width-wise */
-		transform: initial;  /* overwrites code for PC */
+		width: 320%;
+		transform: initial;
 	}
-	.season-header-pc { display: none; }  /* for PC */
-	.season-header-mobile {  /* tap to close, tap to revisit season */
-		/* border: solid 1px red; */
-		display: initial;  /* overwrites display:none for PC */
-		width: 304px;  /* how big the dropdown content is */
+	.season-header-pc { display: none; }
+	.season-header-mobile {
+		display: initial;
+		width: 304px; 
 	}
-	.season-content {  /* body */
-		/* border: solid 1px red; */
-		width: 304px;  /* how big the dropdown content is */
+	.season-content {
+		width: 304px;
 	}
 	.season-19-20 img {
 		position: absolute;
 		opacity: 0;
 		width: 107.9px;
 		height: 108.5px;
-		margin-top: 2px;  /* 109.8px the lower the value, the higher the object goes */
-		margin-left: -261.4px;  /* -154.4px the lower the value, the more to the left */
+		margin-top: 2px; 
+		margin-left: -261.4px;
 	}
 	.season-20-21 img {
 		position: absolute;
 		opacity: 0;
 		width: 107.9px;
 		height: 108.5px;
-		margin-top: 2px;  /* 109.8px the lower the value, the higher the object goes */
-		margin-left: -151px;  /* -154.4px the lower the value, the more to the left */
+		margin-top: 2px;
+		margin-left: -151px;
 	}
 	/* ⟰ SELECT SEASON ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
     /* ⟱ SCOREBOARD CAROUSEL ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* PREMIER LEAGUE */
 	.scoreboard-PL {
-		/* border: solid red 1px; */
 		position: absolute;
 		width: 33.2%;
-		height: 4.2vw;  /* addition for resposiveness */
-		margin-top: -30%;  /* with respect to .underground */
+		height: 4.2vw; 
+		margin-top: -30%;
 		left: 30.8%;
-		line-height: 3.3vw;  /* brings the text up for mobile screen in real life */
+		line-height: 3.3vw;
 		background-size: cover;
 		overflow: hidden;
 		white-space: nowrap;
@@ -5804,13 +5644,12 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 
 	/* CHAMPIONS LEAGUE */
 	.scoreboard-UCL {
-		/* border: solid red 1px; */
 		position: absolute;
 		width: 33.2%;
-		height: 4.2vw;  /* addition for resposiveness */
-		margin-top: -30%;  /* with respect to .underground */
+		height: 4.2vw;
+		margin-top: -30%;
 		left: 30.8%;
-		line-height: 3vw;  /* brings the text up for mobile screen; the higher vw, the lower */
+		line-height: 3vw;
 		background-size: cover;
 		overflow: hidden;
 		white-space: nowrap;
@@ -5854,11 +5693,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 
 	/* FA CUP */
 	.scoreboard-FA {
-		/* border: solid red 1px; */
 		position: absolute;
 		width: 33.2%;
-		height: 4.2vw;  /* addition for resposiveness */
-		margin-top: -30%;  /* with respect to .underground */
+		height: 4.2vw;
+		margin-top: -30%;
 		left: 30.8%;
 		background-size: cover;
 		overflow: hidden;
@@ -5875,17 +5713,16 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		line-height: 3.5vw;
 		white-space: nowrap;
 		display: flex;
-		animation: none;  /* no animation for mobile as it slows down the user experience */
+		animation: none;
 		text-align: center;
 	}
 
 	/* EFL CUP */
 	.scoreboard-EFL {
-		/* border: solid red 1px; */
 		position: absolute;
 		width: 33.2%;
-		height: 4.2vw;  /* addition for resposiveness */
-		margin-top: -30%;  /* with respect to .underground */
+		height: 4.2vw;
+		margin-top: -30%;
 		left: 30.8%;
 		background-size: cover;
 		overflow: hidden;
@@ -5900,19 +5737,18 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		line-height: 3.7vw;
 		white-space: nowrap;
 		display: flex;
-		animation: none;  /* no animation for mobile as it slows down the user experience */
+		animation: none;
 		text-align: center;
 	}
 
 	/* EUROPA LEAGUE */
 	.scoreboard-UEL {
-		/* border: solid red 1px; */
 		position: absolute;
 		width: 33.2%;
-		height: 4.2vw;  /* addition for resposiveness */
-		margin-top: -30%;  /* with respect to .underground */
+		height: 4.2vw;
+		margin-top: -30%;
 		left: 30.8%;
-		line-height: 3vw;  /* brings the text up for mobile screen; the higher vw, the lower */
+		line-height: 3vw;
 		background-size: cover;
 		display: flex;
 		overflow: hidden;
@@ -5953,12 +5789,11 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
     /* ⟰ SCOREBOARD CAROUSEL ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ SCOREBOARD (TEAMS) ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.scoreboard-teams { display: none; }  /* PC version */
-	.scoreboard-teams-mobile {  /* mobile version */
-		/* border: solid red 1px; */
+	.scoreboard-teams { display: none; } 
+	.scoreboard-teams-mobile {
 		position: absolute;
 		width: 33.2%;
-		margin-top: -26.7%;  /* with respect to .underground */
+		margin-top: -26.7%;
 		left: 30.8%;
 		display: flex;
 		overflow: hidden;
@@ -5974,10 +5809,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.scoreboard-result {
 		color: white;
 		position: absolute;
-		width: 11.6%;  /* space between score and .final-fair */
-		height: 5.2vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-		line-height: 2.7vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-		margin-top: -26.7%;  /* with respect to .underground */
+		width: 11.6%;
+		height: 5.2vw;
+		line-height: 2.7vw;
+		margin-top: -26.7%;
 		left: 52.4%;
 		display: flex;
 		overflow: hidden;
@@ -5993,18 +5828,15 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background: linear-gradient(rgba(254,29,18,0.6), rgba(254,29,18,0.6)), url(../parallax/led-black.jpg);
 		position: absolute;
 		background-size: 150% 150%;
-		/* after using "&thinsp;", the red mini-box left a space on the right that showed the background img,
-		so I put this "right:0" value to eliminate any space on that right. Answer by Garry Shutler.
-		https://stackoverflow.com/questions/65536/how-to-put-text-in-the-upper-right-or-lower-right-corner-of-a-box-using-css */
 		right: 0;
 	}
 	.scoreboard-result2 {
 		color: white;
 		position: absolute;
-		width: 11.6%;  /* space between score and .final-fair2 */
-		height: 5.2vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-		line-height: 2.7vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-		margin-top: -26.7%;  /* with respect to .underground */
+		width: 11.6%;
+		height: 5.2vw;
+		line-height: 2.7vw;
+		margin-top: -26.7%;
 		left: 52.4%;
 		display: flex;
 		overflow: hidden;
@@ -6014,9 +5846,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-family: myFont;
 		font-size: 2.5vw;
 		background: transparent;
-		/* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		background-size: 150% 150%;
-		/* allows me to put the text aligned vertically */
 		text-align: center;
 	}
 	.final-fair2 {
@@ -6024,20 +5854,16 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background: linear-gradient(rgba(2,131,54,0.6), rgba(2,131,54,0.6)), url(../parallax/led-black.jpg);
 		position: absolute;
 		background-size: 150% 150%;
-		/* after using "&thinsp;", the red mini-box left a space on the right that showed the background img,
-		so I put this "right:0" value to eliminate any space on that right. Answer by Garry Shutler.
-		https://stackoverflow.com/questions/65536/how-to-put-text-in-the-upper-right-or-lower-right-corner-of-a-box-using-css */
 		right: 0;
 	}
-	.OT-banners { display: none; } /* for PC and larger tablet */
+	.OT-banners { display: none; }
 	/* ⟰ SCOREBOARD (RESULT) ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ CLOCK ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.clock {
-		/* border: solid red 1px; */
 		position: absolute;
 		height: 5.5vw;
-		width: 32%;  /* responsive: exact width so it won't exceed right margin; adjust according to screen width (@media) */
-		margin-top: -28.4%;  /* with respect to .underground */
+		width: 32%;
+		margin-top: -28.4%;
 		left: 68.7%;
 		display: flex;
 		overflow: hidden;
@@ -6045,15 +5871,14 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		z-index: 7;
 		font-family: Lampen;
 		font-size: 2.5vw;
-		line-height: 5.5vw;  /* should be same as height to center text top to bottom */
+		line-height: 5.5vw;
 		background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led-black.jpg);
-		/* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
-		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+		background-size: 180% 180%;
 		text-align: center;
 		align-items: center;
 	}
 	.republik-of-mancunia {
-		display: initial;  /* delete this when the media query for computer is done */
+		display: initial;
 		transform: translateX(35%);
 		font-size: 2.5vw;
 		letter-spacing: 2px;
@@ -6062,71 +5887,69 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.clock-vertical-stripe1 {
 		width: .8%;
 		height: 5.5vw;
-		margin-top: -28.4%;  /* with respect to .underground */
+		margin-top: -28.4%;
 		left: 68.7%;
 		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+		background-size: 180% 180%;
 		position: absolute;
 		z-index: 7;
 	}
 	.clock-vertical-stripe2 {
 		width: .8%;
 		height: 5.5vw;
-		margin-top: -28.4%;  /* with respect to .underground */
+		margin-top: -28.4%;
 		left: 69.5%;
 		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+		background-size: 180% 180%;
 		position: absolute;
 		z-index: 7;
 	}
 	.clock-vertical-stripe3 {
 		width: .8%;
 		height: 5.5vw;
-		margin-top: -28.4%;  /* with respect to .underground */
+		margin-top: -28.4%;
 		left: 79%;
 		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+		background-size: 180% 180%;
 		position: absolute;
 		z-index: 7;
 	}
 	.clock-vertical-stripe4 {
 		width: .8%;
 		height: 5.5vw;
-		margin-top: -28.4%;  /* with respect to .underground */
+		margin-top: -28.4%;
 		left: 79.8%;
 		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+		background-size: 180% 180%;
 		position: absolute;
 		z-index: 7;
 	}
     /* ⟱ MENU ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	header {
-		/* border: solid red 1px; */
-		margin-top: -19%;  /* with respect to .underground */
+		margin-top: -19%;
 		justify-content: space-between;
 		align-items: center;
-		margin-left: 2%;  /* addition to center it for tablet */
-		width: 100%;  /* 100% // my best guess is so that text occupies the width of the screen */
-		height: 23vw;  /* this specific height 'cuz it coincides with the border line of .underground-small; comment for mobile */
+		margin-left: 2%;
+		width: 100%;
+		height: 23vw;
 	}
 	.navlist li {
 		text-align: center;
-		padding: 0 2vw;  /* the space between menu text */
+		padding: 0 2vw;
 	}
 	/* ⟱ CONTACT ME ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.contact-me {
-		display: inline-block;  /* allows me to move this text freely */
+		display: inline-block;
 		transform: translateY(25%);
-		text-decoration: none;  /* this removes link underline */
+		text-decoration: none;
 		align-content: center;
-		text-align: center;  /* aligns text vertically // https://www.youtube.com/watch?v=Jkp103YhW7A 19:00 */
+		text-align: center;
 	}
 	.line1 {
 		font-family: BeonMedium;
 		text-decoration: none;
 		font-size: 3vw;
 		vertical-align: middle;
-		/* idea for space between letters */
 		letter-spacing: 1px;
 		cursor: pointer;
 		color: #fff;
@@ -6166,10 +5989,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	/* ⟱ MEET THE CREATOR ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.know-me {
-		/* this removes link underline */
 		text-decoration: none;
 		align-content: center;
-		/* addition // aligns text vertically // https://www.youtube.com/watch?v=Jkp103YhW7A 19:00 */
 		text-align: center;
 		font-family: Celinea;
 		font-size: 10vw;
@@ -6177,16 +5998,14 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		vertical-align: middle;
 		line-height: 7vw;
 		transform: skewY(-15deg);
-		display: inline-block;  /* allows me to move this text freely */
+		display: inline-block;
 	}
 	/* ⟱ SUPPORT & DONATE ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.support {
-		display: inline-block;  /* allows me to move this text freely */
+		display: inline-block;
 		transform: translateY(10%);
-		/* this removes link underline */
 		text-decoration: none;
 		align-content: center;
-		/* addition // aligns text vertically // https://www.youtube.com/watch?v=Jkp103YhW7A 19:00 */
 		text-align: center;
 		cursor: pointer;
 		vertical-align: middle;
@@ -6233,7 +6052,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		cursor: pointer;
 		vertical-align: middle;
 		line-height: 5vw;
-		display: inline-block;  /* allows me to move this text freely */
+		display: inline-block;
 		transform: translateY(-7%)
 	}
 	.line8 {
@@ -6308,34 +6127,32 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
 						   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
 	}
-	.underground-irons { display: none; }  /* for PC */
+	.underground-irons { display: none; } 
 	/* ⟰ WANNA LEARN A LANGUAGE? ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ LEGEND TO THE MATCH RATINGS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	#first-half { transform: translate(2%, 5%); }  /* 1H */
-	#second-half { transform: translate(40%, 0%); }  /*2H */
+	#first-half { transform: translate(2%, 5%); } 
+	#second-half { transform: translate(40%, 0%); } 
 	/* ⟱ DATE, FIXTURE AND RESULT ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.date-and-result h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {  /*1st row */
-		/* border: solid 1px red; */
 		position: absolute;
-		display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
-		width: 9.8%;  /* width of each text */
+		display: inline-block;
+		width: 9.8%;
 		margin-top: 13.32%;
 		font-family: Century Gothic;
 		color: white;
 		font-size: 1.3vw;
-		text-align: center;  /* centers it left to right */
+		text-align: center;
 		padding-top: 2%;
 		z-index: 4;
 	}
 	.date-and-result h18, h19, h20, h21, h22, h23, h24, h25, h26, h27 {  /*2nd row */
-		/* border: solid 1px red; */
 		position: absolute;
-		display: inline-block;  /* keeps text location exact cross-browser; also use position:absolute under each h2, h3, h4... */
-		width: 9.8%;  /* width of each text */
+		display: inline-block;
+		width: 9.8%;
 		margin-top: 20.9%;
 		font-family: Century Gothic;
 		font-size: 1.3vw;
-		text-align: center;  /* centers it left to right */
+		text-align: center;
 		padding-top: 2%;
 		z-index: 4;
 	}
@@ -6343,8 +6160,8 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	#match-ratings {
 		display: none;
 		position: absolute;
-		margin-top: -.15%;  /* with respect to header (menu) */
-		left: -19%;  /* same as .match-grid above */
+		margin-top: -.15%;
+		left: -19%;
 		width: 137%;
 	}
 }
@@ -6355,24 +6172,23 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	html, body { position: relative; overflow-x: hidden; background-color: dark; min-width: auto;}
 	/* ⟱ SKY, FLAG, TITLE ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.parallax-home img {
-		position: relative;  /* allows me to move the sky, and not the text */
-		width: 150%;  /* how big the sky and ground are */
-		left: -28%;  /* moves the sky and ground to the left */
+		position: relative;
+		width: 150%;
+		left: -28%;
 	}
 	#flag-mobile {
-		display: initial;  /* overwrites display:none for PC */
+		display: initial;
 		position: absolute;
-		margin-top: -53%;  /* for Mozilla // original was margin-top:20% */
+		margin-top: -53%;
 		left: 7%;
 		width: 100%;
 		transform: rotate(-15deg);
 		z-index: 1;
 	}
 	.title {
-		/* border: solid red 1px; */
 		position: absolute;
-		margin-top: -21%;  /* for Mozilla // original was margi-top:52% */
-		width: 100%;  /* to cover the width of the screen */
+		margin-top: -21%;
+		width: 100%;
 	}
 	/* ⟱ LED SIGN ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#led-cover {
@@ -6388,7 +6204,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		box-sizing: content-box;
 		background-color: transparent;
 		text-align: center;
-		padding: 0% .2%;  /* border margin */
+		padding: 0% .2%;
 		top: 0;
 		left: 0;
 		height: 5.2%;
@@ -6406,31 +6222,27 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	/* ⟰ LED SIGN ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ UNDERGROUND SUPPORT ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.underground {  /* for any reason, after adapting for Mozilla, everything from here goes down a tiny bity */
-		/* border: solid red 1px; */
+	.underground {
 		position: relative;
-		z-index: 0;  /* responsive: for any reason, z-index:-1 doesn't show .underground-small */
+		z-index: 0;
 	}
     .underground-small {
 		width: 305%;
 	}
 	/* ⟱ SELECT SEASON ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.select-season {
-		/* border: solid red 1px; */
 		position: absolute;
-		margin-top: -34.5%;  /* with respect to .underground */
-		margin-left: .5vw;  /* moves everything to the left/right */
+		margin-top: -34.5%;
+		margin-left: .5vw;
 		z-index: 8;
 		width: 27vw;
-		height: 8vw;  /* addition to actually see this div container border lines */
+		height: 8vw;
 	}
-	.select-season-title {  /* title: since 2023 SELECT SEASON */
-		/* border: solid 1px red; */
-	    width: 95%;  /* adddition to actually see the borders, adjust if text collapses */
+	.select-season-title {
+	    width: 95%;
 		position: absolute;
 		text-align: center;
 		transform: translate(-3%, -15%);
-		/* super important to stop page top jump when clicking on 'transfers', it does it for some reason // I came up with this */
 		pointer-events: none;
 		line-height: 4vw;
 	}
@@ -6460,47 +6272,43 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 						   0 0 160px #13b48a;
 	}
 	.dropdown-sub-season {
-		/* border: solid 1px red; */
 		overflow: hidden;
-		width: 370%;  /* how much % of the dropdown content to show width-wise */
-		transform: initial;  /* overwrites code for PC */
+		width: 370%;
+		transform: initial;
 	}
-	.season-header-mobile {  /* tap to close, tap to revisit season */
-		/* border: solid 1px red; */
-		display: initial;  /* overwrites code for PC */
-		width: 280px;  /* how big the dropdown content is */
+	.season-header-mobile {
+		display: initial;
+		width: 280px;
 	}
-	.season-content {  /* body */
-		/* border: solid 1px red; */
-		width: 280px;  /* how big the dropdown content is */
+	.season-content {
+		width: 280px;
 	}
 	.season-19-20 img {
 		position: absolute;
 		opacity: 0;
 		width: 100px;
 		height: 100px;
-		margin-top: 1.9px;  /* 109.8px the lower the value, the higher the object goes */
-		margin-left: -241px;  /* -154.4px the lower the value, the more to the left */
+		margin-top: 1.9px;
+		margin-left: -241px;
 	}
 	.season-20-21 img {
 		position: absolute;
 		opacity: 0;
 		width: 100px;
 		height: 100px;
-		margin-top: 1.9px;  /* 109.8px the lower the value, the higher the object goes */
-		margin-left: -139px;  /* -154.4px the lower the value, the more to the left */
+		margin-top: 1.9px;
+		margin-left: -139px;
 	}
 	/* ⟰ SELECT SEASON ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
     /* ⟱ SCOREBOARD CAROUSEL ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* PREMIER LEAGUE */
 	.scoreboard-PL {
-		/* border: solid red 1px; */
 		position: absolute;
 		width: 40%;
-		height: 4.2vw;  /* addition for resposiveness */
-		margin-top: -37.3%;  /* with respect to .underground */
+		height: 4.2vw;
+		margin-top: -37.3%;
 		left: 37.635%;
-		line-height: 3vw;  /* brings the text up for mobile screen in real life */
+		line-height: 3vw;
 		background-size: cover;
 		overflow: hidden;
 		white-space: nowrap;
@@ -6537,11 +6345,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 
 	/* CHAMPIONS LEAGUE */
 	.scoreboard-UCL {
-		/* border: solid red 1px; */
 		position: absolute;
 		width: 40%;
-		height: 4.2vw;  /* addition for resposiveness */
-		margin-top: -37.3%;  /* with respect to .underground */
+		height: 4.2vw;
+		margin-top: -37.3%;
 		left: 37.635%;
 		background-size: cover;
 		overflow: hidden;
@@ -6584,11 +6391,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 
 	/* FA CUP */
 	.scoreboard-FA {
-		/* border: solid red 1px; */
 		position: absolute;
 		width: 40%;
-		height: 4.2vw;  /* addition for resposiveness */
-		margin-top: -37.3%;  /* with respect to .underground */
+		height: 4.2vw;
+		margin-top: -37.3%;
 		left: 37.635%;
 		background-size: cover;
 		overflow: hidden;
@@ -6605,17 +6411,16 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		line-height: 4vw;
 		white-space: nowrap;
 		display: flex;
-		animation: none;  /* no animation for mobile as it slows down the user experience */
+		animation: none;
 		text-align: center;
 	}
 
 	/* EFL CUP */
 	.scoreboard-EFL {
-		/* border: solid red 1px; */
 		position: absolute;
 		width: 40%;
-		height: 4.2vw;  /* addition for resposiveness */
-		margin-top: -37.3%;  /* with respect to .underground */
+		height: 4.2vw;
+		margin-top: -37.3%;
 		left: 37.635%;
 		background-size: cover;
 		overflow: hidden;
@@ -6630,17 +6435,16 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		line-height: 4.5vw;
 		white-space: nowrap;
 		display: flex;
-		animation: none;  /* no animation for mobile as it slows down the user experience */
+		animation: none;
 		text-align: center;
 	}
 
 	/* EUROPA LEAGUE */
 	.scoreboard-UEL {
-		/* border: solid red 1px; */
 		position: absolute;
 		width: 40%;
-		height: 4.2vw;  /* addition for resposiveness */
-		margin-top: -37.3%;  /* with respect to .underground */
+		height: 4.2vw;
+		margin-top: -37.3%;
 		left: 37.635%;
 		background-size: cover;
 		display: flex;
@@ -6678,11 +6482,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
     /* ⟰ SCOREBOARD CAROUSEL ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ SCOREBOARD (TEAMS) ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	.scoreboard-teams-mobile {  /* mobile version */
-		/* border: solid red 1px; */
+	.scoreboard-teams-mobile {
 		position: absolute;
 		width: 40%;
-		margin-top: -33.3%;  /* with respect to .underground */
+		margin-top: -33.3%;
 		left: 37.635%;
 		display: flex;
 		overflow: hidden;
@@ -6692,16 +6495,16 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-family: myFont;
 		font-size: 3.4vw;
 		background: linear-gradient(rgba(27,27,27,0.8), rgba(27,27,27,0.8)), url(../parallax/led-gray-mb.png);
-		background-size: 200% 200%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+		background-size: 200% 200%;
 	}
 	/* ⟱ SCOREBOARD (RESULT) ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.scoreboard-result {
 		color: white;
 		position: absolute;
-		width: 15%;  /* space between score and .final-fair */
-		height: 7.17vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-		line-height: 3.7vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-		margin-top: -33.3%;  /* with respect to .underground */
+		width: 15%;
+		height: 7.17vw;
+		line-height: 3.7vw;
+		margin-top: -33.3%;
 		left: 62.7%;
 		display: flex;
 		overflow: hidden;
@@ -6716,10 +6519,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.scoreboard-result2 {
 		color: white;
 		position: absolute;
-		width: 15%;  /* space between score and .final-fair2 */
-		height: 7.17vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-		line-height: 3.7vw;  /* addition for Mozilla: this div was a bit larger than .scoreboard-teams */
-		margin-top: -33.3%;  /* with respect to .underground */
+		width: 15%;
+		height: 7.17vw;
+		line-height: 3.7vw;
+		margin-top: -33.3%;
 		left: 62.7%;
 		display: flex;
 		overflow: hidden;
@@ -6729,19 +6532,16 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		font-family: myFont;
 		font-size: 3.4vw;
 		background: transparent;
-		/* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
 		background-size: 150% 150%;
-		/* allows me to put the text aligned vertically */
 		text-align: center;
 	}
 	/* ⟰ SCOREBOARD (RESULT) ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ CLOCK ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.clock {
-		/* border: solid red 1px; */
 		position: absolute;
 		height: 7vw;
-		width: 16%;  /* responsive: exact width so it won't exceed right margin; adjust according to screen width (@media) */
-		margin-top: -35%;  /* with respect to .underground */
+		width: 16%;
+		margin-top: -35%;
 		left: 83.4%;
 		display: flex;
 		overflow: hidden;
@@ -6749,10 +6549,9 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		z-index: 7;
 		font-family: Lampen;
 		font-size: 3.4vw;
-		line-height: 7vw;  /* should be same as height to center text top to bottom */
+		line-height: 7vw;
 		background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led-black.jpg);
-		/* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
-		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+		background-size: 180% 180%;
 		text-align: center;
 		align-items: center;
 	}
@@ -6760,51 +6559,50 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	.clock-vertical-stripe1 {
 		width: .8%;
 		height: 7vw;
-		margin-top: -35%;  /* with respect to .underground */
+		margin-top: -35%;
 		left: 83.6%;
 		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+		background-size: 180% 180%;
 		position: absolute;
 		z-index: 7;
 	}
 	.clock-vertical-stripe2 {
 		width: .8%;
 		height: 7vw;
-		margin-top: -35%;  /* with respect to .underground */
+		margin-top: -35%;
 		left: 84.5%;
 		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+		background-size: 180% 180%;
 		position: absolute;
 		z-index: 7;
 	}
 	.clock-vertical-stripe3 {
 		width: .8%;
 		height: 7vw;
-		margin-top: -35%;  /* with respect to .underground */
+		margin-top: -35%;
 		left: 98%;
 		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+		background-size: 180% 180%;
 		position: absolute;
 		z-index: 7;
 	}
 	.clock-vertical-stripe4 {
 		width: .8%;
 		height: 7vw;
-		margin-top: -35%;  /* with respect to .underground */
+		margin-top: -35%;
 		left: 99%;
 		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;  /* makes the background image use all the space without shrinking or enlarging // answer by Dnyaneshwar Harer https://stackoverflow.com/questions/4779577/background-images-how-to-fill-whole-div-if-image-is-small-and-vice-versa */
+		background-size: 180% 180%;
 		position: absolute;
 		z-index: 7;
 	}
     /* ⟱ MENU ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	header {
-		/* border: solid red 1px; */
-		margin-top: -23%;  /* with respect to .underground */
+		margin-top: -23%;
 		justify-content: space-between;
 		align-items: center;
-		width: 100%;  /* 100% // my best guess is so that text occupies the width of the screen */
-		height: 23vw;  /* this specific height 'cuz it coincides with the border line of .underground-small */
+		width: 100%;
+		height: 23vw;
 	}
 	/* ⟱ GALLERY PHOTO TEXT ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#button-gallery1 {
@@ -6879,11 +6677,11 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		z-index: 2;
 	}
 	/* ⟱ LEGEND TO THE MATCH RATINGS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-	#first-half { transform: translate(6%, 1%); }  /* 1H */
-	#second-half { transform: translate(55%, 4%); }  /*2H */
+	#first-half { transform: translate(6%, 1%); }
+	#second-half { transform: translate(55%, 4%); }
 	/* ⟱ DROPDOWNS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdowns-section {
-		position: relative;  /* responsive: 'relative' to eliminate overflow excess x-wise on mobile */
+		position: relative;
 		margin-top: 113%;
 		margin-left: -29.5vw;
 		height: 150vw;
@@ -6891,11 +6689,10 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 	}
 	/* ⟱ INTERNATIONAL BREAK ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.space-international-break {
-		/* border: solid 1px red; */
 		background-image: url(../underground/break.png);
 		background-size: 120% 100%;
 		color: white;
-		padding: .3vw;  /* control width via background-size (width), and height via padding // increase the padding to increase the height of container */
+		padding: .3vw;
 		text-decoration: none;
 		display: flex;
 		align-items: center;
@@ -6909,7 +6706,7 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 					   -2px 0.5px 1px #555,
 					   -3px 0.5px 1px #555,
 					   -4px 0.5px 1px #555;
-	z-index: -1;  /* important to leave the isometric 3d effect behind */
+	z-index: -1;
 	}
 }
 /* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */
