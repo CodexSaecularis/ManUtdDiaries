@@ -2722,7 +2722,7 @@ ul.navlist {
 					   0 0 50px #ef0017,
 					   0 0 200px #ef0017;
 }
-/* 	MATCH 3 // BUTTON: ROTATE ANIMATION */
+/* 	MATCH 4 // BUTTON: ROTATE ANIMATION */
 #button-score-news4 span:nth-child(1) {
 	top: 0;
 	left: -100%;
@@ -5251,6 +5251,42 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		background: #262626;
 		overflow: hidden;  /* for animation: hides each child outside the button */
 	}
+
+	/* MATCH 35 */
+	#button-score-news35 h60 { display: none; }  /* CLICK FOR... */
+	#button-score-news35 h61 { display: initial; }  /* TAP FOR... */
+	#cover35-score {
+		/* border: solid 1px green; */
+		position: absolute;
+		width: 116.3%;  /* same as background-size:116.3% under .dropdown-1st-match above */
+		height: 100%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#cover35-news {
+		/* border: solid 1px green; */
+		position: absolute;
+		width: 116.3%;  /* same as background-size:116.3% under .dropdown-1st-match above */
+		height: 100%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#button-score-news35 {
+		border: none;
+		border-radius: .1vw;
+		position: absolute;
+		z-index: 2;
+		margin-top: -7.4%;
+		left: 49.9%;
+		width: 17.3%;
+		height: auto;  /* changed it from 1vw to auto for Mozilla 'cuz the text shows cut off at the bottom as the box (button) is too small */
+		line-height: 1.7vw;  /* addition for Mozilla 'cuz the text shows cut off at the bottom as the box (button) is too small */
+		font-family: Lampen;
+		font-size: 1.75vw;
+		color: white;
+		background: #262626;
+		overflow: hidden;  /* for animation: hides each child outside the button */
+	}
 	/* 	⟰ BUTTON: SHOW SCORE AND NEWS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* 	⟱ DATE | TIME | COMPETITION STAGE ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	.date-time {
@@ -5396,6 +5432,39 @@ z-index: -1;  /* important to leave the isometric 3d effect behind */
 		left: 0%;
 	}
 	#button-stats4:hover h71 { color: rgb(211, 208, 208); }
+
+	/* MATCH 35 */
+	#button-stats35 h70 { display: none; }  /* CLICK HERE FOR */
+	#button-stats35 h71 { display: initial; }  /* TAP HERE FOR... */
+	#button-stats35 {
+		border: none;
+		position: relative;
+		margin-top: 2%;
+		left: 41.3%;
+		width: 35%;
+		height: 2.2vw;
+		font-size: 1.8vw;
+		font-family: Manchester\ United\ 23-24\ Tipogra;
+		color: black;
+		background: transparent;
+		text-align: center;
+		z-index: 1;
+	}
+	#button-stats35:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: red;
+		opacity: .7;
+		z-index: -1;
+		mix-blend-mode: multiply;
+		transform-origin: top;
+		transition: .2s;
+		top: -10%;
+		left: 0%;
+	}
+	#button-stats35:hover h71 { color: rgb(211, 208, 208); }
 	/* 	⟰ BUTTON: SHOW MATCH STATS ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* ⟱ BADGE-SPONSOR SPIN ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.badges-and-sponsors { display: none !important; }  /* for PC */
