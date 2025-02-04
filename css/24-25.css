@@ -1237,6 +1237,7 @@ ul.navlist {
 	color: #ec334d;
 }
 .trophies {
+	opacity: 0;
 	width: 100%;
 	transform: translateY(-498%);
 }
@@ -3733,7 +3734,7 @@ ul.navlist {
 	z-index: -1;
 }
 .bottom-isometric::before {
-content: "2023/24";
+content: "2024/25";
 position: absolute;
 text-shadow: -1px 0.5px 1px #555,
 				   -2px 0.5px 1px #555,
@@ -7171,7 +7172,7 @@ z-index: -1;
 	}
 	/* ⟱ BOTTOM ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.bottom-isometric::before {
-	content: "2023/24";
+	content: "2024/25";
 	position: absolute;
 	text-shadow: -1px 0.5px 1px #555,
 					   -2px 0.5px 1px #555,
