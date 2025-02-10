@@ -1952,6 +1952,22 @@ ul.navlist {
 	margin-left: 40.8%;
 	display: var(--links-display, none) !important;
 }
+.link3 {
+	position: absolute;
+	font-family: Agency FB;
+	font-size: 1.36vw;
+	margin-top: -32.25%;
+	margin-left: 40.8%;
+	display: var(--links-display, none) !important;
+}
+.link4 {
+	position: absolute;
+	font-family: Agency FB;
+	font-size: 1.36vw;
+	margin-top: -30.8%;
+	margin-left: 40.8%;
+	display: var(--links-display, none) !important;
+}
 .link5 {
 	position: absolute;
 	font-family: Agency FB;
@@ -4869,7 +4885,7 @@ z-index: -1;
 		padding-top: 2.7%;
 		z-index: 4;
 	}
-	.date-and-result h43 {  /* 4th row */
+	.date-and-result h43, h44 {  /* 4th row */
 		position: absolute;
 		display: inline-block;
 		width: 9.8%;
@@ -4899,7 +4915,7 @@ z-index: -1;
 	.date-and-result h13, h43 {
 		left: 49.92%;
 	}
-	.date-and-result h14 {
+	.date-and-result h14, h44 {
 		left: 59.56%;
 	}
 	.date-and-result h15 {
@@ -5020,7 +5036,7 @@ z-index: -1;
 	}
 	.hide-UCL {
 		position: absolute;
-		background: url(/underground/hide-UCL.png);
+		background: url(../2024-25/hide-UCL.png);
 		background-size: 100%;
 		font-family: 'Courier New', Courier, monospace;
 		font-size: 6.8vw;
@@ -5030,7 +5046,7 @@ z-index: -1;
 	}
 	.hide-FA {
 		position: absolute;
-		background: url(/underground/hide-FA.png);
+		background: url(../2024-25/hide-FA.png);
 		background-size: 100%;
 		font-family: 'Courier New', Courier, monospace;
 		font-size: 6.8vw;
@@ -5072,6 +5088,24 @@ z-index: -1;
 		font-family: Agency FB;
 		font-size: 2.1vw;
 		margin-top: -44%;
+		margin-left: 51.1%;
+		text-wrap: nowrap;
+		display: var(--links-display, none) !important;
+	}
+	.link3 {
+		position: absolute;
+		font-family: Agency FB;
+		font-size: 2.1vw;
+		margin-top: -40.42%;
+		margin-left: 51.1%;
+		text-wrap: nowrap;
+		display: var(--links-display, none) !important;
+	}
+	.link4 {
+		position: absolute;
+		font-family: Agency FB;
+		font-size: 2.1vw;
+		margin-top: -38.6%;
 		margin-left: 51.1%;
 		text-wrap: nowrap;
 		display: var(--links-display, none) !important;
@@ -6844,7 +6878,7 @@ z-index: -1;
 		padding-top: 2%;
 		z-index: 4;
 	}
-	.date-and-result h43 {  /* 4th row */
+	.date-and-result h43, h44 {  /* 4th row */
 		position: absolute;
 		display: inline-block;
 		width: 9.8%;
