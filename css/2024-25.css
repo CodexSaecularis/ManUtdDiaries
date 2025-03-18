@@ -308,6 +308,17 @@ body {
 .season-20-21:hover img {
 	opacity: 1;
 }
+.season-1956-57 img {
+	position: absolute;
+	opacity: 0;
+	width: 113px;
+	height: 114px;
+	margin-top: 2px;
+	margin-left: -159px;
+}
+.season-1956-57:hover img {
+	opacity: 1;
+}
 /* ⟰ SELECT SEASON ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* ⟱ SCOREBOARD CAROUSEL ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* PREMIER LEAGUE */
@@ -347,15 +358,15 @@ body {
 .scoreboard-PL .PL div span1 {
 	font-weight: 900;
 	/* ▲ */
-	/* margin-top: 1.2%;
+	margin-top: 1.2%;
 	font-size: .8vw;
 	color: #028336;
-	text-shadow: 0 0 2px #028336, 0 0 2px #028336; */
+	text-shadow: 0 0 2px #028336, 0 0 2px #028336;
 	/* • */
-	margin-top: -.4%;
+	/* margin-top: -.4%;
 	font-size: 1.4vw;
 	color: gray;
-	text-shadow: 0 0 2px gray, 0 0 2px gray;
+	text-shadow: 0 0 2px gray, 0 0 2px gray; */
 	/* ▼ */
 	/* font-size: .8vw;
 	margin-top: 1.2%;
@@ -572,15 +583,15 @@ body {
 	background-size: 180% 180%;
 }
 .home span {
-	/* color: #fff; */
-	color: #da020e;
-	text-shadow: 0 0 2px #da020e;
-	opacity: none;
-}
-.home {
 	color: #fff;
 	/* color: #da020e;
 	text-shadow: 0 0 2px #da020e; */
+	opacity: none;
+}
+.home {
+	/* color: #fff; */
+	color: #da020e;
+	text-shadow: 0 0 2px #da020e;
 	opacity: none;
 }
 /* ⟱ SCOREBOARD (RESULT) ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -1612,7 +1623,7 @@ ul.navlist {
 	padding-top: 2%;
 	z-index: 4;
 }
-.date-and-result h48, h49, h50, h51 {
+.date-and-result h48, h49, h50, h51, h52 {
 	position: absolute;
 	display: inline-block;
 	width: 7.3%;
@@ -1636,7 +1647,7 @@ ul.navlist {
 .date-and-result h11, h51 {
 	left: 36.2%;
 }
-.date-and-result h12 {
+.date-and-result h12, h52 {
 	left: 43.25%;
 }
 .date-and-result h13, h43 {
@@ -1685,6 +1696,8 @@ ul.navlist {
 #result-43v { display: none; }
 #result-44h { display: none;}
 #result-44v { display: none; }
+#result-45h { display: none;}
+#result-45v { display: none; }
 /* ⟰ DATE, FIXTURE AND RESULT ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* ⟱ MATCH RATINGS ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .match-ratings-wrapper {
@@ -1964,7 +1977,7 @@ ul.navlist {
 .dropdown_li {
 	list-style: none;
 }
-#link-opacity { opacity: 0; }
+#link-opacity { opacity: 1; }
 .link1 {
 	position: absolute;
 	font-family: Agency FB;
@@ -2419,6 +2432,16 @@ ul.navlist {
 }
 .dropdown-44th-match {
 	background-image: url(../2024-25/44th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-45th-match {
+	background-image: url(../2024-25/45th-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -3831,6 +3854,88 @@ ul.navlist {
 #button-score-news44:hover span {
 	animation-play-state: paused;
 }
+
+/* MATCH 45 */
+#button-score-news45 h61 { display: none; }
+#cover45-score {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .08%;
+}
+#cover45-news {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .095%;
+	z-index: -1;
+}
+#button-score-news45 {
+	border: none;
+	border-radius: .1vw;
+	position: absolute;
+	z-index: 2;
+	margin-top: -5.65%;
+	left: 40.8%;
+	width: 14.2%;
+	height: auto;
+	line-height: 1vw;
+	font-family: Lampen;
+	font-size: 1.2vw;
+	color: white;
+	background: #262626;
+	overflow: hidden;
+}
+#button-score-news45:hover {
+	color: black;
+	background: #ef0017;
+	box-shadow: 0 0 5px #ef0017,
+					   0 0 25px #ef0017,
+					   0 0 50px #ef0017,
+					   0 0 200px #ef0017;
+}
+/* 	MATCH 45 // BUTTON: ROTATE ANIMATION */
+#button-score-news45 span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 10%;
+	background: linear-gradient(90deg, transparent, #ef0017);
+	animation: rotate1 0.8s linear infinite;
+	animation-delay: 0s;
+}
+#button-score-news45 span:nth-child(3) {
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: .15vw;
+	background: linear-gradient(270deg, transparent, #ef0017);
+	animation: rotate3 0.8s linear infinite;
+	animation-delay: 0.4s;
+}
+#button-score-news45 span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #ef0017);
+	animation: rotate2 0.8s linear infinite;
+	animation-delay: 0.2s;
+}
+#button-score-news45 span:nth-child(4) {
+	bottom: -100%;
+	left: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #ef0017);
+	animation: rotate4 0.8s linear infinite;
+	animation-delay: 0.6s;
+}
+#button-score-news45:hover span {
+	animation-play-state: paused;
+}
 /* 	⟰ BUTTON: SHOW SCORE AND NEWS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 /* 	⟱ DATE | TIME | COMPETITION STAGE ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 .date-time {
@@ -4641,6 +4746,63 @@ ul.navlist {
 }
 #button-stats44:hover h70 { color: rgb(211, 208, 208); }
 #stats-44th-match { display: none; }
+
+/* MATCH 45 */
+#button-stats45 h71 { display: none; }
+#button-stats45 {
+	border: none;
+	position: relative;
+	margin-top: 2%;
+	left: 30.2%;
+	width: 35%;
+	height: 2.2vw;
+	font-size: 1.3vw;
+	font-family: Manchester\ United\ 23-24\ Tipogra;
+	color: black;
+	background: transparent;
+	text-align: center;
+	z-index: 1;
+}
+#button-stats45:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: red;
+	opacity: .7;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: top;
+	transition: .2s;
+	top: -10%;
+	left: -3%;
+}
+#button-stats45:hover:before {
+	top: -20%;
+	left: 0;
+	transform: perspective(1000px) rotateX(80deg);
+}
+#button-stats45:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	opacity: .9;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: bottom;
+	transition: .2s;
+	bottom: -10%;
+	right: -1%;
+}
+#button-stats45:hover:after {
+	bottom: -20%;
+	right: 0;
+	transform: perspective(1000px) rotateX(-80deg);
+}
+#button-stats45:hover h70 { color: rgb(211, 208, 208); }
+#stats-45th-match { display: none; }
 /* 	⟰ BUTTON: SHOW MATCH STATS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 /* ⟱ BADGE-SPONSOR SPIN ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* BADGE-SPONSOR SPIN: HISTORICAL */
@@ -5969,7 +6131,7 @@ z-index: -1;
 		padding-top: 2.7%;
 		z-index: 4;
 	}
-	.date-and-result h48, h49, h50, h51 {  /* 5th row */
+	.date-and-result h48, h49, h50, h51, h52 {  /* 5th row */
 		position: absolute;
 		display: inline-block;
 		width: 9.8%;
@@ -5993,7 +6155,7 @@ z-index: -1;
 	.date-and-result h11, h51 {
 		left: 30.59%;
 	}
-	.date-and-result h12 {
+	.date-and-result h12, h52 {
 		left: 40.3%;
 	}
 	.date-and-result h13, h43 {
@@ -6601,6 +6763,16 @@ z-index: -1;
 		align-items: center;
 		position: relative;
 	}
+	.dropdown-45th-match {
+		background-image: url(../2024-25/45th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
 	.space-international-break {
 		background-image: url(../2024-25/break.png);
 		background-size: 120% 100%;
@@ -7194,6 +7366,40 @@ z-index: -1;
 		background: #262626;
 		overflow: hidden;
 	}
+
+	/* MATCH 45 */
+	#button-score-news45 h60 { display: none; }
+	#button-score-news45 h61 { display: initial; }
+	#cover45-score {
+		position: absolute;
+		width: 116.3%;
+		height: 100%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#cover45-news {
+		position: absolute;
+		width: 116.3%;
+		height: 100%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#button-score-news45 {
+		border: none;
+		border-radius: .1vw;
+		position: absolute;
+		z-index: 2;
+		margin-top: -7.4%;
+		left: 49.9%;
+		width: 17.3%;
+		height: auto;
+		line-height: 1.7vw;
+		font-family: Lampen;
+		font-size: 1.75vw;
+		color: white;
+		background: #262626;
+		overflow: hidden;
+	}
 	/* 	⟰ BUTTON: SHOW SCORE AND NEWS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* 	⟱ DATE | TIME | COMPETITION STAGE ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	.date-time {
@@ -7668,6 +7874,39 @@ z-index: -1;
 		left: 0%;
 	}
 	#button-stats44:hover h71 { color: rgb(211, 208, 208); }
+
+	/* MATCH 45 */
+	#button-stats45 h70 { display: none; }
+	#button-stats45 h71 { display: initial; }
+	#button-stats45 {
+		border: none;
+		position: relative;
+		margin-top: 2%;
+		left: 41.3%;
+		width: 35%;
+		height: 2.2vw;
+		font-size: 1.8vw;
+		font-family: Manchester\ United\ 23-24\ Tipogra;
+		color: black;
+		background: transparent;
+		text-align: center;
+		z-index: 1;
+	}
+	#button-stats45:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: red;
+		opacity: .7;
+		z-index: -1;
+		mix-blend-mode: multiply;
+		transform-origin: top;
+		transition: .2s;
+		top: -10%;
+		left: 0%;
+	}
+	#button-stats45:hover h71 { color: rgb(211, 208, 208); }
 	/* 	⟰ BUTTON: SHOW MATCH STATS ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* ⟱ BADGE-SPONSOR SPIN ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.badges-and-sponsors { display: none !important; }
@@ -7939,6 +8178,14 @@ z-index: -1;
 		margin-top: 2px;
 		margin-left: -151px;
 	}
+	.season-1956-57 img {
+		position: absolute;
+		opacity: 0;
+		width: 107.9px;
+		height: 108.5px;
+		margin-top: 2px;
+		margin-left: -151px;
+	}
 	/* ⟰ SELECT SEASON ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
     /* ⟱ SCOREBOARD CAROUSEL ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* PREMIER LEAGUE */
@@ -7967,15 +8214,15 @@ z-index: -1;
 	.scoreboard-PL .PL div span1 {
 		font-weight: 900;
 		/* ▲ */
-		/* font-size: 1.8vw;
+		font-size: 1.8vw;
 		margin-top: 1.2%;
 		color: #028336;
-		text-shadow: 0 0 2px #028336, 0 0 2px #028336; */
+		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
 		/* • */
-		margin-top: -1.3%;
+		/* margin-top: -1.3%;
 		font-size: 3vw;
 		color: gray;
-		text-shadow: 0 0 2px gray, 0 0 2px gray;
+		text-shadow: 0 0 2px gray, 0 0 2px gray; */
 		/* ▼ */
 		/* font-size: 1.8vw;
 		margin-top: 1.2%;
@@ -8656,6 +8903,14 @@ z-index: -1;
 		margin-top: 1.9px;
 		margin-left: -139px;
 	}
+	.season-1956-57 img {
+		position: absolute;
+		opacity: 0;
+		width: 100px;
+		height: 100px;
+		margin-top: 1.9px;
+		margin-left: -139px;
+	}
 	/* ⟰ SELECT SEASON ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
     /* ⟱ SCOREBOARD CAROUSEL ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* PREMIER LEAGUE */
@@ -8684,15 +8939,15 @@ z-index: -1;
 	.scoreboard-PL .PL div span1 {
 		font-weight: 900;
 		/* ▲ */
-		/* font-size: 2.5vw;
+		font-size: 2.5vw;
 		margin-top: 1.2%;
 		color: #028336;
-		text-shadow: 0 0 2px #028336, 0 0 2px #028336; */
+		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
 		/* • */
-		margin-top: -2%;
+		/* margin-top: -2%;
 		font-size: 4.4vw;
 		color: gray;
-		text-shadow: 0 0 2px gray, 0 0 2px gray;
+		text-shadow: 0 0 2px gray, 0 0 2px gray; */
 		/* ▼ */
 		/* font-size: 2.5vw;
 		margin-top: 1.2%;
