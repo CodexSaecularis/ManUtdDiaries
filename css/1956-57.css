@@ -1968,7 +1968,7 @@ ul.navlist {
 .dropdown_li {
 	list-style: none;
 }
-#link-opacity { opacity: 1; }
+#link-opacity { opacity: 0; }
 .link1 {
 	position: absolute;
 	font-family: Agency FB;
@@ -2232,6 +2232,7 @@ ul.navlist {
 	left: 45.7%;
 	pointer-events: none;
 }
+/* ⟰ PLAYER STATS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* ⟱ TRANSITION BUFFER ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .space-transition {
 	background-image: url(../2024-25/transition.png);
@@ -2252,7 +2253,18 @@ ul.navlist {
 	height: 100%;
 	animation: spin-words 6s infinite;
 }
-/* ⟰ PLAYER STATS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* ⟰ KITS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.kits {
+	background-image: url(../1956-57/kits.png);
+	background-size: 79% 100%;
+	color: white;
+	padding: 15vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+	left: 12.9%;
+}
 /* ⟱ PRESEASON, MATCHES, INTERNATIONAL BREAK ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 [itemid="dropdown-matches"] {
 	margin-right: -10vw;
@@ -5775,6 +5787,18 @@ z-index: -1;
 		display: flex;
 		align-items: center;
 		position: relative;
+	}
+	/* ⟱ KITS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.kits {
+		background-image: url(../1956-57/kits.png);
+		background-size: 108% 100%;
+		color: white;
+		padding: 25vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+		left: 7.75%;
 	}
 	/* ⟱ PRESEASON, MATCHES, INTERNATIONAL BREAK ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	[itemid="dropdown-matches"] {
