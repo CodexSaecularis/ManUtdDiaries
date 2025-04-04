@@ -2241,10 +2241,11 @@ ul.navlist {
 .badge-container {
 	/* border: solid 1px red; */
 	position: absolute;
-	margin-top: -41.2%;
+	/* margin-top: -41.2%; */
+	margin-top: -26%;
 	margin-left: 22.3%;
 	width: 60.6%;
-	height: 0.85%;
+	height: 5.3%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -2335,7 +2336,7 @@ ul.navlist {
 	position: absolute;
     visibility: hidden;
 	border-radius: .5vw;
-	top: -53%;
+	top: 32.5%;
     color: white;
     font-family: Century Gothic;
     font-size: 1.1vw;
@@ -2343,16 +2344,19 @@ ul.navlist {
 	padding: 0vw 0.5vw 1vw;  /* above and bottom - left and right - only bottom */
     text-align: center;
 }
-
 .badge1:hover .united {
   visibility: visible;
+}
+.badge1:hover {
+	background: url(../1956-57/away-manutd.png) no-repeat;
+	background-size: 97.7% 72%;
 }
 
 .badge2 .spurs {
 	position: absolute;
     visibility: hidden;
 	border-radius: .5vw;
-	top: -53%;
+	top: 32.5%;
     color: #003366;
     font-family: Century Gothic;
     font-size: 1.1vw;
@@ -2363,12 +2367,16 @@ ul.navlist {
 .badge2:hover .spurs {
 	visibility: visible;
 }
+.badge2:hover {
+	background: url(../1956-57/away-spurs.png) no-repeat;
+	background-size: 100% 72.5%;
+}
 
 .badge3 .preston {
 	position: absolute;
     visibility: hidden;
 	border-radius: .5vw;
-	top: -53%;
+	top: 32.5%;
     color: black;
     font-family: Century Gothic;
     font-size: 1.1vw;
@@ -2379,12 +2387,16 @@ ul.navlist {
 .badge3:hover .preston {
     visibility: visible;
 }
+.badge3:hover {
+	background: url(../1956-57/away-preston.png) no-repeat;
+	background-size: 98% 72.5%;
+}
 
 .badge4 .blackpool {
 	position: absolute;
     visibility: hidden;
 	border-radius: .5vw;
-	top: -53%;
+	top: 32.5%;
     color: black;
     font-family: Century Gothic;
     font-size: 1.1vw;
@@ -2395,12 +2407,16 @@ ul.navlist {
 .badge4:hover .blackpool {
     visibility: visible;
 }
+.badge4:hover {
+	background: url(../1956-57/away-blackpool.png) no-repeat;
+	background-size: 98% 72.5%;
+}
 
 .badge5 .arsenal {
 	position: absolute;
     visibility: hidden;
 	border-radius: .5vw;
-	top: -53%;
+	top: 32.5%;
     color: white;
     font-family: Century Gothic;
     font-size: 1.1vw;
@@ -2411,12 +2427,16 @@ ul.navlist {
 .badge5:hover .arsenal {
     visibility: visible;
 }
+.badge5:hover {
+	background: url(../1956-57/away-arsenal.png) no-repeat;
+	background-size: 100% 72.5%;
+}
 
 .badge6 .wolverhampton {
 	position: absolute;
     visibility: hidden;
 	border-radius: .5vw;
-	top: -53%;
+	top: 32.5%;
     color: black;
     font-family: Century Gothic;
     font-size: 1.1vw;
@@ -2427,12 +2447,16 @@ ul.navlist {
 .badge6:hover .wolverhampton {
     visibility: visible;
 }
+.badge6:hover {
+	background: url(../1956-57/away-wolves.png) no-repeat;
+	background-size: 98% 72.5%;
+}
 
 .badge7 .burnley {
 	position: absolute;
     visibility: hidden;
 	border-radius: .5vw;
-	top: -53%;
+	top: 32.5%;
     color: #99ccff;
     font-family: Century Gothic;
     font-size: 1.1vw;
@@ -2443,12 +2467,16 @@ ul.navlist {
 .badge7:hover .burnley {
     visibility: visible;
 }
+.badge7:hover {
+	background: url(../1956-57/away-burnley.png) no-repeat;
+	background-size: 98% 72.5%;
+}
 
 .badge8 .leeds {
 	position: absolute;
     visibility: hidden;
 	border-radius: .5vw;
-	top: -53%;
+	top: 32.5%;
     color: #fdd467;
     font-family: Century Gothic;
     font-size: 1.1vw;
@@ -2459,12 +2487,16 @@ ul.navlist {
 .badge8:hover .leeds {
     visibility: visible;
 }
+.badge8:hover {
+	background: url(../1956-57/away-leeds.png) no-repeat;
+	background-size: 98% 72.5%;
+}
 
 .badge9 .bolton {
 	position: absolute;
     visibility: hidden;
 	border-radius: .5vw;
-	top: -53%;
+	top: 32.5%;
     color: #003366;
     font-family: Century Gothic;
     font-size: 1.1vw;
@@ -2475,12 +2507,16 @@ ul.navlist {
 .badge9:hover .bolton {
     visibility: visible;
 }
+.badge9:hover {
+	background: url(../1956-57/away-bolton.png) no-repeat;
+	background-size: 98% 72.5%;
+}
 
 .badge10 .villa {
 	position: absolute;
     visibility: hidden;
 	border-radius: .5vw;
-	top: -53%;
+	top: 32.5%;
     color: #99ccff;
     font-family: Century Gothic;
     font-size: 1.1vw;
@@ -2491,12 +2527,16 @@ ul.navlist {
 .badge10:hover .villa {
     visibility: visible;
 }
+.badge10:hover {
+	background: url(../1956-57/away-villa.png) no-repeat;
+	background-size: 98% 72.5%;
+}
 
 .badge11 .bromwich {
 	position: absolute;
     visibility: hidden;
 	border-radius: .5vw;
-	top: -53%;
+	top: 32.5%;
     color: #003366;
     font-family: Century Gothic;
     font-size: 1.1vw;
@@ -2507,12 +2547,16 @@ ul.navlist {
 .badge11:hover .bromwich {
     visibility: visible;
 }
+.badge11:hover {
+	background: url(../1956-57/away-bromwich.png) no-repeat;
+	background-size: 98% 72.5%;
+}
 
 .badge12 .birmingham {
 	position: absolute;
     visibility: hidden;
 	border-radius: .5vw;
-	top: -53%;
+	top: 32.5%;
     color: white;
     font-family: Century Gothic;
     font-size: 1.1vw;
@@ -2523,12 +2567,16 @@ ul.navlist {
 .badge12:hover .birmingham {
     visibility: visible;
 }
+.badge12:hover {
+	background: url(../1956-57/away-birmingham.png) no-repeat;
+	background-size: 98% 72.5%;
+}
 
 .badge13 .chelsea {
 	position: absolute;
     visibility: hidden;
 	border-radius: .5vw;
-	top: -53%;
+	top: 32.5%;
     color: white;
     font-family: Century Gothic;
     font-size: 1.1vw;
@@ -2539,12 +2587,16 @@ ul.navlist {
 .badge13:hover .chelsea {
     visibility: visible;
 }
+.badge13:hover {
+	background: url(../1956-57/away-chelsea.png) no-repeat;
+	background-size: 98% 72.5%;
+}
 
 .badge14 .sheffieldw {
 	position: absolute;
     visibility: hidden;
 	border-radius: .5vw;
-	top: -53%;
+	top: 32.5%;
     color: #003366;
     font-family: Century Gothic;
     font-size: 1.1vw;
@@ -2555,12 +2607,16 @@ ul.navlist {
 .badge14:hover .sheffieldw {
     visibility: visible;
 }
+.badge14:hover {
+	background: url(../1956-57/away-sheffieldw.png) no-repeat;
+	background-size: 98% 72.5%;
+}
 
 .badge15 .everton {
 	position: absolute;
     visibility: hidden;
 	border-radius: .5vw;
-	top: -53%;
+	top: 32.5%;
     color: white;
     font-family: Century Gothic;
     font-size: 1.1vw;
@@ -2571,12 +2627,16 @@ ul.navlist {
 .badge15:hover .everton {
     visibility: visible;
 }
+.badge15:hover {
+	background: url(../1956-57/away-everton.png) no-repeat;
+	background-size: 98% 72.5%;
+}
 
 .badge16 .luton {
 	position: absolute;
     visibility: hidden;
 	border-radius: .5vw;
-	top: -53%;
+	top: 32.5%;
     color: black;
     font-family: Century Gothic;
     font-size: 1.1vw;
@@ -2587,12 +2647,16 @@ ul.navlist {
 .badge16:hover .luton {
     visibility: visible;
 }
+.badge16:hover {
+	background: url(../1956-57/away-luton.png) no-repeat;
+	background-size: 98% 72.5%;
+}
 
 .badge17 .newcastle {
 	position: absolute;
     visibility: hidden;
 	border-radius: .5vw;
-	top: -53%;
+	top: 32.5%;
     color: black;
     font-family: Century Gothic;
     font-size: 1.1vw;
@@ -2603,12 +2667,16 @@ ul.navlist {
 .badge17:hover .newcastle {
     visibility: visible;
 }
+.badge17:hover {
+	background: url(../1956-57/away-newcastle.png) no-repeat;
+	background-size: 98% 72.5%;
+}
 
 .badge18 .city {
 	position: absolute;
     visibility: hidden;
 	border-radius: .5vw;
-	top: -53%;
+	top: 32.5%;
     color: black;
     font-family: Century Gothic;
     font-size: 1.1vw;
@@ -2619,12 +2687,16 @@ ul.navlist {
 .badge18:hover .city {
     visibility: visible;
 }
+.badge18:hover {
+	background: url(../1956-57/away-city.png) no-repeat;
+	background-size: 98% 72.5%;
+}
 
 .badge19 .portsmouth {
 	position: absolute;
     visibility: hidden;
 	border-radius: .5vw;
-	top: -53%;
+	top: 32.5%;
     color: white;
     font-family: Century Gothic;
     font-size: 1.1vw;
@@ -2635,12 +2707,16 @@ ul.navlist {
 .badge19:hover .portsmouth {
     visibility: visible;
 }
+.badge19:hover {
+	background: url(../1956-57/away-portsmouth.png) no-repeat;
+	background-size: 98% 72.5%;
+}
 
 .badge20 .sunderland {
 	position: absolute;
     visibility: hidden;
 	border-radius: .5vw;
-	top: -53%;
+	top: 32.5%;
     color: #cc0000;
     font-family: Century Gothic;
     font-size: 1.1vw;
@@ -2650,6 +2726,72 @@ ul.navlist {
 }
 .badge20:hover .sunderland {
     visibility: visible;
+}
+.badge20:hover {
+	background: url(../1956-57/away-sunderland.png) no-repeat;
+	background-size: 98% 72.5%;
+}
+
+.badge-container2 {
+	/* border: solid 1px red; */
+	position: absolute;
+	margin-top: -22.2%;
+	margin-left: 76.8%;
+	width: 6.1%;
+	height: 4.5%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.badge21 {
+	width: 50%;
+	height: 100%;
+}
+.badge22 {
+	width: 50%;
+	height: 100%;
+}
+
+.badge21 .cardiff {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 34%;
+	width: 110%;
+    color: white;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+	background: linear-gradient(to bottom, #003366, #003366 60%, #d8d8d9 60%, #d8d8d9 80%, #003366 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge21:hover .cardiff {
+    visibility: visible;
+}
+.badge21:hover {
+	background: url(../1956-57/away-cardiff.png) no-repeat;
+	background-size: 98% 82%;
+}
+
+.badge22 .charlton {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 34%;
+	width: 157%;
+    color: white;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+	background: linear-gradient(to bottom, #cc0000, #cc0000 60%, #d8d8d9 60%, #d8d8d9 80%, #cc0000 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge22:hover .charlton {
+    visibility: visible;
+}
+.badge22:hover {
+	background: url(../1956-57/away-charlton.png) no-repeat;
+	background-size: 100% 82%;
 }
 /* ⟰ ON HOVER BADGES ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* ⟱ TRANSITION BUFFER ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -6214,10 +6356,10 @@ z-index: -1;
 	.badge-container {
 		/* border: solid 1px red; */
 		position: absolute;
-		margin-top: -48.4%;
-		margin-left: 25.9%;
+		margin-top: -30.6%;
+		margin-left: 26%;
 		width: 71.5%;
-		height: 0.85%;
+		height: 5.24%;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
@@ -6307,24 +6449,27 @@ z-index: -1;
 		position: absolute;
 		visibility: hidden;
 		border-radius: .5vw;
-		top: -50%;
+		top: 33%;
 		color: white;
 		font-family: Century Gothic;
 		font-size: 1.7vw;
 		background: linear-gradient(to bottom, #cc0000, #cc0000 60%, #d8d8d9 60%, #d8d8d9 80%, #1e2526 80%);
 		padding: 0vw 0.5vw 1vw;  /* above and bottom - left and right - only bottom */
 		text-align: center;
-	}
-	
+	}	
 	.badge1:hover .united {
 	  visibility: visible;
+	}
+	.badge1:hover {
+		background: url(../1956-57/away-manutd.png) no-repeat;
+		background-size: 100% 74%;
 	}
 	
 	.badge2 .spurs {
 		position: absolute;
 		visibility: hidden;
 		border-radius: .5vw;
-		top: -50%;
+		top: 33%;
 		color: #003366;
 		font-family: Century Gothic;
 		font-size: 1.7vw;
@@ -6335,12 +6480,16 @@ z-index: -1;
 	.badge2:hover .spurs {
 		visibility: visible;
 	}
+	.badge2:hover {
+		background: url(../1956-57/away-spurs.png) no-repeat;
+		background-size: 105% 74%;
+	}
 	
 	.badge3 .preston {
 		position: absolute;
 		visibility: hidden;
 		border-radius: .5vw;
-		top: -50%;
+		top: 33%;
 		color: black;
 		font-family: Century Gothic;
 		font-size: 1.7vw;
@@ -6351,12 +6500,16 @@ z-index: -1;
 	.badge3:hover .preston {
 		visibility: visible;
 	}
+	.badge3:hover {
+		background: url(../1956-57/away-preston.png) no-repeat;
+		background-size: 105% 74%;
+	}
 	
 	.badge4 .blackpool {
 		position: absolute;
 		visibility: hidden;
 		border-radius: .5vw;
-		top: -50%;
+		top: 33%;
 		color: black;
 		font-family: Century Gothic;
 		font-size: 1.7vw;
@@ -6367,12 +6520,16 @@ z-index: -1;
 	.badge4:hover .blackpool {
 		visibility: visible;
 	}
+	.badge4:hover {
+		background: url(../1956-57/away-blackpool.png) no-repeat;
+		background-size: 105% 74%;
+	}
 	
 	.badge5 .arsenal {
 		position: absolute;
 		visibility: hidden;
 		border-radius: .5vw;
-		top: -50%;
+		top: 33%;
 		color: white;
 		font-family: Century Gothic;
 		font-size: 1.7vw;
@@ -6382,6 +6539,372 @@ z-index: -1;
 	}
 	.badge5:hover .arsenal {
 		visibility: visible;
+	}
+	.badge5:hover {
+		background: url(../1956-57/away-arsenal.png) no-repeat;
+		background-size: 98% 74%;
+	}
+	
+	.badge6 .wolverhampton {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 33%;
+		color: black;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+		background: linear-gradient(to bottom, #feb80e, #feb80e 60%, #1e2526 60%, #1e2526 80%, #feb80e 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge6:hover .wolverhampton {
+		visibility: visible;
+	}
+	.badge6:hover {
+		background: url(../1956-57/away-wolves.png) no-repeat;
+		background-size: 98% 74%;
+	}
+	
+	.badge7 .burnley {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 33%;
+		color: white;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+		background: linear-gradient(to bottom, #99192c, #99192c 60%, #d8d8d9 60%, #d8d8d9 80%, #99192c 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge7:hover .burnley {
+		visibility: visible;
+	}
+	.badge7:hover {
+		background: url(../1956-57/away-burnley.png) no-repeat;
+		background-size: 98% 74%;
+	}
+
+	.badge8 .leeds {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 33%;
+		color: #fdd467;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+		background: linear-gradient(to bottom, #23398f, #23398f 60%, #d8d8d9 60%, #d8d8d9 80%, #23398f 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge8:hover .leeds {
+		visibility: visible;
+	}
+	.badge8:hover {
+		background: url(../1956-57/away-leeds.png) no-repeat;
+		background-size: 98% 74%;
+	}
+
+	.badge9 .bolton {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 33%;
+		color: #003366;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+		background: linear-gradient(to bottom, #d8d8d9, #d8d8d9 60%, #003366 60%, #003366 80%, #d8d8d9 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge9:hover .bolton {
+		visibility: visible;
+	}
+	.badge9:hover {
+		background: url(../1956-57/away-bolton.png) no-repeat;
+		background-size: 98% 74%;
+	}
+
+	.badge10 .villa {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 33%;
+		color: #99ccff;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+		background: linear-gradient(to bottom, #99192c, #99192c 60%, #d8d8d9 60%, #d8d8d9 80%, #1e2526 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge10:hover .villa {
+		visibility: visible;
+	}
+	.badge10:hover {
+		background: url(../1956-57/away-villa.png) no-repeat;
+		background-size: 95.7% 74%;
+	}
+
+	.badge11 .bromwich {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 33%;
+		color: #003366;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+		background: linear-gradient(to bottom, #d8d8d9, #d8d8d9 60%, #d8d8d9 60%, #d8d8d9 80%, #003366 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge11:hover .bromwich {
+		visibility: visible;
+	}
+	.badge11:hover {
+		background: url(../1956-57/away-bromwich.png) no-repeat;
+		background-size: 95.7% 74%;
+	}
+
+	.badge12 .birmingham {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 33%;
+		color: white;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+		background: linear-gradient(to bottom, #003366, #003366 60%, #d8d8d9 60%, #d8d8d9 80%, #003366 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge12:hover .birmingham {
+		visibility: visible;
+	}
+	.badge12:hover {
+		background: url(../1956-57/away-birmingham.png) no-repeat;
+		background-size: 95.7% 74%;
+	}
+
+	.badge13 .chelsea {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 33%;
+		color: white;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+		background: linear-gradient(to bottom, #003366, #003366 60%, #d8d8d9 60%, #d8d8d9 80%, #1e2526 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge13:hover .chelsea {
+		visibility: visible;
+	}
+	.badge13:hover {
+		background: url(../1956-57/away-chelsea.png) no-repeat;
+		background-size: 95.7% 74%;
+	}
+
+	.badge14 .sheffieldw {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 33%;
+		color: #003366;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+		background: linear-gradient(to bottom, #d8d8d9, #d8d8d9 60%, #1e2526 60%, #1e2526 80%, #003366 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge14:hover .sheffieldw {
+		visibility: visible;
+	}
+	.badge14:hover {
+		background: url(../1956-57/away-sheffieldw.png) no-repeat;
+		background-size: 95.7% 74%;
+	}
+
+	.badge15 .everton {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 33%;
+		color: white;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+		background: linear-gradient(to bottom, #003366, #003366 60%, #d8d8d9 60%, #d8d8d9 80%, #003366 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge15:hover .everton {
+		visibility: visible;
+	}
+	.badge15:hover {
+		background: url(../1956-57/away-everton.png) no-repeat;
+		background-size: 94.8% 74%;
+	}
+
+	.badge16 .luton {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 33%;
+		color: black;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+		background: linear-gradient(to bottom, #d8d8d9, #d8d8d9 60%, #1e2526 60%, #1e2526 80%, #1e2526 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge16:hover .luton {
+		visibility: visible;
+	}
+	.badge16:hover {
+		background: url(../1956-57/away-luton.png) no-repeat;
+		background-size: 94.8% 74%;
+	}
+
+	.badge17 .newcastle {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 33%;
+		color: black;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+		background: linear-gradient(to bottom, #d8d8d9, #d8d8d9 60%, #1e2526 60%, #1e2526 80%, #d8d8d9 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge17:hover .newcastle {
+		visibility: visible;
+	}
+	.badge17:hover {
+		background: url(../1956-57/away-newcastle.png) no-repeat;
+		background-size: 94.8% 74%;
+	}
+
+	.badge18 .city {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 33%;
+		color: black;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+		background: linear-gradient(to bottom, #99ccff, #99ccff 60%, #d8d8d9 60%, #d8d8d9 80%, #99ccff 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge18:hover .city {
+		visibility: visible;
+	}
+	.badge18:hover {
+		background: url(../1956-57/away-city.png) no-repeat;
+		background-size: 94.8% 74%;
+	}
+
+	.badge19 .portsmouth {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 33%;
+		color: white;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+		background: linear-gradient(to bottom, #003366, #003366 60%, #d8d8d9 60%, #d8d8d9 80%, #cc0000 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge19:hover .portsmouth {
+		visibility: visible;
+	}
+	.badge19:hover {
+		background: url(../1956-57/away-portsmouth.png) no-repeat;
+		background-size: 94.8% 74%;
+	}
+
+	.badge20 .sunderland {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 33%;
+		color: #cc0000;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+		background: linear-gradient(to bottom, #d8d8d9, #d8d8d9 60%, #1e2526 60%, #1e2526 80%, #cc0000 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge20:hover .sunderland {
+		visibility: visible;
+	}
+	.badge20:hover {
+		background: url(../1956-57/away-sunderland.png) no-repeat;
+		background-size: 94.8% 74%;
+	}
+
+	.badge-container2 {
+		/* border: solid 1px red; */
+		position: absolute;
+		margin-top: -26%;
+		margin-left: 90.2%;
+		width: 7.1%;
+		height: 4.5%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.badge21 {
+		width: 50%;
+		height: 100%;
+	}
+	.badge22 {
+		width: 50%;
+		height: 100%;
+	}
+	
+	.badge21 .cardiff {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 34%;
+		width: 113%;
+		color: white;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+		background: linear-gradient(to bottom, #003366, #003366 60%, #d8d8d9 60%, #d8d8d9 80%, #003366 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge21:hover .cardiff {
+		visibility: visible;
+	}
+	.badge21:hover {
+		background: url(../1956-57/away-cardiff.png) no-repeat;
+		background-size: 100% 81.7%;
+	}
+	
+	.badge22 .charlton {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 34%;
+		width: 165%;
+		color: white;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+		background: linear-gradient(to bottom, #cc0000, #cc0000 60%, #d8d8d9 60%, #d8d8d9 80%, #cc0000 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge22:hover .charlton {
+		visibility: visible;
+	}
+	.badge22:hover {
+		background: url(../1956-57/away-charlton.png) no-repeat;
+		background-size: 100% 81.7%;
 	}
 	/* ⟰ ON HOVER BADGES ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ TRANSITION BUFFER ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
