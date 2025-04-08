@@ -583,15 +583,15 @@ body {
 	background-size: 180% 180%;
 }
 .home span {
-	color: #fff;
-	/* color: #da020e;
-	text-shadow: 0 0 2px #da020e; */
-	opacity: none;
-}
-.home {
 	/* color: #fff; */
 	color: #da020e;
 	text-shadow: 0 0 2px #da020e;
+	opacity: none;
+}
+.home {
+	color: #fff;
+	/* color: #da020e;
+	text-shadow: 0 0 2px #da020e; */
 	opacity: none;
 }
 /* ⟱ SCOREBOARD (RESULT) ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -1623,7 +1623,7 @@ ul.navlist {
 	padding-top: 2%;
 	z-index: 4;
 }
-.date-and-result h48, h49, h50, h51, h52, h53 {
+.date-and-result h48, h49, h50, h51, h52, h53, h54 {
 	position: absolute;
 	display: inline-block;
 	width: 7.3%;
@@ -1653,7 +1653,7 @@ ul.navlist {
 .date-and-result h13, h43, h53 {
 	left: 50.25%;
 }
-.date-and-result h14, h44 {
+.date-and-result h14, h44, h54 {
 	left: 57.3%;
 }
 .date-and-result h15, h45 {
@@ -1700,6 +1700,8 @@ ul.navlist {
 #result-45v { display: none; }
 #result-46h { display: none;}
 #result-46v { display: none; }
+#result-47h { display: none;}
+#result-47v { display: none; }
 /* ⟰ DATE, FIXTURE AND RESULT ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* ⟱ MATCH RATINGS ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .match-ratings-wrapper {
@@ -2454,6 +2456,16 @@ ul.navlist {
 }
 .dropdown-46th-match {
 	background-image: url(../2024-25/46th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-47th-match {
+	background-image: url(../2024-25/47th-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -3990,8 +4002,8 @@ ul.navlist {
 					   0 0 50px #ef0017,
 					   0 0 200px #ef0017;
 }
-/* 	MATCH 46 // BUTTON: ROTATE ANIMATION */
-#button-score-news46 span:nth-child(1) {
+/* 	MATCH 47 // BUTTON: ROTATE ANIMATION */
+#button-score-news47 span:nth-child(1) {
 	top: 0;
 	left: -100%;
 	width: 100%;
@@ -4000,7 +4012,7 @@ ul.navlist {
 	animation: rotate1 0.8s linear infinite;
 	animation-delay: 0s;
 }
-#button-score-news46 span:nth-child(3) {
+#button-score-news47 span:nth-child(3) {
 	bottom: 0;
 	right: -100%;
 	width: 100%;
@@ -4009,7 +4021,7 @@ ul.navlist {
 	animation: rotate3 0.8s linear infinite;
 	animation-delay: 0.4s;
 }
-#button-score-news46 span:nth-child(2) {
+#button-score-news47 span:nth-child(2) {
 	top: -100%;
 	right: 0;
 	width: 2%;
@@ -4018,7 +4030,7 @@ ul.navlist {
 	animation: rotate2 0.8s linear infinite;
 	animation-delay: 0.2s;
 }
-#button-score-news46 span:nth-child(4) {
+#button-score-news47 span:nth-child(4) {
 	bottom: -100%;
 	left: 0;
 	width: 2%;
@@ -4027,7 +4039,89 @@ ul.navlist {
 	animation: rotate4 0.8s linear infinite;
 	animation-delay: 0.6s;
 }
-#button-score-news46:hover span {
+#button-score-news47:hover span {
+	animation-play-state: paused;
+}
+
+/* MATCH 47 */
+#button-score-news47 h89 { display: none; }
+#cover47-score {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .08%;
+}
+#cover47-news {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .095%;
+	z-index: -1;
+}
+#button-score-news47 {
+	border: none;
+	border-radius: .1vw;
+	position: absolute;
+	z-index: 2;
+	margin-top: -5.65%;
+	left: 40.8%;
+	width: 14.2%;
+	height: auto;
+	line-height: 1vw;
+	font-family: Lampen;
+	font-size: 1.2vw;
+	color: white;
+	background: #262626;
+	overflow: hidden;
+}
+#button-score-news47:hover {
+	color: black;
+	background: #ef0017;
+	box-shadow: 0 0 5px #ef0017,
+					   0 0 25px #ef0017,
+					   0 0 50px #ef0017,
+					   0 0 200px #ef0017;
+}
+/* 	MATCH 47 // BUTTON: ROTATE ANIMATION */
+#button-score-news47 span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 10%;
+	background: linear-gradient(90deg, transparent, #ef0017);
+	animation: rotate1 0.8s linear infinite;
+	animation-delay: 0s;
+}
+#button-score-news47 span:nth-child(3) {
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: .15vw;
+	background: linear-gradient(270deg, transparent, #ef0017);
+	animation: rotate3 0.8s linear infinite;
+	animation-delay: 0.4s;
+}
+#button-score-news47 span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #ef0017);
+	animation: rotate2 0.8s linear infinite;
+	animation-delay: 0.2s;
+}
+#button-score-news47 span:nth-child(4) {
+	bottom: -100%;
+	left: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #ef0017);
+	animation: rotate4 0.8s linear infinite;
+	animation-delay: 0.6s;
+}
+#button-score-news47:hover span {
 	animation-play-state: paused;
 }
 /* 	⟰ BUTTON: SHOW SCORE AND NEWS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
@@ -4954,6 +5048,63 @@ ul.navlist {
 }
 #button-stats46:hover h90 { color: rgb(211, 208, 208); }
 #stats-46th-match { display: none; }
+
+/* MATCH 47 */
+#button-stats47 h91 { display: none; }
+#button-stats47 {
+	border: none;
+	position: relative;
+	margin-top: 2%;
+	left: 30.2%;
+	width: 35%;
+	height: 2.2vw;
+	font-size: 1.3vw;
+	font-family: Manchester\ United\ 23-24\ Tipogra;
+	color: black;
+	background: transparent;
+	text-align: center;
+	z-index: 1;
+}
+#button-stats47:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: red;
+	opacity: .7;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: top;
+	transition: .2s;
+	top: -10%;
+	left: -3%;
+}
+#button-stats47:hover:before {
+	top: -20%;
+	left: 0;
+	transform: perspective(1000px) rotateX(80deg);
+}
+#button-stats47:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	opacity: .9;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: bottom;
+	transition: .2s;
+	bottom: -10%;
+	right: -1%;
+}
+#button-stats47:hover:after {
+	bottom: -20%;
+	right: 0;
+	transform: perspective(1000px) rotateX(-80deg);
+}
+#button-stats47:hover h90 { color: rgb(211, 208, 208); }
+#stats-47th-match { display: none; }
 /* 	⟰ BUTTON: SHOW MATCH STATS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 /* ⟱ BADGE-SPONSOR SPIN ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* BADGE-SPONSOR SPIN: HISTORICAL */
@@ -6282,7 +6433,7 @@ z-index: -1;
 		padding-top: 2.7%;
 		z-index: 4;
 	}
-	.date-and-result h48, h49, h50, h51, h52, h53 {  /* 5th row */
+	.date-and-result h48, h49, h50, h51, h52, h53, h54 {  /* 5th row */
 		position: absolute;
 		display: inline-block;
 		width: 9.8%;
@@ -6312,7 +6463,7 @@ z-index: -1;
 	.date-and-result h13, h43, h53 {
 		left: 49.92%;
 	}
-	.date-and-result h14, h44 {
+	.date-and-result h14, h44, h54 {
 		left: 59.56%;
 	}
 	.date-and-result h15, h45 {
@@ -6926,6 +7077,16 @@ z-index: -1;
 	}
 	.dropdown-46th-match {
 		background-image: url(../2024-25/46th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-47th-match {
+		background-image: url(../2024-25/47th-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -7595,6 +7756,40 @@ z-index: -1;
 		background: #262626;
 		overflow: hidden;
 	}
+
+	/* MATCH 47 */
+	#button-score-news47 h88 { display: none; }
+	#button-score-news47 h89 { display: initial; }
+	#cover47-score {
+		position: absolute;
+		width: 116.3%;
+		height: 100%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#cover47-news {
+		position: absolute;
+		width: 116.3%;
+		height: 100%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#button-score-news47 {
+		border: none;
+		border-radius: .1vw;
+		position: absolute;
+		z-index: 2;
+		margin-top: -7.4%;
+		left: 49.9%;
+		width: 17.3%;
+		height: auto;
+		line-height: 1.7vw;
+		font-family: Lampen;
+		font-size: 1.75vw;
+		color: white;
+		background: #262626;
+		overflow: hidden;
+	}
 	/* 	⟰ BUTTON: SHOW SCORE AND NEWS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* 	⟱ DATE | TIME | COMPETITION STAGE ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	.date-time {
@@ -8135,6 +8330,39 @@ z-index: -1;
 		left: 0%;
 	}
 	#button-stats46:hover h91 { color: rgb(211, 208, 208); }
+
+	/* MATCH 47 */
+	#button-stats47 h90 { display: none; }
+	#button-stats47 h91 { display: initial; }
+	#button-stats47 {
+		border: none;
+		position: relative;
+		margin-top: 2%;
+		left: 41.3%;
+		width: 35%;
+		height: 2.2vw;
+		font-size: 1.8vw;
+		font-family: Manchester\ United\ 23-24\ Tipogra;
+		color: black;
+		background: transparent;
+		text-align: center;
+		z-index: 1;
+	}
+	#button-stats47:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: red;
+		opacity: .7;
+		z-index: -1;
+		mix-blend-mode: multiply;
+		transform-origin: top;
+		transition: .2s;
+		top: -10%;
+		left: 0%;
+	}
+	#button-stats47:hover h91 { color: rgb(211, 208, 208); }
 	/* 	⟰ BUTTON: SHOW MATCH STATS ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* ⟱ BADGE-SPONSOR SPIN ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.badges-and-sponsors { display: none !important; }
