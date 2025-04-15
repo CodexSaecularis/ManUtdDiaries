@@ -2241,11 +2241,10 @@ ul.navlist {
 .badge-container {
 	/* border: solid 1px red; */
 	position: absolute;
-	/* margin-top: -41.2%; */
 	margin-top: -26%;
 	margin-left: 22.3%;
-	width: 60.6%;
-	height: 5.3%;
+	width: 63.8vw;
+	height: 26vw;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -2736,9 +2735,9 @@ ul.navlist {
 	/* border: solid 1px red; */
 	position: absolute;
 	margin-top: -22.2%;
-	margin-left: 76.8%;
-	width: 6.1%;
-	height: 4.5%;
+	margin-left: 76.8%;	
+	width: 6.4vw;
+	height: 22vw;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -6358,8 +6357,8 @@ z-index: -1;
 		position: absolute;
 		margin-top: -30.6%;
 		margin-left: 26%;
-		width: 71.5%;
-		height: 5.24%;
+		width: 92.6vw;
+		height: 37vw;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
@@ -6850,8 +6849,8 @@ z-index: -1;
 		position: absolute;
 		margin-top: -26%;
 		margin-left: 90.2%;
-		width: 7.1%;
-		height: 4.5%;
+		width: 9.3vw;
+		height: 31.5vw;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
