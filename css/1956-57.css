@@ -7349,8 +7349,7 @@ z-index: -1;
 		position: absolute;
 		margin-top: -26.05%;
 		margin-left: 26%;
-		/* width: 92.5vw; */
-		width: 92.4vw;
+		width: 92.5vw;
 		height: 31.5vw;
 		display: flex;
 		flex-wrap: wrap;
@@ -7468,10 +7467,10 @@ z-index: -1;
 		visibility: hidden;
 		border-radius: .5vw;
 		top: 34%;
-		color: white;
+		color: black;
 		font-family: Century Gothic;
 		font-size: 1.7vw;
-		background: linear-gradient(to bottom, #cc0000, #cc0000 60%, #d8d8d9 60%, #d8d8d9 80%, #cc0000 80%);
+		background: linear-gradient(to bottom, #feb80e, #feb80e 60%, #1e2526 60%, #1e2526 80%, #feb80e 80%);
 		padding: 0vw 0.5vw 1vw;
 		text-align: center;
 	}
@@ -7489,10 +7488,10 @@ z-index: -1;
 		border-radius: .5vw;
 		top: 34%;
 		width: 14%;
-		color: white;
+		color: #99192c;
 		font-family: Century Gothic;
 		font-size: 1.7vw;
-		background: linear-gradient(to bottom, #003366, #003366 60%, #d8d8d9 60%, #d8d8d9 80%, #003366 80%);
+		background: linear-gradient(to bottom, #d8d8d9, #d8d8d9 60%, #1e2526 60%, #1e2526 80%, #99192c 80%);
 		padding: 0vw 0.5vw 1vw;
 		text-align: center;
 	}
@@ -7509,10 +7508,10 @@ z-index: -1;
 		visibility: hidden;
 		border-radius: .5vw;
 		top: 34%;
-		color: white;
+		color: purple;
 		font-family: Century Gothic;
 		font-size: 1.7vw;
-		background: linear-gradient(to bottom, #cc0000, #cc0000 60%, #d8d8d9 60%, #d8d8d9 80%, #cc0000 80%);
+		background: linear-gradient(to bottom, #d8d8d9, #d8d8d9 60%, #d8d8d9 60%, #d8d8d9 80%, #d8d8d9 80%);
 		padding: 0vw 0.5vw 1vw;
 		text-align: center;
 	}
@@ -7581,6 +7580,66 @@ z-index: -1;
 	}
 	.badge39:hover {
 		background: url(../1956-57/away-everton2.png) no-repeat;
+		background-size: 100% 81.7%;
+	}
+	
+	.badge40 .bournemouth {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 34%;
+    	color: white;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+	background: linear-gradient(to bottom, #cc0000, #cc0000 60%, #d8d8d9 60%, #d8d8d9 80%, #cc0000 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge40:hover .bournemouth {
+		visibility: visible;
+	}
+	.badge40:hover {
+		background: url(../1956-57/away-bournemouth.png) no-repeat;
+		background-size: 100% 81.7%;
+	}
+	
+	.badge41 .birmingham2 {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 34%;
+    	color: white;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+	    background: linear-gradient(to bottom, #003366, #003366 60%, #d8d8d9 60%, #d8d8d9 80%, #003366 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge41:hover .birmingham2 {
+		visibility: visible;
+	}
+	.badge41:hover {
+		background: url(../1956-57/away-birmingham2.png) no-repeat;
+		background-size: 100% 81.7%;
+	}
+	
+	.badge42 .villa2 {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 34%;
+    	color: #99192c;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+		background: linear-gradient(to bottom, #99ccff, #99ccff 60%, #d8d8d9 60%, #d8d8d9 80%, #99192c 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge42:hover .villa2 {
+		visibility: visible;
+	}
+	.badge42:hover {
+		background: url(../1956-57/away-villa2.png) no-repeat;
 		background-size: 100% 81.7%;
 	}
 	/* ⟰ ON HOVER BADGES ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
