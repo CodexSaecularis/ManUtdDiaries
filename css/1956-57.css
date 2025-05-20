@@ -7347,7 +7347,7 @@ z-index: -1;
 	.badge-container-othercomps1 {
 		/* border: solid 1px red; */
 		position: absolute;
-		margin-top: -25.95%;
+		margin-top: -26.05%;
 		margin-left: 26%;
 		width: 92.5vw;
 		height: 31.5vw;
@@ -7514,6 +7514,46 @@ z-index: -1;
 	}
 	.badge30:hover {
 		background: url(../1956-57/away-madrid.png) no-repeat;
+		background-size: 100% 81.7%;
+	}
+	
+	.badge37 .hartlepool {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 34%;
+    	color: #003366;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+		background: linear-gradient(to bottom, #d8d8d9, #d8d8d9 60%, #1e2526 60%, #1e2526 80%, #1e2526 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge37:hover .hartlepool {
+		visibility: visible;
+	}
+	.badge37:hover {
+		background: url(../1956-57/away-hartlepool.png) no-repeat;
+		background-size: 100% 81.7%;
+	}
+	
+	.badge38 .wrexham {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 34%;
+    	color: white;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+		background: linear-gradient(to bottom, #cc0000, #cc0000 60%, #d8d8d9 60%, #d8d8d9 80%, #cc0000 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge38:hover .wrexham {
+		visibility: visible;
+	}
+	.badge38:hover {
+		background: url(../1956-57/away-wrexham.png) no-repeat;
 		background-size: 100% 81.7%;
 	}
 	/* ⟰ ON HOVER BADGES ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
