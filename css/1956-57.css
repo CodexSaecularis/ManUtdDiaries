@@ -2910,8 +2910,10 @@ ul.navlist {
 	/* border: solid 1px red; */
 	position: absolute;
 	margin-top: -22.2%;
-	margin-left: 22.2%;
-	width: 63.8vw;
+	/* margin-left: 22.3%;
+	width: 63.8vw; */
+	margin-left: 22.24%;
+	width: 63.9vw;
 	height: 22vw;
 	display: flex;
 	flex-wrap: wrap;
@@ -3048,7 +3050,7 @@ ul.navlist {
 }
 .badge28:hover {
 	background: url(../1956-57/away-dortmund.png) no-repeat;
-	background-size: 98% 82%;
+	background-size: 96% 82%;
 }
 
 .badge29 .bilbao {
@@ -3068,7 +3070,7 @@ ul.navlist {
 }
 .badge29:hover {
 	background: url(../1956-57/away-bilbao.png) no-repeat;
-	background-size: 100% 82%;
+	background-size: 96% 82%;
 }
 
 .badge30 .madrid {
@@ -3088,7 +3090,7 @@ ul.navlist {
 }
 .badge30:hover {
 	background: url(../1956-57/away-madrid.png) no-repeat;
-	background-size: 100% 82%;
+	background-size: 96% 82%;
 }
 
 .badge31:hover {
@@ -3127,7 +3129,7 @@ ul.navlist {
 }
 .badge37:hover {
 	background: url(../1956-57/away-hartlepool.png) no-repeat;
-	background-size: 106% 82%;
+	background-size: 97% 82%;
 }
 
 .badge38 .wrexham {
@@ -3147,7 +3149,7 @@ ul.navlist {
 }
 .badge38:hover {
 	background: url(../1956-57/away-wrexham.png) no-repeat;
-	background-size: 105% 82%;
+	background-size: 97% 82%;
 }
 
 .badge39 .everton2 {
@@ -3167,7 +3169,7 @@ ul.navlist {
 }
 .badge39:hover {
 	background: url(../1956-57/away-everton2.png) no-repeat;
-	background-size: 108% 82%;
+	background-size: 97% 82%;
 }
 
 .badge40 .bournemouth {
@@ -3187,7 +3189,7 @@ ul.navlist {
 }
 .badge40:hover {
 	background: url(../1956-57/away-bournemouth.png) no-repeat;
-	background-size: 108% 82%;
+	background-size: 98% 82%;
 }
 
 .badge41 .birmingham2 {
@@ -3207,7 +3209,7 @@ ul.navlist {
 }
 .badge41:hover {
 	background: url(../1956-57/away-birmingham2.png) no-repeat;
-	background-size: 105% 82%;
+	background-size: 97% 82%;
 }
 
 .badge42 .villa2 {
@@ -3228,7 +3230,7 @@ ul.navlist {
 }
 .badge42:hover {
 	background: url(../1956-57/away-villa2.png) no-repeat;
-	background-size: 105% 82%;
+	background-size: 97% 82%;
 }
 /* ⟰ ON HOVER BADGES ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* ⟱ TRANSITION BUFFER ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -7348,8 +7350,10 @@ z-index: -1;
 		/* border: solid 1px red; */
 		position: absolute;
 		margin-top: -26.05%;
-		margin-left: 26%;
-		width: 92.4vw;
+		/* margin-left: 26%;
+		width: 92.4vw; */
+		margin-left: 26.06%;
+		width: 92.3vw;
 		height: 31.5vw;
 		display: flex;
 		flex-wrap: wrap;
@@ -7374,7 +7378,6 @@ z-index: -1;
 	.badge27 {
 		width: 5%;
 		height: 100%;
-		background-color: green;
 	}
 	.badge28 {
 		width: 5%;
@@ -7383,7 +7386,6 @@ z-index: -1;
 	.badge29 {
 		width: 5%;
 		height: 100%;
-		background-color: green;
 	}
 	.badge30 {
 		width: 5%;
@@ -7392,7 +7394,6 @@ z-index: -1;
 	.badge31 {
 		width: 5%;
 		height: 100%;
-		background-color: green;
 	}
 	.badge32 {
 		width: 5%;
@@ -7417,7 +7418,6 @@ z-index: -1;
 	.badge37 {
 		width: 5%;
 		height: 100%;
-		background-color: green;
 	}
 	.badge38 {
 		width: 5%;
@@ -7426,7 +7426,6 @@ z-index: -1;
 	.badge39 {
 		width: 5%;
 		height: 100%;
-		background-color: green;
 	}
 	.badge40 {
 		width: 5%;
@@ -7435,7 +7434,6 @@ z-index: -1;
 	.badge41 {
 		width: 5%;
 		height: 100%;
-		background-color: green;
 	}
 	.badge42 {
 		width: 5%;
@@ -7500,7 +7498,7 @@ z-index: -1;
 	}
 	.badge29:hover {
 		background: url(../1956-57/away-bilbao.png) no-repeat;
-		background-size: 100% 81.7%;
+		background-size: 96% 81.7%;
 	}
 	
 	.badge30 .madrid {
@@ -7560,7 +7558,7 @@ z-index: -1;
 	}
 	.badge38:hover {
 		background: url(../1956-57/away-wrexham.png) no-repeat;
-		background-size: 100% 81.7%;
+		background-size: 96% 81.7%;
 	}
 	
 	.badge39 .everton2 {
@@ -7571,7 +7569,7 @@ z-index: -1;
     	color: white;
 		font-family: Century Gothic;
 		font-size: 1.7vw;
-		background: linear-gradient(to bottom, #cc0000, #cc0000 60%, #d8d8d9 60%, #d8d8d9 80%, #cc0000 80%);
+    background: linear-gradient(to bottom, #003366, #003366 60%, #d8d8d9 60%, #d8d8d9 80%, #003366 80%);
 		padding: 0vw 0.5vw 1vw;
 		text-align: center;
 	}
@@ -7580,7 +7578,7 @@ z-index: -1;
 	}
 	.badge39:hover {
 		background: url(../1956-57/away-everton2.png) no-repeat;
-		background-size: 100% 81.7%;
+		background-size: 96% 81.7%;
 	}
 	
 	.badge40 .bournemouth {
@@ -7600,7 +7598,7 @@ z-index: -1;
 	}
 	.badge40:hover {
 		background: url(../1956-57/away-bournemouth.png) no-repeat;
-		background-size: 100% 81.7%;
+		background-size: 100.5% 81.7%;
 	}
 	
 	.badge41 .birmingham2 {
@@ -7620,7 +7618,7 @@ z-index: -1;
 	}
 	.badge41:hover {
 		background: url(../1956-57/away-birmingham2.png) no-repeat;
-		background-size: 100% 81.7%;
+		background-size: 97% 81.7%;
 	}
 	
 	.badge42 .villa2 {
@@ -7640,7 +7638,7 @@ z-index: -1;
 	}
 	.badge42:hover {
 		background: url(../1956-57/away-villa2.png) no-repeat;
-		background-size: 100% 81.7%;
+		background-size: 97.4% 81.7%;
 	}
 	/* ⟰ ON HOVER BADGES ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ TRANSITION BUFFER ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
