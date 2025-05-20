@@ -7349,7 +7349,8 @@ z-index: -1;
 		position: absolute;
 		margin-top: -26.05%;
 		margin-left: 26%;
-		width: 92.5vw;
+		/* width: 92.5vw; */
+		width: 92.4vw;
 		height: 31.5vw;
 		display: flex;
 		flex-wrap: wrap;
@@ -7374,6 +7375,7 @@ z-index: -1;
 	.badge27 {
 		width: 5%;
 		height: 100%;
+		background-color: green;
 	}
 	.badge28 {
 		width: 5%;
@@ -7382,6 +7384,7 @@ z-index: -1;
 	.badge29 {
 		width: 5%;
 		height: 100%;
+		background-color: green;
 	}
 	.badge30 {
 		width: 5%;
@@ -7390,6 +7393,7 @@ z-index: -1;
 	.badge31 {
 		width: 5%;
 		height: 100%;
+		background-color: green;
 	}
 	.badge32 {
 		width: 5%;
@@ -7414,6 +7418,7 @@ z-index: -1;
 	.badge37 {
 		width: 5%;
 		height: 100%;
+		background-color: green;
 	}
 	.badge38 {
 		width: 5%;
@@ -7422,6 +7427,7 @@ z-index: -1;
 	.badge39 {
 		width: 5%;
 		height: 100%;
+		background-color: green;
 	}
 	.badge40 {
 		width: 5%;
@@ -7430,6 +7436,7 @@ z-index: -1;
 	.badge41 {
 		width: 5%;
 		height: 100%;
+		background-color: green;
 	}
 	.badge42 {
 		width: 5%;
@@ -7554,6 +7561,26 @@ z-index: -1;
 	}
 	.badge38:hover {
 		background: url(../1956-57/away-wrexham.png) no-repeat;
+		background-size: 103% 81.7%;
+	}
+	
+	.badge39 .everton2 {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 34%;
+    	color: white;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+		background: linear-gradient(to bottom, #cc0000, #cc0000 60%, #d8d8d9 60%, #d8d8d9 80%, #cc0000 80%);
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge39:hover .everton2 {
+		visibility: visible;
+	}
+	.badge39:hover {
+		background: url(../1956-57/away-everton2.png) no-repeat;
 		background-size: 100% 81.7%;
 	}
 	/* ⟰ ON HOVER BADGES ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
