@@ -583,15 +583,15 @@ body {
 	background-size: 180% 180%;
 }
 .home span {
-	/* color: #fff; */
-	color: #da020e;
-	text-shadow: 0 0 2px #da020e;
-	opacity: none;
-}
-.home {
 	color: #fff;
 	/* color: #da020e;
 	text-shadow: 0 0 2px #da020e; */
+	opacity: none;
+}
+.home {
+	/* color: #fff; */
+	color: #da020e;
+	text-shadow: 0 0 2px #da020e;
 	opacity: none;
 }
 /* ⟱ SCOREBOARD (RESULT) ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -2013,7 +2013,7 @@ ul.navlist {
 .dropdown_li {
 	list-style: none;
 }
-#link-opacity { opacity: 0; }
+#link-opacity { opacity: 1; }
 .link1 {
 	position: absolute;
 	font-family: Agency FB;
