@@ -286,15 +286,37 @@ body {
 #season-links {
 	pointer-events: var(--on-tap, none);
 }
-.season-19-20 img {
+.season-2025-26 img {
+	position: absolute;
+	opacity: 0;
+	width: 114px;
+	height: 116px;
+	margin-top: 0.2px;
+	margin-left: -159px;
+}
+.season-2025-26:hover img {
+	opacity: 1;
+}
+.season-2024-25 img {
+	position: absolute;
+	opacity: 0;
+	width: 114px;
+	height: 116px;
+	margin-top: -1.1px;
+	margin-left: -159px;
+}
+.season-2024-25:hover img {
+	opacity: 1;
+}
+.season-2023-24 img {
 	position: absolute;
 	opacity: 0;
 	width: 113px;
 	height: 114px;
-	margin-top: 2px;
+	margin-top: 1.7px;
 	margin-left: -275px;
 }
-.season-19-20:hover img {
+.season-2023-24:hover img {
 	opacity: 1;
 }
 .season-20-21 img {
@@ -311,9 +333,9 @@ body {
 .season-1956-57 img {
 	position: absolute;
 	opacity: 0;
-	width: 113px;
+	width: 114px;
 	height: 114px;
-	margin-top: 2px;
+	margin-top: 1.7px;
 	margin-left: -159px;
 }
 .season-1956-57:hover img {
@@ -572,7 +594,8 @@ body {
 	height: 2.7vw;
 	margin-top: -12.95%;
 	left: 38.4%;
-	display: flex;
+	/* display: flex; */  /* deactivated to center the text */
+	text-align: center;  /* addition to center the text */
 	overflow: hidden;
 	white-space: nowrap;
 	z-index: 7;
@@ -583,15 +606,15 @@ body {
 	background-size: 180% 180%;
 }
 .home span {
-	color: #fff;
-	/* color: #da020e;
-	text-shadow: 0 0 2px #da020e; */
-	opacity: none;
-}
-.home {
 	/* color: #fff; */
 	color: #da020e;
 	text-shadow: 0 0 2px #da020e;
+	opacity: none;
+}
+.home {
+	color: #fff;
+	/* color: #da020e;
+	text-shadow: 0 0 2px #da020e; */
 	opacity: none;
 }
 /* ⟱ SCOREBOARD (RESULT) ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -1239,12 +1262,12 @@ ul.navlist {
 }
 .brick-wall h1 {
 	position: absolute;
-	margin-top: -24.25%;
-	left: 35.5%;
+	margin-top: -26%;
+	left: 37%;
 	background-size: cover;
 	z-index: 7;
-	font-family: raleway_f;
-	font-size: 5.9vw;
+	font-family: Manchester\ United\ 23-24\ Tipogra;
+	font-size: 8vw;
 	mix-blend-mode: overlay;
 }
 .brick-wall h1 span {
@@ -7427,6 +7450,22 @@ z-index: -1;
 		width: 320px;
 		transform: translate(20px, -5px);
 	}
+	.season-2025-26 img {
+		position: absolute;
+		opacity: 0;
+		width: 114px;
+		height: 115px;
+		margin-top: 0.5px;
+		margin-left: -159px;
+	}
+	.season-2024-25 img {
+		position: absolute;
+		opacity: 0;
+		width: 114px;
+		height: 117px;
+		margin-top: -1.1px;
+		margin-left: -159px;
+	}
 	/* ⟰ SELECT SEASON ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ SCOREBOARD CAROUSEL ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* PREMIER LEAGUE */
@@ -7605,7 +7644,8 @@ z-index: -1;
 		height: 3.4vw;
 		margin-top: -16%;
 		left: 36%;
-		display: flex;
+		/* display: flex; */  /* deactivated to center the text */
+		text-align: center;  /* addition to center the text */
 		overflow: hidden;
 		white-space: nowrap;
 		z-index: 7;
@@ -11150,11 +11190,27 @@ z-index: -1;
 	.season-content {
 		width: 304px;
 	}
-	.season-19-20 img {
+	.season-2025-26 img {
 		position: absolute;
 		opacity: 0;
 		width: 107.9px;
-		height: 108.5px;
+		height: 110px;
+		margin-top: -0.1px;
+		margin-left: -151px;
+	}
+	.season-2024-25 img {
+		position: absolute;
+		opacity: 0;
+		width: 108.3px;
+		height: 111px;
+		margin-top: -1.4px;
+		margin-left: -151px;
+	}
+	.season-2023-24 img {
+		position: absolute;
+		opacity: 0;
+		width: 107.8px;
+		height: 108px;
 		margin-top: 2px; 
 		margin-left: -261.4px;
 	}
@@ -11171,7 +11227,7 @@ z-index: -1;
 		opacity: 0;
 		width: 107.9px;
 		height: 108.5px;
-		margin-top: 2px;
+		margin-top: 1.8px;
 		margin-left: -151px;
 	}
 	/* ⟰ SELECT SEASON ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -11374,7 +11430,8 @@ z-index: -1;
 		width: 33.2%;
 		margin-top: -26.7%;
 		left: 30.8%;
-		display: flex;
+		display: block;  /* from 'flex' to 'block' to center the text */
+		text-align: center;  /* addition to center the text */
 		overflow: hidden;
 		white-space: nowrap;
 		z-index: 7;
@@ -11875,28 +11932,36 @@ z-index: -1;
 	.season-content {
 		width: 280px;
 	}
-	.season-19-20 img {
+	.season-2025-26 img {
 		position: absolute;
 		opacity: 0;
 		width: 100px;
-		height: 100px;
-		margin-top: 1.9px;
-		margin-left: -241px;
-	}
-	.season-20-21 img {
-		position: absolute;
-		opacity: 0;
-		width: 100px;
-		height: 100px;
-		margin-top: 1.9px;
+		height: 101px;
+		margin-top: -0.1px;
 		margin-left: -139px;
+	}
+	.season-2024-25 img {
+		position: absolute;
+		opacity: 0;
+		width: 100px;
+		height: 102.5px;
+		margin-top: -1.5px;
+		margin-left: -139.5px;
+	}
+	.season-2023-24 img {
+		position: absolute;
+		opacity: 0;
+		width: 100px;
+		height: 100px;
+		margin-top: 1px;
+		margin-left: -241px;
 	}
 	.season-1956-57 img {
 		position: absolute;
 		opacity: 0;
 		width: 100px;
-		height: 100px;
-		margin-top: 1.9px;
+		height: 101px;
+		margin-top: 1px;
 		margin-left: -139px;
 	}
 	/* ⟰ SELECT SEASON ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -12087,7 +12152,8 @@ z-index: -1;
 		width: 40%;
 		margin-top: -33.3%;
 		left: 37.635%;
-		display: flex;
+		display: block;  /* from 'flex' to 'block' to center the text */
+		text-align: center;  /* addition to center the text */
 		overflow: hidden;
 		white-space: nowrap;
 		z-index: 7;
