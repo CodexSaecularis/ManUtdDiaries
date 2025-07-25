@@ -1274,7 +1274,6 @@ ul.navlist {
 	color: #ec334d;
 }
 .trophies {
-	opacity: 0;
 	width: 100%;
 	transform: translateY(-498%);
 }
@@ -1297,7 +1296,7 @@ ul.navlist {
 	display: inline-block;
 	width: 13.15%;
 	margin-top: 1.5%;
-	font-family: raleway_f;
+	font-family: Europa Nuova Bold;
 	font-size: 1vw;
 	text-align: center;
 	z-index: 2;
@@ -1324,7 +1323,6 @@ ul.navlist {
 }
 .brick-wall h7 {
 	left: 80.03%;
-	font-size: .94vw;
 	text-shadow: 0 0 15px #a31d23, 0 0 15px #a31d23;
 }
 /* ⟰ GALLERY PHOTO TEXT ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -1811,7 +1809,7 @@ ul.navlist {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: url(../2024-25/badge-wembley-1968.png), linear-gradient(#05163c 10%, #082464 50%);
+	background: url(../core/badge-wembley-1968.png), linear-gradient(#05163c 10%, #082464 50%);
 	box-shadow: 0 0 5px rgb(8,36,100),
 	                   0 0 25px rgb(8,36,100),
 					   0 0 50px rgb(8,36,100),
@@ -1820,7 +1818,7 @@ ul.navlist {
 	background-size: 100%;
 }
 #cuboid1-side2, #cuboid1-side4 {
-	background: url(../2024-25/wembley-1968.png), linear-gradient(#05163c 10%, #082464 50%);
+	background: url(../core/wembley-1968.png), linear-gradient(#05163c 10%, #082464 50%);
 	background-size: 100%;
 }
 .cuboid2 {
@@ -1853,7 +1851,7 @@ ul.navlist {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: url(../2024-25/badge-wembley-1958.png), linear-gradient(#621115 10%, #a31d23 50%);
+	background: url(../core/badge-wembley-1958.png), linear-gradient(#621115 10%, #a31d23 50%);
 	box-shadow: 0 0 5px rgb(163, 29, 35),
 	                   0 0 25px rgb(163, 29, 35),
 					   0 0 50px rgb(163, 29, 35),
@@ -1862,7 +1860,7 @@ ul.navlist {
 	background-size: 100%;
 }
 #cuboid2-side1, #cuboid2-side3 {
-	background: url(../2024-25/wembley-1958.png), linear-gradient(#621115 10%, #a31d23 50%);
+	background: url(../core/wembley-1958.png), linear-gradient(#621115 10%, #a31d23 50%);
 	background-size: 100%;
 }
 /* ⟰ ROTATING CUBOIDS ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -2180,7 +2178,7 @@ ul.navlist {
 /* ⟰ DROPDOWNS 	⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* ⟱ TRANSFERS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .dropdown-transfers {
-	background-image: url(../2024-25/transfers.png);
+	background-image: url(../core/transfers.png);
 	background-size: 104% 100%;
 	color: white;
 	padding: 5.2vw;
@@ -2210,7 +2208,7 @@ ul.navlist {
 }
 /* ⟱ STATS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .dropdown-stats {
-	background-image: url(../2024-25/stats.png);
+	background-image: url(../core/stats.png);
 	background-size: 104% 100%;
 	color: white;
 	padding: 5.2vw;
@@ -2247,7 +2245,7 @@ ul.navlist {
 }
 /* ⟱ PLAYER PERFORMANCE ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .dropdown-player-performance {
-	background-image: url(../2024-25/player-perf.png);
+	background-image: url(../core/player-perf.png);
 	background-size: 104% 100%;
 	color: white;
 	padding: 5.2vw;
@@ -2302,7 +2300,7 @@ ul.navlist {
 }
 /* ⟱ PLAYER STATS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .dropdown-player-stats {
-	background-image: url(../2024-25/player-stats.png);
+	background-image: url(../core/player-stats.png);
 	background-size: 104% 100%;
 	color: white;
 	padding: 5.2vw;
@@ -2328,7 +2326,7 @@ ul.navlist {
 }
 /* ⟱ TRANSITION BUFFER ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .space-transition {
-	background-image: url(../2024-25/transition.png);
+	background-image: url(../core/transition.png);
 	background-size: 104% 100%;
 	color: white;
 	padding: 5.2vw;
@@ -2642,7 +2640,7 @@ ul.navlist {
 	position: relative;
 }
 .space-international-break {
-	background-image: url(../2024-25/break.png);
+	background-image: url(../core/break.png);
 	background-size: 102.3% 100%;
 	color: white;
 	padding: .7vw;
@@ -7108,10 +7106,19 @@ ul.navlist {
 }
 /* BADGE-SPONSOR SPIN: BATCH 1 */
 /* ⟰ BADGE-SPONSOR SPIN ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
-/* ⟱ BOTTOM ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* ⟱ BOTTOM & FOOTER ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.bottom-wrapper {
+	position: absolute;
+	z-index: 1;
+}
 .bottom {
+	width: 94.65%;
+	margin-left: 5.48%;
+	margin-top: .1%;
+}
+.footer {
 	left: 5.48%;
-	background-image: url(../2024-25/bottom.png);
+	background-image: url(../core/footer.png);
 	background-repeat: no-repeat;
 	background-size: 100.15% 117.7%;
 	color: white;
@@ -7155,6 +7162,7 @@ z-index: -1;
 	font-size: 5vw;
 	mix-blend-mode: overlay;
 	transform: skewY(-2deg);
+	z-index: 1;
 }
 .OT-banners-bottom {
 	position: absolute;
@@ -7167,6 +7175,7 @@ z-index: -1;
 	display: flex;
 	overflow-x: hidden;
 	white-space: nowrap;
+	z-index: 1;
 }
 .OT-banners-bottom .banners {
 	display: flex;
@@ -7839,7 +7848,7 @@ z-index: -1;
 		display: inline-block;
 		width: 13.15%;
 		margin-top: -9%;
-		font-family: raleway_f;
+		font-family: Europa Nuova Bold;
 		font-size: 1vw;
 		text-align: center;
 		z-index: 2;
@@ -8503,7 +8512,7 @@ z-index: -1;
 	/* ⟰ DROPDOWNS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ TRANSFERS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdown-transfers {
-		background-image: url(../2024-25/transfers.png);
+		background-image: url(../core/transfers.png);
 		background-size: 122% 100%;
 		color: white;
 		padding: 7.2vw;
@@ -8533,7 +8542,7 @@ z-index: -1;
 	}
 	/* ⟱ STATS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdown-stats {
-		background-image: url(../2024-25/stats.png);
+		background-image: url(../core/stats.png);
 		background-size: 122% 100%;
 		color: white;
 		padding: 7.2vw;
@@ -8570,7 +8579,7 @@ z-index: -1;
 	}
 	/* ⟱ PLAYER PERFORMANCE ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdown-player-performance {
-		background-image: url(../2024-25/player-perf.png);
+		background-image: url(../core/player-perf.png);
 		background-size: 122% 100%;
 		color: white;
 		padding: 7.2vw;
@@ -8601,7 +8610,7 @@ z-index: -1;
 	}
 	/* ⟱ PLAYER STATS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdown-player-stats {
-		background-image: url(../2024-25/player-stats.png);
+		background-image: url(../core/player-stats.png);
 		background-size: 122% 100%;
 		color: white;
 		padding: 7.2vw;
@@ -8627,7 +8636,7 @@ z-index: -1;
 	}
 	/* ⟱ TRANSITION BUFFER ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.space-transition {
-		background-image: url(../2024-25/transition.png);
+		background-image: url(../core/transition.png);
 		background-size: 122% 100%;
 		color: white;
 		padding: 7.2vw;
@@ -8931,7 +8940,7 @@ z-index: -1;
 		position: relative;
 	}
 	.space-international-break {
-		background-image: url(../2024-25/break.png);
+		background-image: url(../core/break.png);
 		background-size: 120% 100%;
 		color: white;
 		padding: 1.137vw;
@@ -10938,10 +10947,15 @@ z-index: -1;
 	/* 	⟰ BUTTON: SHOW MATCH STATS ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* ⟱ BADGE-SPONSOR SPIN ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.badges-and-sponsors { display: none !important; }
-	/* ⟱ BOTTOM ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	/* ⟱ BOTTOM & FOOTER ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.bottom {
+		width: 80.5%;
+		margin-left: 21.9%;
+		margin-top: .1%;
+	}
+	.footer {
 		left: 22%;
-		background-image: url(../2024-25/bottom.png);
+		background-image: url(../core/footer.png);
 		background-repeat: no-repeat;
 		background-size: 100.15% 117.7%;
 		color: white;
@@ -10984,6 +10998,7 @@ z-index: -1;
 		display: flex;
 		overflow: hidden;
 		white-space: nowrap;
+		z-index: 1;
 	}
 	/* ⟱ idierco@gmail.com CONTACT ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.email-cursor-text {
@@ -12355,7 +12370,7 @@ z-index: -1;
 	}
 	/* ⟱ INTERNATIONAL BREAK ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.space-international-break {
-		background-image: url(../2024-25/break.png);
+		background-image: url(../core/break.png);
 		background-size: 120% 100%;
 		color: white;
 		padding: .3vw;
