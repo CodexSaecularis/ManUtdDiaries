@@ -1632,7 +1632,7 @@ ul.navlist {
 	padding-top: 2%;
 	z-index: 4;
 }
-.date-and-result h43, h44, h45, h46, h47 {
+.date-and-result h38, h39, h40, h41, h42, h43, h44, h45, h46, h47 {
 	position: absolute;
 	display: inline-block;
 	width: 7.3%;
@@ -1656,7 +1656,7 @@ ul.navlist {
 	padding-top: 2%;
 	z-index: 4;
 }
-.date-and-result h58, h59, h60, h61, h62, h63, h64, h65 {
+.date-and-result h58, h59, h60, h61, h62, h63, h64, h65, h66, h67 {
 	position: absolute;
 	display: inline-block;
 	width: 7.3%;
@@ -1668,34 +1668,34 @@ ul.navlist {
 	padding-top: 2%;
 	z-index: 4;
 }
-.date-and-result h8, h18, h48, h58 {
+.date-and-result h8, h18, h28, h38, h48, h58, h68 {
 	left: 15%;
 }
-.date-and-result h9, h49, h59 {
+.date-and-result h9, h18, h29, h39, h49, h59, h69 {
 	left: 22.05%;
 }
-.date-and-result h10, h50, h60 {
+.date-and-result h10, h20, h30, h40, h50, h60, h70 {
 	left: 29.1%;
 }
-.date-and-result h11, h51, h61 {
+.date-and-result h11, h21, h31, h41, h51, h61, h71 {
 	left: 36.2%;
 }
-.date-and-result h12, h52, h62 {
+.date-and-result h12, h22, h33, h44, h52, h62, h72 {
 	left: 43.25%;
 }
-.date-and-result h13, h43, h53, h63 {
+.date-and-result h13, h23, h33, h43, h53, h63, h73 {
 	left: 50.25%;
 }
-.date-and-result h14, h44, h54, h64 {
+.date-and-result h14, h24, h34, h44, h54, h64, h74 {
 	left: 57.3%;
 }
-.date-and-result h15, h45, h55, h65 {
+.date-and-result h15, h25, h35, h45, h55, h65, h75 {
 	left: 64.35%;
 }
-.date-and-result h16, h46, h56 {
+.date-and-result h16, h26, h36, h46, h56, h66, h76 {
 	left: 71.4%;
 }
-.date-and-result h17, h47, h57 {
+.date-and-result h17, h27, h37, h47, h57, h67, h77 {
 	left: 78.45%;
 }
 #date {
@@ -8143,7 +8143,19 @@ z-index: -1;
 		padding-top: 2.7%;
 		z-index: 4;
 	}
-	.date-and-result h43, h44, h45, h46, h47 {  /* 4th row */
+	.date-and-result h28, h29, h30, h31, h32, h33, h34, h35, h36, h37 {  /* 3rd row */
+		position: absolute;
+		display: inline-block;
+		width: 9.8%;
+		margin-top: 28.48%;
+		font-family: Century Gothic;
+		color: white;
+		font-size: 1.3vw;
+		text-align: center;
+		padding-top: 2.7%;
+		z-index: 4;
+	}
+	.date-and-result h38, h39, h40, h41, h42, h43, h44, h45, h46, h47 {  /* 4th row */
 		position: absolute;
 		display: inline-block;
 		width: 9.8%;
@@ -8167,7 +8179,7 @@ z-index: -1;
 		padding-top: 2.7%;
 		z-index: 4;
 	}
-	.date-and-result h58, h59, h60, h61, h62, h63, h64, h65 {  /* 6th row */
+	.date-and-result h58, h59, h60, h61, h62, h63, h64, h65, h66, h67 {  /* 6th row */
 		position: absolute;
 		display: inline-block;
 		width: 9.8%;
@@ -8179,34 +8191,34 @@ z-index: -1;
 		padding-top: 2.7%;
 		z-index: 4;
 	}
-	.date-and-result h8, h18, h48, h58 {
+	.date-and-result h8, h18, h28, h38, h48, h58, h68 {
 		left: 1.7%;
 	}
-	.date-and-result h9, h49, h59 {
+	.date-and-result h9, h19, h29, h39, h49, h59, h69 {
 		left: 11.35%;
 	}
-	.date-and-result h10, h50, h60 {
+	.date-and-result h10, h20, h30, h40, h50, h60, h70 {
 		left: 20.97%;
 	}
-	.date-and-result h11, h51, h61 {
+	.date-and-result h11, h21, h31, h41, h51, h61, h71 {
 		left: 30.59%;
 	}
-	.date-and-result h12, h52, h62 {
+	.date-and-result h12, h22, h32, h42, h52, h62, h72 {
 		left: 40.3%;
 	}
-	.date-and-result h13, h43, h53, h63 {
+	.date-and-result h13, h23, h33, h43, h53, h63, h73 {
 		left: 49.92%;
 	}
-	.date-and-result h14, h44, h54, h64 {
+	.date-and-result h14, h24, h34, h44, h54, h64, h74 {
 		left: 59.56%;
 	}
-	.date-and-result h15, h45, h55, h65 {
+	.date-and-result h15, h25, h35, h45, h55, h65, h75 {
 		left: 69.3%;
 	}
-	.date-and-result h16, h46, h56 {
+	.date-and-result h16, h26, h36, h46, h56, h66, h76 {
 		left: 79%;
 	}
-	.date-and-result h17, h47, h57 {
+	.date-and-result h17, h27, h37, h47, h57, h67, h77 {
 		left: 88.6%;
 	}
 	#date {
@@ -11820,7 +11832,7 @@ z-index: -1;
 		padding-top: 2%;
 		z-index: 4;
 	}
-	.date-and-result h38, h39, h40, h41, h42, h43, h44, h45, h46, h47 {  /* 4th row */
+	.date-and-result h43, h44, h45, h46, h47 {  /* 4th row */
 		position: absolute;
 		display: inline-block;
 		width: 9.8%;
