@@ -11836,7 +11836,7 @@ z-index: -1;
 		position: absolute;
 		display: inline-block;
 		width: 9.8%;
-		margin-top: 13.32%;
+		margin-top: 13.94%;
 		font-family: Century Gothic;
 		color: white;
 		font-size: 1.3vw;
@@ -11848,7 +11848,7 @@ z-index: -1;
 		position: absolute;
 		display: inline-block;
 		width: 9.8%;
-		margin-top: 20.9%;
+		margin-top: 21.52%;
 		font-family: Century Gothic;
 		color: white;
 		font-size: 1.3vw;
@@ -11860,7 +11860,7 @@ z-index: -1;
 		position: absolute;
 		display: inline-block;
 		width: 9.8%;
-		margin-top: 28.48%;
+		margin-top: 29.1%;
 		font-family: Century Gothic;
 		color: white;
 		font-size: 1.3vw;
@@ -11868,11 +11868,11 @@ z-index: -1;
 		padding-top: 2%;
 		z-index: 4;
 	}
-	.date-and-result h43, h44, h45, h46, h47 {  /* 4th row */
+	.date-and-result h38, h39, h40, h41, h42, h43, h44, h45, h46, h47 {  /* 4th row */
 		position: absolute;
 		display: inline-block;
 		width: 9.8%;
-		margin-top: 36.18%;
+		margin-top: 36.8%;
 		font-family: Century Gothic;
 		color: white;
 		font-size: 1.3vw;
@@ -11884,7 +11884,7 @@ z-index: -1;
 		position: absolute;
 		display: inline-block;
 		width: 9.8%;
-		margin-top: 43.71%;
+		margin-top: 44.33%;
 		font-family: Century Gothic;
 		color: white;
 		font-size: 1.3vw;
@@ -11896,7 +11896,7 @@ z-index: -1;
 		position: absolute;
 		display: inline-block;
 		width: 9.8%;
-		margin-top: 51.29%;
+		margin-top: 51.91%;
 		font-family: Century Gothic;
 		color: white;
 		font-size: 1.3vw;
@@ -11908,7 +11908,7 @@ z-index: -1;
 		position: absolute;
 		display: inline-block;
 		width: 9.8%;
-		margin-top: 58.87%;
+		margin-top: 59.49%;
 		font-family: Century Gothic;
 		color: white;
 		font-size: 1.3vw;
@@ -12456,6 +12456,91 @@ z-index: -1;
 	/* ⟱ LEGEND TO THE MATCH RATINGS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#first-half { transform: translate(6%, 1%); }
 	#second-half { transform: translate(55%, 4%); }
+	/* ⟱ DATE, FIXTURE AND RESULT ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.date-and-result h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {  /* 1st row */
+		position: absolute;
+		display: inline-block;
+		width: 9.8%;
+		margin-top: 13.32%;
+		font-family: Century Gothic;
+		color: white;
+		font-size: 1.3vw;
+		text-align: center;
+		padding-top: 2%;
+		z-index: 4;
+	}
+	.date-and-result h18, h19, h20, h21, h22, h23, h24, h25, h26, h27 {  /* 2nd row */
+		position: absolute;
+		display: inline-block;
+		width: 9.8%;
+		margin-top: 20.9%;
+		font-family: Century Gothic;
+		color: white;
+		font-size: 1.3vw;
+		text-align: center;
+		padding-top: 2%;
+		z-index: 4;
+	}
+	.date-and-result h28, h29, h30, h31, h32, h33, h34, h35, h36, h37 {  /* 3rd row */
+		position: absolute;
+		display: inline-block;
+		width: 9.8%;
+		margin-top: 28.48%;
+		font-family: Century Gothic;
+		color: white;
+		font-size: 1.3vw;
+		text-align: center;
+		padding-top: 2%;
+		z-index: 4;
+	}
+	.date-and-result h38, h39, h40, h41, h42, h43, h44, h45, h46, h47 {  /* 4th row */
+		position: absolute;
+		display: inline-block;
+		width: 9.8%;
+		margin-top: 36.18%;
+		font-family: Century Gothic;
+		color: white;
+		font-size: 1.3vw;
+		text-align: center;
+		padding-top: 2%;
+		z-index: 4;
+	}
+	.date-and-result h48, h49, h50, h51, h52, h53, h54, h55, h56, h57 {  /* 5th row */
+		position: absolute;
+		display: inline-block;
+		width: 9.8%;
+		margin-top: 43.71%;
+		font-family: Century Gothic;
+		color: white;
+		font-size: 1.3vw;
+		text-align: center;
+		padding-top: 2%;
+		z-index: 4;
+	}
+	.date-and-result h58, h59, h60, h61, h62, h63, h64, h65, h66, h67 {  /* 6th row */
+		position: absolute;
+		display: inline-block;
+		width: 9.8%;
+		margin-top: 51.29%;
+		font-family: Century Gothic;
+		color: white;
+		font-size: 1.3vw;
+		text-align: center;
+		padding-top: 2%;
+		z-index: 4;
+	}
+	.date-and-result h68, h69, h70, h71, h72, h73, h74, h75, h76, h77 {  /* 7th row */
+		position: absolute;
+		display: inline-block;
+		width: 9.8%;
+		margin-top: 58.87%;
+		font-family: Century Gothic;
+		color: white;
+		font-size: 1.3vw;
+		text-align: center;
+		padding-top: 2%;
+		z-index: 4;
+	}
 	/* ⟱ DROPDOWNS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdowns-section {
 		position: relative;
