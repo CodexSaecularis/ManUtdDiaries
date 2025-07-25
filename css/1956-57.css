@@ -1666,7 +1666,7 @@ ul.navlist {
 	position: absolute;
 	display: inline-block;
 	width: 7.3%;
-	margin-top: 34.5%;
+	margin-top: 34.6%;
 	font-family: Century Gothic;
 	color: white;
 	font-size: .97vw;
@@ -9376,7 +9376,7 @@ z-index: -1;
 	/* ⟰ WANNA LEARN A LANGUAGE? ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ LEGEND TO THE MATCH RATINGS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#first-half { transform: translate(2%, 5%); } 
-	#second-half { transform: translate(40%, 0%); } 
+	#second-half { transform: translate(40%, 0%); }
 	/* ⟱ DATE, FIXTURE AND RESULT ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.date-and-result h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {  /* 1st row */
 		position: absolute;

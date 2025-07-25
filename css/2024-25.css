@@ -1632,6 +1632,18 @@ ul.navlist {
 	padding-top: 2%;
 	z-index: 4;
 }
+.date-and-result h28, h29, h30, h31, h32, h33, h34, h35, h36, h37 {
+	position: absolute;
+	display: inline-block;
+	width: 7.3%;
+	margin-top: 17.8%;
+	font-family: Century Gothic;
+	color: white;
+	font-size: .97vw;
+	text-align: center;
+	padding-top: 2%;
+	z-index: 4;
+}
 .date-and-result h38, h39, h40, h41, h42, h43, h44, h45, h46, h47 {
 	position: absolute;
 	display: inline-block;
@@ -1668,10 +1680,22 @@ ul.navlist {
 	padding-top: 2%;
 	z-index: 4;
 }
+.date-and-result h68, h69, h70, h71, h72, h73, h74, h75, h76, h77 {
+	position: absolute;
+	display: inline-block;
+	width: 7.3%;
+	margin-top: 40.15%;
+	font-family: Century Gothic;
+	color: white;
+	font-size: .97vw;
+	text-align: center;
+	padding-top: 2%;
+	z-index: 4;
+}
 .date-and-result h8, h18, h28, h38, h48, h58, h68 {
 	left: 15%;
 }
-.date-and-result h9, h18, h29, h39, h49, h59, h69 {
+.date-and-result h9, h19, h29, h39, h49, h59, h69 {
 	left: 22.05%;
 }
 .date-and-result h10, h20, h30, h40, h50, h60, h70 {
@@ -1680,7 +1704,7 @@ ul.navlist {
 .date-and-result h11, h21, h31, h41, h51, h61, h71 {
 	left: 36.2%;
 }
-.date-and-result h12, h22, h33, h44, h52, h62, h72 {
+.date-and-result h12, h22, h32, h42, h52, h62, h72 {
 	left: 43.25%;
 }
 .date-and-result h13, h23, h33, h43, h53, h63, h73 {
@@ -8191,6 +8215,18 @@ z-index: -1;
 		padding-top: 2.7%;
 		z-index: 4;
 	}
+	.date-and-result h68, h69, h70, h71, h72, h73, h74, h75, h76, h77 {  /* 7th row */
+		position: absolute;
+		display: inline-block;
+		width: 9.8%;
+		margin-top: 58.87%;
+		font-family: Century Gothic;
+		color: white;
+		font-size: 1.3vw;
+		text-align: center;
+		padding-top: 2.7%;
+		z-index: 4;
+	}
 	.date-and-result h8, h18, h28, h38, h48, h58, h68 {
 		left: 1.7%;
 	}
@@ -11861,6 +11897,18 @@ z-index: -1;
 		display: inline-block;
 		width: 9.8%;
 		margin-top: 51.29%;
+		font-family: Century Gothic;
+		color: white;
+		font-size: 1.3vw;
+		text-align: center;
+		padding-top: 2%;
+		z-index: 4;
+	}
+	.date-and-result h68, h69, h70, h71, h72, h73, h74, h75, h76, h77 {  /* 7th row */
+		position: absolute;
+		display: inline-block;
+		width: 9.8%;
+		margin-top: 58.87%;
 		font-family: Century Gothic;
 		color: white;
 		font-size: 1.3vw;
