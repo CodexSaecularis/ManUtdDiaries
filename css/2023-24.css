@@ -1341,6 +1341,9 @@ ul.navlist {
 }
 .brick-wall h3 {
 	left: 16.825%;
+	text-shadow: 0 0 15px #a31d23, 0 0 15px #a31d23;
+}
+.brick-wall h3 span {
 	color: #ec334d;
 	text-shadow: 0 0 15px #a31d23, 0 0 15px #a31d23;
 }
@@ -1476,12 +1479,12 @@ ul.navlist {
 	font-size: 1.2vw;
 	font-family: Manchester\ United\ 23-24\ Tipogra;
 	color: white;
-	background: url(../2024-25/button.png), #820202;
+	background: url(../core/button.png), #820202;
 	background-size: 100% 100%;
 }
 #button-read-text:hover {
 	color: #f0f50c;
-	background: url(../2024-25/button.png), radial-gradient(#ef0017 -20%, #820202);
+	background: url(../core/button.png), radial-gradient(#ef0017 -20%, #820202);
 	background-size: 100% 100%;
 	box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
 }
@@ -1633,12 +1636,12 @@ ul.navlist {
 	font-size: 1vw;
 	font-family: Manchester\ United\ 23-24\ Tipogra;
 	color: white;
-	background: url(../2024-25/button.png), #820202;
+	background: url(../core/button.png), #820202;
 	background-size: 100% 100%;
 }
 #button-ratings:hover {
 	color: #f0f50c;
-	background: url(../2024-25/button.png), radial-gradient(#ef0017 -20%, #820202);
+	background: url(../core/button.png), radial-gradient(#ef0017 -20%, #820202);
 	background-size: 100% 100%;
 	box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
 }
@@ -2006,7 +2009,7 @@ ul.navlist {
 }
 .hide-PL {
 	position: absolute;
-	background: url(../2024-25/hide-PL.png);
+	background: url(../core/hide-PL.png);
 	background-size: 100%;
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 4.3vw;
@@ -2016,7 +2019,7 @@ ul.navlist {
 }
 .hide-UCL {
 	position: absolute;
-	background: url(../2024-25/hide-UCL.png);
+	background: url(../core/hide-UCL.png);
 	background-size: 100%;
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 4.3vw;
@@ -2026,7 +2029,7 @@ ul.navlist {
 }
 .hide-FA {
 	position: absolute;
-	background: url(../2024-25/hide-FA.png);
+	background: url(../core/hide-FA.png);
 	background-size: 100%;
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 4.3vw;
@@ -2036,7 +2039,7 @@ ul.navlist {
 }
 .hide-EFL {
 	position: absolute;
-	background: url(../2024-25/hide-EFL.png);
+	background: url(../core/hide-EFL.png);
 	background-size: 100%;
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 4.3vw;
@@ -2046,7 +2049,7 @@ ul.navlist {
 }
 .hide-UEL {
 	position: absolute;
-	background: url(../2024-25/hide-UEL.png);
+	background: url(../core/hide-UEL.png);
 	background-size: 100%;
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 4.3vw;
@@ -6904,10 +6907,10 @@ ul.navlist {
 /* 	⟰ BUTTON: SHOW MATCH STATS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 /* ⟱ BADGE-SPONSOR SPIN ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* BADGE-SPONSOR SPIN: HISTORICAL */
-.home-shirt1-left {
+.home-1stkit-1-left {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../2024-25/24-25-1st-kit.png);
+	background: url(../core/2024-25-1kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -6950,10 +6953,10 @@ ul.navlist {
 		transform: translateY(-0.5%);
 	}
 }
-.home-shirt1-right {
+.home-1stkit-1-right {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../2024-25/24-25-1st-kit.png);
+	background: url(../core/2024-25-1kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -6967,7 +6970,7 @@ ul.navlist {
 .away-2ndkit-1-left {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../2024-25/24-25-2nd-kit.png);
+	background: url(../core/2024-25-2kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -6980,7 +6983,7 @@ ul.navlist {
 .away-2ndkit-1-right {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../2024-25/24-25-2nd-kit.png);
+	background: url(../core/2024-25-2kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -6994,7 +6997,7 @@ ul.navlist {
 .away-3rdkit-1-left {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../2024-25/24-25-3rd-kit.png);
+	background: url(../core/2024-25-3kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7007,7 +7010,7 @@ ul.navlist {
 .away-3rdkit-1-right {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../2024-25/24-25-3rd-kit.png);
+	background: url(../core/2024-25-3kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7019,10 +7022,10 @@ ul.navlist {
 }
 /* BADGE-SPONSOR SPIN: HISTORICAL */
 /* BADGE-SPONSOR SPIN: STARTING XI */
-.home-shirt2-left {
+.home-1stkit-2-left {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../2024-25/24-25-1st-kit.png);
+	background: url(../core/2024-25-1kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7033,10 +7036,10 @@ ul.navlist {
 	left: 7%;
 }
 .badges-and-sponsors { display: var(--spins-display, none); }
-.home-shirt2-right {
+.home-1stkit-2-right {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../2024-25/24-25-1st-kit.png);
+	background: url(../core/2024-25-1kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7050,7 +7053,7 @@ ul.navlist {
 .away-2ndkit-2-left {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../2024-25/24-25-2nd-kit.png);
+	background: url(../core/2024-25-2kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7063,7 +7066,7 @@ ul.navlist {
 .away-2ndkit-2-right {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../2024-25/24-25-2nd-kit.png);
+	background: url(../core/2024-25-2kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7077,7 +7080,7 @@ ul.navlist {
 .away-3rdkit-2-left {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../2024-25/24-25-3rd-kit.png);
+	background: url(../core/2024-25-3kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7090,7 +7093,7 @@ ul.navlist {
 .away-3rdkit-2-right {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../2024-25/24-25-3rd-kit.png);
+	background: url(../core/2024-25-3kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7101,11 +7104,11 @@ ul.navlist {
 	left: 94.4%;
 }
 /* BADGE-SPONSOR SPIN: STARTING XI */
-/* BADGE-SPONSOR SPIN: BATCH 1 */
-.home-07-08 {
+/* BADGE-SPONSOR SPIN: SCREEN BOARDS NEXT TO LINKS */
+.left1 {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../2024-25/07-08-1st-kit.png);
+	background: url(../core/2007-08-1kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7115,10 +7118,10 @@ ul.navlist {
 	margin-top: -44.13%;
 	left: 7%;
 }
-.away-03-05 {
+.left2 {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../2024-25/03-05-2nd-kit.png);
+	background: url(../core/2003-05-2kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7128,10 +7131,10 @@ ul.navlist {
 	margin-top: -36.9%;
 	left: 7%;
 }
-.away-20-21 {
+.left3 {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../2024-25/20-21-3rd-kit.png);
+	background: url(../core/2020-21-3kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7141,10 +7144,10 @@ ul.navlist {
 	margin-top: -29.67%;
 	left: 7%;
 }
-.home-95-96 {
+.left4 {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../2024-25/95-96-1st-kit.png);
+	background: url(../core/1995-96-1kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7154,10 +7157,10 @@ ul.navlist {
 	margin-top: -22.44%;
 	left: 7%;
 }
-.away-90-92 {
+.right1 {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../2024-25/90-92-2nd-kit.png);
+	background: url(../core/1990-92-2kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7167,10 +7170,10 @@ ul.navlist {
 	margin-top: -44.13%;
 	left: 94.4%;
 }
-.home-02-03 {
+.right2 {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../2024-25/02-03-1st-kit.png);
+	background: url(../core/2002-03-1kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7180,10 +7183,10 @@ ul.navlist {
 	margin-top: -36.9%;
 	left: 94.4%;
 }
-.away-92-94 {
+.right3 {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../2024-25/92-94-3rd-kit.png);
+	background: url(../core/1992-94-3kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7193,10 +7196,10 @@ ul.navlist {
 	margin-top: -29.67%;
 	left: 94.4%;
 }
-.away-08-09 {
+.right4 {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../2024-25/08-09-3rd-kit.png);
+	background: url(../core/2008-09-3kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7206,7 +7209,7 @@ ul.navlist {
 	margin-top: -22.44%;
 	left: 94.4%;
 }
-/* BADGE-SPONSOR SPIN: BATCH 1 */
+/* BADGE-SPONSOR SPIN: SCREEN BOARDS NEXT TO LINKS */
 /* ⟰ BADGE-SPONSOR SPIN ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* ⟱ BOTTOM & FOOTER ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .bottom-wrapper {
@@ -8085,7 +8088,7 @@ z-index: -1;
 		font-size: 1.1vw;
 		font-family: Manchester\ United\ 23-24\ Tipogra;
 		color: white;
-		background: url(../2024-25/button.png), #820202;
+		background: url(../core/button.png), #820202;
 		background-size: 100% 100%;
 	}
 	#button-read-text span1 { display: none; }
@@ -8233,12 +8236,12 @@ z-index: -1;
 		font-size: 1.3vw;
 		font-family: Manchester\ United\ 23-24\ Tipogra;
 		color: white;
-		background: url(../2024-25/button.png), #820202;
+		background: url(../core/button.png), #820202;
 		background-size: 100% 100%;
 	}
 	#button-ratings:hover {
 		color: #f0f50c;
-		background: url(../2024-25/button.png), radial-gradient(#ef0017 -20%, #820202);
+		background: url(../core/button.png), radial-gradient(#ef0017 -20%, #820202);
 		background-size: 100% 100%;
 		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
 	}
@@ -8434,7 +8437,7 @@ z-index: -1;
 	}
 	.hide-PL {
 		position: absolute;
-		background: url(../2024-25/hide-PL.png);
+		background: url(../core/hide-PL.png);
 		background-size: 100%;
 		font-family: 'Courier New', Courier, monospace;
 		font-size: 6.8vw;
@@ -8444,7 +8447,7 @@ z-index: -1;
 	}
 	.hide-UCL {
 		position: absolute;
-		background: url(../2024-25/hide-UCL.png);
+		background: url(../core/hide-UCL.png);
 		background-size: 100%;
 		font-family: 'Courier New', Courier, monospace;
 		font-size: 6.8vw;
@@ -8454,7 +8457,7 @@ z-index: -1;
 	}
 	.hide-FA {
 		position: absolute;
-		background: url(../2024-25/hide-FA.png);
+		background: url(../core/hide-FA.png);
 		background-size: 100%;
 		font-family: 'Courier New', Courier, monospace;
 		font-size: 6.8vw;
@@ -8464,7 +8467,7 @@ z-index: -1;
 	}
 	.hide-EFL {
 		position: absolute;
-		background: url(../2024-25/hide-EFL.png);
+		background: url(../core/hide-EFL.png);
 		background-size: 100%;
 		font-family: 'Courier New', Courier, monospace;	
 		font-size: 6.8vw;
@@ -8474,7 +8477,7 @@ z-index: -1;
 	}
 	.hide-UEL {
 		position: absolute;
-		background: url(../2024-25/hide-UEL.png);
+		background: url(../core/hide-UEL.png);
 		background-size: 100%;
 		font-family: 'Courier New', Courier, monospace;	
 		font-size: 6.8vw;
@@ -12681,7 +12684,7 @@ z-index: -1;
 	}
 	/* ⟱ BOTTOM ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.bottom-isometric::before {
-	content: "2025/26";
+	content: "2023/24";
 	position: absolute;
 	text-shadow: -1px 0.5px 1px #555,
 					   -2px 0.5px 1px #555,
