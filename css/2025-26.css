@@ -2468,7 +2468,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-1st-match {
-	background-image: url(../2024-25/1st-match.png);
+	background-image: url(../2025-26/1st-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2478,7 +2478,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-2nd-match {
-	background-image: url(../2024-25/2nd-match.png);
+	background-image: url(../2025-26/2nd-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2488,7 +2488,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-3rd-match {
-	background-image: url(../2024-25/3rd-match.png);
+	background-image: url(../2025-26/3rd-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2498,7 +2498,307 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-4th-match {
-	background-image: url(../2024-25/4th-match.png);
+	background-image: url(../2025-26/4th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-5th-match {
+	background-image: url(../2025-26/5th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-6th-match {
+	background-image: url(../2025-26/6th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-7th-match {
+	background-image: url(../2025-26/7th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-8th-match {
+	background-image: url(../2025-26/8th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-9th-match {
+	background-image: url(../2025-26/9th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-10th-match {
+	background-image: url(../2025-26/10th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-11th-match {
+	background-image: url(../2025-26/11th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-12th-match {
+	background-image: url(../2025-26/12th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-13th-match {
+	background-image: url(../2025-26/13th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-14th-match {
+	background-image: url(../2025-26/14th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-15th-match {
+	background-image: url(../2025-26/15th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-16th-match {
+	background-image: url(../2025-26/16th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-17th-match {
+	background-image: url(../2025-26/17th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-18th-match {
+	background-image: url(../2025-26/18th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-19th-match {
+	background-image: url(../2025-26/19th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-20th-match {
+	background-image: url(../2025-26/20th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-21st-match {
+	background-image: url(../2025-26/21st-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-22nd-match {
+	background-image: url(../2025-26/22nd-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-23rd-match {
+	background-image: url(../2025-26/23rd-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-24th-match {
+	background-image: url(../2025-26/24th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-25th-match {
+	background-image: url(../2025-26/25th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-26th-match {
+	background-image: url(../2025-26/26th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-27th-match {
+	background-image: url(../2025-26/27th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-28th-match {
+	background-image: url(../2025-26/28th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-29th-match {
+	background-image: url(../2025-26/29th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-30th-match {
+	background-image: url(../2025-26/30th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-31st-match {
+	background-image: url(../2025-26/31st-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-32nd-match {
+	background-image: url(../2025-26/32nd-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-33rd-match {
+	background-image: url(../2025-26/33rd-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-34th-match {
+	background-image: url(../2025-26/34th-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2508,7 +2808,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-35th-match {
-	background-image: url(../2024-25/35th-match.png);
+	background-image: url(../2025-26/35th-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2518,7 +2818,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-36th-match {
-	background-image: url(../2024-25/36th-match.png);
+	background-image: url(../2025-26/36th-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2528,7 +2828,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-37th-match {
-	background-image: url(../2024-25/37th-match.png);
+	background-image: url(../2025-26/37th-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2538,7 +2838,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-38th-match {
-	background-image: url(../2024-25/38th-match.png);
+	background-image: url(../2025-26/38th-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2548,7 +2848,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-39th-match {
-	background-image: url(../2024-25/39th-match.png);
+	background-image: url(../2025-26/39th-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2558,7 +2858,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-40th-match {
-	background-image: url(../2024-25/40th-match.png);
+	background-image: url(../2025-26/40th-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2568,7 +2868,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-41st-match {
-	background-image: url(../2024-25/41st-match.png);
+	background-image: url(../2025-26/41st-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2578,7 +2878,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-42nd-match {
-	background-image: url(../2024-25/42nd-match.png);
+	background-image: url(../2025-26/42nd-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2588,7 +2888,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-43rd-match {
-	background-image: url(../2024-25/43rd-match.png);
+	background-image: url(../2025-26/43rd-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2598,7 +2898,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-44th-match {
-	background-image: url(../2024-25/44th-match.png);
+	background-image: url(../2025-26/44th-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2608,7 +2908,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-45th-match {
-	background-image: url(../2024-25/45th-match.png);
+	background-image: url(../2025-26/45th-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2618,7 +2918,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-46th-match {
-	background-image: url(../2024-25/46th-match.png);
+	background-image: url(../2025-26/46th-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2628,7 +2928,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-47th-match {
-	background-image: url(../2024-25/47th-match.png);
+	background-image: url(../2025-26/47th-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2638,7 +2938,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-48th-match {
-	background-image: url(../2024-25/48th-match.png);
+	background-image: url(../2025-26/48th-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2648,7 +2948,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-49th-match {
-	background-image: url(../2024-25/49th-match.png);
+	background-image: url(../2025-26/49th-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2658,7 +2958,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-50th-match {
-	background-image: url(../2024-25/50th-match.png);
+	background-image: url(../2025-26/50th-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2668,7 +2968,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-51st-match {
-	background-image: url(../2024-25/51st-match.png);
+	background-image: url(../2025-26/51st-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2678,7 +2978,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-52nd-match {
-	background-image: url(../2024-25/52nd-match.png);
+	background-image: url(../2025-26/52nd-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2688,7 +2988,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-53rd-match {
-	background-image: url(../2024-25/53rd-match.png);
+	background-image: url(../2025-26/53rd-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2698,7 +2998,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-54th-match {
-	background-image: url(../2024-25/54th-match.png);
+	background-image: url(../2025-26/54th-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2708,7 +3008,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-55th-match {
-	background-image: url(../2024-25/55th-match.png);
+	background-image: url(../2025-26/55th-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2718,7 +3018,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-56th-match {
-	background-image: url(../2024-25/56th-match.png);
+	background-image: url(../2025-26/56th-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2728,7 +3028,7 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-57th-match {
-	background-image: url(../2024-25/57th-match.png);
+	background-image: url(../2025-26/57th-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -2738,7 +3038,107 @@ ul.navlist {
 	position: relative;
 }
 .dropdown-58th-match {
-	background-image: url(../2024-25/58th-match.png);
+	background-image: url(../2025-26/58th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown59th-match {
+	background-image: url(../2025-26/59th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-60th-match {
+	background-image: url(../2025-26/60th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-61st-match {
+	background-image: url(../2025-26/61st-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-62nd-match {
+	background-image: url(../2025-26/62nd-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-63rd-match {
+	background-image: url(../2025-26/63rd-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-64th-match {
+	background-image: url(../2025-26/64th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-67th-match {
+	background-image: url(../2025-26/67th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-68th-match {
+	background-image: url(../2025-26/68th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-69th-match {
+	background-image: url(../2025-26/69th-match.png);
+	background-size: 95% 115%;
+	color: white;
+	padding: 4vw;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.dropdown-70th-match {
+	background-image: url(../2025-26/70th-match.png);
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -8795,7 +9195,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-1st-match {
-		background-image: url(../2024-25/1st-match.png);
+		background-image: url(../2025-26/1st-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -8805,7 +9205,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-2nd-match {
-		background-image: url(../2024-25/2nd-match.png);
+		background-image: url(../2025-26/2nd-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -8815,7 +9215,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-3rd-match {
-		background-image: url(../2024-25/3rd-match.png);
+		background-image: url(../2025-26/3rd-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -8825,7 +9225,307 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-4th-match {
-		background-image: url(../2024-25/4th-match.png);
+		background-image: url(../2025-26/4th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-5th-match {
+		background-image: url(../2025-26/5th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-6th-match {
+		background-image: url(../2025-26/6th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-7th-match {
+		background-image: url(../2025-26/7th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-8th-match {
+		background-image: url(../2025-26/8th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-9th-match {
+		background-image: url(../2025-26/9th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-10th-match {
+		background-image: url(../2025-26/10th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-11th-match {
+		background-image: url(../2025-26/11th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-12th-match {
+		background-image: url(../2025-26/12th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-13th-match {
+		background-image: url(../2025-26/13th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-14th-match {
+		background-image: url(../2025-26/14th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-15th-match {
+		background-image: url(../2025-26/15th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-16th-match {
+		background-image: url(../2025-26/16th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-17th-match {
+		background-image: url(../2025-26/17th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-18th-match {
+		background-image: url(../2025-26/18th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-19th-match {
+		background-image: url(../2025-26/19th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-20th-match {
+		background-image: url(../2025-26/20th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-21st-match {
+		background-image: url(../2025-26/21st-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-22nd-match {
+		background-image: url(../2025-26/22nd-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-23rd-match {
+		background-image: url(../2025-26/23rd-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-24th-match {
+		background-image: url(../2025-26/24th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-25th-match {
+		background-image: url(../2025-26/25th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-26th-match {
+		background-image: url(../2025-26/26th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-27th-match {
+		background-image: url(../2025-26/27th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-28th-match {
+		background-image: url(../2025-26/28th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-29th-match {
+		background-image: url(../2025-26/294th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-30th-match {
+		background-image: url(../2025-26/30th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-31st-match {
+		background-image: url(../2025-26/31st-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-32nd-match {
+		background-image: url(../2025-26/32nd-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-33rd-match {
+		background-image: url(../2025-26/33rd-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-34th-match {
+		background-image: url(../2025-26/34th-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -8835,7 +9535,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-35th-match {
-		background-image: url(../2024-25/35th-match.png);
+		background-image: url(../2025-26/35th-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -8845,7 +9545,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-36th-match {
-		background-image: url(../2024-25/36th-match.png);
+		background-image: url(../2025-26/36th-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -8855,7 +9555,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-37th-match {
-		background-image: url(../2024-25/37th-match.png);
+		background-image: url(../2025-26/37th-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -8865,7 +9565,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-38th-match {
-		background-image: url(../2024-25/38th-match.png);
+		background-image: url(../2025-26/38th-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -8875,7 +9575,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-39th-match {
-		background-image: url(../2024-25/39th-match.png);
+		background-image: url(../2025-26/39th-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -8885,7 +9585,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-40th-match {
-		background-image: url(../2024-25/40th-match.png);
+		background-image: url(../2025-26/40th-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -8895,7 +9595,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-41st-match {
-		background-image: url(../2024-25/41st-match.png);
+		background-image: url(../2025-26/41st-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -8905,7 +9605,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-42nd-match {
-		background-image: url(../2024-25/42nd-match.png);
+		background-image: url(../2025-26/42nd-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -8915,7 +9615,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-43rd-match {
-		background-image: url(../2024-25/43rd-match.png);
+		background-image: url(../2025-26/43rd-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -8925,7 +9625,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-44th-match {
-		background-image: url(../2024-25/44th-match.png);
+		background-image: url(../2025-26/44th-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -8935,7 +9635,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-45th-match {
-		background-image: url(../2024-25/45th-match.png);
+		background-image: url(../2025-26/45th-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -8945,7 +9645,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-46th-match {
-		background-image: url(../2024-25/46th-match.png);
+		background-image: url(../2025-26/46th-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -8955,7 +9655,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-47th-match {
-		background-image: url(../2024-25/47th-match.png);
+		background-image: url(../2025-26/47th-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -8965,7 +9665,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-48th-match {
-		background-image: url(../2024-25/48th-match.png);
+		background-image: url(../2025-26/48th-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -8975,7 +9675,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-49th-match {
-		background-image: url(../2024-25/49th-match.png);
+		background-image: url(../2025-26/49th-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -8985,7 +9685,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-50th-match {
-		background-image: url(../2024-25/50th-match.png);
+		background-image: url(../2025-26/50th-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -8995,7 +9695,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-51st-match {
-		background-image: url(../2024-25/51st-match.png);
+		background-image: url(../2025-26/51st-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -9005,7 +9705,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-52nd-match {
-		background-image: url(../2024-25/52nd-match.png);
+		background-image: url(../2025-26/52nd-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -9015,7 +9715,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-53rd-match {
-		background-image: url(../2024-25/53rd-match.png);
+		background-image: url(../2025-26/53rd-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -9025,7 +9725,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-54th-match {
-		background-image: url(../2024-25/54th-match.png);
+		background-image: url(../2025-26/54th-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -9035,7 +9735,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-55th-match {
-		background-image: url(../2024-25/55th-match.png);
+		background-image: url(../2025-26/55th-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -9045,7 +9745,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-56th-match {
-		background-image: url(../2024-25/56th-match.png);
+		background-image: url(../2025-26/56th-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -9055,7 +9755,7 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-57th-match {
-		background-image: url(../2024-25/57th-match.png);
+		background-image: url(../2025-26/57th-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
@@ -9065,7 +9765,127 @@ z-index: -1;
 		position: relative;
 	}
 	.dropdown-58th-match {
-		background-image: url(../2024-25/58th-match.png);
+		background-image: url(../2025-26/58th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-59th-match {
+		background-image: url(../2025-26/59th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-60th-match {
+		background-image: url(../2025-26/60th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-61st-match {
+		background-image: url(../2025-26/61st-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-62nd-match {
+		background-image: url(../2025-26/62nd-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-63rd-match {
+		background-image: url(../2025-26/63rd-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-64th-match {
+		background-image: url(../2025-26/64th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-65th-match {
+		background-image: url(../2025-26/65th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-66th-match {
+		background-image: url(../2025-26/66th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-67th-match {
+		background-image: url(../2025-26/67th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-68th-match {
+		background-image: url(../2025-26/68th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-69th-match {
+		background-image: url(../2025-26/69th-match.png);
+		background-size: 116.3% 115%;
+		color: white;
+		padding: 6.5vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.dropdown-70th-match {
+		background-image: url(../2025-26/70th-match.png);
 		background-size: 116.3% 115%;
 		color: white;
 		padding: 6.5vw;
