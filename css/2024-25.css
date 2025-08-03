@@ -8715,6 +8715,28 @@ z-index: -1;
 		align-items: center;
 		position: relative;
 	}
+	/* ⟱ KITS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.kits {
+		background-image: url(../2024-25/kits.png);
+		background-size: 108% 100%;
+		color: white;
+		padding: 25vw;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+		left: 7.75%;
+	}
+	.unitedkits-link {
+		position: absolute;
+		width: 45%;
+		margin-top: -5.5%;
+		margin-left: 39%;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-size: 2vw;
+		font-weight: 900;
+		text-align: center;
+	}
 	/* ⟱ PRESEASON, MATCHES, INTERNATIONAL BREAK ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	[itemid="dropdown-matches"] {
 		margin-left: -5vw;
