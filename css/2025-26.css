@@ -1755,62 +1755,64 @@ ul.navlist {
 #date {
 	font-size: .81vw;
 }
-#result-1h { display: none;}
+#result-1h { display: none; }
 #result-1v { display: none; }
-#result-2h { display: none;}
+#result-2h { display: none; }
 #result-2v { display: none; }
-#result-3h { display: none;}
+#result-3h { display: none; }
 #result-3v { display: none; }
-#result-4h { display: none;}
+#result-4h { display: none; }
 #result-4v { display: none; }
-#result-35h { display: none;}
+#result-35h { display: none; }
 #result-35v { display: none; }
-#result-36h { display: none;}
+#result-36h { display: none; }
 #result-36v { display: none; }
-#result-37h { display: none;}
+#result-37h { display: none; }
 #result-37v { display: none; }
-#result-38h { display: none;}
+#result-38h { display: none; }
 #result-38v { display: none; }
-#result-39h { display: none;}
+#result-39h { display: none; }
 #result-39v { display: none; }
-#result-40h { display: none;}
+#result-40h { display: none; }
 #result-40v { display: none; }
-#result-41h { display: none;}
+#result-41h { display: none; }
 #result-41v { display: none; }
-#result-42h { display: none;}
+#result-42h { display: none; }
 #result-42v { display: none; }
-#result-43h { display: none;}
+#result-43h { display: none; }
 #result-43v { display: none; }
-#result-44h { display: none;}
+#result-44h { display: none; }
 #result-44v { display: none; }
-#result-45h { display: none;}
+#result-45h { display: none; }
 #result-45v { display: none; }
-#result-46h { display: none;}
+#result-46h { display: none; }
 #result-46v { display: none; }
-#result-47h { display: none;}
+#result-47h { display: none; }
 #result-47v { display: none; }
-#result-48h { display: none;}
+#result-48h { display: none; }
 #result-48v { display: none; }
-#result-49h { display: none;}
+#result-49h { display: none; }
 #result-49v { display: none; }
-#result-50h { display: none;}
+#result-50h { display: none; }
 #result-50v { display: none; }
-#result-51h { display: none;}
+#result-51h { display: none; }
 #result-51v { display: none; }
-#result-52h { display: none;}
+#result-52h { display: none; }
 #result-52v { display: none; }
-#result-53h { display: none;}
+#result-53h { display: none; }
 #result-53v { display: none; }
-#result-54h { display: none;}
+#result-54h { display: none; }
 #result-54v { display: none; }
-#result-55h { display: none;}
+#result-55h { display: none; }
 #result-55v { display: none; }
-#result-56h { display: none;}
+#result-56h { display: none; }
 #result-56v { display: none; }
-#result-57h { display: none;}
+#result-57h { display: none; }
 #result-57v { display: none; }
-#result-58h { display: none;}
+#result-58h { display: none; }
 #result-58v { display: none; }
+#result-59h { display: none; }
+#result-59v { display: none; }
 /* ⟰ DATE, FIXTURE AND RESULT ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* ⟱ MATCH RATINGS ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .match-ratings-wrapper {
