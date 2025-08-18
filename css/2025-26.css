@@ -5734,6 +5734,7 @@ ul.navlist {
 	font-size: 1vw;
 	color: #e0dcdc;
 	text-align: center;
+	opacity: 0;
 }
 /* 	⟱ BUTTON: SHOW MATCH STATS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 /* MATCH 1 */
@@ -7337,7 +7338,7 @@ ul.navlist {
 .home-1stkit-1-left {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../core/2024-25-1kit.png);
+	background: url(../core/2025-26-1kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7383,7 +7384,7 @@ ul.navlist {
 .home-1stkit-1-right {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../core/2024-25-1kit.png);
+	background: url(../core/2025-26-1kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7452,7 +7453,7 @@ ul.navlist {
 .home-1stkit-2-left {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../core/2024-25-1kit.png);
+	background: url(../core/2025-26-1kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7466,7 +7467,7 @@ ul.navlist {
 .home-1stkit-2-right {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../core/2024-25-1kit.png);
+	background: url(../core/2025-26-1kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
