@@ -386,15 +386,15 @@ body {
 	color: #028336;
 	text-shadow: 0 0 2px #028336, 0 0 2px #028336; */
 	/* • */
-	margin-top: -.4%;
+	/* margin-top: -.4%;
 	font-size: 1.4vw;
 	color: gray;
-	text-shadow: 0 0 2px gray, 0 0 2px gray;
+	text-shadow: 0 0 2px gray, 0 0 2px gray; */
 	/* ▼ */
-	/* font-size: .8vw;
+	font-size: .8vw;
 	margin-top: 1.2%;
 	color: #da020e;
-	text-shadow: 0 0 2px #da020e, 0 0 2px #da020e; */
+	text-shadow: 0 0 2px #da020e, 0 0 2px #da020e;
 }
 .scoreboard-PL .PL div span2 {
 	color: #7861ff;
@@ -643,15 +643,15 @@ body {
 	background-size: 180% 180%;
 }
 .home span {
-	/* color: #fff; */
-	color: #da020e;
-	text-shadow: 0 0 2px #da020e;
-	opacity: none;
-}
-.home {
 	color: #fff;
 	/* color: #da020e;
 	text-shadow: 0 0 2px #da020e; */
+	opacity: none;
+}
+.home {
+	/* color: #fff; */
+	color: #da020e;
+	text-shadow: 0 0 2px #da020e;
 	opacity: none;
 }
 /* ⟱ SCOREBOARD (RESULT) ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -2092,7 +2092,7 @@ ul.navlist {
 .dropdown_li {
 	list-style: none;
 }
-#link-opacity { opacity: 0; }
+#link-opacity { opacity: 1; }
 .link1-pre {
 	position: absolute;
 	font-family: Agency FB;
@@ -2194,7 +2194,7 @@ ul.navlist {
 	font-family: Agency FB;
 	font-size: 1.36vw;
 	margin-top: -23.7%;
-	margin-left: 45.5%;
+	margin-left: 43.4%;
 	display: var(--links-display, none) !important;
 }
 .link8 {
@@ -2202,7 +2202,7 @@ ul.navlist {
 	font-family: Agency FB;
 	font-size: 1.36vw;
 	margin-top: -22.2%;
-	margin-left: 45.2%;
+	margin-left: 43.4%;
 	display: var(--links-display, none) !important;
 }
 .link9 {
@@ -2210,7 +2210,7 @@ ul.navlist {
 	font-family: Agency FB;
 	font-size: 1.36vw;
 	margin-top: -20.75%;
-	margin-left: 44.7%;
+	margin-left: 43.4%;
 	display: var(--links-display, none) !important;
 }
 .link10 {
@@ -7662,6 +7662,7 @@ ul.navlist {
 	position: absolute;
 	pointer-events: none;
 }
+
 .bottom-isometric {
 	position: absolute;
 	color: #b8b4b4;
@@ -7697,203 +7698,31 @@ z-index: -1;
 	transform: skewY(-2deg);
 	z-index: 1;
 }
+
 .OT-banners-bottom {
 	position: absolute;
-	height: 1.3vw;
-	line-height: 1.5vw;
-	left: 0;
-	margin-top: 65.5%;
-	background: white;
-	background-size: cover;
-	display: flex;
-	overflow-x: hidden;
+	margin-top: 64.05%;
+	overflow: hidden;
 	white-space: nowrap;
 	z-index: 1;
+}	
+.banners-slide > img {
+  height: 100%;
+  width: auto;
 }
-.OT-banners-bottom .banners {
-	display: flex;
+.banners-slide {
+  height: 3.5vw;
+  display: flex;
+  justify-content: center;
+  animation: slide 210s linear infinite;
 }
-.OT-banners-bottom .banners div {
-	color: #fff;
-	font-family: monospace;
-	font-size: 1vw;
-	white-space: nowrap;
-	font-weight: 100;
-	display: flex;
-	animation: animate2 80s linear infinite;
-	animation-delay: -40s;
-}
-.OT-banners-bottom .banners div span {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-	background-image: linear-gradient(to bottom, #cc1724 50%, #1e2526 50%);
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span2 {
-	color: #ffc40c;
-	text-shadow: 0 0 2px #ffc40c;
-	background: #a01c1c;
-}
-.OT-banners-bottom .banners div span3 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background: #a01c1c;
-	transform: scaleX(1.1) scaleY(1.1);
-}
-.OT-banners-bottom .banners div span4 {
-	color: rgb(76, 103, 192);
-	text-shadow: 0 0 2px yellow, 0 0 2px yellow;
-	background: #a01c1c;
-}
-.OT-banners-bottom .banners div span5 {
-	color: rgb(204, 204, 90);
-	text-shadow: 0 0 2px rgb(90, 186, 224);
-	background: #640505;
-}
-.OT-banners-bottom .banners div span6 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-	background: #1e2526;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span7 {
-	font-family: 'Times New Roman', Times, serif;
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background: #a01c1c;
-}
-.OT-banners-bottom .banners div span8 {
-	background: white;
-}
-.OT-banners-bottom .banners div span9 {
-	color: #b93939;
-	text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-	background: white;
-}
-.OT-banners-bottom .banners div span10 {
-	color: black;
-	text-shadow: 0 0 2px black, 0 0 2px black;
-	background: white;
-}
-.OT-banners-bottom .banners div span11 {
-	background: white;
-}
-.OT-banners-bottom .banners div span12 {
-	font-size: .9em;
-	background: white;
-	filter: grayscale(100%);
-}
-.OT-banners-bottom .banners div span13 {
-	font-size: .8em;
-	filter: brightness(10%);
-}
-.OT-banners-bottom .banners div span14 {
-	color: #b93939;
-	text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span15 {
-	color: black;
-	text-shadow: 0 0 2px black, 0 0 2px black;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span16 {
-	color: #b93939;
-	text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span17 {
-	font-size: .8em;
-	filter: brightness(10%);
-}
-.OT-banners-bottom .banners div span18 {
-	font-size: .9em;
-	background: white;
-	filter: grayscale(100%);
-}
-.OT-banners-bottom .banners div span19 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background: #a01c1c;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span20 {
-	font-size: .9em;
-	background: #a01c1c;
-}
-.OT-banners-bottom .banners div span21 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background: #a01c1c;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span22 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background:#cc1724;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span23 {
-	font-size: .8em;
-	filter: brightness(10%);
-}
-.OT-banners-bottom .banners div span24 {
-	font-size: .8em;
-}
-.OT-banners-bottom .banners div span25 {
-	font-size: .8em;
-	filter: brightness(10%);
-}
-.OT-banners-bottom .banners div span26 {
-	color: white;
-	font-size: .7em;
-	font-family: raleway_f;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background: #1e2526;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span27 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-	background: #1e2526;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span28 {
-	color: #a01c1c;
-	text-shadow: 0 0 2px #a01c1c, 0 0 2px #a01c1c, 0 0 2px #a01c1c;
-	background: #1e2526;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span29 {
-	background: white;
-}
-.OT-banners-bottom .banners div span30 {
-	color: black;
-	text-shadow: 0 0 2px black, 0 0 2px black;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span31 {
-	color: #a01c1c;
-	text-shadow: 0 0 2px #a01c1c, 0 0 2px #a01c1c, 0 0 2px #a01c1c;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span32 {
-	color: black;
-	text-shadow: 0 0 2px black, 0 0 2px black;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span33 {
-	background: white;
-	transform: rotateY(180deg);
-}
-.OT-banners-bottom .banners div:nth-child(2) {
-	animation: animate3 80s linear infinite;
+@keyframes slide {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
 }
 /* ⟱ idierco@gmail.com CONTACT ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .email-cursor-text {
@@ -8975,7 +8804,7 @@ z-index: -1;
 		font-family: Agency FB;
 		font-size: 2.1vw;
 		margin-top: -29.8%;
-		margin-left: 56.7%;
+		margin-left: 54.2%;
 		text-wrap: nowrap;
 		display: var(--links-display, none) !important;
 	}
@@ -8984,7 +8813,7 @@ z-index: -1;
 		font-family: Agency FB;
 		font-size: 2.1vw;
 		margin-top: -28%;
-		margin-left: 56.5%;
+		margin-left: 54.2%;
 		text-wrap: nowrap;
 		display: var(--links-display, none) !important;
 	}
@@ -8993,7 +8822,7 @@ z-index: -1;
 		font-family: Agency FB;
 		font-size: 2.1vw;
 		margin-top: -26.1%;
-		margin-left: 55.9%;
+		margin-left: 54.2%;
 		text-wrap: nowrap;
 		display: var(--links-display, none) !important;
 	}
@@ -11996,13 +11825,7 @@ z-index: -1;
 	}
 	.OT-banners-bottom {
 		position: absolute;
-		height: 1.3vw;
-		line-height: 1.5vw;
-		left: 0;
-		margin-top: 55%;
-		background: white;
-		background-size: cover;
-		display: flex;
+		margin-top: 54.5%;
 		overflow: hidden;
 		white-space: nowrap;
 		z-index: 1;
@@ -12285,15 +12108,15 @@ z-index: -1;
 		color: #028336;
 		text-shadow: 0 0 2px #028336, 0 0 2px #028336; */
 		/* • */
-		margin-top: -1.3%;
+		/* margin-top: -1.3%;
 		font-size: 3vw;
 		color: gray;
-		text-shadow: 0 0 2px gray, 0 0 2px gray;
+		text-shadow: 0 0 2px gray, 0 0 2px gray; */
 		/* ▼ */
-		/* font-size: 1.8vw;
+		font-size: 1.8vw;
 		margin-top: 1.2%;
 		color: #da020e;
-		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e; */
+		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e;
 	}
 	.scoreboard-PL .PL div span2 {
 		display: none;
@@ -13095,15 +12918,15 @@ z-index: -1;
 		color: #028336;
 		text-shadow: 0 0 2px #028336, 0 0 2px #028336; */
 		/* • */
-		margin-top: -2%;
+		/* margin-top: -2%;
 		font-size: 4.4vw;
 		color: gray;
-		text-shadow: 0 0 2px gray, 0 0 2px gray;
+		text-shadow: 0 0 2px gray, 0 0 2px gray; */
 		/* ▼ */
-		/* font-size: 2.5vw;
+		font-size: 2.5vw;
 		margin-top: 1.2%;
 		color: #da020e;
-		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e; */
+		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e;
 	}
 
 	/* CHAMPIONS LEAGUE */
