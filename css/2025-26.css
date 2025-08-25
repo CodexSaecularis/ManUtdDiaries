@@ -2092,7 +2092,7 @@ ul.navlist {
 .dropdown_li {
 	list-style: none;
 }
-#link-opacity { opacity: 1; }
+#link-opacity { opacity: 0; }
 .link1-pre {
 	position: absolute;
 	font-family: Agency FB;
@@ -2457,7 +2457,7 @@ ul.navlist {
 /* ⟰ PLAYER STATS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* ⟰ KITS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .kits {
-	background-image: url(../2025-26/kits.png);
+	background-image: url(../2025-26/kit.png);
 	background-size: 79% 100%;
 	color: white;
 	padding: 15vw;
@@ -9041,7 +9041,7 @@ z-index: -1;
 	}
 	/* ⟱ KITS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.kits {
-		background-image: url(../2025-26/kits.png);
+		background-image: url(../2025-26/kit.png);
 		background-size: 108% 100%;
 		color: white;
 		padding: 25vw;
