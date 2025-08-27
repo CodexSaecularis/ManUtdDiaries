@@ -3256,6 +3256,7 @@ ul.navlist {
 /* ⟰ KITS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .kits {
 	background-image: url(../1956-57/kits.png);
+	background-repeat: no-repeat;
 	background-size: 79% 100%;
 	color: white;
 	padding: 15vw;
@@ -7683,6 +7684,7 @@ z-index: -1;
 	/* ⟱ KITS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.kits {
 		background-image: url(../1956-57/kits.png);
+		background-repeat: no-repeat;
 		background-size: 108% 100%;
 		color: white;
 		padding: 25vw;

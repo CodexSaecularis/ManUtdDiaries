@@ -2373,7 +2373,7 @@ ul.navlist {
 /* ⟰ PLAYER STATS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* ⟰ KITS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .kits {
-	background-image: url(../2024-25/kit.png);
+	background-image: url(../2024-25/kits.png);
 	background-repeat: no-repeat;
 	background-size: 79% 100%;
 	color: white;
@@ -8720,7 +8720,7 @@ z-index: -1;
 	}
 	/* ⟱ KITS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.kits {
-		background-image: url(../2024-25/kit.png);
+		background-image: url(../2024-25/kits.png);
 		background-repeat: no-repeat;
 		background-size: 108% 100%;
 		color: white;
