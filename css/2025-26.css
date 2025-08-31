@@ -381,20 +381,20 @@ body {
 .scoreboard-PL .PL div span1 {
 	font-weight: 900;
 	/* ▲ */
-	/* margin-top: 1.2%;
+	margin-top: 1.2%;
 	font-size: .8vw;
 	color: #028336;
-	text-shadow: 0 0 2px #028336, 0 0 2px #028336; */
+	text-shadow: 0 0 2px #028336, 0 0 2px #028336;
 	/* • */
 	/* margin-top: -.4%;
 	font-size: 1.4vw;
 	color: gray;
 	text-shadow: 0 0 2px gray, 0 0 2px gray; */
 	/* ▼ */
-	font-size: .8vw;
+	/* font-size: .8vw;
 	margin-top: 1.2%;
 	color: #da020e;
-	text-shadow: 0 0 2px #da020e, 0 0 2px #da020e;
+	text-shadow: 0 0 2px #da020e, 0 0 2px #da020e; */
 }
 .scoreboard-PL .PL div span2 {
 	color: #7861ff;
@@ -643,15 +643,15 @@ body {
 	background-size: 180% 180%;
 }
 .home span {
-	color: #fff;
-	/* color: #da020e;
-	text-shadow: 0 0 2px #da020e; */
-	opacity: none;
-}
-.home {
 	/* color: #fff; */
 	color: #da020e;
 	text-shadow: 0 0 2px #da020e;
+	opacity: none;
+}
+.home {
+	color: #fff;
+	/* color: #da020e;
+	text-shadow: 0 0 2px #da020e; */
 	opacity: none;
 }
 /* ⟱ SCOREBOARD (RESULT) ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -734,230 +734,29 @@ body {
 .OT-banners {
 	position: absolute;
 	width: 21%;
-	height: 1.3vw;
-	line-height: 1.5vw;
+	margin-top: -15.7%;
 	left: 64.7%;
-	margin-top: -14.4%;
-	background-size: cover;
 	display: flex;
 	overflow: hidden;
 	white-space: nowrap;
-	z-index: 5;
-	background: white;
+	z-index: 1;
+}	
+.banners > img {
+  	height: 100%;
+  	width: auto;
 }
-.OT-banners .banners {
-	display: flex;
+.banners {
+  	height: 3.9vw;
+  	display: flex;
+  	justify-content: center;
+  	animation: slide1 200s linear infinite;
 }
-.OT-banners .banners div {
-	color: #fff;
-	font-family: monospace;
-	font-size: 1vw;
-	white-space: nowrap;
-	font-weight: 100;
-	display: flex;
-	animation: animate2 80s linear infinite;
-	animation-delay: -40s;
-}
-.OT-banners .banners div span {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-	background-image: linear-gradient(to bottom, #cc1724 50%, #1e2526 50%);
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span2 {
-	margin-top: -2px;
-	color: #ffc40c;
-	text-shadow: 0 0 2px #ffc40c;
-	background: #a01c1c;
-}
-.OT-banners .banners div span3 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background: #a01c1c;
-	transform: scaleX(1.1) scaleY(1.1);
-}
-.OT-banners .banners div span4 {
-	margin-top: -2px;
-	color: rgb(76, 103, 192);
-	text-shadow: 0 0 2px yellow, 0 0 2px yellow;
-	background: #a01c1c;
-}
-.OT-banners .banners div span5 {
-	margin-top: -2px;
-	color: rgb(204, 204, 90);
-	text-shadow: 0 0 2px rgb(90, 186, 224);
-	background: #640505;
-}
-.OT-banners .banners div span6 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-	background: #1e2526;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span7 {
-	font-family: 'Times New Roman', Times, serif;
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background: #a01c1c;
-}
-.OT-banners .banners div span8 {
-	margin-top: -2px;
-	background: white;
-}
-.OT-banners .banners div span9 {
-	color: #b93939;
-	text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-	background: white;
-}
-.OT-banners .banners div span10 {
-	color: black;
-	text-shadow: 0 0 2px black, 0 0 2px black;
-	background: white;
-}
-.OT-banners .banners div span11 {
-	margin-top: -2px;
-	background: white;
-}
-.OT-banners .banners div span12 {
-	margin-top: -1px;
-	font-size: .9em;
-	background: white;
-	filter: grayscale(100%);
-}
-.OT-banners .banners div span13 {
-	font-size: .8em;
-	filter: brightness(10%);
-}
-.OT-banners .banners div span14 {
-	color: #b93939;
-	text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span15 {
-	color: black;
-	text-shadow: 0 0 2px black, 0 0 2px black;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span16 {
-	color: #b93939;
-	text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span17 {
-	font-size: .8em;
-	filter: brightness(10%);
-}
-.OT-banners .banners div span18 {
-	margin-top: -1px;
-	font-size: .9em;
-	background: white;
-	filter: grayscale(100%);
-}
-.OT-banners .banners div span19 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background: #a01c1c;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span20 {
-	margin-top: -1px;
-	font-size: .9em;
-	background: #a01c1c;
-}
-.OT-banners .banners div span21 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background: #a01c1c;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span22 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background:#cc1724;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span23 {
-	font-size: .8em;
-	filter: brightness(10%);
-}
-.OT-banners .banners div span24 {
-	font-size: .8em;
-}
-.OT-banners .banners div span25 {
-	font-size: .8em;
-	filter: brightness(10%);
-}
-.OT-banners .banners div span26 {
-	color: white;
-	font-size: .7em;
-	font-family: raleway_f;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background: #1e2526;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span27 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-	background: #1e2526;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span28 {
-	color: #a01c1c;
-	text-shadow: 0 0 2px #a01c1c, 0 0 2px #a01c1c, 0 0 2px #a01c1c;
-	background: #1e2526;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span29 {
-	margin-top: -1px;
-	background: white;
-}
-.OT-banners .banners div span30 {
-	color: black;
-	text-shadow: 0 0 2px black, 0 0 2px black;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span31 {
-	color: #a01c1c;
-	text-shadow: 0 0 2px #a01c1c, 0 0 2px #a01c1c, 0 0 2px #a01c1c;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span32 {
-	color: black;
-	text-shadow: 0 0 2px black, 0 0 2px black;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span33 {
-	margin-top: -1px;
-	background: white;
-	transform: rotateY(180deg);
-}
-.OT-banners .banners div:nth-child(2) {
-	animation: animate3 80s linear infinite;
-}
-@keyframes animate2 {
-	0%
-	{
-		transform: translateX(100%);
-	}
-	100%
-	{
-		transform: translateX(-100%);
-	}
-}
-@keyframes animate3 {
-	0%
-	{
+@keyframes slide1 {
+	from {
 		transform: translateX(0);
 	}
-	100%
-	{
-		transform: translateX(-200%);
+	to {
+		transform: translateX(-100%);
 	}
 }
 /* ⟰ OT BANNERS CAROUSEL ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -7714,9 +7513,9 @@ z-index: -1;
   height: 3.5vw;
   display: flex;
   justify-content: center;
-  animation: slide 210s linear infinite;
+  animation: slide2 210s linear infinite;
 }
-@keyframes slide {
+@keyframes slide2 {
 	from {
 		transform: translateX(0);
 	}
@@ -7865,15 +7664,15 @@ z-index: -1;
 	.scoreboard-PL .PL div span1 {
 		font-weight: 900;
 		/* ▲ */
-		/* font-size: 1vw;
-		margin-top: 1.2%;
-		color: #028336;
-		text-shadow: 0 0 2px #028336, 0 0 2px #028336; */
-		/* ▼ */
 		font-size: 1vw;
 		margin-top: 1.2%;
+		color: #028336;
+		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
+		/* ▼ */
+		/* font-size: 1vw;
+		margin-top: 1.2%;
 		color: #da020e;
-		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e;
+		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e; */
 	}
 
 	/* CHAMPIONS LEAGUE */
@@ -8105,26 +7904,18 @@ z-index: -1;
 	.OT-banners {
 		position: absolute;
 		width: 25.7%;
-		height: 1.8vw;
-		line-height: 1.6vw;
+		margin-top: -19.3%;
 		left: 68.2%;
-		margin-top: -17.7%;
-		background-size: cover;
 		display: flex;
 		overflow: hidden;
 		white-space: nowrap;
-		z-index: 5;
-		background: white;
+		z-index: 1;
 	}
-	.OT-banners .banners div {
-		color: #fff;
-		font-family: monospace;
-		font-size: 1.5vw;
-		white-space: nowrap;
-		font-weight: 100;
-		display: flex;
-		animation: animate2 80s linear infinite;
-		animation-delay: -40s;
+	.banners {
+  		height: 4.8vw;
+  		display: flex;
+  		justify-content: center;
+  		animation: slide1 200s linear infinite;
 	}
 	/* ⟰ OT BANNERS CAROUSEL ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ CLOCK ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -12103,20 +11894,20 @@ z-index: -1;
 	.scoreboard-PL .PL div span1 {
 		font-weight: 900;
 		/* ▲ */
-		/* font-size: 1.8vw;
+		font-size: 1.8vw;
 		margin-top: 1.2%;
 		color: #028336;
-		text-shadow: 0 0 2px #028336, 0 0 2px #028336; */
+		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
 		/* • */
 		/* margin-top: -1.3%;
 		font-size: 3vw;
 		color: gray;
 		text-shadow: 0 0 2px gray, 0 0 2px gray; */
 		/* ▼ */
-		font-size: 1.8vw;
+		/* font-size: 1.8vw;
 		margin-top: 1.2%;
 		color: #da020e;
-		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e;
+		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e; */
 	}
 	.scoreboard-PL .PL div span2 {
 		display: none;
@@ -12913,20 +12704,20 @@ z-index: -1;
 	.scoreboard-PL .PL div span1 {
 		font-weight: 900;
 		/* ▲ */
-		/* font-size: 2.5vw;
+		font-size: 2.5vw;
 		margin-top: 1.2%;
 		color: #028336;
-		text-shadow: 0 0 2px #028336, 0 0 2px #028336; */
+		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
 		/* • */
 		/* margin-top: -2%;
 		font-size: 4.4vw;
 		color: gray;
 		text-shadow: 0 0 2px gray, 0 0 2px gray; */
 		/* ▼ */
-		font-size: 2.5vw;
+		/* font-size: 2.5vw;
 		margin-top: 1.2%;
 		color: #da020e;
-		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e;
+		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e; */
 	}
 
 	/* CHAMPIONS LEAGUE */
