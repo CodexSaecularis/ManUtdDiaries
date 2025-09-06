@@ -211,6 +211,8 @@ body {
 .season-list:has( :checked ) {
 	--rows: 1fr;
 	--on-tap: auto;
+	--on-show: auto;
+	--title-buttons-display: auto;
 }
 .checkbox-size {
 	color: white;
