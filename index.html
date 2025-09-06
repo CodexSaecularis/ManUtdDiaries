@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="description" content="🟥⬜⬛ Wanna watch recent and old full United matches? All streaming and download links here with NO spoilers. Also find stats, pre and post match news, player stats and MUCH MORE! Ψ😈"/>
+     <meta name="description" content="🟥⬜⬛ Wanna watch recent and old full United matches? Streaming and download links with NO spoilers. Find stats, and MUCH MORE! Ψ😈"/>
+     <!-- <meta property="og:description" content="🟥⬜⬛ Wanna watch recent and old full United matches? Streaming and download links with NO spoilers. Find stats, and MUCH MORE! Ψ😈"> -->
      <title>25/26</title>
      <link rel="stylesheet" href="css/2025-26.css">
      <link rel="icon" href="parallax/Man Utd.ico">
@@ -49,39 +50,97 @@
                                    <li class="dropdown-li">
                                         <img class="season-header-pc" src="core/select-click.png">
                                         <img class="season-header-mobile" src="core/select-tap.png">
-                                        <div class="swiper">
+                   
+                                        <button type="button" onclick="show_titles()" id="button-with-titles" itemid="links">
+                                             <h100>SHOW TROPHIES</h100>
+                                        </button>
+                                        <script>
+                                             function show_titles() {
+                                                  document.getElementById('with-titles')
+                                                       .style.display = "block";
+                                                  document.getElementById('button-with-titles')
+                                                       .style.display = "none";
+                                                  document.getElementById('button-without-titles')
+                                                       .style.display = "block";
+                                                  document.getElementById('without-titles')
+                                                       .style.display = "none";
+                                                  document.getElementById('hide')
+                                                       .style.display = "block";
+                                                  document.getElementById('show')
+                                                       .style.display = "none";
+                                             }
+                                        </script>
+
+                                        <div class="swiper" id="with-titles">  <!-- vertical scroller: https://www.youtube.com/watch?v=9nvnsU85jeQ -->
                                              <div class="swiper-wrapper">
-                                                  <!-- <div class="swiper-slide">
-                                                       <img src="core/select-2025-27.png">
-                                                  </div>
-                                                 <div class="swiper-slide">
-                                                       <img src="core/select-2023-25.png">
+                                                  <div class="swiper-slide">
+                                                       <img src="core/select-2023-27-titles.png">
+                                                            <a class="season-2025-26" href="index.html" id="season-links">
+                                                                 <img src="core/hover-2025-26-titles.png">
+                                                            </a>
+                                                            <a class="season-2024-25" href="2024-25.html" id="season-links">
+                                                                 <img src="core/hover-2024-25-titles.png">
+                                                            </a>
+                                                            <a class="season-2023-24" id="season-links">
+                                                                 <img src="core/hover-2023-24-titles.png">
+                                                            </a>
                                                   </div>
                                                   <div class="swiper-slide">
-                                                       <img src="core/select-1956-58.png">
-                                                  </div> -->
+                                                       <img src="core/select-1956-60-titles.png">
+                                                            <a class="season-1956-57" href="1956-57.html" id="season-links">
+                                                                 <img src="core/hover-1956-57-titles.png">
+                                                            </a>
+                                                  </div>
+                                             </div>
+                                             <div class="swiper-pagination"></div>
+                                        </div>
+                                                                                
+                                        <button type="button" onclick="show_notitles()" id="button-without-titles" itemid="links">
+                                             <h101>HIDE TROPHIES</h101>
+                                        </button>
+                                        <script>
+                                             function show_notitles() {
+                                                  document.getElementById('with-titles')
+                                                       .style.display = "none";
+                                                  document.getElementById('button-with-titles')
+                                                       .style.display = "block";
+                                                  document.getElementById('button-without-titles')
+                                                       .style.display = "none";
+                                                  document.getElementById('without-titles')
+                                                       .style.display = "block";
+                                                  document.getElementById('hide')
+                                                       .style.display = "none";
+                                                  document.getElementById('show')
+                                                       .style.display = "block";
+                                             }
+                                        </script>
+                                        
+                                        <div class="swiper" id="without-titles">  <!-- vertical scroller: https://www.youtube.com/watch?v=9nvnsU85jeQ -->
+                                             <div class="swiper-wrapper">
                                                   <div class="swiper-slide">
-                                                       <img src="core/1.png">
+                                                       <img src="core/select-2023-27.png">
                                                             <a class="season-2025-26" href="index.html" id="season-links">
                                                                  <img src="core/hover-2025-26.png">
                                                             </a>
                                                             <a class="season-2024-25" href="2024-25.html" id="season-links">
                                                                  <img src="core/hover-2024-25.png">
                                                             </a>
-                                                            <a class="season-2023-24" href="2023-24.html" id="season-links">
+                                                            <a class="season-2023-24" id="season-links">
                                                                  <img src="core/hover-2023-24.png">
                                                             </a>
                                                   </div>
-                                                 <div class="swiper-slide">
-                                                       <img src="core/2.png">
-                                                  </div>
                                                   <div class="swiper-slide">
-                                                       <img src="core/3.png">
+                                                       <img src="core/select-1956-60.png">
+                                                            <a class="season-1956-57" href="1956-57.html" id="season-links">
+                                                                 <img src="core/hover-1956-57.png">
+                                                            </a>
                                                   </div>
                                              </div>
                                              <div class="swiper-pagination"></div>
                                         </div>
-                                        <img class="season-content" src="core/select-bottom.png">
+                                        
+                                        <img class="season-content" src="core/select-bottom-show.png" id="show">
+                                        <img class="season-content" src="core/select-bottom-hide.png" id="hide">
                                    </li>
                               </ul>
                          </div>

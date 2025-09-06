@@ -212,68 +212,9 @@ body {
 .season-list:has( :checked ) {
 	--rows: 1fr;
 	--on-tap: auto;
+	--on-show: auto;
+	--title-buttons-display: auto;
 }
-
-
-
-
-
-.swiper {
-	width: 100%;
-	height: 235px;
-	float: left; /* addition to make it responsive */
-}
-
-.swiper-slide {
-    text-align: center;
-    font: 18px;
-    background: #000;
-    justify-content: center;
-    align-items: center;
-}
-
-.swiper-slide img {
-    width: 100%;
-    height: 100%;
-    /* object-fit: cover; */ /* original had it, but deactivated it to make it responsive */
-}
-
-.swiper-pagination {
-    position: absolute;
-    z-index: 21;
-    right: 20px;
-    width: 11px;
-    text-align: center;
-    left: auto;
-    top: 50%;
-    bottom: auto;
-    transform: translateY(-50%);
-}
-
-.swiper-pagination .swiper-pagination-bullets .swiper-pagination-bullet {
-     margin: 8px 0;
-}
-
-.swiper-pagination .swiper-pagination-bullet {
-    width: 11px;
-    height: 11px;
-    display: block;
-    border-radius: 10px;
-    background: #fff;
-    opacity: 0.2;
-    transition: all 0.3s;
-}
-
-.swiper-pagination .swiper-pagination-bullet-active {
-    opacity: 1;
-    background: #fff;
-    height: 30px;
-    box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
-}
-
-
-
-
 .checkbox-size {
 	color: white;
 	padding: 2vw;
@@ -348,13 +289,95 @@ body {
 #season-links {
 	pointer-events: var(--on-tap, none);
 }
+
+#button-with-titles {
+	border: none;
+	position: absolute;
+	margin-top: 74%;
+	left: 24.7%;
+	width: 40%;
+	height: 2.2vw;
+	font-size: 1.1vw;
+	font-family: Manchester\ United\ 23-24\ Tipogra;
+	color: gold;
+	background: transparent;
+	text-align: center;
+	z-index: 99;
+	display: block;
+}
+#with-titles { display: none; }
+
+#button-with-titles h100 {
+	display: var(--title-buttons-display, none);
+}
+#button-without-titles h101 {
+	display: var(--title-buttons-display, none);
+}
+#button-without-titles {
+	display: none;
+	border: none;
+	position: absolute;
+	margin-top: 74%;
+	left: 24.7%;
+	width: 40%;
+	height: 2.2vw;
+	font-size: 1.1vw;
+	font-family: Manchester\ United\ 23-24\ Tipogra;
+	color: red;
+	background: transparent;
+	text-align: center;
+	z-index: 99;
+}
+#hide { display: none; }
+
+.swiper {
+	width: 100%;
+	height: 235px;
+	float: left; /* addition to make it responsive */
+}
+.swiper-slide {
+    background: #000;
+}
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+.swiper-pagination {
+    position: absolute;
+    right: 20px;
+    width: 11px;
+    text-align: center;
+    left: auto;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+}
+.swiper-pagination .swiper-pagination-bullets .swiper-pagination-bullet {
+     margin: 8px 0;
+}
+.swiper-pagination .swiper-pagination-bullet {
+    width: 11px;
+    height: 11px;
+    display: block;
+    border-radius: 10px;
+    background: #fff;
+    opacity: 0.2;
+    transition: all 0.3s;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fff;
+    height: 30px;
+    box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
+}
+
 .season-2025-26 img {
 	position: absolute;
 	opacity: 0;
-	width: 114px;
-	height: 116px;
-	margin-top: 1px;
-	margin-left: -159px;
+	width: 118px;
+	height: 117px;
+	margin-top: 0.5px;
+	margin-left: -161px;
 }
 .season-2025-26:hover img {
 	opacity: 1;
@@ -362,10 +385,10 @@ body {
 .season-2024-25 img {
 	position: absolute;
 	opacity: 0;
-	width: 114px;
-	height: 118px;
-	margin-top: 116px;
-	margin-left: -159px;
+	width: 121px;
+	height: 122px;
+	margin-top: 112px;
+	margin-left: -165px;
 }
 .season-2024-25:hover img {
 	opacity: 1;
@@ -373,10 +396,10 @@ body {
 .season-2023-24 img {
 	position: absolute;
 	opacity: 0;
-	width: 113px;
-	height: 114px;
-	margin-top: 119px;
-	margin-left: -275px;
+	width: 120px;
+	height: 119px;
+	margin-top: 114px;
+	margin-left: -280px;
 }
 .season-2023-24:hover img {
 	opacity: 1;
@@ -392,13 +415,13 @@ body {
 .season-20-21:hover img {
 	opacity: 1;
 }
-.season-1956-57 img {
+.season-1956-57 img {	
 	position: absolute;
 	opacity: 0;
-	width: 114px;
-	height: 114px;
-	margin-top: 1.7px;
-	margin-left: -159px;
+	width: 121px;
+	height: 119px;
+	margin-top: 114px;
+	margin-left: -281px;
 }
 .season-1956-57:hover img {
 	opacity: 1;
@@ -7681,21 +7704,76 @@ z-index: -1;
 		width: 320px;
 		transform: translate(20px, -5px);
 	}
+	
+	
+	.swiper {
+		width: 100%;
+		height: 234px;
+		float: left; /* addition to make it responsive */
+	}
+
 	.season-2025-26 img {
 		position: absolute;
 		opacity: 0;
-		width: 114px;
+		width: 117px;
 		height: 115px;
 		margin-top: 0.5px;
-		margin-left: -159px;
+		margin-left: -161px;
 	}
 	.season-2024-25 img {
 		position: absolute;
 		opacity: 0;
-		width: 114px;
-		height: 117px;
-		margin-top: -1.1px;
-		margin-left: -159px;
+		width: 121px;
+		height: 121px;
+		margin-top: 112px;
+		margin-left: -165px;
+	}
+	.season-2023-24 img {
+		position: absolute;
+		opacity: 0;
+		width: 120px;
+		height: 119px;
+		margin-top: 113px;
+		margin-left: -280px;
+	}
+	.season-1956-57 img {
+		position: absolute;
+		opacity: 0;
+		width: 120px;
+		height: 120px;
+		margin-top: 113px;
+		margin-left: -280px;
+	}
+
+	#button-with-titles {
+		border: none;
+		position: absolute;
+		margin-top: 75%;
+		left: 24.2%;
+		width: 40%;
+		height: 2.2vw;
+		font-size: 1.4vw;
+		font-family: Manchester\ United\ 23-24\ Tipogra;
+		color: gold;
+		background: transparent;
+		text-align: center;
+		z-index: 99;
+		display: block;
+	}
+	#button-without-titles {
+		display: none;
+		border: none;
+		position: absolute;
+		margin-top: 75%;
+		left: 24.2%;
+		width: 40%;
+		height: 2.2vw;
+		font-size: 1.4vw;
+		font-family: Manchester\ United\ 23-24\ Tipogra;
+		color: red;
+		background: transparent;
+		text-align: center;
+		z-index: 99;
 	}
 	/* ⟰ SELECT SEASON ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ SCOREBOARD CAROUSEL ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -11887,29 +11965,36 @@ z-index: -1;
 	.season-content {
 		width: 304px;
 	}
+
+	.swiper {
+		width: 304px; /* same as .season-content */
+		height: 223px;
+		float: left; /* addition to make it responsive */
+	}
+
 	.season-2025-26 img {
 		position: absolute;
 		opacity: 0;
-		width: 107.9px;
+		width: 112px;
 		height: 110px;
-		margin-top: -0.1px;
-		margin-left: -151px;
+		margin-top: 0.5px;
+		margin-left: -153px;
 	}
 	.season-2024-25 img {
 		position: absolute;
 		opacity: 0;
-		width: 108.3px;
-		height: 111px;
-		margin-top: -1.4px;
-		margin-left: -151px;
+		width: 116px;
+		height: 115px;
+		margin-top: 107px;
+		margin-left: -157px;
 	}
 	.season-2023-24 img {
 		position: absolute;
 		opacity: 0;
-		width: 107.8px;
-		height: 108px;
-		margin-top: 2px; 
-		margin-left: -261.4px;
+		width: 114px;
+		height: 115px;
+		margin-top: 107px;
+		margin-left: -266px;
 	}
 	.season-20-21 img {
 		position: absolute;
@@ -11922,10 +12007,41 @@ z-index: -1;
 	.season-1956-57 img {
 		position: absolute;
 		opacity: 0;
-		width: 107.9px;
-		height: 108.5px;
-		margin-top: 1.8px;
-		margin-left: -151px;
+		width: 114px;
+		height: 115px;
+		margin-top: 107px;
+		margin-left: -266px;
+	}
+
+	#button-with-titles {
+		border: none;
+		position: absolute;
+		margin-top: 230px;
+		left: 87px;
+		width: 100px;
+		height: 2.2vw;
+		font-size: 14px;
+		font-family: Manchester\ United\ 23-24\ Tipogra;
+		color: gold;
+		background: transparent;
+		text-align: center;
+		z-index: 99;
+		display: block;
+	}
+	#button-without-titles {
+		display: none;
+		border: none;
+		position: absolute;
+		margin-top: 230px;
+		left: 87px;
+		width: 100px;
+		height: 2.2vw;
+		font-size: 14px;
+		font-family: Manchester\ United\ 23-24\ Tipogra;
+		color: red;
+		background: transparent;
+		text-align: center;
+		z-index: 99;
 	}
 	/* ⟰ SELECT SEASON ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
     /* ⟱ SCOREBOARD CAROUSEL ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -12705,43 +12821,75 @@ z-index: -1;
 	.season-content {
 		width: 280px;
 	}
-	.season-2025-26 img {
-		position: absolute;
-		opacity: 0;
-		width: 100px;
-		height: 101px;
-		margin-top: -0.1px;
-		margin-left: -139px;
-	}
-	.season-2024-25 img {
-		position: absolute;
-		opacity: 0;
-		width: 100px;
-		height: 102.5px;
-		margin-top: 102px;
-		margin-left: -139.5px;
-	}
-	.season-2023-24 img {
-		position: absolute;
-		opacity: 0;
-		width: 100px;
-		height: 100px;
-		margin-top: 104px;
-		margin-left: -241px;
-	}
-	.season-1956-57 img {
-		position: absolute;
-		opacity: 0;
-		width: 100px;
-		height: 101px;
-		margin-top: 1px;
-		margin-left: -139px;
-	}
 	
 	.swiper {
 		width: 280px; /* same as .season-content */
 		height: 206px;
 		float: left; /* addition to make it responsive */
+	}
+	
+	.season-2025-26 img {
+		position: absolute;
+		opacity: 0;
+		width: 103px;
+		height: 102px;
+		margin-top: -0.1px;
+		margin-left: -141px;
+	}
+	.season-2024-25 img {
+		position: absolute;
+		opacity: 0;
+		width: 106px;
+		height: 106px;
+		margin-top: 99px;
+		margin-left: -144px;
+	}
+	.season-2023-24 img {
+		position: absolute;
+		opacity: 0;
+		width: 106px;
+		height: 104px;
+		margin-top: 100px;
+		margin-left: -246px;
+	}
+	.season-1956-57 img {
+		position: absolute;
+		opacity: 0;
+		width: 106px;
+		height: 104px;
+		margin-top: 100px;
+		margin-left: -246px;
+	}
+
+	#button-with-titles {
+		border: none;
+		position: absolute;
+		margin-top: 213px;
+		left: 75px;
+		width: 100px;
+		height: 2.2vw;
+		font-size: 13px;
+		font-family: Manchester\ United\ 23-24\ Tipogra;
+		color: gold;
+		background: transparent;
+		text-align: center;
+		z-index: 99;
+		display: block;
+	}
+	#button-without-titles {
+		display: none;
+		border: none;
+		position: absolute;
+		margin-top: 213px;
+		left: 75px;
+		width: 100px;
+		height: 2.2vw;
+		font-size: 13px;
+		font-family: Manchester\ United\ 23-24\ Tipogra;
+		color: red;
+		background: transparent;
+		text-align: center;
+		z-index: 99;
 	}
 	/* ⟰ SELECT SEASON ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
     /* ⟱ SCOREBOARD CAROUSEL ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
