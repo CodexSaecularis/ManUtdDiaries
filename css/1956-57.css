@@ -191,6 +191,8 @@ body {
 	margin-left: -6.3%;
 }
 .underground-small { display: none; }
+/* ⟱ SELECT SEASON ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* code in core.css */
 /* ⟱ SCOREBOARD CAROUSEL ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* PREMIER LEAGUE */
 .scoreboard-wrapper {
@@ -546,230 +548,29 @@ body {
 .OT-banners {
 	position: absolute;
 	width: 21%;
-	height: 1.3vw;
-	line-height: 1.5vw;
+	margin-top: -15.7%;
 	left: 64.7%;
-	margin-top: -14.4%;
-	background-size: cover;
 	display: flex;
 	overflow: hidden;
 	white-space: nowrap;
-	z-index: 5;
-	background: white;
+	z-index: 1;
+}	
+.banners > img {
+  	height: 100%;
+  	width: auto;
 }
-.OT-banners .banners {
-	display: flex;
+.banners {
+  	height: 3.9vw;
+  	display: flex;
+  	justify-content: center;
+  	animation: slide1 200s linear infinite;
 }
-.OT-banners .banners div {
-	color: #fff;
-	font-family: monospace;
-	font-size: 1vw;
-	white-space: nowrap;
-	font-weight: 100;
-	display: flex;
-	animation: animate2 80s linear infinite;
-	animation-delay: -40s;
-}
-.OT-banners .banners div span {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-	background-image: linear-gradient(to bottom, #cc1724 50%, #1e2526 50%);
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span2 {
-	margin-top: -2px;
-	color: #ffc40c;
-	text-shadow: 0 0 2px #ffc40c;
-	background: #a01c1c;
-}
-.OT-banners .banners div span3 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background: #a01c1c;
-	transform: scaleX(1.1) scaleY(1.1);
-}
-.OT-banners .banners div span4 {
-	margin-top: -2px;
-	color: rgb(76, 103, 192);
-	text-shadow: 0 0 2px yellow, 0 0 2px yellow;
-	background: #a01c1c;
-}
-.OT-banners .banners div span5 {
-	margin-top: -2px;
-	color: rgb(204, 204, 90);
-	text-shadow: 0 0 2px rgb(90, 186, 224);
-	background: #640505;
-}
-.OT-banners .banners div span6 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-	background: #1e2526;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span7 {
-	font-family: 'Times New Roman', Times, serif;
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background: #a01c1c;
-}
-.OT-banners .banners div span8 {
-	margin-top: -2px;
-	background: white;
-}
-.OT-banners .banners div span9 {
-	color: #b93939;
-	text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-	background: white;
-}
-.OT-banners .banners div span10 {
-	color: black;
-	text-shadow: 0 0 2px black, 0 0 2px black;
-	background: white;
-}
-.OT-banners .banners div span11 {
-	margin-top: -2px;
-	background: white;
-}
-.OT-banners .banners div span12 {
-	margin-top: -1px;
-	font-size: .9em;
-	background: white;
-	filter: grayscale(100%);
-}
-.OT-banners .banners div span13 {
-	font-size: .8em;
-	filter: brightness(10%);
-}
-.OT-banners .banners div span14 {
-	color: #b93939;
-	text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span15 {
-	color: black;
-	text-shadow: 0 0 2px black, 0 0 2px black;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span16 {
-	color: #b93939;
-	text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span17 {
-	font-size: .8em;
-	filter: brightness(10%);
-}
-.OT-banners .banners div span18 {
-	margin-top: -1px;
-	font-size: .9em;
-	background: white;
-	filter: grayscale(100%);
-}
-.OT-banners .banners div span19 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background: #a01c1c;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span20 {
-	margin-top: -1px;
-	font-size: .9em;
-	background: #a01c1c;
-}
-.OT-banners .banners div span21 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background: #a01c1c;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span22 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background:#cc1724;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span23 {
-	font-size: .8em;
-	filter: brightness(10%);
-}
-.OT-banners .banners div span24 {
-	font-size: .8em;
-}
-.OT-banners .banners div span25 {
-	font-size: .8em;
-	filter: brightness(10%);
-}
-.OT-banners .banners div span26 {
-	color: white;
-	font-size: .7em;
-	font-family: raleway_f;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background: #1e2526;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span27 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-	background: #1e2526;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span28 {
-	color: #a01c1c;
-	text-shadow: 0 0 2px #a01c1c, 0 0 2px #a01c1c, 0 0 2px #a01c1c;
-	background: #1e2526;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span29 {
-	margin-top: -1px;
-	background: white;
-}
-.OT-banners .banners div span30 {
-	color: black;
-	text-shadow: 0 0 2px black, 0 0 2px black;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span31 {
-	color: #a01c1c;
-	text-shadow: 0 0 2px #a01c1c, 0 0 2px #a01c1c, 0 0 2px #a01c1c;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span32 {
-	color: black;
-	text-shadow: 0 0 2px black, 0 0 2px black;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners .banners div span33 {
-	margin-top: -1px;
-	background: white;
-	transform: rotateY(180deg);
-}
-.OT-banners .banners div:nth-child(2) {
-	animation: animate3 80s linear infinite;
-}
-@keyframes animate2 {
-	0%
-	{
-		transform: translateX(100%);
-	}
-	100%
-	{
-		transform: translateX(-100%);
-	}
-}
-@keyframes animate3 {
-	0%
-	{
+@keyframes slide1 {
+	from {
 		transform: translateX(0);
 	}
-	100%
-	{
-		transform: translateX(-200%);
+	to {
+		transform: translateX(-100%);
 	}
 }
 /* ⟰ OT BANNERS CAROUSEL ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -1126,6 +927,7 @@ ul.navlist {
 	width: 100%;
 	transform: translateY(-498%);
 }
+#trophies { display: none; }
 /* ⟱ CABLE BOXES ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .cable-box-left {
 	position: relative;
@@ -1264,6 +1066,12 @@ ul.navlist {
 	margin-top: -55.15%;
 	position: absolute;
 }
+#gallery-text1 { display: none; }
+#gallery-text2 { display: none; }
+#gallery-text3 { display: none; }
+#gallery-text4 { display: none; }
+#gallery-text5 { display: none; }
+#gallery-text6 { display: none; }
 .gallery {
 	width: 100%;
 	position: relative;
@@ -1837,7 +1645,7 @@ ul.navlist {
 .dropdown_li {
 	list-style: none;
 }
-#link-opacity { opacity: 0; }
+#link-opacity { opacity: 1; }
 .link1 {
 	position: absolute;
 	font-family: Agency FB;
@@ -4786,6 +4594,7 @@ ul.navlist {
 	font-size: 1vw;
 	color: #e0dcdc;
 	text-align: center;
+	opacity: 0;
 }
 /* 	⟱ BUTTON: SHOW MATCH STATS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 /* MATCH 57 */
@@ -5161,6 +4970,7 @@ ul.navlist {
 	margin-left: 5.48%;
 	margin-top: .1%;
 }
+#bottom-titles { display: none; }
 .footer {
 	left: 5.48%;
 	background-image: url(../core/footer.png);
@@ -5209,203 +5019,31 @@ z-index: -1;
 	transform: skewY(-2deg);
 	z-index: 1;
 }
+
 .OT-banners-bottom {
 	position: absolute;
-	height: 1.3vw;
-	line-height: 1.5vw;
-	left: 0;
-	margin-top: 65.5%;
-	background: white;
-	background-size: cover;
-	display: flex;
-	overflow-x: hidden;
+	margin-top: 64.05%;
+	overflow: hidden;
 	white-space: nowrap;
 	z-index: 1;
+}	
+.banners-slide > img {
+  height: 100%;
+  width: auto;
 }
-.OT-banners-bottom .banners {
-	display: flex;
+.banners-slide {
+  height: 3.5vw;
+  display: flex;
+  justify-content: center;
+  animation: slide2 210s linear infinite;
 }
-.OT-banners-bottom .banners div {
-	color: #fff;
-	font-family: monospace;
-	font-size: 1vw;
-	white-space: nowrap;
-	font-weight: 100;
-	display: flex;
-	animation: animate2 80s linear infinite;
-	animation-delay: -40s;
-}
-.OT-banners-bottom .banners div span {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-	background-image: linear-gradient(to bottom, #cc1724 50%, #1e2526 50%);
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span2 {
-	color: #ffc40c;
-	text-shadow: 0 0 2px #ffc40c;
-	background: #a01c1c;
-}
-.OT-banners-bottom .banners div span3 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background: #a01c1c;
-	transform: scaleX(1.1) scaleY(1.1);
-}
-.OT-banners-bottom .banners div span4 {
-	color: rgb(76, 103, 192);
-	text-shadow: 0 0 2px yellow, 0 0 2px yellow;
-	background: #a01c1c;
-}
-.OT-banners-bottom .banners div span5 {
-	color: rgb(204, 204, 90);
-	text-shadow: 0 0 2px rgb(90, 186, 224);
-	background: #640505;
-}
-.OT-banners-bottom .banners div span6 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-	background: #1e2526;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span7 {
-	font-family: 'Times New Roman', Times, serif;
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background: #a01c1c;
-}
-.OT-banners-bottom .banners div span8 {
-	background: white;
-}
-.OT-banners-bottom .banners div span9 {
-	color: #b93939;
-	text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-	background: white;
-}
-.OT-banners-bottom .banners div span10 {
-	color: black;
-	text-shadow: 0 0 2px black, 0 0 2px black;
-	background: white;
-}
-.OT-banners-bottom .banners div span11 {
-	background: white;
-}
-.OT-banners-bottom .banners div span12 {
-	font-size: .9em;
-	background: white;
-	filter: grayscale(100%);
-}
-.OT-banners-bottom .banners div span13 {
-	font-size: .8em;
-	filter: brightness(10%);
-}
-.OT-banners-bottom .banners div span14 {
-	color: #b93939;
-	text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span15 {
-	color: black;
-	text-shadow: 0 0 2px black, 0 0 2px black;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span16 {
-	color: #b93939;
-	text-shadow: 0 0 2px #b93939, 0 0 2px #b93939;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span17 {
-	font-size: .8em;
-	filter: brightness(10%);
-}
-.OT-banners-bottom .banners div span18 {
-	font-size: .9em;
-	background: white;
-	filter: grayscale(100%);
-}
-.OT-banners-bottom .banners div span19 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background: #a01c1c;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span20 {
-	font-size: .9em;
-	background: #a01c1c;
-}
-.OT-banners-bottom .banners div span21 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background: #a01c1c;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span22 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background:#cc1724;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span23 {
-	font-size: .8em;
-	filter: brightness(10%);
-}
-.OT-banners-bottom .banners div span24 {
-	font-size: .8em;
-}
-.OT-banners-bottom .banners div span25 {
-	font-size: .8em;
-	filter: brightness(10%);
-}
-.OT-banners-bottom .banners div span26 {
-	color: white;
-	font-size: .7em;
-	font-family: raleway_f;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-	background: #1e2526;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span27 {
-	color: white;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-	background: #1e2526;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span28 {
-	color: #a01c1c;
-	text-shadow: 0 0 2px #a01c1c, 0 0 2px #a01c1c, 0 0 2px #a01c1c;
-	background: #1e2526;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span29 {
-	background: white;
-}
-.OT-banners-bottom .banners div span30 {
-	color: black;
-	text-shadow: 0 0 2px black, 0 0 2px black;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span31 {
-	color: #a01c1c;
-	text-shadow: 0 0 2px #a01c1c, 0 0 2px #a01c1c, 0 0 2px #a01c1c;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span32 {
-	color: black;
-	text-shadow: 0 0 2px black, 0 0 2px black;
-	background: white;
-	transform: scaleY(1.1);
-}
-.OT-banners-bottom .banners div span33 {
-	background: white;
-	transform: rotateY(180deg);
-}
-.OT-banners-bottom .banners div:nth-child(2) {
-	animation: animate3 80s linear infinite;
+@keyframes slide2 {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
 }
 /* ⟱ idierco@gmail.com CONTACT ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .email-cursor-text {
@@ -5701,26 +5339,18 @@ z-index: -1;
 	.OT-banners {
 		position: absolute;
 		width: 25.7%;
-		height: 1.8vw;
-		line-height: 1.6vw;
+		margin-top: -19.3%;
 		left: 68.2%;
-		margin-top: -17.7%;
-		background-size: cover;
 		display: flex;
 		overflow: hidden;
 		white-space: nowrap;
-		z-index: 5;
-		background: white;
+		z-index: 1;
 	}
-	.OT-banners .banners div {
-		color: #fff;
-		font-family: monospace;
-		font-size: 1.5vw;
-		white-space: nowrap;
-		font-weight: 100;
-		display: flex;
-		animation: animate2 80s linear infinite;
-		animation-delay: -40s;
+	.banners {
+  		height: 4.8vw;
+  		display: flex;
+  		justify-content: center;
+  		animation: slide1 200s linear infinite;
 	}
 	/* ⟰ OT BANNERS CAROUSEL ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ CLOCK ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -7144,7 +6774,7 @@ z-index: -1;
 		visibility: hidden;
 		border-radius: .5vw;
 		top: 34%;
-		width: 160%;
+		width: 161%;
 		color: white;
 		font-family: Century Gothic;
 		font-size: 1.7vw;
@@ -8370,13 +8000,7 @@ z-index: -1;
 	}
 	.OT-banners-bottom {
 		position: absolute;
-		height: 1.3vw;
-		line-height: 1.5vw;
-		left: 0;
-		margin-top: 55%;
-		background: white;
-		background-size: cover;
-		display: flex;
+		margin-top: 54.5%;
 		overflow: hidden;
 		white-space: nowrap;
 		z-index: 1;
@@ -9615,7 +9239,7 @@ z-index: -1;
 	}
 	/* ⟱ BOTTOM ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.bottom-isometric::before {
-	content: "1956/57";
+	content: "1957/58";
 	position: absolute;
 	text-shadow: -1px 0.5px 1px #555,
 					   -2px 0.5px 1px #555,

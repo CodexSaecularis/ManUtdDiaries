@@ -4707,7 +4707,7 @@ ul.navlist {
 .facupfinal-kit-1-left {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../core/1956-57-facupfinal.png);
+	background: url(../core/1957-58-facupfinal.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -4753,7 +4753,7 @@ ul.navlist {
 .facupfinal-kit-1-right {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../core/1956-57-facupfinal.png);
+	background: url(../core/1957-58-facupfinal.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -4822,7 +4822,7 @@ ul.navlist {
 .facupfinal-kit-2-left {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../core/1956-57-facupfinal.png);
+	background: url(../core/1957-58-facupfinal.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -4836,7 +4836,7 @@ ul.navlist {
 .facupfinal-kit-2-right {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../core/1956-57-facupfinal.png);
+	background: url(../core/1957-58-facupfinal.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -8006,13 +8006,7 @@ z-index: -1;
 	}
 	.OT-banners-bottom {
 		position: absolute;
-		height: 1.3vw;
-		line-height: 1.5vw;
-		left: 0;
-		margin-top: 55%;
-		background: white;
-		background-size: cover;
-		display: flex;
+		margin-top: 54.5%;
 		overflow: hidden;
 		white-space: nowrap;
 		z-index: 1;
