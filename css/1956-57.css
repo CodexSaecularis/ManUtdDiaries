@@ -1645,7 +1645,7 @@ ul.navlist {
 .dropdown_li {
 	list-style: none;
 }
-#link-opacity { opacity: 1; }
+#link-opacity { opacity: 0; }
 .link1 {
 	position: absolute;
 	font-family: Agency FB;
