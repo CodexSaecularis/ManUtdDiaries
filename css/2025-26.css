@@ -1822,7 +1822,7 @@ ul.navlist {
 .dropdown_li {
 	list-style: none;
 }
-#link-opacity { opacity: 0; }
+#link-opacity { opacity: 1; }
 .link1-pre {
 	position: absolute;
 	font-family: Agency FB;
@@ -7711,7 +7711,7 @@ ul.navlist {
 .away-3rdkit-1-left {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../core/2024-25-3kit.png);
+	background: url(../core/2025-26-3kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7724,7 +7724,7 @@ ul.navlist {
 .away-3rdkit-1-right {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../core/2024-25-3kit.png);
+	background: url(../core/2025-26-3kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7767,7 +7767,7 @@ ul.navlist {
 .away-2ndkit-2-left {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../core/2024-25-2kit.png);
+	background: url(../core/2025-26-2kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7780,7 +7780,7 @@ ul.navlist {
 .away-2ndkit-2-right {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../core/2024-25-2kit.png);
+	background: url(../core/2025-26-2kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7794,7 +7794,7 @@ ul.navlist {
 .away-3rdkit-2-left {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../core/2024-25-3kit.png);
+	background: url(../core/2025-26-3kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7807,7 +7807,7 @@ ul.navlist {
 .away-3rdkit-2-right {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../core/2024-25-3kit.png);
+	background: url(../core/2025-26-3kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
