@@ -492,15 +492,15 @@ body {
 	background-size: 180% 180%;
 }
 .home span {
-	/* color: #fff; */
-	color: #da020e;
-	text-shadow: 0 0 2px #da020e;
-	opacity: none;
-}
-.home {
 	color: #fff;
 	/* color: #da020e;
 	text-shadow: 0 0 2px #da020e; */
+	opacity: none;
+}
+.home {
+	/* color: #fff; */
+	color: #da020e;
+	text-shadow: 0 0 2px #da020e;
 	opacity: none;
 }
 /* ⟱ SCOREBOARD (RESULT) ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -1822,7 +1822,7 @@ ul.navlist {
 .dropdown_li {
 	list-style: none;
 }
-#link-opacity { opacity: 1; }
+#link-opacity { opacity: 0; }
 .link1-pre {
 	position: absolute;
 	font-family: Agency FB;
@@ -3811,6 +3811,170 @@ ul.navlist {
 	animation-delay: 0.6s;
 }
 #button-score-news8:hover span {
+	animation-play-state: paused;
+}
+
+/* MATCH 9 */
+#button-score-news9 h89 { display: none; }
+#cover9-score {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .08%;
+}
+#cover9-news {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .095%;
+	z-index: -1;
+}
+#button-score-news9 {
+	border: none;
+	border-radius: .1vw;
+	position: absolute;
+	z-index: 2;
+	margin-top: -5.65%;
+	left: 40.8%;
+	width: 14.2%;
+	height: auto;
+	line-height: 1vw;
+	font-family: Lampen;
+	font-size: 1.2vw;
+	color: white;
+	background: #262626;
+	overflow: hidden;
+}
+#button-score-news9:hover {
+	color: black;
+	background: #ef0017;
+	box-shadow: 0 0 5px #ef0017,
+					   0 0 25px #ef0017,
+					   0 0 50px #ef0017,
+					   0 0 200px #ef0017;
+}
+/* 	MATCH 9 // BUTTON: ROTATE ANIMATION */
+#button-score-news9 span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 10%;
+	background: linear-gradient(90deg, transparent, #ef0017);
+	animation: rotate1 0.8s linear infinite;
+	animation-delay: 0s;
+}
+#button-score-news9 span:nth-child(3) {
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: .15vw;
+	background: linear-gradient(270deg, transparent, #ef0017);
+	animation: rotate3 0.8s linear infinite;
+	animation-delay: 0.4s;
+}
+#button-score-news9 span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #ef0017);
+	animation: rotate2 0.8s linear infinite;
+	animation-delay: 0.2s;
+}
+#button-score-news9 span:nth-child(4) {
+	bottom: -100%;
+	left: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #ef0017);
+	animation: rotate4 0.8s linear infinite;
+	animation-delay: 0.6s;
+}
+#button-score-news9:hover span {
+	animation-play-state: paused;
+}
+
+/* MATCH 10 */
+#button-score-news10 h89 { display: none; }
+#cover10-score {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .08%;
+}
+#cover10-news {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .095%;
+	z-index: -1;
+}
+#button-score-news10 {
+	border: none;
+	border-radius: .1vw;
+	position: absolute;
+	z-index: 2;
+	margin-top: -5.65%;
+	left: 40.8%;
+	width: 14.2%;
+	height: auto;
+	line-height: 1vw;
+	font-family: Lampen;
+	font-size: 1.2vw;
+	color: white;
+	background: #262626;
+	overflow: hidden;
+}
+#button-score-news10:hover {
+	color: black;
+	background: #ef0017;
+	box-shadow: 0 0 5px #ef0017,
+					   0 0 25px #ef0017,
+					   0 0 50px #ef0017,
+					   0 0 200px #ef0017;
+}
+/* 	MATCH 10 // BUTTON: ROTATE ANIMATION */
+#button-score-news10 span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 10%;
+	background: linear-gradient(90deg, transparent, #ef0017);
+	animation: rotate1 0.8s linear infinite;
+	animation-delay: 0s;
+}
+#button-score-news10 span:nth-child(3) {
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: .15vw;
+	background: linear-gradient(270deg, transparent, #ef0017);
+	animation: rotate3 0.8s linear infinite;
+	animation-delay: 0.4s;
+}
+#button-score-news10 span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #ef0017);
+	animation: rotate2 0.8s linear infinite;
+	animation-delay: 0.2s;
+}
+#button-score-news10 span:nth-child(4) {
+	bottom: -100%;
+	left: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #ef0017);
+	animation: rotate4 0.8s linear infinite;
+	animation-delay: 0.6s;
+}
+#button-score-news10:hover span {
 	animation-play-state: paused;
 }
 
@@ -6251,6 +6415,120 @@ ul.navlist {
 #button-stats8:hover h90 { color: rgb(211, 208, 208); }
 #stats-8th-match { display: none; }
 
+/* MATCH 9 */
+#button-stats9 h91 { display: none; }
+#button-stats9 {
+	border: none;
+	position: relative;
+	margin-top: 2%;
+	left: 30.2%;
+	width: 35%;
+	height: 2.2vw;
+	font-size: 1.3vw;
+	font-family: Manchester\ United\ 23-24\ Tipogra;
+	color: black;
+	background: transparent;
+	text-align: center;
+	z-index: 1;
+}
+#button-stats9:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: red;
+	opacity: .7;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: top;
+	transition: .2s;
+	top: -10%;
+	left: -3%;
+}
+#button-stats9:hover:before {
+	top: -20%;
+	left: 0;
+	transform: perspective(1000px) rotateX(80deg);
+}
+#button-stats9:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	opacity: .9;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: bottom;
+	transition: .2s;
+	bottom: -10%;
+	right: -1%;
+}
+#button-stats9:hover:after {
+	bottom: -20%;
+	right: 0;
+	transform: perspective(1000px) rotateX(-80deg);
+}
+#button-stats9:hover h90 { color: rgb(211, 208, 208); }
+#stats-9th-match { display: none; }
+
+/* MATCH 10 */
+#button-stats10 h91 { display: none; }
+#button-stats10 {
+	border: none;
+	position: relative;
+	margin-top: 2%;
+	left: 30.2%;
+	width: 35%;
+	height: 2.2vw;
+	font-size: 1.3vw;
+	font-family: Manchester\ United\ 23-24\ Tipogra;
+	color: black;
+	background: transparent;
+	text-align: center;
+	z-index: 1;
+}
+#button-stats10:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: red;
+	opacity: .7;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: top;
+	transition: .2s;
+	top: -10%;
+	left: -3%;
+}
+#button-stats10:hover:before {
+	top: -20%;
+	left: 0;
+	transform: perspective(1000px) rotateX(80deg);
+}
+#button-stats10:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	opacity: .9;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: bottom;
+	transition: .2s;
+	bottom: -10%;
+	right: -1%;
+}
+#button-stats10:hover:after {
+	bottom: -20%;
+	right: 0;
+	transform: perspective(1000px) rotateX(-80deg);
+}
+#button-stats10:hover h90 { color: rgb(211, 208, 208); }
+#stats-10th-match { display: none; }
+
 /* MATCH 35 */
 #button-stats35 h91 { display: none; }
 #button-stats35 {
@@ -7684,7 +7962,7 @@ ul.navlist {
 .away-2ndkit-1-left {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../core/2024-25-2kit.png);
+	background: url(../core/2025-26-2kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -7697,7 +7975,7 @@ ul.navlist {
 .away-2ndkit-1-right {
 	position: absolute;
 	box-sizing: content-box;
-	background: url(../core/2024-25-2kit.png);
+	background: url(../core/2025-26-2kit.png);
 	background-size: 100% 100%;
 	text-align: center;
 	padding: 0% .5%;
@@ -10495,6 +10773,74 @@ z-index: -1;
 		overflow: hidden;
 	}
 
+	/* MATCH 9 */
+	#button-score-news9 h88 { display: none; }
+	#button-score-news9 h89 { display: initial; }
+	#cover9-score {
+		position: absolute;
+		width: 116.3%;
+		height: 100%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#cover9-news {
+		position: absolute;
+		width: 116.3%;
+		height: 100%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#button-score-news9 {
+		border: none;
+		border-radius: .1vw;
+		position: absolute;
+		z-index: 2;
+		margin-top: -7.4%;
+		left: 49.9%;
+		width: 17.3%;
+		height: auto;
+		line-height: 1.7vw;
+		font-family: Lampen;
+		font-size: 1.75vw;
+		color: white;
+		background: #262626;
+		overflow: hidden;
+	}
+
+	/* MATCH 10 */
+	#button-score-news10 h88 { display: none; }
+	#button-score-news10 h89 { display: initial; }
+	#cover10-score {
+		position: absolute;
+		width: 116.3%;
+		height: 100%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#cover10-news {
+		position: absolute;
+		width: 116.3%;
+		height: 100%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#button-score-news10 {
+		border: none;
+		border-radius: .1vw;
+		position: absolute;
+		z-index: 2;
+		margin-top: -7.4%;
+		left: 49.9%;
+		width: 17.3%;
+		height: auto;
+		line-height: 1.7vw;
+		font-family: Lampen;
+		font-size: 1.75vw;
+		color: white;
+		background: #262626;
+		overflow: hidden;
+	}
+
 	/* MATCH 35 */
 	#button-score-news35 h88 { display: none; }
 	#button-score-news35 h89 { display: initial; }
@@ -11586,6 +11932,39 @@ z-index: -1;
 		left: 0%;
 	}
 	#button-stats8:hover h91 { color: rgb(211, 208, 208); }
+
+	/* MATCH 9 */
+	#button-stats9 h90 { display: none; }
+	#button-stats9 h91 { display: initial; }
+	#button-stats9 {
+		border: none;
+		position: relative;
+		margin-top: 2%;
+		left: 41.3%;
+		width: 35%;
+		height: 2.2vw;
+		font-size: 1.8vw;
+		font-family: Manchester\ United\ 23-24\ Tipogra;
+		color: black;
+		background: transparent;
+		text-align: center;
+		z-index: 1;
+	}
+	#button-stats9:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: red;
+		opacity: .7;
+		z-index: -1;
+		mix-blend-mode: multiply;
+		transform-origin: top;
+		transition: .2s;
+		top: -10%;
+		left: 0%;
+	}
+	#button-stats9:hover h91 { color: rgb(211, 208, 208); }
 
 	/* MATCH 35 */
 	#button-stats35 h90 { display: none; }
