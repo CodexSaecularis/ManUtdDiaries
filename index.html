@@ -176,7 +176,7 @@
                <!-- (▼ ▲ •) -->
                <div class="scoreboard-PL" id="links">
                     <div class="PL">
-                         <div>Premier League&nbsp;&nbsp;<span1>▲&nbsp;</span1>7th<span2>&nbsp;&nbsp;matchday 11</span2></div>
+                         <div>Premier League&nbsp;&nbsp;<span1>▼&nbsp;</span1>10th<span2>&nbsp;&nbsp;matchday 12</span2></div>
                     </div>
                </div>
                <!-- <div class="scoreboard-UCL" id="links">
@@ -223,20 +223,20 @@
                <!-- SCOREBOARD -->
                <div class="scoreboard-teams" id="links">
                     <div class="home">
-                         <p><span>&nbsp;TOTTENHAM<span></p>
-                         <p>&nbsp;MANCHESTER UNITED</p>
+                         <p><span>&nbsp;MANCHESTER UNITED<span></p>
+                         <p>&nbsp;EVERTON</p>
                     </div>
                </div>
                <div class="scoreboard-teams-mobile" id="links">
                     <div class="home">
-                         <p><span>&nbsp;TOTTENHAM<span></p>
-                         <p>&nbsp;MAN UTD</p>
+                         <p><span>&nbsp;MAN UTD<span></p>
+                         <p>&nbsp;EVERTON</p>
                     </div>
                </div>
                <div class="scoreboard-result" id="scoreboard">
                     <div class="result" id="text-left">
-                         <p>2&thinsp;</p>
-                         <p>2&thinsp;</p>
+                         <p>0&thinsp;</p>
+                         <p>1&thinsp;</p>
                     </div>
                     <div class="final-fair" id="text-right">
                          <p>&thinsp;FINAL&thinsp;</p>
@@ -572,6 +572,10 @@
                          .style.display = "initial";  /* initial when it comes to text */
                     document.getElementById('result-12v')  /* match #12 */
                          .style.display = "initial";  /* initial when it comes to text */
+                    document.getElementById('result-13h')  /* match #13 */
+                         .style.display = "initial";  /* initial when it comes to text */
+                    document.getElementById('result-13v')  /* match #13 */
+                         .style.display = "initial";  /* initial when it comes to text */
                     document.getElementById('match-ratings')  /* match ratings grid image */
                          .style.display = "initial";
                     document.getElementById('button-ratings')  /* button */
@@ -594,7 +598,7 @@
 
           <a href="#match11"><h18><span id="date">Sat, 1 Nov 2025</span><br />N. Forest <span id="result-11h">2</span><br />Man Utd <span id="result-11v">2</span></h18></a>
           <a href="#match12"><h19><span id="date">Sat, 8 Nov 2025</span><br />Tottenham <span id="result-12h">2</span><br />Man Utd <span id="result-12v">2</span></h19></a>
-          <!-- <a href="#match13"><h20><span id="date">Sun, 9 Mar 2025</span><br />Man Utd <span id="result-13h">1</span><br />Arsenal <span id="result-13v">1</span></h20></a> -->
+          <a href="#match13"><h20><span id="date">Mon, 24 Nov 2025</span><br />Man Utd <span id="result-13h">0</span><br />Everton <span id="result-13v">1</span></h20></a>
           <!-- <a href="#match14"><h21><span id="date">Thu, 13 Mar 2025</span><br />Man Utd <span id="result-14h">4</span><br />R. Sociedad <span id="result-14v">1</span></h21></a> -->
           <!-- <a href="#match15"><h22><span id="date">Sun, 16 Mar 2025</span><br />Leicester <span id="result-15h">0</span><br />Man Utd <span id="result-15v">3</span></h22></a> -->
           <!-- <a href="#match16"><h23><span id="date">Sun, 2 Feb 2025</span><br />Man Utd <span id="result-16h">0</span><br />C. Palace <span id="result-16v">2</span></h23></a> -->
@@ -3763,7 +3767,7 @@
                     
                     
                     <li class="dropdown_list" itemid="dropdown-matches" id="match12">
-                         <a class="dropdown-12th-match" id="jump">
+                         <a class="dropdown-12th-match">
                               <div class="pre-match">
                                    <div class="news">
                                         <div><span>&nbsp;&nbsp;WE’RE 8TH IN THE PREM; SPURS ARE 6TH&nbsp;&nbsp;</span><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;SOCIALIST ZOHRAN MAMDANI ELECTED NEW YORK CITY MAYOR</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
@@ -4018,38 +4022,45 @@
                               </a>
                          </div>
                     </li>
+
+
+                    <li>
+                         <a class="space-international-break">
+                              <input type="checkbox">
+                         </a>
+                    </li>
                     
                     
-                    <!-- <li class="dropdown_list" itemid="dropdown-matches" id="match13">
-                         <a class="dropdown-13th-match">
+                    <li class="dropdown_list" itemid="dropdown-matches" id="match13">
+                         <a class="dropdown-13th-match" id="jump">
                               <div class="pre-match">
                                    <div class="news">
-                                        <div><span>&nbsp;&nbsp;WE ARE 13TH IN THE PREM; LEICESTER ARE 18TH IN RELEGATION ZONE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;"I COULDN'T GET MARCUS TO TRAIN THE RIGHT WAY" —AMORIM ON RASHFORD'S LOAN TO VILLA&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;RUUD VAN NISTELROOY’S RETURN TO OLD TRAFFORD WITH LEICESTER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;THIRD CLASH WITH THEM AT OLD TRAFFORD THIS SEASON&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;USAID FUNDED JOURNALISTS GLOBALLY</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
-                                        <div><span>&nbsp;&nbsp;WE ARE 13TH IN THE PREM; LEICESTER ARE 18TH IN RELEGATION ZONE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;"I COULDN'T GET MARCUS TO TRAIN THE RIGHT WAY" —AMORIM ON RASHFORD'S LOAN TO VILLA&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;RUUD VAN NISTELROOY’S RETURN TO OLD TRAFFORD WITH LEICESTER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;THIRD CLASH WITH THEM AT OLD TRAFFORD THIS SEASON&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;USAID FUNDED JOURNALISTS GLOBALLY</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
+                                        <div><span>&nbsp;&nbsp;WE'RE 7TH IN THE PREM; EVERTON ARE 13TH&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;CUNHA SUFFERED A KNOCK IN THE HEAD DURING TRAINING BEFORE EVERTON&nbsp;&nbsp;</span2></div>
+                                        <div><span>&nbsp;&nbsp;WE'RE 7TH IN THE PREM; EVERTON ARE 13TH&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;CUNHA SUFFERED A KNOCK IN THE HEAD DURING TRAINING BEFORE EVERTON&nbsp;&nbsp;</span2></div>
                                    </div>
                               </div>
                               <div class="pre-match-skew">
                                    <div class="news-skew">
-                                        <div><span>&nbsp;&nbsp;WE ARE 13TH IN THE PREM; LEICESTER ARE 18TH IN RELEGATION ZONE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;"I COULDN'T GET MARCUS TO TRAIN THE RIGHT WAY" —AMORIM ON RASHFORD'S LOAN TO VILLA&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;RUUD VAN NISTELROOY’S RETURN TO OLD TRAFFORD WITH LEICESTER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;THIRD CLASH WITH THEM AT OLD TRAFFORD THIS SEASON&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;USAID FUNDED JOURNALISTS GLOBALLY</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
-                                        <div><span>&nbsp;&nbsp;WE ARE 13TH IN THE PREM; LEICESTER ARE 18TH IN RELEGATION ZONE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;"I COULDN'T GET MARCUS TO TRAIN THE RIGHT WAY" —AMORIM ON RASHFORD'S LOAN TO VILLA&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;RUUD VAN NISTELROOY’S RETURN TO OLD TRAFFORD WITH LEICESTER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;THIRD CLASH WITH THEM AT OLD TRAFFORD THIS SEASON&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;USAID FUNDED JOURNALISTS GLOBALLY</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
+                                        <div><span>&nbsp;&nbsp;WE'RE 7TH IN THE PREM; EVERTON ARE 13TH&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;CUNHA SUFFERED A KNOCK IN THE HEAD DURING TRAINING BEFORE EVERTON&nbsp;&nbsp;</span2></div>
+                                        <div><span>&nbsp;&nbsp;WE'RE 7TH IN THE PREM; EVERTON ARE 13TH&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;CUNHA SUFFERED A KNOCK IN THE HEAD DURING TRAINING BEFORE EVERTON&nbsp;&nbsp;</span2></div>
                                    </div>
                               </div>
                               <div class="post-match">
                                    <div class="news">
-                                        <div><span>&nbsp;&nbsp;AFTER THIS LOSS WE STAY 14TH, AND WOLVES SHIFT UP 2 PLACES TO 15TH AND LEVEL WITH US ON 38 POINTS&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;“WE MUST SCORE TO WIN GAMES” —AMORIM&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;LEICESTER RELEGATED TO THE CHAMPIONSHIP UNDER RUUD VAN NISTELROOY AFTER DEFEAT TO LIVERPOOL&nbsp;&nbsp;</span><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;POPE FRANCIS HAS DIED ON EASTER MONDAY (21 APR) AGED 88</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
-                                        <div><span>&nbsp;&nbsp;AFTER THIS LOSS WE STAY 14TH, AND WOLVES SHIFT UP 2 PLACES TO 15TH AND LEVEL WITH US ON 38 POINTS&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;“WE MUST SCORE TO WIN GAMES” —AMORIM&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;LEICESTER RELEGATED TO THE CHAMPIONSHIP UNDER RUUD VAN NISTELROOY AFTER DEFEAT TO LIVERPOOL&nbsp;&nbsp;</span><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;POPE FRANCIS HAS DIED ON EASTER MONDAY (21 APR) AGED 88</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
+                                        <div><span>&nbsp;&nbsp;AFTER THIS LOSS WE DROP TO 10TH, AND WOLVES SHIFT UP 2 PLACES TO 11TH&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;1.43 PL POINTS PER GAME UNDER AMORIM IN ONE YEAR AT THE  CLUB&nbsp;&nbsp;</span2></div>
+                                        <div><span>&nbsp;&nbsp;AFTER THIS LOSS WE DROP TO 10TH, AND WOLVES SHIFT UP 2 PLACES TO 11TH&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;1.43 PL POINTS PER GAME UNDER AMORIM IN ONE YEAR AT THE  CLUB&nbsp;&nbsp;</span2></div>
                                    </div>
                               </div>
                               <div class="post-match-skew">
                                    <div class="news-skew">
-                                        <div><span>&nbsp;&nbsp;AFTER THIS LOSS WE DROPPED ONE SPOT TO 13TH PLACE IN THE PREM&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;MANCHESTER UNITED FEAR LISANDRO MARTINEZ COULD BE OUT FOR REST OF THE SEASON&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;STILL CAN’T BEAT PALACE IN THE PREMIER LEAGUE SINCE 22/23&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;2ND TIME AMORIM EXPERIMENTS MAINOO AS FORWARD, SITTING HØJLUND AND ZIRKZEE&nbsp;&nbsp;</span2></div>
-                                        <div><span>&nbsp;&nbsp;AFTER THIS LOSS WE DROPPED ONE SPOT TO 13TH PLACE IN THE PREM&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;MANCHESTER UNITED FEAR LISANDRO MARTINEZ COULD BE OUT FOR REST OF THE SEASON&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;STILL CAN’T BEAT PALACE IN THE PREMIER LEAGUE SINCE 22/23&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;2ND TIME AMORIM EXPERIMENTS MAINOO AS FORWARD, SITTING HØJLUND AND ZIRKZEE&nbsp;&nbsp;</span2></div>
+                                        <div><span>&nbsp;&nbsp;AFTER THIS LOSS WE DROP TO 10TH, AND WOLVES SHIFT UP 2 PLACES TO 11TH&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;1.43 PL POINTS PER GAME UNDER AMORIM IN ONE YEAR AT THE  CLUB&nbsp;&nbsp;</span2></div>
+                                        <div><span>&nbsp;&nbsp;AFTER THIS LOSS WE DROP TO 10TH, AND WOLVES SHIFT UP 2 PLACES TO 11TH&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;1.43 PL POINTS PER GAME UNDER AMORIM IN ONE YEAR AT THE  CLUB&nbsp;&nbsp;</span2></div>
                                    </div>
                               </div>
                               <img src="2025-26/13th-match-cover-score.png" id="cover13-score">
-                              <img src="2025-26/13th-match-cover-news.png" id="cover13-news">
+                              <img src="2025-26/13th-match-cover-news.png" id="cover13-score">
                               <span class="hide-PL">&nbsp;</span>
-                              <span class="date-time">SUN, 2 FEB 2025 | 14:00 | MATCHDAY 13</span>
+                              <span class="date-time">MON, 24 NOV 2025 | 20:00 | MATCHDAY 13</span>
                               <input type="checkbox" class="dropdown_check">
                          </a>
                          <div class="button-wrapper">
@@ -4107,7 +4118,6 @@
                                                        </div>
                                                   </div>
                                              </div>
-                                             <img class="content-match" src="2025-26/13th-match2.png">
                                              <img class="content-match" src="2025-26/13th-match3.png">
                                              <img class="content-match" src="2025-26/13th-match4.png">
                                              <img class="content-match1" src="2025-26/13th-match5.png">
@@ -4132,15 +4142,7 @@
                                              <img class="content-match" src="2025-26/13th-match8.png">
                                              <img class="content-match" src="2025-26/13th-match9.png">
                                              <img class="content-match" src="2025-26/13th-match10.png">
-                                             <img class="content-match" src="2025-26/13th-match11.png">
                                              <img class="content-match" src="2025-26/13th-match12.png">
-                                             <img class="content-match" src="2025-26/13th-match12-1.png">
-                                             <img class="content-match" src="2025-26/13th-match12-2.png">
-                                             <img class="content-match" src="2025-26/13th-match12-3.png">
-                                             <img class="content-match" src="2025-26/13th-match12-4.png">
-                                             <img class="content-match" src="2025-26/13th-match12-5.png">
-                                             <img class="content-match" src="2025-26/13th-match12-6.png">
-                                             <img class="content-match" src="2025-26/13th-match13.png">
                                              <img class="content-match" src="2025-26/13th-match14.png">
                                         </div>
                                         <div id="bottom13">
@@ -4208,13 +4210,13 @@
                               </ul>
                          </div>
                          <div class="link1" id="link-opacity">
-                              <a href="https://www.flashscore.com" id="links">
-                                   https://www.flashscore.com
+                              <a href="https://www.flashscore.com/match/football/everton-KluSTr9s/manchester-united-ppjDR086/news/?mid=Y1fLl5iC" id="links">
+                                   https://www.flashscore.com/match/football/everton-KluSTr9s/manchester-united-ppjDR086/news/?mid=Y1fLl5iC
                               </a>
                          </div>
                          <div class="link2" id="link-opacity">
-                              <a href="https://www.manutd.com" id="links">
-                                   https://www.manutd.com
+                              <a href="https://www.manutd.com/en/matches/matchcenter?matchId=2562012" id="links">
+                                   https://www.manutd.com/en/matches/matchcenter?matchId=2562012
                               </a>
                          </div>
                          <div class="link3" id="link-opacity">
@@ -4223,66 +4225,66 @@
                               </a>
                          </div>
                          <div class="link4" id="link-opacity">
-                              <a href="&nbsp;" id="links">
-                                   &nbsp;
+                              <a href="https://www.transfermarkt.com/premier-league/spieltag/wettbewerb/GB1/plus/?saison_id=2025&spieltag=12" id="links">
+                                   https://www.transfermarkt.com/premier-league/spieltag/wettbewerb/GB1/plus/?saison_id=2025&spieltag=12
                               </a>
                          </div>
                          <div class="link5" id="link-opacity">
-                              <a href="https://theanalyst.com" id="links">
-                                   https://theanalyst.com
+                              <a href="https://fbref.com/en/matches/69a9c9a3/Manchester-United-Everton-November-24-2025-Premier-League" id="links">
+                                   https://fbref.com/en/matches/69a9c9a3/Manchester-United-Everton-November-24-2025-Premier-League
                               </a>
                          </div>
                          <div class="link6" id="link-opacity">
-                              <a href="https://www.sofascore.com" id="links">
-                                   https://www.sofascore.com
+                              <a href="https://www.sofascore.com/football/match/everton-manchester-united/KsY#id:14723574" id="links">
+                                   https://www.sofascore.com/football/match/everton-manchester-united/KsY#id:14723574
                               </a>
                          </div>
                          <div class="link7" id="link-opacity">
-                              <a href="&nbsp;" id="links">
-                                   &nbsp;
+                              <a href="https://gofile.io/d/g6uKpp" id="links">
+                                   https://gofile.io/d/g6uKpp
                               </a>
                          </div>
                          <div class="link8" id="link-opacity">
-                              <a href="&nbsp;" id="links">
-                                   &nbsp;
+                              <a href="https://www.youtube.com/watch?v=1WGEPnLLKxo" id="links">
+                                   https://www.youtube.com/watch?v=1WGEPnLLKxo
                               </a>
                          </div>
                          <div class="link9" id="link-opacity">
+                              <a href="https://www.youtube.com/watch?v=rL7R8Flr19w" id="links">
+                                   https://www.youtube.com/watch?v=rL7R8Flr19w
+                              </a>
+                         </div>
+                         <div class="link10" id="link-opacity">
                               <a href="&nbsp;" id="links">
                                    &nbsp;
                               </a>
                          </div>
-                         <div class="link10" id="link-opacity">
-                              <a href="https://www.fullreplays.com" id="links">
-                                   https://www.fullreplays.com
-                              </a>
-                         </div>
                          <div class="link11" id="link-opacity">
-                              <a href="https://www.footreplays.com" id="links">
-                                   https://www.footreplays.com
+                              <a href="https://www.footreplays.com/england/premier-league/manchester-united-vs-everton-3-24-11-2025/" id="links">
+                                   https://www.footreplays.com/england/premier-league/manchester-united-vs-everton-3-24-11-2025/
                               </a>
                          </div>
                          <div class="link12" id="link-opacity">
-                              <a href="https://fullmatchsports.cc" id="links">
-                                   https://fullmatchsports.cc
+                              <a href="&nbsp;" id="links">
+                                   &nbsp;
                               </a>
                          </div>
                          <div class="link13" id="link-opacity">
-                              <a href="https://rutracker.org" id="links">
-                                   https://rutracker.org
+                              <a href="https://rutracker.org/forum/viewtopic.php?t=6777659" id="links">
+                                   https://rutracker.org/forum/viewtopic.php?t=6777659
                               </a>
                          </div>
                          <div class="link14" id="link-opacity">
-                              <a href="https://rutracker.org" id="links">
-                                   https://rutracker.org
+                              <a href="https://rutracker.org/forum/viewtopic.php?t=6777625" id="links">
+                                   https://rutracker.org/forum/viewtopic.php?t=6777625
                               </a>
                          </div>
                          <div class="link15" id="link-opacity">
-                              <a href="https://rutracker.org" id="links">
-                                   https://rutracker.org
+                              <a href="&nbsp;" id="links">
+                                   &nbsp;
                               </a>
                          </div>
-                    </li> -->
+                    </li>
                     
                     
                     <!-- <li class="dropdown_list" itemid="dropdown-matches" id="match14">
