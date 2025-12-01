@@ -245,6 +245,17 @@
 .season-1957-58:hover img {
 	opacity: 1;
 }
+.season-1962-63 img {
+	position: absolute;
+	opacity: 0;
+	width: 120px;
+	height: 121px;
+	margin-top: -4px;
+	margin-left: -280px;
+}
+.season-1962-63:hover img {
+	opacity: 1;
+}
 /* ⟰ SELECT SEASON ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 
 
