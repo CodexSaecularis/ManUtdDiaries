@@ -6686,6 +6686,24 @@ z-index: -1;
 		background-size: 94.8% 74%;
 	}
 
+	.badge43 .forest {
+		position: absolute;
+		visibility: hidden;
+		border-radius: .5vw;
+		top: 33%;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
+		padding: 0vw 0.5vw 1vw;
+		text-align: center;
+	}
+	.badge43:hover .forest {
+		visibility: visible;
+	}
+	.badge43:hover {
+		background: url(../1957-58/away-forest.png) no-repeat;
+		background-size: 95.7% 74%;
+	}
+
 	.badge17 .newcastle {
 		position: absolute;
 		visibility: hidden;
