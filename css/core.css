@@ -223,6 +223,17 @@
 .season-20-21:hover img {
 	opacity: 1;
 }
+.season-1963-64 img {	
+	position: absolute;
+	opacity: 0;
+	width: 121px;
+	height: 119px;
+	margin-top: 114px;
+	margin-left: -281px;
+}
+.season-1963-64:hover img {
+	opacity: 1;
+}
 .season-1962-63 img {
 	position: absolute;
 	opacity: 0;
@@ -368,14 +379,6 @@
 		margin-top: 113px;
 		margin-left: -280px;
 	}
-	.season-1956-57 img {
-		position: absolute;
-		opacity: 0;
-		width: 120px;
-		height: 120px;
-		margin-top: 113px;
-		margin-left: -280px;
-	}
 	.season-1957-58 img {
 		position: absolute;
 		opacity: 0;
@@ -383,6 +386,14 @@
 		height: 118px;
 		margin-top: 114px;
 		margin-left: -164px;
+	}
+	.season-1956-57 img {
+		position: absolute;
+		opacity: 0;
+		width: 120px;
+		height: 120px;
+		margin-top: 113px;
+		margin-left: -280px;
 	}
 	/* ⟰ SELECT SEASON ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 }
@@ -526,6 +537,14 @@
 		margin-top: 2px;
 		margin-left: -151px;
 	}
+	.season-1963-64 img {
+		position: absolute;
+		opacity: 0;
+		width: 114px;
+		height: 114px;
+		margin-top: 108px;
+		margin-left: -267px;
+	}
 	.season-1962-63 img {
 		position: absolute;
 		opacity: 0;
@@ -663,6 +682,14 @@
 		margin-left: -144px;
 	}
 	.season-2023-24 img {
+		position: absolute;
+		opacity: 0;
+		width: 106px;
+		height: 104px;
+		margin-top: 100px;
+		margin-left: -246px;
+	}
+	.season-1963-64 img {
 		position: absolute;
 		opacity: 0;
 		width: 106px;
