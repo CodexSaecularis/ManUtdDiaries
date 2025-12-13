@@ -5975,6 +5975,16 @@ z-index: -1;
 		left: 57.34%;
 		display: var(--close-display, none) !important;
 	}
+	.hide-CS {
+		position: absolute;
+		background: url(../core/hide-CS.png);
+		background-size: 100%;
+		font-family: 'Courier New', Courier, monospace;	
+		font-size: 6.8vw;
+		top: 29.7%;
+		left: 57.34%;
+		display: var(--close-display, none) !important;
+	}
 	.link1 {
 		position: absolute;
 		font-family: Agency FB;
