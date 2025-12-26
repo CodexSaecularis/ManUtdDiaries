@@ -223,6 +223,17 @@
 .season-20-21:hover img {
 	opacity: 1;
 }
+.season-1967-68 img {
+	position: absolute;
+	opacity: 0;
+	width: 118px;
+	height: 116px;
+	margin-top: 0.6px;
+	margin-left: -161px;
+}
+.season-1967-68:hover img {
+	opacity: 1;
+}
 .season-1963-64 img {	
 	position: absolute;
 	opacity: 0;
@@ -537,6 +548,14 @@
 		margin-top: 2px;
 		margin-left: -151px;
 	}
+	.season-1967-68 img {
+		position: absolute;
+		opacity: 0;
+		width: 112px;
+		height: 110px;
+		margin-top: 0.5px;
+		margin-left: -153px;
+	}
 	.season-1963-64 img {
 		position: absolute;
 		opacity: 0;
@@ -696,6 +715,14 @@
 		height: 104px;
 		margin-top: 100px;
 		margin-left: -246px;
+	}
+	.season-1967-68 img {
+		position: absolute;
+		opacity: 0;
+		width: 103px;
+		height: 101px;
+		margin-top: 1px;
+		margin-left: -141px;
 	}
 	.season-1962-63 img {
 		position: absolute;
