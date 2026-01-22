@@ -8,8 +8,7 @@
      <title>1963/64</title>
      <link rel="stylesheet" href="css/core.css">
      <link rel="stylesheet" href="css/1963-64.css">
-     <link rel="icon" href="parallax/Man Utd.ico">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+     <link rel="icon" href="core/logo.ico">
 </head>
 
 <body>
@@ -18,9 +17,9 @@
           <img src="parallax/led cover.png" id="led-cover">
           <div class="zeppelin-led">
                <div class="led-words">
-                    <span>GGMU</span>
-                    <span>BACK AMORIM</span>
-                    <span>GGMU</span>
+                    <span class="text1"></span>
+                    <span class="text2"></span>
+                    <span class="text1"></span>
                </div>
           </div>
           <img src="parallax/flag (pc).png" id="flag-pc">
@@ -38,162 +37,10 @@
      </section>
 
      <section class="select-season">
-          <div class="nav_container-season">
-               <ul class="dropdown-season">
-
-                    <li class="season-list">
-                         <a class="checkbox-size" id="dropdown-pointer">
-                              <input type="checkbox" class="dropdown-check"><span class="select-season-title"><span1><br />since <span2>1956</span2></span1><span3><br />SELECT SEASON</span3>
-                         </a>
-                         <div class="dropdown-content-display">
-                              <ul class="dropdown-sub-season">
-                                   <li class="dropdown-li">
-                                        <img class="season-header-pc" src="core/select-click.png">
-                                        <img class="season-header-mobile" src="core/select-tap.png">
-                   
-                                        <button type="button" onclick="show_titles()" id="button-with-titles" itemid="links">
-                                             <h100>SHOW TROPHIES</h100>
-                                        </button>
-                                        <script>
-                                             function show_titles() {
-                                                  document.getElementById('with-titles')
-                                                       .style.display = "block";
-                                                  document.getElementById('button-with-titles')
-                                                       .style.display = "none";
-                                                  document.getElementById('button-without-titles')
-                                                       .style.display = "block";
-                                                  document.getElementById('without-titles')
-                                                       .style.display = "none";
-                                                  document.getElementById('hide')
-                                                       .style.display = "block";
-                                                  document.getElementById('show')
-                                                       .style.display = "none";
-                                             }
-                                        </script>
-
-                                        <div class="swiper" id="with-titles">  <!-- vertical scroller: https://www.youtube.com/watch?v=9nvnsU85jeQ -->
-                                             <div class="swiper-wrapper">
-                                                  <div class="swiper-slide">
-                                                       <img src="core/select-2023-27-titles.png">
-                                                            <a class="season-2025-26" href="index.html" id="season-links">
-                                                                 <img src="core/hover-2025-26-titles.png">
-                                                            </a>
-                                                            <a class="season-2024-25" href="2024-25.html" id="season-links">
-                                                                 <img src="core/hover-2024-25-titles.png">
-                                                            </a>
-                                                            <a class="season-2023-24" id="season-links">
-                                                                 <img src="core/hover-2023-24-titles.png">
-                                                            </a>
-                                                  </div>
-                                                  <div class="swiper-slide">
-                                                       <img src="core/select-1963-67-titles.png">
-                                                            <a class="season-1963-64" href="1963-64.html" id="season-links">
-                                                                 <img src="core/hover-1963-64-titles.png">
-                                                            </a>
-                                                            <a class="season-1967-68" href="1967-68.html" id="season-links">
-                                                                 <img src="core/hover-1967-68-titles.png">
-                                                            </a>
-                                                  </div>
-                                                  <div class="swiper-slide">
-                                                       <img src="core/select-1956-60-titles.png">
-                                                            <a class="season-1956-57" href="1956-57.html" id="season-links">
-                                                                 <img src="core/hover-1956-57-titles.png">
-                                                            </a>
-                                                            <a class="season-1957-58" href="1957-58.html" id="season-links">
-                                                                 <img src="core/hover-1957-58-titles.png">
-                                                            </a>
-                                                            <a class="season-1962-63" href="1962-63.html" id="season-links">
-                                                                 <img src="core/hover-1962-63-titles.png">
-                                                            </a>
-                                                  </div>
-                                             </div>
-                                             <div class="swiper-pagination"></div>
-                                        </div>
-                                                                                
-                                        <button type="button" onclick="hide_titles()" id="button-without-titles" itemid="links">
-                                             <h101>HIDE TROPHIES</h101>
-                                        </button>
-                                        <script>
-                                             function hide_titles() {
-                                                  document.getElementById('with-titles')
-                                                       .style.display = "none";
-                                                  document.getElementById('button-with-titles')
-                                                       .style.display = "block";
-                                                  document.getElementById('button-without-titles')
-                                                       .style.display = "none";
-                                                  document.getElementById('without-titles')
-                                                       .style.display = "block";
-                                                  document.getElementById('hide')
-                                                       .style.display = "none";
-                                                  document.getElementById('show')
-                                                       .style.display = "block";
-                                             }
-                                        </script>
-                                        
-                                        <div class="swiper" id="without-titles">  <!-- vertical scroller: https://www.youtube.com/watch?v=9nvnsU85jeQ -->
-                                             <div class="swiper-wrapper">
-                                                  <div class="swiper-slide">
-                                                       <img src="core/select-2023-27.png">
-                                                            <a class="season-2025-26" href="index.html" id="season-links">
-                                                                 <img src="core/hover-2025-26.png">
-                                                            </a>
-                                                            <a class="season-2024-25" href="2024-25.html" id="season-links">
-                                                                 <img src="core/hover-2024-25.png">
-                                                            </a>
-                                                            <a class="season-2023-24" id="season-links">
-                                                                 <img src="core/hover-2023-24.png">
-                                                            </a>
-                                                  </div>
-                                                  <div class="swiper-slide">
-                                                       <img src="core/select-1963-67.png">
-                                                            <a class="season-1963-64" href="1963-64.html" id="season-links">
-                                                                 <img src="core/hover-1963-64.png">
-                                                            </a>
-                                                            <a class="season-1967-68" href="1967-68.html" id="season-links">
-                                                                 <img src="core/hover-1967-68.png">
-                                                            </a>
-                                                  </div>
-                                                  <div class="swiper-slide">
-                                                       <img src="core/select-1956-60.png">
-                                                            <a class="season-1956-57" href="1956-57.html" id="season-links">
-                                                                 <img src="core/hover-1956-57.png">
-                                                            </a>
-                                                            <a class="season-1957-58" href="1957-58.html" id="season-links">
-                                                                 <img src="core/hover-1957-58.png">
-                                                            </a>
-                                                            <a class="season-1962-63" href="1962-63.html" id="season-links">
-                                                                 <img src="core/hover-1962-63.png">
-                                                            </a>
-                                                  </div>
-                                             </div>
-                                             <div class="swiper-pagination"></div>
-                                        </div>
-                                        
-                                        <img class="season-content" src="core/select-bottom-show.png" id="show">
-                                        <img class="season-content" src="core/select-bottom-hide.png" id="hide">
-                                   </li>
-                              </ul>
-                         </div>
-                    </li>
-
-               </ul>
-          </div>
+          <a class="checkbox-size" id="dropdown-pointer" href="seasons.html">
+               <span class="select-season-title"><span1><br />since <span2>1956</span2></span1><span3><br />SELECT SEASON</span3>
+          </a>
      </section>
-
-     
-     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-     <script>
-          const swiper = new Swiper('.swiper', {
-               pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-               },
-               direction: "vertical",
-               slidesPerView: 1,
-               mousewheel: true,
-          });
-     </script>
-     <!-- SELECT SEASON -->
 
      <a href="index.html">
           <div class="scoreboard-wrapper">
@@ -487,8 +334,8 @@
 
      <div class="button-wrapper">
           <button type="button" onclick="show_ratings()" id="button-ratings" itemid="links">
-               <span1>CLICK TO REVEAL FA CUP FINAL SCORE AND MATCH RATING</span1>
-               <span2>TAP TO REVEAL FA CUP FINAL SCORE AND MATCH RATING</span2>
+               <span1>CLICK TO REVEAL C. SHIELD FINAL SCORE AND MATCH RATING</span1>
+               <span2>TAP TO REVEAL C. SHIELD FINAL SCORE AND MATCH RATING</span2>
           </button>
 
           <script>
@@ -784,28 +631,28 @@
                                         <div><span>&nbsp;&nbsp;GILES SURPRISINGLY SOLD TO LEEDS&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;EVERTON WOULD LATER BEAT US 5-1 AT GOODISON PARK FOR THE LEAGUE, BUT WE'D BEAT THEM IN 4-0 AT OT&nbsp;&nbsp;</span2></div>
                                    </div>
                               </div>
-                              <img src="1963-64/1st-match-cover-score.png" id="cover48-score">
-                              <img src="1963-64/1st-match-cover-news.png" id="cover48-news">
+                              <img src="1963-64/1st-match-cover-score.png" id="cover1-score">
+                              <img src="1963-64/1st-match-cover-news.png" id="cover1-news">
                               <span class="hide-CS">&nbsp;</span>
                               <span class="date-time">SAT, 17 AUG 1963 | 15:00 | CHARITY SHIELD</span>
                               <input type="checkbox" class="dropdown_check">
                          </a>
                          <div class="button-wrapper">
-                              <button type="button" onclick="show_score48()" id="button-score-news48" itemid="links">
+                              <button type="button" onclick="show_score1()" id="button-score-news1" itemid="links">
                                    <span></span>
                                    <span></span>
                                    <span></span>
                                    <span></span>
-                                   <h80>CLICK FOR SCORE & NEWS</h80>
-                                   <h81>TAP FOR SCORE & NEWS</h81>
+                                   <h88>CLICK FOR SCORE & NEWS</h88>
+                                   <h89>TAP FOR SCORE & NEWS</h89>
                               </button>
                               <script>
-                                   function show_score48() {
-                                        document.getElementById('cover48-score')
+                                   function show_score1() {
+                                        document.getElementById('cover1-score')
                                              .style.display = "none";
-                                        document.getElementById('cover48-news')
+                                        document.getElementById('cover1-news')
                                              .style.display = "none";
-                                        document.getElementById('button-score-news48')
+                                        document.getElementById('button-score-news1')
                                              .style.display = "none";
                                    }
                               </script>
@@ -813,21 +660,21 @@
                          <div class="dropdown_content-matches">
                               <ul class="dropdown_sub">
                                    <li class="dropdown_li">
-                                        <button type="button" onclick="show_stats48()" id="button-stats48" itemid="links">
+                                        <button type="button" onclick="show_stats1()" id="button-stats1" itemid="links">
                                              <h90>CLICK HERE FOR MATCH STATS, STARTING XI, COMMENTS, AND MORE</h90>
                                              <h91>TAP HERE FOR MATCH STATS, STARTING XI, COMMENTS, AND MORE</h91>
                                         </button>
                                         <script>
-                                             function show_stats48() {
-                                                  document.getElementById('stats-48th-match')
+                                             function show_stats1() {
+                                                  document.getElementById('stats-1st-match')
                                                        .style.display = "block";
-                                                  document.getElementById('button-stats48')
+                                                  document.getElementById('button-stats1')
                                                        .style.display = "none";
-                                                  document.getElementById('bottom48')
+                                                  document.getElementById('bottom1')
                                                        .style.display = "none";
                                              }
                                         </script>
-                                        <div id="stats-48th-match">
+                                        <div id="stats-1st-match">
                                              <img class="content-match1" src="1963-64/1st-match1.png">
                                              <div class="badges-and-sponsors">
                                                   <div class="away-2ndkit-1-left"></div>
@@ -846,7 +693,7 @@
                                              <img class="content-match" src="1963-64/1st-match12.png">
                                              <img class="content-match" src="1963-64/1st-match14.png">
                                         </div>
-                                        <div id="bottom48">
+                                        <div id="bottom1">
                                              <img class="content-match" src="1963-64/1st-match14-alt.png">
                                              <div class="badges-and-sponsors">
                                                   <div class="left1">

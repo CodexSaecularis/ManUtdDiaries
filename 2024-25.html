@@ -8,8 +8,7 @@
      <title>2024/25</title>
      <link rel="stylesheet" href="css/core.css">
      <link rel="stylesheet" href="css/2024-25.css">
-     <link rel="icon" href="parallax/Man Utd.ico">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+     <link rel="icon" href="core/logo.ico">
 </head>
 
 <body>
@@ -18,9 +17,9 @@
           <img src="parallax/led cover.png" id="led-cover">
           <div class="zeppelin-led">
                <div class="led-words">
-                    <span>GGMU</span>
-                    <span>BACK AMORIM</span>
-                    <span>GGMU</span>
+                    <span class="text1"></span>
+                    <span class="text2"></span>
+                    <span class="text1"></span>
                </div>
           </div>
           <img src="parallax/flag (pc).png" id="flag-pc">
@@ -38,162 +37,10 @@
      </section>
 
      <section class="select-season">
-          <div class="nav_container-season">
-               <ul class="dropdown-season">
-
-                    <li class="season-list">
-                         <a class="checkbox-size" id="dropdown-pointer">
-                              <input type="checkbox" class="dropdown-check"><span class="select-season-title"><span1><br />since <span2>1956</span2></span1><span3><br />SELECT SEASON</span3>
-                         </a>
-                         <div class="dropdown-content-display">
-                              <ul class="dropdown-sub-season">
-                                   <li class="dropdown-li">
-                                        <img class="season-header-pc" src="core/select-click.png">
-                                        <img class="season-header-mobile" src="core/select-tap.png">
-                   
-                                        <button type="button" onclick="show_titles()" id="button-with-titles" itemid="links">
-                                             <h100>SHOW TROPHIES</h100>
-                                        </button>
-                                        <script>
-                                             function show_titles() {
-                                                  document.getElementById('with-titles')
-                                                       .style.display = "block";
-                                                  document.getElementById('button-with-titles')
-                                                       .style.display = "none";
-                                                  document.getElementById('button-without-titles')
-                                                       .style.display = "block";
-                                                  document.getElementById('without-titles')
-                                                       .style.display = "none";
-                                                  document.getElementById('hide')
-                                                       .style.display = "block";
-                                                  document.getElementById('show')
-                                                       .style.display = "none";
-                                             }
-                                        </script>
-
-                                        <div class="swiper" id="with-titles">  <!-- vertical scroller: https://www.youtube.com/watch?v=9nvnsU85jeQ -->
-                                             <div class="swiper-wrapper">
-                                                  <div class="swiper-slide">
-                                                       <img src="core/select-2023-27-titles.png">
-                                                            <a class="season-2025-26" href="index.html" id="season-links">
-                                                                 <img src="core/hover-2025-26-titles.png">
-                                                            </a>
-                                                            <a class="season-2024-25" href="2024-25.html" id="season-links">
-                                                                 <img src="core/hover-2024-25-titles.png">
-                                                            </a>
-                                                            <a class="season-2023-24" id="season-links">
-                                                                 <img src="core/hover-2023-24-titles.png">
-                                                            </a>
-                                                  </div>
-                                                  <div class="swiper-slide">
-                                                       <img src="core/select-1963-67-titles.png">
-                                                            <a class="season-1963-64" href="1963-64.html" id="season-links">
-                                                                 <img src="core/hover-1963-64-titles.png">
-                                                            </a>
-                                                            <a class="season-1967-68" href="1967-68.html" id="season-links">
-                                                                 <img src="core/hover-1967-68-titles.png">
-                                                            </a>
-                                                  </div>
-                                                  <div class="swiper-slide">
-                                                       <img src="core/select-1956-60-titles.png">
-                                                            <a class="season-1956-57" href="1956-57.html" id="season-links">
-                                                                 <img src="core/hover-1956-57-titles.png">
-                                                            </a>
-                                                            <a class="season-1957-58" href="1957-58.html" id="season-links">
-                                                                 <img src="core/hover-1957-58-titles.png">
-                                                            </a>
-                                                            <a class="season-1962-63" href="1962-63.html" id="season-links">
-                                                                 <img src="core/hover-1962-63-titles.png">
-                                                            </a>
-                                                  </div>
-                                             </div>
-                                             <div class="swiper-pagination"></div>
-                                        </div>
-                                                                                
-                                        <button type="button" onclick="hide_titles()" id="button-without-titles" itemid="links">
-                                             <h101>HIDE TROPHIES</h101>
-                                        </button>
-                                        <script>
-                                             function hide_titles() {
-                                                  document.getElementById('with-titles')
-                                                       .style.display = "none";
-                                                  document.getElementById('button-with-titles')
-                                                       .style.display = "block";
-                                                  document.getElementById('button-without-titles')
-                                                       .style.display = "none";
-                                                  document.getElementById('without-titles')
-                                                       .style.display = "block";
-                                                  document.getElementById('hide')
-                                                       .style.display = "none";
-                                                  document.getElementById('show')
-                                                       .style.display = "block";
-                                             }
-                                        </script>
-                                        
-                                        <div class="swiper" id="without-titles">  <!-- vertical scroller: https://www.youtube.com/watch?v=9nvnsU85jeQ -->
-                                             <div class="swiper-wrapper">
-                                                  <div class="swiper-slide">
-                                                       <img src="core/select-2023-27.png">
-                                                            <a class="season-2025-26" href="index.html" id="season-links">
-                                                                 <img src="core/hover-2025-26.png">
-                                                            </a>
-                                                            <a class="season-2024-25" href="2024-25.html" id="season-links">
-                                                                 <img src="core/hover-2024-25.png">
-                                                            </a>
-                                                            <a class="season-2023-24" id="season-links">
-                                                                 <img src="core/hover-2023-24.png">
-                                                            </a>
-                                                  </div>
-                                                  <div class="swiper-slide">
-                                                       <img src="core/select-1963-67.png">
-                                                            <a class="season-1963-64" href="1963-64.html" id="season-links">
-                                                                 <img src="core/hover-1963-64.png">
-                                                            </a>
-                                                            <a class="season-1967-68" href="1967-68.html" id="season-links">
-                                                                 <img src="core/hover-1967-68.png">
-                                                            </a>
-                                                  </div>
-                                                  <div class="swiper-slide">
-                                                       <img src="core/select-1956-60.png">
-                                                            <a class="season-1956-57" href="1956-57.html" id="season-links">
-                                                                 <img src="core/hover-1956-57.png">
-                                                            </a>
-                                                            <a class="season-1957-58" href="1957-58.html" id="season-links">
-                                                                 <img src="core/hover-1957-58.png">
-                                                            </a>
-                                                            <a class="season-1962-63" href="1962-63.html" id="season-links">
-                                                                 <img src="core/hover-1962-63.png">
-                                                            </a>
-                                                  </div>
-                                             </div>
-                                             <div class="swiper-pagination"></div>
-                                        </div>
-                                        
-                                        <img class="season-content" src="core/select-bottom-show.png" id="show">
-                                        <img class="season-content" src="core/select-bottom-hide.png" id="hide">
-                                   </li>
-                              </ul>
-                         </div>
-                    </li>
-
-               </ul>
-          </div>
+          <a class="checkbox-size" id="dropdown-pointer" href="seasons.html">
+               <span class="select-season-title"><span1><br />since <span2>1956</span2></span1><span3><br />SELECT SEASON</span3>
+          </a>
      </section>
-
-     
-     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-     <script>
-          const swiper = new Swiper('.swiper', {
-               pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-               },
-               direction: "vertical",
-               slidesPerView: 1,
-               mousewheel: true,
-          });
-     </script>
-     <!-- SELECT SEASON -->
 
      <a href="index.html">
           <div class="scoreboard-wrapper">
@@ -222,13 +69,64 @@
      <div class="box-shadow" id="box-shadow"></div>
      <div class="box-shadow2" id="box-shadow2"></div>
 
+     
+
      <!-- OLD TRAFFORD BANNERS -->
      <div class="OT-banners">
           <div class="banners">
-             <!-- I learned of "&nbsp;" value to add non-breaking space thanks to: https://blog.hubspot.com/website/html-space#:~:text=The%20simplest%20way%20to%20add,%3B%20or%20. -->
-             <!-- (⮝) -->
-               <div><span>&nbsp;&nbsp;ONE LOVE STRETFORD END MUFC&nbsp;&nbsp;</span><span2>&nbsp;★★★&nbsp;&nbsp;</span2><span3>&nbsp;ЯEPUБLIC OF MAИCUИIA ЯED AЯMY&nbsp;</span3><span4>&thinsp;&thinsp;௹&nbsp;</span4><span5>❅</span5><span6>FEB 6TH 1958 THE FLOWERS OF MANCHESTER</span6><span7>&nbsp;&nbsp;MUFC&nbsp;&nbsp;THE&nbsp;&nbsp;RELIGION&nbsp;&nbsp;</span7><span8>&ThinSpace;🌈</span8><span9>&nbsp;RAINBOW DEVILS&nbsp;</span9><span10>&nbsp;LGBTQ+ SUPPORTERS CLUB</span10><span11>&ThinSpace;🌈&ThinSpace;</span11><span12>🙋🏻‍♂️&nbsp;</span12><span13>🏆🔴🏆🏆🏆🏆🏆🔴🏆🏆🔴🏆🏆🔴🏆🔴🏆🏆🏆🏆&nbsp;</span13><span14>THE IMPOSSIBLE DREAM&nbsp;</span14><span15>SIR ALEX 26 YEARS&nbsp;</span15><span16>MADE POSSIBLE....&nbsp;</span16><span17>🏆🏆🏆🔴🏆🏆🏆🔴🏆🏆🔴🏆🏆🏆🏆🔴🏆🔴🏆&nbsp;</span17><span18>🙋🏻‍♂️&nbsp;</span18><span19>&nbsp;EVERY SINGLE ONE OF US&nbsp;</span19><span20>👤&nbsp;</span20><span21>LOVES SIR ALEX FERGUSON&nbsp;</span21><span22>&nbsp;GREATEST OF ENGLISH FOOTBALL&nbsp;</span22><span23>&nbsp;🏆🏆🏆🏆🏆🏆</span23><span24>&nbsp;🔥&nbsp;</span24><span25>🏆🏆🔴🏆&nbsp;</span25><span26>&nbsp;&nbsp;&nbsp;WE'VE WON IT ALL&nbsp;</span26><span27>&nbsp;&nbsp;&nbsp;SIR BOBBY&nbsp;</span27><span28>FOREVER LOVED&nbsp;</span28><span29>&nbsp;🗣️</span29><span30>&nbsp;"IT'S GLORY AND HONOUR" THE GREAT MAN HE SAID&nbsp;&nbsp;"THERE'S NOTHING LIKE BEING A</span30><span31>&nbsp;RED</span31><span32>"&nbsp;</span32><span33>&nbsp;&nbsp;🗣️</span33></div>
-               <div><span>&nbsp;&nbsp;ONE LOVE STRETFORD END MUFC&nbsp;&nbsp;</span><span2>&nbsp;★★★&nbsp;&nbsp;</span2><span3>&nbsp;ЯEPUБLIC OF MAИCUИIA ЯED AЯMY&nbsp;</span3><span4>&thinsp;&thinsp;௹&nbsp;</span4><span5>❅</span5><span6>FEB 6TH 1958 THE FLOWERS OF MANCHESTER</span6><span7>&nbsp;&nbsp;MUFC&nbsp;&nbsp;THE&nbsp;&nbsp;RELIGION&nbsp;&nbsp;</span7><span8>&ThinSpace;🌈</span8><span9>&nbsp;RAINBOW DEVILS&nbsp;</span9><span10>&nbsp;LGBTQ+ SUPPORTERS CLUB</span10><span11>&ThinSpace;🌈&ThinSpace;</span11><span12>🙋🏻‍♂️&nbsp;</span12><span13>🏆🔴🏆🏆🏆🏆🏆🔴🏆🏆🔴🏆🏆🔴🏆🔴🏆🏆🏆🏆&nbsp;</span13><span14>THE IMPOSSIBLE DREAM&nbsp;</span14><span15>SIR ALEX 26 YEARS&nbsp;</span15><span16>MADE POSSIBLE....&nbsp;</span16><span17>🏆🏆🏆🔴🏆🏆🏆🔴🏆🏆🔴🏆🏆🏆🏆🔴🏆🔴🏆&nbsp;</span17><span18>🙋🏻‍♂️&nbsp;</span18><span19>&nbsp;EVERY SINGLE ONE OF US&nbsp;</span19><span20>👤&nbsp;</span20><span21>LOVES SIR ALEX FERGUSON&nbsp;</span21><span22>&nbsp;GREATEST OF ENGLISH FOOTBALL&nbsp;</span22><span23>&nbsp;🏆🏆🏆🏆🏆🏆</span23><span24>&nbsp;🔥&nbsp;</span24><span25>🏆🏆🔴🏆&nbsp;</span25><span26>&nbsp;&nbsp;&nbsp;WE'VE WON IT ALL&nbsp;</span26><span27>&nbsp;&nbsp;&nbsp;SIR BOBBY&nbsp;</span27><span28>FOREVER LOVED&nbsp;</span28><span29>&nbsp;🗣️</span29><span30>&nbsp;"IT'S GLORY AND HONOUR" THE GREAT MAN HE SAID&nbsp;&nbsp;"THERE'S NOTHING LIKE BEING A</span30><span31>&nbsp;RED</span31><span32>"&nbsp;</span32><span33>&nbsp;&nbsp;🗣️</span33></div>
+               <img class="img1" src="core/banner-stretford-end.png">
+               <img class="img2" src="core/banner-red-army.png">
+               <img class="img3" src="core/banner-feb-6.png">
+               <img class="img4" src="core/banner-denis-law.png">
+               <img class="img4" src="core/banner-charlton.png">
+               <img class="img1" src="core/banner-heaven.png">
+               <img class="img2" src="core/banner-lgbtq+.png">
+               <img class="img3" src="core/banner-sir-alex-1.png">
+               <img class="img4" src="core/banner-sir-alex-2.png">
+               <img class="img1" src="core/banner-sir-alex-3.png">
+               <img class="img2" src="core/banner-every-single-one.png">
+               <img class="img3" src="core/banner-greatest.png">
+               <img class="img4" src="core/banner-titles-and-badge.png">
+               <img class="img4" src="core/banner-won-it-all.png">
+               <img class="img4" src="core/banner-forever-loved.png">
+               <img class="img4" src="core/banner-it's-glory-1.png">
+               <img class="img4" src="core/banner-it's-glory-2.png">
+
+               <img class="img1" src="core/banner-stretford-end.png">
+               <img class="img2" src="core/banner-red-army.png">
+               <img class="img3" src="core/banner-feb-6.png">
+               <img class="img4" src="core/banner-denis-law.png">
+               <img class="img4" src="core/banner-charlton.png">
+               <img class="img1" src="core/banner-heaven.png">
+               <img class="img2" src="core/banner-lgbtq+.png">
+               <img class="img3" src="core/banner-sir-alex-1.png">
+               <img class="img4" src="core/banner-sir-alex-2.png">
+               <img class="img1" src="core/banner-sir-alex-3.png">
+               <img class="img2" src="core/banner-every-single-one.png">
+               <img class="img3" src="core/banner-greatest.png">
+               <img class="img4" src="core/banner-titles-and-badge.png">
+               <img class="img4" src="core/banner-won-it-all.png">
+               <img class="img4" src="core/banner-forever-loved.png">
+               <img class="img4" src="core/banner-it's-glory-1.png">
+               <img class="img4" src="core/banner-it's-glory-2.png">
+
+               <img class="img1" src="core/banner-stretford-end.png">
+               <img class="img2" src="core/banner-red-army.png">
+               <img class="img3" src="core/banner-feb-6.png">
+               <img class="img4" src="core/banner-denis-law.png">
+               <img class="img4" src="core/banner-charlton.png">
+               <img class="img1" src="core/banner-heaven.png">
+               <img class="img2" src="core/banner-lgbtq+.png">
+               <img class="img3" src="core/banner-sir-alex-1.png">
+               <img class="img4" src="core/banner-sir-alex-2.png">
+               <img class="img1" src="core/banner-sir-alex-3.png">
+               <img class="img2" src="core/banner-every-single-one.png">
+               <img class="img3" src="core/banner-greatest.png">
+               <img class="img4" src="core/banner-titles-and-badge.png">
+               <img class="img4" src="core/banner-won-it-all.png">
+               <img class="img4" src="core/banner-forever-loved.png">
+               <img class="img4" src="core/banner-it's-glory-1.png">
+               <img class="img4" src="core/banner-it's-glory-2.png">
           </div>
      </div>
 
@@ -658,7 +556,7 @@
                          <a class="dropdown-stats">
                               <span class="open2">OPEN</span>
                               <span class="close2">CLOSE</span>
-                              <input type="checkbox" class="dropdown_check"><span class="stats-title"><span1>24/25&nbsp;</span1>&nbsp;stats</span>
+                              <input type="checkbox" class="dropdown_check"><span class="stats-title"><span1>2024/25&nbsp;</span1>&nbsp;stats</span>
                          </a>
                          <div class="dropdown_content">
                               <ul class="dropdown_sub">
@@ -679,18 +577,8 @@
 
                     <li class="dropdown_list">
                          <a class="dropdown-player-performance">
-                              <span class="open">OPEN</span>
-                              <span class="close">CLOSE</span>
-                              <input type="checkbox" class="dropdown_check"><span class="player-performance-title">P<span1>layer</span1> P<span1>erformance</span1></span>
+                              <input type="checkbox" class="dropdown_check" id="cursor-change"><span class="player-performance-title">H<span1>istorical</span1> H<span1>ead2</span1> H<span1>ead</span1></span>
                          </a>
-                         <div class="dropdown_content">
-                              <ul class="dropdown_sub">
-                                   <li class="dropdown_li">
-                                        <img class="dropdown-content" src="2024-25/player-perf1.png">
-                                        <img class="dropdown-content" src="2024-25/player-perf2.png">
-                                   </li>
-                              </ul>
-                         </div>
                     </li>
 
 
@@ -7711,9 +7599,60 @@
                          <div class="bottom-GGMU">GGMU</div>
                          <div class="bottom-GGMU">GGMU</div>
                          <div class="OT-banners-bottom">
-                              <div class="banners">
-                                   <div><span>&nbsp;&nbsp;ONE LOVE STRETFORD END MUFC&nbsp;&nbsp;</span><span2>&nbsp;★★★&nbsp;&nbsp;</span2><span3>&nbsp;ЯEPUБLIC OF MAИCUИIA ЯED AЯMY&nbsp;</span3><span4>&thinsp;&thinsp;௹&nbsp;</span4><span5>❅</span5><span6>FEB 6TH 1958 THE FLOWERS OF MANCHESTER</span6><span7>&nbsp;&nbsp;MUFC&nbsp;&nbsp;THE&nbsp;&nbsp;RELIGION&nbsp;&nbsp;</span7><span8>&ThinSpace;🌈</span8><span9>&nbsp;RAINBOW DEVILS&nbsp;</span9><span10>&nbsp;LGBTQ+ SUPPORTERS CLUB</span10><span11>&ThinSpace;🌈&ThinSpace;</span11><span12>🙋🏻‍♂️&nbsp;</span12><span13>🏆🔴🏆🏆🏆🏆🏆🔴🏆🏆🔴🏆🏆🔴🏆🔴🏆🏆🏆🏆&nbsp;</span13><span14>THE IMPOSSIBLE DREAM&nbsp;</span14><span15>SIR ALEX 26 YEARS&nbsp;</span15><span16>MADE POSSIBLE....&nbsp;</span16><span17>🏆🏆🏆🔴🏆🏆🏆🔴🏆🏆🔴🏆🏆🏆🏆🔴🏆🔴🏆&nbsp;</span17><span18>🙋🏻‍♂️&nbsp;</span18><span19>&nbsp;EVERY SINGLE ONE OF US&nbsp;</span19><span20>👤&nbsp;</span20><span21>LOVES SIR ALEX FERGUSON&nbsp;</span21><span22>&nbsp;GREATEST OF ENGLISH FOOTBALL&nbsp;</span22><span23>&nbsp;🏆🏆🏆🏆🏆🏆</span23><span24>&nbsp;🔥&nbsp;</span24><span25>🏆🏆🔴🏆&nbsp;</span25><span26>&nbsp;&nbsp;&nbsp;WE'VE WON IT ALL&nbsp;</span26><span27>&nbsp;&nbsp;&nbsp;SIR BOBBY&nbsp;</span27><span28>FOREVER LOVED&nbsp;</span28><span29>&nbsp;🗣️</span29><span30>&nbsp;"IT'S GLORY AND HONOUR" THE GREAT MAN HE SAID&nbsp;&nbsp;"THERE'S NOTHING LIKE BEING A</span30><span31>&nbsp;RED</span31><span32>"&nbsp;</span32><span33>&nbsp;&nbsp;🗣️</span33></div>
-                                   <div><span>&nbsp;&nbsp;ONE LOVE STRETFORD END MUFC&nbsp;&nbsp;</span><span2>&nbsp;★★★&nbsp;&nbsp;</span2><span3>&nbsp;ЯEPUБLIC OF MAИCUИIA ЯED AЯMY&nbsp;</span3><span4>&thinsp;&thinsp;௹&nbsp;</span4><span5>❅</span5><span6>FEB 6TH 1958 THE FLOWERS OF MANCHESTER</span6><span7>&nbsp;&nbsp;MUFC&nbsp;&nbsp;THE&nbsp;&nbsp;RELIGION&nbsp;&nbsp;</span7><span8>&ThinSpace;🌈</span8><span9>&nbsp;RAINBOW DEVILS&nbsp;</span9><span10>&nbsp;LGBTQ+ SUPPORTERS CLUB</span10><span11>&ThinSpace;🌈&ThinSpace;</span11><span12>🙋🏻‍♂️&nbsp;</span12><span13>🏆🔴🏆🏆🏆🏆🏆🔴🏆🏆🔴🏆🏆🔴🏆🔴🏆🏆🏆🏆&nbsp;</span13><span14>THE IMPOSSIBLE DREAM&nbsp;</span14><span15>SIR ALEX 26 YEARS&nbsp;</span15><span16>MADE POSSIBLE....&nbsp;</span16><span17>🏆🏆🏆🔴🏆🏆🏆🔴🏆🏆🔴🏆🏆🏆🏆🔴🏆🔴🏆&nbsp;</span17><span18>🙋🏻‍♂️&nbsp;</span18><span19>&nbsp;EVERY SINGLE ONE OF US&nbsp;</span19><span20>👤&nbsp;</span20><span21>LOVES SIR ALEX FERGUSON&nbsp;</span21><span22>&nbsp;GREATEST OF ENGLISH FOOTBALL&nbsp;</span22><span23>&nbsp;🏆🏆🏆🏆🏆🏆</span23><span24>&nbsp;🔥&nbsp;</span24><span25>🏆🏆🔴🏆&nbsp;</span25><span26>&nbsp;&nbsp;&nbsp;WE'VE WON IT ALL&nbsp;</span26><span27>&nbsp;&nbsp;&nbsp;SIR BOBBY&nbsp;</span27><span28>FOREVER LOVED&nbsp;</span28><span29>&nbsp;🗣️</span29><span30>&nbsp;"IT'S GLORY AND HONOUR" THE GREAT MAN HE SAID&nbsp;&nbsp;"THERE'S NOTHING LIKE BEING A</span30><span31>&nbsp;RED</span31><span32>"&nbsp;</span32><span33>&nbsp;&nbsp;🗣️</span33></div>
+                              <div class="banners-slide">
+                                   <img class="img1" src="core/banner-stretford-end.png">
+                                   <img class="img2" src="core/banner-red-army.png">
+                                   <img class="img3" src="core/banner-feb-6.png">
+                                   <img class="img4" src="core/banner-denis-law.png">
+                                   <img class="img4" src="core/banner-charlton.png">
+                                   <img class="img1" src="core/banner-heaven.png">
+                                   <img class="img2" src="core/banner-lgbtq+.png">
+                                   <img class="img3" src="core/banner-sir-alex-1.png">
+                                   <img class="img4" src="core/banner-sir-alex-2.png">
+                                   <img class="img1" src="core/banner-sir-alex-3.png">
+                                   <img class="img2" src="core/banner-every-single-one.png">
+                                   <img class="img3" src="core/banner-greatest.png">
+                                   <img class="img4" src="core/banner-titles-and-badge.png">
+                                   <img class="img4" src="core/banner-won-it-all.png">
+                                   <img class="img4" src="core/banner-forever-loved.png">
+                                   <img class="img4" src="core/banner-it's-glory-1.png">
+                                   <img class="img4" src="core/banner-it's-glory-2.png">
+
+                                   <img class="img1" src="core/banner-stretford-end.png">
+                                   <img class="img2" src="core/banner-red-army.png">
+                                   <img class="img3" src="core/banner-feb-6.png">
+                                   <img class="img4" src="core/banner-denis-law.png">
+                                   <img class="img4" src="core/banner-charlton.png">
+                                   <img class="img1" src="core/banner-heaven.png">
+                                   <img class="img2" src="core/banner-lgbtq+.png">
+                                   <img class="img3" src="core/banner-sir-alex-1.png">
+                                   <img class="img4" src="core/banner-sir-alex-2.png">
+                                   <img class="img1" src="core/banner-sir-alex-3.png">
+                                   <img class="img2" src="core/banner-every-single-one.png">
+                                   <img class="img3" src="core/banner-greatest.png">
+                                   <img class="img4" src="core/banner-titles-and-badge.png">
+                                   <img class="img4" src="core/banner-won-it-all.png">
+                                   <img class="img4" src="core/banner-forever-loved.png">
+                                   <img class="img4" src="core/banner-it's-glory-1.png">
+                                   <img class="img4" src="core/banner-it's-glory-2.png">
+                                   
+                                   <img class="img1" src="core/banner-stretford-end.png">
+                                   <img class="img2" src="core/banner-red-army.png">
+                                   <img class="img3" src="core/banner-feb-6.png">
+                                   <img class="img4" src="core/banner-denis-law.png">
+                                   <img class="img4" src="core/banner-charlton.png">
+                                   <img class="img1" src="core/banner-heaven.png">
+                                   <img class="img2" src="core/banner-lgbtq+.png">
+                                   <img class="img3" src="core/banner-sir-alex-1.png">
+                                   <img class="img4" src="core/banner-sir-alex-2.png">
+                                   <img class="img1" src="core/banner-sir-alex-3.png">
+                                   <img class="img2" src="core/banner-every-single-one.png">
+                                   <img class="img3" src="core/banner-greatest.png">
+                                   <img class="img4" src="core/banner-titles-and-badge.png">
+                                   <img class="img4" src="core/banner-won-it-all.png">
+                                   <img class="img4" src="core/banner-forever-loved.png">
+                                   <img class="img4" src="core/banner-it's-glory-1.png">
+                                   <img class="img4" src="core/banner-it's-glory-2.png">
                               </div>
                          </div>
                          <div class="email-cursor-text">idierco@gmail.com</div>

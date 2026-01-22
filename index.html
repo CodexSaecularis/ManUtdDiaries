@@ -8,8 +8,7 @@
      <title>2025/26</title>
      <link rel="stylesheet" href="css/core.css">
      <link rel="stylesheet" href="css/2025-26.css">
-     <link rel="icon" href="parallax/Man Utd.ico">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+     <link rel="icon" href="core/logo.ico">
 </head>
 
 <body>
@@ -18,9 +17,9 @@
           <img src="parallax/led cover.png" id="led-cover">
           <div class="zeppelin-led">
                <div class="led-words">
-                    <span>GGMU</span>
-                    <span>BACK AMORIM</span>
-                    <span>GGMU</span>
+                    <span class="text1"></span>
+                    <span class="text2"></span>
+                    <span class="text1"></span>
                </div>
           </div>
           <img src="parallax/flag (pc).png" id="flag-pc">
@@ -38,169 +37,17 @@
      </section>
 
      <section class="select-season">
-          <div class="nav_container-season">
-               <ul class="dropdown-season">
-
-                    <li class="season-list">
-                         <a class="checkbox-size" id="dropdown-pointer">
-                              <input type="checkbox" class="dropdown-check"><span class="select-season-title"><span1><br />since <span2>1956</span2></span1><span3><br />SELECT SEASON</span3>
-                         </a>
-                         <div class="dropdown-content-display">
-                              <ul class="dropdown-sub-season">
-                                   <li class="dropdown-li">
-                                        <img class="season-header-pc" src="core/select-click.png">
-                                        <img class="season-header-mobile" src="core/select-tap.png">
-                   
-                                        <button type="button" onclick="show_titles()" id="button-with-titles" itemid="links">
-                                             <h100>SHOW TROPHIES</h100>
-                                        </button>
-                                        <script>
-                                             function show_titles() {
-                                                  document.getElementById('with-titles')
-                                                       .style.display = "block";
-                                                  document.getElementById('button-with-titles')
-                                                       .style.display = "none";
-                                                  document.getElementById('button-without-titles')
-                                                       .style.display = "block";
-                                                  document.getElementById('without-titles')
-                                                       .style.display = "none";
-                                                  document.getElementById('hide')
-                                                       .style.display = "block";
-                                                  document.getElementById('show')
-                                                       .style.display = "none";
-                                             }
-                                        </script>
-
-                                        <div class="swiper" id="with-titles">  <!-- vertical scroller: https://www.youtube.com/watch?v=9nvnsU85jeQ -->
-                                             <div class="swiper-wrapper">
-                                                  <div class="swiper-slide">
-                                                       <img src="core/select-2023-27-titles.png">
-                                                            <a class="season-2025-26" href="index.html" id="season-links">
-                                                                 <img src="core/hover-2025-26-titles.png">
-                                                            </a>
-                                                            <a class="season-2024-25" href="2024-25.html" id="season-links">
-                                                                 <img src="core/hover-2024-25-titles.png">
-                                                            </a>
-                                                            <a class="season-2023-24" id="season-links">
-                                                                 <img src="core/hover-2023-24-titles.png">
-                                                            </a>
-                                                  </div>
-                                                  <div class="swiper-slide">
-                                                       <img src="core/select-1963-67-titles.png">
-                                                            <a class="season-1963-64" href="1963-64.html" id="season-links">
-                                                                 <img src="core/hover-1963-64-titles.png">
-                                                            </a>
-                                                            <a class="season-1967-68" href="1967-68.html" id="season-links">
-                                                                 <img src="core/hover-1967-68-titles.png">
-                                                            </a>
-                                                  </div>
-                                                  <div class="swiper-slide">
-                                                       <img src="core/select-1956-60-titles.png">
-                                                            <a class="season-1956-57" href="1956-57.html" id="season-links">
-                                                                 <img src="core/hover-1956-57-titles.png">
-                                                            </a>
-                                                            <a class="season-1957-58" href="1957-58.html" id="season-links">
-                                                                 <img src="core/hover-1957-58-titles.png">
-                                                            </a>
-                                                            <a class="season-1962-63" href="1962-63.html" id="season-links">
-                                                                 <img src="core/hover-1962-63-titles.png">
-                                                            </a>
-                                                  </div>
-                                             </div>
-                                             <div class="swiper-pagination"></div>
-                                        </div>
-                                                                                
-                                        <button type="button" onclick="hide_titles()" id="button-without-titles" itemid="links">
-                                             <h101>HIDE TROPHIES</h101>
-                                        </button>
-                                        <script>
-                                             function hide_titles() {
-                                                  document.getElementById('with-titles')
-                                                       .style.display = "none";
-                                                  document.getElementById('button-with-titles')
-                                                       .style.display = "block";
-                                                  document.getElementById('button-without-titles')
-                                                       .style.display = "none";
-                                                  document.getElementById('without-titles')
-                                                       .style.display = "block";
-                                                  document.getElementById('hide')
-                                                       .style.display = "none";
-                                                  document.getElementById('show')
-                                                       .style.display = "block";
-                                             }
-                                        </script>
-                                        
-                                        <div class="swiper" id="without-titles">  <!-- vertical scroller: https://www.youtube.com/watch?v=9nvnsU85jeQ -->
-                                             <div class="swiper-wrapper">
-                                                  <div class="swiper-slide">
-                                                       <img src="core/select-2023-27.png">
-                                                            <a class="season-2025-26" href="index.html" id="season-links">
-                                                                 <img src="core/hover-2025-26.png">
-                                                            </a>
-                                                            <a class="season-2024-25" href="2024-25.html" id="season-links">
-                                                                 <img src="core/hover-2024-25.png">
-                                                            </a>
-                                                            <a class="season-2023-24" id="season-links">
-                                                                 <img src="core/hover-2023-24.png">
-                                                            </a>
-                                                  </div>
-                                                  <div class="swiper-slide">
-                                                       <img src="core/select-1963-67.png">
-                                                            <a class="season-1963-64" href="1963-64.html" id="season-links">
-                                                                 <img src="core/hover-1963-64.png">
-                                                            </a>
-                                                            <a class="season-1967-68" href="1967-68.html" id="season-links">
-                                                                 <img src="core/hover-1967-68.png">
-                                                            </a>
-                                                  </div>
-                                                  <div class="swiper-slide">
-                                                       <img src="core/select-1956-60.png">
-                                                            <a class="season-1956-57" href="1956-57.html" id="season-links">
-                                                                 <img src="core/hover-1956-57.png">
-                                                            </a>
-                                                            <a class="season-1957-58" href="1957-58.html" id="season-links">
-                                                                 <img src="core/hover-1957-58.png">
-                                                            </a>
-                                                            <a class="season-1962-63" href="1962-63.html" id="season-links">
-                                                                 <img src="core/hover-1962-63.png">
-                                                            </a>
-                                                  </div>
-                                             </div>
-                                             <div class="swiper-pagination"></div>
-                                        </div>
-                                        
-                                        <img class="season-content" src="core/select-bottom-show.png" id="show">
-                                        <img class="season-content" src="core/select-bottom-hide.png" id="hide">
-                                   </li>
-                              </ul>
-                         </div>
-                    </li>
-
-               </ul>
-          </div>
+          <a class="checkbox-size" id="dropdown-pointer" href="seasons.html">
+               <span class="select-season-title"><span1><br />since <span2>1956</span2></span1><span3><br />SELECT SEASON</span3>
+          </a>
      </section>
-
-     
-     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-     <script>
-          const swiper = new Swiper('.swiper', {
-               pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-               },
-               direction: "vertical",
-               slidesPerView: 1,
-               mousewheel: true,
-          });
-     </script>
-     <!-- SELECT SEASON -->
 
      <a href="#jump">
           <div class="scoreboard-wrapper">
                <!-- (▼ ▲ •) -->
                <div class="scoreboard-PL" id="links">
                     <div class="PL">
-                         <div>Premier League&nbsp;&nbsp;<span1>▼&nbsp;</span1>7th<span2>&nbsp;&nbsp;matchday 21</span2></div>
+                         <div>Premier League&nbsp;&nbsp;<span1>▲&nbsp;</span1>5th<span2>&nbsp;&nbsp;matchday 22</span2></div>
                     </div>
                </div>
                <!-- <div class="scoreboard-UCL" id="links">
@@ -210,7 +57,7 @@
                </div> -->
                <!-- <div class="scoreboard-FA" id="links">
                     <div class="FA">
-                         <div>FA CUP&nbsp;&nbsp;<span1>OUT IN 1/4 FINAL</span1></div>
+                         <div>FA CUP&nbsp;&nbsp;<span1>OUT IN THIRD ROUND</span1></div>
                     </div>
                </div> -->
                <!-- <div class="scoreboard-EFL" id="links">
@@ -247,20 +94,20 @@
                <!-- SCOREBOARD -->
                <div class="scoreboard-teams" id="links">
                     <div class="home">
-                         <p><span>&nbsp;BURNLEY<span></p>
-                         <p>&nbsp;MANCHESTER UNITED</p>
+                         <p><span>&nbsp;MANCHESTER UNITED<span></p>
+                         <p>&nbsp;MANCHESTER CITY</p>
                     </div>
                </div>
                <div class="scoreboard-teams-mobile" id="links">
                     <div class="home">
-                         <p><span>&nbsp;BURNLEY<span></p>
-                         <p>&nbsp;MAN UTD</p>
+                         <p><span>&nbsp;MAN UTD<span></p>
+                         <p>&nbsp;MAN CITY</p>
                     </div>
                </div>
                <div class="scoreboard-result" id="scoreboard">
                     <div class="result" id="text-left">
                          <p>2&thinsp;</p>
-                         <p>2&thinsp;</p>
+                         <p>0&thinsp;</p>
                     </div>
                     <div class="final-fair" id="text-right">
                          <p>&thinsp;FINAL&thinsp;</p>
@@ -269,8 +116,8 @@
                </div>
                <div class="scoreboard-result2" id="scoreboard2">
                     <div class="result2" id="text-left2">
+                         <p>4&thinsp;</p>
                          <p>0&thinsp;</p>
-                         <p>5&thinsp;</p>
                     </div>
                     <div class="final-fair2" id="text-right2">
                          <p>&thinsp;FAIR&thinsp;</p>
@@ -636,6 +483,14 @@
                          .style.display = "initial";  /* initial when it comes to text */
                     document.getElementById('result-22v')  /* match #22 */
                          .style.display = "initial";  /* initial when it comes to text */
+                    document.getElementById('result-23h')  /* match #23 */
+                         .style.display = "initial";  /* initial when it comes to text */
+                    document.getElementById('result-23v')  /* match #23 */
+                         .style.display = "initial";  /* initial when it comes to text */
+                    document.getElementById('result-24h')  /* match #24 */
+                         .style.display = "initial";  /* initial when it comes to text */
+                    document.getElementById('result-24v')  /* match #24 */
+                         .style.display = "initial";  /* initial when it comes to text */
                     document.getElementById('match-ratings')  /* match ratings grid image */
                          .style.display = "initial";
                     document.getElementById('button-ratings')  /* button */
@@ -669,8 +524,8 @@
 
           <a href="#match21"><h28><span id="date">Sun, 4 Jan 2026</span><br />Leeds <span id="result-21h">1</span><br />Man Utd <span id="result-21v">1</span></h28></a>
           <a href="#match22"><h29><span id="date">Wed, 7 Jan 2026</span><br />Burnley <span id="result-22h">2</span><br />Man Utd <span id="result-22v">2</span></h29></a>
-          <!-- <a href="#match23"><h30><span id="date">Sun, 9 Mar 2026</span><br />Man Utd <span id="result-23h">1</span><br />Arsenal <span id="result-23v">1</span></h30></a> -->
-          <!-- <a href="#match24"><h31><span id="date">Thu, 13 Mar 2026</span><br />Man Utd <span id="result-24h">4</span><br />R. Sociedad <span id="result-24v">1</span></h31></a> -->
+          <a href="#match23"><h30><span id="date">Sun, 11 Jan 2026</span><br />Man Utd <span id="result-23h">1</span><br />Brighton <span id="result-23v">2</span></h30></a>
+          <a href="#match24"><h31><span id="date">Sat, 17 Jan 2026</span><br />Man Utd <span id="result-24h">2</span><br />Man City <span id="result-24v">0</span></h31></a>
           <!-- <a href="#match25"><h32><span id="date">Sun, 16 Mar 2026</span><br />Leicester <span id="result-25h">0</span><br />Man Utd <span id="result-25v">3</span></h32></a> -->
           <!-- <a href="#match26"><h33><span id="date">Sun, 2 Feb 2026</span><br />Man Utd <span id="result-26h">0</span><br />C. Palace <span id="result-26v">2</span></h33></a> -->
           <!-- <a href="#match27"><h34><span id="date">Fri, 7 Feb 2026</span><br />Man Utd <span id="result-27h">2</span><br />Leicester <span id="result-27v">1</span></h34></a> -->
@@ -789,7 +644,7 @@
                          <a class="dropdown-stats">
                               <span class="open2">OPEN</span>
                               <span class="close2">CLOSE</span>
-                              <input type="checkbox" class="dropdown_check"><span class="stats-title"><span1>25/26&nbsp;</span1>&nbsp;stats</span>
+                              <input type="checkbox" class="dropdown_check"><span class="stats-title"><span1>2025/26&nbsp;</span1>&nbsp;stats</span>
                          </a>
                          <div class="dropdown_content">
                               <ul class="dropdown_sub">
@@ -4571,7 +4426,7 @@
                               </a>
                          </div>
                          <div class="link10" id="link-opacity">
-                              <a href="hhttps://www.footreplays.com/england/premier-league/crystal-palace-vs-manchester-united-30-11-2025/" id="links">
+                              <a href="https://www.footreplays.com/england/premier-league/crystal-palace-vs-manchester-united-30-11-2025/" id="links">
                                    https://www.footreplays.com/england/premier-league/crystal-palace-vs-manchester-united-30-11-2025/
                               </a>
                          </div>
@@ -5811,7 +5666,7 @@
                               </a>
                          </div>
                          <div class="link2" id="link-opacity">
-                              <a href="hhttps://www.manutd.com/en/matches/matchcenter?matchId=2562071" id="links">
+                              <a href="https://www.manutd.com/en/matches/matchcenter?matchId=2562071" id="links">
                                    https://www.manutd.com/en/matches/matchcenter?matchId=2562071
                               </a>
                          </div>
@@ -6319,7 +6174,7 @@
                               </ul>
                          </div>
                          <div class="link1" id="link-opacity">
-                              <a href="hhttps://www.flashscore.com/match/football/leeds-tUxUbLR2/manchester-united-ppjDR086/news/?mid=tds1zq7r" id="links">
+                              <a href="https://www.flashscore.com/match/football/leeds-tUxUbLR2/manchester-united-ppjDR086/news/?mid=tds1zq7r" id="links">
                                    https://www.flashscore.com/match/football/leeds-tUxUbLR2/manchester-united-ppjDR086/news/?mid=tds1zq7r
                               </a>
                          </div>
@@ -6397,7 +6252,7 @@
                     
                     
                     <li class="dropdown_list" itemid="dropdown-matches" id="match22">
-                         <a class="dropdown-22nd-match" id="jump">
+                         <a class="dropdown-22nd-match">
                               <div class="pre-match">
                                    <div class="news">
                                         <div><span>&nbsp;&nbsp;WE ARE 6TH IN THE PREM; BURNLEY 19TH IN RELEGATION ZONE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;ACADEMY MANAGER, DARREN FLETCHER, APPOINTED INTERIM HEAD COACH&nbsp;&nbsp;</span2></div>
@@ -6595,7 +6450,7 @@
                               </a>
                          </div>
                          <div class="link5" id="link-opacity">
-                              <a href="hhttps://theanalyst.com/articles/burnley-vs-man-utd-stats-premier-league-01-2026" id="links">
+                              <a href="https://theanalyst.com/articles/burnley-vs-man-utd-stats-premier-league-01-2026" id="links">
                                    https://theanalyst.com/articles/burnley-vs-man-utd-stats-premier-league-01-2026
                               </a>
                          </div>
@@ -6605,13 +6460,13 @@
                               </a>
                          </div>
                          <div class="link7" id="link-opacity">
-                              <a href="ttps://gofile.io/d/Hg4qUe?filter=MW21+Burnley" id="links">
-                                   ttps://gofile.io/d/Hg4qUe?filter=MW21+Burnley
+                              <a href="https://gofile.io/d/Hg4qUe?filter=MW21+Burnley" id="links">
+                                   https://gofile.io/d/Hg4qUe?filter=MW21+Burnley
                               </a>
                          </div>
                          <div class="link8" id="link-opacity">
-                              <a href="https://www.newbt.site/australia-vs-england-fifth-ashes-test-day-four-highlights-wednesday-january-7-2026/" id="links">
-                                   https://www.newbt.site/australia-vs-england-fifth-ashes-test-day-four-highlights-wednesday-january-7-2026/
+                              <a href="https://www.fullmatch-replay.org/burnley-vs-manchester-united-wednesday-january-07-2026/" id="links">
+                                   https://www.fullmatch-replay.org/burnley-vs-manchester-united-wednesday-january-07-2026/
                               </a>
                          </div>
                          <div class="link9" id="link-opacity">
@@ -6630,12 +6485,12 @@
                               </a>
                          </div>
                          <div class="link12" id="link-opacity">
-                              <a href="hhttps://www.fullmatch-replay.org/burnley-vs-manchester-united-wednesday-january-07-2026/" id="links">
+                              <a href="https://www.fullmatch-replay.org/burnley-vs-manchester-united-wednesday-january-07-2026/" id="links">
                                    https://www.fullmatch-replay.org/burnley-vs-manchester-united-wednesday-january-07-2026/
                               </a>
                          </div>
                          <div class="link13" id="link-opacity">
-                              <a href="hhttps://rutracker.org/forum/viewtopic.php?t=6799191" id="links">
+                              <a href="https://rutracker.org/forum/viewtopic.php?t=6799191" id="links">
                                    https://rutracker.org/forum/viewtopic.php?t=6799191
                               </a>
                          </div>
@@ -6645,43 +6500,43 @@
                               </a>
                          </div>
                          <div class="link15" id="link-opacity">
-                              <a href="hhttps://fullmatchsports.cc/burnley-vs-manchester-united-full-match-2025-26/?tab=links" id="links">
+                              <a href="https://fullmatchsports.cc/burnley-vs-manchester-united-full-match-2025-26/?tab=links" id="links">
                                    https://fullmatchsports.cc/burnley-vs-manchester-united-full-match-2025-26/?tab=links
                               </a>
                          </div>
                     </li>
                     
                     
-                    <!-- <li class="dropdown_list" itemid="dropdown-matches" id="match23">
+                    <li class="dropdown_list" itemid="dropdown-matches" id="match23">
                          <a class="dropdown-23rd-match">
                               <div class="pre-match">
                                    <div class="news">
-                                        <div><span>&nbsp;&nbsp;WE ARE 13TH IN THE PREM; LEICESTER ARE 18TH IN RELEGATION ZONE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;"I COULDN'T GET MARCUS TO TRAIN THE RIGHT WAY" —AMORIM ON RASHFORD'S LOAN TO VILLA&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;RUUD VAN NISTELROOY’S RETURN TO OLD TRAFFORD WITH LEICESTER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;THIRD CLASH WITH THEM AT OLD TRAFFORD THIS SEASON&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;USAID FUNDED JOURNALISTS GLOBALLY</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
-                                        <div><span>&nbsp;&nbsp;WE ARE 13TH IN THE PREM; LEICESTER ARE 18TH IN RELEGATION ZONE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;"I COULDN'T GET MARCUS TO TRAIN THE RIGHT WAY" —AMORIM ON RASHFORD'S LOAN TO VILLA&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;RUUD VAN NISTELROOY’S RETURN TO OLD TRAFFORD WITH LEICESTER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;THIRD CLASH WITH THEM AT OLD TRAFFORD THIS SEASON&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;USAID FUNDED JOURNALISTS GLOBALLY</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
+                                        <div><span>&nbsp;&nbsp;WE ARE 7TH; BRIGHTON ARE 11TH IN THE PREM&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;AMAD AND MBEUMO OUT OF THE AFCON CUP, SET TO PLAY THE DERBY&nbsp;&nbsp;</span2></div>
+                                        <div><span>&nbsp;&nbsp;WE ARE 7TH; BRIGHTON ARE 11TH IN THE PREM&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;AMAD AND MBEUMO OUT OF THE AFCON CUP, SET TO PLAY THE DERBY&nbsp;&nbsp;</span2></div>
                                    </div>
                               </div>
                               <div class="pre-match-skew">
                                    <div class="news-skew">
-                                        <div><span>&nbsp;&nbsp;WE ARE 13TH IN THE PREM; LEICESTER ARE 18TH IN RELEGATION ZONE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;"I COULDN'T GET MARCUS TO TRAIN THE RIGHT WAY" —AMORIM ON RASHFORD'S LOAN TO VILLA&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;RUUD VAN NISTELROOY’S RETURN TO OLD TRAFFORD WITH LEICESTER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;THIRD CLASH WITH THEM AT OLD TRAFFORD THIS SEASON&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;USAID FUNDED JOURNALISTS GLOBALLY</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
-                                        <div><span>&nbsp;&nbsp;WE ARE 13TH IN THE PREM; LEICESTER ARE 18TH IN RELEGATION ZONE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;"I COULDN'T GET MARCUS TO TRAIN THE RIGHT WAY" —AMORIM ON RASHFORD'S LOAN TO VILLA&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;RUUD VAN NISTELROOY’S RETURN TO OLD TRAFFORD WITH LEICESTER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;THIRD CLASH WITH THEM AT OLD TRAFFORD THIS SEASON&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;USAID FUNDED JOURNALISTS GLOBALLY</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
+                                        <div><span>&nbsp;&nbsp;WE ARE 7TH; BRIGHTON ARE 11TH IN THE PREM&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;AMAD AND MBEUMO OUT OF THE AFCON IN 1/4 FINALS, SET TO PLAY THE DERBY&nbsp;&nbsp;</span2></div>
+                                        <div><span>&nbsp;&nbsp;WE ARE 7TH; BRIGHTON ARE 11TH IN THE PREM&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;AMAD AND MBEUMO OUT OF THE AFCON IN 1/4 FINALS, SET TO PLAY THE DERBY&nbsp;&nbsp;</span2></div>
                                    </div>
                               </div>
                               <div class="post-match">
                                    <div class="news">
-                                        <div><span>&nbsp;&nbsp;AFTER THIS LOSS WE STAY 14TH, AND WOLVES SHIFT UP 2 PLACES TO 15TH AND LEVEL WITH US ON 38 POINTS&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;“WE MUST SCORE TO WIN GAMES” —AMORIM&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;LEICESTER RELEGATED TO THE CHAMPIONSHIP UNDER RUUD VAN NISTELROOY AFTER DEFEAT TO LIVERPOOL&nbsp;&nbsp;</span><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;POPE FRANCIS HAS DIED ON EASTER MONDAY (21 APR) AGED 88</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
-                                        <div><span>&nbsp;&nbsp;AFTER THIS LOSS WE STAY 14TH, AND WOLVES SHIFT UP 2 PLACES TO 15TH AND LEVEL WITH US ON 38 POINTS&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;“WE MUST SCORE TO WIN GAMES” —AMORIM&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;LEICESTER RELEGATED TO THE CHAMPIONSHIP UNDER RUUD VAN NISTELROOY AFTER DEFEAT TO LIVERPOOL&nbsp;&nbsp;</span><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;POPE FRANCIS HAS DIED ON EASTER MONDAY (21 APR) AGED 88</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
+                                        <div><span>&nbsp;&nbsp;AFTER THIS LOSS WE'LL PLAY OUR SHORTEST SEASON IN OVER 100 YEARS, AND BRIGHTON WILL FACE LIVERPOOL IN THE FOURTH ROUND&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;MICHAEL CARRICK APPOINTED AS OUR INTERIM BOSS COMING FROM MIDDLESBROUGH&nbsp;&nbsp;</span2></div>
+                                        <div><span>&nbsp;&nbsp;AFTER THIS LOSS WE'LL PLAY OUR SHORTEST SEASON IN OVER 100 YEARS, AND BRIGHTON WILL FACE LIVERPOOL IN THE FOURTH ROUND&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;MICHAEL CARRICK APPOINTED AS OUR INTERIM BOSS COMING FROM MIDDLESBROUGH&nbsp;&nbsp;</span2></div>
                                    </div>
                               </div>
                               <div class="post-match-skew">
                                    <div class="news-skew">
-                                        <div><span>&nbsp;&nbsp;AFTER THIS LOSS WE DROPPED ONE SPOT TO 13TH PLACE IN THE PREM&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;MANCHESTER UNITED FEAR LISANDRO MARTINEZ COULD BE OUT FOR REST OF THE SEASON&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;STILL CAN’T BEAT PALACE IN THE PREMIER LEAGUE SINCE 22/23&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;2ND TIME AMORIM EXPERIMENTS MAINOO AS FORWARD, SITTING HØJLUND AND ZIRKZEE&nbsp;&nbsp;</span2></div>
-                                        <div><span>&nbsp;&nbsp;AFTER THIS LOSS WE DROPPED ONE SPOT TO 13TH PLACE IN THE PREM&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;MANCHESTER UNITED FEAR LISANDRO MARTINEZ COULD BE OUT FOR REST OF THE SEASON&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;STILL CAN’T BEAT PALACE IN THE PREMIER LEAGUE SINCE 22/23&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;2ND TIME AMORIM EXPERIMENTS MAINOO AS FORWARD, SITTING HØJLUND AND ZIRKZEE&nbsp;&nbsp;</span2></div>
+                                        <div><span>&nbsp;&nbsp;AFTER THIS LOSS WE'LL PLAY OUR SHORTEST SEASON IN OVER 100 YEARS, AND BRIGHTON WILL FACE LIVERPOOL IN THE FOURTH ROUND&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;MICHAEL CARRICK APPOINTED AS OUR INTERIM BOSS COMING FROM MIDDLESBROUGH&nbsp;&nbsp;</span2></div>
+                                        <div><span>&nbsp;&nbsp;AFTER THIS LOSS WE'LL PLAY OUR SHORTEST SEASON IN OVER 100 YEARS, AND BRIGHTON WILL FACE LIVERPOOL IN THE FOURTH ROUND&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;MICHAEL CARRICK APPOINTED AS OUR INTERIM BOSS COMING FROM MIDDLESBROUGH&nbsp;&nbsp;</span2></div>
                                    </div>
                               </div>
                               <img src="2025-26/23rd-match-cover-score.png" id="cover23-score">
                               <img src="2025-26/23rd-match-cover-news.png" id="cover23-news">
-                              <span class="hide-PL">&nbsp;</span>
-                              <span class="date-time">SUN, 2 FEB 2025 | 14:00 | MATCHDAY 4</span>
+                              <span class="hide-FA">&nbsp;</span>
+                              <span class="date-time">SUN, 11 JAN 2026 | 16:30 | THIRD ROUND</span>
                               <input type="checkbox" class="dropdown_check">
                          </a>
                          <div class="button-wrapper">
@@ -6739,7 +6594,6 @@
                                                        </div>
                                                   </div>
                                              </div>
-                                             <img class="content-match" src="2025-26/23rd-match2.png">
                                              <img class="content-match" src="2025-26/23rd-match3.png">
                                              <img class="content-match" src="2025-26/23rd-match4.png">
                                              <img class="content-match1" src="2025-26/23rd-match5.png">
@@ -6764,15 +6618,7 @@
                                              <img class="content-match" src="2025-26/23rd-match8.png">
                                              <img class="content-match" src="2025-26/23rd-match9.png">
                                              <img class="content-match" src="2025-26/23rd-match10.png">
-                                             <img class="content-match" src="2025-26/23rd-match11.png">
                                              <img class="content-match" src="2025-26/23rd-match12.png">
-                                             <img class="content-match" src="2025-26/23rd-match12-1.png">
-                                             <img class="content-match" src="2025-26/23rd-match12-2.png">
-                                             <img class="content-match" src="2025-26/23rd-match12-3.png">
-                                             <img class="content-match" src="2025-26/23rd-match12-4.png">
-                                             <img class="content-match" src="2025-26/23rd-match12-5.png">
-                                             <img class="content-match" src="2025-26/23rd-match12-6.png">
-                                             <img class="content-match" src="2025-26/23rd-match13.png">
                                              <img class="content-match" src="2025-26/23rd-match14.png">
                                         </div>
                                         <div id="bottom23">
@@ -6840,13 +6686,13 @@
                               </ul>
                          </div>
                          <div class="link1" id="link-opacity">
-                              <a href="https://www.flashscore.com" id="links">
-                                   https://www.flashscore.com
+                              <a href="https://www.flashscore.com/match/football/brighton-2XrRecc3/manchester-united-ppjDR086/news/?mid=Y7LCyJ6s" id="links">
+                                   https://www.flashscore.com/match/football/brighton-2XrRecc3/manchester-united-ppjDR086/news/?mid=Y7LCyJ6s
                               </a>
                          </div>
                          <div class="link2" id="link-opacity">
-                              <a href="https://www.manutd.com" id="links">
-                                   https://www.manutd.com
+                              <a href="https://www.manutd.com/en/matches/matchcenter?matchId=2611133" id="links">
+                                   https://www.manutd.com/en/matches/matchcenter?matchId=2611133
                               </a>
                          </div>
                          <div class="link3" id="link-opacity">
@@ -6855,102 +6701,102 @@
                               </a>
                          </div>
                          <div class="link4" id="link-opacity">
-                              <a href="&nbsp;" id="links">
-                                   &nbsp;
+                              <a href="https://www.transfermarkt.com/fa-cup/startseite/pokalwettbewerb/FAC" id="links">
+                                   https://www.transfermarkt.com/fa-cup/startseite/pokalwettbewerb/FAC
                               </a>
                          </div>
                          <div class="link5" id="link-opacity">
-                              <a href="https://theanalyst.com" id="links">
-                                   https://theanalyst.com
+                              <a href="https://fbref.com/en/matches/de9da236/Manchester-United-Brighton-and-Hove-Albion-January-11-2026-FA-Cup" id="links">
+                                   https://fbref.com/en/matches/de9da236/Manchester-United-Brighton-and-Hove-Albion-January-11-2026-FA-Cup
                               </a>
                          </div>
                          <div class="link6" id="link-opacity">
-                              <a href="https://www.sofascore.com" id="links">
-                                   https://www.sofascore.com
+                              <a href="https://www.sofascore.com/football/match/manchester-united-brighton-and-hove-albion/FsK#id:15197292" id="links">
+                                   https://www.sofascore.com/football/match/manchester-united-brighton-and-hove-albion/FsK#id:15197292
                               </a>
                          </div>
                          <div class="link7" id="link-opacity">
-                              <a href="&nbsp;" id="links">
-                                   &nbsp;
+                              <a href="https://www.fullmatch-replay.org/manchester-united-vs-brighton-hove-albion-sunday-january-11-2026/" id="links">
+                                   https://www.fullmatch-replay.org/manchester-united-vs-brighton-hove-albion-sunday-january-11-2026/
                               </a>
                          </div>
                          <div class="link8" id="link-opacity">
-                              <a href="&nbsp;" id="links">
-                                   &nbsp;
+                              <a href="https://www.youtube.com/watch?v=p39BgeaTBv4" id="links">
+                                   https://www.youtube.com/watch?v=p39BgeaTBv4
                               </a>
                          </div>
                          <div class="link9" id="link-opacity">
-                              <a href="&nbsp;" id="links">
-                                   &nbsp;
+                              <a href="https://www.youtube.com/watch?v=_RmgHN-FmFM" id="links">
+                                   https://www.youtube.com/watch?v=_RmgHN-FmFM
                               </a>
                          </div>
                          <div class="link10" id="link-opacity">
-                              <a href="https://www.fullreplays.com" id="links">
-                                   https://www.fullreplays.com
+                              <a href="https://www.footreplays.com/england/fa-cup/manchester-utd-vs-brighton-11-01-2026/" id="links">
+                                   https://www.footreplays.com/england/fa-cup/manchester-utd-vs-brighton-11-01-2026/
                               </a>
                          </div>
                          <div class="link11" id="link-opacity">
-                              <a href="https://www.footreplays.com" id="links">
-                                   https://www.footreplays.com
+                              <a href="https://www.footballorgin.com/manchester-united-vs-brighton-hove-albion-full-match/" id="links">
+                                   https://www.footballorgin.com/manchester-united-vs-brighton-hove-albion-full-match/
                               </a>
                          </div>
                          <div class="link12" id="link-opacity">
-                              <a href="https://fullmatchsports.cc" id="links">
-                                   https://fullmatchsports.cc
+                              <a href="https://www.fullmatch-replay.org/manchester-united-vs-brighton-hove-albion-sunday-january-11-2026/" id="links">
+                                   https://www.fullmatch-replay.org/manchester-united-vs-brighton-hove-albion-sunday-january-11-2026/
                               </a>
                          </div>
                          <div class="link13" id="link-opacity">
-                              <a href="https://rutracker.org" id="links">
-                                   https://rutracker.org
+                              <a href="https://rutracker.org/forum/viewtopic.php?t=6801069" id="links">
+                                   https://rutracker.org/forum/viewtopic.php?t=6801069
                               </a>
                          </div>
                          <div class="link14" id="link-opacity">
-                              <a href="https://rutracker.org" id="links">
-                                   https://rutracker.org
+                              <a href="https://gofile.io/d/rxrucp" id="links">
+                                   https://gofile.io/d/rxrucp
                               </a>
                          </div>
                          <div class="link15" id="link-opacity">
-                              <a href="https://rutracker.org" id="links">
-                                   https://rutracker.org
+                              <a href="https://transfer.it/t/8is7GvhlFJzR" id="links">
+                                   https://transfer.it/t/8is7GvhlFJzR
                               </a>
                          </div>
-                    </li> -->
+                    </li>
                     
                     
-                    <!-- <li class="dropdown_list" itemid="dropdown-matches" id="match24">
-                         <a class="dropdown-24th-match">
+                    <li class="dropdown_list" itemid="dropdown-matches" id="match24">
+                         <a class="dropdown-24th-match" id="jump">
                               <div class="pre-match">
                                    <div class="news">
-                                        <div><span>&nbsp;&nbsp;WE ARE 13TH IN THE PREM; LEICESTER ARE 18TH IN RELEGATION ZONE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;"I COULDN'T GET MARCUS TO TRAIN THE RIGHT WAY" —AMORIM ON RASHFORD'S LOAN TO VILLA&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;RUUD VAN NISTELROOY’S RETURN TO OLD TRAFFORD WITH LEICESTER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;THIRD CLASH WITH THEM AT OLD TRAFFORD THIS SEASON&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;USAID FUNDED JOURNALISTS GLOBALLY</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
-                                        <div><span>&nbsp;&nbsp;WE ARE 13TH IN THE PREM; LEICESTER ARE 18TH IN RELEGATION ZONE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;"I COULDN'T GET MARCUS TO TRAIN THE RIGHT WAY" —AMORIM ON RASHFORD'S LOAN TO VILLA&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;RUUD VAN NISTELROOY’S RETURN TO OLD TRAFFORD WITH LEICESTER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;THIRD CLASH WITH THEM AT OLD TRAFFORD THIS SEASON&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;USAID FUNDED JOURNALISTS GLOBALLY</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
+                                        <div><span>&nbsp;&nbsp;WE ARE 7TH IN THE PREM; CITY ARE 2ND CHALLEGING FOR THE TITLE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;CARRICK APPOINTED AS INTERIM MANAGER UNTIL SUMMER&nbsp;&nbsp;</span2></div>
+                                        <div><span>&nbsp;&nbsp;WE ARE 7TH IN THE PREM; CITY ARE 2ND CHALLEGING FOR THE TITLE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;CARRICK APPOINTED AS INTERIM MANAGER UNTIL SUMMER&nbsp;&nbsp;</span2></div>
                                    </div>
                               </div>
                               <div class="pre-match-skew">
                                    <div class="news-skew">
-                                        <div><span>&nbsp;&nbsp;WE ARE 13TH IN THE PREM; LEICESTER ARE 18TH IN RELEGATION ZONE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;"I COULDN'T GET MARCUS TO TRAIN THE RIGHT WAY" —AMORIM ON RASHFORD'S LOAN TO VILLA&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;RUUD VAN NISTELROOY’S RETURN TO OLD TRAFFORD WITH LEICESTER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;THIRD CLASH WITH THEM AT OLD TRAFFORD THIS SEASON&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;USAID FUNDED JOURNALISTS GLOBALLY</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
-                                        <div><span>&nbsp;&nbsp;WE ARE 13TH IN THE PREM; LEICESTER ARE 18TH IN RELEGATION ZONE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;"I COULDN'T GET MARCUS TO TRAIN THE RIGHT WAY" —AMORIM ON RASHFORD'S LOAN TO VILLA&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;RUUD VAN NISTELROOY’S RETURN TO OLD TRAFFORD WITH LEICESTER&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;THIRD CLASH WITH THEM AT OLD TRAFFORD THIS SEASON&nbsp;&nbsp;</span2><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;USAID FUNDED JOURNALISTS GLOBALLY</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
+                                        <div><span>&nbsp;&nbsp;WE ARE 7TH IN THE PREM; CITY ARE 2ND CHALLEGING FOR THE TITLE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;CARRICK APPOINTED AS INTERIM MANAGER UNTIL SUMMER&nbsp;&nbsp;</span2></div>
+                                        <div><span>&nbsp;&nbsp;WE ARE 7TH IN THE PREM; CITY ARE 2ND CHALLEGING FOR THE TITLE&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;CARRICK APPOINTED AS INTERIM MANAGER UNTIL SUMMER&nbsp;&nbsp;</span2></div>
                                    </div>
                               </div>
                               <div class="post-match">
                                    <div class="news">
-                                        <div><span>&nbsp;&nbsp;AFTER THIS LOSS WE STAY 14TH, AND WOLVES SHIFT UP 2 PLACES TO 15TH AND LEVEL WITH US ON 38 POINTS&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;“WE MUST SCORE TO WIN GAMES” —AMORIM&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;LEICESTER RELEGATED TO THE CHAMPIONSHIP UNDER RUUD VAN NISTELROOY AFTER DEFEAT TO LIVERPOOL&nbsp;&nbsp;</span><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;POPE FRANCIS HAS DIED ON EASTER MONDAY (21 APR) AGED 88</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
-                                        <div><span>&nbsp;&nbsp;AFTER THIS LOSS WE STAY 14TH, AND WOLVES SHIFT UP 2 PLACES TO 15TH AND LEVEL WITH US ON 38 POINTS&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;“WE MUST SCORE TO WIN GAMES” —AMORIM&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;LEICESTER RELEGATED TO THE CHAMPIONSHIP UNDER RUUD VAN NISTELROOY AFTER DEFEAT TO LIVERPOOL&nbsp;&nbsp;</span><span4>&nbsp;&nbsp;🌐︎&nbsp;</span4><span3>&nbsp;POPE FRANCIS HAS DIED ON EASTER MONDAY (21 APR) AGED 88</span3><span4>&nbsp;&nbsp;🌐︎&nbsp;&nbsp;</span4></div>
+                                        <div><span>&nbsp;&nbsp;AFTER THIS WIN WE CLIMB TO 5TH—FINALLY!!—, AND CITY STAY 2ND 7 POINTS BEHIND ARSENAL&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;LISANDRO MARTÍNEZ SIT SCHOLES AND BUTT DOWN BY POCKETING HAALAND&nbsp;&nbsp;</span2></div>
+                                        <div><span>&nbsp;&nbsp;AFTER THIS WIN WE CLIMB TO 5TH—FINALLY!!—, AND CITY STAY 2ND 7 POINTS BEHIND ARSENAL&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;LISANDRO MARTÍNEZ SIT SCHOLES AND BUTT DOWN BY POCKETING HAALAND&nbsp;&nbsp;</span2></div>
                                    </div>
                               </div>
                               <div class="post-match-skew">
                                    <div class="news-skew">
-                                        <div><span>&nbsp;&nbsp;AFTER THIS LOSS WE DROPPED ONE SPOT TO 13TH PLACE IN THE PREM&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;MANCHESTER UNITED FEAR LISANDRO MARTINEZ COULD BE OUT FOR REST OF THE SEASON&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;STILL CAN’T BEAT PALACE IN THE PREMIER LEAGUE SINCE 22/23&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;2ND TIME AMORIM EXPERIMENTS MAINOO AS FORWARD, SITTING HØJLUND AND ZIRKZEE&nbsp;&nbsp;</span2></div>
-                                        <div><span>&nbsp;&nbsp;AFTER THIS LOSS WE DROPPED ONE SPOT TO 13TH PLACE IN THE PREM&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;MANCHESTER UNITED FEAR LISANDRO MARTINEZ COULD BE OUT FOR REST OF THE SEASON&nbsp;&nbsp;</span2><span>&nbsp;&nbsp;STILL CAN’T BEAT PALACE IN THE PREMIER LEAGUE SINCE 22/23&nbsp;&nbsp;</span><span2>&thinsp;&thinsp;2ND TIME AMORIM EXPERIMENTS MAINOO AS FORWARD, SITTING HØJLUND AND ZIRKZEE&nbsp;&nbsp;</span2></div>
+                                        <div><span>&nbsp;&nbsp;AFTER THIS WIN WE CLIMB TO 5TH—FINALLY!!—, AND CITY STAY 2ND 7 POINTS BEHIND ARSENAL&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;LISANDRO MARTÍNEZ SIT SCHOLES AND BUTT DOWN BY POCKETING HAALAND&nbsp;&nbsp;</span2></div>
+                                        <div><span>&nbsp;&nbsp;AFTER THIS WIN WE CLIMB TO 5TH—FINALLY!!—, AND CITY STAY 2ND 7 POINTS BEHIND ARSENAL&nbsp;&nbsp;</span><span2>&nbsp;&nbsp;LISANDRO MARTÍNEZ SIT SCHOLES AND BUTT DOWN BY POCKETING HAALAND&nbsp;&nbsp;</span2></div>
                                    </div>
                               </div>
                               <img src="2025-26/24th-match-cover-score.png" id="cover24-score">
                               <img src="2025-26/24th-match-cover-news.png" id="cover24-news">
                               <span class="hide-PL">&nbsp;</span>
-                              <span class="date-time">SUN, 2 FEB 2025 | 14:00 | MATCHDAY 4</span>
+                              <span class="date-time">SAT, 17 JAN 2026 | 12:30 | MATCHDAY 22</span>
                               <input type="checkbox" class="dropdown_check">
                          </a>
                          <div class="button-wrapper">
-                              <button type="button" onclick="show_score4()" id="button-score-news24" itemid="links">
+                              <button type="button" onclick="show_score24()" id="button-score-news24" itemid="links">
                                    <span></span>
                                    <span></span>
                                    <span></span>
@@ -6959,7 +6805,7 @@
                                    <h89>TAP FOR SCORE & NEWS</h89>
                               </button>
                               <script>
-                                   function show_score4() {
+                                   function show_score24() {
                                         document.getElementById('cover24-score')
                                              .style.display = "none";
                                         document.getElementById('cover24-news')
@@ -7004,7 +6850,6 @@
                                                        </div>
                                                   </div>
                                              </div>
-                                             <img class="content-match" src="2025-26/24th-match2.png">
                                              <img class="content-match" src="2025-26/24th-match3.png">
                                              <img class="content-match" src="2025-26/24th-match4.png">
                                              <img class="content-match1" src="2025-26/24th-match5.png">
@@ -7029,15 +6874,7 @@
                                              <img class="content-match" src="2025-26/24th-match8.png">
                                              <img class="content-match" src="2025-26/24th-match9.png">
                                              <img class="content-match" src="2025-26/24th-match10.png">
-                                             <img class="content-match" src="2025-26/24th-match11.png">
                                              <img class="content-match" src="2025-26/24th-match12.png">
-                                             <img class="content-match" src="2025-26/24th-match12-1.png">
-                                             <img class="content-match" src="2025-26/24th-match12-2.png">
-                                             <img class="content-match" src="2025-26/24th-match12-3.png">
-                                             <img class="content-match" src="2025-26/24th-match12-4.png">
-                                             <img class="content-match" src="2025-26/24th-match12-5.png">
-                                             <img class="content-match" src="2025-26/24th-match12-6.png">
-                                             <img class="content-match" src="2025-26/24th-match13.png">
                                              <img class="content-match" src="2025-26/24th-match14.png">
                                         </div>
                                         <div id="bottom24">
@@ -7105,13 +6942,13 @@
                               </ul>
                          </div>
                          <div class="link1" id="link-opacity">
-                              <a href="https://www.flashscore.com" id="links">
-                                   https://www.flashscore.com
+                              <a href="https://www.flashscore.com/match/football/manchester-city-Wtn9Stg0/manchester-united-ppjDR086/news/?mid=Q5AqCTPG" id="links">
+                                   https://www.flashscore.com/match/football/manchester-city-Wtn9Stg0/manchester-united-ppjDR086/news/?mid=Q5AqCTPG
                               </a>
                          </div>
                          <div class="link2" id="link-opacity">
-                              <a href="https://www.manutd.com" id="links">
-                                   https://www.manutd.com
+                              <a href="https://www.manutd.com/en/matches/matchcenter?matchId=2562110" id="links">
+                                   https://www.manutd.com/en/matches/matchcenter?matchId=2562110
                               </a>
                          </div>
                          <div class="link3" id="link-opacity">
@@ -7120,66 +6957,66 @@
                               </a>
                          </div>
                          <div class="link4" id="link-opacity">
-                              <a href="&nbsp;" id="links">
-                                   &nbsp;
+                              <a href="https://www.transfermarkt.com/premier-league/spieltag/wettbewerb/GB1/plus/?saison_id=2025&spieltag=22" id="links">
+                                   https://www.transfermarkt.com/premier-league/spieltag/wettbewerb/GB1/plus/?saison_id=2025&spieltag=22
                               </a>
                          </div>
                          <div class="link5" id="link-opacity">
-                              <a href="https://theanalyst.com" id="links">
-                                   https://theanalyst.com
+                              <a href="https://theanalyst.com/articles/man-utd-vs-man-city-stats-premier-league-01-2026" id="links">
+                                   https://theanalyst.com/articles/man-utd-vs-man-city-stats-premier-league-01-2026
                               </a>
                          </div>
                          <div class="link6" id="link-opacity">
-                              <a href="https://www.sofascore.com" id="links">
-                                   https://www.sofascore.com
+                              <a href="https://www.sofascore.com/football/match/manchester-united-manchester-city/rK#id:14025079" id="links">
+                                   https://www.sofascore.com/football/match/manchester-united-manchester-city/rK#id:14025079
                               </a>
                          </div>
                          <div class="link7" id="link-opacity">
-                              <a href="&nbsp;" id="links">
-                                   &nbsp;
+                              <a href="https://www.reddit.com/r/footballhighlights/comments/1qfvtaw/premier_league_mini_matches_mw22_all_matches_jan/" id="links">
+                                   https://www.reddit.com/r/footballhighlights/comments/1qfvtaw/premier_league_mini_matches_mw22_all_matches_jan/
                               </a>
                          </div>
                          <div class="link8" id="link-opacity">
-                              <a href="&nbsp;" id="links">
-                                   &nbsp;
+                              <a href="https://www.youtube.com/watch?v=mHcRPO21qlE" id="links">
+                                   https://www.youtube.com/watch?v=mHcRPO21qlE
                               </a>
                          </div>
                          <div class="link9" id="link-opacity">
-                              <a href="&nbsp;" id="links">
-                                   &nbsp;
+                              <a href="https://www.youtube.com/watch?v=KG71ZnRq6wE" id="links">
+                                   https://www.youtube.com/watch?v=KG71ZnRq6wE
                               </a>
                          </div>
                          <div class="link10" id="link-opacity">
-                              <a href="https://www.fullreplays.com" id="links">
-                                   https://www.fullreplays.com
+                              <a href="https://www.footreplays.com/england/premier-league/manchester-united-vs-manchester-city-2-17-01-2026/" id="links">
+                                   https://www.footreplays.com/england/premier-league/manchester-united-vs-manchester-city-2-17-01-2026/
                               </a>
                          </div>
                          <div class="link11" id="link-opacity">
-                              <a href="https://www.footreplays.com" id="links">
-                                   https://www.footreplays.com
+                              <a href="https://www.fullmatch-replay.org/manchester-united-vs-manchester-city-saturday-january-17-2026/" id="links">
+                                   https://www.fullmatch-replay.org/manchester-united-vs-manchester-city-saturday-january-17-2026/
                               </a>
                          </div>
                          <div class="link12" id="link-opacity">
-                              <a href="https://fullmatchsports.cc" id="links">
-                                   https://fullmatchsports.cc
+                              <a href="https://www.footballorgin.com/manchester-united-vs-manchester-city-full-match-17-january-2026/" id="links">
+                                   https://www.footballorgin.com/manchester-united-vs-manchester-city-full-match-17-january-2026/
                               </a>
                          </div>
                          <div class="link13" id="link-opacity">
-                              <a href="https://rutracker.org" id="links">
-                                   https://rutracker.org
+                              <a href="https://rutracker.org/forum/viewtopic.php?t=6803934" id="links">
+                                   https://rutracker.org/forum/viewtopic.php?t=6803934
                               </a>
                          </div>
                          <div class="link14" id="link-opacity">
-                              <a href="https://rutracker.org" id="links">
-                                   https://rutracker.org
+                              <a href="https://rutracker.org/forum/viewtopic.php?t=6803800" id="links">
+                                   https://rutracker.org/forum/viewtopic.php?t=6803800
                               </a>
                          </div>
                          <div class="link15" id="link-opacity">
-                              <a href="https://rutracker.org" id="links">
-                                   https://rutracker.org
+                              <a href="https://fullmatchsports.cc/manchester-united-vs-manchester-city-full-match-2025-26/" id="links">
+                                   https://fullmatchsports.cc/manchester-united-vs-manchester-city-full-match-2025-26/
                               </a>
                          </div>
-                    </li> -->
+                    </li>
                     
                     
                     <!-- <li class="dropdown_list" itemid="dropdown-matches" id="match25">
