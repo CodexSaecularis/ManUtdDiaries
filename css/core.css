@@ -25,6 +25,7 @@
 @font-face { font-family: Novarese-Book; src: url(../fonts/fonnts.com-ITC-Novarese-Book.ttf); }
 @font-face { font-family: Europa Nuova Bold; src: url(../fonts/EuropaNuovaBold.ttf); }
 @font-face { font-family: TSPmu2025; src: url(../fonts/TSPmu2025.otf); }
+@font-face { font-family: Josefin Sans; src: url(../fonts/JosefinSans-VariableFont_wght.ttf); }
 
 ::selection{
 	background-color: #ac141b;
@@ -904,7 +905,7 @@ ul.navlist {
 					   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
 }
 .line12 span3 {
-	font-family: Josefin Sans, Consolas, 'Courier New', monospace;
+	font-family: Josefin Sans;
 	font-size: 1.6vw;
 	position: absolute;
 	transform: translate(50%, 40%);
@@ -917,7 +918,7 @@ ul.navlist {
 					   0 0 160px #ffcf3e;
 }
 .line12 span4 {
-	font-family: Josefin Sans, Consolas, 'Courier New', monospace;
+	font-family: Josefin Sans;
 	font-size: 1.8vw;
 	position: absolute;
 	transform: translate(170%, 20%);
@@ -1896,7 +1897,7 @@ ul.navlist {
 .dropdown_li {
 	list-style: none;
 }
-#link-opacity { opacity: 1; }
+#link-opacity { opacity: 0; }
 .link1-pre {
 	position: absolute;
 	font-family: Agency FB;
@@ -2479,11 +2480,11 @@ ul.navlist {
 }
 .unitedkits-link {
 	position: absolute;
-	width: 40%;
+	width: 31%;
 	margin-top: -4%;
-	margin-left: 32.3%;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-size: 1vw;
+	margin-left: 37%;
+	font-family: Century Gothic;
+	font-size: .99vw;
 	font-weight: 900;
 	text-align: center;
 }
@@ -11951,8 +11952,8 @@ z-index: -1;
 		width: 45%;
 		margin-top: -5.5%;
 		margin-left: 39%;
-		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-		font-size: 2vw;
+		font-family: Century Gothic;
+		font-size: 1.7vw;
 		font-weight: 900;
 		text-align: center;
 	}
@@ -16709,7 +16710,7 @@ z-index: -1;
 						   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
 	}
 	.line12 span3 {
-		font-family: Josefin Sans, Consolas, 'Courier New', monospace;
+		font-family: Josefin Sans;
 		font-size: 3.5vw;
 		position: absolute;
 		transform: translate(100%, 50%);
@@ -16722,7 +16723,7 @@ z-index: -1;
 						   0 0 160px #ffcf3e;
 	}
 	.line12 span4 {
-		font-family: Josefin Sans, Consolas, 'Courier New', monospace;
+		font-family: Josefin Sans;
 		font-size: 3vw;
 		position: absolute;
 		transform: translate(300%, 10%);
