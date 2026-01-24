@@ -442,6 +442,10 @@ body {
 	color: #ce3400;
 	text-shadow: 0 0 2px #ce3400, 0 0 2px #ce3400, #ce3400, 0 0 2px #ce3400;
 }
+.scoreboard-UEL .UEL div span3 {
+	color: #ce3400;
+	text-shadow: 0 0 2px #ce3400, 0 0 2px #ce3400, #ce3400, 0 0 2px #ce3400;
+}
 
 /* PRE-SEASON */
 .scoreboard-PRE {
@@ -880,7 +884,6 @@ ul.navlist {
 .line12 span {
 	font-family: Zekton;
 	font-size: 1.8vw;
-	position: relative;
 	position: absolute;
 	transform: translate(-360%, 30%);
 	color: #fff;
@@ -2465,7 +2468,6 @@ ul.navlist {
 	height: 100%;
 	animation: spin-words 6s infinite;
 }
-/* ⟰ PLAYER STATS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* ⟱ KITS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .kits {
 	background-repeat: no-repeat;
@@ -5334,6 +5336,826 @@ ul.navlist {
 	animation-delay: 0.6s;
 }
 #button-score-news24:hover span {
+	animation-play-state: paused;
+}
+
+/* MATCH 25 */
+#button-score-news25 h89 { display: none; }
+#cover25-score {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .08%;
+}
+#cover25-news {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .095%;
+	z-index: -1;
+}
+#button-score-news25 {
+	border: none;
+	border-radius: .1vw;
+	position: absolute;
+	z-index: 2;
+	margin-top: -5.65%;
+	left: 40.8%;
+	width: 14.2%;
+	height: auto;
+	line-height: 1vw;
+	font-family: Lampen;
+	font-size: 1.2vw;
+	color: white;
+	background: #262626;
+	overflow: hidden;
+}
+#button-score-news25:hover {
+	color: black;
+	background: #ef0017;
+	box-shadow: 0 0 5px #ef0017,
+					   0 0 25px #ef0017,
+					   0 0 50px #ef0017,
+					   0 0 200px #ef0017;
+}
+/* 	MATCH 25 // BUTTON: ROTATE ANIMATION */
+#button-score-news25 span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 10%;
+	background: linear-gradient(90deg, transparent, #ef0017);
+	animation: rotate1 0.8s linear infinite;
+	animation-delay: 0s;
+}
+#button-score-news25 span:nth-child(3) {
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: .15vw;
+	background: linear-gradient(270deg, transparent, #ef0017);
+	animation: rotate3 0.8s linear infinite;
+	animation-delay: 0.4s;
+}
+#button-score-news25 span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #ef0017);
+	animation: rotate2 0.8s linear infinite;
+	animation-delay: 0.2s;
+}
+#button-score-news25 span:nth-child(4) {
+	bottom: -100%;
+	left: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #ef0017);
+	animation: rotate4 0.8s linear infinite;
+	animation-delay: 0.6s;
+}
+#button-score-news25:hover span {
+	animation-play-state: paused;
+}
+
+/* MATCH 26 */
+#button-score-news26 h89 { display: none; }
+#cover26-score {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .08%;
+}
+#cover26-news {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .095%;
+	z-index: -1;
+}
+#button-score-news26 {
+	border: none;
+	border-radius: .1vw;
+	position: absolute;
+	z-index: 2;
+	margin-top: -5.65%;
+	left: 40.8%;
+	width: 14.2%;
+	height: auto;
+	line-height: 1vw;
+	font-family: Lampen;
+	font-size: 1.2vw;
+	color: white;
+	background: #262626;
+	overflow: hidden;
+}
+#button-score-news26:hover {
+	color: black;
+	background: #ef0017;
+	box-shadow: 0 0 5px #ef0017,
+					   0 0 25px #ef0017,
+					   0 0 50px #ef0017,
+					   0 0 200px #ef0017;
+}
+/* 	MATCH 26 // BUTTON: ROTATE ANIMATION */
+#button-score-news26 span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 10%;
+	background: linear-gradient(90deg, transparent, #ef0017);
+	animation: rotate1 0.8s linear infinite;
+	animation-delay: 0s;
+}
+#button-score-news26 span:nth-child(3) {
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: .15vw;
+	background: linear-gradient(270deg, transparent, #ef0017);
+	animation: rotate3 0.8s linear infinite;
+	animation-delay: 0.4s;
+}
+#button-score-news26 span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #ef0017);
+	animation: rotate2 0.8s linear infinite;
+	animation-delay: 0.2s;
+}
+#button-score-news26 span:nth-child(4) {
+	bottom: -100%;
+	left: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #ef0017);
+	animation: rotate4 0.8s linear infinite;
+	animation-delay: 0.6s;
+}
+#button-score-news26:hover span {
+	animation-play-state: paused;
+}
+
+/* MATCH 27 */
+#button-score-news27 h89 { display: none; }
+#cover27-score {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .08%;
+}
+#cover27-news {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .095%;
+	z-index: -1;
+}
+#button-score-news27 {
+	border: none;
+	border-radius: .1vw;
+	position: absolute;
+	z-index: 2;
+	margin-top: -5.65%;
+	left: 40.8%;
+	width: 14.2%;
+	height: auto;
+	line-height: 1vw;
+	font-family: Lampen;
+	font-size: 1.2vw;
+	color: white;
+	background: #262626;
+	overflow: hidden;
+}
+#button-score-news27:hover {
+	color: black;
+	background: #ef0017;
+	box-shadow: 0 0 5px #ef0017,
+					   0 0 25px #ef0017,
+					   0 0 50px #ef0017,
+					   0 0 200px #ef0017;
+}
+/* 	MATCH 27 // BUTTON: ROTATE ANIMATION */
+#button-score-news27 span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 10%;
+	background: linear-gradient(90deg, transparent, #ef0017);
+	animation: rotate1 0.8s linear infinite;
+	animation-delay: 0s;
+}
+#button-score-news27 span:nth-child(3) {
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: .15vw;
+	background: linear-gradient(270deg, transparent, #ef0017);
+	animation: rotate3 0.8s linear infinite;
+	animation-delay: 0.4s;
+}
+#button-score-news27 span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #ef0017);
+	animation: rotate2 0.8s linear infinite;
+	animation-delay: 0.2s;
+}
+#button-score-news27 span:nth-child(4) {
+	bottom: -100%;
+	left: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #ef0017);
+	animation: rotate4 0.8s linear infinite;
+	animation-delay: 0.6s;
+}
+#button-score-news27:hover span {
+	animation-play-state: paused;
+}
+
+/* MATCH 28 */
+#button-score-news28 h89 { display: none; }
+#cover28-score {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .08%;
+}
+#cover28-news {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .095%;
+	z-index: -1;
+}
+#button-score-news28 {
+	border: none;
+	border-radius: .1vw;
+	position: absolute;
+	z-index: 2;
+	margin-top: -5.65%;
+	left: 40.8%;
+	width: 14.2%;
+	height: auto;
+	line-height: 1vw;
+	font-family: Lampen;
+	font-size: 1.2vw;
+	color: white;
+	background: #262626;
+	overflow: hidden;
+}
+#button-score-news28:hover {
+	color: black;
+	background: #ef0017;
+	box-shadow: 0 0 5px #ef0017,
+					   0 0 25px #ef0017,
+					   0 0 50px #ef0017,
+					   0 0 200px #ef0017;
+}
+/* 	MATCH 28 // BUTTON: ROTATE ANIMATION */
+#button-score-news28 span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 10%;
+	background: linear-gradient(90deg, transparent, #ef0017);
+	animation: rotate1 0.8s linear infinite;
+	animation-delay: 0s;
+}
+#button-score-news28 span:nth-child(3) {
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: .15vw;
+	background: linear-gradient(270deg, transparent, #ef0017);
+	animation: rotate3 0.8s linear infinite;
+	animation-delay: 0.4s;
+}
+#button-score-news28 span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #ef0017);
+	animation: rotate2 0.8s linear infinite;
+	animation-delay: 0.2s;
+}
+#button-score-news28 span:nth-child(4) {
+	bottom: -100%;
+	left: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #ef0017);
+	animation: rotate4 0.8s linear infinite;
+	animation-delay: 0.6s;
+}
+#button-score-news28:hover span {
+	animation-play-state: paused;
+}
+
+/* MATCH 29 */
+#button-score-news29 h89 { display: none; }
+#cover29-score {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .08%;
+}
+#cover29-news {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .095%;
+	z-index: -1;
+}
+#button-score-news29 {
+	border: none;
+	border-radius: .1vw;
+	position: absolute;
+	z-index: 2;
+	margin-top: -5.65%;
+	left: 40.8%;
+	width: 14.2%;
+	height: auto;
+	line-height: 1vw;
+	font-family: Lampen;
+	font-size: 1.2vw;
+	color: white;
+	background: #262626;
+	overflow: hidden;
+}
+#button-score-news29:hover {
+	color: black;
+	background: #ef0017;
+	box-shadow: 0 0 5px #ef0017,
+					   0 0 25px #ef0017,
+					   0 0 50px #ef0017,
+					   0 0 200px #ef0017;
+}
+/* 	MATCH 29 // BUTTON: ROTATE ANIMATION */
+#button-score-news29 span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 10%;
+	background: linear-gradient(90deg, transparent, #ef0017);
+	animation: rotate1 0.8s linear infinite;
+	animation-delay: 0s;
+}
+#button-score-news29 span:nth-child(3) {
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: .15vw;
+	background: linear-gradient(270deg, transparent, #ef0017);
+	animation: rotate3 0.8s linear infinite;
+	animation-delay: 0.4s;
+}
+#button-score-news29 span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #ef0017);
+	animation: rotate2 0.8s linear infinite;
+	animation-delay: 0.2s;
+}
+#button-score-news29 span:nth-child(4) {
+	bottom: -100%;
+	left: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #ef0017);
+	animation: rotate4 0.8s linear infinite;
+	animation-delay: 0.6s;
+}
+#button-score-news29:hover span {
+	animation-play-state: paused;
+}
+
+/* MATCH 30 */
+#button-score-news30 h89 { display: none; }
+#cover30-score {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .08%;
+}
+#cover30-news {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .095%;
+	z-index: -1;
+}
+#button-score-news30 {
+	border: none;
+	border-radius: .1vw;
+	position: absolute;
+	z-index: 2;
+	margin-top: -5.65%;
+	left: 40.8%;
+	width: 14.2%;
+	height: auto;
+	line-height: 1vw;
+	font-family: Lampen;
+	font-size: 1.2vw;
+	color: white;
+	background: #262626;
+	overflow: hidden;
+}
+#button-score-news30:hover {
+	color: black;
+	background: #ef0017;
+	box-shadow: 0 0 5px #ef0017,
+					   0 0 25px #ef0017,
+					   0 0 50px #ef0017,
+					   0 0 200px #ef0017;
+}
+/* 	MATCH 30 // BUTTON: ROTATE ANIMATION */
+#button-score-news30 span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 10%;
+	background: linear-gradient(90deg, transparent, #ef0017);
+	animation: rotate1 0.8s linear infinite;
+	animation-delay: 0s;
+}
+#button-score-news30 span:nth-child(3) {
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: .15vw;
+	background: linear-gradient(270deg, transparent, #ef0017);
+	animation: rotate3 0.8s linear infinite;
+	animation-delay: 0.4s;
+}
+#button-score-news30 span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #ef0017);
+	animation: rotate2 0.8s linear infinite;
+	animation-delay: 0.2s;
+}
+#button-score-news30 span:nth-child(4) {
+	bottom: -100%;
+	left: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #ef0017);
+	animation: rotate4 0.8s linear infinite;
+	animation-delay: 0.6s;
+}
+#button-score-news30:hover span {
+	animation-play-state: paused;
+}
+
+/* MATCH 31 */
+#button-score-news31 h89 { display: none; }
+#cover31-score {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .08%;
+}
+#cover31-news {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .095%;
+	z-index: -1;
+}
+#button-score-news31 {
+	border: none;
+	border-radius: .1vw;
+	position: absolute;
+	z-index: 2;
+	margin-top: -5.65%;
+	left: 40.8%;
+	width: 14.2%;
+	height: auto;
+	line-height: 1vw;
+	font-family: Lampen;
+	font-size: 1.2vw;
+	color: white;
+	background: #262626;
+	overflow: hidden;
+}
+#button-score-news31:hover {
+	color: black;
+	background: #ef0017;
+	box-shadow: 0 0 5px #ef0017,
+					   0 0 25px #ef0017,
+					   0 0 50px #ef0017,
+					   0 0 200px #ef0017;
+}
+/* 	MATCH 31 // BUTTON: ROTATE ANIMATION */
+#button-score-news31 span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 10%;
+	background: linear-gradient(90deg, transparent, #ef0017);
+	animation: rotate1 0.8s linear infinite;
+	animation-delay: 0s;
+}
+#button-score-news31 span:nth-child(3) {
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: .15vw;
+	background: linear-gradient(270deg, transparent, #ef0017);
+	animation: rotate3 0.8s linear infinite;
+	animation-delay: 0.4s;
+}
+#button-score-news31 span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #ef0017);
+	animation: rotate2 0.8s linear infinite;
+	animation-delay: 0.2s;
+}
+#button-score-news31 span:nth-child(4) {
+	bottom: -100%;
+	left: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #ef0017);
+	animation: rotate4 0.8s linear infinite;
+	animation-delay: 0.6s;
+}
+#button-score-news31:hover span {
+	animation-play-state: paused;
+}
+
+/* MATCH 32 */
+#button-score-news32 h89 { display: none; }
+#cover32-score {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .08%;
+}
+#cover32-news {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .095%;
+	z-index: -1;
+}
+#button-score-news32 {
+	border: none;
+	border-radius: .1vw;
+	position: absolute;
+	z-index: 2;
+	margin-top: -5.65%;
+	left: 40.8%;
+	width: 14.2%;
+	height: auto;
+	line-height: 1vw;
+	font-family: Lampen;
+	font-size: 1.2vw;
+	color: white;
+	background: #262626;
+	overflow: hidden;
+}
+#button-score-news32:hover {
+	color: black;
+	background: #ef0017;
+	box-shadow: 0 0 5px #ef0017,
+					   0 0 25px #ef0017,
+					   0 0 50px #ef0017,
+					   0 0 200px #ef0017;
+}
+/* 	MATCH 32 // BUTTON: ROTATE ANIMATION */
+#button-score-news32 span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 10%;
+	background: linear-gradient(90deg, transparent, #ef0017);
+	animation: rotate1 0.8s linear infinite;
+	animation-delay: 0s;
+}
+#button-score-news32 span:nth-child(3) {
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: .15vw;
+	background: linear-gradient(270deg, transparent, #ef0017);
+	animation: rotate3 0.8s linear infinite;
+	animation-delay: 0.4s;
+}
+#button-score-news32 span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #ef0017);
+	animation: rotate2 0.8s linear infinite;
+	animation-delay: 0.2s;
+}
+#button-score-news32 span:nth-child(4) {
+	bottom: -100%;
+	left: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #ef0017);
+	animation: rotate4 0.8s linear infinite;
+	animation-delay: 0.6s;
+}
+#button-score-news32:hover span {
+	animation-play-state: paused;
+}
+
+/* MATCH 33 */
+#button-score-news33 h89 { display: none; }
+#cover33-score {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .08%;
+}
+#cover33-news {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .095%;
+	z-index: -1;
+}
+#button-score-news33 {
+	border: none;
+	border-radius: .1vw;
+	position: absolute;
+	z-index: 2;
+	margin-top: -5.65%;
+	left: 40.8%;
+	width: 14.2%;
+	height: auto;
+	line-height: 1vw;
+	font-family: Lampen;
+	font-size: 1.2vw;
+	color: white;
+	background: #262626;
+	overflow: hidden;
+}
+#button-score-news33:hover {
+	color: black;
+	background: #ef0017;
+	box-shadow: 0 0 5px #ef0017,
+					   0 0 25px #ef0017,
+					   0 0 50px #ef0017,
+					   0 0 200px #ef0017;
+}
+/* 	MATCH 33 // BUTTON: ROTATE ANIMATION */
+#button-score-news33 span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 10%;
+	background: linear-gradient(90deg, transparent, #ef0017);
+	animation: rotate1 0.8s linear infinite;
+	animation-delay: 0s;
+}
+#button-score-news33 span:nth-child(3) {
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: .15vw;
+	background: linear-gradient(270deg, transparent, #ef0017);
+	animation: rotate3 0.8s linear infinite;
+	animation-delay: 0.4s;
+}
+#button-score-news33 span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #ef0017);
+	animation: rotate2 0.8s linear infinite;
+	animation-delay: 0.2s;
+}
+#button-score-news33 span:nth-child(4) {
+	bottom: -100%;
+	left: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #ef0017);
+	animation: rotate4 0.8s linear infinite;
+	animation-delay: 0.6s;
+}
+#button-score-news33:hover span {
+	animation-play-state: paused;
+}
+
+/* MATCH 34 */
+#button-score-news34 h89 { display: none; }
+#cover34-score {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .08%;
+}
+#cover34-news {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .095%;
+	z-index: -1;
+}
+#button-score-news34 {
+	border: none;
+	border-radius: .1vw;
+	position: absolute;
+	z-index: 2;
+	margin-top: -5.65%;
+	left: 40.8%;
+	width: 14.2%;
+	height: auto;
+	line-height: 1vw;
+	font-family: Lampen;
+	font-size: 1.2vw;
+	color: white;
+	background: #262626;
+	overflow: hidden;
+}
+#button-score-news34:hover {
+	color: black;
+	background: #ef0017;
+	box-shadow: 0 0 5px #ef0017,
+					   0 0 25px #ef0017,
+					   0 0 50px #ef0017,
+					   0 0 200px #ef0017;
+}
+/* 	MATCH 34 // BUTTON: ROTATE ANIMATION */
+#button-score-news34 span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 10%;
+	background: linear-gradient(90deg, transparent, #ef0017);
+	animation: rotate1 0.8s linear infinite;
+	animation-delay: 0s;
+}
+#button-score-news34 span:nth-child(3) {
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: .15vw;
+	background: linear-gradient(270deg, transparent, #ef0017);
+	animation: rotate3 0.8s linear infinite;
+	animation-delay: 0.4s;
+}
+#button-score-news34 span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #ef0017);
+	animation: rotate2 0.8s linear infinite;
+	animation-delay: 0.2s;
+}
+#button-score-news34 span:nth-child(4) {
+	bottom: -100%;
+	left: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #ef0017);
+	animation: rotate4 0.8s linear infinite;
+	animation-delay: 0.6s;
+}
+#button-score-news34:hover span {
 	animation-play-state: paused;
 }
 
@@ -8686,6 +9508,576 @@ ul.navlist {
 #button-stats24:hover h90 { color: rgb(211, 208, 208); }
 #stats-24th-match { display: none; }
 
+/* MATCH 25 */
+#button-stats25 h91 { display: none; }
+#button-stats25 {
+	border: none;
+	position: relative;
+	margin-top: 2%;
+	left: 30.2%;
+	width: 35%;
+	height: 2.2vw;
+	font-size: 1.3vw;
+	font-family: Manchester\ United\ 23-24\ Tipogra;
+	color: black;
+	background: transparent;
+	text-align: center;
+	z-index: 1;
+}
+#button-stats25:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: red;
+	opacity: .7;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: top;
+	transition: .2s;
+	top: -10%;
+	left: -3%;
+}
+#button-stats25:hover:before {
+	top: -20%;
+	left: 0;
+	transform: perspective(1000px) rotateX(80deg);
+}
+#button-stats25:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	opacity: .9;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: bottom;
+	transition: .2s;
+	bottom: -10%;
+	right: -1%;
+}
+#button-stats25:hover:after {
+	bottom: -20%;
+	right: 0;
+	transform: perspective(1000px) rotateX(-80deg);
+}
+#button-stats25:hover h90 { color: rgb(211, 208, 208); }
+#stats-25th-match { display: none; }
+
+/* MATCH 26 */
+#button-stats26 h91 { display: none; }
+#button-stats26 {
+	border: none;
+	position: relative;
+	margin-top: 2%;
+	left: 30.2%;
+	width: 35%;
+	height: 2.2vw;
+	font-size: 1.3vw;
+	font-family: Manchester\ United\ 23-24\ Tipogra;
+	color: black;
+	background: transparent;
+	text-align: center;
+	z-index: 1;
+}
+#button-stats26:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: red;
+	opacity: .7;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: top;
+	transition: .2s;
+	top: -10%;
+	left: -3%;
+}
+#button-stats26:hover:before {
+	top: -20%;
+	left: 0;
+	transform: perspective(1000px) rotateX(80deg);
+}
+#button-stats26:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	opacity: .9;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: bottom;
+	transition: .2s;
+	bottom: -10%;
+	right: -1%;
+}
+#button-stats26:hover:after {
+	bottom: -20%;
+	right: 0;
+	transform: perspective(1000px) rotateX(-80deg);
+}
+#button-stats26:hover h90 { color: rgb(211, 208, 208); }
+#stats-26th-match { display: none; }
+
+/* MATCH 27 */
+#button-stats27 h91 { display: none; }
+#button-stats27 {
+	border: none;
+	position: relative;
+	margin-top: 2%;
+	left: 30.2%;
+	width: 35%;
+	height: 2.2vw;
+	font-size: 1.3vw;
+	font-family: Manchester\ United\ 23-24\ Tipogra;
+	color: black;
+	background: transparent;
+	text-align: center;
+	z-index: 1;
+}
+#button-stats27:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: red;
+	opacity: .7;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: top;
+	transition: .2s;
+	top: -10%;
+	left: -3%;
+}
+#button-stats27:hover:before {
+	top: -20%;
+	left: 0;
+	transform: perspective(1000px) rotateX(80deg);
+}
+#button-stats27:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	opacity: .9;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: bottom;
+	transition: .2s;
+	bottom: -10%;
+	right: -1%;
+}
+#button-stats27:hover:after {
+	bottom: -20%;
+	right: 0;
+	transform: perspective(1000px) rotateX(-80deg);
+}
+#button-stats27:hover h90 { color: rgb(211, 208, 208); }
+#stats-27th-match { display: none; }
+
+/* MATCH 28 */
+#button-stats28 h91 { display: none; }
+#button-stats28 {
+	border: none;
+	position: relative;
+	margin-top: 2%;
+	left: 30.2%;
+	width: 35%;
+	height: 2.2vw;
+	font-size: 1.3vw;
+	font-family: Manchester\ United\ 23-24\ Tipogra;
+	color: black;
+	background: transparent;
+	text-align: center;
+	z-index: 1;
+}
+#button-stats28:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: red;
+	opacity: .7;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: top;
+	transition: .2s;
+	top: -10%;
+	left: -3%;
+}
+#button-stats28:hover:before {
+	top: -20%;
+	left: 0;
+	transform: perspective(1000px) rotateX(80deg);
+}
+#button-stats28:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	opacity: .9;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: bottom;
+	transition: .2s;
+	bottom: -10%;
+	right: -1%;
+}
+#button-stats28:hover:after {
+	bottom: -20%;
+	right: 0;
+	transform: perspective(1000px) rotateX(-80deg);
+}
+#button-stats28:hover h90 { color: rgb(211, 208, 208); }
+#stats-28th-match { display: none; }
+
+/* MATCH 29 */
+#button-stats29 h91 { display: none; }
+#button-stats29 {
+	border: none;
+	position: relative;
+	margin-top: 2%;
+	left: 30.2%;
+	width: 35%;
+	height: 2.2vw;
+	font-size: 1.3vw;
+	font-family: Manchester\ United\ 23-24\ Tipogra;
+	color: black;
+	background: transparent;
+	text-align: center;
+	z-index: 1;
+}
+#button-stats29:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: red;
+	opacity: .7;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: top;
+	transition: .2s;
+	top: -10%;
+	left: -3%;
+}
+#button-stats29:hover:before {
+	top: -20%;
+	left: 0;
+	transform: perspective(1000px) rotateX(80deg);
+}
+#button-stats29:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	opacity: .9;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: bottom;
+	transition: .2s;
+	bottom: -10%;
+	right: -1%;
+}
+#button-stats29:hover:after {
+	bottom: -20%;
+	right: 0;
+	transform: perspective(1000px) rotateX(-80deg);
+}
+#button-stats29:hover h90 { color: rgb(211, 208, 208); }
+#stats-29th-match { display: none; }
+
+/* MATCH 30 */
+#button-stats30 h91 { display: none; }
+#button-stats30 {
+	border: none;
+	position: relative;
+	margin-top: 2%;
+	left: 30.2%;
+	width: 35%;
+	height: 2.2vw;
+	font-size: 1.3vw;
+	font-family: Manchester\ United\ 23-24\ Tipogra;
+	color: black;
+	background: transparent;
+	text-align: center;
+	z-index: 1;
+}
+#button-stats30:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: red;
+	opacity: .7;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: top;
+	transition: .2s;
+	top: -10%;
+	left: -3%;
+}
+#button-stats30:hover:before {
+	top: -20%;
+	left: 0;
+	transform: perspective(1000px) rotateX(80deg);
+}
+#button-stats30:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	opacity: .9;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: bottom;
+	transition: .2s;
+	bottom: -10%;
+	right: -1%;
+}
+#button-stats30:hover:after {
+	bottom: -20%;
+	right: 0;
+	transform: perspective(1000px) rotateX(-80deg);
+}
+#button-stats30:hover h90 { color: rgb(211, 208, 208); }
+#stats-30th-match { display: none; }
+
+/* MATCH 31 */
+#button-stats31 h91 { display: none; }
+#button-stats31 {
+	border: none;
+	position: relative;
+	margin-top: 2%;
+	left: 30.2%;
+	width: 35%;
+	height: 2.2vw;
+	font-size: 1.3vw;
+	font-family: Manchester\ United\ 23-24\ Tipogra;
+	color: black;
+	background: transparent;
+	text-align: center;
+	z-index: 1;
+}
+#button-stats31:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: red;
+	opacity: .7;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: top;
+	transition: .2s;
+	top: -10%;
+	left: -3%;
+}
+#button-stats31:hover:before {
+	top: -20%;
+	left: 0;
+	transform: perspective(1000px) rotateX(80deg);
+}
+#button-stats31:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	opacity: .9;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: bottom;
+	transition: .2s;
+	bottom: -10%;
+	right: -1%;
+}
+#button-stats31:hover:after {
+	bottom: -20%;
+	right: 0;
+	transform: perspective(1000px) rotateX(-80deg);
+}
+#button-stats31:hover h90 { color: rgb(211, 208, 208); }
+#stats-31st-match { display: none; }
+
+/* MATCH 32 */
+#button-stats32 h91 { display: none; }
+#button-stats32 {
+	border: none;
+	position: relative;
+	margin-top: 2%;
+	left: 30.2%;
+	width: 35%;
+	height: 2.2vw;
+	font-size: 1.3vw;
+	font-family: Manchester\ United\ 23-24\ Tipogra;
+	color: black;
+	background: transparent;
+	text-align: center;
+	z-index: 1;
+}
+#button-stats32:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: red;
+	opacity: .7;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: top;
+	transition: .2s;
+	top: -10%;
+	left: -3%;
+}
+#button-stats32:hover:before {
+	top: -20%;
+	left: 0;
+	transform: perspective(1000px) rotateX(80deg);
+}
+#button-stats32:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	opacity: .9;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: bottom;
+	transition: .2s;
+	bottom: -10%;
+	right: -1%;
+}
+#button-stats32:hover:after {
+	bottom: -20%;
+	right: 0;
+	transform: perspective(1000px) rotateX(-80deg);
+}
+#button-stats32:hover h90 { color: rgb(211, 208, 208); }
+#stats-32nd-match { display: none; }
+
+/* MATCH 33 */
+#button-stats33 h91 { display: none; }
+#button-stats33 {
+	border: none;
+	position: relative;
+	margin-top: 2%;
+	left: 30.2%;
+	width: 35%;
+	height: 2.2vw;
+	font-size: 1.3vw;
+	font-family: Manchester\ United\ 23-24\ Tipogra;
+	color: black;
+	background: transparent;
+	text-align: center;
+	z-index: 1;
+}
+#button-stats33:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: red;
+	opacity: .7;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: top;
+	transition: .2s;
+	top: -10%;
+	left: -3%;
+}
+#button-stats33:hover:before {
+	top: -20%;
+	left: 0;
+	transform: perspective(1000px) rotateX(80deg);
+}
+#button-stats33:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	opacity: .9;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: bottom;
+	transition: .2s;
+	bottom: -10%;
+	right: -1%;
+}
+#button-stats33:hover:after {
+	bottom: -20%;
+	right: 0;
+	transform: perspective(1000px) rotateX(-80deg);
+}
+#button-stats33:hover h90 { color: rgb(211, 208, 208); }
+#stats-33rd-match { display: none; }
+
+/* MATCH 34 */
+#button-stats34 h91 { display: none; }
+#button-stats34 {
+	border: none;
+	position: relative;
+	margin-top: 2%;
+	left: 30.2%;
+	width: 35%;
+	height: 2.2vw;
+	font-size: 1.3vw;
+	font-family: Manchester\ United\ 23-24\ Tipogra;
+	color: black;
+	background: transparent;
+	text-align: center;
+	z-index: 1;
+}
+#button-stats34:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: red;
+	opacity: .7;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: top;
+	transition: .2s;
+	top: -10%;
+	left: -3%;
+}
+#button-stats34:hover:before {
+	top: -20%;
+	left: 0;
+	transform: perspective(1000px) rotateX(80deg);
+}
+#button-stats34:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	opacity: .9;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: bottom;
+	transition: .2s;
+	bottom: -10%;
+	right: -1%;
+}
+#button-stats34:hover:after {
+	bottom: -20%;
+	right: 0;
+	transform: perspective(1000px) rotateX(-80deg);
+}
+#button-stats34:hover h90 { color: rgb(211, 208, 208); }
+#stats-34th-match { display: none; }
+
 /* MATCH 35 */
 #button-stats35 h91 { display: none; }
 #button-stats35 {
@@ -10457,406 +11849,204 @@ z-index: -1;
 	}
 	/* ⟱ SELECT SEASON ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.select-season {
-		position: absolute;
 		margin-top: -17%;
 		margin-left: 13%;
-		z-index: 8;
 		width: 13vw;
-		height: 6vw;
 	}
 	.select-season-title {
 		width: 125%;
-		position: absolute;
-		text-align: center;
 		transform: translate(-22%, -15%);
-		pointer-events: none;
-		line-height: 1.7vw;
 	}
 	.select-season-title span1 {
-		font-family: QumpellkaNo12;
 		font-size: 1.7vw;
-		color: #b9c2d7;
-		text-shadow: 0 0 10px #17347a, 0 0 10px #17347a, 0 0 10px #17347a,
-						   0 0 20px #17347a, 0 0 20px #17347a,
-						   0 0 40px #17347a, 0 0 40px #17347a,
-						   0 0 80px #17347a, 0 0 80px #17347a, 0 0 80px #17347a,
-						   0 0 120px #17347a, 0 0 120px #17347a, 0 0 120px #17347a,
-						   0 0 160px #17347a, 0 0 160px #17347a;
 	}
 	.select-season-title span2 {
 		font-size: 1.7vw;
 	}
 	.select-season-title span3 {
-		font-family: Manchester\ United\ 23-24\ Tipogra;
 		font-size: 1.7vw;
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #13b48a, 0 0 10px #13b48a,
-						   0 0 20px #13b48a,
-						   0 0 40px #13b48a, 0 0 40px #13b48a,
-						   0 0 80px #13b48a,
-						   0 0 120px #13b48a, 0 0 120px #13b48a,
-						   0 0 160px #13b48a;
 	}
-	/* ⟰ SELECT SEASON ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ SCOREBOARD CAROUSEL ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* PREMIER LEAGUE */
 	.scoreboard-PL {
-		position: absolute;
 		width: 26.4%;
-		height: 2vw;
 		margin-top: -17.7%;
 		left: 36%;
 		line-height: 1.4vw;
-		background-size: cover;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 5;
-		cursor: pointer;
-		text-align: center;
 	}
 	.scoreboard-PL .PL div {
-		font-family: MarkPro;
 		font-size: 1.4vw;
-		color: #fff;
-		text-shadow: 0 0 1px #fff;
-		white-space: nowrap;
-		display: flex;
 	}
 	.scoreboard-PL .PL div span1 {
-		font-weight: 900;
 		/* ▲ */
 		font-size: 1vw;
 		margin-top: initial;
-		color: #028336;
-		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
 		/* ▼ */
-		/* font-size: 1vw;
-		margin-top: 1.2%;
-		color: #da020e;
-		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e; */
+		/* font-size: 1vw; */
 	}
 
 	/* CHAMPIONS LEAGUE */
 	.scoreboard-UCL {
-		position: absolute;
 		width: 26.4%;
-		height: 2vw;
 		margin-top: -17.7%;
 		left: 36%;
 		line-height: 1.3vw;
-		background-size: cover;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 5;
-		cursor: pointer;
-		text-align: center;
 	}
 	.scoreboard-UCL .UCL div {
-		font-family: Novarese-Book;
 		font-size: 1.6vw;
-		color: #fff;
-		font-weight: bold;
-		white-space: nowrap;
-		display: flex;
 	}
 	.scoreboard-UCL .UCL div span1 {
 		margin-top: .4%;
 		font-size: 1.4vw;
 	}
 	.scoreboard-UCL .UCL div span3 {
-		font-weight: 900;
 		/* ▲ */
 		font-size: 1vw;
 		margin-top: .5%;
-		color: #028336;
-		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
 		/* ▼ */
 		/* font-size: 1vw;
-		margin-top: .5%;
-		color: #da020e;
-		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e; */
+		margin-top: .5%; */
 	}
 
 	/* FA CUP */
 	.scoreboard-FA {
-		position: absolute;
 		width: 26.4%;
-		height: 2vw;
 		margin-top: -17.7%;
 		left: 36%;
 		line-height: 1.3vw;
-		background-size: cover;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 5;
-		cursor: pointer;
-		text-align: center;
 	}
 	.scoreboard-FA .FA div {
-		font-family: Europa Nuova Bold;
 		font-size: 1.4vw;
-		color: #fff;
-		text-shadow: 0 0 1px #fff;
-		white-space: nowrap;
-		display: flex;
-		animation: none;
-		text-align: center;
 	}
 
 	/* EFL CUP */
 	.scoreboard-EFL {
-		position: absolute;
 		width: 26.4%;
-		height: 2vw;
 		margin-top: -17.7%;
 		left: 36%;
 		line-height: 1.3vw;
-		background-size: cover;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 5;
-		cursor: pointer;
-		text-align: center;
 	}
 	.scoreboard-EFL .EFL div {
-		font-family: Europa Nuova Bold;
 		font-size: 1.3vw;
-		white-space: nowrap;
-		display: flex;
-		animation: none;
-		text-align: center;
 	}
 
 	/* EUROPA LEAGUE */
 	.scoreboard-UEL {
-		position: absolute;
 		width: 26.4%;
-		height: 2vw;
 		margin-top: -17.7%;
 		left: 36%;
 		line-height: 1.8vw;
-		background-size: cover;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 5;
-		cursor: pointer;
-		text-align: center;
 	}
 	.scoreboard-UEL .UEL div {
-		font-family: Europa Nuova Bold;
 		font-size: 1.4vw;
-		color: #fff;
-		font-weight: bold;
-		white-space: nowrap;
-		display: flex;
 	}
 	.scoreboard-UEL .UEL div span1 {
-		font-weight: 900;
 		/* ▲ */
 		margin-top: .1%;
 		font-size: 1vw;
-		color: #028336;
-		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
 		/* • */
 		/* margin-top: .3%;
-		font-size: 2.2vw;
-		color: gray;
-		text-shadow: 0 0 2px gray, 0 0 2px gray; */
+		font-size: 2.2vw; */
 		/* ▼ */
 		/* font-size: 1vw;
-		margin-top: .1%;
-		color: #da020e;
-		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e; */
+		margin-top: .1%; */
 	}
 
 	/* PRE-SEASON */
 	.scoreboard-PRE {
-		position: absolute;
 		width: 26.4%;
-		height: 2vw;
 		margin-top: -17.7%;
 		left: 36%;
 		line-height: 1.8vw;
-		background-size: cover;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 5;
-		cursor: pointer;
-		text-align: center;
 	}
 	.scoreboard-PRE .pre-season div {
-		font-family: Europa Nuova Bold;
 		font-size: 1.4vw;
 		color: black;
-		font-weight: bold;
-		white-space: nowrap;
-		display: flex;
 	}
 	/* ⟱ SCOREBOARD (TEAMS) ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.scoreboard-teams {
-		position: absolute;
 		width: 26.4%;
 		height: 3.4vw;
 		margin-top: -16%;
 		left: 36%;
-		text-align: center;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 7;
-		cursor: pointer;
-		font-family: myFont;
 		font-size: 1.6vw;
 		background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led-black.jpg);
 		background-size: 100% 120%;
 	}
 	/* ⟱ SCOREBOARD (RESULT) ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.scoreboard-result {
-		color: white;
-		position: absolute;
 		width: 6.8%;
 		height: 3.4vw;
 		line-height: 1.8vw;  
 		margin-top: -16%;
 		left: 55.6%;
-		display: flex;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 8;
-		cursor: pointer;
-		font-family: myFont;
 		font-size: 1.6vw;
-		background: transparent;
-		text-align: center;
 	}
 	.final-fair {
 		background: linear-gradient(rgba(254,29,18,0.7), rgba(254,29,18,0.7)), url(../parallax/led-black.jpg);
-		position: absolute;
 		background-size: 60% 300%;
-		right: 0;
 	}
 	.scoreboard-result2 {
-		color: white;
-		position: absolute;
 		width: 6.8%;
 		height: 3.4vw;
 		line-height: 1.8vw;
 		margin-top: -16%;
 		left: 55.6%;
-		display: flex;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 7;
-		cursor: pointer;
-		font-family: myFont;
 		font-size: 1.6vw;
-		background: transparent;
-		background-size: 150% 150%;
-		text-align: center;
 	}
 	.final-fair2 {
-		color: #ffcf3e;
 		background: linear-gradient(rgba(2,131,54,0.8), rgba(2,131,54,0.8)), url(../parallax/led-black.jpg);
-		position: absolute;
 		background-size: 60% 300%;
-		right: 0;
 	}
 	/* ⟰ SCOREBOARD (RESULT) ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ OT BANNERS CAROUSEL ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.OT-banners {
-		position: absolute;
 		width: 25.7%;
 		margin-top: -19.3%;
 		left: 68.2%;
-		display: flex;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 1;
 	}
 	.banners {
   		height: 4.8vw;
-  		display: flex;
-  		justify-content: center;
-  		animation: slide1 200s linear infinite;
 	}
 	/* ⟰ OT BANNERS CAROUSEL ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ CLOCK ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.clock {
-		position: absolute;
 		height: 3.5vw;
 		width: 25.7%;
 		margin-top: -16%;
 		left: 68.2%;
-		display: flex;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 7;
-		font-family: Lampen;
 		font-size: 1.6vw;
-		line-height: 5.5vw;
-		background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led-black.jpg);
-		background-size: 80% 110%;
-		text-align: center;
-		align-items: center;
 	}
 	.clock-vertical-stripe1 {
-		width: .4%;
 		height: 3.5vw;
 		margin-top: -16%;
 		left: 68.2%;
-		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;
-		position: absolute;
-		z-index: 7;
 	}
 	.clock-vertical-stripe2 {
-		width: .4%;
 		height: 3.5vw;
 		margin-top: -16%;
 		left: 68.5%;
-		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;
-		position: absolute;
-		z-index: 7;
 	}
 	.clock-vertical-stripe3 {
-		width: .4%;
 		height: 3.5vw;
 		margin-top: -16%;
 		left: 75.2%;
-		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;
-		position: absolute;
-		z-index: 7;
 	}
 	.clock-vertical-stripe4 {
-		width: .4%;
 		height: 3.5vw;
 		margin-top: -16%;
 		left: 75.5%;
-		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;
-		position: absolute;
-		z-index: 7;
 	}
 	.republik-of-mancunia {
-		display: initial;
-		transform: translateX(62%);
 		font-size: 1.6vw;
-		letter-spacing: 2px;
-		line-height: 1.3vw;
 	}
 	/* ⟱ IRONS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.irons {
-		position: relative;
-		object-fit: cover;
-		width: 95%;
-		left: 2.96%;
 		z-index: -2;
 		margin-top: -19%;
 	}
 	/* ⟱ BRICKS AND TROPHIES ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.bricks {
-		position: relative;
 		margin-top: -50%;
 		width: 200%;
 		left: -44%;
@@ -10871,14 +12061,7 @@ z-index: -1;
 	#cable-box { display: none; }
 	/* ⟱ GALLERY PHOTO TEXT ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.brick-wall h2, h3, h4, h5, h6, h7 {
-		position: absolute;
-		display: inline-block;
-		width: 13.15%;
 		margin-top: -9%;
-		font-family: raleway_f;
-		font-size: 1vw;
-		text-align: center;
-		z-index: 2;
 	}
 	/* ⟱ GALLERY ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.blur-pc { display: none; }
@@ -10898,337 +12081,149 @@ z-index: -1;
 	}
 	/* ⟱ GALLERY PHOTO: SHOW TEXT BUTTON ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#button-gallery1 {
-		border: none;
-		position: absolute;
 		margin-top: -41.7%;
-		left: 3.7%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
 	}
 	#button-gallery2 {
-		border: none;
-		position: absolute;
 		margin-top: -41.7%;
-		left: 17.3%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
 	}
 	#button-gallery3 {
-		border: none;
-		position: absolute;
 		margin-top: -41.7%;
-		left: 30.9%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
 	}
 	#button-gallery4 {
-		border: none;
-		position: absolute;
 		margin-top: -41.7%;
-		left: 53.3%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
 	}
 	#button-gallery5 {
-		border: none;
-		position: absolute;
 		margin-top: -41.7%;
-		left: 53.3%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
 	}
 	#button-gallery6 {
-		border: none;
-		position: absolute;
 		margin-top: -41.7%;
-		left: 66.9%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
 	}
 	#button-gallery7 {
-		border: none;
-		position: absolute;
 		margin-top: -41.7%;
-		left: 80.4%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
 	}
 	#show-gallery {
-		display: none;
 		margin-top: -20.59%;
-		position: absolute;
 	}
 	/* ⟰ GALLERY PHOTO: SHOW TEXT BUTTON ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ GALLERY: SHOW TEXT BUTTON ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#button-read-text {
-		border: none;
-		border-radius: 0 0 1.5vw 1.5vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -30%;
-		left: 42.8%;
-		width: 15%;
-		height: 3vw;
 		font-size: 1.1vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: white;
-		background: url(../core/button.png), #820202;
-		background-size: 100% 100%;
 	}
 	#button-read-text span1 { display: none; }
 	#button-read-text span2 { display: initial; }
 	#show-expectations {
-		display: none;
-		margin-top: -6%;
-		position: absolute;
+		margin-top: -6.1%;
 	}
 	/* ⟱ LEGEND TO THE MATCH RATINGS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.legend {
-		position: relative;
 		margin-top: 23%;
-		z-index: 2;
 	}
 	.legend-1 {
-		position: absolute;
 		left: 20.3%;
 		width: 2.5%;
-		background: radial-gradient(#e61b22, #9d0e16);
-		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16,
-						   0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 25px #9d0e16, 0 0 5px #9d0e16,
-						   0 0 50px #9d0e16;
-		font-family: Century Gothic;
 		font-size: 1.3vw;
-		text-align: center;
 		line-height: 2.2vw;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	.legend-2 {
-		position: absolute;
 		left: 25.8%;
 		width: 2.5%;
-		background: radial-gradient(#eb6121, #9a360a);
-		box-shadow: 0 0 5px #9a360a, 0 0 5px #9a360a, 0 0 15px #9a360a, 0 0 5px #9a360a,
-						   0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 25px #9a360a, 0 0 5px #9a360a,
-						   0 0 50px #9a360a;
-		font-family: Century Gothic;
 		font-size: 1.3vw;
-		text-align: center;
 		line-height: 2.2vw;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	.legend-3 {
-		position: absolute;
 		left: 31.3%;
 		width: 2.5%;
-		background: radial-gradient(#fcc00d, #997000);
-		box-shadow: 0 0 5px #997000, 0 0 5px #997000, 0 0 15px #997000, 0 0 5px #997000,
-						   0 0 25px #997000, 0 0 25px #997000, 0 0 25px #997000, 0 0 5px #997000,
-						   0 0 50px #997000;
-		font-family: Century Gothic;
 		font-size: 1.3vw;
-		text-align: center;
 		line-height: 2.2vw;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	.legend-4 {
-		position: absolute;
 		left: 36.8%;
 		width: 2.5%;
-		background: radial-gradient(#c5b700, #7f7501);
-		box-shadow: 0 0 5px #7f7501, 0 0 5px #7f7501, 0 0 15px #7f7501, 0 0 5px #7f7501,
-						   0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 25px #7f7501, 0 0 5px #7f7501,
-						   0 0 50px #7f7501;
-		font-family: Century Gothic;
 		font-size: 1.3vw;
-		text-align: center;
 		line-height: 2.2vw;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	.legend-5 {
-		position: absolute;
 		left: 42.3%;
 		width: 2.5%;
-		background: radial-gradient(#88c03c, #4a681f);
-		box-shadow: 0 0 5px #4a681f, 0 0 5px #4a681f, 0 0 15px #4a681f, 0 0 5px #4a681f,
-						   0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 25px #4a681f, 0 0 5px #4a681f,
-						   0 0 50px #4a681f;
-		font-family: Century Gothic;
 		font-size: 1.3vw;
-		text-align: center;
 		line-height: 2.2vw;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	.legend-6 {
-		position: absolute;
 		left: 47.8%;
 		width: 2.5%;
-		background: radial-gradient(#47813d, #2b4c24);
-		box-shadow: 0 0 5px #2b4c24, 0 0 5px #2b4c24, 0 0 15px #2b4c24, 0 0 5px #2b4c24,
-						   0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 25px #2b4c24, 0 0 5px #2b4c24,
-						   0 0 50px #2b4c24;
-		font-family: Century Gothic;
 		font-size: 1.3vw;
-		text-align: center;
 		line-height: 2.2vw;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	.legend-7 {
-		position: absolute;
 		left: 53.3%;
 		width: 2.5%;
-		background: radial-gradient(#009f4d, #015326);
-		box-shadow: 0 0 5px #015326, 0 0 5px #015326, 0 0 15px #015326, 0 0 5px #015326,
-						   0 0 25px #015326, 0 0 25px #015326, 0 0 25px #015326, 0 0 5px #015326,
-						   0 0 50px #015326;
-		font-family: Century Gothic;
 		font-size: 1.3vw;
-		text-align: center;
 		line-height: 2.2vw;
-		text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 	}
 	.legend-7 span {
-		text-align: left;
-		position: absolute;
-		width: 700%;
 		font-size: 1.3vw;
-		transform: translateX(8%);
 	}
 	.legend-8 {
-		position: absolute;
 		left: 74.5%;
 		width: 5.3%;
-		font-family: Century Gothic;
 		font-size: 1.3vw;
-		color: white;
 		line-height: 2.1vw;
-		border: 1px solid #404040;
-		background: linear-gradient(to bottom right, #262626 calc(50% - 3px),  #404040 calc(50% - 1px), #262626 50%, #262626 50%);
 	}
 	#first-half { transform: translate(9%, 5%); }
 	#second-half { transform: translate(48%, 0%); }
 	/* ⟰ LEGEND TO THE MATCH RATINGS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ SCORE & RATINGS: BUTTON ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#button-ratings {
-		border: none;
-		border-radius: 1.5vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: 7.3%;
 		left: 36.5%;
 		width: 27%;
-		height: 3vw;
 		font-size: 1.3vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: white;
-		background: url(../core/button.png), #820202;
-		background-size: 100% 100%;
-	}
-	#button-ratings:hover {
-		color: #f0f50c;
-		background: url(../core/button.png), radial-gradient(#ef0017 -20%, #820202);
-		background-size: 100% 100%;
-		box-shadow: 0 0 5px #9d0e16, 0 0 5px #9d0e16, 0 0 15px #9d0e16, 0 0 5px #9d0e16;
 	}
 	#button-ratings span1 { display: none; }
 	#button-ratings span2 { display: initial; }
 	/* ⟱ DATE, FIXTURE AND RESULT ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.date-and-result h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {  /* 1st row */
-		position: absolute;
-		display: inline-block;
 		width: 9.8%;
 		margin-top: 13.32%;
-		font-family: Century Gothic;
-		color: white;
 		font-size: 1.3vw;
-		text-align: center;
 		padding-top: 2.7%;
-		z-index: 4;
 	}
 	.date-and-result h18, h19, h20, h21, h22, h23, h24, h25, h26, h27 {  /* 2nd row */
-		position: absolute;
-		display: inline-block;
 		width: 9.8%;
 		margin-top: 20.9%;
-		font-family: Century Gothic;
-		color: white;
 		font-size: 1.3vw;
-		text-align: center;
 		padding-top: 2.7%;
-		z-index: 4;
 	}
 	.date-and-result h28, h29, h30, h31, h32, h33, h34, h35, h36, h37 {  /* 3rd row */
-		position: absolute;
-		display: inline-block;
 		width: 9.8%;
 		margin-top: 28.48%;
-		font-family: Century Gothic;
-		color: white;
 		font-size: 1.3vw;
-		text-align: center;
 		padding-top: 2.7%;
-		z-index: 4;
 	}
 	.date-and-result h38, h39, h40, h41, h42, h43, h44, h45, h46, h47 {  /* 4th row */
-		position: absolute;
-		display: inline-block;
 		width: 9.8%;
 		margin-top: 36.13%;
-		font-family: Century Gothic;
-		color: white;
 		font-size: 1.3vw;
-		text-align: center;
 		padding-top: 2.7%;
-		z-index: 4;
 	}
 	.date-and-result h48, h49, h50, h51, h52, h53, h54, h55, h56, h57 {  /* 5th row */
-		position: absolute;
-		display: inline-block;
 		width: 9.8%;
 		margin-top: 43.71%;
-		font-family: Century Gothic;
-		color: white;
 		font-size: 1.3vw;
-		text-align: center;
 		padding-top: 2.7%;
-		z-index: 4;
 	}
 	.date-and-result h58, h59, h60, h61, h62, h63, h64, h65, h66, h67 {  /* 6th row */
-		position: absolute;
-		display: inline-block;
 		width: 9.8%;
 		margin-top: 51.29%;
-		font-family: Century Gothic;
-		color: white;
 		font-size: 1.3vw;
-		text-align: center;
 		padding-top: 2.7%;
-		z-index: 4;
 	}
 	.date-and-result h68, h69, h70, h71, h72, h73, h74, h75, h76, h77 {  /* 7th row */
-		position: absolute;
-		display: inline-block;
 		width: 9.8%;
 		margin-top: 58.87%;
-		font-family: Century Gothic;
-		color: white;
 		font-size: 1.3vw;
-		text-align: center;
 		padding-top: 2.7%;
-		z-index: 4;
 	}
 	.date-and-result h8, h18, h28, h38, h48, h58, h68 {
 		left: 1.7%;
@@ -11266,8 +12261,6 @@ z-index: -1;
 	/* ⟰ DATE, FIXTURE AND RESULT ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ MATCH RATINGS ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#match-ratings {
-		display: none;
-		position: absolute;
 		margin-top: .5%;
 		left: -19%;
 		width: 137%;
@@ -11281,681 +12274,257 @@ z-index: -1;
 	.vertical-neon-signs { display: none; }
 	/* ⟱ DROPDOWNS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdowns-section {
-		position: relative;
 		margin-top: 110%;
 		margin-left: -29.5vw;
-		height: 150vw;
-		z-index: 2;
 	}
 	.dropdown_list:has( :checked ) {
-		--rows: 1fr;
-		--open-display: none;
-		--close-display: inline-block;
-		--links-display: flex;
 		--spins-display: none !important;
 	}
 	.open {
-		position: absolute;
-		font-family: Trueno Round Italic;
 		font-size: 1.8vw;
-		letter-spacing: .05vw;
 		margin-top: 8%;
 		left: 49.5%;
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #da020e, 0 0 10px #da020e,
-						   0 0 20px #da020e,
-						   0 0 40px #da020e,
-						   0 0 80px #da020e,
-						   0 0 120px #da020e;
-		display: var(--open-display) !important;
 	}
 	.open2 {
-		position: absolute;
-		font-family: Trueno Round Italic;
 		font-size: 1.8vw;
-		letter-spacing: .05vw;
 		margin-top: 8%;
 		left: 47%;
-		color: #f8cccf;
-		text-shadow: 0 0 10px #028336, 0 0 10px #028336, 0 0 10px #028336,
-						   0 0 20px #028336, 0 0 20px #028336,
-						   0 0 40px #028336,
-						   0 0 80px #028336,
-						   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
-						   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
-		display: var(--open-display) !important;
 	}
 	.close {
-		position: absolute;
-		font-family: Trueno Round Italic;
 		font-size: 1.8vw;
-		letter-spacing: .05vw;
 		margin-top: 8%;
 		left: 69%;
-		color: #fff;
-		text-shadow: 0 0 10px #fff,
-						   0 0 20px #fff,
-						   0 0 40px #fff,
-						   0 0 80px #fff,
-						   0 0 120px #fff,
-						   0 0 160px #fff;
-		display: var(--close-display, none) !important;
 	}
 	.close2 {
-		position: absolute;
-		font-family: Trueno Round Italic;
 		font-size: 1.8vw;
-		letter-spacing: .05vw;
 		margin-top: 8%;
 		left: 71.5%;
-		color: white;
-		text-shadow: 0 0 10px #ffcf3e,
-						   0 0 20px #ffcf3e,
-						   0 0 40px #ffcf3e,
-						   0 0 80px #ffcf3e,
-						   0 0 120px #ffcf3e,
-						   0 0 160px #ffcf3e;
-		display: var(--close-display, none) !important;
 	}
 	.hide-PL {
-		position: absolute;
-		background: url(../core/hide-PL.png);
-		background-size: 100%;
-		font-family: 'Courier New', Courier, monospace;
 		font-size: 6.8vw;
 		top: 29.7%;
 		left: 57.34%;
-		display: var(--close-display, none) !important;
 	}
 	.hide-UCL {
-		position: absolute;
-		background: url(../core/hide-UCL.png);
-		background-size: 100%;
-		font-family: 'Courier New', Courier, monospace;
 		font-size: 6.8vw;
 		top: 29.7%;
 		left: 57.34%;
-		display: var(--close-display, none) !important;
 	}
 	.hide-FA {
-		position: absolute;
-		background: url(../core/hide-FA.png);
-		background-size: 100%;
-		font-family: 'Courier New', Courier, monospace;
 		font-size: 6.8vw;
 		top: 29.7%;
 		left: 57.34%;
-		display: var(--close-display, none) !important;
 	}
 	.hide-EFL {
-		position: absolute;
-		background: url(../core/hide-EFL.png);
-		background-size: 100%;
-		font-family: 'Courier New', Courier, monospace;	
 		font-size: 6.8vw;
 		top: 29.7%;
 		left: 57.34%;
-		display: var(--close-display, none) !important;
 	}
 	.hide-UEL {
-		position: absolute;
-		background: url(../core/hide-UEL.png);
-		background-size: 100%;
-		font-family: 'Courier New', Courier, monospace;	
 		font-size: 6.8vw;
 		top: 29.7%;
 		left: 57.34%;
-		display: var(--close-display, none) !important;
 	}
 	.hide-CS {
-		position: absolute;
-		background: url(../core/hide-CS.png);
-		background-size: 100%;
-		font-family: 'Courier New', Courier, monospace;	
 		font-size: 6.8vw;
 		top: 29.7%;
 		left: 57.34%;
-		display: var(--close-display, none) !important;
 	}
 	.hide-EC {
-		position: absolute;
-		background: url(../core/hide-EC.png);
-		background-size: 100%;
-		font-family: 'Courier New', Courier, monospace;
 		font-size: 6.8vw;
 		top: 29.7%;
 		left: 57.34%;
-		display: var(--close-display, none) !important;
 	}
 	.link1 {
-		position: absolute;
-		font-family: Agency FB;
 		font-size: 2.1vw;
 		margin-top: -45.8%;
 		margin-left: 51.1%;
 		text-wrap: nowrap;
-		display: var(--links-display, none) !important;
 	}
 	.link2 {
-		position: absolute;
-		font-family: Agency FB;
 		font-size: 2.1vw;
 		margin-top: -44%;
 		margin-left: 51.1%;
 		text-wrap: nowrap;
-		display: var(--links-display, none) !important;
 	}
 	.link3 {
-		position: absolute;
-		font-family: Agency FB;
 		font-size: 2.1vw;
 		margin-top: -40.42%;
 		margin-left: 51.1%;
 		text-wrap: nowrap;
-		display: var(--links-display, none) !important;
 	}
 	.link4 {
-		position: absolute;
-		font-family: Agency FB;
 		font-size: 2.1vw;
 		margin-top: -38.6%;
 		margin-left: 51.1%;
 		text-wrap: nowrap;
-		display: var(--links-display, none) !important;
 	}
 	.link5 {
-		position: absolute;
-		font-family: Agency FB;
 		font-size: 2.1vw;
 		margin-top: -35%;
 		margin-left: 51.1%;
 		text-wrap: nowrap;
-		display: var(--links-display, none) !important;
 	}
 	.link6 {
-		position: absolute;
-		font-family: Agency FB;
 		font-size: 2.1vw;
 		margin-top: -33.2%;
 		margin-left: 51.1%;
 		text-wrap: nowrap;
-		display: var(--links-display, none) !important;
 	}
 	.link7 {
-		position: absolute;
-		font-family: Agency FB;
 		font-size: 2.1vw;
 		margin-top: -29.8%;
 		margin-left: 54.2%;
 		text-wrap: nowrap;
-		display: var(--links-display, none) !important;
 	}
 	.link8 {
-		position: absolute;
-		font-family: Agency FB;
 		font-size: 2.1vw;
 		margin-top: -28%;
 		margin-left: 54.2%;
 		text-wrap: nowrap;
-		display: var(--links-display, none) !important;
 	}
 	.link9 {
-		position: absolute;
-		font-family: Agency FB;
 		font-size: 2.1vw;
 		margin-top: -26.1%;
 		margin-left: 54.2%;
 		text-wrap: nowrap;
-		display: var(--links-display, none) !important;
 	}
 	.link10 {
-		position: absolute;
-		font-family: Agency FB;
 		font-size: 2.1vw;
 		margin-top: -22.5%;
 		margin-left: 51.1%;
 		text-wrap: nowrap;
-		display: var(--links-display, none) !important;
 	}
 	.link11 {
-		position: absolute;
-		font-family: Agency FB;
 		font-size: 2.1vw;
 		margin-top: -20.6%;
 		margin-left: 51.1%;
 		text-wrap: nowrap;
-		display: var(--links-display, none) !important;
 	}
 	.link12 {
-		position: absolute;
-		font-family: Agency FB;
 		font-size: 2.1vw;
 		margin-top: -18.8%;
 		margin-left: 51.1%;
 		text-wrap: nowrap;
-		display: var(--links-display, none) !important;
 	}
 	.link13 {
-		position: absolute;
-		font-family: Agency FB;
 		font-size: 2.1vw;
 		margin-top: -15.3%;
 		margin-left: 51.1%;
 		text-wrap: nowrap;
-		display: var(--links-display, none) !important;
 	}
 	.link14 {
-		position: absolute;
-		font-family: Agency FB;
 		font-size: 2.1vw;
 		margin-top: -13.5%;
 		margin-left: 51.1%;
 		text-wrap: nowrap;
-		display: var(--links-display, none) !important;
 	}
 	.link15 {
-		position: absolute;
-		font-family: Agency FB;
 		font-size: 2.1vw;
 		margin-top: -11.7%;
 		margin-left: 51.1%;
 		text-wrap: nowrap;
-		display: var(--links-display, none) !important;
 	}
 	.dropdown-content {
 		width: 122%;
-		height: 100%;
 	}
 	.content-match {
 		width: 116.3%;
-		height: 100%;
 	}
 	.content-match1 {
-		margin-top: -.7%;
 		width: 116.3%;
-		height: 100%;
 	}
 	.content-match2 {
-		margin-top: -.2%;
 		width: 116.3%;
-		height: 100%;
 	}
 	.content-match3 {
 		margin-top: -1.8%;
 		width: 116.3%;
-		height: 100%;
 	}
 	/* ⟰ DROPDOWNS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ TRANSFERS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdown-transfers {
-		background-image: url(../core/transfers.png);
 		background-size: 122% 100%;
-		color: white;
 		padding: 7.2vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.transfers-title {
-		position: absolute;
-		font-family: Delight;
 		font-size: 5vw;
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #13b48a, 0 0 10px #13b48a,
-						   0 0 20px #13b48a,
-						   0 0 40px #13b48a, 0 0 40px #13b48a,
-						   0 0 80px #13b48a,
-						   0 0 120px #13b48a, 0 0 120px #13b48a,
-						   0 0 160px #13b48a;
 		transform: translate(248%, -10%);
-		margin-right: 20%;
-		pointer-events: none;
 	}
 	.transfers-title span1 {
-		font-family: Ketosag Condensed;
 		font-size: 5vw;
 	}
 	/* ⟱ STATS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdown-stats {
-		background-image: url(../core/stats.png);
 		background-size: 122% 100%;
-		color: white;
 		padding: 7.2vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.stats-title {
-		position: absolute;
-		font-family: Better Grade;
 		font-size: 9vw;
-		color: #f8cccf;
-		text-shadow: 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e,
-						   0 0 20px #da020e,
-						   0 0 40px #da020e,
-						   0 0 80px #da020e,
-						   0 0 120px #da020e;
 		margin-top: 1%;
 		left: 64%;
-		pointer-events: none;
-	}
-	.stats-title span1 {
-		position: absolute;
-		font-family: myFont;
-		font-size: 4vw;
-		transform: translate(-100%, 90%);
-		color: #ffdccc;
-		text-shadow: 0 0 10px #ffb330, 0 0 10px #ffb330, 0 0 10px #ffb330, 0 0 10px #ffb330,
-						   0 0 20px #fe5201, 0 0 20px #fe5201, 0 0 20px #fe5201,
-						   0 0 40px #fe5201, 0 0 40px #fe5201,
-						   0 0 80px #fe5201, 0 0 80px #fe5201,
-						   0 0 120px #fe5201, 0 0 120px #fe5201;
 	}
 	/* ⟱ PLAYER PERFORMANCE ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdown-player-performance {
-		background-image: url(../core/player-perf.png);
 		background-size: 122% 100%;
-		color: white;
 		padding: 7.2vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.player-performance-title {
-		position: absolute;
-		font-family: Majanan;
 		font-size: 6vw;
 		font-weight: 900;
-		letter-spacing: 0.3vw;
-		color: #fff;
-		text-shadow: 0 0 10px #d821c3,
-						   0 0 20px #d821c3,
-						   0 0 40px #d821c3,
-						   0 0 80px #d821c3,
-						   0 0 120px #d821c3,
-						   0 0 160px #d821c3;
 		margin-top: 1%;
 		left: 53%;
-		pointer-events: none;
 	}
 	.player-performance-title span1 {
 		font-size: 4vw;
 	}
 	/* ⟱ PLAYER STATS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdown-player-stats {
-		background-image: url(../core/player-stats.png);
 		background-size: 122% 100%;
-		color: white;
 		padding: 7.2vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.player-stats-title {
-		position: absolute;
-		font-family: Uppen Arms NF;
 		font-size: 3.5vw;
-		color: #b9c2d7;
-		text-shadow: 0 0 10px #17347a, 0 0 10px #17347a, 0 0 10px #17347a,
-						   0 0 20px #17347a, 0 0 20px #17347a,
-						   0 0 40px #17347a, 0 0 40px #17347a,
-						   0 0 80px #17347a, 0 0 80px #17347a, 0 0 80px #17347a,
-						   0 0 120px #17347a, 0 0 120px #17347a, 0 0 120px #17347a,
-						   0 0 160px #17347a, 0 0 160px #17347a;
 		margin-right: 20%;
 		left: 52.5%;
-		pointer-events: none;
 	}
 	/* ⟱ ON HOVER BADGES ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.badge-container-league {
-		/* border: solid 1px red; */
-		position: absolute;
 		margin-top: -30.6%;
 		margin-left: 26%;
 		width: 92.5vw;
 		height: 37vw;
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-	}
-	.badge1 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge2 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge3 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge4 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge5 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge6 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge7 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge8 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge9 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge10 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge11 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge12 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge13 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge14 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge15 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge16 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge17 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge18 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge19 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge20 {
-		width: 5%;
-		height: 100%;
 	}
 
 	.badge-container-league2 {
-		/* border: solid 1px red; */
-		position: absolute;
 		margin-top: -26%;
 		margin-left: 90.2%;
 		width: 9.3vw;
 		height: 31.5vw;
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-	}
-	.badge21 {
-		width: 50%;
-		height: 100%;
-	}
-	.badge22 {
-		width: 50%;
-		height: 100%;
 	}
 
 	.badge-container-othercomps1 {
-		/* border: solid 1px red; */
-		position: absolute;
 		margin-top: -26.05%;
-		/* margin-left: 26%;
-		width: 92.4vw; */
 		margin-left: 26.06%;
 		width: 92.3vw;
 		height: 31.5vw;
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-	}
-	.badge23 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge24 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge25 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge26 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge27 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge28 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge29 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge30 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge31 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge32 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge33 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge34 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge35 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge36 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge37 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge38 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge39 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge40 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge41 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge42 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge43 {
-		width: 5%;
-		height: 100%;
-	}
-	.badge44 {
-		width: 5%;
-		height: 100%;
 	}
 	/* ⟱ TRANSITION BUFFER ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.space-transition {
-		background-image: url(../core/transition.png);
 		background-size: 122% 100%;
-		color: white;
 		padding: 7.2vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	/* ⟱ KITS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.kits {
-		background-repeat: no-repeat;
 		background-size: 108% 100%;
-		color: white;
 		padding: 25vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 		left: 7.75%;
 	}
 	.unitedkits-link {
-		position: absolute;
 		width: 45%;
 		margin-top: -5.5%;
 		margin-left: 39%;
-		font-family: Century Gothic;
 		font-size: 1.7vw;
-		font-weight: 900;
-		text-align: center;
 	}
 	/* ⟱ PRESEASON, MATCHES, INTERNATIONAL BREAK ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	[itemid="dropdown-matches"] {
@@ -11963,703 +12532,316 @@ z-index: -1;
 	}
 	.dropdown-preseason {
 		background-size: 116.3% 100%;
-		color: white;
 		padding: 6.3vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-1st-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-2nd-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-3rd-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-4th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-5th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-6th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-7th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-8th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-9th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-10th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-11th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-12th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-13th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-14th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-15th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-16th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-17th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-18th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-19th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-20th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-21st-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-22nd-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-23rd-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-24th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-25th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-26th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-27th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-28th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-29th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-30th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-31st-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-32nd-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-33rd-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-34th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-35th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-36th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-37th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-38th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-39th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-40th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-41st-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-42nd-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-43rd-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-44th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-45th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-46th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-47th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-48th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-49th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-50th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-51st-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-52nd-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-53rd-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-54th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-55th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-56th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-57th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-58th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-59th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-60th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-61st-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-62nd-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-63rd-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-64th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-65th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-66th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-67th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-68th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-69th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.dropdown-70th-match {
 		background-size: 116.3% 115%;
-		color: white;
 		padding: 6.5vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.space-international-break {
-		background-image: url(../core/break.png);
 		background-size: 120% 100%;
-		color: white;
 		padding: 1.137vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	/* 	⟱ POST-MATCH NEWS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	.pre-match {
-		position: absolute;
 		width: 22.7%;
 		height: 15%;
 		left: 25.6%;
-		top: 33%;
-		background-size: cover;
-		display: flex;
-		overflow: hidden;
-		white-space: nowrap;
-		pointer-events: none;
 	}
 	.pre-match .news div {
-		font-family: Trueno Round Italic;
 		font-size: 1.7vw;
-		white-space: nowrap;
-		display: flex;
-		animation: animate2 40s linear infinite;
-		animation-delay: -20s;
 	}
 	.pre-match .news div span4 {
 		font-size: 2.4vw;
 		margin-top: -.2%;
 	}
 	.pre-match-skew {
-		position: absolute;
-		width: 8%;
 		height: 15%;
 		left: 45.6%;
 		top: 30.5%;
-		background-size: cover;
-		display: flex;
-		overflow: hidden;
-		white-space: nowrap;
-		pointer-events: none;
 		z-index: -1;
-		transform: skewY(-8.5deg) rotate3d(0, 1, 0, 70deg);
 	}
 	.pre-match-skew .news-skew {
-		display: flex;
 		margin-left: -280%;
 	}
 	.pre-match-skew .news-skew div {
-		font-family: Trueno Round Italic;
 		font-size: 1.7vw;
-		white-space: nowrap;
-		display: flex;
-		animation: animate2 40s linear infinite;
-		animation-delay: -20s;
 	}
 	.pre-match-skew .news-skew div span4 {
 		font-size: 2.4vw;
@@ -12667,24 +12849,12 @@ z-index: -1;
 	}
 	/* 	⟱ POST-MATCH NEWS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	.post-match {
-		position: absolute;
 		width: 22.7%;
 		height: 15%;
 		left: 68.8%;
-		top: 33%;
-		background-size: cover;
-		display: flex;
-		overflow: hidden;
-		white-space: nowrap;
-		pointer-events: none;
 	}
 	.post-match .news div {
-		font-family: Trueno Round Italic;
 		font-size: 1.7vw;
-		white-space: nowrap;
-		display: flex;
-		animation: animate2 40s linear infinite;
-		animation-delay: -20s;
 	}
 	.post-match .news div span4 {
 		font-size: 2.4vw;
@@ -12692,26 +12862,13 @@ z-index: -1;
 	}
 
 	.post-match-skew {
-		position: absolute;
-		width: 8%;
 		height: 15%;
 		left: 63.45%;
 		top: 30.5%;
-		background-size: cover;
-		display: flex;
-		overflow: hidden;
-		white-space: nowrap;
-		pointer-events: none;
 		z-index: -1;
-		transform: skewY(8.5deg) rotate3d(0, 1, 0, 70deg);
 	}
 	.post-match-skew .news-skew div {
-		font-family: Trueno Round Italic;
 		font-size: 1.7vw;
-		white-space: nowrap;
-		display: flex;
-		animation: animate2 40s linear infinite;
-		animation-delay: -20s;
 	}
 	.post-match-skew .news-skew div span4 {
 		font-size: 2.4vw;
@@ -12722,1675 +12879,1178 @@ z-index: -1;
 	#button-score-news1 h88 { display: none; }
 	#button-score-news1 h89 { display: initial; }
 	#cover1-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover1-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news1 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 2 */
 	#button-score-news2 h88 { display: none; }
 	#button-score-news2 h89 { display: initial; }
 	#cover2-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover2-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news2 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 3 */
 	#button-score-news3 h88 { display: none; } 
 	#button-score-news3 h89 { display: initial; }
 	#cover3-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover3-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news3 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 4 */
 	#button-score-news4 h88 { display: none; }
 	#button-score-news4 h89 { display: initial; }
 	#cover4-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover4-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news4 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 5 */
 	#button-score-news5 h88 { display: none; }
 	#button-score-news5 h89 { display: initial; }
 	#cover5-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover5-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news5 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 6 */
 	#button-score-news6 h88 { display: none; }
 	#button-score-news6 h89 { display: initial; }
 	#cover6-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover6-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news6 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 7 */
 	#button-score-news7 h88 { display: none; }
 	#button-score-news7 h89 { display: initial; }
 	#cover7-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover7-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news7 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 8 */
 	#button-score-news8 h88 { display: none; }
 	#button-score-news8 h89 { display: initial; }
 	#cover8-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover8-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news8 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 9 */
 	#button-score-news9 h88 { display: none; }
 	#button-score-news9 h89 { display: initial; }
 	#cover9-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover9-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news9 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 10 */
 	#button-score-news10 h88 { display: none; }
 	#button-score-news10 h89 { display: initial; }
 	#cover10-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover10-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news10 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 11 */
 	#button-score-news11 h88 { display: none; }
 	#button-score-news11 h89 { display: initial; }
 	#cover11-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover11-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news11 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 12 */
 	#button-score-news12 h88 { display: none; }
 	#button-score-news12 h89 { display: initial; }
 	#cover12-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover12-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news12 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 13 */
 	#button-score-news13 h88 { display: none; }
 	#button-score-news13 h89 { display: initial; }
 	#cover13-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover13-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news13 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 14 */
 	#button-score-news14 h88 { display: none; }
 	#button-score-news14 h89 { display: initial; }
 	#cover14-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover14-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news14 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 15 */
 	#button-score-news15 h88 { display: none; }
 	#button-score-news15 h89 { display: initial; }
 	#cover15-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover15-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news15 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 16 */
 	#button-score-news16 h88 { display: none; }
 	#button-score-news16 h89 { display: initial; }
 	#cover16-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover16-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news16 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 17 */
 	#button-score-news17 h88 { display: none; }
 	#button-score-news17 h89 { display: initial; }
 	#cover17-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover17-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news17 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 18 */
 	#button-score-news18 h88 { display: none; }
 	#button-score-news18 h89 { display: initial; }
 	#cover18-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover18-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news18 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 19 */
 	#button-score-news19 h88 { display: none; }
 	#button-score-news19 h89 { display: initial; }
 	#cover19-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover19-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news19 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 20 */
 	#button-score-news20 h88 { display: none; }
 	#button-score-news20 h89 { display: initial; }
 	#cover20-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover20-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news20 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 21 */
 	#button-score-news21 h88 { display: none; }
 	#button-score-news21 h89 { display: initial; }
 	#cover21-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover21-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news21 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 22 */
 	#button-score-news22 h88 { display: none; }
 	#button-score-news22 h89 { display: initial; }
 	#cover22-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover22-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news22 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 23 */
 	#button-score-news23 h88 { display: none; }
 	#button-score-news23 h89 { display: initial; }
 	#cover23-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover23-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news23 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 24 */
 	#button-score-news24 h88 { display: none; }
 	#button-score-news24 h89 { display: initial; }
 	#cover24-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover24-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news24 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
+	}
+
+	/* MATCH 25 */
+	#button-score-news25 h88 { display: none; }
+	#button-score-news25 h89 { display: initial; }
+	#cover25-score {
+		width: 116.3%;
+		margin-left: -4.45%;
+	}
+	#cover25-news {
+		width: 116.3%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#button-score-news25 {
+		margin-top: -7.4%;
+		left: 49.9%;
+		width: 17.3%;
+		line-height: 1.7vw;
+		font-size: 1.75vw;
+	}
+
+	/* MATCH 26 */
+	#button-score-news26 h88 { display: none; }
+	#button-score-news26 h89 { display: initial; }
+	#cover26-score {
+		width: 116.3%;
+		margin-left: -4.45%;
+	}
+	#cover26-news {
+		width: 116.3%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#button-score-news26 {
+		margin-top: -7.4%;
+		left: 49.9%;
+		width: 17.3%;
+		line-height: 1.7vw;
+		font-size: 1.75vw;
+	}
+
+	/* MATCH 27 */
+	#button-score-news27 h88 { display: none; }
+	#button-score-news27 h89 { display: initial; }
+	#cover27-score {
+		width: 116.3%;
+		margin-left: -4.45%;
+	}
+	#cover27-news {
+		width: 116.3%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#button-score-news27 {
+		margin-top: -7.4%;
+		left: 49.9%;
+		width: 17.3%;
+		line-height: 1.7vw;
+		font-size: 1.75vw;
+	}
+
+	/* MATCH 28 */
+	#button-score-news28 h88 { display: none; }
+	#button-score-news28 h89 { display: initial; }
+	#cover28-score {
+		width: 116.3%;
+		margin-left: -4.45%;
+	}
+	#cover28-news {
+		width: 116.3%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#button-score-news28 {
+		margin-top: -7.4%;
+		left: 49.9%;
+		width: 17.3%;
+		line-height: 1.7vw;
+		font-size: 1.75vw;
+	}
+
+	/* MATCH 29 */
+	#button-score-news29 h88 { display: none; }
+	#button-score-news29 h89 { display: initial; }
+	#cover29-score {
+		width: 116.3%;
+		margin-left: -4.45%;
+	}
+	#cover29-news {
+		width: 116.3%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#button-score-news29 {
+		margin-top: -7.4%;
+		left: 49.9%;
+		width: 17.3%;
+		line-height: 1.7vw;
+		font-size: 1.75vw;
+	}
+
+	/* MATCH 30 */
+	#button-score-news30 h88 { display: none; }
+	#button-score-news30 h89 { display: initial; }
+	#cover30-score {
+		width: 116.3%;
+		margin-left: -4.45%;
+	}
+	#cover30-news {
+		width: 116.3%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#button-score-news30 {
+		margin-top: -7.4%;
+		left: 49.9%;
+		width: 17.3%;
+		line-height: 1.7vw;
+		font-size: 1.75vw;
+	}
+
+	/* MATCH 31 */
+	#button-score-news31 h88 { display: none; }
+	#button-score-news31 h89 { display: initial; }
+	#cover31-score {
+		width: 116.3%;
+		margin-left: -4.45%;
+	}
+	#cover31-news {
+		width: 116.3%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#button-score-news31 {
+		margin-top: -7.4%;
+		left: 49.9%;
+		width: 17.3%;
+		line-height: 1.7vw;
+		font-size: 1.75vw;
+	}
+
+	/* MATCH 32 */
+	#button-score-news32 h88 { display: none; }
+	#button-score-news32 h89 { display: initial; }
+	#cover32-score {
+		width: 116.3%;
+		margin-left: -4.45%;
+	}
+	#cover32-news {
+		width: 116.3%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#button-score-news32 {
+		margin-top: -7.4%;
+		left: 49.9%;
+		width: 17.3%;
+		line-height: 1.7vw;
+		font-size: 1.75vw;
+	}
+
+	/* MATCH 33 */
+	#button-score-news33 h88 { display: none; }
+	#button-score-news33 h89 { display: initial; }
+	#cover33-score {
+		width: 116.3%;
+		margin-left: -4.45%;
+	}
+	#cover33-news {
+		width: 116.3%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#button-score-news33 {
+		margin-top: -7.4%;
+		left: 49.9%;
+		width: 17.3%;
+		line-height: 1.7vw;
+		font-size: 1.75vw;
+	}
+
+	/* MATCH 34 */
+	#button-score-news34 h88 { display: none; }
+	#button-score-news34 h89 { display: initial; }
+	#cover34-score {
+		width: 116.3%;
+		margin-left: -4.45%;
+	}
+	#cover34-news {
+		width: 116.3%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#button-score-news34 {
+		margin-top: -7.4%;
+		left: 49.9%;
+		width: 17.3%;
+		line-height: 1.7vw;
+		font-size: 1.75vw;
 	}
 
 	/* MATCH 35 */
 	#button-score-news35 h88 { display: none; }
 	#button-score-news35 h89 { display: initial; }
 	#cover35-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover35-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news35 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 36 */
 	#button-score-news36 h88 { display: none; }
 	#button-score-news36 h89 { display: initial; }
 	#cover36-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover36-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news36 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 37 */
 	#button-score-news37 h88 { display: none; }
 	#button-score-news37 h89 { display: initial; }
 	#cover37-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover37-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news37 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 38 */
 	#button-score-news38 h88 { display: none; }
 	#button-score-news38 h89 { display: initial; }
 	#cover38-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover38-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news38 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 39 */
 	#button-score-news39 h88 { display: none; }
 	#button-score-news39 h89 { display: initial; }
 	#cover39-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover39-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news39 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 40 */
 	#button-score-news40 h88 { display: none; }
 	#button-score-news40 h89 { display: initial; }
 	#cover40-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover40-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news40 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 41 */
 	#button-score-news41 h88 { display: none; }
 	#button-score-news41 h89 { display: initial; }
 	#cover41-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover41-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news41 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 42 */
 	#button-score-news42 h88 { display: none; }
 	#button-score-news42 h89 { display: initial; }
 	#cover42-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover42-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news42 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 43 */
 	#button-score-news43 h88 { display: none; }
 	#button-score-news43 h89 { display: initial; }
 	#cover43-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover43-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news43 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 44 */
 	#button-score-news44 h88 { display: none; }
 	#button-score-news44 h89 { display: initial; }
 	#cover44-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover44-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news44 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 45 */
 	#button-score-news45 h88 { display: none; }
 	#button-score-news45 h89 { display: initial; }
 	#cover45-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover45-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news45 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 46 */
 	#button-score-news46 h88 { display: none; }
 	#button-score-news46 h89 { display: initial; }
 	#cover46-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover46-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news46 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 47 */
 	#button-score-news47 h88 { display: none; }
 	#button-score-news47 h89 { display: initial; }
 	#cover47-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover47-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news47 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 48 */
 	#button-score-news48 h88 { display: none; }
 	#button-score-news48 h89 { display: initial; }
 	#cover48-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover48-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news48 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 49 */
 	#button-score-news49 h88 { display: none; }
 	#button-score-news49 h89 { display: initial; }
 	#cover49-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover49-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news49 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 50 */
 	#button-score-news50 h88 { display: none; }
 	#button-score-news50 h89 { display: initial; }
 	#cover50-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover50-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news50 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 51 */
 	#button-score-news51 h88 { display: none; }
 	#button-score-news51 h89 { display: initial; }
 	#cover51-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover51-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news51 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 52 */
 	#button-score-news52 h88 { display: none; }
 	#button-score-news52 h89 { display: initial; }
 	#cover52-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover52-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news52 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 53 */
 	#button-score-news53 h88 { display: none; }
 	#button-score-news53 h89 { display: initial; }
 	#cover53-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover53-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news53 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 54 */
 	#button-score-news54 h88 { display: none; }
 	#button-score-news54 h89 { display: initial; }
 	#cover54-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover54-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news54 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 55 */
 	#button-score-news55 h88 { display: none; }
 	#button-score-news55 h89 { display: initial; }
 	#cover55-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover55-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news55 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 56 */
 	#button-score-news56 h88 { display: none; }
 	#button-score-news56 h89 { display: initial; }
 	#cover56-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover56-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news56 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 57 */
 	#button-score-news57 h88 { display: none; }
 	#button-score-news57 h89 { display: initial; }
 	#cover57-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover57-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news57 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 
 	/* MATCH 58 */
 	#button-score-news58 h88 { display: none; }
 	#button-score-news58 h89 { display: initial; }
 	#cover58-score {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
-		margin-top: .08%;
 	}
 	#cover58-news {
-		position: absolute;
 		width: 116.3%;
-		height: 100%;
 		margin-left: -4.45%;
 		margin-top: .08%;
 	}
 	#button-score-news58 {
-		border: none;
-		border-radius: .1vw;
-		position: absolute;
-		z-index: 2;
 		margin-top: -7.4%;
 		left: 49.9%;
 		width: 17.3%;
-		height: auto;
 		line-height: 1.7vw;
-		font-family: Lampen;
 		font-size: 1.75vw;
-		color: white;
-		background: #262626;
-		overflow: hidden;
 	}
 	/* 	⟰ BUTTON: SHOW SCORE AND NEWS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* 	⟱ DATE | TIME | COMPETITION STAGE ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	.date-time {
-		position: absolute;
 		width: 18%;
 		top: 86.6%;
 		left: 49.55%;
-		font-family: Agency FB;
 		font-size: 1.53vw;
-		color: #e0dcdc;
-		text-align: center;
 	}
 	/* 	⟱ BUTTON: SHOW MATCH STATS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* MATCH 1 */
 	#button-stats1 h90 { display: none; }
 	#button-stats1 h91 { display: initial; }
 	#button-stats1 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats1:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats1:hover h91 { color: rgb(211, 208, 208); }
@@ -14399,31 +14059,10 @@ z-index: -1;
 	#button-stats2 h90 { display: none; }
 	#button-stats2 h91 { display: initial; }
 	#button-stats2 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats2:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats2:hover h91 { color: rgb(211, 208, 208); }
@@ -14432,31 +14071,10 @@ z-index: -1;
 	#button-stats3 h90 { display: none; }  
 	#button-stats3 h91 { display: initial; }
 	#button-stats3 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats3:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats3:hover h91 { color: rgb(211, 208, 208); }
@@ -14465,31 +14083,10 @@ z-index: -1;
 	#button-stats4 h90 { display: none; }
 	#button-stats4 h91 { display: initial; }
 	#button-stats4 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats4:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats4:hover h91 { color: rgb(211, 208, 208); }
@@ -14498,31 +14095,10 @@ z-index: -1;
 	#button-stats5 h90 { display: none; }
 	#button-stats5 h91 { display: initial; }
 	#button-stats5 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats5:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats5:hover h91 { color: rgb(211, 208, 208); }
@@ -14531,31 +14107,10 @@ z-index: -1;
 	#button-stats6 h90 { display: none; }
 	#button-stats6 h91 { display: initial; }
 	#button-stats6 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats6:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats6:hover h91 { color: rgb(211, 208, 208); }
@@ -14564,31 +14119,10 @@ z-index: -1;
 	#button-stats7 h90 { display: none; }
 	#button-stats7 h91 { display: initial; }
 	#button-stats7 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats7:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats7:hover h91 { color: rgb(211, 208, 208); }
@@ -14597,31 +14131,10 @@ z-index: -1;
 	#button-stats8 h90 { display: none; }
 	#button-stats8 h91 { display: initial; }
 	#button-stats8 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats8:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats8:hover h91 { color: rgb(211, 208, 208); }
@@ -14630,31 +14143,10 @@ z-index: -1;
 	#button-stats9 h90 { display: none; }
 	#button-stats9 h91 { display: initial; }
 	#button-stats9 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats9:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats9:hover h91 { color: rgb(211, 208, 208); }
@@ -14663,31 +14155,10 @@ z-index: -1;
 	#button-stats10 h90 { display: none; }
 	#button-stats10 h91 { display: initial; }
 	#button-stats10 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats10:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats10:hover h91 { color: rgb(211, 208, 208); }
@@ -14696,31 +14167,10 @@ z-index: -1;
 	#button-stats11 h90 { display: none; }
 	#button-stats11 h91 { display: initial; }
 	#button-stats11 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats11:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats11:hover h91 { color: rgb(211, 208, 208); }
@@ -14729,31 +14179,10 @@ z-index: -1;
 	#button-stats12 h90 { display: none; }
 	#button-stats12 h91 { display: initial; }
 	#button-stats12 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats12:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats12:hover h91 { color: rgb(211, 208, 208); }
@@ -14762,31 +14191,10 @@ z-index: -1;
 	#button-stats13 h90 { display: none; }
 	#button-stats13 h91 { display: initial; }
 	#button-stats13 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats13:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats13:hover h91 { color: rgb(211, 208, 208); }
@@ -14795,31 +14203,10 @@ z-index: -1;
 	#button-stats14 h90 { display: none; }
 	#button-stats14 h91 { display: initial; }
 	#button-stats14 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats14:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats14:hover h91 { color: rgb(211, 208, 208); }
@@ -14828,31 +14215,10 @@ z-index: -1;
 	#button-stats15 h90 { display: none; }
 	#button-stats15 h91 { display: initial; }
 	#button-stats15 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats15:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats15:hover h91 { color: rgb(211, 208, 208); }
@@ -14861,31 +14227,10 @@ z-index: -1;
 	#button-stats16 h90 { display: none; }
 	#button-stats16 h91 { display: initial; }
 	#button-stats16 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats16:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats16:hover h91 { color: rgb(211, 208, 208); }
@@ -14894,31 +14239,10 @@ z-index: -1;
 	#button-stats17 h90 { display: none; }
 	#button-stats17 h91 { display: initial; }
 	#button-stats17 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats17:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats17:hover h91 { color: rgb(211, 208, 208); }
@@ -14927,31 +14251,10 @@ z-index: -1;
 	#button-stats18 h90 { display: none; }
 	#button-stats18 h91 { display: initial; }
 	#button-stats18 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats18:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats18:hover h91 { color: rgb(211, 208, 208); }
@@ -14960,31 +14263,10 @@ z-index: -1;
 	#button-stats19 h90 { display: none; }
 	#button-stats19 h91 { display: initial; }
 	#button-stats19 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats19:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats19:hover h91 { color: rgb(211, 208, 208); }
@@ -14993,31 +14275,10 @@ z-index: -1;
 	#button-stats20 h90 { display: none; }
 	#button-stats20 h91 { display: initial; }
 	#button-stats20 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats20:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats20:hover h91 { color: rgb(211, 208, 208); }
@@ -15026,31 +14287,10 @@ z-index: -1;
 	#button-stats21 h90 { display: none; }
 	#button-stats21 h91 { display: initial; }
 	#button-stats21 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats21:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats21:hover h91 { color: rgb(211, 208, 208); }
@@ -15059,31 +14299,10 @@ z-index: -1;
 	#button-stats22 h90 { display: none; }
 	#button-stats22 h91 { display: initial; }
 	#button-stats22 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats22:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats22:hover h91 { color: rgb(211, 208, 208); }
@@ -15092,31 +14311,10 @@ z-index: -1;
 	#button-stats23 h90 { display: none; }
 	#button-stats23 h91 { display: initial; }
 	#button-stats23 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats23:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats23:hover h91 { color: rgb(211, 208, 208); }
@@ -15125,64 +14323,142 @@ z-index: -1;
 	#button-stats24 h90 { display: none; }
 	#button-stats24 h91 { display: initial; }
 	#button-stats24 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats24:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats24:hover h91 { color: rgb(211, 208, 208); }
+
+	/* MATCH 25 */
+	#button-stats25 h90 { display: none; }
+	#button-stats25 h91 { display: initial; }
+	#button-stats25 {
+		left: 41.3%;
+		font-size: 1.8vw;
+	}
+	#button-stats25:before {
+		left: 0%;
+	}
+	#button-stats25:hover h91 { color: rgb(211, 208, 208); }
+
+	/* MATCH 26 */
+	#button-stats26 h90 { display: none; }
+	#button-stats26 h91 { display: initial; }
+	#button-stats26 {
+		left: 41.3%;
+		font-size: 1.8vw;
+	}
+	#button-stats26:before {
+		left: 0%;
+	}
+	#button-stats26:hover h91 { color: rgb(211, 208, 208); }
+
+	/* MATCH 27 */
+	#button-stats27 h90 { display: none; }
+	#button-stats27 h91 { display: initial; }
+	#button-stats27 {
+		left: 41.3%;
+		font-size: 1.8vw;
+	}
+	#button-stats27:before {
+		left: 0%;
+	}
+	#button-stats27:hover h91 { color: rgb(211, 208, 208); }
+
+	/* MATCH 28 */
+	#button-stats28 h90 { display: none; }
+	#button-stats28 h91 { display: initial; }
+	#button-stats28 {
+		left: 41.3%;
+		font-size: 1.8vw;
+	}
+	#button-stats28:before {
+		left: 0%;
+	}
+	#button-stats28:hover h91 { color: rgb(211, 208, 208); }
+
+	/* MATCH 29 */
+	#button-stats29 h90 { display: none; }
+	#button-stats29 h91 { display: initial; }
+	#button-stats29 {
+		left: 41.3%;
+		font-size: 1.8vw;
+	}
+	#button-stats29:before {
+		left: 0%;
+	}
+	#button-stats29:hover h91 { color: rgb(211, 208, 208); }
+
+	/* MATCH 30 */
+	#button-stats30 h90 { display: none; }
+	#button-stats30 h91 { display: initial; }
+	#button-stats30 {
+		left: 41.3%;
+		font-size: 1.8vw;
+	}
+	#button-stats30:before {
+		left: 0%;
+	}
+	#button-stats30:hover h91 { color: rgb(211, 208, 208); }
+
+	/* MATCH 31 */
+	#button-stats31 h90 { display: none; }
+	#button-stats31 h91 { display: initial; }
+	#button-stats31 {
+		left: 41.3%;
+		font-size: 1.8vw;
+	}
+	#button-stats31:before {
+		left: 0%;
+	}
+	#button-stats31:hover h91 { color: rgb(211, 208, 208); }
+
+	/* MATCH 32 */
+	#button-stats32 h90 { display: none; }
+	#button-stats32 h91 { display: initial; }
+	#button-stats32 {
+		left: 41.3%;
+		font-size: 1.8vw;
+	}
+	#button-stats32:before {
+		left: 0%;
+	}
+	#button-stats32:hover h91 { color: rgb(211, 208, 208); }
+
+	/* MATCH 33 */
+	#button-stats33 h90 { display: none; }
+	#button-stats33 h91 { display: initial; }
+	#button-stats33 {
+		left: 41.3%;
+		font-size: 1.8vw;
+	}
+	#button-stats33:before {
+		left: 0%;
+	}
+	#button-stats33:hover h91 { color: rgb(211, 208, 208); }
+
+	/* MATCH 34 */
+	#button-stats34 h90 { display: none; }
+	#button-stats34 h91 { display: initial; }
+	#button-stats34 {
+		left: 41.3%;
+		font-size: 1.8vw;
+	}
+	#button-stats34:before {
+		left: 0%;
+	}
+	#button-stats34:hover h91 { color: rgb(211, 208, 208); }
 
 	/* MATCH 35 */
 	#button-stats35 h90 { display: none; }
 	#button-stats35 h91 { display: initial; }
 	#button-stats35 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats35:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats35:hover h91 { color: rgb(211, 208, 208); }
@@ -15191,31 +14467,10 @@ z-index: -1;
 	#button-stats36 h90 { display: none; }
 	#button-stats36 h91 { display: initial; }
 	#button-stats36 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats36:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats36:hover h91 { color: rgb(211, 208, 208); }
@@ -15224,31 +14479,10 @@ z-index: -1;
 	#button-stats37 h90 { display: none; }
 	#button-stats37 h91 { display: initial; }
 	#button-stats37 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats37:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats37:hover h91 { color: rgb(211, 208, 208); }
@@ -15257,31 +14491,10 @@ z-index: -1;
 	#button-stats38 h90 { display: none; }
 	#button-stats38 h91 { display: initial; }
 	#button-stats38 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats38:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats38:hover h91 { color: rgb(211, 208, 208); }
@@ -15290,31 +14503,10 @@ z-index: -1;
 	#button-stats39 h90 { display: none; }
 	#button-stats39 h91 { display: initial; }
 	#button-stats39 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats39:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats39:hover h91 { color: rgb(211, 208, 208); }
@@ -15323,31 +14515,10 @@ z-index: -1;
 	#button-stats40 h90 { display: none; }
 	#button-stats40 h91 { display: initial; }
 	#button-stats40 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats40:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats40:hover h91 { color: rgb(211, 208, 208); }
@@ -15356,31 +14527,10 @@ z-index: -1;
 	#button-stats41 h90 { display: none; }
 	#button-stats41 h91 { display: initial; }
 	#button-stats41 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats41:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats41:hover h91 { color: rgb(211, 208, 208); }
@@ -15389,31 +14539,10 @@ z-index: -1;
 	#button-stats42 h90 { display: none; }
 	#button-stats42 h91 { display: initial; }
 	#button-stats42 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats42:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats42:hover h91 { color: rgb(211, 208, 208); }
@@ -15422,31 +14551,10 @@ z-index: -1;
 	#button-stats43 h90 { display: none; }
 	#button-stats43 h91 { display: initial; }
 	#button-stats43 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats43:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats43:hover h91 { color: rgb(211, 208, 208); }
@@ -15455,31 +14563,10 @@ z-index: -1;
 	#button-stats44 h90 { display: none; }
 	#button-stats44 h91 { display: initial; }
 	#button-stats44 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats44:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats44:hover h91 { color: rgb(211, 208, 208); }
@@ -15488,31 +14575,10 @@ z-index: -1;
 	#button-stats45 h90 { display: none; }
 	#button-stats45 h91 { display: initial; }
 	#button-stats45 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats45:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats45:hover h91 { color: rgb(211, 208, 208); }
@@ -15521,31 +14587,10 @@ z-index: -1;
 	#button-stats46 h90 { display: none; }
 	#button-stats46 h91 { display: initial; }
 	#button-stats46 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats46:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats46:hover h91 { color: rgb(211, 208, 208); }
@@ -15554,31 +14599,10 @@ z-index: -1;
 	#button-stats47 h90 { display: none; }
 	#button-stats47 h91 { display: initial; }
 	#button-stats47 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats47:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats47:hover h91 { color: rgb(211, 208, 208); }
@@ -15587,31 +14611,10 @@ z-index: -1;
 	#button-stats48 h90 { display: none; }
 	#button-stats48 h91 { display: initial; }
 	#button-stats48 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats48:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats48:hover h91 { color: rgb(211, 208, 208); }
@@ -15620,31 +14623,10 @@ z-index: -1;
 	#button-stats49 h90 { display: none; }
 	#button-stats49 h91 { display: initial; }
 	#button-stats49 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats49:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats49:hover h91 { color: rgb(211, 208, 208); }
@@ -15653,31 +14635,10 @@ z-index: -1;
 	#button-stats50 h90 { display: none; }
 	#button-stats50 h91 { display: initial; }
 	#button-stats50 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats50:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats50:hover h91 { color: rgb(211, 208, 208); }
@@ -15686,31 +14647,10 @@ z-index: -1;
 	#button-stats51 h90 { display: none; }
 	#button-stats51 h91 { display: initial; }
 	#button-stats51 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats51:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats51:hover h91 { color: rgb(211, 208, 208); }
@@ -15719,31 +14659,10 @@ z-index: -1;
 	#button-stats52 h90 { display: none; }
 	#button-stats52 h91 { display: initial; }
 	#button-stats52 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats52:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats52:hover h91 { color: rgb(211, 208, 208); }
@@ -15752,31 +14671,10 @@ z-index: -1;
 	#button-stats53 h90 { display: none; }
 	#button-stats53 h91 { display: initial; }
 	#button-stats53 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats53:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats53:hover h91 { color: rgb(211, 208, 208); }
@@ -15785,31 +14683,10 @@ z-index: -1;
 	#button-stats54 h90 { display: none; }
 	#button-stats54 h91 { display: initial; }
 	#button-stats54 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats54:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats54:hover h91 { color: rgb(211, 208, 208); }
@@ -15818,31 +14695,10 @@ z-index: -1;
 	#button-stats55 h90 { display: none; }
 	#button-stats55 h91 { display: initial; }
 	#button-stats55 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats55:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats55:hover h91 { color: rgb(211, 208, 208); }
@@ -15851,31 +14707,10 @@ z-index: -1;
 	#button-stats56 h90 { display: none; }
 	#button-stats56 h91 { display: initial; }
 	#button-stats56 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats56:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats56:hover h91 { color: rgb(211, 208, 208); }
@@ -15884,31 +14719,10 @@ z-index: -1;
 	#button-stats57 h90 { display: none; }
 	#button-stats57 h91 { display: initial; }
 	#button-stats57 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats57:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats57:hover h91 { color: rgb(211, 208, 208); }
@@ -15917,31 +14731,10 @@ z-index: -1;
 	#button-stats58 h90 { display: none; }
 	#button-stats58 h91 { display: initial; }
 	#button-stats58 {
-		border: none;
-		position: relative;
-		margin-top: 2%;
 		left: 41.3%;
-		width: 35%;
-		height: 2.2vw;
 		font-size: 1.8vw;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
-		color: black;
-		background: transparent;
-		text-align: center;
-		z-index: 1;
 	}
 	#button-stats58:before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: red;
-		opacity: .7;
-		z-index: -1;
-		mix-blend-mode: multiply;
-		transform-origin: top;
-		transition: .2s;
-		top: -10%;
 		left: 0%;
 	}
 	#button-stats58:hover h91 { color: rgb(211, 208, 208); }
@@ -15952,81 +14745,45 @@ z-index: -1;
 	.bottom {
 		width: 80.5%;
 		margin-left: 21.9%;
-		margin-top: .1%;
 	}
 	.footer {
 		left: 22%;
-		background-image: url(../core/footer.png);
-		background-repeat: no-repeat;
-		background-size: 100.15% 117.7%;
-		color: white;
 		padding: 40%;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: absolute;
-		pointer-events: none;
 	}
 	.bottom-isometric {
-		position: absolute;
-		color: #b8b4b4;
 		left: 52%;
 		margin-top: 14.7%;
-		font-family: Manchester\ United\ 23-24\ Tipogra;
 		font-size: 6vw;
-		transform: skewY(11deg) rotate3d(0, 1, 0, 60deg);
-		z-index: -1;
 	}
 	.bottom-GGMU {
-		position: absolute;
 		margin-top: 25%;
 		left: 68.4%;
-		text-align: center;
-		font-weight: 900;
-		font-family: Agency FB;
-		font-size: 5vw;
-		mix-blend-mode: overlay;
-		transform: skewY(-2deg);
 	}
 	.OT-banners-bottom {
-		position: absolute;
 		margin-top: 54.5%;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 1;
 	}
 	/* ⟱ idierco@gmail.com CONTACT ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.email-cursor-text {
-		position: absolute;
-		font-family: Poppins Regular;
 		font-size: 1.2vw;
-		color: #a6a6a6;
 		left: 31.3%;
 		margin-top: 57.86%;
-		padding: .3vw;
-		cursor: text;
 	}
 	/* ⟱ DONATION LINKS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.buymeacoffee {
-		position: absolute;
 		margin-top: 57.5%;
 		left: 89.8%;
 		width: 9%;
 		height: 2.9vw;
 	}
 	.patreon {
-		position: absolute;
 		margin-top: 59.7%;
 		left: 92.5%;
 		width: 6.3%;
-		height: 2vw;
 	}
 	.paypal {
-		position: absolute;
 		margin-top: 61.3%;
 		left: 93.3%;
 		width: 5.5%;
-		height: 2.1vw;
 	}
 }
 /* TABLET: LARGER SCREEN  🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛       */
@@ -16035,12 +14792,9 @@ z-index: -1;
 @media only screen and (max-width: 830px) {  /* TABLET: SMALLER SCREEN ⬛ */
 	/* ⟱ SKY, FLAG, TITLE ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.parallax-home {
-		position: relative;
 		display: table;
-		text-align: center;
 	}
 	.parallax-home img {
-		position: relative;
 		width: 130%;
 		left: -20%;
 	}
@@ -16055,70 +14809,29 @@ z-index: -1;
 	}
 	#flag-pc { display: none; }
 	.title {
-		position: absolute;
 		margin-top: -18.5%;
-		width: 100%;
 	}
 	.title h1 {
-		color: transparent;
 		font-size: 4vw;
-		font-family: raleway_f;
 		letter-spacing: 1vw;
-		text-shadow: 0 0 5px #ff0434,
-						   0 0 5px yellow,
-						   0 0 20px #cd000d,
-						   0 0 40px #cd000d,
-						   0 0 80px #cd000d,
-						   0 0 120px #cd000d,
-						   0 0 160px #cd000d;
-		-webkit-background-clip: text;
-		-moz-background-clip: text;
-		background-clip: text;
-		-webkit-text-stroke: 1px #ffab447c;
 	}
 	.title h2 {
-		transform: translateY(-10%);
-		color: transparent;
 		font-size: 3vw;
-		font-family: raleway_f;
-		-webkit-text-stroke: 1px #fe7d8648;
-		-webkit-background-clip: text;
-		-moz-background-clip: text;
-		background-clip: text;
 	}
 	/* ⟰ SKY, FLAG, TITLE ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ LED SIGN ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#led-cover {
-		position: absolute;
-		top: 0;
 		left: -20%;
-		display: flex;
-		z-index: 1;
-		opacity: .7;
 	}
 	.zeppelin-led {
-		position: absolute;
-		box-sizing: content-box;
-		background-color: transparent;
-		text-align: center;
-		padding: 0% .2%;
 		top: 0;
-		left: 0;
-		height: 5.2%;
 		width: 21.1%;
-		display: block;
 		margin-top: 2.1%;
 		left: 38.9%;
 	}
 	.led-words span {
-		font-family: myFont;
 		font-size: 3.2vw;
-		color: yellow;
-		display: block;
-		height: 100%;
-		animation: spin-words 6s infinite;
 	}
-	/* ⟰ LED SIGN ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ UNDERGROUND SUPPORT ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.underground-large { display: none; }
     .underground-small {
@@ -16127,96 +14840,49 @@ z-index: -1;
 	}
 	/* ⟱ SELECT SEASON ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.select-season {
-		position: absolute;
 		margin-top: -29%;  
 		margin-left: 2vw;
-		z-index: 8;
 		width: 20vw;
 		height: 8vw;
 	}
 	.checkbox-size {
-		color: white;
 		padding: 3vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	.select-season-title {
 		width: 95%;
-		position: absolute;
-		text-align: center;
 		transform: translate(-3%, -15%);
-		pointer-events: none;
 		line-height: 3.4vw;
 	}
 	.select-season-title span1 {
-		font-family: QumpellkaNo12;
 		font-size: 2.5vw;
-		color: #b9c2d7;
-		text-shadow: 0 0 10px #17347a, 0 0 10px #17347a, 0 0 10px #17347a,
-						   0 0 20px #17347a, 0 0 20px #17347a,
-						   0 0 40px #17347a, 0 0 40px #17347a,
-						   0 0 80px #17347a, 0 0 80px #17347a, 0 0 80px #17347a,
-						   0 0 120px #17347a, 0 0 120px #17347a, 0 0 120px #17347a,
-						   0 0 160px #17347a, 0 0 160px #17347a;
 	}
 	.select-season-title span2 {
 		font-size: 2.3vw;
 	}
 	.select-season-title span3 {
-		font-family: Manchester\ United\ 23-24\ Tipogra;
 		font-size: 2.3vw;
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #13b48a, 0 0 10px #13b48a,
-						   0 0 20px #13b48a,
-						   0 0 40px #13b48a, 0 0 40px #13b48a,
-						   0 0 80px #13b48a,
-						   0 0 120px #13b48a, 0 0 120px #13b48a,
-						   0 0 160px #13b48a;
 	}
-	/* ⟰ SELECT SEASON ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
     /* ⟱ SCOREBOARD CAROUSEL ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* PREMIER LEAGUE */
 	.scoreboard-PL {
-		position: absolute;
 		width: 33.2%;
 		height: 4.2vw; 
 		margin-top: -30%;
 		left: 30.8%;
 		line-height: 3.3vw;
-		background-size: cover;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 5;
-		cursor: pointer;
-		text-align: center;
 	}
 	.scoreboard-PL .PL div {
-		font-family: MarkPro;
 		font-size: 2.4vw;
-		color: #fff;
-		text-shadow: 0 0 1px #fff;
-		white-space: nowrap;
-		display: flex;
 	}
 	.scoreboard-PL .PL div span1 {
-		font-weight: 900;
 		/* ▲ */
 		font-size: 1.8vw;
 		margin-top: 1.2%;
-		color: #028336;
-		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
 		/* • */
 		/* margin-top: -1.3%;
-		font-size: 3vw;
-		color: gray;
-		text-shadow: 0 0 2px gray, 0 0 2px gray; */
+		font-size: 3vw; */
 		/* ▼ */
-		/* font-size: 1.8vw;
-		margin-top: 1.2%;
-		color: #da020e;
-		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e; */
+		/* font-size: 1.8vw; */
 	}
 	.scoreboard-PL .PL div span2 {
 		display: none;
@@ -16224,48 +14890,28 @@ z-index: -1;
 
 	/* CHAMPIONS LEAGUE */
 	.scoreboard-UCL {
-		position: absolute;
 		width: 33.2%;
 		height: 4.2vw;
 		margin-top: -30%;
 		left: 30.8%;
 		line-height: 3vw;
-		background-size: cover;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 5;
-		cursor: pointer;
-		text-align: center;
 	}
 	.scoreboard-UCL .UCL div {
-		font-family: Novarese-Book;
 		font-size: 2.7vw;
-		color: #fff;
-		font-weight: bold;
-		white-space: nowrap;
-		display: flex;
 	}
 	.scoreboard-UCL .UCL div span1 {
 		margin-top: .2%;
 		font-size: 2.4vw;
 	}
 	.scoreboard-UCL .UCL div span3 {
-		font-weight: 900;
 		/* ▲ */
 		margin-top: .2%;
 		font-size: 1.8vw;
-		color: #028336;
-		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
 		/* • */
-		/* margin-top: -.4%;
-		font-size: 3vw;
-		color: gray;
-		text-shadow: 0 0 2px gray, 0 0 2px gray; */
+		/* font-size: 3vw; */
 		/* ▼ */
 		/* font-size: 1.8vw;
-		margin-top: 1.2%;
-		color: #da020e;
-		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e; */
+		margin-top: 1.2%; */
 	}
 	.scoreboard-UCL .UCL div span4 {
 		display: none;
@@ -16273,96 +14919,50 @@ z-index: -1;
 
 	/* FA CUP */
 	.scoreboard-FA {
-		position: absolute;
 		width: 33.2%;
 		height: 4.2vw;
 		margin-top: -30%;
 		left: 30.8%;
-		background-size: cover;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 5;
-		cursor: pointer;
-		text-align: center;
 	}
 	.scoreboard-FA .FA div {
-		font-family: Europa Nuova Bold;
 		font-size: 2vw;
-		color: #fff;
-		text-shadow: 0 0 1px #fff;
 		line-height: 3.5vw;
-		white-space: nowrap;
-		display: flex;
-		animation: none;
-		text-align: center;
 	}
 
 	/* EFL CUP */
 	.scoreboard-EFL {
-		position: absolute;
 		width: 33.2%;
 		height: 4.2vw;
 		margin-top: -30%;
 		left: 30.8%;
-		background-size: cover;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 5;
-		cursor: pointer;
-		text-align: center;
 	}
 	.scoreboard-EFL .EFL div {
-		font-family: Europa Nuova Bold;
-		font-size: 1.9vw;
-		line-height: 3.7vw;
-		white-space: nowrap;
-		display: flex;
-		animation: none;
-		text-align: center;
+		font-size: 2vw;
+		line-height: 3.5vw;
 	}
 
 	/* EUROPA LEAGUE */
 	.scoreboard-UEL {
-		position: absolute;
 		width: 33.2%;
 		height: 4.2vw;
 		margin-top: -30%;
 		left: 30.8%;
 		line-height: 3vw;
-		background-size: cover;
 		display: flex;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 5;
-		cursor: pointer;
 	}
 	.scoreboard-UEL .UEL div {
 		margin-top: 1.2%;
 		margin-left: 20%;
-		font-family: Europa Nuova Bold;
 		font-size: 2vw;
-		color: #fff;
-		font-weight: bold;
-		white-space: nowrap;
-		display: flex;
 	}
 	.scoreboard-UEL .UEL div span1 {
-		font-weight: 900;
 		/* ▲ */
-		margin-top: .1%;
 		font-size: 1.8vw;
-		color: #028336;
-		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
 		/* • */
 		/* margin-top: .1%;
-		font-size: 3.5vw;
-		color: gray;
-		text-shadow: 0 0 2px gray, 0 0 2px gray; */
+		font-size: 3.5vw; */
 		/* ▼ */
-		/* font-size: 1.8vw;
-		margin-top: .1%;
-		color: #da020e;
-		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e; */
+		/* font-size: 1.8vw; */
 	}
 	.scoreboard-UEL .UEL div span2 {
 		display: none;
@@ -16370,26 +14970,16 @@ z-index: -1;
 
 	/* PRE-SEASON */
 	.scoreboard-PRE {
-		position: absolute;
 		width: 33.2%;
 		height: 4.2vw;
 		margin-top: -30%;
 		left: 30.8%;
 		line-height: 3vw;
-		background-size: cover;
 		display: block;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 5;
-		cursor: pointer;
 	}
 	.scoreboard-PRE .pre-season div {
 		margin-top: 1.2%;
-		font-family: Europa Nuova Bold;
 		font-size: 2.5vw;
-		color: black;
-		font-weight: bold;
-		white-space: nowrap;
 	}
 	.scoreboard-PRE .pre-season div span2 {
 		display: none;
@@ -16415,81 +15005,43 @@ z-index: -1;
 	}
 	/* ⟱ SCOREBOARD (RESULT) ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.scoreboard-result {
-		color: white;
-		position: absolute;
 		width: 11.6%;
 		height: 5.2vw;
 		line-height: 2.7vw;
 		margin-top: -26.7%;
 		left: 52.4%;
-		display: flex;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 8;
-		cursor: pointer;
-		font-family: myFont;
 		font-size: 2.5vw;
-		background: transparent;
-		text-align: center;
 	}
 	.final-fair {
 		background: linear-gradient(rgba(254,29,18,0.6), rgba(254,29,18,0.6)), url(../parallax/led-black.jpg);
-		position: absolute;
 		background-size: 150% 150%;
-		right: 0;
 	}
 	.scoreboard-result2 {
-		color: white;
-		position: absolute;
 		width: 11.6%;
 		height: 5.2vw;
 		line-height: 2.7vw;
 		margin-top: -26.7%;
 		left: 52.4%;
-		display: flex;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 7;
-		cursor: pointer;
-		font-family: myFont;
 		font-size: 2.5vw;
-		background: transparent;
-		background-size: 150% 150%;
-		text-align: center;
 	}
 	.final-fair2 {
-		color: #ffcf3e;
 		background: linear-gradient(rgba(2,131,54,0.6), rgba(2,131,54,0.6)), url(../parallax/led-black.jpg);
-		position: absolute;
 		background-size: 150% 150%;
-		right: 0;
 	}
 	.OT-banners { display: none; }
 	/* ⟰ SCOREBOARD (RESULT) ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ CLOCK ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.clock {
-		position: absolute;
 		height: 5.5vw;
 		width: 32%;
 		margin-top: -28.4%;
 		left: 68.7%;
-		display: flex;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 7;
-		font-family: Lampen;
 		font-size: 2.5vw;
-		line-height: 5.5vw;
-		background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led-black.jpg);
 		background-size: 180% 180%;
-		text-align: center;
-		align-items: center;
 	}
 	.republik-of-mancunia {
-		display: initial;
 		transform: translateX(35%);
 		font-size: 2.5vw;
-		letter-spacing: 2px;
 		line-height: 2.5vw;
 	}
 	.clock-vertical-stripe1 {
@@ -16497,243 +15049,92 @@ z-index: -1;
 		height: 5.5vw;
 		margin-top: -28.4%;
 		left: 68.7%;
-		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;
-		position: absolute;
-		z-index: 7;
 	}
 	.clock-vertical-stripe2 {
 		width: .8%;
 		height: 5.5vw;
 		margin-top: -28.4%;
 		left: 69.5%;
-		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;
-		position: absolute;
-		z-index: 7;
 	}
 	.clock-vertical-stripe3 {
 		width: .8%;
 		height: 5.5vw;
 		margin-top: -28.4%;
 		left: 79%;
-		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;
-		position: absolute;
-		z-index: 7;
 	}
 	.clock-vertical-stripe4 {
 		width: .8%;
 		height: 5.5vw;
 		margin-top: -28.4%;
 		left: 79.8%;
-		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;
-		position: absolute;
-		z-index: 7;
 	}
     /* ⟱ MENU ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	header {
 		margin-top: -19%;
-		justify-content: space-between;
-		align-items: center;
 		margin-left: 2%;
-		width: 100%;
-		height: 23vw;
 	}
 	.navlist li {
-		text-align: center;
 		padding: 0 2vw;
 	}
 	/* ⟱ CONTACT ME ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.contact-me {
-		display: inline-block;
 		transform: translateY(25%);
-		text-decoration: none;
-		align-content: center;
-		text-align: center;
 	}
 	.line1 {
-		font-family: BeonMedium;
-		text-decoration: none;
 		font-size: 3vw;
-		vertical-align: middle;
-		letter-spacing: 1px;
-		cursor: pointer;
-		color: #fff;
-		text-shadow: 0 0 10px #da020e,
-						   0 0 20px #da020e,
-						   0 0 40px #da020e,
-						   0 0 80px #da020e,
-						   0 0 120px #da020e,
-						   0 0 160px #da020e;
 	}
 	.line2 {
-		font-family: BeonMedium;
-		text-decoration: none;
 		font-size: 3vw;
-		vertical-align: middle;
-		z-index: 1;
-		color: #fff;
-		text-shadow: 0 0 10px #da020e,
-						   0 0 20px #da020e,
-						   0 0 40px #da020e,
-						   0 0 80px #da020e,
-						   0 0 120px #da020e,
-						   0 0 160px #da020e;
 	}
 	.line3 {
-		font-family: Uppen Arms NF;
-		text-decoration: none;
 		font-size: 3vw;
-		vertical-align: middle;
-		color: #fff;
-		text-shadow: 0 0 10px #fff,
-						   0 0 20px #fff,
-						   0 0 40px #fff,
-						   0 0 80px #fff,
-						   0 0 120px #fff,
-						   0 0 160px #fff;
 	}
 	/* ⟱ MEET THE CREATOR ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.know-me {
-		text-decoration: none;
-		align-content: center;
-		text-align: center;
-		font-family: Celinea;
 		font-size: 10vw;
-		font-weight: lighter;
-		vertical-align: middle;
 		line-height: 7vw;
 		transform: skewY(-15deg);
-		display: inline-block;
 	}
 	/* ⟱ SUPPORT & DONATE ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.support {
-		display: inline-block;
 		transform: translateY(10%);
-		text-decoration: none;
-		align-content: center;
-		text-align: center;
-		cursor: pointer;
-		vertical-align: middle;
 	}
 	.line6 {
-		font-family: LIBRARY3AMsoft;
 		font-size: 3.3vw;
-		letter-spacing: 1px;
-		color: #fff;
-		text-shadow: 0 0 10px #ffcf3e,
-						   0 0 20px #ffcf3e,
-						   0 0 40px #ffcf3e,
-						   0 0 80px #ffcf3e,
-						   0 0 120px #ffcf3e,
-						   0 0 160px #ffcf3e;
 	}
 	.line7 span {
-		font-family: LIBRARY3AMsoft;
 		font-size: 3.3vw;
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #028336,
-						   0 0 20px #028336,
-						   0 0 40px #028336,
-						   0 0 80px #028336,
-						   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
-						   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
 	}
 	.line7 {
-		font-family: Neoneon;
 		font-size: 3.3vw;
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #028336,
-						   0 0 20px #028336,
-						   0 0 40px #028336,
-						   0 0 80px #028336,
-						   0 0 120px #028336,
-						   0 0 160px #028336;
 	}
 	/* ⟱ WANNA LEARN A LANGUAGE? ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.learn-language {
-		text-decoration: none;
-		align-content: center;
-		text-align: center;
-		cursor: pointer;
-		vertical-align: middle;
 		line-height: 5vw;
-		display: inline-block;
 		transform: translateY(-7%)
 	}
 	.line8 {
-		font-family: Rookworst;
 		font-size: 6vw;
-		color: yellow;
 		-webkit-text-stroke: .1vw red;
-		text-shadow: 0 0 10px #da020e,
-						   0 0 20px #da020e,
-						   0 0 40px #da020e;
 	}
 	.line10 {
-		font-family: Salonica;
 		font-size: 10vw;
-		transform: translateX(5%);
-		color: white;
-		text-shadow: 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e, 0 0 10px #da020e,
-						   0 0 20px #da020e,
-						   0 0 40px #da020e,
-						   0 0 80px #da020e,
-						   0 0 120px #da020e;
 	}
 	.line12 span {
-		font-family: Zekton;
 		font-size: 3vw;
-		position: absolute;
 		transform: translate(-390%, 30%);
-		color: #fff;
-		text-shadow: 0 0 10px #ffcf3e,
-						   0 0 20px #ffcf3e,
-						   0 0 40px #ffcf3e,
-						   0 0 80px #ffcf3e,
-						   0 0 120px #ffcf3e,
-						   0 0 160px #ffcf3e;
 	}
 	.line12 span2 {
-		font-family: Lateef;
 		font-size: 6vw;
-		position: absolute;
 		transform: translate(-70%, 0%);
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #028336,
-						   0 0 20px #028336,
-						   0 0 40px #028336,
-						   0 0 80px #028336,
-						   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
-						   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
 	}
 	.line12 span3 {
-		font-family: Josefin Sans;
 		font-size: 3.5vw;
-		position: absolute;
 		transform: translate(100%, 50%);
-		color: #fff;
-		text-shadow: 0 0 10px #ffcf3e,
-						   0 0 20px #ffcf3e,
-						   0 0 40px #ffcf3e,
-						   0 0 80px #ffcf3e,
-						   0 0 120px #ffcf3e,
-						   0 0 160px #ffcf3e;
 	}
 	.line12 span4 {
-		font-family: Josefin Sans;
 		font-size: 3vw;
-		position: absolute;
 		transform: translate(300%, 10%);
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #028336,
-						   0 0 20px #028336,
-						   0 0 40px #028336,
-						   0 0 80px #028336,
-						   0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336, 0 0 120px #028336,
-						   0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336, 0 0 160px #028336;
 	}
 	.underground-irons { display: none; } 
 	/* ⟰ WANNA LEARN A LANGUAGE? ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -16742,96 +15143,36 @@ z-index: -1;
 	#second-half { transform: translate(40%, 0%); } 
 	/* ⟱ DATE, FIXTURE AND RESULT ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.date-and-result h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {  /* 1st row */
-		position: absolute;
-		display: inline-block;
-		width: 9.8%;
 		margin-top: 13.92%;
-		font-family: Century Gothic;
-		color: white;
-		font-size: 1.3vw;
-		text-align: center;
 		padding-top: 2%;
-		z-index: 4;
 	}
 	.date-and-result h18, h19, h20, h21, h22, h23, h24, h25, h26, h27 {  /* 2nd row */
-		position: absolute;
-		display: inline-block;
-		width: 9.8%;
 		margin-top: 21.5%;
-		font-family: Century Gothic;
-		color: white;
-		font-size: 1.3vw;
-		text-align: center;
 		padding-top: 2%;
-		z-index: 4;
 	}
 	.date-and-result h28, h29, h30, h31, h32, h33, h34, h35, h36, h37 {  /* 3rd row */
-		position: absolute;
-		display: inline-block;
-		width: 9.8%;
 		margin-top: 28.9%;
-		font-family: Century Gothic;
-		color: white;
-		font-size: 1.3vw;
-		text-align: center;
 		padding-top: 2%;
-		z-index: 4;
 	}
 	.date-and-result h38, h39, h40, h41, h42, h43, h44, h45, h46, h47 {  /* 4th row */
-		position: absolute;
-		display: inline-block;
-		width: 9.8%;
 		margin-top: 36.78%;
-		font-family: Century Gothic;
-		color: white;
-		font-size: 1.3vw;
-		text-align: center;
 		padding-top: 2%;
-		z-index: 4;
 	}
 	.date-and-result h48, h49, h50, h51, h52, h53, h54, h55, h56, h57 {  /* 5th row */
-		position: absolute;
-		display: inline-block;
-		width: 9.8%;
 		margin-top: 44.31%;
-		font-family: Century Gothic;
-		color: white;
-		font-size: 1.3vw;
-		text-align: center;
 		padding-top: 2%;
-		z-index: 4;
 	}
 	.date-and-result h58, h59, h60, h61, h62, h63, h64, h65, h66, h67 {  /* 6th row */
-		position: absolute;
-		display: inline-block;
-		width: 9.8%;
 		margin-top: 51.89%;
-		font-family: Century Gothic;
-		color: white;
-		font-size: 1.3vw;
-		text-align: center;
 		padding-top: 2%;
-		z-index: 4;
 	}
 	.date-and-result h68, h69, h70, h71, h72, h73, h74, h75, h76, h77 {  /* 7th row */
-		position: absolute;
-		display: inline-block;
-		width: 9.8%;
 		margin-top: 59.47%;
-		font-family: Century Gothic;
-		color: white;
-		font-size: 1.3vw;
-		text-align: center;
 		padding-top: 2%;
-		z-index: 4;
 	}
 	/* ⟱ MATCH RATINGS ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#match-ratings {
-		display: none;
-		position: absolute;
-		margin-top: -.15%;
-		left: -19%;
-		width: 137%;
+		margin-top: 0.1%;
 	}
 }
 /* TABLET: SMALLER SCREEN  🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛       */
@@ -16840,58 +15181,31 @@ z-index: -1;
 @media only screen and (max-width: 570px) {  /* MOBILE  📱 */
 	/* ⟱ SKY, FLAG, TITLE ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.parallax-home img {
-		position: relative;
 		width: 150%;
 		left: -28%;
 	}
 	#flag-mobile {
-		display: initial;
-		position: absolute;
 		margin-top: -53%;
 		left: 7%;
 		width: 100%;
-		transform: rotate(-15deg);
-		z-index: 1;
 	}
 	.title {
-		position: absolute;
 		margin-top: -21%;
-		width: 100%;
 	}
 	/* ⟱ LED SIGN ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#led-cover {
-		position: absolute;
-		top: 0;
 		left: -28%;
-		display: flex;
-		z-index: 1;
-		opacity: .7;
 	}
 	.zeppelin-led {
-		position: absolute;
-		box-sizing: content-box;
-		background-color: transparent;
-		text-align: center;
-		padding: 0% .2%;
-		top: 0;
-		left: 0;
-		height: 5.2%;
 		width: 24.4%;
 		margin-top: 2.35%;
 		left: 39.9%;
 	}
 	.led-words span {
-		font-family: myFont;
 		font-size: 3.7vw;
-		color: yellow;
-		display: block;
-		height: 100%;
-		animation: spin-words 6s infinite;
 	}
-	/* ⟰ LED SIGN ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ UNDERGROUND SUPPORT ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.underground {
-		position: relative;
 		z-index: 0;
 	}
     .underground-small {
@@ -16899,562 +15213,246 @@ z-index: -1;
 	}
 	/* ⟱ SELECT SEASON ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.select-season {
-		position: absolute;
 		margin-top: -34.5%;
 		margin-left: .5vw;
-		z-index: 8;
 		width: 27vw;
-		height: 8vw;
 	}
 	.select-season-title {
-	    width: 95%;
-		position: absolute;
-		text-align: center;
-		transform: translate(-3%, -15%);
-		pointer-events: none;
 		line-height: 4vw;
 	}
 	.select-season-title span1 {
-		font-family: QumpellkaNo12;
 		font-size: 3.5vw;
-		color: #b9c2d7;
-		text-shadow: 0 0 10px #17347a, 0 0 10px #17347a, 0 0 10px #17347a,
-						   0 0 20px #17347a, 0 0 20px #17347a,
-						   0 0 40px #17347a, 0 0 40px #17347a,
-						   0 0 80px #17347a, 0 0 80px #17347a, 0 0 80px #17347a,
-						   0 0 120px #17347a, 0 0 120px #17347a, 0 0 120px #17347a,
-						   0 0 160px #17347a, 0 0 160px #17347a;
 	}
 	.select-season-title span2 {
 		font-size: 3vw;
 	}
 	.select-season-title span3 {
-		font-family: Manchester\ United\ 23-24\ Tipogra;
 		font-size: 3vw;
-		color: #a8ddbe;
-		text-shadow: 0 0 10px #13b48a, 0 0 10px #13b48a,
-						   0 0 20px #13b48a,
-						   0 0 40px #13b48a, 0 0 40px #13b48a,
-						   0 0 80px #13b48a,
-						   0 0 120px #13b48a, 0 0 120px #13b48a,
-						   0 0 160px #13b48a;
 	}
 	/* ⟰ SELECT SEASON ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
     /* ⟱ SCOREBOARD CAROUSEL ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* PREMIER LEAGUE */
 	.scoreboard-PL {
-		position: absolute;
 		width: 40%;
-		height: 4.2vw;
 		margin-top: -37.3%;
 		left: 37.635%;
-		line-height: 3vw;
-		background-size: cover;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 5;
-		cursor: pointer;
-		text-align: center;
 	}
 	.scoreboard-PL .PL div {
-		font-family: MarkPro;
 		font-size: 3vw;
-		color: #fff;
-		text-shadow: 0 0 1px #fff;
-		white-space: nowrap;
-		display: flex;
 	}
 	.scoreboard-PL .PL div span1 {
-		font-weight: 900;
 		/* ▲ */
 		font-size: 2.5vw;
-		margin-top: 1.2%;
-		color: #028336;
-		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
 		/* • */
 		/* margin-top: -2%;
-		font-size: 4.4vw;
-		color: gray;
-		text-shadow: 0 0 2px gray, 0 0 2px gray; */
+		font-size: 4.4vw; */
 		/* ▼ */
-		/* font-size: 2.5vw;
-		margin-top: 1.2%;
-		color: #da020e;
-		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e; */
+		/* font-size: 2.5vw; */
 	}
 
 	/* CHAMPIONS LEAGUE */
 	.scoreboard-UCL {
-		position: absolute;
 		width: 40%;
-		height: 4.2vw;
 		margin-top: -37.3%;
 		left: 37.635%;
-		background-size: cover;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 5;
-		cursor: pointer;
-		text-align: center;
 	}
 	.scoreboard-UCL .UCL div {
 		margin-top: .7%;
-		font-family: Novarese-Book;
 		font-size: 3.3vw;
-		color: #fff;
-		font-weight: bold;
-		white-space: nowrap;
-		display: flex;
 	}
 	.scoreboard-UCL .UCL div span1 {
 		margin-top: .6%;
 		font-size: 2.9vw;
 	}
 	.scoreboard-UCL .UCL div span3 {
-		font-weight: 900;
 		/* ▲ */
 		font-size: 2.5vw;
-		margin-top: .2%;
-		color: #028336;
-		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
 		/* • */
 		/* margin-top: -2%;
-		font-size: 4.4vw;
-		color: gray;
-		text-shadow: 0 0 2px gray, 0 0 2px gray; */
+		font-size: 4.4vw; */
 		/* ▼ */
-		/* font-size: 2.5vw;
-		margin-top: 1.2%;
-		color: #da020e;
-		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e; */
+		/* font-size: 2.5vw; */
 	}
 
 	/* FA CUP */
 	.scoreboard-FA {
-		position: absolute;
 		width: 40%;
-		height: 4.2vw;
 		margin-top: -37.3%;
 		left: 37.635%;
-		background-size: cover;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 5;
-		cursor: pointer;
-		text-align: center;
 	}
 	.scoreboard-FA .FA div {
-		font-family: Europa Nuova Bold;
 		font-size: 2.4vw;
-		color: #fff;
-		text-shadow: 0 0 1px #fff;
 		line-height: 4vw;
-		white-space: nowrap;
-		display: flex;
-		animation: none;
-		text-align: center;
 	}
 
 	/* EFL CUP */
 	.scoreboard-EFL {
-		position: absolute;
 		width: 40%;
-		height: 4.2vw;
 		margin-top: -37.3%;
 		left: 37.635%;
-		background-size: cover;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 5;
-		cursor: pointer;
-		text-align: center;
 	}
 	.scoreboard-EFL .EFL div {
-		font-family: Europa Nuova Bold;
-		font-size: 2.3vw;
+		font-size: 3.1vw;
 		line-height: 4.5vw;
-		white-space: nowrap;
-		display: flex;
-		animation: none;
-		text-align: center;
 	}
 
 	/* EUROPA LEAGUE */
 	.scoreboard-UEL {
-		position: absolute;
 		width: 40%;
-		height: 4.2vw;
 		margin-top: -37.3%;
 		left: 37.635%;
-		background-size: cover;
-		display: flex;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 5;
-		cursor: pointer;
 	}
 	.scoreboard-UEL .UEL div {
 		margin-left: 11%;
-		font-family: Europa Nuova Bold;
 		font-size: 2.6vw;
-		color: #fff;
-		font-weight: bold;
-		white-space: nowrap;
-		display: flex;
 	}
 	.scoreboard-UEL .UEL div span1 {
-		font-weight: 900;
 		/* ▲ */
-		margin-top: .1%;
 		font-size: 2.5vw;
-		color: #028336;
-		text-shadow: 0 0 2px #028336, 0 0 2px #028336;
 		/* • */
-		/* margin-top: .1%;
-		font-size: 4.4vw;
-		color: gray;
-		text-shadow: 0 0 2px gray, 0 0 2px gray; */
+		/* font-size: 4.4vw; */
 		/* ▼ */
-		/* font-size: 2.5vw;
-		margin-top: .1%;
-		color: #da020e;
-		text-shadow: 0 0 2px #da020e, 0 0 2px #da020e; */
+		/* font-size: 2.5vw; */
 	}
 
 	/* PRE-SEASON */
 	.scoreboard-PRE {
-		position: absolute;
 		width: 40%;
-		height: 4.2vw;
 		margin-top: -37.3%;
 		left: 37.635%;
-		background-size: cover;
-		display: block;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 5;
-		cursor: pointer;
 	}
 	.scoreboard-PRE .pre-season div {
-		font-family: Europa Nuova Bold;
 		font-size: 3.1vw;
 		line-height: 4vw;
-		color: black;
-		font-weight: bold;
-		white-space: nowrap;
 	}
     /* ⟰ SCOREBOARD CAROUSEL ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ SCOREBOARD (TEAMS) ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.scoreboard-teams-mobile {
-		position: absolute;
 		width: 40%;
 		margin-top: -33.3%;
 		left: 37.635%;
-		display: initial;
-		text-align: center;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 7;
-		cursor: pointer;
-		font-family: myFont;
 		font-size: 3.4vw;
 		background: linear-gradient(rgba(27,27,27,0.8), rgba(27,27,27,0.8)), url(../parallax/led-gray-mb.png);
 		background-size: 200% 200%;
 	}
 	/* ⟱ SCOREBOARD (RESULT) ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.scoreboard-result {
-		color: white;
-		position: absolute;
 		width: 15%;
 		height: 7.17vw;
 		line-height: 3.7vw;
 		margin-top: -33.3%;
 		left: 62.7%;
-		display: flex;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 8;
-		cursor: pointer;
-		font-family: myFont;
 		font-size: 3.4vw;
-		background: transparent;
-		text-align: center;
 	}
 	.scoreboard-result2 {
-		color: white;
-		position: absolute;
 		width: 15%;
 		height: 7.17vw;
 		line-height: 3.7vw;
 		margin-top: -33.3%;
 		left: 62.7%;
-		display: flex;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 7;
-		cursor: pointer;
-		font-family: myFont;
 		font-size: 3.4vw;
-		background: transparent;
-		background-size: 150% 150%;
-		text-align: center;
 	}
-	/* ⟰ SCOREBOARD (RESULT) ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ CLOCK ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.clock {
-		position: absolute;
 		height: 7vw;
 		width: 16%;
 		margin-top: -35%;
 		left: 83.4%;
-		display: flex;
-		overflow: hidden;
-		white-space: nowrap;
-		z-index: 7;
-		font-family: Lampen;
 		font-size: 3.4vw;
 		line-height: 7vw;
-		background: linear-gradient(rgba(27,27,27,0.9), rgba(27,27,27,0.9)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;
-		text-align: center;
-		align-items: center;
 	}
 	.republik-of-mancunia { display: none; }
 	.clock-vertical-stripe1 {
-		width: .8%;
 		height: 7vw;
 		margin-top: -35%;
 		left: 83.6%;
-		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;
-		position: absolute;
-		z-index: 7;
 	}
 	.clock-vertical-stripe2 {
-		width: .8%;
 		height: 7vw;
 		margin-top: -35%;
 		left: 84.5%;
-		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;
-		position: absolute;
-		z-index: 7;
 	}
 	.clock-vertical-stripe3 {
-		width: .8%;
 		height: 7vw;
 		margin-top: -35%;
 		left: 98%;
-		background: linear-gradient(rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;
-		position: absolute;
-		z-index: 7;
 	}
 	.clock-vertical-stripe4 {
-		width: .8%;
 		height: 7vw;
 		margin-top: -35%;
 		left: 99%;
-		background: linear-gradient(rgba(197,46,44,0.6), rgba(197,46,44,0.6)), url(../parallax/led-black.jpg);
-		background-size: 180% 180%;
-		position: absolute;
-		z-index: 7;
 	}
     /* ⟱ MENU ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	header {
 		margin-top: -23%;
-		justify-content: space-between;
-		align-items: center;
-		width: 100%;
-		height: 23vw;
 	}
 	/* ⟱ GALLERY PHOTO TEXT ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#button-gallery1 {
-		border: none;
 		border-radius: 0 0 1.5vw 1.5vw;
-		position: absolute;
 		margin-top: -42.2%;
-		left: 3.7%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
 	}
 	#button-gallery2 {
-		border: none;
-		position: absolute;
 		margin-top: -42.2%;
 		left: 17.3%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
 	}
 	#button-gallery3 {
-		border: none;
-		position: absolute;
 		margin-top: -42.2%;
-		left: 30.9%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
 	}
 	#button-gallery4 {
-		border: none;
-		position: absolute;
 		margin-top: -42.2%;
-		left: 53.3%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
 	}
 	#button-gallery5 {
-		border: none;
-		position: absolute;
 		margin-top: -42.2%;
-		left: 53.3%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
 	}
 	#button-gallery6 {
-		border: none;
-		position: absolute;
 		margin-top: -42.2%;
-		left: 66.9%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
 	}
 	#button-gallery7 {
-		border: none;
-		position: absolute;
 		margin-top: -42.2%;
-		left: 80.4%;
-		width: 12.3%;
-		height: 6vw;
-		background-color: transparent;
-		z-index: 2;
 	}
 	/* ⟱ LEGEND TO THE MATCH RATINGS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	#first-half { transform: translate(6%, 1%); }
 	#second-half { transform: translate(55%, 4%); }
 	/* ⟱ DATE, FIXTURE AND RESULT ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.date-and-result h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {  /* 1st row */
-		position: absolute;
-		display: inline-block;
-		width: 9.8%;
 		margin-top: 13.32%;
-		font-family: Century Gothic;
-		color: white;
-		font-size: 1.3vw;
-		text-align: center;
-		padding-top: 2%;
-		z-index: 4;
 	}
 	.date-and-result h18, h19, h20, h21, h22, h23, h24, h25, h26, h27 {  /* 2nd row */
-		position: absolute;
-		display: inline-block;
-		width: 9.8%;
 		margin-top: 20.9%;
-		font-family: Century Gothic;
-		color: white;
-		font-size: 1.3vw;
-		text-align: center;
-		padding-top: 2%;
-		z-index: 4;
 	}
 	.date-and-result h28, h29, h30, h31, h32, h33, h34, h35, h36, h37 {  /* 3rd row */
-		position: absolute;
-		display: inline-block;
-		width: 9.8%;
 		margin-top: 28.48%;
-		font-family: Century Gothic;
-		color: white;
-		font-size: 1.3vw;
-		text-align: center;
-		padding-top: 2%;
-		z-index: 4;
 	}
 	.date-and-result h38, h39, h40, h41, h42, h43, h44, h45, h46, h47 {  /* 4th row */
-		position: absolute;
-		display: inline-block;
-		width: 9.8%;
 		margin-top: 36.18%;
-		font-family: Century Gothic;
-		color: white;
-		font-size: 1.3vw;
-		text-align: center;
-		padding-top: 2%;
-		z-index: 4;
 	}
 	.date-and-result h48, h49, h50, h51, h52, h53, h54, h55, h56, h57 {  /* 5th row */
-		position: absolute;
-		display: inline-block;
-		width: 9.8%;
 		margin-top: 43.71%;
-		font-family: Century Gothic;
-		color: white;
-		font-size: 1.3vw;
-		text-align: center;
-		padding-top: 2%;
-		z-index: 4;
 	}
 	.date-and-result h58, h59, h60, h61, h62, h63, h64, h65, h66, h67 {  /* 6th row */
-		position: absolute;
-		display: inline-block;
-		width: 9.8%;
 		margin-top: 51.29%;
-		font-family: Century Gothic;
-		color: white;
-		font-size: 1.3vw;
-		text-align: center;
-		padding-top: 2%;
-		z-index: 4;
 	}
 	.date-and-result h68, h69, h70, h71, h72, h73, h74, h75, h76, h77 {  /* 7th row */
-		position: absolute;
-		display: inline-block;
-		width: 9.8%;
 		margin-top: 58.87%;
-		font-family: Century Gothic;
-		color: white;
-		font-size: 1.3vw;
-		text-align: center;
-		padding-top: 2%;
-		z-index: 4;
+	}
+	/* ⟱ MATCH RATINGS ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	#match-ratings {
+		margin-top: -.2%
 	}
 	/* ⟱ DROPDOWNS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.dropdowns-section {
-		position: relative;
 		margin-top: 113%;
-		margin-left: -29.5vw;
-		height: 150vw;
-		z-index: 2;
 	}
 	/* ⟱ INTERNATIONAL BREAK ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.space-international-break {
-		background-image: url(../core/break.png);
-		background-size: 120% 100%;
-		color: white;
 		padding: .3vw;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		position: relative;
 	}
 	/* ⟱ BOTTOM ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.bottom-isometric::before {
-	position: absolute;
 	text-shadow: -1px 0.5px 1px #555,
 					   -2px 0.5px 1px #555,
 					   -3px 0.5px 1px #555,
 					   -4px 0.5px 1px #555;
-	z-index: -1;
 	}
 }
 /* MOBILE  📱   📱   📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱    📱   📱     */
