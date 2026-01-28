@@ -4,15 +4,15 @@
 	text-align: initial;  /* addition to avoid text centering */
 }
 .home span {
-	/* color: #fff; */
-	color: #da020e;
-	text-shadow: 0 0 2px #da020e;
-	opacity: none;
-}
-.home {
 	color: #fff;
 	/* color: #da020e;
 	text-shadow: 0 0 2px #da020e; */
+	opacity: none;
+}
+.home {
+	/* color: #fff; */
+	color: #da020e;
+	text-shadow: 0 0 2px #da020e;
 	opacity: none;
 }
 /* ⟱ BRICKS & TROPHIES ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -32,6 +32,19 @@
 }
 .brick-wall h1 span2 {
 	color: #ec334d;
+}
+/* ⟱ STATS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.stats-title span1 {
+	position: absolute;
+	font-family: myFont;
+	font-size: 2.7vw;
+	transform: translate(-85%, 70%);
+	color: #ffdccc;
+	text-shadow: 0 0 10px #ffb330, 0 0 10px #ffb330, 0 0 10px #ffb330, 0 0 10px #ffb330,
+					   0 0 20px #fe5201, 0 0 20px #fe5201, 0 0 20px #fe5201,
+					   0 0 40px #fe5201, 0 0 40px #fe5201,
+					   0 0 80px #fe5201, 0 0 80px #fe5201,
+					   0 0 120px #fe5201, 0 0 120px #fe5201;
 }
 /* ⟱ KITS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 .kits {

@@ -1900,7 +1900,7 @@ ul.navlist {
 .dropdown_li {
 	list-style: none;
 }
-#link-opacity { opacity: 0; }
+#link-opacity { opacity: 1; }
 .link1-pre {
 	position: absolute;
 	font-family: Agency FB;
@@ -8158,6 +8158,7 @@ ul.navlist {
 }
 #button-stats1:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8171,12 +8172,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats1:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats1:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8190,6 +8193,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats1:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -8215,6 +8219,7 @@ ul.navlist {
 }
 #button-stats2:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8228,12 +8233,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats2:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats2:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8247,6 +8254,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats2:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -8272,6 +8280,7 @@ ul.navlist {
 }
 #button-stats3:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8285,12 +8294,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats3:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats3:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8304,6 +8315,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats3:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -8329,6 +8341,7 @@ ul.navlist {
 }
 #button-stats4:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8342,12 +8355,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats4:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats4:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8361,6 +8376,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats4:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -8386,6 +8402,7 @@ ul.navlist {
 }
 #button-stats5:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8399,12 +8416,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats5:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats5:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8418,6 +8437,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats5:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -8443,6 +8463,7 @@ ul.navlist {
 }
 #button-stats6:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8456,12 +8477,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats6:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats6:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8475,6 +8498,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats6:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -8500,6 +8524,7 @@ ul.navlist {
 }
 #button-stats7:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8513,12 +8538,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats7:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats7:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8532,6 +8559,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats7:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -8557,6 +8585,7 @@ ul.navlist {
 }
 #button-stats8:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8570,12 +8599,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats8:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats8:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8589,6 +8620,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats8:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -8614,6 +8646,7 @@ ul.navlist {
 }
 #button-stats9:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8627,12 +8660,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats9:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats9:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8646,6 +8681,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats9:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -8671,6 +8707,7 @@ ul.navlist {
 }
 #button-stats10:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8684,12 +8721,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats10:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats10:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8703,6 +8742,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats10:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -8728,6 +8768,7 @@ ul.navlist {
 }
 #button-stats11:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8741,12 +8782,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats11:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats11:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8760,6 +8803,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats11:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -8785,6 +8829,7 @@ ul.navlist {
 }
 #button-stats12:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8798,12 +8843,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats12:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats12:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8817,6 +8864,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats12:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -8842,6 +8890,7 @@ ul.navlist {
 }
 #button-stats13:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8855,12 +8904,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats13:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats13:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8874,6 +8925,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats13:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -8899,6 +8951,7 @@ ul.navlist {
 }
 #button-stats14:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8912,12 +8965,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats14:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats14:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8931,6 +8986,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats14:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -8956,6 +9012,7 @@ ul.navlist {
 }
 #button-stats15:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8969,12 +9026,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats15:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats15:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -8988,6 +9047,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats15:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -9013,6 +9073,7 @@ ul.navlist {
 }
 #button-stats16:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9026,12 +9087,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats16:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats16:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9045,6 +9108,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats16:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -9070,6 +9134,7 @@ ul.navlist {
 }
 #button-stats17:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9083,12 +9148,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats17:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats17:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9102,6 +9169,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats17:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -9127,6 +9195,7 @@ ul.navlist {
 }
 #button-stats18:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9140,12 +9209,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats18:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats18:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9159,6 +9230,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats18:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -9184,6 +9256,7 @@ ul.navlist {
 }
 #button-stats19:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9197,12 +9270,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats19:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats19:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9216,6 +9291,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats19:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -9241,6 +9317,7 @@ ul.navlist {
 }
 #button-stats20:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9254,12 +9331,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats20:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats20:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9273,6 +9352,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats20:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -9298,6 +9378,7 @@ ul.navlist {
 }
 #button-stats21:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9311,12 +9392,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats21:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats21:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9330,6 +9413,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats21:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -9355,6 +9439,7 @@ ul.navlist {
 }
 #button-stats22:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9368,12 +9453,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats22:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats22:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9387,6 +9474,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats22:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -9412,6 +9500,7 @@ ul.navlist {
 }
 #button-stats23:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9425,12 +9514,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats23:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats23:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9444,6 +9535,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats23:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -9469,6 +9561,7 @@ ul.navlist {
 }
 #button-stats24:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9482,12 +9575,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats24:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats24:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9501,6 +9596,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats24:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -9526,6 +9622,7 @@ ul.navlist {
 }
 #button-stats25:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9539,12 +9636,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats25:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats25:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9558,6 +9657,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats25:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -9583,6 +9683,7 @@ ul.navlist {
 }
 #button-stats26:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9596,12 +9697,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats26:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats26:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9615,6 +9718,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats26:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -9640,6 +9744,7 @@ ul.navlist {
 }
 #button-stats27:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9653,12 +9758,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats27:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats27:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9672,6 +9779,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats27:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -9697,6 +9805,7 @@ ul.navlist {
 }
 #button-stats28:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9710,12 +9819,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats28:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats28:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9729,6 +9840,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats28:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -9754,6 +9866,7 @@ ul.navlist {
 }
 #button-stats29:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9767,12 +9880,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats29:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats29:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9786,6 +9901,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats29:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -9811,6 +9927,7 @@ ul.navlist {
 }
 #button-stats30:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9824,12 +9941,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats30:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats30:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9843,6 +9962,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats30:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -9868,6 +9988,7 @@ ul.navlist {
 }
 #button-stats31:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9881,12 +10002,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats31:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats31:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9900,6 +10023,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats31:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -9925,6 +10049,7 @@ ul.navlist {
 }
 #button-stats32:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9938,12 +10063,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats32:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats32:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9957,6 +10084,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats32:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -9982,6 +10110,7 @@ ul.navlist {
 }
 #button-stats33:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -9995,12 +10124,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats33:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats33:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10014,6 +10145,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats33:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -10039,6 +10171,7 @@ ul.navlist {
 }
 #button-stats34:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10052,12 +10185,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats34:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats34:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10071,6 +10206,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats34:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -10096,6 +10232,7 @@ ul.navlist {
 }
 #button-stats35:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10109,12 +10246,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats35:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats35:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10128,6 +10267,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats35:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -10153,6 +10293,7 @@ ul.navlist {
 }
 #button-stats36:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10166,12 +10307,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats36:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats36:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10185,6 +10328,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats36:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -10210,6 +10354,7 @@ ul.navlist {
 }
 #button-stats37:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10223,12 +10368,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats37:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats37:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10242,6 +10389,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats37:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -10267,6 +10415,7 @@ ul.navlist {
 }
 #button-stats38:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10280,12 +10429,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats38:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats38:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10299,6 +10450,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats38:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -10324,6 +10476,7 @@ ul.navlist {
 }
 #button-stats39:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10337,12 +10490,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats39:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats39:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10356,6 +10511,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats39:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -10381,6 +10537,7 @@ ul.navlist {
 }
 #button-stats40:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10394,12 +10551,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats40:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats40:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10413,6 +10572,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats40:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -10438,6 +10598,7 @@ ul.navlist {
 }
 #button-stats41:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10451,12 +10612,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats41:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats41:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10470,6 +10633,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats41:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -10495,6 +10659,7 @@ ul.navlist {
 }
 #button-stats42:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10508,12 +10673,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats42:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats42:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10527,6 +10694,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats42:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -10552,6 +10720,7 @@ ul.navlist {
 }
 #button-stats43:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10565,12 +10734,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats43:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats43:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10584,6 +10755,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats43:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -10609,6 +10781,7 @@ ul.navlist {
 }
 #button-stats44:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10622,12 +10795,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats44:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats44:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10641,6 +10816,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats44:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -10666,6 +10842,7 @@ ul.navlist {
 }
 #button-stats45:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10679,12 +10856,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats45:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats45:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10698,6 +10877,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats45:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -10723,6 +10903,7 @@ ul.navlist {
 }
 #button-stats46:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10736,12 +10917,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats46:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats46:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10755,6 +10938,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats46:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -10780,6 +10964,7 @@ ul.navlist {
 }
 #button-stats47:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10793,12 +10978,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats47:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats47:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10812,6 +10999,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats47:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -10837,6 +11025,7 @@ ul.navlist {
 }
 #button-stats48:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10850,12 +11039,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats48:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats48:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10869,6 +11060,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats48:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -10894,6 +11086,7 @@ ul.navlist {
 }
 #button-stats49:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10907,12 +11100,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats49:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats49:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10926,6 +11121,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats49:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -10951,6 +11147,7 @@ ul.navlist {
 }
 #button-stats50:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10964,12 +11161,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats50:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats50:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -10983,6 +11182,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats50:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -11008,6 +11208,7 @@ ul.navlist {
 }
 #button-stats51:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -11021,12 +11222,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats51:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats51:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -11040,6 +11243,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats51:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -11065,6 +11269,7 @@ ul.navlist {
 }
 #button-stats52:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -11078,12 +11283,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats52:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats52:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -11097,6 +11304,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats52:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -11122,6 +11330,7 @@ ul.navlist {
 }
 #button-stats53:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -11135,12 +11344,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats53:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats53:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -11154,6 +11365,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats53:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -11179,6 +11391,7 @@ ul.navlist {
 }
 #button-stats54:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -11192,12 +11405,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats54:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats54:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -11211,6 +11426,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats54:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -11236,6 +11452,7 @@ ul.navlist {
 }
 #button-stats55:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -11249,12 +11466,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats55:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats55:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -11268,6 +11487,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats55:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -11293,6 +11513,7 @@ ul.navlist {
 }
 #button-stats56:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -11306,12 +11527,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats56:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats56:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -11325,6 +11548,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats56:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -11350,6 +11574,7 @@ ul.navlist {
 }
 #button-stats57:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -11363,12 +11588,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats57:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats57:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -11382,6 +11609,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats57:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
@@ -11407,6 +11635,7 @@ ul.navlist {
 }
 #button-stats58:before {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -11420,12 +11649,14 @@ ul.navlist {
 	left: -3%;
 }
 #button-stats58:hover:before {
+	border-radius: initial;
 	top: -20%;
 	left: 0;
 	transform: perspective(1000px) rotateX(80deg);
 }
 #button-stats58:after {
 	content: '';
+	border-radius: .6vw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -11439,6 +11670,7 @@ ul.navlist {
 	right: -1%;
 }
 #button-stats58:hover:after {
+	border-radius: initial;
 	bottom: -20%;
 	right: 0;
 	transform: perspective(1000px) rotateX(-80deg);
