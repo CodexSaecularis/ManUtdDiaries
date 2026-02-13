@@ -4,15 +4,15 @@
 	text-align: initial;  /* addition to avoid text centering */
 }
 .home span {
-	/* color: #fff; */
-	color: #da020e;
-	text-shadow: 0 0 2px #da020e;
-	opacity: none;
-}
-.home {
 	color: #fff;
 	/* color: #da020e;
 	text-shadow: 0 0 2px #da020e; */
+	opacity: none;
+}
+.home {
+	/* color: #fff; */
+	color: #da020e;
+	text-shadow: 0 0 2px #da020e;
 	opacity: none;
 }
 /* ⟱ BRICKS & TROPHIES ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -135,6 +135,30 @@
 .dropdown-27th-match {
 	background-image: url(../2025-26/27th-match.png);
 }
+
+/* MATCH 27 */
+#button-score-news27 h87 { display: none; }
+#button-score-news27:hover {
+	background: white;
+	box-shadow: 0 0 5px white,
+					   0 0 25px white,
+					   0 0 50px white,
+					   0 0 200px white;
+}
+/* 	MATCH 27 // BUTTON: ROTATE ANIMATION */
+#button-score-news27 span:nth-child(1) {
+	background: linear-gradient(90deg, transparent, white);
+}
+#button-score-news27 span:nth-child(3) {
+	background: linear-gradient(270deg, transparent, white);
+}
+#button-score-news27 span:nth-child(2) {
+	background: linear-gradient(180deg, transparent, white);
+}
+#button-score-news27 span:nth-child(4) {
+	background: linear-gradient(360deg, transparent, white);
+}
+
 .dropdown-28th-match {
 	background-image: url(../2025-26/28th-match.png);
 }
@@ -381,6 +405,10 @@ content: "2025/26";
 		font-size: 4vw;
 		transform: translate(-85%, 90%);
 	}
+
+	/* MATCH 27 */
+	#button-score-news27 h86 { display: none; }
+	#button-score-news27 h87 { display: initial; }
 }
 /* TABLET: LARGER SCREEN  🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛       */
 
