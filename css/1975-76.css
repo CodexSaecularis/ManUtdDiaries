@@ -1,0 +1,1144 @@
+/* ⟱ SCOREBOARD (TEAMS) ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.home {
+	color: #fff;
+	opacity: none;
+}
+/* ⟱ BRICKS & TROPHIES ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.brick-wall h1 {
+	position: absolute;
+	margin-top: -24.25%;
+	left: 35.5%;
+	background-size: cover;
+	z-index: 7;
+	font-family: raleway_f;
+	font-size: 5.9vw;
+	mix-blend-mode: overlay;
+}
+.brick-wall h1 span {
+	color: #ec334d;
+}
+#trophies { display: none; }
+/* ⟱ STATS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.stats-title span1 {
+	position: absolute;
+	font-family: myFont;
+	font-size: 2.7vw;
+	transform: translate(-87%, 70%);
+	color: #ffdccc;
+	text-shadow: 0 0 10px #ffb330, 0 0 10px #ffb330, 0 0 10px #ffb330, 0 0 10px #ffb330,
+					   0 0 20px #fe5201, 0 0 20px #fe5201, 0 0 20px #fe5201,
+					   0 0 40px #fe5201, 0 0 40px #fe5201,
+					   0 0 80px #fe5201, 0 0 80px #fe5201,
+					   0 0 120px #fe5201, 0 0 120px #fe5201;
+}
+/* ⟱ PLAYER PERFORMANCE ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+#cursor-change {
+	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='28px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23080101' d='M 2.5,3.5 C 7.1586,6.16843 11.4919,9.3351 15.5,13C 9.07438,12.1868 4.74104,14.6868 2.5,20.5C 1.16667,14.8333 1.16667,9.16667 2.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23af231e' d='M 3.5,1.5 C 9.3796,5.26653 15.0463,9.26653 20.5,13.5C 17.023,14.3227 13.3563,14.8227 9.5,15C 8.74756,15.6708 8.41423,16.5041 8.5,17.5C 7.20027,20.4323 5.20027,22.7656 2.5,24.5C 2.5,23.1667 2.5,21.8333 2.5,20.5C 4.74104,14.6868 9.07438,12.1868 15.5,13C 11.4919,9.3351 7.1586,6.16843 2.5,3.5C 2.32842,2.50838 2.66175,1.84171 3.5,1.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bab7d0' d='M 20.5,13.5 C 21.1667,13.8333 21.8333,14.1667 22.5,14.5C 22.5,15.5 22.5,16.5 22.5,17.5C 17.8665,16.8663 13.1998,16.8663 8.5,17.5C 8.41423,16.5041 8.74756,15.6708 9.5,15C 13.3563,14.8227 17.023,14.3227 20.5,13.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23b4bcca' d='M -0.5,-0.5 C 0.166667,-0.5 0.833333,-0.5 1.5,-0.5C 2.16667,0.166667 2.83333,0.833333 3.5,1.5C 2.66175,1.84171 2.32842,2.50838 2.5,3.5C 1.16667,9.16667 1.16667,14.8333 2.5,20.5C 2.5,21.8333 2.5,23.1667 2.5,24.5C 1.89022,25.391 1.55688,26.391 1.5,27.5C 0.833333,27.5 0.166667,27.5 -0.5,27.5C -0.5,18.1667 -0.5,8.83333 -0.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, auto;
+}
+.player-performance-title {
+	display: none;
+}
+/* ⟱ ON HOVER BADGES ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.badge1 .united {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 32.5%;
+    color: white;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+    background: linear-gradient(to bottom, #cc0000, #cc0000 60%, #d8d8d9 60%, #d8d8d9 80%, #1e2526 80%);
+	padding: 0vw 0.5vw 1vw;  /* above and bottom - left and right - only bottom */
+    text-align: center;
+}
+.badge1:hover .united {
+  visibility: visible;
+}
+.badge1:hover {
+	background: url(../1975-76/away-manutd.png) no-repeat;
+	background-size: 97.7% 72%;
+}
+
+.badge2 .spurs {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 32.5%;
+    color: #003366;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+    background: linear-gradient(to bottom, #d8d8d9, #d8d8d9 60%, #003366 60%, #003366 80%, #d8d8d9 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge2:hover .spurs {
+	visibility: visible;
+}
+.badge2:hover {
+	background: url(../1975-76/away-spurs.png) no-repeat;
+	background-size: 100% 72.5%;
+}
+
+.badge3 .sheffieldu {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 32.5%;
+    color: #cc0000;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+	background: linear-gradient(to bottom, #d8d8d9, #d8d8d9 60%, #1e2526 60%, #1e2526 80%, #cc0000 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge3:hover .sheffieldu {
+    visibility: visible;
+}
+.badge3:hover {
+	background: url(../1962-63/away-sheffieldu.png) no-repeat;
+	background-size: 98% 72.5%;
+}
+
+.badge4 .blackpool {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 32.5%;
+    color: black;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+    background: linear-gradient(to bottom, #fd8c03, #fd8c03 60%, #d8d8d9 60%, #d8d8d9 80%, #d8d8d9 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge4:hover .blackpool {
+    visibility: visible;
+}
+.badge4:hover {
+	background: url(../1956-57/away-blackpool.png) no-repeat;
+	background-size: 98% 72.5%;
+}
+
+.badge5 .arsenal {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 32.5%;
+    color: white;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+    background: linear-gradient(to bottom, #cc0000, #cc0000 60%, #d8d8d9 60%, #d8d8d9 80%, #cc0000 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge5:hover .arsenal {
+    visibility: visible;
+}
+.badge5:hover {
+	background: url(../1975-76/away-arsenal.png) no-repeat;
+	background-size: 100% 72.5%;
+}
+
+.badge6 .wolverhampton {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 32.5%;
+    color: black;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+    background: linear-gradient(to bottom, #feb80e, #feb80e 60%, #1e2526 60%, #1e2526 80%, #feb80e 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge6:hover .wolverhampton {
+    visibility: visible;
+}
+.badge6:hover {
+	background: url(../1956-57/away-wolves.png) no-repeat;
+	background-size: 98% 72.5%;
+}
+
+.badge7 .birmingham {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 32.5%;
+    color: white;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+    background: linear-gradient(to bottom, #003366, #003366 60%, #003366 60%, #003366 80%, #d8d8d9 80%);
+    /* background: linear-gradient(to bottom, #99192c, #99192c 60%, #d8d8d9 60%, #d8d8d9 80%, #d8d8d9 80%); */
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge7:hover .birmingham {
+    visibility: visible;
+}
+.badge7:hover {
+	background: url(../1956-57/away-birmingham.png) no-repeat;
+	background-size: 98% 72.5%;
+}
+
+.badge8 .leeds {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 32.5%;
+    color: #003366;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+    background: linear-gradient(to bottom, #d8d8d9, #d8d8d9 60%, #d8d8d9 60%, #d8d8d9 80%, #d8d8d9 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge8:hover .leeds {
+    visibility: visible;
+}
+.badge8:hover {
+	background: url(../1967-68/away-leeds.png) no-repeat;
+	background-size: 98% 72.5%;
+}
+
+.badge9 .newcastle {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 32.5%;
+    color: black;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+	background: linear-gradient(to bottom, #d8d8d9, #d8d8d9 60%, #1e2526 60%, #1e2526 80%, #d8d8d9 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge9:hover .newcastle {
+    visibility: visible;
+}
+.badge9:hover {
+	background: url(../1975-76/away-newcastle.png) no-repeat;
+	background-size: 98% 72.5%;
+}
+
+.badge10 .coventry {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 32.5%;
+	width: 13%;
+    color: white;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+	background: linear-gradient(to bottom, #4c92ce, #4c92ce 60%, #4c92ce 60%, #4c92ce 80%, #4c92ce 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge10:hover .coventry {
+    visibility: visible;
+}
+.badge10:hover {
+	background: url(../1975-76/away-coventry.png) no-repeat;
+	background-size: 98% 72.5%;
+}
+
+.badge11 .leicester {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 32.5%;
+    color: white;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+    background: linear-gradient(to bottom, #003366, #003366 60%, #d8d8d9 60%, #d8d8d9 80%, #d8d8d9 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge11:hover .leicester {
+    visibility: visible;
+}
+.badge11:hover {
+	background: url(../1975-76/away-leicester.png) no-repeat;
+	background-size: 98% 72.5%;
+}
+
+.badge12 .qpr {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 32.5%;
+    color: white;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+	background: linear-gradient(to bottom, #003366, #003366 60%, #d8d8d9 60%, #d8d8d9 80%, #d8d8d9 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge12:hover .qpr {
+    visibility: visible;
+}
+.badge12:hover {
+	background: url(../1968-69/away-qpr.png) no-repeat;
+	background-size: 98% 72.5%;
+}
+
+.badge13 .derby {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 32.5%;
+    color: #003366;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+    background: linear-gradient(to bottom, #d8d8d9, #d8d8d9 60%, #003366 60%, #003366 80%, #d8d8d9 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge13:hover .derby {
+    visibility: visible;
+}
+.badge13:hover {
+	background: url(../1975-76/away-derby.png) no-repeat;
+	background-size: 98% 72.5%;
+}
+
+.badge14 .liverpool {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 32.5%;
+    color: white;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+	background: linear-gradient(to bottom, #cc0000, #cc0000 60%, #cc0000 60%, #cc0000 80%, #cc0000 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge14:hover .liverpool {
+    visibility: visible;
+}
+.badge14:hover {
+	background: url(../1975-76/away-liverpool.png) no-repeat;
+	background-size: 98% 72.5%;
+}
+
+.badge15 .everton {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 32.5%;
+    color: white;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+    background: linear-gradient(to bottom, #003366, #003366 60%, #d8d8d9 60%, #d8d8d9 80%, #d8d8d9 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge15:hover .everton {
+    visibility: visible;
+}
+.badge15:hover {
+	background: url(../1975-76/away-everton.png	) no-repeat;
+	background-size: 98% 72.5%;
+}
+
+.badge16 .norwich {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 32.5%;
+    color: #159444;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+    background: linear-gradient(to bottom, #f2ca2f, #f2ca2f 60%, #159444 60%, #159444 80%, #f2ca2f 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge16:hover .norwich {
+    visibility: visible;
+}
+.badge16:hover {
+	background: url(../1975-76/away-norwich.png) no-repeat;
+	background-size: 98% 72.5%;
+}
+
+.badge17 .westham {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 32.5%;
+    color: #99ccff;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+    background: linear-gradient(to bottom, #99192c, #99192c 60%, #d8d8d9 60%, #d8d8d9 80%, #d8d8d9 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge17:hover .westham {
+    visibility: visible;
+}
+.badge17:hover {
+	background: url(../1975-76/away-westham.png) no-repeat;
+	background-size: 98% 72.5%;
+}
+
+.badge18 .city {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 32.5%;
+    color: black;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+	background: linear-gradient(to bottom, #99ccff, #99ccff 60%, #d8d8d9 60%, #d8d8d9 80%, #99ccff 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge18:hover .city {
+    visibility: visible;
+}
+.badge18:hover {
+	background: url(../1962-63/away-city.png) no-repeat;
+	background-size: 98% 72.5%;
+}
+
+.badge19 .villa {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 32.5%;
+    color: #99ccff;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+    background: linear-gradient(to bottom, #99192c, #99192c 60%, #d8d8d9 60%, #d8d8d9 80%, #99ccff 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge19:hover .villa {
+    visibility: visible;
+}
+.badge19:hover {
+	background: url(../1975-76/away-villa.png) no-repeat;
+	background-size: 98% 72.5%;
+}
+
+.badge20 .stoke {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 32.5%;
+    color: #cc0000;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+	background: linear-gradient(to bottom, #d8d8d9, #d8d8d9 60%, #d8d8d9 60%, #d8d8d9 80%, #d8d8d9 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge20:hover .stoke {
+    visibility: visible;
+}
+.badge20:hover {
+	background: url(../1975-76/away-stoke.png) no-repeat;
+	background-size: 98% 72.5%;
+}
+
+.badge21 .burnley {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 34%;
+    color: #99ccff;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+    background: linear-gradient(to bottom, #99192c, #99192c 60%, #d8d8d9 60%, #d8d8d9 80%, #d8d8d9 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge21:hover .burnley {
+    visibility: visible;
+}
+.badge21:hover {
+	background: url(../1975-76/away-burnley.png) no-repeat;
+	background-size: 98% 82%;
+}
+
+.badge22 .sheffieldu {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 34%;
+	width: 145.5%;
+    color: #cc0000;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+	background: linear-gradient(to bottom, #d8d8d9, #d8d8d9 60%, #1e2526 60%, #1e2526 80%, #d8d8d9 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge22:hover .sheffieldu {
+    visibility: visible;
+}
+.badge22:hover {
+	background: url(../1975-76/away-sheffieldu.png) no-repeat;
+	background-size: 100% 82%;
+}
+
+.badge43 .middlesbrough {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 32.5%;
+    color: white;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+	background: linear-gradient(to bottom, #cc0000, #cc0000 60%, #cc0000 60%, #cc0000 80%, #cc0000 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge43:hover .middlesbrough {
+    visibility: visible;
+}
+.badge43:hover {
+	background: url(../1975-76/away-middlesbrough.png) no-repeat;
+	background-size: 98% 72.5%;
+}
+
+.badge44 .ipswich {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 32.5%;
+    color: white;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+    background: linear-gradient(to bottom, #003366, #003366 60%, #d8d8d9 60%, #d8d8d9 80%, #003366 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge44:hover .ipswich {
+    visibility: visible;
+}
+.badge44:hover {
+	background: url(../1957-58/away-leicester.png) no-repeat;
+	background-size: 98% 72.5%;
+}
+
+.badge23:hover {
+	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='28px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23080101' d='M 2.5,3.5 C 7.1586,6.16843 11.4919,9.3351 15.5,13C 9.07438,12.1868 4.74104,14.6868 2.5,20.5C 1.16667,14.8333 1.16667,9.16667 2.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23af231e' d='M 3.5,1.5 C 9.3796,5.26653 15.0463,9.26653 20.5,13.5C 17.023,14.3227 13.3563,14.8227 9.5,15C 8.74756,15.6708 8.41423,16.5041 8.5,17.5C 7.20027,20.4323 5.20027,22.7656 2.5,24.5C 2.5,23.1667 2.5,21.8333 2.5,20.5C 4.74104,14.6868 9.07438,12.1868 15.5,13C 11.4919,9.3351 7.1586,6.16843 2.5,3.5C 2.32842,2.50838 2.66175,1.84171 3.5,1.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bab7d0' d='M 20.5,13.5 C 21.1667,13.8333 21.8333,14.1667 22.5,14.5C 22.5,15.5 22.5,16.5 22.5,17.5C 17.8665,16.8663 13.1998,16.8663 8.5,17.5C 8.41423,16.5041 8.74756,15.6708 9.5,15C 13.3563,14.8227 17.023,14.3227 20.5,13.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23b4bcca' d='M -0.5,-0.5 C 0.166667,-0.5 0.833333,-0.5 1.5,-0.5C 2.16667,0.166667 2.83333,0.833333 3.5,1.5C 2.66175,1.84171 2.32842,2.50838 2.5,3.5C 1.16667,9.16667 1.16667,14.8333 2.5,20.5C 2.5,21.8333 2.5,23.1667 2.5,24.5C 1.89022,25.391 1.55688,26.391 1.5,27.5C 0.833333,27.5 0.166667,27.5 -0.5,27.5C -0.5,18.1667 -0.5,8.83333 -0.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, auto;
+}
+.badge24:hover {
+	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='28px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23080101' d='M 2.5,3.5 C 7.1586,6.16843 11.4919,9.3351 15.5,13C 9.07438,12.1868 4.74104,14.6868 2.5,20.5C 1.16667,14.8333 1.16667,9.16667 2.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23af231e' d='M 3.5,1.5 C 9.3796,5.26653 15.0463,9.26653 20.5,13.5C 17.023,14.3227 13.3563,14.8227 9.5,15C 8.74756,15.6708 8.41423,16.5041 8.5,17.5C 7.20027,20.4323 5.20027,22.7656 2.5,24.5C 2.5,23.1667 2.5,21.8333 2.5,20.5C 4.74104,14.6868 9.07438,12.1868 15.5,13C 11.4919,9.3351 7.1586,6.16843 2.5,3.5C 2.32842,2.50838 2.66175,1.84171 3.5,1.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bab7d0' d='M 20.5,13.5 C 21.1667,13.8333 21.8333,14.1667 22.5,14.5C 22.5,15.5 22.5,16.5 22.5,17.5C 17.8665,16.8663 13.1998,16.8663 8.5,17.5C 8.41423,16.5041 8.74756,15.6708 9.5,15C 13.3563,14.8227 17.023,14.3227 20.5,13.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23b4bcca' d='M -0.5,-0.5 C 0.166667,-0.5 0.833333,-0.5 1.5,-0.5C 2.16667,0.166667 2.83333,0.833333 3.5,1.5C 2.66175,1.84171 2.32842,2.50838 2.5,3.5C 1.16667,9.16667 1.16667,14.8333 2.5,20.5C 2.5,21.8333 2.5,23.1667 2.5,24.5C 1.89022,25.391 1.55688,26.391 1.5,27.5C 0.833333,27.5 0.166667,27.5 -0.5,27.5C -0.5,18.1667 -0.5,8.83333 -0.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, auto;
+}
+.badge25:hover {
+	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='28px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23080101' d='M 2.5,3.5 C 7.1586,6.16843 11.4919,9.3351 15.5,13C 9.07438,12.1868 4.74104,14.6868 2.5,20.5C 1.16667,14.8333 1.16667,9.16667 2.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23af231e' d='M 3.5,1.5 C 9.3796,5.26653 15.0463,9.26653 20.5,13.5C 17.023,14.3227 13.3563,14.8227 9.5,15C 8.74756,15.6708 8.41423,16.5041 8.5,17.5C 7.20027,20.4323 5.20027,22.7656 2.5,24.5C 2.5,23.1667 2.5,21.8333 2.5,20.5C 4.74104,14.6868 9.07438,12.1868 15.5,13C 11.4919,9.3351 7.1586,6.16843 2.5,3.5C 2.32842,2.50838 2.66175,1.84171 3.5,1.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bab7d0' d='M 20.5,13.5 C 21.1667,13.8333 21.8333,14.1667 22.5,14.5C 22.5,15.5 22.5,16.5 22.5,17.5C 17.8665,16.8663 13.1998,16.8663 8.5,17.5C 8.41423,16.5041 8.74756,15.6708 9.5,15C 13.3563,14.8227 17.023,14.3227 20.5,13.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23b4bcca' d='M -0.5,-0.5 C 0.166667,-0.5 0.833333,-0.5 1.5,-0.5C 2.16667,0.166667 2.83333,0.833333 3.5,1.5C 2.66175,1.84171 2.32842,2.50838 2.5,3.5C 1.16667,9.16667 1.16667,14.8333 2.5,20.5C 2.5,21.8333 2.5,23.1667 2.5,24.5C 1.89022,25.391 1.55688,26.391 1.5,27.5C 0.833333,27.5 0.166667,27.5 -0.5,27.5C -0.5,18.1667 -0.5,8.83333 -0.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, auto;
+}
+.badge26:hover {
+	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='28px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23080101' d='M 2.5,3.5 C 7.1586,6.16843 11.4919,9.3351 15.5,13C 9.07438,12.1868 4.74104,14.6868 2.5,20.5C 1.16667,14.8333 1.16667,9.16667 2.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23af231e' d='M 3.5,1.5 C 9.3796,5.26653 15.0463,9.26653 20.5,13.5C 17.023,14.3227 13.3563,14.8227 9.5,15C 8.74756,15.6708 8.41423,16.5041 8.5,17.5C 7.20027,20.4323 5.20027,22.7656 2.5,24.5C 2.5,23.1667 2.5,21.8333 2.5,20.5C 4.74104,14.6868 9.07438,12.1868 15.5,13C 11.4919,9.3351 7.1586,6.16843 2.5,3.5C 2.32842,2.50838 2.66175,1.84171 3.5,1.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bab7d0' d='M 20.5,13.5 C 21.1667,13.8333 21.8333,14.1667 22.5,14.5C 22.5,15.5 22.5,16.5 22.5,17.5C 17.8665,16.8663 13.1998,16.8663 8.5,17.5C 8.41423,16.5041 8.74756,15.6708 9.5,15C 13.3563,14.8227 17.023,14.3227 20.5,13.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23b4bcca' d='M -0.5,-0.5 C 0.166667,-0.5 0.833333,-0.5 1.5,-0.5C 2.16667,0.166667 2.83333,0.833333 3.5,1.5C 2.66175,1.84171 2.32842,2.50838 2.5,3.5C 1.16667,9.16667 1.16667,14.8333 2.5,20.5C 2.5,21.8333 2.5,23.1667 2.5,24.5C 1.89022,25.391 1.55688,26.391 1.5,27.5C 0.833333,27.5 0.166667,27.5 -0.5,27.5C -0.5,18.1667 -0.5,8.83333 -0.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, auto;
+}
+.badge27:hover {
+	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='28px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23080101' d='M 2.5,3.5 C 7.1586,6.16843 11.4919,9.3351 15.5,13C 9.07438,12.1868 4.74104,14.6868 2.5,20.5C 1.16667,14.8333 1.16667,9.16667 2.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23af231e' d='M 3.5,1.5 C 9.3796,5.26653 15.0463,9.26653 20.5,13.5C 17.023,14.3227 13.3563,14.8227 9.5,15C 8.74756,15.6708 8.41423,16.5041 8.5,17.5C 7.20027,20.4323 5.20027,22.7656 2.5,24.5C 2.5,23.1667 2.5,21.8333 2.5,20.5C 4.74104,14.6868 9.07438,12.1868 15.5,13C 11.4919,9.3351 7.1586,6.16843 2.5,3.5C 2.32842,2.50838 2.66175,1.84171 3.5,1.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bab7d0' d='M 20.5,13.5 C 21.1667,13.8333 21.8333,14.1667 22.5,14.5C 22.5,15.5 22.5,16.5 22.5,17.5C 17.8665,16.8663 13.1998,16.8663 8.5,17.5C 8.41423,16.5041 8.74756,15.6708 9.5,15C 13.3563,14.8227 17.023,14.3227 20.5,13.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23b4bcca' d='M -0.5,-0.5 C 0.166667,-0.5 0.833333,-0.5 1.5,-0.5C 2.16667,0.166667 2.83333,0.833333 3.5,1.5C 2.66175,1.84171 2.32842,2.50838 2.5,3.5C 1.16667,9.16667 1.16667,14.8333 2.5,20.5C 2.5,21.8333 2.5,23.1667 2.5,24.5C 1.89022,25.391 1.55688,26.391 1.5,27.5C 0.833333,27.5 0.166667,27.5 -0.5,27.5C -0.5,18.1667 -0.5,8.83333 -0.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, auto;
+}
+.badge28:hover {
+	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='28px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23080101' d='M 2.5,3.5 C 7.1586,6.16843 11.4919,9.3351 15.5,13C 9.07438,12.1868 4.74104,14.6868 2.5,20.5C 1.16667,14.8333 1.16667,9.16667 2.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23af231e' d='M 3.5,1.5 C 9.3796,5.26653 15.0463,9.26653 20.5,13.5C 17.023,14.3227 13.3563,14.8227 9.5,15C 8.74756,15.6708 8.41423,16.5041 8.5,17.5C 7.20027,20.4323 5.20027,22.7656 2.5,24.5C 2.5,23.1667 2.5,21.8333 2.5,20.5C 4.74104,14.6868 9.07438,12.1868 15.5,13C 11.4919,9.3351 7.1586,6.16843 2.5,3.5C 2.32842,2.50838 2.66175,1.84171 3.5,1.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bab7d0' d='M 20.5,13.5 C 21.1667,13.8333 21.8333,14.1667 22.5,14.5C 22.5,15.5 22.5,16.5 22.5,17.5C 17.8665,16.8663 13.1998,16.8663 8.5,17.5C 8.41423,16.5041 8.74756,15.6708 9.5,15C 13.3563,14.8227 17.023,14.3227 20.5,13.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23b4bcca' d='M -0.5,-0.5 C 0.166667,-0.5 0.833333,-0.5 1.5,-0.5C 2.16667,0.166667 2.83333,0.833333 3.5,1.5C 2.66175,1.84171 2.32842,2.50838 2.5,3.5C 1.16667,9.16667 1.16667,14.8333 2.5,20.5C 2.5,21.8333 2.5,23.1667 2.5,24.5C 1.89022,25.391 1.55688,26.391 1.5,27.5C 0.833333,27.5 0.166667,27.5 -0.5,27.5C -0.5,18.1667 -0.5,8.83333 -0.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, auto;
+}
+.badge32:hover {
+	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='28px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23080101' d='M 2.5,3.5 C 7.1586,6.16843 11.4919,9.3351 15.5,13C 9.07438,12.1868 4.74104,14.6868 2.5,20.5C 1.16667,14.8333 1.16667,9.16667 2.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23af231e' d='M 3.5,1.5 C 9.3796,5.26653 15.0463,9.26653 20.5,13.5C 17.023,14.3227 13.3563,14.8227 9.5,15C 8.74756,15.6708 8.41423,16.5041 8.5,17.5C 7.20027,20.4323 5.20027,22.7656 2.5,24.5C 2.5,23.1667 2.5,21.8333 2.5,20.5C 4.74104,14.6868 9.07438,12.1868 15.5,13C 11.4919,9.3351 7.1586,6.16843 2.5,3.5C 2.32842,2.50838 2.66175,1.84171 3.5,1.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bab7d0' d='M 20.5,13.5 C 21.1667,13.8333 21.8333,14.1667 22.5,14.5C 22.5,15.5 22.5,16.5 22.5,17.5C 17.8665,16.8663 13.1998,16.8663 8.5,17.5C 8.41423,16.5041 8.74756,15.6708 9.5,15C 13.3563,14.8227 17.023,14.3227 20.5,13.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23b4bcca' d='M -0.5,-0.5 C 0.166667,-0.5 0.833333,-0.5 1.5,-0.5C 2.16667,0.166667 2.83333,0.833333 3.5,1.5C 2.66175,1.84171 2.32842,2.50838 2.5,3.5C 1.16667,9.16667 1.16667,14.8333 2.5,20.5C 2.5,21.8333 2.5,23.1667 2.5,24.5C 1.89022,25.391 1.55688,26.391 1.5,27.5C 0.833333,27.5 0.166667,27.5 -0.5,27.5C -0.5,18.1667 -0.5,8.83333 -0.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, auto;
+}
+.badge33:hover {
+	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='28px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23080101' d='M 2.5,3.5 C 7.1586,6.16843 11.4919,9.3351 15.5,13C 9.07438,12.1868 4.74104,14.6868 2.5,20.5C 1.16667,14.8333 1.16667,9.16667 2.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23af231e' d='M 3.5,1.5 C 9.3796,5.26653 15.0463,9.26653 20.5,13.5C 17.023,14.3227 13.3563,14.8227 9.5,15C 8.74756,15.6708 8.41423,16.5041 8.5,17.5C 7.20027,20.4323 5.20027,22.7656 2.5,24.5C 2.5,23.1667 2.5,21.8333 2.5,20.5C 4.74104,14.6868 9.07438,12.1868 15.5,13C 11.4919,9.3351 7.1586,6.16843 2.5,3.5C 2.32842,2.50838 2.66175,1.84171 3.5,1.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bab7d0' d='M 20.5,13.5 C 21.1667,13.8333 21.8333,14.1667 22.5,14.5C 22.5,15.5 22.5,16.5 22.5,17.5C 17.8665,16.8663 13.1998,16.8663 8.5,17.5C 8.41423,16.5041 8.74756,15.6708 9.5,15C 13.3563,14.8227 17.023,14.3227 20.5,13.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23b4bcca' d='M -0.5,-0.5 C 0.166667,-0.5 0.833333,-0.5 1.5,-0.5C 2.16667,0.166667 2.83333,0.833333 3.5,1.5C 2.66175,1.84171 2.32842,2.50838 2.5,3.5C 1.16667,9.16667 1.16667,14.8333 2.5,20.5C 2.5,21.8333 2.5,23.1667 2.5,24.5C 1.89022,25.391 1.55688,26.391 1.5,27.5C 0.833333,27.5 0.166667,27.5 -0.5,27.5C -0.5,18.1667 -0.5,8.83333 -0.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, auto;
+}
+.badge34:hover {
+	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='28px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23080101' d='M 2.5,3.5 C 7.1586,6.16843 11.4919,9.3351 15.5,13C 9.07438,12.1868 4.74104,14.6868 2.5,20.5C 1.16667,14.8333 1.16667,9.16667 2.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23af231e' d='M 3.5,1.5 C 9.3796,5.26653 15.0463,9.26653 20.5,13.5C 17.023,14.3227 13.3563,14.8227 9.5,15C 8.74756,15.6708 8.41423,16.5041 8.5,17.5C 7.20027,20.4323 5.20027,22.7656 2.5,24.5C 2.5,23.1667 2.5,21.8333 2.5,20.5C 4.74104,14.6868 9.07438,12.1868 15.5,13C 11.4919,9.3351 7.1586,6.16843 2.5,3.5C 2.32842,2.50838 2.66175,1.84171 3.5,1.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bab7d0' d='M 20.5,13.5 C 21.1667,13.8333 21.8333,14.1667 22.5,14.5C 22.5,15.5 22.5,16.5 22.5,17.5C 17.8665,16.8663 13.1998,16.8663 8.5,17.5C 8.41423,16.5041 8.74756,15.6708 9.5,15C 13.3563,14.8227 17.023,14.3227 20.5,13.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23b4bcca' d='M -0.5,-0.5 C 0.166667,-0.5 0.833333,-0.5 1.5,-0.5C 2.16667,0.166667 2.83333,0.833333 3.5,1.5C 2.66175,1.84171 2.32842,2.50838 2.5,3.5C 1.16667,9.16667 1.16667,14.8333 2.5,20.5C 2.5,21.8333 2.5,23.1667 2.5,24.5C 1.89022,25.391 1.55688,26.391 1.5,27.5C 0.833333,27.5 0.166667,27.5 -0.5,27.5C -0.5,18.1667 -0.5,8.83333 -0.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, auto;
+}
+.badge35:hover {
+	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='28px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23080101' d='M 2.5,3.5 C 7.1586,6.16843 11.4919,9.3351 15.5,13C 9.07438,12.1868 4.74104,14.6868 2.5,20.5C 1.16667,14.8333 1.16667,9.16667 2.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23af231e' d='M 3.5,1.5 C 9.3796,5.26653 15.0463,9.26653 20.5,13.5C 17.023,14.3227 13.3563,14.8227 9.5,15C 8.74756,15.6708 8.41423,16.5041 8.5,17.5C 7.20027,20.4323 5.20027,22.7656 2.5,24.5C 2.5,23.1667 2.5,21.8333 2.5,20.5C 4.74104,14.6868 9.07438,12.1868 15.5,13C 11.4919,9.3351 7.1586,6.16843 2.5,3.5C 2.32842,2.50838 2.66175,1.84171 3.5,1.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bab7d0' d='M 20.5,13.5 C 21.1667,13.8333 21.8333,14.1667 22.5,14.5C 22.5,15.5 22.5,16.5 22.5,17.5C 17.8665,16.8663 13.1998,16.8663 8.5,17.5C 8.41423,16.5041 8.74756,15.6708 9.5,15C 13.3563,14.8227 17.023,14.3227 20.5,13.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23b4bcca' d='M -0.5,-0.5 C 0.166667,-0.5 0.833333,-0.5 1.5,-0.5C 2.16667,0.166667 2.83333,0.833333 3.5,1.5C 2.66175,1.84171 2.32842,2.50838 2.5,3.5C 1.16667,9.16667 1.16667,14.8333 2.5,20.5C 2.5,21.8333 2.5,23.1667 2.5,24.5C 1.89022,25.391 1.55688,26.391 1.5,27.5C 0.833333,27.5 0.166667,27.5 -0.5,27.5C -0.5,18.1667 -0.5,8.83333 -0.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, auto;
+}
+.badge36:hover {
+	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='23px' height='28px' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23080101' d='M 2.5,3.5 C 7.1586,6.16843 11.4919,9.3351 15.5,13C 9.07438,12.1868 4.74104,14.6868 2.5,20.5C 1.16667,14.8333 1.16667,9.16667 2.5,3.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23af231e' d='M 3.5,1.5 C 9.3796,5.26653 15.0463,9.26653 20.5,13.5C 17.023,14.3227 13.3563,14.8227 9.5,15C 8.74756,15.6708 8.41423,16.5041 8.5,17.5C 7.20027,20.4323 5.20027,22.7656 2.5,24.5C 2.5,23.1667 2.5,21.8333 2.5,20.5C 4.74104,14.6868 9.07438,12.1868 15.5,13C 11.4919,9.3351 7.1586,6.16843 2.5,3.5C 2.32842,2.50838 2.66175,1.84171 3.5,1.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23bab7d0' d='M 20.5,13.5 C 21.1667,13.8333 21.8333,14.1667 22.5,14.5C 22.5,15.5 22.5,16.5 22.5,17.5C 17.8665,16.8663 13.1998,16.8663 8.5,17.5C 8.41423,16.5041 8.74756,15.6708 9.5,15C 13.3563,14.8227 17.023,14.3227 20.5,13.5 Z'/%3E%3C/g%3E%3Cg%3E%3Cpath style='opacity:1' fill='%23b4bcca' d='M -0.5,-0.5 C 0.166667,-0.5 0.833333,-0.5 1.5,-0.5C 2.16667,0.166667 2.83333,0.833333 3.5,1.5C 2.66175,1.84171 2.32842,2.50838 2.5,3.5C 1.16667,9.16667 1.16667,14.8333 2.5,20.5C 2.5,21.8333 2.5,23.1667 2.5,24.5C 1.89022,25.391 1.55688,26.391 1.5,27.5C 0.833333,27.5 0.166667,27.5 -0.5,27.5C -0.5,18.1667 -0.5,8.83333 -0.5,-0.5 Z'/%3E%3C/g%3E%3C/svg%3E%0A") 1 1, auto;
+}
+
+.badge29 .brentford {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 34%;
+    color: #cc0000;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+	background: linear-gradient(to bottom, #d8d8d9, #d8d8d9 60%, #1e2526 60%, #1e2526 80%, #1e2526 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge29:hover .brentford {
+    visibility: visible;
+}
+.badge29:hover {
+	background: url(../1975-76/away-brentford.png) no-repeat;
+	background-size: 96% 82%;
+}
+
+.badge30 .villa2 {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 34%;
+    color: #99ccff;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+    background: linear-gradient(to bottom, #99192c, #99192c 60%, #d8d8d9 60%, #d8d8d9 80%, #99ccff 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge30:hover .villa2 {
+    visibility: visible;
+}
+.badge30:hover {
+	background: url(../1975-76/away-villa2.png) no-repeat;
+	background-size: 96% 82%;
+}
+
+.badge31 .city2 {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 34%;
+    color: black;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+	background: linear-gradient(to bottom, #99ccff, #99ccff 60%, #d8d8d9 60%, #d8d8d9 80%, #99ccff 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge31:hover .city2 {
+    visibility: visible;
+}
+.badge31:hover {
+	background: url(../1975-76/away-city2.png) no-repeat;
+	background-size: 96% 82%;
+}
+
+.badge37 .oxford {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 34%;
+    color: #003366;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+    background: linear-gradient(to bottom, #feb80e, #feb80e 60%, #003366 60%, #003366 80%, #feb80e 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge37:hover .oxford {
+    visibility: visible;
+}
+.badge37:hover {
+	background: url(../1975-76/away-oxford.png) no-repeat;
+	background-size: 97% 82%;
+}
+
+.badge38 .peterborough {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 34%;
+    color: white;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+    background: linear-gradient(to bottom, #003366, #003366 60%, #003366 60%, #003366 80%, #cc0000 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge38:hover .peterborough {
+    visibility: visible;
+}
+.badge38:hover {
+	background: url(../1975-76/away-peterborough.png) no-repeat;
+	background-size: 97% 82%;
+}
+
+.badge39 .leicester2 {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 34%;
+    color: white;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+    background: linear-gradient(to bottom, #003366, #003366 60%, #d8d8d9 60%, #d8d8d9 80%, #d8d8d9 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge39:hover .leicester2 {
+    visibility: visible;
+}
+.badge39:hover {
+	background: url(../1975-76/away-leicester2.png) no-repeat;
+	background-size: 97% 82%;
+}
+
+.badge40 .wolves2 {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 34%;
+    color: black;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+    background: linear-gradient(to bottom, #feb80e, #feb80e 60%, #1e2526 60%, #1e2526 80%, #feb80e 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge40:hover .wolves2 {
+    visibility: visible;
+}
+.badge40:hover {
+	background: url(../1975-76/away-wolves2.png) no-repeat;
+	background-size: 97% 82%;
+}
+
+.badge41 .derby2 {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 34%;
+	width: 13.2%;
+    color: #003366;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+    background: linear-gradient(to bottom, #d8d8d9, #d8d8d9 60%, #003366 60%, #003366 80%, #d8d8d9 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge41:hover .derby2 {
+    visibility: visible;
+}
+.badge41:hover {
+	background: url(../1975-76/away-derby2.png) no-repeat;
+	background-size: 97% 82%;
+}
+
+.badge42 .southampton {
+	position: absolute;
+    visibility: hidden;
+	border-radius: .5vw;
+	top: 34%;
+    color: #002060;
+    font-family: Century Gothic;
+    font-size: 1.1vw;
+    background: linear-gradient(to bottom, #d8cb3f, #d8cb3f 60%, #002060 60%, #002060 80%, #d8cb3f 80%);
+	padding: 0vw 0.5vw 1vw;
+    text-align: center;
+}
+.badge42:hover .southampton {
+    visibility: visible;
+}
+.badge42:hover {
+	background: url(../1975-76/away-southampton.png) no-repeat;
+	background-size: 97% 82%;
+}
+/* ⟰ ON HOVER BADGES ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* ⟰ KITS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.kits {
+	background-image: url(../1975-76/kits.png);
+}
+/* ⟱ PRESEASON, MATCHES, INTERNATIONAL BREAK ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.dropdown-preseason {
+	background-image: url(../core/no-pre-season.png);
+}
+.dropdown-51st-match {
+	background-image: url(../1975-76/51st-match.png);
+}
+/* ⟱ BADGE-SPONSOR SPIN ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* BADGE-SPONSOR SPIN: HISTORICAL */
+.home-1stkit-1-left {
+	position: absolute;
+	box-sizing: content-box;
+	background: url(../core/1975-76-1kit.png);
+	background-size: 100% 100%;
+	text-align: center;
+	padding: 0% .5%;
+	width: 3%;
+	height: 6.15vw;
+	display: flex;
+	margin-top: -16.65%;
+	left: 7%;
+}
+.home-1stkit-1-right {
+	position: absolute;
+	box-sizing: content-box;
+	background: url(../core/1975-76-1kit.png);
+	background-size: 100% 100%;
+	text-align: center;
+	padding: 0% .5%;
+	width: 3%;
+	height: 6.15vw;
+	display: flex;
+	margin-top: -16.65%;
+	left: 94.4%;
+}
+/* BADGE-SPONSOR SPIN: STARTING XI */
+.home-1stkit-2-left {
+	position: absolute;
+	box-sizing: content-box;
+	background: url(../core/1975-76-1kit.png);
+	background-size: 100% 100%;
+	text-align: center;
+	padding: 0% .5%;
+	width: 3%;
+	height: 6.15vw;
+	display: flex;
+	margin-top: -44%;
+	left: 7%;
+}
+.home-1stkit-2-right {
+	position: absolute;
+	box-sizing: content-box;
+	background: url(../core/1975-76-1kit.png);
+	background-size: 100% 100%;
+	text-align: center;
+	padding: 0% .5%;
+	width: 3%;
+	height: 6.15vw;
+	display: flex;
+	margin-top: -44%;
+	left: 94.4%;
+}
+/* BADGE-SPONSOR SPIN: SCREEN BOARDS NEXT TO LINKS */
+.left1 {
+	background: url(../core/2007-08-1kit.png);
+	background-size: 100% 100%;
+}
+.left2 {
+	background: url(../core/2003-05-2kit.png);
+	background-size: 100% 100%;
+}
+.left3 {
+	background: url(../core/2020-21-3kit.png);
+	background-size: 100% 100%;
+}
+.left4 {
+	background: url(../core/1995-96-1kit.png);
+	background-size: 100% 100%;
+}
+.right1 {
+	background: url(../core/1990-92-2kit.png);
+	background-size: 100% 100%;
+}
+.right2 {
+	background: url(../core/2002-03-1kit.png);
+	background-size: 100% 100%;
+}
+.right3 {
+	background: url(../core/1992-94-3kit.png);
+	background-size: 100% 100%;
+}
+.right4 {
+	background: url(../core/2008-09-3kit.png);
+	background-size: 100% 100%;
+}
+/* BADGE-SPONSOR SPIN: SCREEN BOARDS NEXT TO LINKS */
+/* ⟰ BADGE-SPONSOR SPIN ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+/* ⟱ BOTTOM & FOOTER ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+.bottom-isometric::before {
+content: "1975/76";
+}
+
+/* TABLET: LARGER SCREEN  🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛       */
+@media only screen and (max-width: 1100px) {  /* TABLET: LARGER SCREEN 🔳 */
+	/* ⟱ BRICKS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.brick-wall h1 {
+		position: absolute;
+		margin-top: -46%;
+		left: 25.5%;
+		background-size: cover;
+		z-index: 7;
+		font-family: raleway_f;
+		font-size: 11vw;
+		mix-blend-mode: overlay;
+	}
+	/* ⟱ STATS ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+	.stats-title span1 {
+		position: absolute;
+		font-family: myFont;
+		font-size: 3.7vw;
+		transform: translate(-83%, 90%);
+		color: #ffdccc;
+		text-shadow: 0 0 10px #ffb330, 0 0 10px #ffb330, 0 0 10px #ffb330, 0 0 10px #ffb330,
+						   0 0 20px #fe5201, 0 0 20px #fe5201, 0 0 20px #fe5201,
+						   0 0 40px #fe5201, 0 0 40px #fe5201,
+						   0 0 80px #fe5201, 0 0 80px #fe5201,
+						   0 0 120px #fe5201, 0 0 120px #fe5201;
+	}
+	/* ⟱ ON HOVER BADGES ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */	
+	.badge1 .united {
+		top: 33%;
+		font-size: 1.7vw;
+	}
+	.badge1:hover {
+		background-size: 100% 74%;
+	}
+	
+	.badge2 .spurs {
+		top: 33%;
+		font-size: 1.7vw;
+	}
+	.badge2:hover {
+		background-size: 105% 74%;
+	}
+	
+	.badge3 .sheffieldu {
+		top: 33%;
+		font-size: 1.7vw;
+	}
+	.badge3:hover {
+		background-size: 105% 74%;
+	}
+	
+	.badge4 .blackpool {
+		top: 33%;
+		font-size: 1.7vw;
+	}
+	.badge4:hover {
+		background-size: 105% 74%;
+	}
+	
+	.badge5 .arsenal {
+		top: 33%;
+		font-size: 1.7vw;
+	}
+	.badge5:hover {
+		background-size: 98% 74%;
+	}
+	
+	.badge6 .wolverhampton {
+		top: 33%;
+		font-size: 1.7vw;
+	}
+	.badge6:hover {
+		background-size: 98% 74%;
+	}
+	
+	.badge7 .birmingham {
+		top: 33%;
+		font-size: 1.7vw;
+	}
+	.badge7:hover {
+		background-size: 98% 74%;
+	}
+
+	.badge8 .leeds {
+		top: 33%;
+		font-size: 1.7vw;
+	}
+	.badge8:hover {
+		background-size: 98% 74%;
+	}
+
+	.badge9 .newcastle {
+		top: 33%;
+		font-size: 1.7vw;
+	}
+	.badge9:hover {
+		background-size: 94.8% 74%;
+	}
+
+	.badge10 .coventry {
+		top: 33%;
+		width: 13.3%;
+		font-size: 1.7vw;
+	}
+	.badge10:hover {
+		background-size: 95.7% 74%;
+	}
+
+	.badge11 .leicester {
+		top: 33%;
+		font-size: 1.7vw;
+	}
+	.badge11:hover {
+		background-size: 95.7% 74%;
+	}
+
+	.badge12 .qpr {
+		top: 33%;
+		font-size: 1.7vw;
+	}
+	.badge12:hover {
+		background-size: 95.7% 74%;
+	}
+
+	.badge13 .derby {
+		top: 33%;
+		font-size: 1.7vw;
+	}
+	.badge13:hover {
+		background-size: 95.7% 74%;
+	}
+
+	.badge43 .middlesbrough {
+		top: 33%;
+		font-size: 1.7vw;
+	}
+	.badge43:hover {
+		background-size: 95.7% 74%;
+	}
+
+	.badge14 .liverpool {
+		top: 33%;
+		font-size: 1.7vw;
+	}
+	.badge14:hover {
+		background-size: 95.7% 74%;
+	}
+
+	.badge15 .everton {
+		top: 33%;
+		font-size: 1.7vw;
+	}
+	.badge15:hover {
+		background-size: 94.8% 74%;
+	}
+
+	.badge44 .ipswich {
+		top: 33%;
+		font-size: 1.7vw;
+	}
+	.badge44:hover {
+		background-size: 94.8% 74%;
+	}
+
+	.badge16 .norwich {
+		top: 33%;
+		font-size: 1.7vw;
+	}
+	.badge16:hover {
+		background-size: 94.8% 74%;
+	}
+
+	.badge17 .westham {
+		top: 33%;
+		font-size: 1.7vw;
+	}
+	.badge17:hover {
+		background-size: 94.8% 74%;
+	}
+
+	.badge18 .city {
+		top: 33%;
+		font-size: 1.7vw;
+	}
+	.badge18:hover {
+		background-size: 94.8% 74%;
+	}
+
+	.badge19 .villa {
+		top: 33%;
+		font-size: 1.7vw;
+	}
+	.badge19:hover {
+		background-size: 94.8% 74%;
+	}
+
+	.badge20 .stoke {
+		top: 33%;
+		font-size: 1.7vw;
+	}
+	.badge20:hover {
+		background-size: 94.8% 74%;
+	}
+	
+	.badge21 .burnley {
+		top: 34%;
+		font-size: 1.7vw;
+	}
+	.badge21:hover {
+		background-size: 100% 81.7%;
+	}
+	
+	.badge22 .sheffieldu {
+		top: 34%;
+		width: 150%;
+		font-size: 1.7vw;
+	}
+	.badge22:hover {
+		background-size: 100% 81.7%;
+	}
+	
+	.badge29 .brentford {
+		top: 34%;
+		width: auto;
+		font-size: 1.7vw;
+	}
+	.badge29:hover {
+		background-size: 96% 81.7%;
+	}
+	
+	.badge30 .villa2 {
+		top: 34%;
+		width: auto;
+		font-size: 1.7vw;
+	}
+	.badge30:hover {
+		background-size: 96% 81.7%;
+	}
+	
+	.badge31 .city2 {
+		top: 34%;
+		width: auto;
+		font-size: 1.7vw;
+	}
+	.badge31:hover {
+		background-size: 96% 81.7%;
+	}
+	
+	.badge37 .oxford {
+		top: 34%;
+		font-size: 1.7vw;
+	}
+	.badge37:hover {
+		background-size: 100% 81.7%;
+	}
+	
+	.badge38 .peterborough {
+		top: 34%;
+		font-size: 1.7vw;
+	}
+	.badge38:hover {
+		background-size: 100% 81.7%;
+	}
+	
+	.badge39 .leicester2 {
+		top: 34%;
+		font-size: 1.7vw;
+	}
+	.badge39:hover {
+		background-size: 100% 81.7%;
+	}
+	
+	.badge40 .wolves2 {
+		top: 34%;
+		font-size: 1.7vw;
+	}
+	.badge40:hover {
+		background-size: 100% 81.7%;
+	}
+	
+	.badge41 .derby2 {
+		top: 34%;
+		width: 13.6%;
+		font-size: 1.7vw;
+	}
+	.badge41:hover {
+		background-size: 100% 81.7%;
+	}
+	
+	.badge42 .southampton {
+		top: 34%;
+		font-size: 1.7vw;
+	}
+	.badge42:hover {
+		background-size: 100% 81.7%;
+	}
+	/* ⟰ ON HOVER BADGES ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
+}
+/* TABLET: LARGER SCREEN  🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛   🔳   ⬛       */
