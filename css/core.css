@@ -26,6 +26,7 @@
 @font-face { font-family: Europa Nuova Bold; src: url(../fonts/EuropaNuovaBold.ttf); }
 @font-face { font-family: TSPmu2025; src: url(../fonts/TSPmu2025.otf); }
 @font-face { font-family: Josefin Sans; src: url(../fonts/JosefinSans-VariableFont_wght.ttf); }
+@font-face { font-family: Gill Sans MT; src: url(../fonts/GIL_____.TTF); }
 
 ::selection{
 	background-color: #ac141b;
@@ -1900,7 +1901,7 @@ ul.navlist {
 .dropdown_li {
 	list-style: none;
 }
-#link-opacity { opacity: 0; }
+#link-opacity { opacity: 1; }
 .link1-pre {
 	position: absolute;
 	font-family: Agency FB;
