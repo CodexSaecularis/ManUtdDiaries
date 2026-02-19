@@ -27,6 +27,7 @@
 @font-face { font-family: TSPmu2025; src: url(../fonts/TSPmu2025.otf); }
 @font-face { font-family: Josefin Sans; src: url(../fonts/JosefinSans-VariableFont_wght.ttf); }
 @font-face { font-family: Gill Sans MT; src: url(../fonts/GIL_____.TTF); }
+@font-face { font-family: Arial; src: url(../fonts/arial.ttf); }
 
 ::selection{
 	background-color: #ac141b;
