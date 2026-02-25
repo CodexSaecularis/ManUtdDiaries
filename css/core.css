@@ -1151,6 +1151,10 @@ ul.navlist {
 	margin-top: -55.15%;
 	position: absolute;
 }
+#block-gallery {
+	margin-top: -55.15%;
+	position: absolute;
+}
 #gallery-text1 { display: none; }
 #gallery-text2 { display: none; }
 #gallery-text3 { display: none; }
@@ -1161,6 +1165,9 @@ ul.navlist {
 	width: 100%;
 	position: relative;
 	z-index: 2;
+}
+#gallery-mb {
+	display: none;
 }
 /* ⟰ GALLERY PHOTO: SHOW TEXT BUTTON ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* ⟱ GALLERY: SHOW TEXT BUTTON ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -1902,7 +1909,7 @@ ul.navlist {
 .dropdown_li {
 	list-style: none;
 }
-#link-opacity { opacity: 1; }
+#link-opacity { opacity: 0; }
 .link1-pre {
 	position: absolute;
 	font-family: Agency FB;
@@ -3027,7 +3034,7 @@ ul.navlist {
 	align-items: center;
 	position: relative;
 }
-.dropdown59th-match {
+.dropdown-59th-match {
 	background-size: 95% 115%;
 	color: white;
 	padding: 4vw;
@@ -8128,6 +8135,88 @@ ul.navlist {
 #button-score-news58:hover span {
 	animation-play-state: paused;
 }
+
+/* MATCH 59 */
+#button-score-news59 h89 { display: none; }
+#cover59-score {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .08%;
+}
+#cover59-news {
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	margin-left: -3.48%;
+	margin-top: .095%;
+	z-index: -1;
+}
+#button-score-news59 {
+	border: none;
+	border-radius: .1vw;
+	position: absolute;
+	z-index: 2;
+	margin-top: -5.65%;
+	left: 40.8%;
+	width: 14.2%;
+	height: auto;
+	line-height: 1vw;
+	font-family: Lampen;
+	font-size: 1.2vw;
+	color: white;
+	background: #262626;
+	overflow: hidden;
+}
+#button-score-news59:hover {
+	color: black;
+	background: #ef0017;
+	box-shadow: 0 0 5px #ef0017,
+					   0 0 25px #ef0017,
+					   0 0 50px #ef0017,
+					   0 0 200px #ef0017;
+}
+/* 	MATCH 59 // BUTTON: ROTATE ANIMATION */
+#button-score-news59 span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 10%;
+	background: linear-gradient(90deg, transparent, #ef0017);
+	animation: rotate1 0.8s linear infinite;
+	animation-delay: 0s;
+}
+#button-score-news59 span:nth-child(3) {
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: .15vw;
+	background: linear-gradient(270deg, transparent, #ef0017);
+	animation: rotate3 0.8s linear infinite;
+	animation-delay: 0.4s;
+}
+#button-score-news59 span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #ef0017);
+	animation: rotate2 0.8s linear infinite;
+	animation-delay: 0.2s;
+}
+#button-score-news59 span:nth-child(4) {
+	bottom: -100%;
+	left: 0;
+	width: 2%;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #ef0017);
+	animation: rotate4 0.8s linear infinite;
+	animation-delay: 0.6s;
+}
+#button-score-news59:hover span {
+	animation-play-state: paused;
+}
 /* 	⟰ BUTTON: SHOW SCORE AND NEWS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 /* 	⟱ DATE | TIME | COMPETITION STAGE ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 .date-time {
@@ -11679,6 +11768,67 @@ ul.navlist {
 }
 #button-stats58:hover h90 { color: rgb(211, 208, 208); }
 #stats-58th-match { display: none; }
+
+/* MATCH 59 */
+#button-stats59 h91 { display: none; }
+#button-stats59 {
+	border: none;
+	position: relative;
+	margin-top: 2%;
+	left: 30.2%;
+	width: 35%;
+	height: 2.2vw;
+	font-size: 1.3vw;
+	font-family: Manchester\ United\ 23-24\ Tipogra;
+	color: black;
+	background: transparent;
+	text-align: center;
+	z-index: 1;
+}
+#button-stats59:before {
+	content: '';
+	border-radius: .6vw;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: red;
+	opacity: .7;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: top;
+	transition: .2s;
+	top: -10%;
+	left: -3%;
+}
+#button-stats59:hover:before {
+	border-radius: initial;
+	top: -20%;
+	left: 0;
+	transform: perspective(1000px) rotateX(80deg);
+}
+#button-stats59:after {
+	content: '';
+	border-radius: .6vw;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	opacity: .9;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transform-origin: bottom;
+	transition: .2s;
+	bottom: -10%;
+	right: -1%;
+}
+#button-stats59:hover:after {
+	border-radius: initial;
+	bottom: -20%;
+	right: 0;
+	transform: perspective(1000px) rotateX(-80deg);
+}
+#button-stats59:hover h90 { color: rgb(211, 208, 208); }
+#stats-59th-match { display: none; }
 /* 	⟰ BUTTON: SHOW MATCH STATS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 /* ⟱ BADGE-SPONSOR SPIN ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 /* BADGE-SPONSOR SPIN: HISTORICAL */
@@ -12337,6 +12487,15 @@ z-index: -1;
 	}
 	#show-gallery {
 		margin-top: -20.59%;
+	}
+	#block-gallery {
+		margin-top: -20.59%;
+	}
+	#gallery-pc {
+		display: none;
+	}
+	#gallery-mb {
+		display: initial;
 	}
 	/* ⟰ GALLERY PHOTO: SHOW TEXT BUTTON ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	/* ⟱ GALLERY: SHOW TEXT BUTTON ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
@@ -14268,6 +14427,26 @@ z-index: -1;
 		line-height: 1.7vw;
 		font-size: 1.75vw;
 	}
+
+	/* MATCH 59 */
+	#button-score-news59 h88 { display: none; }
+	#button-score-news59 h89 { display: initial; }
+	#cover59-score {
+		width: 116.3%;
+		margin-left: -4.45%;
+	}
+	#cover59-news {
+		width: 116.3%;
+		margin-left: -4.45%;
+		margin-top: .08%;
+	}
+	#button-score-news59 {
+		margin-top: -7.4%;
+		left: 49.9%;
+		width: 17.3%;
+		line-height: 1.7vw;
+		font-size: 1.75vw;
+	}
 	/* 	⟰ BUTTON: SHOW SCORE AND NEWS ⟰ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* 	⟱ DATE | TIME | COMPETITION STAGE ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	.date-time {
@@ -14972,6 +15151,18 @@ z-index: -1;
 		left: 0%;
 	}
 	#button-stats58:hover h91 { color: rgb(211, 208, 208); }
+
+	/* MATCH 59 */
+	#button-stats59 h90 { display: none; }
+	#button-stats59 h91 { display: initial; }
+	#button-stats59 {
+		left: 41.3%;
+		font-size: 1.8vw;
+	}
+	#button-stats59:before {
+		left: 0%;
+	}
+	#button-stats59:hover h91 { color: rgb(211, 208, 208); }
 	/* 	⟰ BUTTON: SHOW MATCH STATS ⟰【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 【♦】 */
 	/* ⟱ BADGE-SPONSOR SPIN ⟱ 【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
 	.badges-and-sponsors { display: none !important; }
