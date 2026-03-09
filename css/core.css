@@ -238,15 +238,15 @@ body {
 .scoreboard-PL .PL div span1 {
 	font-weight: 900;
 	/* ▲ */
-	margin-top: 1.2%;
+	/* margin-top: 1.2%;
 	font-size: .8vw;
 	color: #028336;
-	text-shadow: 0 0 2px #028336, 0 0 2px #028336;
+	text-shadow: 0 0 2px #028336, 0 0 2px #028336; */
 	/* • */
-	/* margin-top: -.4%;
+	margin-top: -.4%;
 	font-size: 1.4vw;
 	color: gray;
-	text-shadow: 0 0 2px gray, 0 0 2px gray; */
+	text-shadow: 0 0 2px gray, 0 0 2px gray;
 	/* ▼ */
 	/* font-size: .8vw;
 	margin-top: 1.2%;
@@ -1889,6 +1889,16 @@ ul.navlist {
 	left: 46.9%;
 	display: var(--close-display, none) !important;
 }
+.hide-LC {
+	position: absolute;
+	background: url(../core/hide-LC.png);
+	background-size: 100%;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 4.3vw;
+	top: 29%;
+	left: 46.9%;
+	display: var(--close-display, none) !important;
+}
 .dropdown_check {
 	position: absolute;
 	width: 100%;
@@ -1941,6 +1951,14 @@ ul.navlist {
 	font-family: Agency FB;
 	font-size: 1.36vw;
 	margin-top: -3.5%;
+	margin-left: 40.8%;
+	display: var(--links-display, none) !important;
+}
+.link4-x {
+	position: absolute;
+	font-family: Agency FB;
+	font-size: 1.36vw;
+	margin-top: -2.1%;
 	margin-left: 40.8%;
 	display: var(--links-display, none) !important;
 }
@@ -13232,6 +13250,12 @@ z-index: -1;
 		margin-left: 51.1%;
 		text-wrap: nowrap;
 	}
+	.link4-x {
+		font-size: 2.1vw;
+		margin-top: -3%;
+		margin-left: 51.1%;
+		text-wrap: nowrap;
+	}
 	.link1 {
 		font-size: 2.1vw;
 		margin-top: -45.8%;
@@ -15851,11 +15875,11 @@ z-index: -1;
 	}
 	.scoreboard-PL .PL div span1 {
 		/* ▲ */
-		font-size: 1.8vw;
-		margin-top: 1.2%;
+		/* font-size: 1.8vw;
+		margin-top: 1.2%; */
 		/* • */
-		/* margin-top: -.5%;
-		font-size: 4vw; */
+		margin-top: -.5%;
+		font-size: 4vw;
 		/* ▼ */
 		/* font-size: 1.8vw; */
 	}
@@ -16217,10 +16241,10 @@ z-index: -1;
 	}
 	.scoreboard-PL .PL div span1 {
 		/* ▲ */
-		font-size: 2.5vw;
+		/* font-size: 2.5vw; */
 		/* • */
-		/* margin-top: -.6%;
-		font-size: 4.7vw; */
+		margin-top: -.6%;
+		font-size: 4.7vw;
 		/* ▼ */
 		/* font-size: 2.5vw; */
 	}
