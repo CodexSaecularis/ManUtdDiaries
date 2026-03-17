@@ -1889,6 +1889,16 @@ ul.navlist {
 	left: 46.9%;
 	display: var(--close-display, none) !important;
 }
+.hide-UEFA {
+	position: absolute;
+	background: url(../core/hide-UEFA.png);
+	background-size: 100%;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 4.3vw;
+	top: 29%;
+	left: 46.9%;
+	display: var(--close-display, none) !important;
+}
 .hide-LC {
 	position: absolute;
 	background: url(../core/hide-LC.png);
@@ -1934,7 +1944,7 @@ ul.navlist {
 	position: absolute;
 	font-family: Agency FB;
 	font-size: 1.36vw;
-	margin-top: -6.5%;
+	margin-top: 4.7%;
 	margin-left: 40.8%;
 	display: var(--links-display, none) !important;
 }
@@ -1942,7 +1952,7 @@ ul.navlist {
 	position: absolute;
 	font-family: Agency FB;
 	font-size: 1.36vw;
-	margin-top: -5%;
+	margin-top: 6.2%;
 	margin-left: 40.8%;
 	display: var(--links-display, none) !important;
 }
@@ -1950,7 +1960,7 @@ ul.navlist {
 	position: absolute;
 	font-family: Agency FB;
 	font-size: 1.36vw;
-	margin-top: -3.5%;
+	margin-top: 7.6%;
 	margin-left: 40.8%;
 	display: var(--links-display, none) !important;
 }
@@ -1958,7 +1968,39 @@ ul.navlist {
 	position: absolute;
 	font-family: Agency FB;
 	font-size: 1.36vw;
-	margin-top: -2.1%;
+	margin-top: 9%;
+	margin-left: 40.8%;
+	display: var(--links-display, none) !important;
+}
+.link5-x {
+	position: absolute;
+	font-family: Agency FB;
+	font-size: 1.36vw;
+	margin-top: 10.5%;
+	margin-left: 40.8%;
+	display: var(--links-display, none) !important;
+}
+.link6-x {
+	position: absolute;
+	font-family: Agency FB;
+	font-size: 1.36vw;
+	margin-top: 11.9%;
+	margin-left: 40.8%;
+	display: var(--links-display, none) !important;
+}
+.link7-x {
+	position: absolute;
+	font-family: Agency FB;
+	font-size: 1.36vw;
+	margin-top: 13.4%;
+	margin-left: 40.8%;
+	display: var(--links-display, none) !important;
+}
+.link8-x {
+	position: absolute;
+	font-family: Agency FB;
+	font-size: 1.36vw;
+	margin-top: 14.8%;
 	margin-left: 40.8%;
 	display: var(--links-display, none) !important;
 }
@@ -13234,25 +13276,49 @@ z-index: -1;
 	}
 	.link1-x {
 		font-size: 2.1vw;
-		margin-top: -8%;
+		margin-top: 5.9%;
 		margin-left: 51.1%;
 		text-wrap: nowrap;
 	}
 	.link2-x {
 		font-size: 2.1vw;
-		margin-top: -6.2%;
+		margin-top: 7.6%;
 		margin-left: 51.1%;
 		text-wrap: nowrap;
 	}
 	.link3-x {
 		font-size: 2.1vw;
-		margin-top: -4.5%;
+		margin-top: 9.5%;
 		margin-left: 51.1%;
 		text-wrap: nowrap;
 	}
 	.link4-x {
 		font-size: 2.1vw;
-		margin-top: -3%;
+		margin-top: 11.23%;
+		margin-left: 51.1%;
+		text-wrap: nowrap;
+	}
+	.link5-x {
+		font-size: 2.1vw;
+		margin-top: 13.1%;
+		margin-left: 51.1%;
+		text-wrap: nowrap;
+	}
+	.link6-x {
+		font-size: 2.1vw;
+		margin-top: 14.84%;
+		margin-left: 51.1%;
+		text-wrap: nowrap;
+	}
+	.link7-x {
+		font-size: 2.1vw;
+		margin-top: 16.7%;
+		margin-left: 51.1%;
+		text-wrap: nowrap;
+	}
+	.link8-x {
+		font-size: 2.1vw;
+		margin-top: 18.4%;
 		margin-left: 51.1%;
 		text-wrap: nowrap;
 	}
