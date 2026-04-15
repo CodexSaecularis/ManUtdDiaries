@@ -4,15 +4,15 @@
 	text-align: initial;  /* addition to avoid text centering */
 }
 .home span {
-	color: #fff;
-	/* color: #da020e;
-	text-shadow: 0 0 2px #da020e; */
-	opacity: none;
-}
-.home {
 	/* color: #fff; */
 	color: #da020e;
 	text-shadow: 0 0 2px #da020e;
+	opacity: none;
+}
+.home {
+	color: #fff;
+	/* color: #da020e;
+	text-shadow: 0 0 2px #da020e; */
 	opacity: none;
 }
 /* ⟱ BRICKS & TROPHIES ⟱【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】【♦】 */
