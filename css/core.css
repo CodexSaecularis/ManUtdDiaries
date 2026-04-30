@@ -1899,6 +1899,16 @@ ul.navlist {
 	left: 46.9%;
 	display: var(--close-display, none) !important;
 }
+.hide-CWC {
+	position: absolute;
+	background: url(../core/hide-CWC.png);
+	background-size: 100%;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 4.3vw;
+	top: 29%;
+	left: 46.9%;
+	display: var(--close-display, none) !important;
+}
 .hide-LC {
 	position: absolute;
 	background: url(../core/hide-LC.png);
@@ -1939,7 +1949,7 @@ ul.navlist {
 .dropdown_li {
 	list-style: none;
 }
-#link-opacity { opacity: 0; }
+#link-opacity { opacity: 1; }
 .link1-x {
 	position: absolute;
 	font-family: Agency FB;
@@ -13270,6 +13280,11 @@ z-index: -1;
 		left: 57.34%;
 	}
 	.hide-EC {
+		font-size: 6.8vw;
+		top: 29.7%;
+		left: 57.34%;
+	}
+	.hide-CWC {
 		font-size: 6.8vw;
 		top: 29.7%;
 		left: 57.34%;
